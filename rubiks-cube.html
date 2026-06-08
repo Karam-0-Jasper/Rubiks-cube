@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rubik's Cube</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0a0f;
+    --surface: #13131a;
+    --border: #1e1e2e;
+    --accent: #7c3aed;
+    --accent2: #a855f7;
+    --text: #e2e8f0;
+    --muted: #64748b;
+    --white: #ffffff;
+    --U: #ffffff;
+    --D: #f59e0b;
+    --F: #ef4444;
+    --B: #f97316;
+    --L: #3b82f6;
+    --R: #22c55e;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  /* ── TUTORIAL OVERLAY ── */
+  #tutorial {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.92);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .tut-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    max-width: 600px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .tut-header {
+    background: linear-gradient(135deg, #1e1030 0%, #0f0a20 100%);
+    padding: 28px 32px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .tut-cube-icon {
+    width: 48px; height: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+    flex-shrink: 0;
+  }
+
+  .tut-cube-icon span {
+    border-radius: 3px;
+  }
+
+  .tut-header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--white);
+  }
+
+  .tut-header p {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 3px;
+  }
+
+  .tut-steps {
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .tut-step {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .step-num {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .step-body h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+
+  .step-body p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .key-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .key {
+    background: #1a1a2e;
+    border: 1px solid #2d2d50;
+    border-bottom: 3px solid #1a1a35;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--accent2);
+    font-weight: 700;
+  }
+
+  .key-label {
+    font-size: 11px;
+    color: var(--muted);
+    align-self: center;
+  }
+
+  .color-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .color-pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .color-dot {
+    width: 14px; height: 14px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+
+  .tut-footer {
+    padding: 20px 32px 28px;
+    display: flex;
+    gap: 12px;
+  }
+
+  .btn-primary {
+    flex: 1;
+    padding: 14px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.15s;
+  }
+
+  .btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+  .btn-primary:active { transform: translateY(0); }
+
+  .btn-secondary {
+    padding: 14px 20px;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--muted);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .btn-secondary:hover { border-color: var(--accent); color: var(--accent2); }
+
+  /* ── HEADER ── */
+  header {
+    width: 100%;
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .logo {
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.5px;
+  }
+
+  .logo span { color: var(--accent2); }
+
+  .header-actions { display: flex; gap: 10px; }
+
+  .btn-sm {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+  }
+
+  .btn-sm:hover { border-color: var(--accent); color: var(--accent2); }
+  .btn-sm.accent { background: var(--accent); border-color: var(--accent); color: white; }
+  .btn-sm.accent:hover { background: var(--accent2); border-color: var(--accent2); }
+
+  /* ── STATS BAR ── */
+  .stats {
+    display: flex;
+    gap: 32px;
+    padding: 16px 0;
+    margin-top: 8px;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-val {
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1;
+  }
+
+  .stat-lbl {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4px;
+  }
+
+  .stat-sep {
+    width: 1px;
+    background: var(--border);
+    align-self: stretch;
+  }
+
+  /* ── GAME AREA ── */
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  /* ── 3D CUBE ── */
+  #scene {
+    perspective: 800px;
+    width: 240px;
+    height: 240px;
+    margin: 8px 0 24px;
+    cursor: grab;
+    user-select: none;
+  }
+
+  #scene:active { cursor: grabbing; }
+
+  #cube {
+    width: 100%; height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(40deg);
+    transition: transform 0.15s ease;
+    position: relative;
+  }
+
+  .face {
+    position: absolute;
+    width: 240px; height: 240px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+    padding: 4px;
+    background: #111;
+    border-radius: 6px;
+  }
+
+  .face.F { transform: translateZ(120px); }
+  .face.B { transform: rotateY(180deg) translateZ(120px); }
+  .face.L { transform: rotateY(-90deg) translateZ(120px); }
+  .face.R { transform: rotateY(90deg) translateZ(120px); }
+  .face.U { transform: rotateX(90deg) translateZ(120px); }
+  .face.D { transform: rotateX(-90deg) translateZ(120px); }
+
+  .sticker {
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+
+  /* ── CONTROLS ── */
+  .controls-section {
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .section-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    margin-bottom: 12px;
+    font-family: 'Space Mono', monospace;
+  }
+
+  .move-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .move-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 6px 8px;
+    color: var(--text);
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .move-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent2);
+    background: #1a1025;
+    transform: translateY(-2px);
+  }
+
+  .move-btn:active { transform: translateY(0); }
+
+  .move-btn .face-tag {
+    font-size: 9px;
+    color: var(--muted);
+    font-weight: 400;
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .action-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .action-row .btn-sm {
+    flex: 1;
+    padding: 12px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  /* ── SOLVED BANNER ── */
+  #solved-banner {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #1e1030, #0f1a20);
+    border: 1px solid var(--accent);
+    border-radius: 20px;
+    padding: 40px 48px;
+    text-align: center;
+    z-index: 50;
+    box-shadow: 0 0 60px rgba(124, 58, 237, 0.3);
+  }
+
+  #solved-banner h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+
+  #solved-banner p {
+    color: var(--muted);
+    margin-bottom: 24px;
+  }
+
+  .confetti-row {
+    font-size: 28px;
+    margin-bottom: 16px;
+    letter-spacing: 4px;
+  }
+
+  /* ── MOVE HISTORY ── */
+  .history-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-top: 4px;
+    min-height: 44px;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 1px;
+    line-height: 1.8;
+    word-break: break-all;
+  }
+
+  .history-move { color: var(--accent2); }
+  .history-move.prime { color: #f472b6; }
+
+  /* ── KEYBOARD HINT ── */
+  .kbd-hint {
+    font-size: 11px;
+    color: var(--muted);
+    text-align: center;
+    margin-top: 12px;
+    line-height: 1.7;
+  }
+
+  .kbd-hint kbd {
+    background: #1a1a2e;
+    border: 1px solid #2d2d50;
+    border-bottom: 2px solid #1a1a35;
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    color: var(--accent2);
+  }
+</style>
+</head>
+<body>
+
+<!-- TUTORIAL OVERLAY -->
+<div id="tutorial">
+  <div class="tut-card">
+    <div class="tut-header">
+      <div class="tut-cube-icon">
+        <span style="background:#ef4444"></span>
+        <span style="background:#3b82f6"></span>
+        <span style="background:#22c55e"></span>
+        <span style="background:#f59e0b"></span>
+      </div>
+      <div>
+        <h1>Rubik's Cube</h1>
+        <p>Learn the basics before you start solving</p>
+      </div>
+    </div>
+
+    <div class="tut-steps">
+      <div class="tut-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>The Goal</h3>
+          <p>Each face of the cube has 9 stickers. You need to get every sticker on a face to be the same color — 6 faces, 6 solid colors.</p>
+          <div class="color-legend" style="margin-top:10px">
+            <div class="color-pill"><div class="color-dot" style="background:#ffffff;border:1px solid #333"></div> White (Top)</div>
+            <div class="color-pill"><div class="color-dot" style="background:#f59e0b"></div> Yellow (Bottom)</div>
+            <div class="color-pill"><div class="color-dot" style="background:#ef4444"></div> Red (Front)</div>
+            <div class="color-pill"><div class="color-dot" style="background:#f97316"></div> Orange (Back)</div>
+            <div class="color-pill"><div class="color-dot" style="background:#3b82f6"></div> Blue (Left)</div>
+            <div class="color-pill"><div class="color-dot" style="background:#22c55e"></div> Green (Right)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tut-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Making Moves</h3>
+          <p>Click the move buttons below the cube. Each letter is a face: <strong style="color:#e2e8f0">U</strong> (Up), <strong style="color:#e2e8f0">D</strong> (Down), <strong style="color:#e2e8f0">F</strong> (Front), <strong style="color:#e2e8f0">B</strong> (Back), <strong style="color:#e2e8f0">L</strong> (Left), <strong style="color:#e2e8f0">R</strong> (Right). A plain letter = clockwise. The <strong style="color:#f472b6">' (prime)</strong> symbol = counter-clockwise.</p>
+        </div>
+      </div>
+
+      <div class="tut-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Keyboard Shortcuts</h3>
+          <div class="key-grid">
+            <div class="key">U</div><div class="key-label">Up CW</div>
+            <div class="key">I</div><div class="key-label">Up CCW</div>
+            <div class="key">F</div><div class="key-label">Front CW</div>
+            <div class="key">V</div><div class="key-label">Front CCW</div>
+            <div class="key">R</div><div class="key-label">Right CW</div>
+            <div class="key">E</div><div class="key-label">Right CCW</div>
+            <div class="key">L</div><div class="key-label">Left CW</div>
+            <div class="key">J</div><div class="key-label">Left CCW</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tut-step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Rotate the View</h3>
+          <p>Click and drag the cube to spin it around and see all sides. You can't solve what you can't see.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tut-footer">
+      <button class="btn-secondary" onclick="closeTutorial()">Skip</button>
+      <button class="btn-primary" onclick="closeTutorial()">Let's Solve It →</button>
+    </div>
+  </div>
+</div>
+
+<!-- SOLVED BANNER -->
+<div id="solved-banner">
+  <div class="confetti-row">🎉 🧩 🎊</div>
+  <h2>Cube Solved!</h2>
+  <p id="solved-stats">You did it in <span id="solved-moves">0</span> moves and <span id="solved-time">0:00</span></p>
+  <button class="btn-primary" style="width:100%" onclick="newGame()">Play Again</button>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">Rubik's<span>.</span>app</div>
+  <div class="header-actions">
+    <button class="btn-sm" onclick="showTutorial()">How to Play</button>
+    <button class="btn-sm accent" onclick="newGame()">New Game</button>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main>
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-val" id="timer-display">0:00</div>
+      <div class="stat-lbl">Time</div>
+    </div>
+    <div class="stat-sep"></div>
+    <div class="stat-val" style="display:none"></div>
+    <div class="stat">
+      <div class="stat-val" id="move-count">0</div>
+      <div class="stat-lbl">Moves</div>
+    </div>
+    <div class="stat-sep"></div>
+    <div class="stat">
+      <div class="stat-val" id="best-display">--</div>
+      <div class="stat-lbl">Best</div>
+    </div>
+  </div>
+
+  <!-- 3D CUBE -->
+  <div id="scene">
+    <div id="cube">
+      <div class="face F" id="face-F"></div>
+      <div class="face B" id="face-B"></div>
+      <div class="face L" id="face-L"></div>
+      <div class="face R" id="face-R"></div>
+      <div class="face U" id="face-U"></div>
+      <div class="face D" id="face-D"></div>
+    </div>
+  </div>
+
+  <!-- CONTROLS -->
+  <div class="controls-section">
+    <div class="section-label">Moves</div>
+    <div class="move-grid">
+      <button class="move-btn" onclick="doMove('U')">U<span class="face-tag">up</span></button>
+      <button class="move-btn" onclick="doMove('U\'')">U'<span class="face-tag">up</span></button>
+      <button class="move-btn" onclick="doMove('F')">F<span class="face-tag">front</span></button>
+      <button class="move-btn" onclick="doMove('F\'')">F'<span class="face-tag">front</span></button>
+      <button class="move-btn" onclick="doMove('R')">R<span class="face-tag">right</span></button>
+      <button class="move-btn" onclick="doMove('R\'')">R'<span class="face-tag">right</span></button>
+      <button class="move-btn" onclick="doMove('D')">D<span class="face-tag">down</span></button>
+      <button class="move-btn" onclick="doMove('D\'')">D'<span class="face-tag">down</span></button>
+      <button class="move-btn" onclick="doMove('B')">B<span class="face-tag">back</span></button>
+      <button class="move-btn" onclick="doMove('B\'')">B'<span class="face-tag">back</span></button>
+      <button class="move-btn" onclick="doMove('L')">L<span class="face-tag">left</span></button>
+      <button class="move-btn" onclick="doMove('L\'')">L'<span class="face-tag">left</span></button>
+    </div>
+
+    <div class="action-row">
+      <button class="btn-sm" onclick="scramble()">🔀 Scramble</button>
+      <button class="btn-sm" onclick="undoMove()">↩ Undo</button>
+      <button class="btn-sm" onclick="resetCube()">↺ Reset</button>
+    </div>
+
+    <div class="section-label">Move History</div>
+    <div class="history-box" id="history-box">No moves yet</div>
+
+    <div class="kbd-hint" style="margin-top:14px">
+      Keyboard: <kbd>U</kbd> <kbd>F</kbd> <kbd>R</kbd> <kbd>D</kbd> <kbd>B</kbd> <kbd>L</kbd> (clockwise) &nbsp;|&nbsp;
+      Hold <kbd>Shift</kbd> for counter-clockwise
+    </div>
+  </div>
+</main>
+
+<script>
+// ── CUBE STATE ──
+// Each face: array of 9 sticker colors [row-major, 0=top-left, 8=bottom-right]
+const COLORS = { U:'#ffffff', D:'#f59e0b', F:'#ef4444', B:'#f97316', L:'#3b82f6', R:'#22c55e' };
+
+let state = {};
+let moveHistory = [];
+let moveCount = 0;
+let timerInterval = null;
+let seconds = 0;
+let started = false;
+let best = localStorage.getItem('rubiks_best') ? parseInt(localStorage.getItem('rubiks_best')) : null;
+
+function initState() {
+  state = {};
+  for (const face of ['U','D','F','B','L','R']) {
+    state[face] = Array(9).fill(COLORS[face]);
+  }
+}
+
+function cloneState(s) {
+  const c = {};
+  for (const f in s) c[f] = [...s[f]];
+  return c;
+}
+
+// ── RENDER ──
+function render() {
+  for (const face of ['U','D','F','B','L','R']) {
+    const el = document.getElementById('face-' + face);
+    el.innerHTML = '';
+    for (let i = 0; i < 9; i++) {
+      const s = document.createElement('div');
+      s.className = 'sticker';
+      s.style.background = state[face][i];
+      el.appendChild(s);
+    }
+  }
+  checkSolved();
+}
+
+// ── MOVES ──
+// Rotation helpers: rotate a face array 90deg CW
+function rotateFaceCW(f) {
+  const [a,b,c,d,e,g,h,i,j] = f;
+  return [h,d,a, i,e,b, j,g,c];
+}
+
+function rotateFaceCCW(f) {
+  const [a,b,c,d,e,g,h,i,j] = f;
+  return [c,g,j, b,e,i, a,d,h];
+}
+
+// Get row or col from a face
+function getRow(f, r) { return [f[r*3], f[r*3+1], f[r*3+2]]; }
+function getCol(f, c) { return [f[c], f[c+3], f[c+6]]; }
+function setRow(f, r, vals) { f[r*3]=vals[0]; f[r*3+1]=vals[1]; f[r*3+2]=vals[2]; }
+function setCol(f, c, vals) { f[c]=vals[0]; f[c+3]=vals[1]; f[c+6]=vals[2]; }
+
+const MOVES = {
+  'U': (s) => {
+    s.U = rotateFaceCW(s.U);
+    const tmp = getRow(s.F, 0);
+    setRow(s.F, 0, getRow(s.R, 0));
+    setRow(s.R, 0, getRow(s.B, 0));
+    setRow(s.B, 0, getRow(s.L, 0));
+    setRow(s.L, 0, tmp);
+  },
+  "U'": (s) => {
+    s.U = rotateFaceCCW(s.U);
+    const tmp = getRow(s.F, 0);
+    setRow(s.F, 0, getRow(s.L, 0));
+    setRow(s.L, 0, getRow(s.B, 0));
+    setRow(s.B, 0, getRow(s.R, 0));
+    setRow(s.R, 0, tmp);
+  },
+  'D': (s) => {
+    s.D = rotateFaceCW(s.D);
+    const tmp = getRow(s.F, 2);
+    setRow(s.F, 2, getRow(s.L, 2));
+    setRow(s.L, 2, getRow(s.B, 2));
+    setRow(s.B, 2, getRow(s.R, 2));
+    setRow(s.R, 2, tmp);
+  },
+  "D'": (s) => {
+    s.D = rotateFaceCCW(s.D);
+    const tmp = getRow(s.F, 2);
+    setRow(s.F, 2, getRow(s.R, 2));
+    setRow(s.R, 2, getRow(s.B, 2));
+    setRow(s.B, 2, getRow(s.L, 2));
+    setRow(s.L, 2, tmp);
+  },
+  'F': (s) => {
+    s.F = rotateFaceCW(s.F);
+    const tmp = getRow(s.U, 2);
+    setRow(s.U, 2, getCol(s.L, 2).reverse());
+    setCol(s.L, 2, getRow(s.D, 0));
+    setRow(s.D, 0, getCol(s.R, 0).reverse());
+    setCol(s.R, 0, tmp);
+  },
+  "F'": (s) => {
+    s.F = rotateFaceCCW(s.F);
+    const tmp = getRow(s.U, 2);
+    setRow(s.U, 2, getCol(s.R, 0));
+    setCol(s.R, 0, getRow(s.D, 0).reverse());
+    setRow(s.D, 0, getCol(s.L, 2));
+    setCol(s.L, 2, tmp.reverse());
+  },
+  'B': (s) => {
+    s.B = rotateFaceCW(s.B);
+    const tmp = getRow(s.U, 0);
+    setRow(s.U, 0, getCol(s.R, 2));
+    setCol(s.R, 2, getRow(s.D, 2).reverse());
+    setRow(s.D, 2, getCol(s.L, 0));
+    setCol(s.L, 0, tmp.reverse());
+  },
+  "B'": (s) => {
+    s.B = rotateFaceCCW(s.B);
+    const tmp = getRow(s.U, 0);
+    setRow(s.U, 0, getCol(s.L, 0).reverse());
+    setCol(s.L, 0, getRow(s.D, 2));
+    setRow(s.D, 2, getCol(s.R, 2).reverse());
+    setCol(s.R, 2, tmp);
+  },
+  'R': (s) => {
+    s.R = rotateFaceCW(s.R);
+    const tmp = getCol(s.F, 2);
+    setCol(s.F, 2, getCol(s.D, 2));
+    setCol(s.D, 2, getCol(s.B, 0).reverse());
+    setCol(s.B, 0, getCol(s.U, 2).reverse());
+    setCol(s.U, 2, tmp);
+  },
+  "R'": (s) => {
+    s.R = rotateFaceCCW(s.R);
+    const tmp = getCol(s.F, 2);
+    setCol(s.F, 2, getCol(s.U, 2));
+    setCol(s.U, 2, getCol(s.B, 0).reverse());
+    setCol(s.B, 0, getCol(s.D, 2).reverse());
+    setCol(s.D, 2, tmp);
+  },
+  'L': (s) => {
+    s.L = rotateFaceCW(s.L);
+    const tmp = getCol(s.F, 0);
+    setCol(s.F, 0, getCol(s.U, 0));
+    setCol(s.U, 0, getCol(s.B, 2).reverse());
+    setCol(s.B, 2, getCol(s.D, 0).reverse());
+    setCol(s.D, 0, tmp);
+  },
+  "L'": (s) => {
+    s.L = rotateFaceCCW(s.L);
+    const tmp = getCol(s.F, 0);
+    setCol(s.F, 0, getCol(s.D, 0));
+    setCol(s.D, 0, getCol(s.B, 2).reverse());
+    setCol(s.B, 2, getCol(s.U, 0).reverse());
+    setCol(s.U, 0, tmp);
+  }
+};
+
+const stateHistory = [];
+
+function doMove(move, fromScramble = false) {
+  if (!fromScramble && !started) startTimer();
+  stateHistory.push(cloneState(state));
+  MOVES[move](state);
+  if (!fromScramble) {
+    moveHistory.push(move);
+    moveCount++;
+    document.getElementById('move-count').textContent = moveCount;
+    updateHistory();
+  }
+  render();
+}
+
+function undoMove() {
+  if (stateHistory.length === 0) return;
+  state = stateHistory.pop();
+  moveHistory.pop();
+  moveCount = Math.max(0, moveCount - 1);
+  document.getElementById('move-count').textContent = moveCount;
+  updateHistory();
+  render();
+}
+
+function updateHistory() {
+  const box = document.getElementById('history-box');
+  if (moveHistory.length === 0) { box.innerHTML = 'No moves yet'; return; }
+  box.innerHTML = moveHistory.map(m => {
+    const isPrime = m.includes("'");
+    return `<span class="history-move${isPrime?' prime':''}">${m}</span>`;
+  }).join(' ');
+  box.scrollTop = box.scrollHeight;
+}
+
+// ── SCRAMBLE ──
+const ALL_MOVES = ['U',"U'",'D',"D'",'F',"F'",'B',"B'",'R',"R'",'L',"L'"];
+
+function scramble() {
+  resetCube(true);
+  const n = 20;
+  for (let i = 0; i < n; i++) {
+    const m = ALL_MOVES[Math.floor(Math.random() * ALL_MOVES.length)];
+    doMove(m, true);
+  }
+  stateHistory.length = 0;
+  startTimer();
+  render();
+}
+
+// ── TIMER ──
+function startTimer() {
+  if (started) return;
+  started = true;
+  seconds = 0;
+  clearInterval(timerInterval);
+  timerInterval = setInterval(() => {
+    seconds++;
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    document.getElementById('timer-display').textContent = `${m}:${s.toString().padStart(2,'0')}`;
+  }, 1000);
+}
+
+function stopTimer() {
+  clearInterval(timerInterval);
+  started = false;
+}
+
+// ── SOLVED CHECK ──
+function checkSolved() {
+  for (const face of ['U','D','F','B','L','R']) {
+    const stickers = state[face];
+    if (!stickers.every(c => c === stickers[0])) return false;
+  }
+  if (moveCount === 0) return false;
+  stopTimer();
+  const m = Math.floor(seconds / 60);
+  const s = seconds % 60;
+  const timeStr = `${m}:${s.toString().padStart(2,'0')}`;
+  document.getElementById('solved-moves').textContent = moveCount;
+  document.getElementById('solved-time').textContent = timeStr;
+
+  if (best === null || seconds < best) {
+    best = seconds;
+    localStorage.setItem('rubiks_best', best);
+    updateBestDisplay();
+  }
+
+  setTimeout(() => {
+    document.getElementById('solved-banner').style.display = 'block';
+  }, 300);
+  return true;
+}
+
+function updateBestDisplay() {
+  if (best === null) { document.getElementById('best-display').textContent = '--'; return; }
+  const m = Math.floor(best / 60);
+  const s = best % 60;
+  document.getElementById('best-display').textContent = `${m}:${s.toString().padStart(2,'0')}`;
+}
+
+// ── RESET / NEW GAME ──
+function resetCube(silent = false) {
+  stopTimer();
+  initState();
+  stateHistory.length = 0;
+  moveHistory.length = 0;
+  moveCount = 0;
+  seconds = 0;
+  started = false;
+  document.getElementById('move-count').textContent = '0';
+  document.getElementById('timer-display').textContent = '0:00';
+  document.getElementById('history-box').innerHTML = 'No moves yet';
+  document.getElementById('solved-banner').style.display = 'none';
+  if (!silent) render();
+}
+
+function newGame() {
+  resetCube();
+  scramble();
+}
+
+// ── DRAG ROTATION ──
+let isDragging = false, lastX = 0, lastY = 0;
+let rotX = -30, rotY = 40;
+
+const scene = document.getElementById('scene');
+const cubeEl = document.getElementById('cube');
+
+scene.addEventListener('mousedown', (e) => { isDragging = true; lastX = e.clientX; lastY = e.clientY; });
+window.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
+  const dx = e.clientX - lastX;
+  const dy = e.clientY - lastY;
+  rotY += dx * 0.5;
+  rotX -= dy * 0.5;
+  rotX = Math.max(-89, Math.min(89, rotX));
+  cubeEl.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+  lastX = e.clientX; lastY = e.clientY;
+});
+window.addEventListener('mouseup', () => { isDragging = false; });
+
+// Touch support
+scene.addEventListener('touchstart', (e) => {
+  isDragging = true;
+  lastX = e.touches[0].clientX;
+  lastY = e.touches[0].clientY;
+}, {passive:true});
+window.addEventListener('touchmove', (e) => {
+  if (!isDragging) return;
+  const dx = e.touches[0].clientX - lastX;
+  const dy = e.touches[0].clientY - lastY;
+  rotY += dx * 0.5;
+  rotX -= dy * 0.5;
+  rotX = Math.max(-89, Math.min(89, rotX));
+  cubeEl.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+  lastX = e.touches[0].clientX;
+  lastY = e.touches[0].clientY;
+}, {passive:true});
+window.addEventListener('touchend', () => { isDragging = false; });
+
+// ── KEYBOARD ──
+window.addEventListener('keydown', (e) => {
+  if (document.getElementById('tutorial').style.display !== 'none') return;
+  const key = e.key.toUpperCase();
+  const prime = e.shiftKey;
+  const map = { U:'U', F:'F', R:'R', D:'D', B:'B', L:'L' };
+  if (map[key]) {
+    e.preventDefault();
+    doMove(prime ? map[key]+"'" : map[key]);
+  }
+  // alternate CCW keys
+  const altMap = { I:"U'", V:"F'", E:"R'", C:"D'", G:"B'", J:"L'" };
+  if (!e.shiftKey && altMap[key]) {
+    e.preventDefault();
+    doMove(altMap[key]);
+  }
+});
+
+// ── TUTORIAL ──
+function closeTutorial() {
+  document.getElementById('tutorial').style.display = 'none';
+}
+
+function showTutorial() {
+  document.getElementById('tutorial').style.display = 'flex';
+}
+
+// ── INIT ──
+initState();
+render();
+updateBestDisplay();
+
+// Auto-scramble on load after tutorial closes
+document.querySelector('#tutorial .btn-primary').addEventListener('click', () => {
+  setTimeout(scramble, 100);
+});
+document.querySelector('#tutorial .btn-secondary').addEventListener('click', () => {
+  setTimeout(scramble, 100);
+});
+</script>
+</body>
+</html>
