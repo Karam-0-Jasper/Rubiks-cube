@@ -1,0 +1,244 @@
+// Nuvex — teacher platform data model.
+// Postgres + Prisma. Curriculum content is seeded from src/content.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Plan {
+  FREE
+  WEEKLY
+  MONTHLY
+  YEARLY
+}
+
+enum SubscriptionStatus {
+  ACTIVE
+  PAST_DUE
+  CANCELED
+  INCOMPLETE
+}
+
+enum Theme {
+  LIGHT
+  DARK
+  SYSTEM
+}
+
+enum TestQuestionType {
+  MULTIPLE_CHOICE
+  SHORT_ANSWER
+  ESSAY
+}
+
+model User {
+  id           String   @id @default(cuid())
+  username     String   @unique
+  phone        String?  @unique
+  passwordHash String
+  fullName     String?
+  school       String?
+  theme        Theme    @default(SYSTEM)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  stripeCustomerId String? @unique
+
+  subscription  Subscription?
+  sessions      Session[]
+  nyvoraUsage   NyvoraUsage[]
+  conversations Conversation[]
+  unlocks       SubjectUnlock[]
+  quizAttempts  QuizAttempt[]
+
+  @@index([phone])
+}
+
+/// Server-side session records. The cookie carries a signed JWT whose `sid`
+/// points here, so sessions can be revoked without waiting for token expiry.
+model Session {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userAgent String?
+  createdAt DateTime @default(now())
+  expiresAt DateTime
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model Subscription {
+  id     String @id @default(cuid())
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  plan   Plan               @default(FREE)
+  status SubscriptionStatus @default(ACTIVE)
+
+  stripeSubscriptionId String? @unique
+  stripePriceId        String?
+
+  /// Start of the quota window currently in force. For FREE this rolls weekly;
+  /// for paid plans it tracks the Stripe billing period.
+  periodStart DateTime @default(now())
+  periodEnd   DateTime
+
+  cancelAtPeriodEnd Boolean  @default(false)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+/// One row per Nyvora message charged against the user's allowance.
+model NyvoraUsage {
+  id             String   @id @default(cuid())
+  userId         String
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  conversationId String?
+  inputTokens    Int      @default(0)
+  outputTokens   Int      @default(0)
+  createdAt      DateTime @default(now())
+
+  @@index([userId, createdAt])
+}
+
+model Conversation {
+  id        String    @id @default(cuid())
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title     String    @default("New chat")
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  messages  Message[]
+
+  @@index([userId, updatedAt])
+}
+
+model Message {
+  id             String       @id @default(cuid())
+  conversationId String
+  conversation   Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  role           String // "user" | "assistant"
+  content        String       @db.Text
+  createdAt      DateTime     @default(now())
+
+  @@index([conversationId, createdAt])
+}
+
+// ---------------------------------------------------------------------------
+// Curriculum
+// ---------------------------------------------------------------------------
+
+model Subject {
+  id       String @id @default(cuid())
+  slug     String @unique
+  name     String
+  shortName String
+  description String
+  /// Tailwind-friendly accent token used by the subject cards.
+  accent   String @default("brand")
+  sortOrder Int   @default(0)
+
+  /// Hashed access code a teacher enters to reveal locked test questions.
+  teacherCodeHash String
+
+  periods Period[]
+  unlocks SubjectUnlock[]
+}
+
+model Period {
+  id        String  @id @default(cuid())
+  subjectId String
+  subject   Subject @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+
+  grade   Int // 9..12
+  number  Int // 1..6
+  title   String
+  summary String
+
+  topics Topic[]
+
+  @@unique([subjectId, grade, number])
+  @@index([grade, number])
+}
+
+model Topic {
+  id       String @id @default(cuid())
+  periodId String
+  period   Period @relation(fields: [periodId], references: [id], onDelete: Cascade)
+
+  slug             String
+  sortOrder        Int
+  title            String
+  objective        String @db.Text
+  notes            String @db.Text
+  workedExample    String @db.Text
+  teachingTip      String @db.Text
+  estimatedMinutes Int    @default(80)
+
+  quizQuestions QuizQuestion[]
+  testQuestions TestQuestion[]
+  attempts      QuizAttempt[]
+
+  @@unique([periodId, slug])
+}
+
+/// Practice questions — visible to anyone with an account.
+model QuizQuestion {
+  id          String @id @default(cuid())
+  topicId     String
+  topic       Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  sortOrder   Int
+  prompt      String @db.Text
+  options     Json // string[]
+  correctIndex Int
+  explanation String @db.Text
+
+  @@index([topicId, sortOrder])
+}
+
+/// Assessment questions — gated behind the subject code.
+model TestQuestion {
+  id           String           @id @default(cuid())
+  topicId      String
+  topic        Topic            @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  sortOrder    Int
+  type         TestQuestionType @default(MULTIPLE_CHOICE)
+  prompt       String           @db.Text
+  options      Json? // string[] for MULTIPLE_CHOICE
+  correctIndex Int?
+  answerKey    String           @db.Text
+  marks        Int              @default(5)
+
+  @@index([topicId, sortOrder])
+}
+
+/// Records that a teacher entered the correct subject code.
+model SubjectUnlock {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  subjectId String
+  subject   Subject  @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@unique([userId, subjectId])
+}
+
+model QuizAttempt {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  topicId   String
+  topic     Topic    @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  score     Int
+  total     Int
+  createdAt DateTime @default(now())
+
+  @@index([userId, createdAt])
+}
