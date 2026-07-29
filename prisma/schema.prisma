@@ -24,6 +24,20 @@ enum SubscriptionStatus {
   INCOMPLETE
 }
 
+/// Liberian mobile money providers. LONESTAR uses the MTN MoMo Collections
+/// API (request-to-pay); ORANGE uses the Orange Money Web Payment API.
+enum PaymentProvider {
+  ORANGE
+  LONESTAR
+}
+
+enum PaymentStatus {
+  PENDING
+  SUCCESSFUL
+  FAILED
+  CANCELLED
+}
+
 enum Theme {
   LIGHT
   DARK
@@ -47,7 +61,8 @@ model User {
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
-  stripeCustomerId String? @unique
+  /// Last mobile money number used to pay, pre-filled at checkout.
+  momoPhone String?
 
   subscription  Subscription?
   sessions      Session[]
@@ -55,6 +70,7 @@ model User {
   conversations Conversation[]
   unlocks       SubjectUnlock[]
   quizAttempts  QuizAttempt[]
+  payments      Payment[]
 
   @@index([phone])
 }
@@ -81,17 +97,52 @@ model Subscription {
   plan   Plan               @default(FREE)
   status SubscriptionStatus @default(ACTIVE)
 
-  stripeSubscriptionId String? @unique
-  stripePriceId        String?
+  /// The provider that paid for the current paid period, if any.
+  provider PaymentProvider?
 
-  /// Start of the quota window currently in force. For FREE this rolls weekly;
-  /// for paid plans it tracks the Stripe billing period.
+  /// Start of the quota window currently in force. For FREE this rolls weekly.
+  /// A paid plan runs from the moment payment clears until periodEnd; mobile
+  /// money does not auto-renew, so the plan simply lapses back to FREE.
   periodStart DateTime @default(now())
   periodEnd   DateTime
 
-  cancelAtPeriodEnd Boolean  @default(false)
-  createdAt         DateTime @default(now())
-  updatedAt         DateTime @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+/// One mobile money payment attempt. A teacher pays for a plan period up front
+/// through Orange Money or Lonestar Cell MoMo; on success we extend their
+/// subscription. externalRef is the provider's transaction reference used to
+/// poll status and to reconcile provider callbacks.
+model Payment {
+  id       String @id @default(cuid())
+  userId   String
+  user     User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  plan     Plan
+  provider PaymentProvider
+  status   PaymentStatus @default(PENDING)
+
+  /// Amount in minor units (e.g. cents) and the ISO currency code, captured at
+  /// initiation so a later price change cannot alter a pending payment.
+  amountMinor Int
+  currency    String
+
+  /// The mobile money number charged, normalised to +231XXXXXXXX.
+  msisdn String
+
+  /// Our own reference sent to the provider (idempotency key / order id).
+  reference String @unique
+  /// The provider's transaction id or pay token, once known.
+  externalRef String?
+
+  failureReason String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId, createdAt])
+  @@index([status])
 }
 
 /// One row per Nyvora message charged against the user's allowance.

@@ -1,67 +1,93 @@
 "use server";
 
 import { redirect } from "next/navigation";
-import type { Plan } from "@prisma/client";
+import { randomUUID } from "node:crypto";
+import type { PaymentProvider, Plan } from "@prisma/client";
 
 import { prisma } from "@/lib/db";
-import { requireUser } from "@/lib/auth";
-import { getStripe, appUrl } from "@/lib/stripe";
-import { priceIdForPlan } from "@/lib/plans";
+import { requireUser, normalizePhone } from "@/lib/auth";
+import { getGateway, configuredGateways, appUrl } from "@/lib/payments";
+import { PLANS, amountMinor, PAYMENT_CURRENCY, isPaidPlan } from "@/lib/plans";
 
-/// Creates a Stripe Checkout session for the chosen plan and redirects the
-/// teacher to it. Reuses an existing Stripe customer where we have one.
-export async function startCheckout(formData: FormData): Promise<void> {
+/// Starts a mobile money payment for the chosen plan. Creates a PENDING
+/// Payment, asks the provider to collect, and routes the teacher either to the
+/// provider's hosted page (Orange) or to our pending page to await the phone
+/// prompt (Lonestar).
+export async function startPayment(formData: FormData): Promise<void> {
   const user = await requireUser();
+
   const plan = String(formData.get("plan") ?? "") as Plan;
+  const provider = String(formData.get("provider") ?? "") as PaymentProvider;
+  const rawPhone = String(formData.get("phone") ?? "");
 
-  const stripe = getStripe();
-  const priceId = priceIdForPlan(plan);
-
-  if (!stripe || !priceId) {
-    // Not configured — send back to billing with a flag we can show.
-    redirect("/billing?error=unconfigured");
+  if (!PLANS[plan] || !isPaidPlan(plan)) {
+    redirect("/billing?error=invalid");
   }
 
-  let customerId = user.stripeCustomerId;
-  if (!customerId) {
-    const customer = await stripe.customers.create({
-      metadata: { userId: user.id },
-      name: user.fullName ?? user.username,
-    });
-    customerId = customer.id;
-    await prisma.user.update({
-      where: { id: user.id },
-      data: { stripeCustomerId: customerId },
-    });
+  const gateway = configuredGateways().find((g) => g.id === provider);
+  if (!gateway) {
+    redirect("/billing?error=unavailable");
   }
 
-  const session = await stripe.checkout.sessions.create({
-    mode: "subscription",
-    customer: customerId,
-    line_items: [{ price: priceId, quantity: 1 }],
-    success_url: `${appUrl()}/billing?status=success`,
-    cancel_url: `${appUrl()}/billing?status=cancelled`,
-    metadata: { userId: user.id, plan },
-    subscription_data: { metadata: { userId: user.id, plan } },
+  const msisdn = normalizePhone(rawPhone);
+  if (!msisdn) {
+    redirect("/billing?error=phone");
+  }
+
+  // Remember the number for next time.
+  await prisma.user.update({
+    where: { id: user.id },
+    data: { momoPhone: msisdn },
   });
 
-  if (!session.url) redirect("/billing?error=unconfigured");
-  redirect(session.url);
-}
-
-/// Opens the Stripe billing portal so teachers can manage or cancel.
-export async function openBillingPortal(): Promise<void> {
-  const user = await requireUser();
-  const stripe = getStripe();
-
-  if (!stripe || !user.stripeCustomerId) {
-    redirect("/billing?error=unconfigured");
-  }
-
-  const session = await stripe.billingPortal.sessions.create({
-    customer: user.stripeCustomerId,
-    return_url: `${appUrl()}/billing`,
+  const reference = `NUVEX-${randomUUID()}`;
+  const payment = await prisma.payment.create({
+    data: {
+      userId: user.id,
+      plan,
+      provider,
+      status: "PENDING",
+      amountMinor: amountMinor(plan),
+      currency: PAYMENT_CURRENCY,
+      msisdn,
+      reference,
+    },
   });
 
-  redirect(session.url);
+  const returnUrl = `${appUrl()}/billing/confirm?p=${payment.id}`;
+  const callbackUrl = `${appUrl()}/api/payments/callback/${provider.toLowerCase()}`;
+
+  let result;
+  try {
+    result = await getGateway(provider).initiate({
+      reference,
+      amountMinor: payment.amountMinor,
+      currency: payment.currency,
+      msisdn,
+      planName: PLANS[plan].name,
+      returnUrl,
+      callbackUrl,
+    });
+  } catch (e) {
+    console.error("Payment initiation failed", e);
+    await prisma.payment.update({
+      where: { id: payment.id },
+      data: { status: "FAILED", failureReason: "Could not reach the provider" },
+    });
+    redirect("/billing?error=provider");
+  }
+
+  if (result.externalRef) {
+    await prisma.payment.update({
+      where: { id: payment.id },
+      data: { externalRef: result.externalRef },
+    });
+  }
+
+  if (result.kind === "redirect") {
+    redirect(result.url);
+  }
+
+  // Push flow: go wait for the phone prompt to be approved.
+  redirect(`/billing/confirm?p=${payment.id}`);
 }

@@ -1,39 +1,53 @@
 import { requireUser, activePlan } from "@/lib/auth";
 import { getQuota } from "@/lib/quota";
 import { PLANS, PAID_PLANS, type PlanConfig } from "@/lib/plans";
-import { startCheckout, openBillingPortal } from "@/app/actions/billing";
+import { configuredGateways } from "@/lib/payments";
+import { PlanCheckout, type ProviderOption } from "@/components/PlanCheckout";
+
+const ERRORS: Record<string, string> = {
+  invalid: "That plan is not available.",
+  unavailable: "That payment method is not set up yet.",
+  phone: "Please enter a valid Liberian mobile money number.",
+  provider: "We could not reach the payment provider. Please try again.",
+};
 
 export default async function BillingPage({
   searchParams,
 }: {
-  searchParams: Promise<{ status?: string; error?: string }>;
+  searchParams: Promise<{ error?: string }>;
 }) {
   const user = await requireUser();
   const [quota, sp] = await Promise.all([getQuota(user), searchParams]);
   const current = activePlan(user);
-  const sub = user.subscription;
+
+  const providers: ProviderOption[] = configuredGateways().map((g) => ({
+    id: g.id,
+    label: g.label,
+    hint: g.hint,
+  }));
+  const defaultPhone = user.momoPhone ?? user.phone ?? "";
 
   return (
     <div className="animate-fade-up">
       <h1 className="text-2xl font-bold tracking-tight">Your plan</h1>
       <p className="mt-1 text-ink-muted">
         Every plan includes all lesson notes and plans. Paid plans add
-        teacher-only test questions and more Nyvora messages.
+        teacher-only test questions and more Nyvora messages. Pay with Orange
+        Money or Lonestar Cell MoMo.
       </p>
 
-      {sp.status === "success" && (
-        <Banner tone="positive">
-          Payment received. Your plan will update within a moment.
-        </Banner>
+      {sp.error && ERRORS[sp.error] && (
+        <div className="mt-4 rounded-xl border border-danger/30 bg-danger/10 px-4 py-3 text-sm text-danger">
+          {ERRORS[sp.error]}
+        </div>
       )}
-      {sp.status === "cancelled" && (
-        <Banner tone="muted">Checkout cancelled. No charge was made.</Banner>
-      )}
-      {sp.error === "unconfigured" && (
-        <Banner tone="warning">
-          Payments are not configured in this environment yet. Add your Stripe
-          keys and price IDs to enable upgrades.
-        </Banner>
+
+      {providers.length === 0 && (
+        <div className="mt-4 rounded-xl border border-warning/30 bg-warning/10 px-4 py-3 text-sm text-warning">
+          Mobile money is not configured in this environment yet. Add your
+          Orange Money and/or Lonestar Cell (MTN MoMo) merchant credentials to
+          enable upgrades.
+        </div>
       )}
 
       <div className="mt-6 rounded-card border border-line bg-surface-raised p-5">
@@ -47,7 +61,8 @@ export default async function BillingPage({
               {quota.used} / {quota.limit} Nyvora messages used
             </div>
             <div className="text-ink-faint">
-              Resets {quota.windowEnd.toLocaleDateString()}
+              {current === "FREE" ? "Resets" : "Plan runs until"}{" "}
+              {quota.windowEnd.toLocaleDateString()}
             </div>
           </div>
         </div>
@@ -59,27 +74,29 @@ export default async function BillingPage({
             }}
           />
         </div>
-        {sub?.stripeSubscriptionId && (
-          <form action={openBillingPortal} className="mt-4">
-            <button
-              type="submit"
-              className="rounded-xl border border-line px-4 py-2 text-sm font-semibold transition hover:bg-surface-sunken"
-            >
-              Manage billing
-            </button>
-            {sub.cancelAtPeriodEnd && (
-              <span className="ml-3 text-sm text-warning">
-                Cancels on {sub.periodEnd.toLocaleDateString()}
-              </span>
-            )}
-          </form>
+        {current !== "FREE" && (
+          <p className="mt-3 text-xs text-ink-faint">
+            Mobile money plans do not renew automatically. Pay again any time to
+            extend — paying before your plan ends adds to your remaining days.
+          </p>
         )}
       </div>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <PlanTile plan={PLANS.FREE} current={current === "FREE"} />
+        <PlanTile
+          plan={PLANS.FREE}
+          current={current === "FREE"}
+          providers={providers}
+          defaultPhone={defaultPhone}
+        />
         {PAID_PLANS.map((p) => (
-          <PlanTile key={p.id} plan={p} current={current === p.id} />
+          <PlanTile
+            key={p.id}
+            plan={p}
+            current={current === p.id}
+            providers={providers}
+            defaultPhone={defaultPhone}
+          />
         ))}
       </div>
     </div>
@@ -89,9 +106,13 @@ export default async function BillingPage({
 function PlanTile({
   plan,
   current,
+  providers,
+  defaultPhone,
 }: {
   plan: PlanConfig;
   current: boolean;
+  providers: ProviderOption[];
+  defaultPhone: string;
 }) {
   const isFree = plan.id === "FREE";
   return (
@@ -126,42 +147,15 @@ function PlanTile({
           <div className="rounded-xl border border-line px-4 py-2.5 text-center text-sm font-medium text-ink-faint">
             Always free
           </div>
-        ) : current ? (
-          <div className="rounded-xl bg-surface-sunken px-4 py-2.5 text-center text-sm font-medium text-ink-muted">
-            Your plan
-          </div>
         ) : (
-          <form action={startCheckout}>
-            <input type="hidden" name="plan" value={plan.id} />
-            <button
-              type="submit"
-              className="w-full rounded-xl bg-brand px-4 py-2.5 text-sm font-semibold text-brand-ink transition hover:opacity-90"
-            >
-              Choose {plan.name}
-            </button>
-          </form>
+          <PlanCheckout
+            planId={plan.id}
+            planName={plan.name}
+            providers={providers}
+            defaultPhone={defaultPhone}
+          />
         )}
       </div>
-    </div>
-  );
-}
-
-function Banner({
-  tone,
-  children,
-}: {
-  tone: "positive" | "warning" | "muted";
-  children: React.ReactNode;
-}) {
-  const cls =
-    tone === "positive"
-      ? "border-positive/30 bg-positive/10 text-positive"
-      : tone === "warning"
-        ? "border-warning/30 bg-warning/10 text-warning"
-        : "border-line bg-surface-sunken text-ink-muted";
-  return (
-    <div className={`mt-4 rounded-xl border px-4 py-3 text-sm ${cls}`}>
-      {children}
     </div>
   );
 }
