@@ -71,6 +71,32 @@ npm run dev
 
 Open http://localhost:3000.
 
+## Deploy to Vercel
+
+The repo is set up to deploy in one step. On Vercel, the build command
+`vercel-build` runs automatically and **applies the database migration and seeds
+the curriculum** before building — so a fresh deploy comes up with all tables and
+all 12 subjects already in place. You do not need to run any database commands by
+hand.
+
+1. **Create a Postgres database** (Neon, Supabase, or Vercel Postgres) and copy
+   its connection string.
+2. **Import the repo into Vercel** (New Project → pick this repository). Vercel
+   detects Next.js automatically.
+3. **Add environment variables** in the Vercel project settings:
+   - `DATABASE_URL` — required (the connection string from step 1)
+   - `AUTH_SECRET` — required (`openssl rand -base64 48`)
+   - `NEXT_PUBLIC_APP_URL` — your deployment URL, e.g. `https://your-app.vercel.app`
+   - `ANTHROPIC_API_KEY` — optional, enables Nyvora
+   - `LONESTAR_MOMO_*` / `ORANGE_MONEY_*` — optional, enable mobile money
+4. **Deploy.** The build migrates and seeds the database, then serves the app.
+
+Notes:
+- The seed is idempotent (it upserts), so it re-runs safely on every deploy.
+- If the database already has tables from a previous `db:push`, run
+  `npx prisma migrate resolve --applied 20260729000000_init` once against it
+  before deploying, so `migrate deploy` treats the initial migration as done.
+
 ## Subject codes
 
 The five test questions per topic are gated behind a per-subject code that a
