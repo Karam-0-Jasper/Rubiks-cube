@@ -1,11 +1,17 @@
 import type { SubjectContent } from "@/content/types";
 
+// Aligned to the Liberian MoE National Curriculum for Geography (Grades 10-12).
+// Grade 10, Semester One, Period I, Unit 1: Physical Geography — The Solar
+// System: the Earth as a planet; shape and size of the Earth; latitude,
+// longitude and time; the Earth's movements. Earth's structure and rocks
+// (P2), population and settlement (P3), map reading (P4) follow in later
+// periods.
 export const geography: SubjectContent = {
   slug: "geography",
   name: "Geography",
   shortName: "Geography",
   description:
-    "The scope of geography, the earth in the solar system, map reading, and rocks of the earth's crust.",
+    "Physical geography and the solar system: the Earth as a planet, its shape and size, latitude, longitude and time, and the Earth's movements.",
   accent: "teal",
   sortOrder: 6,
   teacherCode: "GEO-10-5520",
@@ -13,1010 +19,376 @@ export const geography: SubjectContent = {
     {
       grade: 10,
       number: 1,
-      title: "The Earth and its Representation",
+      title: "The Earth and the Solar System",
       summary:
-        "Learners establish what geography studies, place the earth in the solar system, learn to read and interpret maps, and examine the rocks that form the crust beneath them.",
+        "Period I of the MoE Grade 10 Geography syllabus (Unit 1: The Solar System). Learners place the Earth in the solar system, describe its shape and size, use latitude and longitude to locate places and calculate time, and explain the effects of the Earth's rotation and revolution.",
       topics: [
         {
-          slug: "introduction-to-geography",
-          title: "Introduction to Geography",
+          slug: "earth-as-a-planet",
+          title: "The Earth as a Planet",
           objective:
-            "By the end of the lesson, learners should be able to define geography, distinguish its main branches, and explain the importance of geographical study to Liberia's development.",
-          estimatedMinutes: 80,
-          notes: `## Defining geography
-
-**Geography** is the study of the earth as the home of human beings — its physical features, its climate, its resources, its peoples, and the relationships between them.
-
-The word derives from the Greek *geo* (earth) and *graphein* (to write or describe).
-
-## The two main branches
-
-**Physical geography** — the natural environment.
-
-- *Geomorphology* — landforms and the processes that shape them
-- *Climatology* — climate and weather
-- *Hydrology* — water bodies
-- *Biogeography* — the distribution of plants and animals
-- *Pedology* — soils
-
-**Human geography** — people and their activities.
-
-- *Population geography* — distribution, density, growth and migration
-- *Economic geography* — production, trade and resources
-- *Settlement geography* — where and why people live in particular places
-- *Political geography* — boundaries, states and territory
-- *Historical geography* — change over time
-
-A third area, **regional geography**, studies particular areas in an integrated way, drawing on both branches.
-
-## Key concepts
-
-**Location** — where a place is.
-
-- *Absolute location*: given by latitude and longitude. Monrovia lies at approximately 6 degrees 19 minutes north, 10 degrees 48 minutes west.
-- *Relative location*: given in relation to other places. Liberia lies on the west coast of Africa, bordered by Sierra Leone, Guinea and Côte d'Ivoire.
-
-**Place** — the physical and human characteristics that make a location distinctive.
-
-**Region** — an area sharing common characteristics, whether physical (the coastal plain), economic (the iron ore belt) or cultural.
-
-**Interaction between people and environment** — how each shapes the other.
-
-**Movement** — of people, goods, ideas and information.
-
-## Why geography matters to Liberia
-
-- **Resource management.** Liberia holds substantial iron ore, gold, diamonds, timber and rubber. Locating, extracting and transporting these requires geographical knowledge.
-- **Agriculture.** Rainfall patterns, soil types and drainage determine what will grow and where.
-- **Disaster preparedness.** Coastal erosion along the Atlantic seaboard and seasonal flooding in low-lying areas of Monrovia require mapping and planning.
-- **Planning and infrastructure.** Roads, schools, clinics and markets must be sited in relation to where people actually live.
-- **Understanding population distribution.** Montserrado County holds a far larger share of the national population than its area would suggest, with consequences for services.
-
-## Liberia in brief
-
-- Area: approximately 111,369 square kilometres
-- Coastline: roughly 579 kilometres on the Atlantic Ocean
-- Counties: 15
-- Capital: Monrovia, in Montserrado County
-- Climate: tropical, with a distinct wet season from May to October
-- Major rivers: the St. Paul, the St. John, the Cavalla, the Lofa and the Mano`,
-          workedExample: `**Question:** A development agency plans to build a new agricultural training centre to serve rice farmers in northern Liberia. Explain how each of the five key geographical concepts would inform the siting decision.
-
-**Solution**
-
-*Step 1 — Location.*
-
-The **absolute location** must be fixed by coordinates so that the site can be recorded, mapped and found again. The **relative location** matters more for the decision: the centre should lie within reasonable travelling distance of the farming communities it serves, and near an existing road.
-
-*Step 2 — Place.*
-
-The physical characteristics of the candidate site must suit its purpose. Rice requires reliable water, so the site needs adequate rainfall and access to a river or swampland for demonstration plots. Soil must be suitable for the crop being taught. A site on steep, stony ground would fail regardless of how convenient it was.
-
-*Step 3 — Region.*
-
-The centre should serve a coherent agricultural region. Lofa, Bong and Nimba Counties share broadly similar rainfall and growing conditions, so training developed for one is applicable across the region. Siting the centre to serve areas with quite different conditions would reduce the value of the instruction given.
-
-*Step 4 — Human-environment interaction.*
-
-Building the centre will itself alter the environment — land cleared, water drawn, waste produced. The planners must consider whether the site can absorb that impact, and equally whether the environment threatens the centre, for example through seasonal flooding.
-
-*Step 5 — Movement.*
-
-Farmers must be able to reach the centre, and produce, seed and equipment must be able to reach the farmers. A site cut off for four months of the rainy season is not usable, however good it is in other respects. Accessibility in the **worst** season, not the best, is the correct test.
-
-**Conclusion:** the strongest site is one that is centrally placed within a coherent farming region, on suitable soil with reliable water, reachable by road throughout the year, and able to accommodate the centre without environmental damage. This is what geographers mean when they say that geography integrates physical and human considerations — no single factor decides the question.`,
-          teachingTip:
-            "Begin from where the learners are, literally. Ask them to describe the route from their home to the school, then push them to say why the road bends where it does, why the market sits where it sits, why nobody has built on a particular patch of ground. Within ten minutes the class will have produced examples of relief, drainage, accessibility and land use without any of those words being used, and you can then supply the vocabulary for what they already noticed. This inoculates against the commonest attitude problem in the subject — the belief that geography is a list of capitals and rivers to be memorised. Keep a large map of Liberia on the wall from the first lesson and refer to it constantly; learners who can find Lofa and Grand Gedeh without hunting are learners who will engage with everything that follows.",
-          quiz: [
-            {
-              prompt: "The word 'geography' derives from Greek words meaning",
-              options: [
-                "earth and study",
-                "earth and to write or describe",
-                "land and people",
-                "map and measure",
-              ],
-              correctIndex: 1,
-              explanation: "From geo, meaning earth, and graphein, to write or describe.",
-            },
-            {
-              prompt: "Which of these is a branch of physical geography?",
-              options: [
-                "Population geography",
-                "Economic geography",
-                "Geomorphology",
-                "Political geography",
-              ],
-              correctIndex: 2,
-              explanation:
-                "Geomorphology studies landforms and the processes that shape them.",
-            },
-            {
-              prompt: "Absolute location is best given by",
-              options: [
-                "the nearest town",
-                "latitude and longitude",
-                "the direction from the coast",
-                "the county name",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Coordinates fix a point precisely and independently of other places.",
-            },
-            {
-              prompt: "How many counties does Liberia have?",
-              options: ["12", "13", "15", "17"],
-              correctIndex: 2,
-              explanation: "Liberia is divided into 15 counties.",
-            },
-            {
-              prompt: "The study of climate and weather is called",
-              options: ["Hydrology", "Climatology", "Pedology", "Biogeography"],
-              correctIndex: 1,
-              explanation: "Climatology is the branch of physical geography dealing with climate.",
-            },
-            {
-              prompt: "Which is an example of human geography?",
-              options: [
-                "The formation of river valleys",
-                "The distribution of population in Montserrado County",
-                "The classification of soils",
-                "Patterns of rainfall",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Population distribution concerns people and their activities.",
-            },
-            {
-              prompt: "Liberia's capital city, Monrovia, lies in which county?",
-              options: ["Bong", "Nimba", "Montserrado", "Grand Bassa"],
-              correctIndex: 2,
-              explanation: "Monrovia is the capital and lies in Montserrado County.",
-            },
-            {
-              prompt: "A region is best defined as an area that",
-              options: [
-                "has a fixed size",
-                "shares common characteristics",
-                "lies on the coast",
-                "contains a capital city",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Regions may be physical, economic or cultural, but are unified by shared features.",
-            },
-            {
-              prompt: "Which river forms part of Liberia's eastern boundary?",
-              options: ["St. Paul", "Cavalla", "Lofa", "Mano"],
-              correctIndex: 1,
-              explanation:
-                "The Cavalla River forms much of the boundary with Côte d'Ivoire; the Mano lies to the west.",
-            },
-            {
-              prompt: "The study of soils is known as",
-              options: ["Pedology", "Hydrology", "Climatology", "Cartography"],
-              correctIndex: 0,
-              explanation: "Pedology is the scientific study of soils in their natural setting.",
-            },
-          ],
-          test: [
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Define geography and distinguish clearly between its physical and human branches, naming three sub-branches of each.",
-              answerKey:
-                "Definition: the study of the earth as the home of human beings, covering its physical features, climate, resources and peoples, and the relationships between them. Physical geography deals with the natural environment — geomorphology, climatology, hydrology, biogeography, pedology. Human geography deals with people and their activities — population, economic, settlement, political, historical geography. Award 3 marks for the definition, 3 for the distinction, 1 mark per correctly named sub-branch up to 6.",
-              marks: 12,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Explain the difference between absolute and relative location, giving an example of each for a place in Liberia.",
-              answerKey:
-                "Absolute location fixes a place by coordinates of latitude and longitude, independent of any other place — for example Monrovia at approximately 6 degrees 19 minutes north, 10 degrees 48 minutes west. Relative location describes a place in relation to others — for example Monrovia lies on the Atlantic coast, north-west of Buchanan and south-east of the Sierra Leonean border. Award 3 marks for each definition and 2 marks for each appropriate example.",
-              marks: 10,
-            },
-            {
-              type: "MULTIPLE_CHOICE",
-              prompt:
-                "A geographer studying why iron ore mining developed at Bomi Hills rather than elsewhere is working principally in",
-              options: [
-                "Climatology",
-                "Economic geography",
-                "Biogeography",
-                "Pedology",
-              ],
-              correctIndex: 1,
-              answerKey:
-                "The question concerns resources, production and location of economic activity, which is the province of economic geography. Option B.",
-              marks: 4,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "State four ways in which the study of geography contributes to national development in Liberia.",
-              answerKey:
-                "Any four from: locating and managing mineral, forest and marine resources; planning agriculture according to rainfall, soils and drainage; siting infrastructure such as roads, schools and clinics in relation to population distribution; preparing for and mitigating hazards such as coastal erosion and seasonal flooding; informing urban planning in rapidly growing Monrovia; managing boundaries and territorial questions; supporting tourism development. Award 2 marks for each point stated and 1 further mark where it is developed with a specific Liberian example, to a maximum of 12.",
-              marks: 12,
-            },
-            {
-              type: "ESSAY",
-              prompt:
-                "'Geography is not a list of places but a way of asking questions about the world.' Discuss this statement with reference to the branches and key concepts of geography, and illustrate your answer with examples drawn from Liberia.",
-              answerKey:
-                "Award marks as follows: engagement with the statement, taking a clear position rather than merely describing the subject, 4 marks; treatment of the physical and human branches showing that geography integrates both rather than compartmentalising them, 6 marks; use of at least three key concepts — location, place, region, human-environment interaction, movement — as analytical tools rather than definitions, 9 marks; at least three developed Liberian examples, such as population concentration in Montserrado, rainfall and rice cultivation in the north, or coastal erosion at Buchanan, 9 marks; organisation, coherence and a conclusion that returns to the statement, 4 marks. A learner who recites branches and definitions without addressing the argument in the quotation should not exceed 14.",
-              marks: 32,
-            },
-          ],
-        },
-        {
-          slug: "earth-in-solar-system",
-          title: "The Earth in the Solar System",
-          objective:
-            "By the end of the lesson, learners should be able to describe the solar system, state the shape and dimensions of the earth, and explain the effects of the earth's rotation and revolution.",
-          estimatedMinutes: 80,
+            "By the end of the unit, learners should be able to describe the solar system, name the planets in order, distinguish inner from outer planets, and state the Earth's position and the conditions that make it able to support life.",
+          estimatedMinutes: 160,
           notes: `## The solar system
 
-The **sun** at the centre, with eight planets, their moons, asteroids, comets and meteoroids in orbit around it.
+The **solar system** is the Sun together with all the bodies that orbit it: **eight planets**, their moons, asteroids, comets and meteoroids.
 
-In order from the sun:
+The Sun is a **star** — a huge ball of hot gas — and its gravity holds the system together. It provides the light and heat on which life depends.
 
-**Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune**
+## The planets in order from the Sun
+
+**Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.**
+
+A common mnemonic: *My Very Easy Method Just Speeds Up Naming*.
 
 - **Inner (terrestrial) planets** — Mercury, Venus, Earth, Mars. Small, rocky, dense.
 - **Outer (Jovian) planets** — Jupiter, Saturn, Uranus, Neptune. Large, gaseous, with ring systems.
+- The **asteroid belt** lies between Mars and Jupiter.
 
-The **asteroid belt** lies between Mars and Jupiter.
+*(Pluto is now classed as a dwarf planet, not one of the eight.)*
 
-## The shape of the earth
+## Other members of the solar system
 
-The earth is an **oblate spheroid** — a sphere flattened at the poles and bulging at the equator, caused by its rotation.
+- **Moons (satellites)** — bodies orbiting a planet; the Earth has one Moon.
+- **Asteroids** — small rocky bodies, mostly in the belt between Mars and Jupiter.
+- **Comets** — bodies of ice and dust with long, glowing tails when near the Sun.
+- **Meteoroids** — small fragments; those that burn in the atmosphere are meteors ("shooting stars").
 
-- Equatorial diameter: about 12,756 km
-- Polar diameter: about 12,714 km
-- Circumference at the equator: about 40,075 km
+## The Earth's position
 
-**Evidence for a spherical earth:**
+The Earth is the **third planet** from the Sun. Its position is one reason it can support life:
 
-1. A ship appearing over the horizon shows its mast first, then its hull.
-2. The circular shadow the earth casts on the moon during a lunar eclipse.
-3. Photographs from space.
-4. Circumnavigation — travelling continuously in one direction returns you to the start.
-5. The altitude of the pole star changes as one moves north or south.
+- It is at the right distance for **liquid water** — not so close that water boils away (like Venus) nor so far that it freezes (like Mars).
+- It has an **atmosphere** containing oxygen and providing pressure and protection.
+- It has a **moderate temperature range** suitable for living things.
+- It has a protective **ozone layer** and a **magnetic field** shielding it from harmful radiation.
+
+This combination — the right distance, water, atmosphere and temperature — is why Earth is, so far as we know, the only planet that supports life.`,
+          workedExample: `**Question:** A learner claims that Jupiter, being the largest planet, must be the closest to the Sun and the most likely to support life. Correct the claim and explain properly.
+
+**Solution**
+
+*Error 1 — position.*
+Size has nothing to do with distance from the Sun. In order from the Sun the planets are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune. Jupiter is the **fifth** planet, well out beyond the asteroid belt — not the closest. **Mercury** is closest.
+
+*Error 2 — support for life.*
+Being large does not make a planet suitable for life. Jupiter is a **gas giant** with no solid surface, extreme cold and a crushing atmosphere. The planet that supports life is **Earth**, and it does so not because of size but because of its **position and conditions**:
+- the **right distance** from the Sun for liquid water;
+- an **atmosphere** with oxygen;
+- a **moderate temperature**;
+- protection from harmful radiation.
+
+*The corrected statement:* Jupiter is the largest planet but the fifth from the Sun; Mercury is the closest; and Earth, the third planet, supports life because of its distance and conditions, not because of any planet's size.
+
+**The lesson:** distance from the Sun and the ability to support life depend on a planet's position and conditions, not on how big it is.`,
+          teachingTip:
+            "Do the solar system to scale outside if you can, even roughly: pace out the planets across the schoolyard with the Sun at one end, and the vast empty gaps between the outer planets become real in a way a textbook diagram never manages. Attack the common error that a bigger planet is closer or better for life — ask why Earth, not giant Jupiter, has life, and let the class reason to distance, water and atmosphere. Keep the order drilled with a mnemonic the class invents themselves, and mention that Pluto was reclassified as a dwarf planet, which learners find genuinely interesting and remember.",
+          quiz: [
+            { prompt: "How many planets are in the solar system?", options: ["Seven", "Eight", "Nine", "Ten"], correctIndex: 1, explanation: "Eight, from Mercury to Neptune; Pluto is now a dwarf planet." },
+            { prompt: "Which planet is closest to the Sun?", options: ["Earth", "Venus", "Mercury", "Mars"], correctIndex: 2, explanation: "Mercury is the innermost planet." },
+            { prompt: "The Earth is the ___ planet from the Sun.", options: ["first", "second", "third", "fourth"], correctIndex: 2, explanation: "The order is Mercury, Venus, Earth (third)." },
+            { prompt: "The asteroid belt lies between", options: ["Earth and Mars", "Mars and Jupiter", "Jupiter and Saturn", "Venus and Earth"], correctIndex: 1, explanation: "Most asteroids orbit between Mars and Jupiter." },
+            { prompt: "Which are the inner (terrestrial) planets?", options: ["Jupiter, Saturn, Uranus, Neptune", "Mercury, Venus, Earth, Mars", "Earth, Mars, Jupiter, Saturn", "Mercury, Earth, Jupiter, Neptune"], correctIndex: 1, explanation: "The inner planets are small and rocky." },
+            { prompt: "The Sun is a", options: ["planet", "star", "moon", "comet"], correctIndex: 1, explanation: "The Sun is a star — a ball of hot gas." },
+            { prompt: "A body that orbits a planet is called a", options: ["comet", "moon (satellite)", "meteor", "star"], correctIndex: 1, explanation: "Moons or satellites orbit planets." },
+            { prompt: "Which is the largest planet?", options: ["Earth", "Saturn", "Jupiter", "Neptune"], correctIndex: 2, explanation: "Jupiter is the largest planet in the solar system." },
+            { prompt: "Comets are made mainly of", options: ["rock and metal", "ice and dust", "gas only", "water only"], correctIndex: 1, explanation: "Comets are icy bodies that grow tails near the Sun." },
+            { prompt: "What holds the solar system together?", options: ["The Earth's magnetism", "The Sun's gravity", "The atmosphere", "Sunlight"], correctIndex: 1, explanation: "The Sun's gravity keeps the planets in orbit." },
+            { prompt: "Which planet was reclassified as a dwarf planet?", options: ["Neptune", "Pluto", "Mars", "Mercury"], correctIndex: 1, explanation: "Pluto is now classed as a dwarf planet." },
+            { prompt: "The outer planets are described as", options: ["small and rocky", "large and gaseous", "closest to the Sun", "without moons"], correctIndex: 1, explanation: "Jupiter, Saturn, Uranus and Neptune are large gas giants." },
+            { prompt: "A 'shooting star' is really a", options: ["planet", "meteor burning in the atmosphere", "comet", "moon"], correctIndex: 1, explanation: "A meteoroid burning up in the atmosphere appears as a meteor." },
+            { prompt: "One reason Earth can support life is that it", options: ["is the biggest planet", "is at the right distance for liquid water", "has no atmosphere", "is closest to the Sun"], correctIndex: 1, explanation: "Its distance allows water to exist as a liquid." },
+            { prompt: "Which planet is known for its prominent rings?", options: ["Mars", "Saturn", "Mercury", "Venus"], correctIndex: 1, explanation: "Saturn's ring system is the most prominent." },
+            { prompt: "The correct order from the Sun begins", options: ["Venus, Mercury, Earth", "Mercury, Venus, Earth", "Earth, Venus, Mercury", "Mercury, Earth, Venus"], correctIndex: 1, explanation: "Mercury, then Venus, then Earth." },
+            { prompt: "Which gas in Earth's atmosphere is essential for animal life?", options: ["Hydrogen", "Oxygen", "Helium", "Neon"], correctIndex: 1, explanation: "Oxygen is needed for respiration." },
+            { prompt: "Mars is often called the", options: ["Blue Planet", "Red Planet", "Ringed Planet", "Morning Star"], correctIndex: 1, explanation: "Iron oxide gives Mars its reddish colour." },
+            { prompt: "The Earth has how many natural moons?", options: ["None", "One", "Two", "Four"], correctIndex: 1, explanation: "Earth has a single natural satellite, the Moon." },
+            { prompt: "Which layer helps shield the Earth from harmful radiation?", options: ["The asteroid belt", "The ozone layer", "The crust", "The equator"], correctIndex: 1, explanation: "The ozone layer absorbs harmful ultraviolet radiation." },
+          ],
+          test: [
+            { type: "SHORT_ANSWER", prompt: "Name the eight planets in order from the Sun and distinguish between the inner and outer planets.", answerKey: "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune — 4 marks for the correct order, deducting 1 per misplacement. Inner (terrestrial) planets Mercury–Mars are small, rocky and dense; outer (Jovian) planets Jupiter–Neptune are large, gaseous and have rings, separated by the asteroid belt — 4 marks for the distinction with at least two contrasts.", marks: 8 },
+            { type: "SHORT_ANSWER", prompt: "State four conditions that make the Earth able to support life.", answerKey: "The right distance from the Sun for liquid water; an atmosphere containing oxygen; a moderate temperature range; protection from harmful radiation by the ozone layer and magnetic field. Award 2 marks each.", marks: 8 },
+            { type: "MULTIPLE_CHOICE", prompt: "Which statement is correct?", options: ["Jupiter is closest to the Sun", "The Sun is a planet", "Earth is the third planet and supports life", "Pluto is the eighth planet"], correctIndex: 2, answerKey: "Earth is third from the Sun and the only known planet supporting life. Jupiter is fifth, the Sun is a star, and Pluto is a dwarf planet. Option C.", marks: 4 },
+            { type: "SHORT_ANSWER", prompt: "Distinguish between an asteroid, a comet and a meteor.", answerKey: "An asteroid is a small rocky body, mostly in the belt between Mars and Jupiter. A comet is a body of ice and dust that develops a glowing tail near the Sun. A meteor is a meteoroid burning up in the Earth's atmosphere, seen as a shooting star. Award 3 marks each.", marks: 9 },
+            { type: "ESSAY", prompt: "Explain why the Earth is able to support life while the other planets, as far as we know, cannot. Refer to at least four conditions.", answerKey: "Award marks for a developed treatment of at least four conditions: distance from the Sun allowing liquid water — neither boiling as on Venus nor frozen as on Mars, 4 marks; an atmosphere containing oxygen and providing pressure, 3 marks; a moderate temperature range, 3 marks; protection from harmful radiation by the ozone layer and magnetic field, 3 marks; the presence of liquid water itself, 3 marks. Award up to 4 further marks for coherent organisation and for contrasting Earth with an unsuitable planet. A learner who attributes Earth's life to its size should lose credit for that point.", marks: 15 },
+          ],
+        },
+        {
+          slug: "shape-and-size-of-the-earth",
+          title: "The Shape and Size of the Earth",
+          objective:
+            "By the end of the unit, learners should be able to describe the shape of the Earth, state its dimensions, and give evidence that the Earth is spherical rather than flat.",
+          estimatedMinutes: 120,
+          notes: `## The shape of the Earth
+
+The Earth is not a perfect sphere. It is an **oblate spheroid** — a sphere slightly **flattened at the poles** and **bulging at the equator**. This bulge is caused by the Earth's rotation.
+
+## The size of the Earth
+
+- Equatorial diameter: about **12 756 km**
+- Polar diameter: about **12 714 km** (slightly shorter — hence the flattening)
+- Circumference at the equator: about **40 075 km**
+
+## Evidence that the Earth is spherical
+
+1. **Ships and the horizon** — as a ship approaches, its **mast appears first**, then the hull rises into view; on departure the hull disappears first. A flat Earth would show the whole ship shrinking evenly.
+2. **The circular shadow on the Moon** — during a **lunar eclipse** the Earth casts a curved, circular shadow on the Moon, whatever its position; only a sphere always casts a circular shadow.
+3. **Photographs from space** — pictures taken from spacecraft and satellites show the Earth as a sphere.
+4. **Circumnavigation** — travelling continuously in one direction (as Magellan's expedition did) returns you to the starting point.
+5. **The changing altitude of the pole star** — as you travel north or south, the angle of the pole star above the horizon changes, which only happens on a curved surface.
+6. **The widening horizon with height** — the higher you climb, the further you can see, because the surface curves away.
+
+## Why the shape and size matter
+
+The Earth's spherical shape means the Sun's rays strike different latitudes at different angles, which is the basis of the world's climate zones. Its size and curvature are also why maps of large areas must deal with the problem of showing a curved surface on flat paper.`,
+          workedExample: `**Question:** Standing on the shore, a learner watches a ship sail away and notices that the lower part of the ship disappears before the top of its mast. He also hears that during a recent lunar eclipse the Earth's shadow on the Moon was curved. Explain how each observation shows that the Earth is spherical, and why a flat Earth would look different.
+
+**Solution**
+
+*Observation 1 — the ship's hull disappears first.*
+On a **curved (spherical) surface**, as the ship moves away it passes "over" the curve of the water. The bulge of the Earth's surface hides the **lower part (hull) first**, leaving the **mast** visible longest.
+*On a flat Earth*, the whole ship would simply appear smaller and smaller as it receded, shrinking evenly until it vanished — the hull and mast would disappear together. Because the hull goes first, the surface must curve.
+
+*Observation 2 — the curved shadow on the Moon.*
+During a **lunar eclipse** the Earth passes between the Sun and the Moon and casts its shadow on the Moon. That shadow is always **curved and circular**.
+*Only a sphere casts a circular shadow from every angle.* A flat disc would sometimes cast a straight-edged or oval shadow depending on its orientation. Since the Earth's shadow is always circular, the Earth is a sphere.
+
+**Conclusion:** both observations — the hull vanishing before the mast, and the always-circular shadow — are explained by a spherical Earth and would not occur on a flat one. Together they are strong, everyday evidence that the Earth is a sphere.`,
+          teachingTip:
+            "The ship-and-horizon evidence is the one learners can almost see for themselves, so build the lesson around it: draw a curved surface and a flat one on the board and ask, for each, what would happen as a ship sailed away — the class works out that only the curved surface hides the hull first. That reasoning, rather than a bare list of 'proofs', is what an examination rewards. Bring in the lunar-eclipse shadow and the space photographs to reinforce it. Keep the shape precise — an oblate spheroid, flattened at the poles — and connect the flattening to rotation, which ties this topic to the Earth's movements taught later in the same period.",
+          quiz: [
+            { prompt: "The shape of the Earth is best described as", options: ["a perfect sphere", "an oblate spheroid", "a flat disc", "a cube"], correctIndex: 1, explanation: "It is flattened at the poles and bulges at the equator." },
+            { prompt: "The Earth is flattened at the", options: ["equator", "poles", "tropics", "prime meridian"], correctIndex: 1, explanation: "Rotation causes flattening at the poles and bulging at the equator." },
+            { prompt: "The equatorial diameter of the Earth is about", options: ["6 400 km", "12 756 km", "40 075 km", "150 000 km"], correctIndex: 1, explanation: "About 12 756 km; the circumference is about 40 075 km." },
+            { prompt: "As a ship approaches the shore, which part appears first?", options: ["The hull", "The mast", "The whole ship at once", "The anchor"], correctIndex: 1, explanation: "The mast appears first because the surface curves." },
+            { prompt: "During a lunar eclipse, the Earth's shadow on the Moon is", options: ["square", "straight-edged", "curved and circular", "invisible"], correctIndex: 2, explanation: "Only a sphere always casts a circular shadow." },
+            { prompt: "Which is evidence that the Earth is spherical?", options: ["The Sun rises in the east", "Circumnavigation returns you to the start", "Days are 24 hours long", "There are four seasons"], correctIndex: 1, explanation: "Travelling one way and returning shows a closed, curved surface." },
+            { prompt: "The bulge at the equator is caused by the Earth's", options: ["atmosphere", "rotation", "orbit around the Sun", "magnetic field"], correctIndex: 1, explanation: "Spinning throws material outward at the equator." },
+            { prompt: "The circumference of the Earth at the equator is about", options: ["12 714 km", "40 075 km", "1 000 km", "150 million km"], correctIndex: 1, explanation: "About 40 075 km around the equator." },
+            { prompt: "Photographs of the Earth from space show it as", options: ["a flat disc", "a sphere", "a cube", "a ring"], correctIndex: 1, explanation: "Space images show a spherical Earth." },
+            { prompt: "The polar diameter of the Earth is", options: ["longer than the equatorial diameter", "shorter than the equatorial diameter", "exactly the same", "zero"], correctIndex: 1, explanation: "The Earth is flattened at the poles, so the polar diameter is slightly shorter." },
+            { prompt: "Why can you see further from the top of a hill than from the ground?", options: ["The air is clearer only", "The surface curves away, so height extends the horizon", "The Sun is closer", "The Earth is flat"], correctIndex: 1, explanation: "Greater height sees over the curve of the Earth." },
+            { prompt: "The changing altitude of the pole star as you travel north or south shows that", options: ["the Earth is flat", "the surface is curved", "stars move", "the Earth is stationary"], correctIndex: 1, explanation: "Only on a curved surface does the star's angle change with latitude." },
+            { prompt: "Magellan's expedition supported a spherical Earth by", options: ["measuring the Sun", "sailing continuously in one direction and returning", "photographing the Moon", "digging a tunnel"], correctIndex: 1, explanation: "Circumnavigation returns to the start on a sphere." },
+            { prompt: "An oblate spheroid means a sphere that is", options: ["flattened at the poles", "flattened at the equator", "stretched into an egg shape lengthwise", "perfectly round"], correctIndex: 0, explanation: "It bulges at the equator and is flattened at the poles." },
+            { prompt: "On a flat Earth, a departing ship would", options: ["have its hull disappear first", "shrink evenly and vanish all at once", "have its mast disappear first", "grow larger"], correctIndex: 1, explanation: "Without curvature it would simply shrink evenly; the hull-first effect needs a sphere." },
+            { prompt: "The Earth's spherical shape causes the Sun's rays to strike different latitudes at", options: ["the same angle", "different angles", "night only", "no angle"], correctIndex: 1, explanation: "Curvature means rays hit the equator and poles at different angles, shaping climate." },
+            { prompt: "Which of these is NOT evidence for a spherical Earth?", options: ["Curved shadow in a lunar eclipse", "Ships' hulls disappearing first", "The sky being blue", "Photographs from space"], correctIndex: 2, explanation: "A blue sky results from light scattering, not from the Earth's shape." },
+            { prompt: "The difference between the equatorial and polar diameters is about", options: ["4 km", "42 km", "400 km", "4000 km"], correctIndex: 1, explanation: "12 756 − 12 714 ≈ 42 km, the effect of flattening." },
+            { prompt: "The horizon appears ___ from a high vantage point.", options: ["closer", "wider", "square", "invisible"], correctIndex: 1, explanation: "Height lets you see further over the curve, widening the horizon." },
+            { prompt: "The main cause of the Earth's equatorial bulge is", options: ["heat from the Sun", "its rotation on its axis", "the pull of the Moon only", "ocean currents"], correctIndex: 1, explanation: "Rotation flings material outward at the equator." },
+          ],
+          test: [
+            { type: "SHORT_ANSWER", prompt: "Describe the shape of the Earth precisely and give its approximate equatorial diameter and circumference.", answerKey: "The Earth is an oblate spheroid — a sphere flattened at the poles and bulging at the equator, the bulge caused by rotation. Equatorial diameter about 12 756 km; equatorial circumference about 40 075 km. Award 4 marks for the shape with the reason, 2 for the diameter, 2 for the circumference.", marks: 8 },
+            { type: "SHORT_ANSWER", prompt: "Give four pieces of evidence that the Earth is spherical.", answerKey: "Any four: a ship's mast appears before its hull (and vice versa on departure); the Earth casts a circular shadow on the Moon during a lunar eclipse; photographs from space; circumnavigation returns to the start; the pole star's altitude changes with latitude; the horizon widens with height. Award 2 marks each with brief explanation.", marks: 8 },
+            { type: "MULTIPLE_CHOICE", prompt: "Which observation could NOT occur on a flat Earth?", options: ["The Sun rising", "A ship's hull disappearing before its mast", "Clouds forming", "Rain falling"], correctIndex: 1, answerKey: "The hull-before-mast effect requires a curved surface; the others happen regardless of shape. Option B.", marks: 4 },
+            { type: "SHORT_ANSWER", prompt: "Explain why the Earth bulges at the equator and is flattened at the poles.", answerKey: "The Earth rotates on its axis. Rotation throws material outward most strongly at the equator, where the spin speed is greatest, producing a bulge; correspondingly the poles, on the axis of rotation, are drawn in and flattened. The result is an oblate spheroid. Award up to 6 marks for a clear explanation linking rotation to the bulge and flattening.", marks: 6 },
+            { type: "ESSAY", prompt: "'Everyday observations, not just space photographs, show that the Earth is a sphere.' Discuss this statement using at least four lines of evidence, explaining in each case why a flat Earth would look different.", answerKey: "Award marks for at least four lines of evidence, each explained with the flat-Earth contrast: ship's hull disappearing first versus even shrinking, 4 marks; curved lunar-eclipse shadow versus a straight or oval one, 4 marks; circumnavigation returning to the start versus reaching an edge, 3 marks; changing pole-star altitude with latitude versus a fixed angle, 3 marks; widening horizon with height, 2 marks. Award up to 4 further marks for engaging with the statement's claim that everyday evidence suffices, and for organisation. A learner who only lists 'proofs' without the flat-Earth contrast should not exceed 10.", marks: 18 },
+          ],
+        },
+        {
+          slug: "latitude-longitude-and-time",
+          title: "Latitude, Longitude and Time",
+          objective:
+            "By the end of the unit, learners should be able to define latitude and longitude, use them to locate places, name the main lines of latitude, and calculate local time differences from longitude.",
+          estimatedMinutes: 160,
+          notes: `## Locating places on the globe
+
+Any place on Earth can be fixed using two sets of imaginary lines: **latitude** and **longitude**.
+
+## Latitude
+
+**Lines of latitude (parallels)** run **east–west**, parallel to the equator, and measure distance **north or south** of the equator in degrees (0° to 90°).
+
+- The **Equator** is 0°.
+- The **Tropic of Cancer** is 23½° N; the **Tropic of Capricorn** is 23½° S.
+- The **Arctic Circle** is 66½° N; the **Antarctic Circle** is 66½° S.
+- The **North Pole** is 90° N; the **South Pole** is 90° S.
+
+## Longitude
+
+**Lines of longitude (meridians)** run **north–south** from pole to pole and measure distance **east or west** of the Prime Meridian (0° to 180°).
+
+- The **Prime (Greenwich) Meridian** is 0°, passing through Greenwich, London.
+- The **180° meridian** on the opposite side is near the International Date Line.
+
+\`\`\`svg Latitude runs east-west (parallels); longitude runs north-south (meridians), meeting at the Equator and Prime Meridian.
+<svg viewBox="0 0 200 200" role="img" aria-label="Globe grid showing lines of latitude and longitude">
+  <circle cx="100" cy="100" r="85" fill="none" stroke="currentColor"/>
+  <line x1="15" y1="100" x2="185" y2="100" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M15 100 A 90 40 0 0 1 185 100" fill="none" stroke="currentColor" stroke-opacity="0.5"/>
+  <path d="M15 100 A 90 40 0 0 0 185 100" fill="none" stroke="currentColor" stroke-opacity="0.5"/>
+  <path d="M100 15 A 40 90 0 0 1 100 185" fill="none" stroke="currentColor" stroke-opacity="0.5"/>
+  <path d="M100 15 A 40 90 0 0 0 100 185" fill="none" stroke="currentColor" stroke-opacity="0.5"/>
+  <line x1="100" y1="15" x2="100" y2="185" stroke="currentColor" stroke-width="1.5"/>
+  <text x="188" y="98" font-size="9" fill="currentColor">Equator 0°</text>
+  <text x="104" y="13" font-size="9" fill="currentColor">Prime Meridian</text>
+</svg>
+\`\`\`
+
+## Longitude and time
+
+The Earth turns **360° in 24 hours**, so it turns **15° every hour** (360 ÷ 24 = 15).
+
+This means every 15° of longitude equals a **1-hour** time difference, and every 1° equals **4 minutes**.
+
+- Places **east** of a given meridian are **ahead** in time (the Sun rises there first).
+- Places **west** are **behind** in time.
+
+To find the time difference between two places:
+1. Find the **difference in longitude** (add if on opposite sides of 0°, subtract if on the same side).
+2. **Divide by 15** to get the difference in hours.
+3. **Add** the difference if going **east**, **subtract** if going **west**.
+
+## The International Date Line
+
+Roughly along 180°, this is where the date changes. Crossing it westward you move the calendar **forward one day**; crossing eastward you move it **back one day**.`,
+          workedExample: `**Question:** When it is 12:00 noon at Greenwich (0°), what is the local time at a town on longitude 45° W?
+
+**Solution**
+
+*Step 1 — the longitude difference.*
+The town is 45° west of Greenwich (0°), so the difference in longitude is **45°**.
+
+*Step 2 — convert to time.*
+The Earth turns 15° in one hour, so divide the longitude difference by 15:
+45 ÷ 15 = **3 hours**.
+
+*Step 3 — decide add or subtract.*
+The town is to the **west** of Greenwich. Places west are **behind** in time, so we **subtract**:
+12:00 noon − 3 hours = **9:00 a.m.**
+
+**Answer: 9:00 a.m.**
+
+*A quick check on direction:* the Sun rises in the east and moves west, so the Sun reaches Greenwich before it reaches a town 45° further west. The western town's clock must therefore be earlier — 9:00 a.m. when Greenwich is at noon. The reasoning agrees with the calculation.
+
+*The rule to carry away:* **longitude ÷ 15 = hours; east is ahead (add), west is behind (subtract).**`,
+          teachingTip:
+            "Latitude and longitude are confused constantly, so fix them with a physical image: latitude lines are the 'rungs of a ladder' running across, telling you how far up or down (north/south) you are; longitude lines run top to bottom from pole to pole. Say 'latitude = flat, like the equator' to lock the direction. For time, derive the 15°-per-hour rule with the class from 360 ÷ 24 rather than stating it, so they can rebuild it if they forget. Then drill the single sentence 'east is ahead, west is behind' until it is automatic, and always have learners sanity-check with the Sun: it rises in the east, so eastern places are ahead. A wall map with the grid marked, referred to constantly, does most of the teaching.",
+          quiz: [
+            { prompt: "Lines of latitude run", options: ["north–south", "east–west", "from pole to pole", "diagonally"], correctIndex: 1, explanation: "Parallels of latitude run east–west, parallel to the equator." },
+            { prompt: "Lines of longitude run", options: ["east–west", "north–south from pole to pole", "around the equator", "in circles"], correctIndex: 1, explanation: "Meridians of longitude run north–south." },
+            { prompt: "The Equator has a latitude of", options: ["0°", "23½° N", "66½° N", "90°"], correctIndex: 0, explanation: "The Equator is the 0° line of latitude." },
+            { prompt: "The Prime Meridian has a longitude of", options: ["90° E", "180°", "0°", "45° W"], correctIndex: 2, explanation: "The Greenwich Prime Meridian is 0° longitude." },
+            { prompt: "The Earth turns through how many degrees each hour?", options: ["10°", "15°", "24°", "45°"], correctIndex: 1, explanation: "360° ÷ 24 hours = 15° per hour." },
+            { prompt: "The Tropic of Cancer lies at", options: ["0°", "23½° N", "23½° S", "66½° N"], correctIndex: 1, explanation: "The Tropic of Cancer is 23½° north of the equator." },
+            { prompt: "Places east of a meridian are ___ in time.", options: ["behind", "ahead", "the same", "one day back"], correctIndex: 1, explanation: "The Sun rises in the east, so eastern places are ahead." },
+            { prompt: "1° of longitude equals a time difference of", options: ["1 minute", "4 minutes", "15 minutes", "1 hour"], correctIndex: 1, explanation: "60 minutes ÷ 15° = 4 minutes per degree." },
+            { prompt: "If it is 12:00 noon at 0°, the time at 30° E is", options: ["10:00 a.m.", "12:00 noon", "2:00 p.m.", "6:00 p.m."], correctIndex: 2, explanation: "30 ÷ 15 = 2 hours; east is ahead, so 12 + 2 = 2:00 p.m." },
+            { prompt: "The North Pole has a latitude of", options: ["0°", "45° N", "66½° N", "90° N"], correctIndex: 3, explanation: "The North Pole is 90° north." },
+            { prompt: "The International Date Line lies roughly along", options: ["0° longitude", "90° E", "180° longitude", "the equator"], correctIndex: 2, explanation: "It runs roughly along the 180° meridian." },
+            { prompt: "Monrovia lies at about 6° N, 10° W. The 6° N is its", options: ["longitude", "latitude", "altitude", "time zone"], correctIndex: 1, explanation: "The north–south position from the equator is latitude." },
+            { prompt: "If it is 12:00 noon at 0°, the time at 60° W is", options: ["8:00 a.m.", "4:00 p.m.", "10:00 a.m.", "6:00 a.m."], correctIndex: 0, explanation: "60 ÷ 15 = 4 hours; west is behind, so 12 − 4 = 8:00 a.m." },
+            { prompt: "The maximum value of longitude is", options: ["90°", "180°", "360°", "23½°"], correctIndex: 1, explanation: "Longitude runs 0° to 180° east and west." },
+            { prompt: "The maximum value of latitude is", options: ["90°", "180°", "360°", "66½°"], correctIndex: 0, explanation: "Latitude runs 0° at the equator to 90° at the poles." },
+            { prompt: "Lines of latitude are also called", options: ["meridians", "parallels", "time zones", "tropics only"], correctIndex: 1, explanation: "They run parallel to the equator, hence parallels." },
+            { prompt: "Which line passes through Greenwich, London?", options: ["The Equator", "The Prime Meridian", "The Tropic of Cancer", "The Date Line"], correctIndex: 1, explanation: "The Prime Meridian (0° longitude) runs through Greenwich." },
+            { prompt: "Crossing the International Date Line travelling west, you move the calendar", options: ["forward one day", "back one day", "forward one hour", "back one hour"], correctIndex: 0, explanation: "Westward across the line the date advances one day." },
+            { prompt: "The angular distance of a place north or south of the equator is its", options: ["longitude", "latitude", "altitude", "meridian"], correctIndex: 1, explanation: "Latitude measures distance north or south of the equator." },
+            { prompt: "Two towns 15° of longitude apart differ in time by", options: ["4 minutes", "30 minutes", "1 hour", "2 hours"], correctIndex: 2, explanation: "15° corresponds to one hour of time." },
+          ],
+          test: [
+            { type: "SHORT_ANSWER", prompt: "Define latitude and longitude, and state the latitude of the Equator, the Tropic of Cancer and the North Pole.", answerKey: "Latitude is the angular distance of a place north or south of the equator, measured along meridians (parallels run east–west). Longitude is the angular distance east or west of the Prime Meridian (meridians run north–south). Equator 0°; Tropic of Cancer 23½° N; North Pole 90° N. Award 3 marks per definition and 1 mark for each correct latitude.", marks: 9 },
+            { type: "SHORT_ANSWER", prompt: "Explain why the Earth turns through 15° of longitude each hour, and state the time difference caused by 1° of longitude.", answerKey: "The Earth completes one rotation of 360° in 24 hours, so it turns 360 ÷ 24 = 15° per hour. Therefore 1° corresponds to 60 ÷ 15 = 4 minutes of time. Award 4 marks for the 15°-per-hour derivation and 2 for the 4-minutes-per-degree result.", marks: 6 },
+            { type: "MULTIPLE_CHOICE", prompt: "When it is 12:00 noon at Greenwich (0°), what is the local time at 75° E?", options: ["7:00 a.m.", "5:00 p.m.", "9:00 a.m.", "3:00 p.m."], correctIndex: 1, answerKey: "75 ÷ 15 = 5 hours; east is ahead, so 12 noon + 5 = 5:00 p.m. Option B.", marks: 4 },
+            { type: "SHORT_ANSWER", prompt: "A town lies at 90° W. When it is 6:00 p.m. at Greenwich, find the local time at the town, showing your working.", answerKey: "Longitude difference = 90°. 90 ÷ 15 = 6 hours. The town is west of Greenwich, so subtract: 6:00 p.m. − 6 hours = 12:00 noon. Award 2 marks for the 6-hour difference, 2 for choosing to subtract (west is behind), 2 for the correct time of 12:00 noon.", marks: 6 },
+            { type: "ESSAY", prompt: "Explain how latitude and longitude are used to locate places and to calculate time differences, illustrating with a worked example of your own.", answerKey: "Award marks for: correct account of latitude (north–south of the equator, parallels, 0°–90°) and longitude (east–west of the Prime Meridian, meridians, 0°–180°) and how the two together fix any point, 6 marks; explanation that the Earth turns 15° per hour so longitude difference ÷ 15 = time difference, with east ahead and west behind, 6 marks; a correct original worked example calculating a local time from a longitude, 5 marks; clarity and organisation, 3 marks. A learner who confuses latitude with longitude, or east with west in the time rule, should lose the relevant marks.", marks: 20 },
+          ],
+        },
+        {
+          slug: "earths-movements",
+          title: "The Earth's Movements: Rotation and Revolution",
+          objective:
+            "By the end of the unit, learners should be able to distinguish the Earth's rotation from its revolution and explain their effects, including day and night, time differences, the seasons and leap years.",
+          estimatedMinutes: 160,
+          notes: `## Two movements
+
+The Earth has two motions at once:
+
+- **Rotation** — spinning on its own **axis**.
+- **Revolution** — travelling around the **Sun**.
 
 ## Rotation
 
-The earth spins on its own axis from **west to east**, completing one turn in **23 hours 56 minutes**, taken as 24 hours.
+The Earth spins on its axis from **west to east**, completing one turn in **24 hours** (more precisely 23 hours 56 minutes).
 
 **Effects of rotation:**
 
-- Day and night
-- The apparent rising of the sun in the east and setting in the west
-- Differences in time between places on different meridians — 15 degrees of longitude equals one hour
-- The deflection of winds and ocean currents (the Coriolis effect): to the right in the northern hemisphere, to the left in the southern
-- Daily rise and fall of tides
+1. **Day and night** — the side facing the Sun has day; the side facing away has night.
+2. The **apparent movement of the Sun** — rising in the east and setting in the west (because we spin eastward).
+3. **Differences in time** between places on different meridians (15° = 1 hour).
+4. The **deflection of winds and ocean currents** (the Coriolis effect) — to the right in the northern hemisphere, to the left in the southern.
+5. The daily **rise and fall of tides**.
 
 ## Revolution
 
-The earth travels around the sun in an elliptical orbit, taking **365 and one quarter days**.
+The Earth travels around the Sun in an **elliptical orbit**, taking **365¼ days** (one year).
 
-The quarter days accumulate: every fourth year an extra day is added to February, giving a **leap year** of 366 days.
+The quarter-days accumulate: every fourth year an extra day (29 February) is added, giving a **leap year** of 366 days.
 
-The earth's axis is tilted at **23 and a half degrees** from the vertical, and remains pointing in the same direction throughout the orbit.
+The Earth's axis is **tilted at 23½°** from the vertical and keeps pointing in the **same direction** throughout the orbit.
 
 **Effects of revolution:**
 
-- The seasons
-- Varying lengths of day and night through the year
-- The apparent movement of the sun between the Tropic of Cancer and the Tropic of Capricorn
+1. The **seasons**.
+2. **Varying lengths of day and night** through the year.
+3. The **apparent movement of the overhead Sun** between the Tropic of Cancer and the Tropic of Capricorn.
 
-## Solstices and equinoxes
+## The cause of the seasons
 
-- **21 June** — summer solstice. Sun overhead at the Tropic of Cancer (23.5 degrees north). Longest day in the northern hemisphere.
-- **22 December** — winter solstice. Sun overhead at the Tropic of Capricorn (23.5 degrees south).
-- **21 March and 23 September** — equinoxes. Sun overhead at the equator. Day and night equal everywhere.
+Seasons are caused by the **tilt of the axis combined with revolution** — **not** by the Earth's distance from the Sun. (In fact the Earth is closest to the Sun in early January, during northern winter.)
 
-## Why Liberia's seasons differ
+Because the axis keeps pointing the same way, different hemispheres lean towards the Sun at different points in the orbit:
+- When a hemisphere **leans towards** the Sun, its rays strike more directly and days are longer — **summer**.
+- When it **leans away**, rays strike at a low angle and days are shorter — **winter**.
 
-Liberia lies close to the equator, between about 4 and 8 degrees north. The sun is nearly overhead throughout the year, so temperature varies little. Instead of hot and cold seasons, Liberia has a **wet season** from May to October and a **dry season** from November to April, governed by the movement of the Inter-Tropical Convergence Zone rather than by the tilt-driven temperature seasons of higher latitudes.`,
-          workedExample: `**Question:** Explain why the earth experiences seasons, and account for the fact that Liberia has wet and dry seasons rather than the four temperature seasons experienced in Europe.
+## Why Liberia has wet and dry seasons, not four temperature seasons
 
-**Solution**
-
-*Step 1 — establish the cause of seasons.*
-
-Seasons arise from **two facts acting together**:
-
-1. The earth's axis is tilted at 23.5 degrees from the vertical.
-2. The axis remains pointing in the **same direction** throughout the orbit.
-
-It is a common error to attribute seasons to the earth's varying distance from the sun. This cannot be correct: the earth is in fact closest to the sun in early January, which is midwinter in the northern hemisphere. Distance is not the explanation.
-
-*Step 2 — show how the tilt produces seasons.*
-
-Because the axis keeps its direction, different hemispheres lean towards the sun at different points in the orbit.
-
-- In **June**, the northern hemisphere leans towards the sun. Sunlight strikes it more directly, is concentrated over a smaller area, and days are longer. This is northern summer.
-- In **December**, the northern hemisphere leans away. Sunlight arrives at a low angle, spread over a larger area, and days are shorter. This is northern winter.
-- The southern hemisphere experiences the reverse in each case.
-
-The controlling factor is the **angle at which sunlight strikes the surface** and the **length of daylight**, not the distance travelled.
-
-*Step 3 — apply this to Liberia.*
-
-Liberia lies between roughly 4 and 8 degrees north — very close to the equator.
-
-Near the equator, the sun is high in the sky throughout the year. The overhead sun migrates only between 23.5 north and 23.5 south, so a place at 6 north never experiences a large change in the angle of incoming sunlight. Day length also stays close to twelve hours all year.
-
-The result: **temperature varies very little between months**. There is no basis for temperature-defined seasons.
-
-*Step 4 — explain what determines Liberian seasons instead.*
-
-The seasons are defined by **rainfall**, controlled by the movement of the **Inter-Tropical Convergence Zone (ITCZ)**, the belt where the trade winds of the two hemispheres meet.
-
-- When the ITCZ moves north over Liberia, moist south-westerly winds from the Atlantic bring heavy rain: the **wet season, May to October**.
-- When it moves south, the dry, dusty **harmattan** from the Sahara dominates: the **dry season, November to April**.
-
-**Conclusion:** the tilt of the axis explains the temperature seasons of higher latitudes. Liberia, being near the equator, receives nearly constant insolation and therefore has seasons defined by rainfall rather than temperature.`,
-          teachingTip:
-            "The single most stubborn misconception in this topic is that summer occurs because the earth is nearer the sun. Confront it head-on: ask the class when they think the earth is closest to the sun, then tell them it is early January, and let them work out why that cannot explain northern summer. Follow immediately with a demonstration — a lamp or torch as the sun and a tilted globe carried around it, with the axis kept pointing at the same corner of the room throughout. Learners must see that the tilt does not swivel; that constancy is the entire mechanism. Have a learner carry the globe while another holds the torch so the class watches the changing angle of light on each hemisphere. Then bring it home by asking why they themselves do not experience four seasons, which turns an abstract lesson into an explanation of their own weather.",
-          quiz: [
-            {
-              prompt: "How many planets are there in the solar system?",
-              options: ["Seven", "Eight", "Nine", "Ten"],
-              correctIndex: 1,
-              explanation:
-                "Eight, from Mercury to Neptune; Pluto is now classed as a dwarf planet.",
-            },
-            {
-              prompt: "The earth's shape is best described as",
-              options: ["A perfect sphere", "An oblate spheroid", "A flat disc", "A cylinder"],
-              correctIndex: 1,
-              explanation:
-                "Rotation causes flattening at the poles and bulging at the equator.",
-            },
-            {
-              prompt: "The earth rotates on its axis from",
-              options: ["East to west", "West to east", "North to south", "South to north"],
-              correctIndex: 1,
-              explanation:
-                "West-to-east rotation makes the sun appear to rise in the east.",
-            },
-            {
-              prompt: "One complete revolution of the earth around the sun takes",
-              options: ["24 hours", "30 days", "365 and a quarter days", "12 months exactly"],
-              correctIndex: 2,
-              explanation:
-                "The extra quarter days accumulate into an additional day every fourth year.",
-            },
-            {
-              prompt: "The earth's axis is tilted at an angle of",
-              options: ["21.5 degrees", "23.5 degrees", "45 degrees", "66.5 degrees"],
-              correctIndex: 1,
-              explanation:
-                "The 23.5 degree tilt from the vertical is the cause of the seasons.",
-            },
-            {
-              prompt: "Which of these is an effect of the earth's rotation?",
-              options: ["The seasons", "Day and night", "Leap years", "The elliptical orbit"],
-              correctIndex: 1,
-              explanation:
-                "Rotation turns each part of the earth towards and away from the sun in turn.",
-            },
-            {
-              prompt: "How many degrees of longitude correspond to one hour of time?",
-              options: ["10", "15", "20", "24"],
-              correctIndex: 1,
-              explanation: "360 degrees divided by 24 hours gives 15 degrees per hour.",
-            },
-            {
-              prompt: "On 21 June the sun is overhead at the",
-              options: [
-                "Equator",
-                "Tropic of Cancer",
-                "Tropic of Capricorn",
-                "Arctic Circle",
-              ],
-              correctIndex: 1,
-              explanation:
-                "This is the June solstice, when the sun reaches 23.5 degrees north.",
-            },
-            {
-              prompt: "Liberia's seasons are defined mainly by variations in",
-              options: ["Temperature", "Rainfall", "Day length", "Wind speed alone"],
-              correctIndex: 1,
-              explanation:
-                "Near the equator temperature changes little, so wet and dry seasons are recognised instead.",
-            },
-            {
-              prompt: "Which is evidence that the earth is spherical?",
-              options: [
-                "The sun rises in the east",
-                "A ship's mast appears before its hull over the horizon",
-                "The earth has seasons",
-                "Days are 24 hours long",
-              ],
-              correctIndex: 1,
-              explanation:
-                "The curvature of the surface hides the lower part of an approaching ship.",
-            },
-          ],
-          test: [
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Name the eight planets in order from the sun and distinguish between the inner and outer planets.",
-              answerKey:
-                "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune — award 4 marks for the complete correct order, deducting 1 per misplacement. Inner or terrestrial planets (Mercury to Mars) are small, rocky and dense; outer or Jovian planets (Jupiter to Neptune) are large, gaseous and possess ring systems. The asteroid belt separates them. Award 4 marks for the distinction with at least two contrasting characteristics.",
-              marks: 8,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "State four effects of the earth's rotation and two effects of its revolution.",
-              answerKey:
-                "Rotation: day and night; apparent movement of the sun from east to west; differences in local time between meridians; deflection of winds and currents by the Coriolis effect; daily rise and fall of tides. Award 2 marks each for four. Revolution: the seasons; varying length of day and night through the year; the apparent migration of the overhead sun between the tropics; the calendar year and leap years. Award 2 marks each for two.",
-              marks: 12,
-            },
-            {
-              type: "MULTIPLE_CHOICE",
-              prompt:
-                "If it is 12 noon at Greenwich (0 degrees longitude), what is the local time at 45 degrees west?",
-              options: ["9:00 a.m.", "3:00 p.m.", "10:00 a.m.", "6:00 p.m."],
-              correctIndex: 0,
-              answerKey:
-                "45 divided by 15 gives 3 hours. Places west of Greenwich are behind, so 12 noon minus 3 hours is 9:00 a.m. Option A.",
-              marks: 4,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Give four pieces of evidence that the earth is spherical rather than flat.",
-              answerKey:
-                "Any four from: a ship's mast appears over the horizon before its hull, and disappears last on departure; the earth casts a circular shadow on the moon during a lunar eclipse; photographs taken from space and from high altitude show curvature; circumnavigation in a constant direction returns the traveller to the starting point; the altitude of the pole star above the horizon changes with latitude; the horizon appears circular from a high vantage point and widens with altitude. Award 2 marks per piece of evidence correctly explained; award 1 mark where the evidence is named but not explained.",
-              marks: 8,
-            },
-            {
-              type: "ESSAY",
-              prompt:
-                "Explain the causes of the seasons, distinguishing carefully between the effects of the earth's tilt and its distance from the sun. Then account for the pattern of wet and dry seasons experienced in Liberia.",
-              answerKey:
-                "Award marks as follows: statement that seasons result from the 23.5 degree axial tilt combined with the axis maintaining a constant direction throughout the orbit, 6 marks; explanation via the angle of incidence of sunlight and the duration of daylight, with the northern and southern hemispheres treated in turn, 8 marks; explicit refutation of the distance explanation, ideally noting that the earth is nearest the sun in early January during northern winter, 5 marks; correct account of solstices and equinoxes with dates and the latitude of the overhead sun, 5 marks; explanation of Liberia's position near the equator giving near-constant insolation and day length, hence minimal temperature variation, 5 marks; account of the Inter-Tropical Convergence Zone and its seasonal migration producing the May to October wet season and the November to April dry season with the harmattan, 6 marks. A learner who attributes seasons primarily to orbital distance should not exceed 10 regardless of other merit.",
-              marks: 35,
-            },
-          ],
-        },
-        {
-          slug: "map-reading",
-          title: "Maps and Map Reading",
-          objective:
-            "By the end of the lesson, learners should be able to state the elements of a map, calculate and convert scales, find distance and direction, give grid references, and interpret relief from contour patterns.",
-          estimatedMinutes: 80,
-          notes: `## What a map is
-
-A **map** is a representation of the whole or part of the earth's surface, drawn to scale on a flat surface.
-
-## Essential elements — remember TSKGON
-
-- **T**itle — what the map shows
-- **S**cale — the relationship between map distance and ground distance
-- **K**ey (legend) — the meaning of the symbols used
-- **G**rid — the reference system
-- **O**rientation — the north arrow
-- **N**ame of the maker and date
-
-## Types of map
-
-- **Topographical** — relief and physical features in detail
-- **Political** — boundaries, capitals and administrative divisions
-- **Physical** — landforms, drainage, elevation
-- **Thematic** — a single subject such as rainfall, population density or vegetation
-- **Sketch** — a rough map, not drawn to precise scale
-
-## Scale
-
-Three ways of expressing it:
-
-1. **Statement scale** — "1 centimetre represents 1 kilometre"
-2. **Representative fraction (RF)** — 1:100,000, meaning one unit on the map equals 100,000 identical units on the ground
-3. **Linear scale** — a marked bar on the map
-
-**Converting an RF to a statement:**
-
-For 1:50,000, one centimetre on the map represents 50,000 centimetres on the ground.
-
-50,000 cm = 50,000 / 100,000 km = **0.5 km**
-
-So 1 cm represents 0.5 km.
-
-**Large and small scale — do not confuse these:**
-
-- A **large-scale** map, such as 1:10,000, covers a **small area in great detail**.
-- A **small-scale** map, such as 1:1,000,000, covers a **large area with little detail**.
-
-The terms refer to the size of the fraction, not the size of the area shown.
-
-## Measuring distance
-
-- **Straight distances** — measure with a ruler and convert using the scale.
-- **Winding features** such as roads and rivers — lay a piece of thread along the feature, mark the ends, straighten it against a ruler, then convert.
-
-## Direction and bearing
-
-- The **cardinal points**: north, east, south, west.
-- A **bearing** is measured in degrees clockwise from north, always written with three figures: 045 degrees, 270 degrees.
-
-North on a map is at the top unless the north arrow indicates otherwise.
-
-## Grid references
-
-Vertical lines are **eastings**, numbered west to east.
-Horizontal lines are **northings**, numbered south to north.
-
-**Always read eastings first, then northings** — "along the corridor, then up the stairs".
-
-- A **four-figure reference** identifies a square: 3428.
-- A **six-figure reference** identifies a point within the square, by estimating tenths: 346285.
-
-## Contours and relief
-
-A **contour** is a line joining all points of equal height above sea level. The **contour interval** is the vertical difference between successive contours.
-
-Reading relief from contour spacing:
-
-- **Contours close together** — steep slope
-- **Contours far apart** — gentle slope
-- **Evenly spaced** — uniform slope
-- **Closely spaced at the top, widely spaced at the bottom** — concave slope
-- **Widely spaced at the top, closely spaced at the bottom** — convex slope
-- **Concentric closed circles** — a hill, with the smallest circle at the summit
-- **Closed circles with hachures pointing inward** — a depression
-- **Contours forming a V pointing upstream** — a valley
-- **Contours forming a V or U pointing downhill** — a spur
-
-The V-rule for valleys is worth learning precisely: the point of the V always points **towards higher ground**, that is upstream.`,
-          workedExample: `**Question:** On a map of scale 1:50,000, the straight-line distance between two towns measures 8.4 cm. A winding road between them measures 13.2 cm when followed with thread.
-
-(a) Convert the scale to a statement.
-(b) Calculate the straight-line distance on the ground in kilometres.
-(c) Calculate the road distance.
-(d) Explain why the two answers differ and which a traveller would experience.
+Liberia lies close to the equator (about 4°–8° N). The Sun is nearly overhead all year, so temperature changes little. Instead of hot and cold seasons, Liberia has a **wet season (May–October)** and a **dry season (November–April)**, governed by the movement of the rain-bringing wind belt (the Inter-Tropical Convergence Zone) rather than by the tilt-driven temperature seasons of higher latitudes.`,
+          workedExample: `**Question:** A learner says the Earth has seasons because it moves closer to and further from the Sun during the year. Explain why this is wrong, give the correct cause, and explain why Liberia does not have four temperature seasons.
 
 **Solution**
 
-**(a) Converting the scale**
+*Step 1 — why the distance explanation is wrong.*
+If seasons were caused by distance from the Sun, the whole Earth would be hot at the same time (when close) and cold at the same time (when far). But when it is summer in the northern hemisphere it is winter in the southern — the two hemispheres have **opposite** seasons at the same moment. Distance cannot explain that. In fact the Earth is **closest** to the Sun in early January, during northern **winter**, which shows distance is not the cause.
 
-RF = 1:50,000 means 1 cm on the map represents 50,000 cm on the ground.
+*Step 2 — the correct cause.*
+Seasons are caused by the **tilt of the Earth's axis (23½°) combined with its revolution** around the Sun. Because the axis keeps pointing the same way all year, each hemisphere leans **towards** the Sun for part of the orbit (its summer — direct rays, long days) and **away** for another part (its winter — slanting rays, short days). The controlling factor is the **angle at which sunlight strikes** and the **length of daylight**, not the distance travelled.
 
-Convert centimetres to kilometres. There are 100,000 cm in 1 km.
+*Step 3 — why Liberia has no four temperature seasons.*
+Liberia lies close to the equator (about 4°–8° N). Near the equator the Sun is high in the sky all year, so the angle of sunlight and the length of day change very little. Temperature therefore stays roughly constant, and there is no basis for hot and cold seasons. Instead Liberia has a **wet season (May–October)** and a **dry season (November–April)**, set by the seasonal movement of the rain-bearing wind belt rather than by temperature.
 
-50,000 / 100,000 = 0.5
-
-**Statement scale: 1 cm represents 0.5 km.**
-
-**(b) Straight-line distance**
-
-Map distance = 8.4 cm
-
-Ground distance = 8.4 x 0.5 = **4.2 km**
-
-*Alternative method, useful as a check:*
-
-8.4 cm x 50,000 = 420,000 cm
-
-420,000 / 100,000 = 4.2 km. The two methods agree.
-
-**(c) Road distance**
-
-Map distance along the road = 13.2 cm
-
-Ground distance = 13.2 x 0.5 = **6.6 km**
-
-**(d) Why the answers differ**
-
-The straight-line distance of 4.2 km is the **direct separation** of the two towns, sometimes called the 'as the crow flies' distance. No road follows it.
-
-The road distance of 6.6 km is longer because the road **bends** to follow the terrain — skirting hills, crossing rivers at bridging points, and avoiding swampy ground.
-
-A traveller on the road would cover **6.6 km**, which is the figure that matters for calculating journey time or fuel. The straight-line distance is used for other purposes, such as planning a direct route for a power line or assessing how far apart two settlements really are.
-
-**Answer:** (a) 1 cm to 0.5 km (b) 4.2 km (c) 6.6 km (d) the road is longer because it bends around obstacles; a traveller covers 6.6 km.`,
+**Answer:** distance cannot cause seasons because the hemispheres are opposite and the Earth is nearest the Sun in northern winter; the true cause is the axial tilt with revolution; and Liberia, near the equator, has wet and dry seasons instead of temperature seasons because the Sun stays nearly overhead all year.`,
           teachingTip:
-            "Map reading is a practical skill and cannot be taught from the board. Every learner needs a map in their hands, even a photocopied extract shared between two. Start with a map of the area around the school so learners can locate something they know before they interpret something they do not. For grid references, drill the reading order relentlessly with the phrase 'along the corridor, then up the stairs' — reversing eastings and northings is the single commonest error and it costs marks in every map question. For contours, modelling beats explanation: build a hill from wet sand or clay, slice it horizontally at equal intervals with a knife or wire, and trace the outline of each cut onto paper. Learners who have made contours from a solid shape can read them; learners who have only seen a diagram usually cannot tell a hill from a depression.",
+            "The 'seasons are caused by distance from the Sun' misconception is stubborn and must be confronted directly. Ask the class when they think the Earth is closest to the Sun, then tell them it is early January — northern midwinter — and let the contradiction do the work. Follow with a demonstration: a lamp as the Sun and a tilted globe carried around it, the axis kept pointing at the same corner of the room throughout. Learners must see that the tilt does not swivel; that constancy is the whole mechanism. Then bring it home by asking why they themselves do not experience four seasons, turning an abstract lesson into an explanation of their own weather — the wet and dry seasons they live by.",
           quiz: [
-            {
-              prompt: "A contour line joins points of equal",
-              options: ["Temperature", "Rainfall", "Height above sea level", "Population"],
-              correctIndex: 2,
-              explanation:
-                "Contours show relief by connecting points at the same elevation.",
-            },
-            {
-              prompt: "On a map, closely spaced contours indicate",
-              options: ["A gentle slope", "A steep slope", "Flat land", "A river"],
-              correctIndex: 1,
-              explanation:
-                "The same height change occurs over a shorter horizontal distance, so the slope is steep.",
-            },
-            {
-              prompt: "In a grid reference, which is read first?",
-              options: ["Northings", "Eastings", "Either order", "The contour value"],
-              correctIndex: 1,
-              explanation:
-                "Read along the corridor before going up the stairs — eastings, then northings.",
-            },
-            {
-              prompt: "The representative fraction 1:100,000 means 1 cm on the map represents",
-              options: ["1 km", "10 km", "100 km", "0.1 km"],
-              correctIndex: 0,
-              explanation:
-                "100,000 cm equals 1 km, since there are 100,000 cm in a kilometre.",
-            },
-            {
-              prompt: "Which of these is a large-scale map?",
-              options: ["1:1,000,000", "1:500,000", "1:10,000", "1:250,000"],
-              correctIndex: 2,
-              explanation:
-                "The larger the fraction, the larger the scale; it covers a small area in great detail.",
-            },
-            {
-              prompt: "A bearing is measured",
-              options: [
-                "clockwise from north",
-                "anticlockwise from north",
-                "clockwise from east",
-                "from the nearest cardinal point",
-              ],
-              correctIndex: 0,
-              explanation: "Bearings run clockwise from north and are written with three figures.",
-            },
-            {
-              prompt: "Contours forming a V that points upstream indicate",
-              options: ["A spur", "A valley", "A plateau", "A depression"],
-              correctIndex: 1,
-              explanation:
-                "In a valley the V points towards higher ground, that is upstream.",
-            },
-            {
-              prompt: "The best method of measuring the length of a winding river on a map is",
-              options: [
-                "a straight ruler",
-                "a piece of thread laid along it",
-                "estimating by eye",
-                "counting grid squares",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Thread follows the curves and is then straightened against a ruler for measurement.",
-            },
-            {
-              prompt: "Concentric closed contours with values increasing inward represent",
-              options: ["A depression", "A hill", "A plain", "A cliff"],
-              correctIndex: 1,
-              explanation:
-                "The smallest innermost circle marks the summit; a depression would show hachures pointing inward.",
-            },
-            {
-              prompt: "Which element of a map explains the symbols used?",
-              options: ["Title", "Scale", "Key", "Grid"],
-              correctIndex: 2,
-              explanation:
-                "The key, or legend, gives the meaning of each symbol shown on the map.",
-            },
+            { prompt: "The Earth rotates on its axis from", options: ["east to west", "west to east", "north to south", "south to north"], correctIndex: 1, explanation: "West-to-east rotation makes the Sun appear to rise in the east." },
+            { prompt: "One rotation of the Earth takes about", options: ["1 hour", "24 hours", "1 month", "1 year"], correctIndex: 1, explanation: "The Earth spins once on its axis in about 24 hours." },
+            { prompt: "One revolution of the Earth around the Sun takes", options: ["24 hours", "30 days", "365¼ days", "12 hours"], correctIndex: 2, explanation: "A year is one revolution, about 365¼ days." },
+            { prompt: "Day and night are caused by the Earth's", options: ["revolution", "rotation", "tilt", "distance from the Sun"], correctIndex: 1, explanation: "Rotation turns each side towards and away from the Sun." },
+            { prompt: "The seasons are caused by", options: ["the Earth's distance from the Sun", "the tilt of the axis combined with revolution", "rotation only", "the Moon"], correctIndex: 1, explanation: "The 23½° tilt with revolution produces the seasons." },
+            { prompt: "The Earth's axis is tilted at", options: ["21½°", "23½°", "45°", "66½°"], correctIndex: 1, explanation: "The tilt of 23½° from the vertical causes the seasons." },
+            { prompt: "A leap year has how many days?", options: ["364", "365", "366", "367"], correctIndex: 2, explanation: "An extra day is added every fourth year to make 366." },
+            { prompt: "Which is an effect of rotation?", options: ["The seasons", "Day and night", "Leap years", "The elliptical orbit"], correctIndex: 1, explanation: "Rotation produces day and night and time differences." },
+            { prompt: "The Earth is closest to the Sun in", options: ["early January", "June", "September", "December only in the south"], correctIndex: 0, explanation: "This is during northern winter, showing distance does not cause seasons." },
+            { prompt: "When a hemisphere leans towards the Sun it experiences", options: ["winter", "summer", "night", "an eclipse"], correctIndex: 1, explanation: "Direct rays and long days give summer." },
+            { prompt: "The apparent movement of the Sun from east to west is due to the Earth's", options: ["revolution", "rotation", "tilt", "gravity"], correctIndex: 1, explanation: "As we spin eastward, the Sun appears to move westward." },
+            { prompt: "The overhead Sun appears to move between the", options: ["poles", "Tropics of Cancer and Capricorn", "Arctic and Antarctic Circles", "0° and 90° E"], correctIndex: 1, explanation: "During revolution the overhead Sun shifts between 23½° N and 23½° S." },
+            { prompt: "Liberia experiences", options: ["four temperature seasons", "wet and dry seasons", "no seasons at all", "a six-month winter"], correctIndex: 1, explanation: "Near the equator, temperature changes little; rainfall defines the seasons." },
+            { prompt: "The deflection of winds and currents (Coriolis effect) is caused by the Earth's", options: ["revolution", "rotation", "tilt", "shape"], correctIndex: 1, explanation: "Rotation deflects moving air and water." },
+            { prompt: "Why is the distance-from-the-Sun explanation of seasons wrong?", options: ["The Earth never moves", "The hemispheres have opposite seasons at the same time", "The Sun is always the same distance", "Seasons do not exist"], correctIndex: 1, explanation: "Opposite simultaneous seasons cannot result from a single distance." },
+            { prompt: "During revolution, the Earth's axis", options: ["swivels to follow the Sun", "keeps pointing in the same direction", "becomes vertical", "disappears"], correctIndex: 1, explanation: "The constant direction of the tilt is what produces the seasons." },
+            { prompt: "Which is an effect of revolution?", options: ["Day and night", "The seasons", "Tides", "Time zones"], correctIndex: 1, explanation: "Revolution with the tilt causes the seasons." },
+            { prompt: "Liberia's wet season runs roughly from", options: ["November to April", "May to October", "January to March", "all year"], correctIndex: 1, explanation: "The wet season is about May to October; the dry season November to April." },
+            { prompt: "The extra quarter-day each year is dealt with by", options: ["ignoring it", "adding a leap day every fourth year", "removing a day each year", "adding an hour daily"], correctIndex: 1, explanation: "Four quarter-days make one extra day every fourth year." },
+            { prompt: "Near the equator the Sun is", options: ["never visible", "high in the sky all year", "only visible in winter", "always setting"], correctIndex: 1, explanation: "This is why equatorial regions have little temperature variation." },
           ],
           test: [
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "State six essential elements of a map and explain the purpose of each.",
-              answerKey:
-                "Title — states what the map shows; scale — gives the relationship between map and ground distance; key or legend — explains the symbols; grid — provides a reference system for locating features; orientation or north arrow — shows direction; name of maker and date — indicates authority and currency of the information. Award 1 mark per element named and 1 per purpose correctly explained.",
-              marks: 12,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "A map has a scale of 1:25,000. Express this as a statement scale, and calculate the ground distance represented by 6.5 cm on the map.",
-              answerKey:
-                "1 cm represents 25,000 cm = 0.25 km, so the statement scale is 1 cm to 0.25 km. Ground distance = 6.5 x 0.25 = 1.625 km, approximately 1.63 km. Award 4 marks for the conversion with working, 4 for the distance calculation.",
-              marks: 8,
-            },
-            {
-              type: "MULTIPLE_CHOICE",
-              prompt:
-                "Contours on a map are widely spaced near the summit of a hill and closely spaced near its base. The slope is described as",
-              options: ["Concave", "Convex", "Uniform", "Terraced"],
-              correctIndex: 1,
-              answerKey:
-                "A convex slope is gentle at the top and steepens towards the bottom, which is exactly the spacing described. A concave slope shows the reverse. Option B.",
-              marks: 4,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Explain the difference between a four-figure and a six-figure grid reference, and describe how each is obtained.",
-              answerKey:
-                "A four-figure reference identifies a whole grid square, obtained by reading the easting of the line forming the western edge of the square followed by the northing of the line forming its southern edge. A six-figure reference identifies a specific point within a square to greater precision, obtained by subdividing each side of the square into ten imaginary parts and estimating the tenths, giving three figures for the easting and three for the northing. In both cases eastings are read before northings. Award 3 marks for each description, 2 marks for stating the eastings-first rule, 2 marks for a correctly worked illustrative example.",
-              marks: 10,
-            },
-            {
-              type: "ESSAY",
-              prompt:
-                "Describe how relief is represented by contour lines, explaining how a reader distinguishes hills, valleys, spurs, depressions and slopes of different gradients. Explain also how a cross-section may be drawn from a contour map.",
-              answerKey:
-                "Award marks as follows: definition of a contour and contour interval, 4 marks; gradient from spacing — close for steep, wide for gentle, even for uniform, 5 marks; concave and convex slopes correctly distinguished by the position of the closely spaced contours, 5 marks; hills shown as concentric closed contours with values increasing inward, and depressions distinguished by hachures or decreasing values, 5 marks; valleys and spurs distinguished by the direction in which the V points, with the rule that a valley's V points upstream towards higher ground, 6 marks; method of drawing a cross-section — lay a strip of paper along the chosen line, mark where each contour crosses it with its height, transfer to graph paper with a suitable vertical scale, plot the points and join them with a smooth curve, 8 marks; note on vertical exaggeration, 2 marks. A learner who reverses the valley V-rule should lose the full 6 marks for that section.",
-              marks: 35,
-            },
-          ],
-        },
-        {
-          slug: "rocks",
-          title: "Rocks and the Earth's Crust",
-          objective:
-            "By the end of the lesson, learners should be able to describe the internal structure of the earth, classify rocks into the three main types with examples, and explain the rock cycle and the economic importance of rocks in Liberia.",
-          estimatedMinutes: 80,
-          notes: `## Internal structure of the earth
-
-**Crust** — the thin outer layer. 5 to 10 km thick under the oceans, 30 to 70 km under the continents. Divided into:
-
-- *Sial* — the continental crust, rich in silica and aluminium, less dense
-- *Sima* — the oceanic crust, rich in silica and magnesium, more dense
-
-**Mantle** — about 2,900 km thick, of dense silicate rock, partly molten in its upper portion.
-
-**Core** — the innermost zone, mainly iron and nickel.
-
-- *Outer core*: liquid
-- *Inner core*: solid, despite the higher temperature, because of the immense pressure
-
-## The three rock types
-
-### 1. Igneous rocks
-
-Formed by the **cooling and solidification of molten material**.
-
-- **Intrusive (plutonic)** — cooled slowly beneath the surface, producing **large crystals**. *Granite, gabbro, diorite.*
-- **Extrusive (volcanic)** — cooled rapidly at the surface, producing **small crystals or none**. *Basalt, pumice, obsidian.*
-
-The rule: **slow cooling gives large crystals; rapid cooling gives small crystals.** Crystal size therefore tells you where the rock formed.
-
-Characteristics: usually hard, crystalline, and containing no fossils.
-
-### 2. Sedimentary rocks
-
-Formed by the **accumulation, compaction and cementation of sediments** in layers.
-
-- **Mechanically formed** — from fragments of other rocks. *Sandstone, shale, conglomerate.*
-- **Chemically formed** — from precipitated dissolved minerals. *Rock salt, gypsum, some limestone.*
-- **Organically formed** — from the remains of living things. *Coal, chalk, most limestone.*
-
-Characteristics: occur in **strata** (layers), are usually softer, and are the **only rocks that contain fossils**.
-
-### 3. Metamorphic rocks
-
-Formed when existing rocks are **altered by great heat, great pressure, or both**, without melting.
-
-| Original rock | Becomes |
-| --- | --- |
-| Limestone | Marble |
-| Sandstone | Quartzite |
-| Shale / clay | Slate |
-| Granite | Gneiss |
-| Coal | Graphite |
-
-Characteristics: hard, often banded or foliated, and generally more resistant than the parent rock.
-
-## The rock cycle
-
-Rocks are continually transformed from one type into another.
-
-1. Molten magma cools to form **igneous rock**.
-2. Weathering and erosion break it into sediments, transported and deposited.
-3. Compaction and cementation form **sedimentary rock**.
-4. Heat and pressure convert either type into **metamorphic rock**.
-5. Further heat melts rock back to magma, and the cycle repeats.
-
-The key insight is that no rock is permanent. Any type may become any other type, given time and the right conditions.
-
-## Economic importance of rocks in Liberia
-
-- **Iron ore** — deposits at Bomi Hills, Bong Range and Nimba have historically been the country's leading export.
-- **Gold and diamonds** — mined in several counties, an important source of employment and revenue.
-- **Granite and laterite** — quarried for construction, road building and aggregate.
-- **Sand and gravel** — extracted for concrete and building.
-- **Clay** — used in brick making and pottery.
-- **Rocks and soil fertility** — weathered rock supplies the mineral component of soil, determining agricultural potential.
-- **Groundwater** — porous and permeable rocks such as sandstone hold aquifers, which supply wells and boreholes.`,
-          workedExample: `**Question:** A learner collects three rock specimens.
-
-*Specimen A:* hard, made of large interlocking crystals, no layers, no fossils.
-*Specimen B:* clearly layered, relatively soft, contains the impression of a shell.
-*Specimen C:* hard, shows distinct bands of light and dark minerals, no fossils.
-
-(a) Identify the rock type of each, giving your reasons.
-(b) Suggest a specific rock name for each.
-(c) For specimen A, state where it formed and how you can tell.
-(d) Explain how specimen B could eventually become a rock like specimen C.
-
-**Solution**
-
-**(a) Identifying the rock types**
-
-*Specimen A — igneous.*
-
-Interlocking crystals indicate formation by cooling from a molten state. The absence of layering rules out sedimentary; the absence of banding rules out metamorphic. Fossils cannot survive molten rock, so their absence is consistent.
-
-*Specimen B — sedimentary.*
-
-Two features are decisive. Layering (stratification) results from successive deposition of sediments. More conclusively, **the fossil**: only sedimentary rocks contain fossils, because igneous rock forms from melt that would destroy any remains, and metamorphism deforms them beyond recognition. Softness is also typical.
-
-*Specimen C — metamorphic.*
-
-Distinct banding of light and dark minerals is **foliation**, produced when minerals realign under great pressure. The rock is hard, and contains no fossils.
-
-**(b) Specific rock names**
-
-- A: **granite** — large crystals suggest slow cooling at depth. (Gabbro or diorite would also be acceptable.)
-- B: **limestone** or **shale** — fossiliferous, layered and relatively soft.
-- C: **gneiss** — banded and foliated. (Schist would also be acceptable.)
-
-**(c) Where specimen A formed**
-
-It formed **beneath the earth's surface**, as an intrusive or plutonic igneous rock.
-
-*How we can tell:* **crystal size records cooling rate.** Magma trapped underground is insulated and cools slowly over long periods, so crystals have time to grow large. Lava erupted at the surface cools quickly, giving small crystals or a glassy texture with none at all.
-
-Since specimen A has large crystals, it must have cooled slowly, and therefore formed at depth. It is exposed at the surface now only because the overlying rock has since been removed by weathering and erosion.
-
-**(d) How B could become a rock like C**
-
-Through **metamorphism**, following the rock cycle:
-
-1. Specimen B is buried under later deposits of sediment.
-2. Increasing depth subjects it to rising **temperature and pressure**.
-3. If it lies near an intruding body of magma, or is caught in mountain-building movements, the heat and pressure intensify.
-4. Its minerals **recrystallise and realign** perpendicular to the pressure, producing foliation, but the rock does **not melt** — melting would produce igneous rock instead.
-5. The fossils are destroyed in the process, which is why metamorphic rocks lack them.
-
-If specimen B is limestone, it would become **marble**; if it is shale, it would become **slate** and, under greater metamorphism, **schist** and then **gneiss**.
-
-**Answer:** (a) A igneous, B sedimentary, C metamorphic (b) granite, limestone or shale, gneiss (c) at depth, shown by large crystals indicating slow cooling (d) by burial under heat and pressure causing recrystallisation without melting.`,
-          teachingTip:
-            "Bring rocks to class. A collection costing nothing — granite chippings from a road site, a piece of laterite, sandstone, any fossiliferous limestone available — teaches more in one handling session than a term of diagrams. Have learners sort the specimens into groups before you give them any names, and ask what criteria they used; they will arrive at crystal size, layering and hardness by themselves. The two diagnostic rules worth drilling until automatic are that fossils occur only in sedimentary rocks, and that crystal size records cooling rate. Both are frequently examined and both are quickly forgotten unless learners have deduced them from specimens in their own hands. Close by connecting the topic to Liberia's iron ore and gold — learners engage far more readily once they see that the rocks under discussion are the country's principal export.",
-          quiz: [
-            {
-              prompt: "Which rock type is formed from cooled molten material?",
-              options: ["Sedimentary", "Igneous", "Metamorphic", "Organic"],
-              correctIndex: 1,
-              explanation:
-                "Igneous rocks solidify from magma below ground or lava at the surface.",
-            },
-            {
-              prompt: "Fossils are found mainly in which type of rock?",
-              options: ["Igneous", "Metamorphic", "Sedimentary", "All three equally"],
-              correctIndex: 2,
-              explanation:
-                "Remains are preserved between layers of sediment; melting and metamorphism destroy them.",
-            },
-            {
-              prompt: "Limestone changes into which metamorphic rock?",
-              options: ["Slate", "Marble", "Quartzite", "Gneiss"],
-              correctIndex: 1,
-              explanation: "Heat and pressure recrystallise limestone into marble.",
-            },
-            {
-              prompt: "Large crystals in an igneous rock indicate that it",
-              options: [
-                "cooled rapidly at the surface",
-                "cooled slowly beneath the surface",
-                "was formed from sediments",
-                "contains fossils",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Slow cooling allows time for crystals to grow, which happens at depth.",
-            },
-            {
-              prompt: "The outermost layer of the earth is the",
-              options: ["Mantle", "Outer core", "Crust", "Inner core"],
-              correctIndex: 2,
-              explanation:
-                "The crust is thin relative to the mantle and core beneath it.",
-            },
-            {
-              prompt: "Shale is converted by metamorphism into",
-              options: ["Marble", "Slate", "Basalt", "Sandstone"],
-              correctIndex: 1,
-              explanation:
-                "Pressure realigns the clay minerals of shale to produce the foliation of slate.",
-            },
-            {
-              prompt: "Which is an extrusive igneous rock?",
-              options: ["Granite", "Gabbro", "Basalt", "Diorite"],
-              correctIndex: 2,
-              explanation:
-                "Basalt forms from lava cooling rapidly at the surface, giving fine crystals.",
-            },
-            {
-              prompt: "The earth's inner core is solid despite its high temperature because of",
-              options: [
-                "its low iron content",
-                "the immense pressure",
-                "the absence of nickel",
-                "rapid cooling",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Enormous pressure raises the melting point and keeps the inner core solid.",
-            },
-            {
-              prompt: "Coal is best classified as",
-              options: [
-                "an organically formed sedimentary rock",
-                "an intrusive igneous rock",
-                "a foliated metamorphic rock",
-                "a chemically formed igneous rock",
-              ],
-              correctIndex: 0,
-              explanation:
-                "Coal forms from compressed plant remains accumulated over long periods.",
-            },
-            {
-              prompt: "Which mineral has historically been Liberia's leading mineral export?",
-              options: ["Coal", "Iron ore", "Rock salt", "Gypsum"],
-              correctIndex: 1,
-              explanation:
-                "Deposits at Bomi Hills, the Bong Range and Nimba have long dominated exports.",
-            },
-          ],
-          test: [
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Describe the internal structure of the earth, naming each layer and giving one characteristic of each.",
-              answerKey:
-                "Crust: thin outer layer, 5 to 10 km under oceans and 30 to 70 km under continents, divided into the less dense sial and the denser sima. Mantle: about 2,900 km thick, of dense silicate rock, partly molten in its upper part. Core: mainly iron and nickel, with a liquid outer core and a solid inner core kept solid by immense pressure. Award 3 marks per layer for the name with an accurate characteristic, and 3 further marks for the sial/sima or outer/inner core subdivision.",
-              marks: 12,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Distinguish between intrusive and extrusive igneous rocks, giving two examples of each and explaining the difference in crystal size.",
-              answerKey:
-                "Intrusive or plutonic rocks solidify beneath the surface, where insulation causes slow cooling and allows large crystals to grow — granite, gabbro, diorite. Extrusive or volcanic rocks solidify at the surface, where rapid cooling permits only small crystals or a glassy texture — basalt, pumice, obsidian. Award 3 marks for each definition, 1 mark per correct example up to 4, and 3 marks for the explicit statement that crystal size reflects rate of cooling.",
-              marks: 13,
-            },
-            {
-              type: "MULTIPLE_CHOICE",
-              prompt:
-                "A rock is layered, relatively soft, and contains the impression of a leaf. It is",
-              options: [
-                "Igneous, formed from lava",
-                "Sedimentary, formed from deposited sediments",
-                "Metamorphic, formed under pressure",
-                "Igneous, formed at depth",
-              ],
-              correctIndex: 1,
-              answerKey:
-                "Layering and the presence of a fossil are both diagnostic of sedimentary rock; fossils cannot survive the melting that forms igneous rock nor the deformation of metamorphism. Option B.",
-              marks: 4,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "State five ways in which rocks are economically important to Liberia.",
-              answerKey:
-                "Any five from: iron ore from Bomi Hills, the Bong Range and Nimba as a leading export; gold and diamonds providing revenue and employment; granite and laterite quarried for construction and road building; sand and gravel for concrete; clay for bricks and pottery; weathered rock supplying the mineral component of soil and hence agricultural potential; porous rocks holding groundwater that supplies wells and boreholes. Award 2 marks each, requiring a stated use rather than a bare name of the rock.",
-              marks: 10,
-            },
-            {
-              type: "ESSAY",
-              prompt:
-                "Describe the three main types of rock, explaining how each is formed and giving three examples of each. Then explain the rock cycle, showing how each type may be transformed into the others.",
-              answerKey:
-                "Award marks as follows: igneous rocks — formation by cooling and solidification of magma or lava, the intrusive/extrusive distinction with crystal size explained, three examples, 9 marks; sedimentary rocks — formation by accumulation, compaction and cementation of sediments, the mechanical, chemical and organic subdivisions, stratification and fossils as diagnostic features, three examples, 9 marks; metamorphic rocks — formation by alteration of existing rock under heat and pressure without melting, foliation, at least three parent-to-product pairs, three examples, 9 marks; the rock cycle described as a continuous sequence — magma cooling to igneous rock, weathering and erosion producing sediments, compaction forming sedimentary rock, heat and pressure producing metamorphic rock, and melting returning material to magma — with the explicit point that any type may become any other, 10 marks; organisation and terminology, 3 marks. A learner who describes the three types accurately but presents the rock cycle as a one-way sequence should lose 5 marks from the cycle allocation.",
-              marks: 40,
-            },
+            { type: "SHORT_ANSWER", prompt: "Distinguish between the Earth's rotation and its revolution, and give two effects of each.", answerKey: "Rotation is the spinning of the Earth on its axis, once in about 24 hours; effects include day and night, the apparent east–west movement of the Sun, time differences between meridians, and the deflection of winds and currents. Revolution is the movement of the Earth around the Sun, taking about 365¼ days; effects include the seasons, varying day length, the apparent movement of the overhead Sun between the tropics, and leap years. Award 2 marks for each definition and 1 for each of two effects per movement.", marks: 8 },
+            { type: "SHORT_ANSWER", prompt: "Explain why a leap year occurs and how many days it has.", answerKey: "The Earth's revolution takes about 365¼ days, but the calendar year has 365 whole days. The quarter-days accumulate, so every fourth year an extra day (29 February) is added, giving a leap year of 366 days. Award 4 marks for the quarter-day explanation and 2 for stating 366 days.", marks: 6 },
+            { type: "MULTIPLE_CHOICE", prompt: "The main reason the northern and southern hemispheres have opposite seasons is that", options: ["they are different distances from the Sun", "the axis is tilted and keeps a constant direction as the Earth revolves", "the Earth stops rotating in winter", "the Sun moves north and south"], correctIndex: 1, answerKey: "As the tilted axis keeps its direction through the orbit, one hemisphere leans towards the Sun (summer) while the other leans away (winter). Option B.", marks: 4 },
+            { type: "SHORT_ANSWER", prompt: "Explain why Liberia experiences wet and dry seasons rather than the four temperature seasons of higher latitudes.", answerKey: "Liberia lies close to the equator (about 4°–8° N), where the Sun is high in the sky throughout the year, so the angle of sunlight and the length of day change very little and temperature stays roughly constant. There is therefore no basis for hot and cold seasons. Instead the seasons are defined by rainfall — a wet season (about May–October) and a dry season (about November–April) — controlled by the seasonal movement of the rain-bearing wind belt. Award up to 8 marks for a clear explanation covering near-constant insolation and the rainfall-based seasons.", marks: 8 },
+            { type: "ESSAY", prompt: "Explain the causes and effects of the Earth's two movements, and account for the fact that seasons are caused by the tilt of the axis rather than by the Earth's distance from the Sun.", answerKey: "Award marks for: rotation described as spinning west to east once in 24 hours, with effects — day and night, apparent movement of the Sun, time differences, Coriolis deflection, tides, 7 marks; revolution described as the elliptical orbit taking 365¼ days, with effects — seasons, varying day length, migration of the overhead Sun, leap years, 7 marks; explanation that seasons result from the 23½° tilt keeping a constant direction while the Earth revolves, so hemispheres lean towards or away from the Sun, with the angle of sunlight and day length controlling temperature, 7 marks; explicit refutation of the distance explanation, noting opposite simultaneous seasons and the Earth being nearest the Sun in northern winter, 5 marks; organisation and clarity, 4 marks. A learner who attributes seasons to distance should not exceed 12.", marks: 30 },
           ],
         },
       ],
