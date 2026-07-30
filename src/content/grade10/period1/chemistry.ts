@@ -1,11 +1,15 @@
 import type { SubjectContent } from "@/content/types";
 
+// Aligned to the Liberian MoE National Curriculum for Chemistry (Grades 10-12).
+// Grade 10, Semester One, Period I: Topic I Introduction to Chemistry; Topic II
+// Matter and its Properties. Atomic structure (P2), the periodic table (P3),
+// bonding (P4) and stoichiometry (P5) follow in their own periods.
 export const chemistry: SubjectContent = {
   slug: "chemistry",
   name: "Chemistry",
   shortName: "Chemistry",
   description:
-    "Matter and its states, atomic structure, the periodic table, and chemical bonding.",
+    "The study of matter and change: what chemistry is, the scientific method and measurement, and the states, properties and separation of matter.",
   accent: "amber",
   sortOrder: 4,
   teacherCode: "CHM-10-8842",
@@ -13,1032 +17,270 @@ export const chemistry: SubjectContent = {
     {
       grade: 10,
       number: 1,
-      title: "Matter, the Atom and Bonding",
+      title: "Introduction to Chemistry and Matter",
       summary:
-        "Learners build the foundation of the subject: what matter is, what the atom is made of, how the periodic table organises the elements, and why atoms combine.",
+        "Period I of the MoE Grade 10 Chemistry syllabus. Learners meet the scientific method, the branches of chemistry, units and measurement, then study the states of matter, physical and chemical changes, and the techniques used to separate mixtures.",
       topics: [
         {
-          slug: "matter",
-          title: "Introduction to Chemistry and the Nature of Matter",
+          slug: "introduction-to-chemistry",
+          title: "Introduction to Chemistry and Measurement",
           objective:
-            "By the end of the lesson, learners should be able to define matter, describe the three states in terms of the kinetic theory, name the changes of state, and distinguish elements, compounds and mixtures.",
-          estimatedMinutes: 80,
-          notes: `## Chemistry and matter
+            "By the end of the unit, learners should be able to define chemistry and its branches, describe the scientific method, use the SI units of measurement, express quantities in scientific notation to the correct number of significant figures, and carry out simple unit conversions.",
+          estimatedMinutes: 160,
+          notes: `## What chemistry is
 
-**Chemistry** is the study of the composition, structure, properties and changes of matter.
+**Chemistry** is the branch of science that studies the **composition, structure, properties and changes** of matter.
 
 **Matter** is anything that has mass and occupies space.
 
-## The kinetic theory
+## Branches of chemistry
 
-All matter is made of tiny particles in constant motion. The state of a substance depends on how much energy those particles have and how strongly they attract one another.
+- **Organic chemistry** — carbon compounds
+- **Inorganic chemistry** — all other compounds
+- **Physical chemistry** — the physical principles behind chemical behaviour (energy, rates, structure)
+- **Analytical chemistry** — identifying and measuring what a substance contains
+- **Biochemistry** — the chemistry of living things
 
-**Solid** — particles closely packed in a fixed, regular arrangement; strong forces of attraction; particles vibrate about fixed positions. Definite shape, definite volume, not compressible.
+## The scientific method
 
-**Liquid** — particles close together but not in a fixed arrangement; weaker forces; particles slide over one another. Definite volume, takes the shape of its container, barely compressible.
+A systematic way of investigating a question:
 
-**Gas** — particles far apart and in rapid random motion; negligible forces of attraction. No definite shape or volume, highly compressible.
+1. **Observation** — notice something.
+2. **Statement of the problem** — turn it into a question.
+3. **Hypothesis** — a testable, tentative explanation.
+4. **Experimentation** — test the hypothesis under controlled conditions.
+5. **Collection and analysis of data** — record and examine results.
+6. **Conclusion** — decide whether the data support the hypothesis.
+7. **Reporting** — communicate the findings so others can repeat the work.
+
+## Some contributors to chemistry
+
+- **Antoine Lavoisier** — the law of conservation of mass; often called the father of modern chemistry.
+- **John Dalton** — the atomic theory.
+- **Dmitri Mendeleev** — the periodic table.
+
+## Units of measurement — the SI system
+
+| Quantity | SI unit | Symbol |
+| --- | --- | --- |
+| Length | metre | m |
+| Mass | kilogram | kg |
+| Time | second | s |
+| Temperature | kelvin | K |
+| Amount of substance | mole | mol |
+
+Volume is derived (m³, but the litre and cm³ are common in the lab). Temperature in the lab is often measured in degrees Celsius; **K = °C + 273**.
+
+## Scientific notation
+
+A large or small number written as a number between 1 and 10 multiplied by a power of ten.
+
+- 6 500 000 = 6.5 × 10⁶
+- 0.000 042 = 4.2 × 10⁻⁵
+
+This keeps very large and very small measurements manageable.
+
+## Significant figures
+
+The digits in a measurement that carry meaning. Give an answer to the same precision as the **least precise** measurement used. A result calculated from data measured to two significant figures should not be quoted to six.
+
+## Precision and accuracy
+
+- **Accuracy** — how close a measurement is to the true value.
+- **Precision** — how close repeated measurements are to one another.
+
+A set of readings can be precise (tightly grouped) yet inaccurate (all wrong in the same way, e.g. from a faulty balance). Good measurement needs both.
+
+## Unit conversion
+
+Convert step by step, one unit at a time.
+
+- 1 m = 100 cm; 1 km = 1000 m
+- 1 kg = 1000 g; 1 g = 1000 mg
+- 1 litre = 1000 cm³ (mL)
+
+## Laboratory safety
+
+Chemistry is practical, and safety comes first: know the hazard signs, wear eye protection, never taste chemicals, add acid to water (not water to acid), and keep the bench clear. A safe laboratory is the condition for all experimental work.`,
+          workedExample: `**Question:** A student measures the mass of a sample four times and gets 24.8 g, 24.9 g, 24.8 g and 24.9 g. The true mass is 25.0 g.
+
+(a) Are the readings precise? Are they accurate?
+(b) Express the mass 24 850 mg in grams and in scientific notation.
+(c) Convert 2.5 litres to cm³.
+
+**Solution**
+
+**(a) Precision and accuracy.**
+The four readings are tightly grouped (24.8–24.9 g), so they are **precise**. But they all fall short of the true value of 25.0 g by about 0.1–0.2 g, so they are **not fully accurate** — probably a small zero error on the balance. This is the classic case of *precise but not accurate*, and it points to a systematic fault in the instrument rather than random scatter.
+
+**(b) 24 850 mg in grams and scientific notation.**
+1 g = 1000 mg, so divide by 1000:
+24 850 mg ÷ 1000 = **24.85 g**
+In scientific notation: **2.485 × 10¹ g**.
+
+**(c) 2.5 litres to cm³.**
+1 litre = 1000 cm³, so multiply:
+2.5 × 1000 = **2500 cm³**.
+
+**The lesson:** precision and accuracy are different questions — one asks whether readings agree with *each other*, the other whether they agree with the *truth*. And every conversion is done one factor at a time, using the known relationship between the units.`,
+          teachingTip:
+            "Precision versus accuracy is the idea most worth securing, because learners use the words interchangeably. Draw a dartboard on the board: tight cluster off-centre is precise-but-inaccurate; scattered around the bullseye is accurate-but-imprecise; tight cluster on the bullseye is both. That single image fixes the distinction for good. For the scientific method, do not have learners recite the seven steps — take a genuine observation from their environment (why one water source tastes different, why a metal roof rusts faster near the coast) and build the investigation with them, insisting each time on a testable hypothesis. Drill unit conversion as a habit of one factor at a time, and make lab safety non-negotiable from the very first practical.",
+          quiz: [
+            { prompt: "Chemistry is best defined as the study of", options: ["living organisms", "the composition, properties and changes of matter", "the movement of planets", "electricity only"], correctIndex: 1, explanation: "Chemistry studies matter and the changes it undergoes." },
+            { prompt: "Which branch of chemistry studies carbon compounds?", options: ["Inorganic", "Organic", "Analytical", "Physical"], correctIndex: 1, explanation: "Organic chemistry deals with carbon compounds." },
+            { prompt: "The SI unit of mass is the", options: ["gram", "kilogram", "newton", "litre"], correctIndex: 1, explanation: "The kilogram is the SI base unit of mass." },
+            { prompt: "A testable, tentative explanation is called a", options: ["conclusion", "hypothesis", "law", "theory"], correctIndex: 1, explanation: "A hypothesis is proposed before experimentation." },
+            { prompt: "Write 0.00056 in scientific notation.", options: ["5.6 × 10⁴", "5.6 × 10⁻⁴", "56 × 10⁻³", "0.56 × 10⁻³"], correctIndex: 1, explanation: "Move the point four places right: 5.6 × 10⁻⁴." },
+            { prompt: "Which scientist is called the father of modern chemistry?", options: ["Dalton", "Mendeleev", "Lavoisier", "Pasteur"], correctIndex: 2, explanation: "Lavoisier established the law of conservation of mass." },
+            { prompt: "Accuracy refers to how close a measurement is to", options: ["other measurements", "the true value", "zero", "the average"], correctIndex: 1, explanation: "Accuracy compares a reading with the true value." },
+            { prompt: "Precision refers to how close repeated measurements are to", options: ["the true value", "one another", "zero", "the SI unit"], correctIndex: 1, explanation: "Precision is the agreement among repeated readings." },
+            { prompt: "Convert 3 kg to grams.", options: ["300 g", "3000 g", "30 g", "0.003 g"], correctIndex: 1, explanation: "1 kg = 1000 g, so 3 kg = 3000 g." },
+            { prompt: "Which is the SI unit of amount of substance?", options: ["kilogram", "mole", "litre", "kelvin"], correctIndex: 1, explanation: "The mole measures amount of substance." },
+            { prompt: "1 litre is equal to", options: ["10 cm³", "100 cm³", "1000 cm³", "10 000 cm³"], correctIndex: 2, explanation: "1 litre = 1000 cm³ (mL)." },
+            { prompt: "Write 7 200 000 in scientific notation.", options: ["7.2 × 10⁶", "72 × 10⁵", "7.2 × 10⁻⁶", "0.72 × 10⁷"], correctIndex: 0, explanation: "A number between 1 and 10 times a power of ten: 7.2 × 10⁶." },
+            { prompt: "A balance always reads 0.2 g too high. Its readings are", options: ["accurate but not precise", "precise but not accurate", "both accurate and precise", "neither"], correctIndex: 1, explanation: "Consistent readings (precise) that are all wrong the same way (inaccurate)." },
+            { prompt: "Convert 25 °C to kelvin.", options: ["248 K", "298 K", "273 K", "25 K"], correctIndex: 1, explanation: "K = °C + 273 = 25 + 273 = 298 K." },
+            { prompt: "The first step of the scientific method is", options: ["conclusion", "observation", "reporting", "experimentation"], correctIndex: 1, explanation: "Investigation begins with an observation." },
+            { prompt: "Which branch of chemistry identifies and measures the composition of substances?", options: ["Organic", "Analytical", "Biochemistry", "Physical"], correctIndex: 1, explanation: "Analytical chemistry determines what and how much a sample contains." },
+            { prompt: "How many milligrams are in 2 grams?", options: ["20 mg", "200 mg", "2000 mg", "0.002 mg"], correctIndex: 2, explanation: "1 g = 1000 mg, so 2 g = 2000 mg." },
+            { prompt: "Significant figures in an answer should match the precision of the", options: ["most precise measurement", "least precise measurement", "largest number", "calculator display"], correctIndex: 1, explanation: "An answer is only as precise as the least precise data used." },
+            { prompt: "When diluting, the safe rule is to add", options: ["water to acid", "acid to water", "acid to acid", "either way"], correctIndex: 1, explanation: "Add acid to water to control the heat released safely." },
+            { prompt: "John Dalton is best known for", options: ["the periodic table", "the atomic theory", "conservation of mass", "germ theory"], correctIndex: 1, explanation: "Dalton proposed the atomic theory of matter." },
+          ],
+          test: [
+            { type: "SHORT_ANSWER", prompt: "State the steps of the scientific method in order.", answerKey: "Observation; statement of the problem; hypothesis; experimentation; collection and analysis of data; conclusion; reporting. Award 1 mark per step correctly placed.", marks: 7 },
+            { type: "SHORT_ANSWER", prompt: "Express in scientific notation: (a) 45 000 000, (b) 0.00032. Then convert 4.5 litres to cm³.", answerKey: "(a) 4.5 × 10⁷. (b) 3.2 × 10⁻⁴. Conversion: 4.5 × 1000 = 4500 cm³. Award 2 marks each for the two notations and 3 marks for the conversion.", marks: 7 },
+            { type: "MULTIPLE_CHOICE", prompt: "Four readings of a length are 12.1, 12.1, 12.2 and 12.1 cm; the true length is 13.0 cm. The readings are best described as", options: ["accurate and precise", "precise but not accurate", "accurate but not precise", "neither accurate nor precise"], correctIndex: 1, answerKey: "The readings agree closely with each other (precise) but are far from the true 13.0 cm (inaccurate). Option B.", marks: 4 },
+            { type: "SHORT_ANSWER", prompt: "Explain the difference between accuracy and precision, and describe a set of results that is precise but not accurate.", answerKey: "Accuracy is closeness to the true value; precision is closeness of repeated readings to one another. A precise-but-inaccurate set is tightly grouped but consistently off the true value, e.g. four masses of 24.8–24.9 g when the true mass is 25.0 g, usually caused by a systematic instrument error such as a zero error. Award 3 marks for each definition and 3 for a valid example.", marks: 9 },
+            { type: "ESSAY", prompt: "A community suspects that water from a hand-dug well is making people ill, while water from the borehole is safe. Design an investigation using the scientific method. State your hypothesis, outline your procedure, and explain how you would measure and record your results and reach a conclusion.", answerKey: "Hypothesis: water from the well contains a higher concentration of harmful microbes/contaminants than water from the borehole, 3 marks. Procedure: collect equal, sterile samples from both sources at the same time, test each (laboratory microbial count, or monitored comparison of illness among users), keeping other factors constant, 5 marks. Measurement and recording: use consistent units and methods, take repeated readings for precision, tabulate results, 4 marks. Conclusion: compare the data against the hypothesis and state whether it is supported, noting the need to repeat for reliability, 4 marks. Credit learners who note ethical limits on deliberately exposing people and adapt to observation, up to 2 bonus marks within the total. A learner without a testable hypothesis should not exceed 8.", marks: 15 },
+          ],
+        },
+        {
+          slug: "matter-and-its-properties",
+          title: "Matter and Its Properties",
+          objective:
+            "By the end of the unit, learners should be able to describe the three states of matter and the changes between them, distinguish physical from chemical changes, classify matter as elements, compounds and mixtures, and choose appropriate techniques to separate mixtures.",
+          estimatedMinutes: 160,
+          notes: `## The three states of matter
+
+All matter is made of tiny particles. The state depends on how much energy the particles have and how strongly they attract one another.
+
+- **Solid** — particles closely packed in a fixed, regular arrangement; strong forces; vibrate in place. **Definite shape and volume; not compressible.**
+- **Liquid** — particles close but not fixed; can slide past one another. **Definite volume; takes the shape of its container.**
+- **Gas** — particles far apart, in rapid random motion; negligible forces. **No definite shape or volume; highly compressible.**
+
+\`\`\`svg Particle arrangement in solids, liquids and gases.
+<svg viewBox="0 0 340 130" role="img" aria-label="Particle diagrams of a solid, a liquid and a gas">
+  <g fill="currentColor">
+    <rect x="10" y="15" width="90" height="90" fill="none" stroke="currentColor"/>
+    <circle cx="28" cy="33" r="6"/><circle cx="46" cy="33" r="6"/><circle cx="64" cy="33" r="6"/><circle cx="82" cy="33" r="6"/>
+    <circle cx="28" cy="55" r="6"/><circle cx="46" cy="55" r="6"/><circle cx="64" cy="55" r="6"/><circle cx="82" cy="55" r="6"/>
+    <circle cx="28" cy="77" r="6"/><circle cx="46" cy="77" r="6"/><circle cx="64" cy="77" r="6"/><circle cx="82" cy="77" r="6"/>
+    <rect x="125" y="15" width="90" height="90" fill="none" stroke="currentColor"/>
+    <circle cx="142" cy="40" r="6"/><circle cx="162" cy="35" r="6"/><circle cx="184" cy="45" r="6"/><circle cx="200" cy="36" r="6"/>
+    <circle cx="150" cy="62" r="6"/><circle cx="176" cy="60" r="6"/><circle cx="198" cy="66" r="6"/>
+    <circle cx="140" cy="85" r="6"/><circle cx="166" cy="84" r="6"/><circle cx="190" cy="88" r="6"/>
+    <rect x="240" y="15" width="90" height="90" fill="none" stroke="currentColor"/>
+    <circle cx="255" cy="30" r="6"/><circle cx="300" cy="40" r="6"/><circle cx="275" cy="60" r="6"/><circle cx="315" cy="75" r="6"/><circle cx="252" cy="85" r="6"/><circle cx="290" cy="92" r="6"/>
+  </g>
+  <g font-size="11" fill="currentColor" text-anchor="middle">
+    <text x="55" y="122">Solid</text><text x="170" y="122">Liquid</text><text x="285" y="122">Gas</text>
+  </g>
+</svg>
+\`\`\`
 
 ## Changes of state
 
-- **Melting** — solid to liquid
-- **Freezing (solidification)** — liquid to solid
-- **Evaporation / boiling** — liquid to gas
-- **Condensation** — gas to liquid
-- **Sublimation** — solid directly to gas, without passing through the liquid state
+- **Melting** — solid → liquid
+- **Freezing (solidification)** — liquid → solid
+- **Evaporation / boiling** — liquid → gas
+- **Condensation** — gas → liquid
+- **Sublimation** — solid → gas directly (e.g. iodine, ammonium chloride, solid carbon dioxide)
 
-Substances that sublime include iodine, ammonium chloride and solid carbon dioxide.
-
-Note that heat supplied during a change of state does not raise the temperature. It goes into overcoming the forces between particles. This is **latent heat**.
+Heat supplied during a change of state does not raise the temperature; it overcomes the forces between particles. This is **latent heat**.
 
 ## Physical and chemical changes
 
 | | Physical change | Chemical change |
 | --- | --- | --- |
 | New substance | None formed | New substance formed |
-| Reversibility | Usually easily reversed | Usually difficult to reverse |
-| Mass | Unchanged | Unchanged (conserved) |
-| Energy | Small change | Often large change |
+| Reversibility | Usually easily reversed | Usually hard to reverse |
 | Example | Melting ice, dissolving salt | Burning wood, rusting iron |
 
-## Elements, compounds and mixtures
+Mass is conserved in both.
 
-**Element** — a pure substance that cannot be split into simpler substances by chemical means. Made of one kind of atom. *Oxygen, iron, carbon, gold.*
+## Classifying matter
 
-**Compound** — two or more elements chemically combined in a **fixed ratio by mass**. Its properties differ entirely from those of its elements. Separated only by chemical means. *Water, sodium chloride, carbon dioxide.*
+- **Element** — a pure substance of one kind of atom; cannot be split chemically. *Iron, oxygen, gold.*
+- **Compound** — two or more elements chemically combined in a fixed ratio. *Water, sodium chloride, carbon dioxide.*
+- **Mixture** — substances physically together in any proportion; components keep their properties and can be separated physically. *Air, sea water, soil.*
 
-**Mixture** — two or more substances physically together in **any proportion**. Components keep their own properties and can be separated by physical means. *Air, sea water, soil, brass.*
+## Separation techniques
 
-The classic illustration: iron filings and sulphur powder mixed together can be separated with a magnet — a mixture. Heat them and they combine to form iron(II) sulphide, from which no magnet will draw the iron — a compound.
+Choose the method by the difference in properties between the components.
 
-## Separating mixtures
+- **Filtration** — insoluble solid from a liquid (sand from water).
+- **Evaporation / crystallisation** — dissolved solid from its solution (salt from brine).
+- **Simple distillation** — a solvent from a solution (pure water from sea water); uses the difference in **boiling point**.
+- **Fractional distillation** — miscible liquids of different boiling points (liquid–liquid).
+- **Chromatography** — dissolved substances of different solubilities (separating dyes).
+- **Magnetic separation** — magnetic from non-magnetic solids (iron filings from sand): a **solid–solid** method.
+- **Decantation** — pouring off a liquid from a settled solid.
 
-- **Filtration** — insoluble solid from a liquid
-- **Evaporation / crystallisation** — dissolved solid from its solution
-- **Simple distillation** — solvent from a solution
-- **Fractional distillation** — miscible liquids with different boiling points
-- **Chromatography** — dissolved substances of different solubilities
-- **Magnetic separation** — magnetic from non-magnetic solids
-- **Decantation** — liquid from settled solid`,
-          workedExample: `**Question:** A learner is given a mixture of sand, common salt and iron filings. Describe how each component could be recovered separately, giving a reason for each step. Classify the mixture and each recovered substance as element, compound or mixture.
+The syllabus groups these by the kind of mixture: **solid–solid, solid–liquid, and liquid–liquid**.`,
+          workedExample: `**Question:** A learner is given a mixture of iron filings, common salt and sand. Describe how to recover each component separately, and classify the original mixture and each recovered substance.
 
 **Solution**
 
-*Step 1 — remove the iron filings.*
+*Step 1 — remove the iron filings first.*
+Pass a **magnet** over the mixture. Iron is magnetic; salt and sand are not, so the filings alone are lifted clear. (This must come first — once water is added, separating iron becomes far harder.)
 
-Pass a magnet over the mixture. Iron is magnetic; sand and salt are not, so the filings alone are attracted and lifted clear.
-
-*Step 2 — separate the salt from the sand.*
-
-Add water and stir. **Salt is soluble in water; sand is not.** The salt dissolves to form a solution, leaving the sand suspended.
+*Step 2 — separate salt from sand.*
+Add water and stir. **Salt dissolves; sand does not.**
 
 *Step 3 — recover the sand.*
-
-**Filter** the mixture. The sand is retained as residue on the filter paper; the salt solution passes through as filtrate. Wash and dry the residue.
+**Filter** the mixture. Sand stays on the filter paper as residue; the salt solution passes through as filtrate. Wash and dry the sand.
 
 *Step 4 — recover the salt.*
-
-**Evaporate** the filtrate to dryness, or evaporate to the point of crystallisation and allow to cool. The water leaves as vapour and solid salt remains.
+**Evaporate** the filtrate. The water leaves as vapour and solid salt remains (crystallisation if cooled slowly).
 
 *Step 5 — classify.*
+- Original: a **mixture** — no fixed ratio, components keep their properties, separable physically.
+- Iron filings: an **element** (Fe).
+- Salt (sodium chloride): a **compound** — sodium and chlorine combined in a fixed ratio.
+- Sand (silicon dioxide): a **compound** — silicon and oxygen combined in a fixed ratio.
 
-- The original mixture: a **mixture** — components in no fixed ratio, each keeping its own properties, separable by physical means.
-- Iron filings: an **element** — one kind of atom, symbol Fe.
-- Sand (silicon dioxide): a **compound** — silicon and oxygen chemically combined in a fixed ratio.
-- Common salt (sodium chloride): a **compound** — sodium and chlorine chemically combined in a fixed ratio.
-
-**Note the ordering.** The magnet must come first: once water is added, separating iron filings becomes far harder. In separation questions, always ask what each step makes impossible later.`,
+**The lesson:** the order matters — always ask what each step makes impossible later. Magnetic separation is a *dry* solid–solid method and must precede dissolving, filtration handles the *solid–liquid* stage, and evaporation recovers the dissolved solid.`,
           teachingTip:
-            "The iron and sulphur demonstration is worth the twenty minutes it costs. Mix the two, pass a magnet through and let learners see the iron lift out; then heat the mixture in a fume-free space until it glows and try the magnet again. The failure of the magnet on the product is the most persuasive evidence for the element-compound distinction a learner will meet all year, and they remember the moment. If chemicals are short, the salt-sand-iron separation costs nothing and teaches the same classification. For the kinetic theory, have learners act out the states themselves — packed and vibrating, sliding past one another, moving freely across the room — then ask what you would have to give them to move from one to the next. They will say energy, and the concept of latent heat then has somewhere to attach.",
+            "The salt–sand–iron separation costs nothing and teaches classification, technique choice and ordering all at once — do it as a real practical and have learners plan the order themselves before touching anything. The point to protect is that the sequence is not arbitrary: ask 'what would adding water first make difficult?' and let them discover why the magnet comes first. For states of matter, have learners act out the particles — packed and vibrating, sliding past one another, moving freely across the room — then ask what you must give them to move between states; they will say energy, and latent heat then has somewhere to attach. Keep the element/compound/mixture distinction tied to physical examples they can name from their own environment.",
           quiz: [
-            {
-              prompt: "Matter is best defined as anything that",
-              options: [
-                "can be seen",
-                "has mass and occupies space",
-                "can be burned",
-                "conducts electricity",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Mass and volume are the defining properties; visibility is irrelevant, as gases show.",
-            },
-            {
-              prompt: "In which state are particles closely packed in a fixed arrangement?",
-              options: ["Solid", "Liquid", "Gas", "All three"],
-              correctIndex: 0,
-              explanation:
-                "Solids have strong forces holding particles vibrating about fixed positions.",
-            },
-            {
-              prompt: "The change from solid directly to gas is called",
-              options: ["Melting", "Condensation", "Sublimation", "Evaporation"],
-              correctIndex: 2,
-              explanation:
-                "Iodine and ammonium chloride sublime without forming a liquid.",
-            },
-            {
-              prompt: "Which of the following is a compound?",
-              options: ["Air", "Brass", "Water", "Sea water"],
-              correctIndex: 2,
-              explanation:
-                "Water is hydrogen and oxygen chemically combined in a fixed ratio; the others are mixtures.",
-            },
-            {
-              prompt: "A key feature of a mixture is that",
-              options: [
-                "its components are in a fixed ratio",
-                "it can only be separated chemically",
-                "its components keep their own properties",
-                "it is always a liquid",
-              ],
-              correctIndex: 2,
-              explanation:
-                "Components of a mixture are not chemically combined and retain their identities.",
-            },
-            {
-              prompt: "Which technique separates two miscible liquids with different boiling points?",
-              options: [
-                "Filtration",
-                "Fractional distillation",
-                "Magnetic separation",
-                "Decantation",
-              ],
-              correctIndex: 1,
-              explanation:
-                "A fractionating column allows the liquid with the lower boiling point to be collected first.",
-            },
-            {
-              prompt: "Burning wood is a chemical change because",
-              options: [
-                "the wood gets hot",
-                "new substances with different properties are formed",
-                "the wood changes shape",
-                "it can easily be reversed",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Ash, carbon dioxide and water vapour are new substances, and the change is not readily reversed.",
-            },
-            {
-              prompt: "Which is an element?",
-              options: ["Sodium chloride", "Carbon dioxide", "Copper", "Bronze"],
-              correctIndex: 2,
-              explanation:
-                "Copper consists of only one kind of atom and cannot be chemically simplified.",
-            },
-            {
-              prompt: "During melting, the temperature of a pure substance",
-              options: [
-                "rises steadily",
-                "stays constant until melting is complete",
-                "falls",
-                "rises then falls",
-              ],
-              correctIndex: 1,
-              explanation:
-                "The heat supplied is latent heat used to overcome forces between particles, not to raise temperature.",
-            },
-            {
-              prompt: "Sand can be separated from salt solution by",
-              options: ["Distillation", "Filtration", "Chromatography", "Sublimation"],
-              correctIndex: 1,
-              explanation:
-                "Sand is insoluble and is retained as residue while the solution passes through as filtrate.",
-            },
+            { prompt: "In which state are particles closely packed in a fixed arrangement?", options: ["Solid", "Liquid", "Gas", "All three"], correctIndex: 0, explanation: "Solids have strong forces holding particles vibrating in place." },
+            { prompt: "The change from a solid directly to a gas is called", options: ["melting", "condensation", "sublimation", "evaporation"], correctIndex: 2, explanation: "Iodine and ammonium chloride sublime without forming a liquid." },
+            { prompt: "Which of these is a chemical change?", options: ["Melting ice", "Dissolving salt", "Burning wood", "Boiling water"], correctIndex: 2, explanation: "Burning forms new substances and is hard to reverse." },
+            { prompt: "Which is a compound?", options: ["Air", "Sea water", "Water", "Soil"], correctIndex: 2, explanation: "Water is hydrogen and oxygen chemically combined in a fixed ratio." },
+            { prompt: "A key feature of a mixture is that its components", options: ["are in a fixed ratio", "keep their own properties", "can only be separated chemically", "are always solid"], correctIndex: 1, explanation: "Components of a mixture are not chemically combined and keep their identities." },
+            { prompt: "Sand can be separated from salt solution by", options: ["distillation", "filtration", "chromatography", "sublimation"], correctIndex: 1, explanation: "Insoluble sand is retained as residue while the solution passes through." },
+            { prompt: "Which technique separates two miscible liquids with different boiling points?", options: ["Filtration", "Fractional distillation", "Magnetic separation", "Decantation"], correctIndex: 1, explanation: "A fractionating column separates liquids by boiling point." },
+            { prompt: "Which is an element?", options: ["Sodium chloride", "Carbon dioxide", "Copper", "Bronze"], correctIndex: 2, explanation: "Copper is made of one kind of atom and cannot be chemically simplified." },
+            { prompt: "During melting, the temperature of a pure solid", options: ["rises steadily", "stays constant until melting is complete", "falls", "rises then falls"], correctIndex: 1, explanation: "The heat supplied is latent heat overcoming forces, not raising temperature." },
+            { prompt: "Iron filings can be separated from sand by", options: ["distillation", "a magnet", "chromatography", "evaporation"], correctIndex: 1, explanation: "Iron is magnetic and sand is not — a solid–solid separation." },
+            { prompt: "Which state of matter is highly compressible?", options: ["Solid", "Liquid", "Gas", "None"], correctIndex: 2, explanation: "Gas particles are far apart, leaving space to compress." },
+            { prompt: "Salt is recovered from brine (salt water) by", options: ["filtration", "evaporation/crystallisation", "magnetic separation", "decantation"], correctIndex: 1, explanation: "Evaporating the water leaves the dissolved salt behind." },
+            { prompt: "Which change is physical?", options: ["Rusting of iron", "Burning of paper", "Melting of candle wax", "Souring of milk"], correctIndex: 2, explanation: "Melting forms no new substance and is easily reversed." },
+            { prompt: "Pure water can be obtained from sea water by", options: ["filtration", "simple distillation", "magnetic separation", "chromatography"], correctIndex: 1, explanation: "Distillation boils off and re-condenses the water, leaving salts behind." },
+            { prompt: "The technique used to separate the coloured substances in an ink is", options: ["distillation", "chromatography", "filtration", "decantation"], correctIndex: 1, explanation: "Chromatography separates dissolved substances by their solubility." },
+            { prompt: "Which statement about a chemical change is correct?", options: ["No new substance is formed", "It is always easy to reverse", "A new substance with different properties is formed", "Mass is lost"], correctIndex: 2, explanation: "Chemical changes form new substances; mass is still conserved." },
+            { prompt: "Substances that sublime include", options: ["water and salt", "iodine and ammonium chloride", "sand and iron", "copper and gold"], correctIndex: 1, explanation: "These change directly from solid to gas on heating." },
+            { prompt: "A gas has", options: ["definite shape and volume", "definite volume only", "no definite shape or volume", "definite shape only"], correctIndex: 2, explanation: "Gas particles move freely, filling any container." },
+            { prompt: "Which mixture type does magnetic separation handle?", options: ["Solid–solid", "Liquid–liquid", "Gas–gas", "Solid–gas"], correctIndex: 0, explanation: "It separates a magnetic solid from a non-magnetic solid." },
+            { prompt: "When separating salt, sand and iron, which step comes first?", options: ["Add water", "Filter", "Use a magnet", "Evaporate"], correctIndex: 2, explanation: "Remove the iron with a magnet before adding water, or it becomes hard to recover." },
           ],
           test: [
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Using the kinetic theory, explain the difference in compressibility between a gas and a solid.",
-              answerKey:
-                "In a gas the particles are far apart with large spaces between them and negligible forces of attraction, so applying pressure pushes them closer and the volume falls markedly — a gas is highly compressible. In a solid the particles are already in contact in a fixed close-packed arrangement with strong forces, leaving almost no space to remove, so a solid is effectively incompressible. Award 4 marks for the gas explanation, 4 for the solid, requiring reference to particle spacing in both.",
-              marks: 8,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Give four differences between a compound and a mixture.",
-              answerKey:
-                "Components chemically combined versus physically together; fixed ratio by mass versus any proportion; properties differ from constituents versus constituents retain their properties; separated by chemical means versus by physical means; formation involves an energy change versus little or no energy change. Award 2 marks per complete two-sided difference.",
-              marks: 8,
-            },
-            {
-              type: "MULTIPLE_CHOICE",
-              prompt:
-                "Iron filings and sulphur are mixed, then heated strongly. A magnet is passed over the product and attracts nothing. This shows that",
-              options: [
-                "the iron has evaporated",
-                "a compound has been formed",
-                "the mixture was impure",
-                "sulphur is magnetic",
-              ],
-              correctIndex: 1,
-              answerKey:
-                "The iron is no longer free but chemically combined as iron(II) sulphide, whose properties differ from those of its elements. Option B.",
-              marks: 4,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Describe how you would obtain pure water from sea water in the school laboratory, naming the apparatus and explaining the principle.",
-              answerKey:
-                "Simple distillation. Heat the sea water in a flask fitted with a thermometer and delivery tube leading to a Liebig condenser; water boils at 100 degrees Celsius and the vapour passes into the condenser where cold water in the outer jacket cools it back to liquid, collected as distillate in a receiver. The dissolved salts have far higher boiling points and remain in the flask. Award 3 marks for naming the process and apparatus, 3 for the description of the procedure, 3 for the principle of differing boiling points.",
-              marks: 9,
-            },
-            {
-              type: "ESSAY",
-              prompt:
-                "A sample contains sand, iron filings, ammonium chloride and common salt. Describe in full how you would separate all four components, justifying the order of your steps.",
-              answerKey:
-                "Expect: (1) magnetic separation first to remove iron filings, justified because later addition of water would make this difficult, 5 marks; (2) sublimation by gentle heating to remove ammonium chloride, which sublimes while the others do not, collected on a cool surface, 5 marks; (3) addition of water and filtration to separate insoluble sand as residue from salt solution as filtrate, 5 marks; (4) evaporation or crystallisation of the filtrate to recover salt, 4 marks; (5) explicit justification of the ordering — dry physical methods before wet ones, and sublimation before dissolving — 6 marks. Deduct up to 3 marks where steps are correct but the sequence would make a later step impossible.",
-              marks: 25,
-            },
-          ],
-        },
-        {
-          slug: "atomic-structure",
-          title: "Atomic Structure",
-          objective:
-            "By the end of the lesson, learners should be able to describe the sub-atomic particles, define atomic and mass number, write electron configurations, and explain isotopy and relative atomic mass.",
-          estimatedMinutes: 80,
-          notes: `## The atom
-
-The smallest particle of an element that can take part in a chemical reaction.
-
-## Sub-atomic particles
-
-| Particle | Symbol | Relative charge | Relative mass | Location |
-| --- | --- | --- | --- | --- |
-| Proton | p | +1 | 1 | Nucleus |
-| Neutron | n | 0 | 1 | Nucleus |
-| Electron | e | -1 | 1/1840 (negligible) | Shells around the nucleus |
-
-Protons and neutrons together are called **nucleons**. Nearly all the mass of an atom is in the nucleus; nearly all its volume is empty space.
-
-## Atomic number and mass number
-
-**Atomic number (Z)** = number of protons. This defines the element. Change it and you have a different element.
-
-**Mass number (A)** = number of protons + number of neutrons.
-
-**Number of neutrons = A - Z**
-
-In a **neutral atom**, number of electrons = number of protons.
-
-Notation: the mass number is written above and the atomic number below the symbol, for example sodium with A = 23 and Z = 11.
-
-## Electron arrangement
-
-Electrons occupy shells (energy levels) around the nucleus. The maximum number in each shell is given by 2n squared:
-
-- Shell 1: 2 electrons
-- Shell 2: 8 electrons
-- Shell 3: 18, though it commonly holds 8 before the fourth shell begins to fill
-
-For the first twenty elements, fill the shells in order 2, 8, 8, 2.
-
-Examples:
-
-- Sodium (Z = 11): 2, 8, 1
-- Chlorine (Z = 17): 2, 8, 7
-- Calcium (Z = 20): 2, 8, 8, 2
-
-The **valence electrons** are those in the outermost shell. They determine the element's chemical behaviour.
-
-## Ions
-
-An atom that gains or loses electrons becomes charged.
-
-- **Cation** — formed by losing electrons; positively charged. *Na loses one electron to give Na+*
-- **Anion** — formed by gaining electrons; negatively charged. *Cl gains one electron to give Cl-*
-
-Note that only electrons move. The number of protons never changes in a chemical reaction, so the element stays the same.
-
-## Isotopes
-
-**Isotopes** are atoms of the same element having the same atomic number but different mass numbers — the same number of protons, different numbers of neutrons.
-
-- Chlorine-35 and chlorine-37
-- Carbon-12, carbon-13 and carbon-14
-- Hydrogen-1 (protium), hydrogen-2 (deuterium), hydrogen-3 (tritium)
-
-Because isotopes have identical electron arrangements, their **chemical properties are the same**. Their **physical properties**, which depend on mass, differ slightly.
-
-## Relative atomic mass
-
-Because most elements exist as a mixture of isotopes, the relative atomic mass is a weighted average:
-
-RAM = (mass of isotope 1 x % abundance + mass of isotope 2 x % abundance) / 100
-
-This is why chlorine's relative atomic mass is 35.5, a value no single chlorine atom possesses.`,
-          workedExample: `**Question:** Chlorine exists as two isotopes: chlorine-35 with 75 per cent abundance and chlorine-37 with 25 per cent abundance. The atomic number of chlorine is 17.
-
-(a) State the number of protons, neutrons and electrons in each isotope.
-(b) Write the electron configuration of a chlorine atom.
-(c) Calculate the relative atomic mass of chlorine.
-(d) Explain why the two isotopes have identical chemical properties.
-
-**Solution**
-
-**(a) Sub-atomic particles**
-
-Atomic number is 17, so **every** chlorine atom has 17 protons and, being neutral, 17 electrons.
-
-*Chlorine-35:* neutrons = A - Z = 35 - 17 = **18**
-*Chlorine-37:* neutrons = 37 - 17 = **20**
-
-So: Cl-35 has 17p, 18n, 17e. Cl-37 has 17p, 20n, 17e.
-
-**(b) Electron configuration**
-
-17 electrons filled in order 2, 8, then the remainder:
-
-2 + 8 = 10, leaving 7.
-
-**Configuration: 2, 8, 7**
-
-Seven valence electrons, which is why chlorine gains one electron to complete its outer shell.
-
-**(c) Relative atomic mass**
-
-RAM = [(35 x 75) + (37 x 25)] / 100
-
-= (2625 + 925) / 100
-
-= 3550 / 100
-
-= **35.5**
-
-*Sense check:* the answer lies between 35 and 37, and closer to 35 because chlorine-35 is the more abundant. It is.
-
-**(d) Why chemical properties are identical**
-
-Chemical behaviour is governed entirely by the **electron arrangement**, particularly the valence electrons. Both isotopes have 17 electrons arranged 2, 8, 7, so both react in exactly the same way. The extra neutrons in chlorine-37 add mass but no charge and sit in the nucleus, taking no part in bonding. Only the **physical** properties, such as density and rate of diffusion, differ slightly.`,
-          teachingTip:
-            "Scale is what makes the atom real. Tell learners that if the nucleus were a grain of rice placed at the centre of a football field, the electrons would be at the boundary fence and everything between would be empty. Pause there — the emptiness of solid matter is genuinely startling and buys attention for the rest of the lesson. For isotopes, the recurring misconception is that a different mass number means a different element; attack it by asking what would have to change for chlorine to stop being chlorine, and keep pressing until someone says the number of protons. For the relative atomic mass calculation, insist on the sense check: the answer must fall between the two isotope masses and lean towards the more abundant one. A learner who checks this catches almost every arithmetic slip.",
-          quiz: [
-            {
-              prompt: "Which sub-atomic particle carries no charge?",
-              options: ["Proton", "Neutron", "Electron", "Nucleon"],
-              correctIndex: 1,
-              explanation: "Neutrons are electrically neutral and sit in the nucleus.",
-            },
-            {
-              prompt: "The atomic number of an element is the number of",
-              options: ["Neutrons", "Protons", "Nucleons", "Shells"],
-              correctIndex: 1,
-              explanation:
-                "The proton number defines which element an atom is.",
-            },
-            {
-              prompt: "An atom has mass number 40 and atomic number 19. How many neutrons does it have?",
-              options: ["19", "21", "40", "59"],
-              correctIndex: 1,
-              explanation: "Neutrons = A - Z = 40 - 19 = 21.",
-            },
-            {
-              prompt: "The electron configuration of sodium (Z = 11) is",
-              options: ["2, 9", "2, 8, 1", "8, 2, 1", "2, 8, 8"],
-              correctIndex: 1,
-              explanation:
-                "The first shell takes 2, the second 8, leaving 1 in the third shell.",
-            },
-            {
-              prompt: "Isotopes of an element differ in the number of",
-              options: ["Protons", "Electrons", "Neutrons", "Shells"],
-              correctIndex: 2,
-              explanation:
-                "Same proton number, different neutron number, hence different mass numbers.",
-            },
-            {
-              prompt: "A cation is formed when an atom",
-              options: [
-                "gains electrons",
-                "loses electrons",
-                "gains protons",
-                "loses neutrons",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Losing negatively charged electrons leaves a net positive charge.",
-            },
-            {
-              prompt: "Nearly all the mass of an atom is concentrated in the",
-              options: ["Electron shells", "Nucleus", "Empty space", "Valence shell"],
-              correctIndex: 1,
-              explanation:
-                "Protons and neutrons carry essentially all the mass; electrons are negligible.",
-            },
-            {
-              prompt: "Why is the relative atomic mass of chlorine 35.5?",
-              options: [
-                "Every chlorine atom has half a neutron",
-                "It is the weighted average of its isotopes",
-                "The measurement is inaccurate",
-                "Chlorine has 35.5 protons",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Chlorine-35 and chlorine-37 occur in a roughly 3:1 ratio, averaging to 35.5.",
-            },
-            {
-              prompt: "The maximum number of electrons in the second shell is",
-              options: ["2", "8", "18", "32"],
-              correctIndex: 1,
-              explanation: "Using 2n squared with n = 2 gives 8.",
-            },
-            {
-              prompt: "Isotopes have identical chemical properties because they have the same",
-              options: [
-                "mass number",
-                "number of neutrons",
-                "electron arrangement",
-                "density",
-              ],
-              correctIndex: 2,
-              explanation:
-                "Chemical behaviour depends on valence electrons, which are unaffected by neutron number.",
-            },
-          ],
-          test: [
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "An atom of an element has mass number 39 and atomic number 19. State the number of protons, neutrons and electrons, and write its electron configuration.",
-              answerKey:
-                "Protons = 19; neutrons = 39 - 19 = 20; electrons = 19 in the neutral atom. Configuration 2, 8, 8, 1. Award 2 marks each for protons, neutrons and electrons, and 3 marks for the configuration. The element is potassium; award 1 bonus mark within the total if named.",
-              marks: 9,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Boron has two isotopes: boron-10 with 20 per cent abundance and boron-11 with 80 per cent abundance. Calculate its relative atomic mass.",
-              answerKey:
-                "RAM = [(10 x 20) + (11 x 80)] / 100 = (200 + 880) / 100 = 1080 / 100 = 10.8. Award 3 marks for correct set-up of the weighted average, 3 for the arithmetic, 2 for the correct final value with no units.",
-              marks: 8,
-            },
-            {
-              type: "MULTIPLE_CHOICE",
-              prompt:
-                "An ion has 12 protons, 12 neutrons and 10 electrons. What is its charge and identity?",
-              options: [
-                "Mg2+ ",
-                "Mg2-",
-                "Ne2+",
-                "Na+",
-              ],
-              correctIndex: 0,
-              answerKey:
-                "12 protons identifies magnesium. With only 10 electrons there are two more positive charges than negative, giving a 2+ charge. Option A.",
-              marks: 4,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Define isotopy and explain why isotopes of an element have the same chemical properties but slightly different physical properties.",
-              answerKey:
-                "Isotopy: the existence of atoms of the same element having the same atomic number but different mass numbers, arising from differing numbers of neutrons. Chemical properties are identical because these depend on the number and arrangement of electrons, which is the same in all isotopes of an element; the neutrons are uncharged, lie in the nucleus and take no part in bonding. Physical properties such as density, rate of diffusion and boiling point differ slightly because these depend on mass, which the extra neutrons change. Award 3 marks for the definition, 4 for the chemical explanation, 3 for the physical explanation.",
-              marks: 10,
-            },
-            {
-              type: "ESSAY",
-              prompt:
-                "Describe the structure of the atom, naming the sub-atomic particles with their charges, masses and locations. Explain how atomic number and mass number are used to describe an atom, and show with two worked examples how the electron configuration of an element is determined.",
-              answerKey:
-                "Award marks as follows: description of the nuclear atom with a dense central nucleus and electrons in shells, most of the volume being empty space, 5 marks; a complete table or account of proton, neutron and electron with charge, relative mass and location, 6 marks; correct definitions of atomic number as proton number and mass number as protons plus neutrons, with the relationship neutrons = A - Z, 5 marks; the shell capacity rule 2, 8, 8 for the first twenty elements, 3 marks; two correct worked electron configurations with reasoning, 6 marks; clarity and use of correct terminology, 3 marks. Deduct 2 marks where a learner states that electrons contribute significantly to atomic mass.",
-              marks: 28,
-            },
-          ],
-        },
-        {
-          slug: "periodic-table",
-          title: "The Periodic Table",
-          objective:
-            "By the end of the lesson, learners should be able to describe the arrangement of the modern periodic table, relate group and period to electron configuration, and explain the main trends across a period and down a group.",
-          estimatedMinutes: 80,
-          notes: `## The modern periodic law
-
-**The properties of elements are a periodic function of their atomic numbers.**
-
-Mendeleev arranged elements by relative atomic mass and left gaps for undiscovered elements, correctly predicting their properties. Moseley later showed that atomic number, not mass, is the true basis of the order, which resolved the anomalies in Mendeleev's table.
-
-## Structure of the table
-
-**Groups** — the vertical columns, numbered I to VIII (or 1 to 18).
-**Periods** — the horizontal rows, numbered 1 to 7.
-
-The two key relationships:
-
-- **Group number = number of valence electrons** (for the main-group elements)
-- **Period number = number of occupied electron shells**
-
-Sodium, configuration 2, 8, 1, therefore sits in **Group I** (one valence electron), **Period 3** (three shells).
-
-## The named groups
-
-- **Group I — alkali metals.** Li, Na, K. One valence electron, lost readily. Soft, low density, very reactive, stored under oil.
-- **Group II — alkaline earth metals.** Be, Mg, Ca. Two valence electrons.
-- **Group VII — halogens.** F, Cl, Br, I. Seven valence electrons, gain one readily. Coloured, diatomic, reactive non-metals.
-- **Group VIII (0) — noble gases.** He, Ne, Ar. Full outer shells, hence almost entirely unreactive.
-- **Transition elements** — the block between Groups II and III. Hard, dense, high melting points, variable valency, coloured compounds, often catalysts.
-
-## Trends across a period, left to right
-
-Electrons enter the **same shell** while the nuclear charge increases, so the pull on the outer electrons rises.
-
-- **Atomic radius decreases**
-- **Metallic character decreases**, non-metallic character increases
-- **Ionisation energy increases**
-- **Electronegativity increases**
-- Oxides change from basic through amphoteric to acidic
-
-## Trends down a group
-
-A new shell is added at each step, so outer electrons lie further from the nucleus and are shielded by the inner shells.
-
-- **Atomic radius increases**
-- **Ionisation energy decreases**
-- **Metallic character increases**
-- Group I: **reactivity increases** down the group, because the single valence electron is lost more easily
-- Group VII: **reactivity decreases** down the group, because attracting an extra electron becomes harder
-
-Note that reactivity trends run in **opposite directions** for metals and non-metals. Metals react by losing electrons, non-metals by gaining them, so anything making electron loss easier makes electron gain harder.
-
-## Why elements in a group behave alike
-
-Members of a group have the **same number of valence electrons**. Since chemical behaviour is determined by the valence shell, they undergo the same kinds of reaction, differing only in vigour.`,
-          workedExample: `**Question:** An element X has atomic number 12.
-
-(a) Write its electron configuration.
-(b) State its group and period, giving your reasoning.
-(c) Predict whether it is a metal or non-metal and what ion it forms.
-(d) Compare its atomic radius and reactivity with those of the element directly below it in the same group.
-
-**Solution**
-
-**(a) Electron configuration**
-
-12 electrons, filled 2, then 8, leaving 2.
-
-**Configuration: 2, 8, 2**
-
-**(b) Group and period**
-
-*Group:* the outermost shell holds **2** electrons, so X is in **Group II**.
-
-*Period:* there are **3** occupied shells, so X is in **Period 3**.
-
-X is magnesium.
-
-**(c) Metal or non-metal, and its ion**
-
-With only two valence electrons, X loses them far more easily than it could gain six. Elements that react by losing electrons are **metals**.
-
-Losing two electrons leaves 10 electrons and 12 protons, a net charge of 2+.
-
-**X forms the ion X2+** and achieves the stable configuration 2, 8.
-
-**(d) Comparison with the element below**
-
-The element directly below in Group II is calcium, Z = 20, configuration 2, 8, 8, 2.
-
-*Atomic radius:* calcium has **four** occupied shells against magnesium's three. An extra shell places the outer electrons further from the nucleus, so **calcium's atomic radius is larger**.
-
-*Reactivity:* calcium's valence electrons are further from the nucleus and shielded by more inner shells, so the nuclear attraction on them is weaker and they are **lost more easily**. Since Group II metals react by losing electrons, **calcium is more reactive than magnesium**.
-
-**The general rule confirmed:** metallic reactivity increases down a group.`,
-          teachingTip:
-            "Do not hand learners the trends to memorise — have them derive the trends from electron configuration, which they already know. Write the configurations of the first twenty elements on the board as a class exercise, then arrange the cards on the wall by number of shells (rows) and number of valence electrons (columns). The periodic table assembles itself, and learners see that the group number is not an arbitrary label. Once the table is built, ask why Group I and Group VII reactivity trends run opposite ways; the answer follows directly from losing versus gaining, and learners who reason it out never reverse it in an examination. If sodium and water can be demonstrated safely with a very small piece behind a screen, do it — the visible violence anchors the whole group.",
-          quiz: [
-            {
-              prompt: "The modern periodic table arranges elements in order of increasing",
-              options: [
-                "Relative atomic mass",
-                "Atomic number",
-                "Density",
-                "Number of neutrons",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Moseley showed atomic number to be the correct ordering principle.",
-            },
-            {
-              prompt: "The group number of a main-group element equals its number of",
-              options: [
-                "Occupied shells",
-                "Valence electrons",
-                "Protons",
-                "Neutrons",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Group I elements have one valence electron, Group VII have seven, and so on.",
-            },
-            {
-              prompt: "An element with configuration 2, 8, 7 belongs to",
-              options: [
-                "Group VII, Period 3",
-                "Group III, Period 7",
-                "Group II, Period 8",
-                "Group VIII, Period 2",
-              ],
-              correctIndex: 0,
-              explanation:
-                "Seven valence electrons gives Group VII; three occupied shells gives Period 3.",
-            },
-            {
-              prompt: "Why are the noble gases almost unreactive?",
-              options: [
-                "They are very heavy",
-                "They have full outer electron shells",
-                "They have no electrons",
-                "They exist only as liquids",
-              ],
-              correctIndex: 1,
-              explanation:
-                "With a complete valence shell there is no tendency to gain, lose or share electrons.",
-            },
-            {
-              prompt: "Across a period from left to right, atomic radius generally",
-              options: ["Increases", "Decreases", "Stays constant", "Doubles"],
-              correctIndex: 1,
-              explanation:
-                "Nuclear charge rises while electrons enter the same shell, pulling them inward.",
-            },
-            {
-              prompt: "Reactivity of Group I metals down the group",
-              options: ["Increases", "Decreases", "Stays the same", "Varies randomly"],
-              correctIndex: 0,
-              explanation:
-                "The valence electron lies further out and is shielded, so it is lost more readily.",
-            },
-            {
-              prompt: "Which of these is a transition element property?",
-              options: [
-                "Very low melting point",
-                "Variable valency and coloured compounds",
-                "Full outer shell",
-                "Always a gas at room temperature",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Transition metals show variable oxidation states, coloured compounds and catalytic activity.",
-            },
-            {
-              prompt: "The halogens are found in",
-              options: ["Group I", "Group II", "Group VII", "Group VIII"],
-              correctIndex: 2,
-              explanation:
-                "Fluorine, chlorine, bromine and iodine each have seven valence electrons.",
-            },
-            {
-              prompt: "The period number of an element tells you its number of",
-              options: [
-                "Valence electrons",
-                "Occupied electron shells",
-                "Neutrons",
-                "Isotopes",
-              ],
-              correctIndex: 1,
-              explanation:
-                "An element in Period 3 has three occupied shells.",
-            },
-            {
-              prompt: "Group VII reactivity down the group",
-              options: [
-                "Increases, because atoms get larger",
-                "Decreases, because attracting an electron becomes harder",
-                "Stays the same",
-                "Increases, because shielding decreases",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Non-metals react by gaining electrons, so greater distance and shielding reduce reactivity.",
-            },
-          ],
-          test: [
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "An element has atomic number 17. Write its electron configuration and deduce its group and period, explaining your reasoning.",
-              answerKey:
-                "Configuration 2, 8, 7. Seven valence electrons places it in Group VII; three occupied shells places it in Period 3. The element is chlorine. Award 3 marks for the configuration, 3 for the group with reasoning, 3 for the period with reasoning, 1 for naming chlorine.",
-              marks: 10,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Explain why atomic radius decreases across a period but increases down a group.",
-              answerKey:
-                "Across a period: electrons are added to the same shell while the number of protons increases, so the nuclear charge grows without additional shielding and the outer electrons are pulled closer, reducing the radius. Down a group: each successive element has an additional occupied shell, placing outer electrons further from the nucleus, and inner shells shield them from the nuclear charge, so the radius increases. Award 5 marks for each explanation, requiring reference to nuclear charge and shielding respectively.",
-              marks: 10,
-            },
-            {
-              type: "MULTIPLE_CHOICE",
-              prompt:
-                "Elements P, Q and R have configurations 2, 8, 1; 2, 8, 7; and 2, 8, 8. Which statement is correct?",
-              options: [
-                "P is a non-metal and R is highly reactive",
-                "P is a metal, Q is a non-metal, R is unreactive",
-                "All three are metals",
-                "Q is unreactive and R is a halogen",
-              ],
-              correctIndex: 1,
-              answerKey:
-                "P has one valence electron and loses it readily, so it is a reactive metal (Group I). Q has seven and gains one readily, so it is a reactive non-metal (Group VII). R has a full outer shell, making it a noble gas and unreactive. Option B.",
-              marks: 4,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Explain why sodium and potassium have similar chemical properties, and state which is more reactive with a reason.",
-              answerKey:
-                "Both belong to Group I with one valence electron (Na = 2,8,1; K = 2,8,8,1), and since chemical behaviour is determined by the valence shell they undergo the same kinds of reaction. Potassium is more reactive because its valence electron lies in a fourth shell, further from the nucleus and shielded by more inner shells, so it is lost more easily. Award 5 marks for the similarity argument with configurations, 5 for the reactivity comparison with reasoning.",
-              marks: 10,
-            },
-            {
-              type: "ESSAY",
-              prompt:
-                "Describe the arrangement of the modern periodic table and discuss the main trends observed across a period and down a group, explaining each trend in terms of atomic structure.",
-              answerKey:
-                "Award marks as follows: statement of the periodic law and the historical shift from Mendeleev's mass ordering to Moseley's atomic number, 4 marks; description of groups and periods with the two key relationships to valence electrons and occupied shells, 6 marks; at least four trends across a period — atomic radius, metallic character, ionisation energy, electronegativity, nature of oxides — each explained by increasing nuclear charge with electrons entering the same shell, 8 marks; at least three trends down a group explained by additional shells and increased shielding, 6 marks; explicit treatment of why Group I and Group VII reactivity trends run in opposite directions, 4 marks; organisation and terminology, 2 marks. A learner who states trends correctly without explaining them in terms of atomic structure should not exceed 12.",
-              marks: 30,
-            },
-          ],
-        },
-        {
-          slug: "chemical-bonding",
-          title: "Chemical Bonding",
-          objective:
-            "By the end of the lesson, learners should be able to explain why atoms combine, describe ionic, covalent and metallic bonding, and relate the type of bonding present in a substance to its physical properties.",
-          estimatedMinutes: 80,
-          notes: `## Why atoms combine
-
-Atoms bond in order to achieve a **stable electron configuration** — a full outer shell, resembling that of the nearest noble gas.
-
-- **Duplet rule** — two electrons in the outer shell, for the very smallest atoms such as hydrogen and lithium
-- **Octet rule** — eight electrons in the outer shell, for most other main-group atoms
-
-## Ionic (electrovalent) bonding
-
-Formed by the **complete transfer** of electrons from a metal to a non-metal. The oppositely charged ions produced are held together by electrostatic attraction.
-
-**Sodium chloride:**
-
-- Sodium (2, 8, 1) loses one electron, becoming Na+ with configuration 2, 8
-- Chlorine (2, 8, 7) gains that electron, becoming Cl- with configuration 2, 8, 8
-- The Na+ and Cl- ions attract one another strongly
-
-**Properties of ionic compounds:**
-
-- High melting and boiling points — much energy is needed to overcome the strong electrostatic forces throughout the lattice
-- Usually soluble in water, insoluble in organic solvents
-- Conduct electricity when **molten or in solution**, but not when solid, because the ions must be free to move
-- Hard but brittle crystalline solids
-
-## Covalent bonding
-
-Formed by the **sharing** of electron pairs between two non-metal atoms. Each shared pair constitutes one covalent bond.
-
-- **Single bond** — one shared pair, as in H2 or HCl
-- **Double bond** — two shared pairs, as in O2 or CO2
-- **Triple bond** — three shared pairs, as in N2
-
-**Properties of simple covalent (molecular) substances:**
-
-- Low melting and boiling points — the forces **between molecules** are weak, even though the bonds within each molecule are strong
-- Usually insoluble in water, soluble in organic solvents
-- Do not conduct electricity, having no free ions or electrons
-- Often gases, liquids or soft solids at room temperature
-
-**Giant covalent structures** such as diamond and graphite are the exception: every atom is covalently bonded into a continuous network, giving very high melting points.
-
-## Co-ordinate (dative) bonding
-
-A covalent bond in which **both** shared electrons come from the same atom. Once formed it is indistinguishable from an ordinary covalent bond. Examples: the ammonium ion and the hydroxonium ion.
-
-## Metallic bonding
-
-In a metal, the valence electrons are **delocalised** — no longer belonging to any one atom but free to move throughout the structure. The metal exists as a lattice of positive ions in a 'sea' of mobile electrons.
-
-**Properties explained by this model:**
-
-- **Electrical and thermal conductivity** — the delocalised electrons carry charge and energy through the solid
-- **Malleability and ductility** — layers of ions slide over one another without breaking the bonding, because the electron sea adjusts
-- **High melting points and lustre** — strong attraction between the positive lattice and the electron sea
-
-## Choosing the bond type
-
-- Metal + non-metal → **ionic**
-- Non-metal + non-metal → **covalent**
-- Metal + metal → **metallic**
-
-## The key inference
-
-You can often deduce the bonding in an unknown substance from its properties. A solid with a high melting point that conducts only when molten is ionic. A substance with a low boiling point that never conducts is simple covalent. A solid that conducts in the solid state and can be hammered into sheets is metallic.`,
-          workedExample: `**Question:** Substance A melts at 801 degrees Celsius, does not conduct electricity as a solid but conducts well when molten, and dissolves readily in water. Substance B melts at -23 degrees Celsius, never conducts electricity, and is insoluble in water but soluble in petrol.
-
-(a) Deduce the type of bonding in each and justify your answer from the evidence.
-(b) For substance A, suggest a possible identity and show the electron transfer involved.
-(c) Explain why substance B has such a low melting point although its bonds are described as strong.
-
-**Solution**
-
-**(a) Deducing the bonding**
-
-*Substance A:*
-
-- **High melting point (801 C)** — a great deal of energy is required, indicating strong forces throughout the structure.
-- **Does not conduct as a solid but conducts when molten** — this is decisive. It means charged particles are present but fixed in place until melting frees them.
-- **Soluble in water** — typical of ionic compounds.
-
-All three point to **ionic bonding**.
-
-*Substance B:*
-
-- **Very low melting point (-23 C)** — only weak forces need to be overcome.
-- **Never conducts** — no free ions and no free electrons.
-- **Insoluble in water, soluble in petrol** — characteristic of non-polar molecular substances.
-
-These indicate **simple covalent (molecular) bonding**.
-
-**(b) Identity of A and the electron transfer**
-
-801 degrees Celsius is the melting point of **sodium chloride**.
-
-*The transfer:*
-
-Sodium has configuration 2, 8, 1. It loses its single valence electron:
-
-Na (2, 8, 1) → Na+ (2, 8) + one electron
-
-Chlorine has configuration 2, 8, 7. It gains that electron:
-
-Cl (2, 8, 7) + one electron → Cl- (2, 8, 8)
-
-Both ions now have the stable configuration of a noble gas — neon for Na+, argon for Cl-. The oppositely charged ions are held by strong electrostatic attraction in a giant lattice.
-
-**(c) Why B melts so easily despite strong bonds**
-
-This is the distinction learners most often miss. Two different forces are involved:
-
-1. The **covalent bonds within each molecule** are indeed strong.
-2. The **intermolecular forces between separate molecules** are weak.
-
-When substance B melts, the molecules are separated from one another — but the covalent bonds inside each molecule are **not broken**. Melting only has to overcome the weak intermolecular forces, so it happens at a low temperature.
-
-By contrast, melting an ionic solid requires breaking the strong electrostatic attractions of the entire lattice, which is why sodium chloride needs 801 degrees.
-
-**Answer:** (a) A ionic, B simple covalent (b) sodium chloride, with one electron transferred from Na to Cl (c) melting separates molecules and overcomes only the weak forces between them, not the strong bonds within them.`,
-          teachingTip:
-            "Two errors dominate this topic every year. The first is confusing intramolecular bonds with intermolecular forces, which is why learners cannot explain how a substance with 'strong covalent bonds' boils at room temperature. Address it physically: have six pairs of learners link arms tightly in pairs (the covalent bonds), then stand loosely near each other (the intermolecular forces). Ask what has to break for the group to spread across the room — the pairs stay linked. That image resolves the confusion permanently. The second error is asserting that ionic compounds never conduct. Insist on the full sentence every time: 'ionic compounds conduct when molten or in solution, because the ions become free to move'. Drill the conditional clause until it is automatic. Finish by giving learners property data for three unknown substances and having them deduce the bonding, which is exactly how the question is asked in the examination.",
-          quiz: [
-            {
-              prompt: "Atoms combine chemically in order to",
-              options: [
-                "increase their mass",
-                "achieve a stable outer electron configuration",
-                "gain protons",
-                "become radioactive",
-              ],
-              correctIndex: 1,
-              explanation:
-                "The duplet or octet rule describes the stable arrangement atoms move towards.",
-            },
-            {
-              prompt: "Ionic bonding involves",
-              options: [
-                "sharing of electrons",
-                "complete transfer of electrons",
-                "delocalised electrons",
-                "sharing of protons",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Electrons pass from a metal to a non-metal, forming oppositely charged ions.",
-            },
-            {
-              prompt: "Which substance contains a triple covalent bond?",
-              options: ["H2", "O2", "N2", "HCl"],
-              correctIndex: 2,
-              explanation:
-                "Nitrogen atoms share three pairs of electrons to complete their octets.",
-            },
-            {
-              prompt: "Ionic compounds conduct electricity when",
-              options: [
-                "solid",
-                "molten or dissolved in water",
-                "cooled below freezing",
-                "never",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Conduction requires ions to be free to move, which they are only when molten or in solution.",
-            },
-            {
-              prompt: "Metallic bonding is best described as",
-              options: [
-                "positive ions in a sea of delocalised electrons",
-                "transfer of electrons between metals",
-                "sharing of electron pairs",
-                "attraction between neutral atoms",
-              ],
-              correctIndex: 0,
-              explanation:
-                "The mobile electron sea explains conductivity, malleability and lustre.",
-            },
-            {
-              prompt: "Simple covalent substances have low melting points because",
-              options: [
-                "their covalent bonds are weak",
-                "the forces between their molecules are weak",
-                "they contain no electrons",
-                "they are always gases",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Melting separates molecules and overcomes only intermolecular forces, not the bonds within them.",
-            },
-            {
-              prompt: "A bond in which both shared electrons come from the same atom is",
-              options: ["Ionic", "Metallic", "Co-ordinate (dative)", "Double covalent"],
-              correctIndex: 2,
-              explanation:
-                "The ammonium ion contains such a bond, indistinguishable once formed from a normal covalent bond.",
-            },
-            {
-              prompt: "A compound formed between a metal and a non-metal is most likely",
-              options: ["Covalent", "Ionic", "Metallic", "Dative"],
-              correctIndex: 1,
-              explanation:
-                "Metals lose electrons and non-metals gain them, producing ions.",
-            },
-            {
-              prompt: "Metals are malleable because",
-              options: [
-                "their atoms are very small",
-                "layers of ions can slide without breaking the bonding",
-                "they contain no bonds",
-                "they have full outer shells",
-              ],
-              correctIndex: 1,
-              explanation:
-                "The delocalised electron sea adjusts as layers move, so the metal deforms rather than shattering.",
-            },
-            {
-              prompt: "In sodium chloride, the sodium ion has the configuration",
-              options: ["2, 8, 1", "2, 8", "2, 8, 8", "2, 8, 2"],
-              correctIndex: 1,
-              explanation:
-                "Losing its single valence electron leaves sodium with the neon configuration 2, 8.",
-            },
-          ],
-          test: [
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Using electron configurations, show how magnesium (Z = 12) and oxygen (Z = 8) form magnesium oxide.",
-              answerKey:
-                "Mg is 2, 8, 2 and loses two electrons to become Mg2+ with configuration 2, 8. O is 2, 6 and gains those two electrons to become O2- with configuration 2, 8. The oppositely charged ions attract electrostatically to give MgO. Award 2 marks for each configuration before transfer, 2 for each ion after transfer, 2 for stating the electrostatic attraction and the formula.",
-              marks: 10,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Give four differences between ionic and simple covalent compounds in terms of their physical properties.",
-              answerKey:
-                "High versus low melting and boiling points; conduct when molten or in solution versus never conduct; usually soluble in water versus usually insoluble in water but soluble in organic solvents; hard brittle crystalline solids versus gases, liquids or soft solids. Award 2 marks per complete two-sided difference.",
-              marks: 8,
-            },
-            {
-              type: "MULTIPLE_CHOICE",
-              prompt:
-                "A solid conducts electricity, can be drawn into wire, and melts at 1085 degrees Celsius. The bonding present is",
-              options: ["Ionic", "Simple covalent", "Metallic", "Co-ordinate"],
-              correctIndex: 2,
-              answerKey:
-                "Conduction in the solid state rules out ionic; ductility and a high melting point rule out simple covalent. Delocalised electrons account for all three properties. The substance is copper. Option C.",
-              marks: 4,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Explain, using the metallic bonding model, why metals conduct electricity and are malleable while ionic solids conduct only when molten and are brittle.",
-              answerKey:
-                "Metals: valence electrons are delocalised and free to move through the lattice, carrying charge, so conduction occurs in the solid state; when a force is applied, layers of positive ions slide over one another while the electron sea continues to bind them, so the metal deforms rather than breaking. Ionic solids: ions are fixed in the lattice and cannot move, so no conduction occurs until melting or dissolution frees them; when a force displaces one layer, like charges come into alignment and repel, splitting the crystal, which is why ionic solids are brittle. Award 3 marks for metallic conduction, 3 for malleability, 3 for ionic conduction, 3 for brittleness.",
-              marks: 12,
-            },
-            {
-              type: "ESSAY",
-              prompt:
-                "Describe the three main types of chemical bonding, explaining in each case how the bond is formed and how the bonding accounts for the characteristic properties of substances containing it. Illustrate your answer with named examples.",
-              answerKey:
-                "Award marks as follows: ionic bonding, with electron transfer, formation of oppositely charged ions, electrostatic attraction in a giant lattice, and properties explained — high melting point, conduction when molten or aqueous, solubility, brittleness — 10 marks; covalent bonding, with sharing of electron pairs, single, double and triple bonds, the distinction between strong intramolecular bonds and weak intermolecular forces, and properties explained, 10 marks; metallic bonding, with delocalised electrons and a lattice of positive ions, and properties explained — conductivity, malleability, ductility, lustre, high melting point — 8 marks; at least three correct named examples with formulae, 4 marks; statement of the metal/non-metal rule for predicting bond type, 3 marks. A learner who describes bond formation accurately but does not connect it to properties should not exceed 15.",
-              marks: 35,
-            },
+            { type: "SHORT_ANSWER", prompt: "Using the particle model, explain why a gas is highly compressible while a solid is not.", answerKey: "In a gas the particles are far apart with large spaces and negligible forces, so pressure pushes them closer and the volume falls markedly. In a solid the particles are already in contact in a fixed close-packed arrangement with strong forces and almost no space to remove, so it is effectively incompressible. Award 4 marks for the gas explanation and 4 for the solid, requiring reference to particle spacing.", marks: 8 },
+            { type: "SHORT_ANSWER", prompt: "Give four differences between a compound and a mixture.", answerKey: "Chemically combined versus physically together; fixed ratio versus any proportion; properties differ from constituents versus constituents keep their properties; separated by chemical means versus by physical means. Award 2 marks per complete two-sided difference.", marks: 8 },
+            { type: "MULTIPLE_CHOICE", prompt: "Which pair correctly matches a mixture to the best separation technique?", options: ["Sand and water — distillation", "Salt and water — filtration", "Iron and sand — magnetic separation", "Two miscible liquids — decantation"], correctIndex: 2, answerKey: "Iron (magnetic) is separated from sand (non-magnetic) with a magnet. The others are mismatched: sand/water uses filtration, salt/water uses evaporation, miscible liquids use fractional distillation. Option C.", marks: 4 },
+            { type: "SHORT_ANSWER", prompt: "Describe how you would obtain pure water from a sample of muddy, salty water, naming the techniques used and the property each relies on.", answerKey: "First filter to remove the insoluble mud (relies on particle size — mud is retained, solution passes). Then distil the filtrate: heat the salt solution so the water boils at 100 °C, and condense the vapour to collect pure water, leaving the dissolved salts behind (relies on the difference in boiling point). Award 3 marks for filtration with its principle, 4 for distillation with its principle, 2 for correct sequence.", marks: 9 },
+            { type: "ESSAY", prompt: "A sample contains ammonium chloride, common salt, sand and iron filings. Describe in full how you would separate all four, justifying the order of your steps.", answerKey: "1. Magnetic separation first to remove iron filings, justified because later addition of water would make this difficult, 5 marks. 2. Gentle heating to sublime the ammonium chloride, which turns to gas and re-solidifies on a cool surface while the others do not, 5 marks. 3. Add water and filter to separate insoluble sand (residue) from salt solution (filtrate), 5 marks. 4. Evaporate/crystallise the filtrate to recover the salt, 4 marks. 5. Explicit justification of the ordering — dry physical methods before wet ones, sublimation before dissolving, 6 marks. Deduct up to 3 marks where steps are correct but sequenced so as to make a later step impossible.", marks: 25 },
           ],
         },
       ],
