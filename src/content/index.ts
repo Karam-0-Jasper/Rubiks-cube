@@ -27,6 +27,7 @@ import { economicsG10P2 } from "@/content/grade10/period2/economics";
 import { literatureG10P2 } from "@/content/grade10/period2/literature";
 
 import { mathematicsG10P3 } from "@/content/grade10/period3/mathematics";
+import { englishLanguageG10P3 } from "@/content/grade10/period3/english-language";
 
 // Base subjects carry identity + metadata and Period 1 content.
 const BASE_SUBJECTS: SubjectContent[] = [
@@ -48,7 +49,7 @@ const BASE_SUBJECTS: SubjectContent[] = [
 // base subject's `periods` list, then all periods are sorted by grade + number.
 const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
   mathematics: [mathematicsG10P2, mathematicsG10P3],
-  "english-language": [englishLanguageG10P2],
+  "english-language": [englishLanguageG10P2, englishLanguageG10P3],
   biology: [biologyG10P2],
   chemistry: [chemistryG10P2],
   physics: [physicsG10P2],
