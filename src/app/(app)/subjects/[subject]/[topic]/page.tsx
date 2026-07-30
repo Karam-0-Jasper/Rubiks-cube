@@ -37,8 +37,12 @@ export default async function TopicPage({
   }));
 
   // Determine sibling topics for prev/next navigation.
+  // Prev/next navigate within the topic's own period.
   const subject = await getSubjectWithPeriod(subjectSlug);
-  const topics = subject?.periods[0]?.topics ?? [];
+  const ownPeriod = subject?.periods.find((p) =>
+    p.topics.some((t) => t.slug === topicSlug),
+  );
+  const topics = ownPeriod?.topics ?? [];
   const idx = topics.findIndex((t) => t.slug === topicSlug);
   const prev = idx > 0 ? topics[idx - 1] : null;
   const next = idx >= 0 && idx < topics.length - 1 ? topics[idx + 1] : null;
