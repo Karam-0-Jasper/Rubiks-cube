@@ -19,8 +19,9 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.32.1",
     "@prisma/client": "^6.2.1",
+    "eslint-config-next": "^15.5.22",
     "jose": "^5.9.6",
-    "next": "15.1.6",
+    "next": "^15.5.22",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "server-only": "^0.0.1",
