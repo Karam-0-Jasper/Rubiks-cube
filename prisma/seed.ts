@@ -110,6 +110,31 @@ async function main() {
         });
       }
 
+      // Prune stale topics that used to live in this period but are no longer
+      // in the content (e.g. a topic moved to a different period). Content is
+      // the source of truth, so orphaned rows and their questions are removed.
+      const keptSlugs = period.topics.map((t) => t.slug);
+      const orphanTopics = await prisma.topic.findMany({
+        where: { periodId: createdPeriod.id, slug: { notIn: keptSlugs } },
+        select: { id: true },
+      });
+      if (orphanTopics.length > 0) {
+        const orphanIds = orphanTopics.map((t) => t.id);
+        await prisma.quizAttempt.deleteMany({
+          where: { topicId: { in: orphanIds } },
+        });
+        await prisma.quizQuestion.deleteMany({
+          where: { topicId: { in: orphanIds } },
+        });
+        await prisma.testQuestion.deleteMany({
+          where: { topicId: { in: orphanIds } },
+        });
+        await prisma.topic.deleteMany({ where: { id: { in: orphanIds } } });
+        console.log(
+          `  (pruned ${orphanTopics.length} stale topic(s) from ${subject.name} Grade ${period.grade} Period ${period.number})`,
+        );
+      }
+
       console.log(
         `  ${subject.name}: ${period.topics.length} topics for Grade ${period.grade} Period ${period.number}`,
       );
