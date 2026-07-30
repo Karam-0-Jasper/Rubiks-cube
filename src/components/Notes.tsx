@@ -36,7 +36,8 @@ type Block =
   | { kind: "p"; text: string }
   | { kind: "ul"; items: string[] }
   | { kind: "ol"; items: string[] }
-  | { kind: "table"; rows: string[][] };
+  | { kind: "table"; rows: string[][] }
+  | { kind: "figure"; svg: string; caption?: string };
 
 function parse(source: string): Block[] {
   const lines = source.replace(/\r\n/g, "\n").split("\n");
@@ -55,6 +56,22 @@ function parse(source: string): Block[] {
     if (trimmed.startsWith("## ")) {
       blocks.push({ kind: "h2", text: trimmed.slice(3) });
       i++;
+      continue;
+    }
+
+    // Fenced diagram: ```svg [optional caption]  … raw <svg> …  ```
+    // The content is authored by us (curriculum), never user input, so it is
+    // trusted and rendered inline.
+    if (/^```svg\b/.test(trimmed)) {
+      const caption = trimmed.replace(/^```svg\s*/, "").trim() || undefined;
+      i++;
+      const svgLines: string[] = [];
+      while (i < lines.length && lines[i].trim() !== "```") {
+        svgLines.push(lines[i]);
+        i++;
+      }
+      i++; // consume the closing fence
+      blocks.push({ kind: "figure", svg: svgLines.join("\n"), caption });
       continue;
     }
 
@@ -150,6 +167,21 @@ export function Notes({ source }: { source: string }) {
                   </tbody>
                 </table>
               </div>
+            );
+          case "figure":
+            return (
+              <figure className="note-figure" key={bi}>
+                <div
+                  className="note-figure-svg"
+                  // Trusted curriculum content authored in-repo, not user input.
+                  dangerouslySetInnerHTML={{ __html: block.svg }}
+                />
+                {block.caption && (
+                  <figcaption>
+                    {renderInline(block.caption, `fig${bi}`)}
+                  </figcaption>
+                )}
+              </figure>
             );
         }
       })}
