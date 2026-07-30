@@ -17,6 +17,14 @@ import { computerScience } from "@/content/grade10/period1/computer-science";
 // --- Additional periods (PeriodContent only; merged onto the base subject
 // by slug). Add new period files here as the Grade 10-12 rebuild continues. ---
 import { mathematicsG10P2 } from "@/content/grade10/period2/mathematics";
+import { englishLanguageG10P2 } from "@/content/grade10/period2/english-language";
+import { biologyG10P2 } from "@/content/grade10/period2/biology";
+import { chemistryG10P2 } from "@/content/grade10/period2/chemistry";
+import { physicsG10P2 } from "@/content/grade10/period2/physics";
+import { geographyG10P2 } from "@/content/grade10/period2/geography";
+import { historyG10P2 } from "@/content/grade10/period2/history";
+import { economicsG10P2 } from "@/content/grade10/period2/economics";
+import { literatureG10P2 } from "@/content/grade10/period2/literature";
 
 // Base subjects carry identity + metadata and Period 1 content.
 const BASE_SUBJECTS: SubjectContent[] = [
@@ -38,6 +46,14 @@ const BASE_SUBJECTS: SubjectContent[] = [
 // base subject's `periods` list, then all periods are sorted by grade + number.
 const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
   mathematics: [mathematicsG10P2],
+  "english-language": [englishLanguageG10P2],
+  biology: [biologyG10P2],
+  chemistry: [chemistryG10P2],
+  physics: [physicsG10P2],
+  geography: [geographyG10P2],
+  history: [historyG10P2],
+  economics: [economicsG10P2],
+  literature: [literatureG10P2],
 };
 
 function withExtraPeriods(subject: SubjectContent): SubjectContent {
