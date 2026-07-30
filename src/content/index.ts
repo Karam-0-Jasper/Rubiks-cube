@@ -27,6 +27,7 @@ import { economicsG10P2 } from "@/content/grade10/period2/economics";
 import { literatureG10P2 } from "@/content/grade10/period2/literature";
 
 import { mathematicsG10P3 } from "@/content/grade10/period3/mathematics";
+import { mathematicsG10P4 } from "@/content/grade10/period4/mathematics";
 import { englishLanguageG10P3 } from "@/content/grade10/period3/english-language";
 import { biologyG10P3 } from "@/content/grade10/period3/biology";
 import { chemistryG10P3 } from "@/content/grade10/period3/chemistry";
@@ -55,7 +56,7 @@ const BASE_SUBJECTS: SubjectContent[] = [
 // Extra periods keyed by subject slug. Each entry is appended to the matching
 // base subject's `periods` list, then all periods are sorted by grade + number.
 const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
-  mathematics: [mathematicsG10P2, mathematicsG10P3],
+  mathematics: [mathematicsG10P2, mathematicsG10P3, mathematicsG10P4],
   "english-language": [englishLanguageG10P2, englishLanguageG10P3],
   biology: [biologyG10P2, biologyG10P3],
   chemistry: [chemistryG10P2, chemistryG10P3],
