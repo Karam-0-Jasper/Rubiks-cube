@@ -1,5 +1,6 @@
-import type { SubjectContent } from "@/content/types";
+import type { PeriodContent, SubjectContent } from "@/content/types";
 
+// --- Grade 10, Period 1 (full subject definitions with metadata) ---
 import { englishLanguage } from "@/content/grade10/period1/english-language";
 import { mathematics } from "@/content/grade10/period1/mathematics";
 import { biology } from "@/content/grade10/period1/biology";
@@ -13,8 +14,12 @@ import { agriculture } from "@/content/grade10/period1/agriculture";
 import { literature } from "@/content/grade10/period1/literature";
 import { computerScience } from "@/content/grade10/period1/computer-science";
 
-/// All seeded subjects, ordered for display. Grade 10, Period 1 for launch.
-export const SUBJECTS: SubjectContent[] = [
+// --- Additional periods (PeriodContent only; merged onto the base subject
+// by slug). Add new period files here as the Grade 10-12 rebuild continues. ---
+import { mathematicsG10P2 } from "@/content/grade10/period2/mathematics";
+
+// Base subjects carry identity + metadata and Period 1 content.
+const BASE_SUBJECTS: SubjectContent[] = [
   englishLanguage,
   mathematics,
   biology,
@@ -27,7 +32,26 @@ export const SUBJECTS: SubjectContent[] = [
   agriculture,
   literature,
   computerScience,
-].sort((a, b) => a.sortOrder - b.sortOrder);
+];
+
+// Extra periods keyed by subject slug. Each entry is appended to the matching
+// base subject's `periods` list, then all periods are sorted by grade + number.
+const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
+  mathematics: [mathematicsG10P2],
+};
+
+function withExtraPeriods(subject: SubjectContent): SubjectContent {
+  const extra = EXTRA_PERIODS[subject.slug] ?? [];
+  const periods = [...subject.periods, ...extra].sort(
+    (a, b) => a.grade - b.grade || a.number - b.number,
+  );
+  return { ...subject, periods };
+}
+
+/// All seeded subjects, ordered for display, each with every authored period.
+export const SUBJECTS: SubjectContent[] = BASE_SUBJECTS.map(withExtraPeriods).sort(
+  (a, b) => a.sortOrder - b.sortOrder,
+);
 
 export function getSubject(slug: string): SubjectContent | undefined {
   return SUBJECTS.find((s) => s.slug === slug);
