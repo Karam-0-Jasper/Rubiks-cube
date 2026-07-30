@@ -29,6 +29,7 @@ import { literatureG10P2 } from "@/content/grade10/period2/literature";
 import { mathematicsG10P3 } from "@/content/grade10/period3/mathematics";
 import { mathematicsG10P4 } from "@/content/grade10/period4/mathematics";
 import { englishLanguageG10P4 } from "@/content/grade10/period4/english-language";
+import { biologyG10P4 } from "@/content/grade10/period4/biology";
 import { englishLanguageG10P3 } from "@/content/grade10/period3/english-language";
 import { biologyG10P3 } from "@/content/grade10/period3/biology";
 import { chemistryG10P3 } from "@/content/grade10/period3/chemistry";
@@ -63,7 +64,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     englishLanguageG10P3,
     englishLanguageG10P4,
   ],
-  biology: [biologyG10P2, biologyG10P3],
+  biology: [biologyG10P2, biologyG10P3, biologyG10P4],
   chemistry: [chemistryG10P2, chemistryG10P3],
   physics: [physicsG10P2, physicsG10P3],
   geography: [geographyG10P2, geographyG10P3],
