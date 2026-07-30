@@ -1,11 +1,13 @@
 import "server-only";
 
+import type { Plan } from "@prisma/client";
+
 import { prisma } from "@/lib/db";
 import { PLANS } from "@/lib/plans";
-import { activePlan, ensureSubscription, type SessionUser } from "@/lib/auth";
+import { ensureSubscription, type SessionUser } from "@/lib/auth";
 
 export type QuotaState = {
-  plan: keyof typeof PLANS;
+  plan: Plan;
   used: number;
   limit: number;
   remaining: number;
@@ -13,25 +15,46 @@ export type QuotaState = {
   windowEnd: Date;
 };
 
-/// Rolls a lapsed window forward before reporting. Free windows roll locally;
-/// paid windows are normally advanced by the Stripe webhook, but rolling here
-/// too keeps the counter honest if a webhook is late.
+/// Reports Nyvora usage against the current quota window, healing lapsed state
+/// as it goes. A paid plan that has run out (mobile money does not auto-renew)
+/// drops back to a fresh FREE window; a FREE window that has ended rolls
+/// forward. This is the single place that reconciles the subscription with the
+/// clock, so it stays correct even if a provider callback never arrives.
 export async function getQuota(user: SessionUser): Promise<QuotaState> {
   const subscription =
     user.subscription ?? (await ensureSubscription(user.id));
-  const plan = activePlan({ ...user, subscription });
+  const now = new Date();
+
+  let plan: Plan = subscription.plan;
+  let periodStart = subscription.periodStart;
+  let periodEnd = subscription.periodEnd;
+
+  // A lapsed paid plan reverts to a fresh free window.
+  if (plan !== "FREE" && periodEnd <= now) {
+    plan = "FREE";
+    periodStart = now;
+    periodEnd = new Date(now.getTime() + PLANS.FREE.windowDays * 86_400_000);
+    await prisma.subscription.update({
+      where: { id: subscription.id },
+      data: {
+        plan: "FREE",
+        provider: null,
+        status: "ACTIVE",
+        periodStart,
+        periodEnd,
+      },
+    });
+  }
+
   const config = PLANS[plan];
   const windowMs = config.windowDays * 86_400_000;
 
-  let { periodStart, periodEnd } = subscription;
-  const now = new Date();
-
+  // A lapsed free window rolls forward to the current one.
   if (periodEnd <= now) {
     const elapsed = now.getTime() - periodStart.getTime();
-    const windowsPassed = Math.floor(elapsed / windowMs);
+    const windowsPassed = Math.max(1, Math.floor(elapsed / windowMs));
     periodStart = new Date(periodStart.getTime() + windowsPassed * windowMs);
     periodEnd = new Date(periodStart.getTime() + windowMs);
-
     await prisma.subscription.update({
       where: { id: subscription.id },
       data: { periodStart, periodEnd },

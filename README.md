@@ -21,8 +21,9 @@ Launch scope: **Grade 10, Period 1, all 12 subjects.**
   behind a per-subject **subject code**.
 - **Nyvora AI assistant** with metered usage — Free 15/week, Weekly 80,
   Monthly 350, Yearly 4,200 messages, enforced against a rolling quota window.
-- **Stripe subscriptions** — Checkout, billing portal, and webhook-driven plan
-  and quota updates.
+- **Mobile money payments** — pay for a plan with **Orange Money** (hosted web
+  payment) or **Lonestar Cell MoMo** (MTN MoMo request-to-pay). A successful
+  payment extends the subscription; plans do not auto-renew.
 - **Dark / light theme** with no flash of the wrong theme on load.
 
 ## Stack
@@ -31,7 +32,7 @@ Launch scope: **Grade 10, Period 1, all 12 subjects.**
 - **PostgreSQL + Prisma**
 - **Tailwind CSS**
 - **Anthropic API** for Nyvora
-- **Stripe** for payments
+- **Orange Money** and **Lonestar Cell (MTN MoMo)** for payments
 
 ## Getting started
 
@@ -50,9 +51,10 @@ cp .env.example .env
 ```
 
 At a minimum you need `DATABASE_URL` and `AUTH_SECRET` to run the app locally.
-`ANTHROPIC_API_KEY` enables Nyvora; the Stripe keys enable billing. The app runs
-without the optional keys — those features simply report that they are not
-configured.
+`ANTHROPIC_API_KEY` enables Nyvora; the mobile money credentials enable billing.
+The app runs without the optional keys — those features simply report that they
+are not configured, and payment providers only appear once their credentials are
+present.
 
 ### 3. Set up the database
 
@@ -68,6 +70,32 @@ npm run dev
 ```
 
 Open http://localhost:3000.
+
+## Deploy to Vercel
+
+The repo is set up to deploy in one step. On Vercel, the build command
+`vercel-build` runs automatically and **applies the database migration and seeds
+the curriculum** before building — so a fresh deploy comes up with all tables and
+all 12 subjects already in place. You do not need to run any database commands by
+hand.
+
+1. **Create a Postgres database** (Neon, Supabase, or Vercel Postgres) and copy
+   its connection string.
+2. **Import the repo into Vercel** (New Project → pick this repository). Vercel
+   detects Next.js automatically.
+3. **Add environment variables** in the Vercel project settings:
+   - `DATABASE_URL` — required (the connection string from step 1)
+   - `AUTH_SECRET` — required (`openssl rand -base64 48`)
+   - `NEXT_PUBLIC_APP_URL` — your deployment URL, e.g. `https://your-app.vercel.app`
+   - `ANTHROPIC_API_KEY` — optional, enables Nyvora
+   - `LONESTAR_MOMO_*` / `ORANGE_MONEY_*` — optional, enable mobile money
+4. **Deploy.** The build migrates and seeds the database, then serves the app.
+
+Notes:
+- The seed is idempotent (it upserts), so it re-runs safely on every deploy.
+- If the database already has tables from a previous `db:push`, run
+  `npx prisma migrate resolve --applied 20260729000000_init` once against it
+  before deploying, so `migrate deploy` treats the initial migration as done.
 
 ## Subject codes
 
@@ -92,18 +120,36 @@ re-seed. The UI reads whatever is in the database.
 
 Every account has a `Subscription` row, including Free accounts, which defines
 the current quota window. Each Nyvora exchange records one `NyvoraUsage` row.
-`getQuota` counts usage since the window start and rolls the window forward when
-it lapses. Paid windows follow the Stripe billing period, updated by the webhook
-at `src/app/api/stripe/webhook/route.ts`.
+`getQuota` counts usage since the window start and reconciles the subscription
+with the clock: a lapsed paid plan reverts to a fresh FREE window, and a lapsed
+FREE window rolls forward. This means the plan stays correct even if a provider
+callback never arrives.
 
-## Stripe setup
+## Payments (mobile money)
 
-1. Create three recurring prices (weekly, monthly, yearly) in the Stripe
-   dashboard and put their IDs in `STRIPE_PRICE_WEEKLY` / `_MONTHLY` / `_YEARLY`.
-2. Add `STRIPE_SECRET_KEY`.
-3. Create a webhook endpoint pointing at `/api/stripe/webhook`, subscribe to
-   `checkout.session.completed` and the `customer.subscription.*` events, and
-   put the signing secret in `STRIPE_WEBHOOK_SECRET`.
+Teachers pay for a plan period up front with **Orange Money** or **Lonestar
+Cell MoMo**. Both are real integrations wired to the providers' documented APIs;
+they need a **merchant account** with each provider to go live (there is no
+instant self-serve key like Stripe). Until a provider's credentials are set, it
+is hidden from the checkout UI, and the app runs normally.
+
+- **Lonestar Cell MoMo** — MTN MoMo **Collections** API (`request-to-pay`). A
+  PIN prompt is pushed to the teacher's phone; we poll for the result.
+  Credentials come from momodeveloper.mtn.com. Set `LONESTAR_MOMO_*` in `.env`.
+  A sandbox base URL is supported for testing.
+- **Orange Money** — Orange Money **Web Payment** API. The teacher is redirected
+  to Orange's hosted page and returned to `/billing/confirm`. Credentials come
+  from an Orange Money Liberia merchant account (developer.orange.com); confirm
+  the base URL, country segment and currency with Orange Liberia. Set
+  `ORANGE_MONEY_*` in `.env`.
+
+Flow: `startPayment` (server action) creates a PENDING `Payment` and asks the
+provider to collect. `/billing/confirm` polls `/api/payments/[id]/status`, which
+re-queries the provider and grants the plan on success. Providers also POST to
+`/api/payments/callback/[provider]`; that callback is used only to identify the
+payment and re-query the provider — a spoofed callback can never grant a plan.
+Payments are priced in `PAYMENT_CURRENCY` (default USD); amounts live in
+`src/lib/plans.ts`.
 
 ## Scripts
 
