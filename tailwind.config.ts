@@ -34,7 +34,27 @@ const config: Config = {
         danger: "rgb(var(--danger) / <alpha-value>)",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        serif: [
+          "var(--font-serif)",
+          "Iowan Old Style",
+          "Palatino Linotype",
+          "Palatino",
+          "Georgia",
+          "Cambria",
+          "serif",
+        ],
+        display: [
+          "var(--font-display)",
+          "var(--font-serif)",
+          "Georgia",
+          "serif",
+        ],
+        sans: [
+          "var(--font-serif)",
+          "Iowan Old Style",
+          "Georgia",
+          "serif",
+        ],
       },
       borderRadius: {
         card: "14px",

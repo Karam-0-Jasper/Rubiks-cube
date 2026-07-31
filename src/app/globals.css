@@ -37,35 +37,83 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  /* Larger, book-like base size that scales the whole rem system up. */
+  font-size: 18px;
+}
+@media (max-width: 640px) {
+  html {
+    font-size: 17px;
+  }
 }
 
 body {
   background-color: rgb(var(--surface));
   color: rgb(var(--ink));
-  font-feature-settings: "cv11", "ss01";
+  font-feature-settings: "kern", "liga", "onum", "pnum";
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
 }
 
-/* Rendered lesson-note prose. */
+/* Display serif for headings, with easy tracking suited to serifs. */
+.font-display,
+h1.book-title,
+.book-heading {
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+/* A section label styled like a running head / small-caps chapter marker. */
+.book-eyebrow {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgb(var(--ink-faint));
+}
+
+/* A hairline divider used between book sections. */
+.book-rule {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgb(var(--line)),
+    rgb(var(--line) / 0.25)
+  );
+  border: 0;
+}
+
+/* Rendered lesson-note prose — tuned for reading like a textbook page. */
 .prose-notes {
   color: rgb(var(--ink));
-  line-height: 1.7;
+  line-height: 1.72;
+  font-size: 1.06rem;
+  max-width: 40rem;
 }
 .prose-notes h2 {
-  font-size: 1.05rem;
-  font-weight: 700;
-  margin-top: 1.75rem;
-  margin-bottom: 0.6rem;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.28rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 2rem;
+  margin-bottom: 0.7rem;
   color: rgb(var(--ink));
 }
 .prose-notes h2:first-child {
   margin-top: 0;
 }
 .prose-notes p {
-  margin-bottom: 0.9rem;
+  margin-bottom: 1rem;
+  hyphens: auto;
+}
+/* A gentle lead-in: the first paragraph of a lesson reads a touch larger. */
+.prose-notes > p:first-of-type {
+  font-size: 1.12rem;
+  color: rgb(var(--ink));
 }
 .prose-notes ul,
 .prose-notes ol {
-  margin: 0.4rem 0 1rem 1.25rem;
+  margin: 0.5rem 0 1.15rem 1.4rem;
 }
 .prose-notes ul {
   list-style: disc;
@@ -74,30 +122,36 @@ body {
   list-style: decimal;
 }
 .prose-notes li {
-  margin-bottom: 0.35rem;
-  padding-left: 0.15rem;
+  margin-bottom: 0.4rem;
+  padding-left: 0.2rem;
+}
+.prose-notes li::marker {
+  color: rgb(var(--ink-faint));
 }
 .prose-notes strong {
-  font-weight: 650;
+  font-weight: 700;
   color: rgb(var(--ink));
+}
+.prose-notes em {
+  font-style: italic;
 }
 .prose-notes code {
   font-family: ui-monospace, "SF Mono", Menlo, monospace;
-  font-size: 0.85em;
+  font-size: 0.86em;
   background: rgb(var(--surface-sunken));
-  padding: 0.1em 0.35em;
+  padding: 0.12em 0.4em;
   border-radius: 4px;
 }
 .prose-notes table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1rem 0;
-  font-size: 0.9rem;
+  margin: 1.25rem 0;
+  font-size: 0.98rem;
 }
 .prose-notes th,
 .prose-notes td {
   border: 1px solid rgb(var(--line));
-  padding: 0.5rem 0.7rem;
+  padding: 0.55rem 0.75rem;
   text-align: left;
   vertical-align: top;
 }
@@ -108,12 +162,15 @@ body {
 .prose-notes .table-scroll {
   overflow-x: auto;
 }
+
+/* Diagrams presented like numbered plates in a textbook. */
 .prose-notes .note-figure {
-  margin: 1.25rem 0;
-  padding: 1rem;
+  margin: 1.75rem 0;
+  padding: 1.5rem 1.25rem 1.1rem;
   border: 1px solid rgb(var(--line));
-  border-radius: 12px;
-  background: rgb(var(--surface-sunken));
+  border-radius: 14px;
+  background: rgb(var(--surface-raised));
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
   overflow-x: auto;
 }
 .prose-notes .note-figure-svg {
@@ -125,10 +182,20 @@ body {
   height: auto;
 }
 .prose-notes figcaption {
-  margin-top: 0.6rem;
+  margin-top: 0.9rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid rgb(var(--line));
   text-align: center;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: rgb(var(--ink-muted));
+  font-style: italic;
+}
+.prose-notes figcaption .fig-label {
+  font-style: normal;
+  font-weight: 600;
+  color: rgb(var(--ink));
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: 0.02em;
 }
 
 @keyframes fadeUp {

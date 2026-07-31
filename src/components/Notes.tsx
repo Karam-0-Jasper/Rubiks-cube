@@ -120,8 +120,16 @@ function parse(source: string): Block[] {
   return blocks;
 }
 
-export function Notes({ source }: { source: string }) {
+export function Notes({
+  source,
+  figureLabel = "Figure",
+}: {
+  source: string;
+  /** Prefix for auto-numbered diagram captions, e.g. "Figure" or "Diagram". */
+  figureLabel?: string;
+}) {
   const blocks = parse(source);
+  let figureNo = 0;
   return (
     <div className="prose-notes">
       {blocks.map((block, bi) => {
@@ -168,7 +176,8 @@ export function Notes({ source }: { source: string }) {
                 </table>
               </div>
             );
-          case "figure":
+          case "figure": {
+            figureNo += 1;
             return (
               <figure className="note-figure" key={bi}>
                 <div
@@ -176,13 +185,17 @@ export function Notes({ source }: { source: string }) {
                   // Trusted curriculum content authored in-repo, not user input.
                   dangerouslySetInnerHTML={{ __html: block.svg }}
                 />
-                {block.caption && (
-                  <figcaption>
-                    {renderInline(block.caption, `fig${bi}`)}
-                  </figcaption>
-                )}
+                <figcaption>
+                  <span className="fig-label">
+                    {figureLabel} {figureNo}
+                  </span>
+                  {block.caption ? (
+                    <> — {renderInline(block.caption, `fig${bi}`)}</>
+                  ) : null}
+                </figcaption>
               </figure>
             );
+          }
         }
       })}
     </div>

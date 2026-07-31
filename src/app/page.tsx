@@ -17,7 +17,7 @@ export default async function LandingPage() {
       <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <div className="flex items-center gap-2">
           <Logo />
-          <span className="text-lg font-bold tracking-tight">Nuvex</span>
+          <span className="font-display text-xl font-semibold">Nuvex</span>
         </div>
         <div className="flex items-center gap-3">
           <ThemeToggle />
@@ -43,7 +43,7 @@ export default async function LandingPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-positive" />
               Aligned to the Liberian MoE curriculum
             </span>
-            <h1 className="mt-5 text-4xl font-bold leading-[1.1] tracking-tight sm:text-6xl">
+            <h1 className="book-title mt-5 text-5xl font-semibold leading-[1.05] sm:text-6xl">
               Walk into class already prepared.
             </h1>
             <p className="mt-5 text-lg leading-relaxed text-ink-muted">
@@ -91,8 +91,8 @@ export default async function LandingPage() {
         </section>
 
         <section className="mx-auto max-w-6xl px-6 py-12">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-ink-faint">
-            {subjectCount} subjects at launch · Grade 10, Period 1
+          <h2 className="book-eyebrow">
+            {subjectCount} subjects · Grade 10, all six periods
           </h2>
           <div className="mt-4 flex flex-wrap gap-2">
             {SUBJECTS.map((s) => (
@@ -107,7 +107,7 @@ export default async function LandingPage() {
         </section>
 
         <section className="mx-auto max-w-6xl px-6 py-12">
-          <h2 className="text-2xl font-bold tracking-tight">Simple pricing</h2>
+          <h2 className="book-title text-3xl font-semibold">Simple pricing</h2>
           <p className="mt-2 text-ink-muted">
             Every plan includes all lesson notes and plans. Paid plans add
             teacher-only test questions and more Nyvora.
@@ -131,8 +131,8 @@ export default async function LandingPage() {
 function Feature({ title, body }: { title: string; body: string }) {
   return (
     <div className="rounded-card border border-line bg-surface-raised p-5">
-      <h3 className="font-semibold">{title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-ink-muted">{body}</p>
+      <h3 className="font-display text-lg font-semibold">{title}</h3>
+      <p className="mt-2 text-[0.95rem] leading-relaxed text-ink-muted">{body}</p>
     </div>
   );
 }
@@ -146,7 +146,9 @@ function PlanCard({
     <div className="flex flex-col rounded-card border border-line bg-surface-raised p-5">
       <div className="text-sm font-semibold text-ink-muted">{plan.name}</div>
       <div className="mt-2 flex items-baseline gap-1">
-        <span className="text-3xl font-bold">{plan.priceLabel}</span>
+        <span className="font-display text-3xl font-semibold">
+          {plan.priceLabel}
+        </span>
         <span className="text-sm text-ink-faint">{plan.cadence}</span>
       </div>
       <p className="mt-2 text-sm text-ink-muted">{plan.blurb}</p>
@@ -164,7 +166,7 @@ function PlanCard({
 
 function Logo() {
   return (
-    <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand text-sm font-bold text-brand-ink">
+    <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand font-display text-sm font-semibold text-brand-ink">
       N
     </span>
   );
