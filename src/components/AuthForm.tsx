@@ -4,6 +4,10 @@ import { useFormState, useFormStatus } from "react-dom";
 import Link from "next/link";
 
 import { loginAction, registerAction, type AuthState } from "@/app/actions/auth";
+import {
+  resetPasswordAction,
+  type ResetState,
+} from "@/app/actions/reset";
 
 function SubmitButton({ label }: { label: string }) {
   const { pending } = useFormStatus();
@@ -84,9 +88,84 @@ export function LoginForm() {
       />
       <SubmitButton label="Log in" />
       <p className="text-center text-sm text-ink-muted">
+        <Link href="/reset-password" className="font-semibold text-brand">
+          Forgot your password?
+        </Link>
+      </p>
+      <p className="text-center text-sm text-ink-muted">
         New to Nuvex?{" "}
         <Link href="/register" className="font-semibold text-brand">
           Create an account
+        </Link>
+      </p>
+    </form>
+  );
+}
+
+export function ResetPasswordForm() {
+  const [state, action] = useFormState<ResetState, FormData>(
+    resetPasswordAction,
+    undefined,
+  );
+
+  if (state?.ok) {
+    return (
+      <div className="space-y-4">
+        <div className="rounded-xl border border-brand/30 bg-brand-soft/60 px-3.5 py-3 text-sm">
+          Password updated. You can now log in with your new password.
+        </div>
+        <Link
+          href="/login"
+          className="block w-full rounded-xl bg-brand px-4 py-3 text-center text-sm font-semibold text-brand-ink transition hover:opacity-90"
+        >
+          Go to log in
+        </Link>
+      </div>
+    );
+  }
+
+  return (
+    <form action={action} className="space-y-4">
+      {state?.error && (
+        <div className="rounded-xl border border-danger/30 bg-danger/10 px-3.5 py-2.5 text-sm text-danger">
+          {state.error}
+        </div>
+      )}
+      <Field
+        label="Admin key"
+        name="adminKey"
+        type="password"
+        required
+        placeholder="The site owner's reset key"
+        autoComplete="off"
+        hint="Set as the ADMIN_RESET_KEY environment variable. Only the owner has it."
+      />
+      <Field
+        label="Account username or phone"
+        name="identifier"
+        required
+        placeholder="jkollie or 0770123456"
+        autoComplete="off"
+      />
+      <Field
+        label="New password"
+        name="password"
+        type="password"
+        required
+        autoComplete="new-password"
+        hint="At least 8 characters."
+      />
+      <Field
+        label="Confirm new password"
+        name="confirm"
+        type="password"
+        required
+        autoComplete="new-password"
+      />
+      <SubmitButton label="Reset password" />
+      <p className="text-center text-sm text-ink-muted">
+        <Link href="/login" className="font-semibold text-brand">
+          Back to log in
         </Link>
       </p>
     </form>
