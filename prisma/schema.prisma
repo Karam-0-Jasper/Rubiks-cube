@@ -54,6 +54,7 @@ model User {
   id           String   @id @default(cuid())
   username     String   @unique
   phone        String?  @unique
+  email        String?  @unique
   passwordHash String
   fullName     String?
   school       String?
@@ -71,8 +72,25 @@ model User {
   unlocks       SubjectUnlock[]
   quizAttempts  QuizAttempt[]
   payments      Payment[]
+  resetTokens   PasswordResetToken[]
 
   @@index([phone])
+}
+
+/// Short-lived, single-use numeric codes emailed to a user so they can reset
+/// a forgotten password. Only a hash of the code is stored; codes expire and
+/// lock after a few wrong attempts.
+model PasswordResetToken {
+  id        String    @id @default(cuid())
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  codeHash  String
+  expiresAt DateTime
+  attempts  Int       @default(0)
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  @@index([userId])
 }
 
 /// Server-side session records. The cookie carries a signed JWT whose `sid`
