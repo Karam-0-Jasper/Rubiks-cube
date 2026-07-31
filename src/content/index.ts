@@ -42,6 +42,10 @@ import { chemistryG10P5 } from "@/content/grade10/period5/chemistry";
 import { physicsG10P5 } from "@/content/grade10/period5/physics";
 import { chemistryG10P6 } from "@/content/grade10/period6/chemistry";
 import { physicsG10P6 } from "@/content/grade10/period6/physics";
+import { geographyG10P6 } from "@/content/grade10/period6/geography";
+import { historyG10P6 } from "@/content/grade10/period6/history";
+import { economicsG10P6 } from "@/content/grade10/period6/economics";
+import { literatureG10P6 } from "@/content/grade10/period6/literature";
 import { geographyG10P5 } from "@/content/grade10/period5/geography";
 import { historyG10P5 } from "@/content/grade10/period5/history";
 import { economicsG10P5 } from "@/content/grade10/period5/economics";
@@ -113,10 +117,34 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     physicsG10P5,
     physicsG10P6,
   ],
-  geography: [geographyG10P2, geographyG10P3, geographyG10P4, geographyG10P5],
-  history: [historyG10P2, historyG10P3, historyG10P4, historyG10P5],
-  economics: [economicsG10P2, economicsG10P3, economicsG10P4, economicsG10P5],
-  literature: [literatureG10P2, literatureG10P3, literatureG10P4, literatureG10P5],
+  geography: [
+    geographyG10P2,
+    geographyG10P3,
+    geographyG10P4,
+    geographyG10P5,
+    geographyG10P6,
+  ],
+  history: [
+    historyG10P2,
+    historyG10P3,
+    historyG10P4,
+    historyG10P5,
+    historyG10P6,
+  ],
+  economics: [
+    economicsG10P2,
+    economicsG10P3,
+    economicsG10P4,
+    economicsG10P5,
+    economicsG10P6,
+  ],
+  literature: [
+    literatureG10P2,
+    literatureG10P3,
+    literatureG10P4,
+    literatureG10P5,
+    literatureG10P6,
+  ],
 };
 
 function withExtraPeriods(subject: SubjectContent): SubjectContent {
