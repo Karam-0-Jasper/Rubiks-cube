@@ -55,7 +55,9 @@ export default async function TopicPage({
   const unlocked = subjectRow
     ? await userHasUnlocked(user.id, subjectRow.id)
     : false;
-  const testQuestions = unlocked ? await getTestQuestions(topic.id) : [];
+  const testQuestions = unlocked
+    ? await getTestQuestions(subjectSlug, topicSlug)
+    : [];
 
   return (
     <article className="animate-fade-up">
