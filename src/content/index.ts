@@ -28,10 +28,19 @@ import { literatureG10P2 } from "@/content/grade10/period2/literature";
 
 import { mathematicsG10P3 } from "@/content/grade10/period3/mathematics";
 import { mathematicsG10P4 } from "@/content/grade10/period4/mathematics";
+import { mathematicsG10P5 } from "@/content/grade10/period5/mathematics";
 import { englishLanguageG10P4 } from "@/content/grade10/period4/english-language";
+import { englishLanguageG10P5 } from "@/content/grade10/period5/english-language";
 import { biologyG10P4 } from "@/content/grade10/period4/biology";
+import { biologyG10P5 } from "@/content/grade10/period5/biology";
 import { chemistryG10P4 } from "@/content/grade10/period4/chemistry";
 import { physicsG10P4 } from "@/content/grade10/period4/physics";
+import { chemistryG10P5 } from "@/content/grade10/period5/chemistry";
+import { physicsG10P5 } from "@/content/grade10/period5/physics";
+import { geographyG10P5 } from "@/content/grade10/period5/geography";
+import { historyG10P5 } from "@/content/grade10/period5/history";
+import { economicsG10P5 } from "@/content/grade10/period5/economics";
+import { literatureG10P5 } from "@/content/grade10/period5/literature";
 import { geographyG10P4 } from "@/content/grade10/period4/geography";
 import { historyG10P4 } from "@/content/grade10/period4/history";
 import { economicsG10P4 } from "@/content/grade10/period4/economics";
@@ -64,19 +73,25 @@ const BASE_SUBJECTS: SubjectContent[] = [
 // Extra periods keyed by subject slug. Each entry is appended to the matching
 // base subject's `periods` list, then all periods are sorted by grade + number.
 const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
-  mathematics: [mathematicsG10P2, mathematicsG10P3, mathematicsG10P4],
+  mathematics: [
+    mathematicsG10P2,
+    mathematicsG10P3,
+    mathematicsG10P4,
+    mathematicsG10P5,
+  ],
   "english-language": [
     englishLanguageG10P2,
     englishLanguageG10P3,
     englishLanguageG10P4,
+    englishLanguageG10P5,
   ],
-  biology: [biologyG10P2, biologyG10P3, biologyG10P4],
-  chemistry: [chemistryG10P2, chemistryG10P3, chemistryG10P4],
-  physics: [physicsG10P2, physicsG10P3, physicsG10P4],
-  geography: [geographyG10P2, geographyG10P3, geographyG10P4],
-  history: [historyG10P2, historyG10P3, historyG10P4],
-  economics: [economicsG10P2, economicsG10P3, economicsG10P4],
-  literature: [literatureG10P2, literatureG10P3, literatureG10P4],
+  biology: [biologyG10P2, biologyG10P3, biologyG10P4, biologyG10P5],
+  chemistry: [chemistryG10P2, chemistryG10P3, chemistryG10P4, chemistryG10P5],
+  physics: [physicsG10P2, physicsG10P3, physicsG10P4, physicsG10P5],
+  geography: [geographyG10P2, geographyG10P3, geographyG10P4, geographyG10P5],
+  history: [historyG10P2, historyG10P3, historyG10P4, historyG10P5],
+  economics: [economicsG10P2, economicsG10P3, economicsG10P4, economicsG10P5],
+  literature: [literatureG10P2, literatureG10P3, literatureG10P4, literatureG10P5],
 };
 
 function withExtraPeriods(subject: SubjectContent): SubjectContent {
