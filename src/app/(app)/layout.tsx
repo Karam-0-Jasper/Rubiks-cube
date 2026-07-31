@@ -23,10 +23,10 @@ export default async function AppLayout({
       <header className="sticky top-0 z-20 border-b border-line bg-surface/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
           <Link href="/dashboard" className="flex items-center gap-2">
-            <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand text-sm font-bold text-brand-ink">
+            <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand font-display text-sm font-semibold text-brand-ink">
               N
             </span>
-            <span className="hidden text-lg font-bold tracking-tight sm:inline">
+            <span className="hidden font-display text-xl font-semibold sm:inline">
               Nuvex
             </span>
           </Link>

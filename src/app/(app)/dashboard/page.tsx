@@ -22,40 +22,35 @@ export default async function DashboardPage() {
 
   return (
     <div className="animate-fade-up">
-      {/* Hero */}
-      <div className="rounded-card border border-line bg-gradient-to-br from-brand-soft/70 to-surface-raised p-6 sm:p-8">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
-              Welcome back, {firstName}.
-            </h1>
-            <p className="mt-1.5 max-w-xl text-ink-muted">
-              Ministry of Education–aligned lesson notes and plans, organised by
-              subject, grade and period. Pick a subject to begin.
-            </p>
-          </div>
-          <Link
-            href="/nyvora"
-            className="rounded-xl bg-brand px-4 py-2.5 text-sm font-semibold text-brand-ink transition hover:opacity-90"
-          >
-            Ask Nyvora
-          </Link>
-        </div>
-        <div className="mt-6 flex flex-wrap gap-x-8 gap-y-3 text-sm">
+      {/* Masthead */}
+      <div className="border-b border-line pb-8 text-center">
+        <p className="book-eyebrow">The Nuvex Teacher&apos;s Companion</p>
+        <h1 className="book-title mt-3 text-4xl font-semibold leading-tight sm:text-5xl">
+          Welcome back, {firstName}.
+        </h1>
+        <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-ink-muted">
+          Ministry of Education–aligned lesson notes, worked examples, diagrams
+          and plans — organised by subject, grade and period, the way a good
+          textbook is.
+        </p>
+        <div className="mt-6 flex items-center justify-center gap-8">
           <Stat value={String(subjects.length)} label="Subjects" />
+          <span className="h-8 w-px bg-line" />
           <Stat value={String(totalTopics)} label="Topics" />
-          <Stat
-            value={`10–12`}
-            label={`Grades (${gradesCovered.size} live)`}
-          />
+          <span className="h-8 w-px bg-line" />
+          <Stat value="10–12" label={`Grades (${gradesCovered.size} live)`} />
         </div>
+        <Link
+          href="/nyvora"
+          className="mt-7 inline-block rounded-xl bg-brand px-5 py-2.5 text-sm font-semibold text-brand-ink transition hover:opacity-90"
+        >
+          Ask Nyvora, your teaching assistant
+        </Link>
       </div>
 
       {/* Subject grid */}
-      <h2 className="mt-8 text-sm font-semibold uppercase tracking-wide text-ink-faint">
-        Subjects
-      </h2>
-      <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <h2 className="book-eyebrow mt-10">Table of subjects</h2>
+      <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {subjects.map((subject) => {
           const a = accent(subject.accent);
           const topicCount = subject.periods.reduce(
@@ -80,10 +75,10 @@ export default async function DashboardPage() {
                   {topicCount} topic{topicCount === 1 ? "" : "s"}
                 </span>
               </div>
-              <h3 className="mt-3 text-lg font-semibold tracking-tight">
+              <h3 className="mt-3 font-display text-xl font-semibold leading-snug">
                 {subject.name}
               </h3>
-              <p className="mt-1.5 line-clamp-2 flex-1 text-sm text-ink-muted">
+              <p className="mt-1.5 line-clamp-2 flex-1 text-[0.95rem] leading-relaxed text-ink-muted">
                 {subject.description}
               </p>
               <div className="mt-4 flex items-center gap-1.5">
@@ -116,9 +111,9 @@ export default async function DashboardPage() {
 
 function Stat({ value, label }: { value: string; label: string }) {
   return (
-    <div>
-      <div className="text-xl font-bold tracking-tight">{value}</div>
-      <div className="text-xs font-medium text-ink-faint">{label}</div>
+    <div className="text-center">
+      <div className="font-display text-2xl font-semibold">{value}</div>
+      <div className="mt-0.5 text-xs font-medium text-ink-faint">{label}</div>
     </div>
   );
 }

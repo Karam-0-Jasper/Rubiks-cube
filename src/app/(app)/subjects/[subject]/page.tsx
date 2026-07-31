@@ -45,24 +45,26 @@ export default async function SubjectPage({
 
   return (
     <div className="animate-fade-up">
-      <Link
-        href="/dashboard"
-        className="text-sm font-medium text-ink-muted transition hover:text-ink"
-      >
+      <Link href="/dashboard" className="book-eyebrow transition hover:text-ink">
         ← All subjects
       </Link>
 
-      <div className="mt-4 flex items-center gap-3">
-        <span className={`h-2.5 w-2.5 rounded-full ${a.dot}`} />
-        <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
+      <div className="mt-6 border-b border-line pb-8 text-center">
+        <p className="book-eyebrow">
+          <span className={`mr-2 inline-block h-2 w-2 rounded-full align-middle ${a.dot}`} />
+          Subject
+        </p>
+        <h1 className="book-title mt-3 text-4xl font-semibold leading-tight sm:text-5xl">
           {subject.name}
         </h1>
+        <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-ink-muted">
+          {subject.description}
+        </p>
+        <p className="mt-4 text-sm italic text-ink-faint">
+          {topicTotal} topic{topicTotal === 1 ? "" : "s"} · organised by grade
+          and period
+        </p>
       </div>
-      <p className="mt-2 max-w-2xl text-ink-muted">{subject.description}</p>
-      <p className="mt-3 text-xs font-medium text-ink-faint">
-        {topicTotal} topic{topicTotal === 1 ? "" : "s"} available · organised by
-        grade and period
-      </p>
 
       <div className="mt-8">
         <GradeBrowser subjectSlug={subject.slug} accent={a} grades={grades} />

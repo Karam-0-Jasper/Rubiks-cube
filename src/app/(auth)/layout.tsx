@@ -16,10 +16,10 @@ export default async function AuthLayout({
     <div className="min-h-screen">
       <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <Link href="/" className="flex items-center gap-2">
-          <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand text-sm font-bold text-brand-ink">
+          <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand font-display text-sm font-semibold text-brand-ink">
             N
           </span>
-          <span className="text-lg font-bold tracking-tight">Nuvex</span>
+          <span className="font-display text-xl font-semibold">Nuvex</span>
         </Link>
         <ThemeToggle />
       </header>
