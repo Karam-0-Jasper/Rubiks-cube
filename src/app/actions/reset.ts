@@ -28,7 +28,9 @@ export async function resetPasswordAction(
   const password = String(formData.get("password") ?? "");
   const confirm = String(formData.get("confirm") ?? "");
 
-  const expectedKey = process.env.ADMIN_RESET_KEY;
+  // Bracket access reads the value at runtime; a "Sensitive" env var on Vercel
+  // is hidden at build time and would otherwise be inlined as undefined.
+  const expectedKey = process.env["ADMIN_RESET_KEY"];
   if (!expectedKey) {
     return {
       error:
