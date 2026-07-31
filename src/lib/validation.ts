@@ -18,6 +18,13 @@ export const passwordSchema = z
 export const registerSchema = z.object({
   username: usernameSchema,
   phone: z.string().trim().optional().or(z.literal("")),
+  email: z
+    .string()
+    .trim()
+    .email("Enter a valid email address")
+    .max(200, "Email is too long")
+    .optional()
+    .or(z.literal("")),
   fullName: z.string().trim().max(100).optional().or(z.literal("")),
   school: z.string().trim().max(120).optional().or(z.literal("")),
   password: passwordSchema,

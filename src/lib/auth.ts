@@ -120,6 +120,11 @@ export function normalizeUsername(input: string): string {
   return input.trim().toLowerCase();
 }
 
+/// Emails are case-insensitive and stored lowercase.
+export function normalizeEmail(input: string): string {
+  return input.trim().toLowerCase();
+}
+
 /// Liberian numbers are entered locally ("0770123456") or with the country
 /// code. Both normalize to +231XXXXXXXX so login works either way.
 export function normalizePhone(input: string): string | null {

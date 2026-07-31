@@ -88,7 +88,7 @@ export function LoginForm() {
       />
       <SubmitButton label="Log in" />
       <p className="text-center text-sm text-ink-muted">
-        <Link href="/reset-password" className="font-semibold text-brand">
+        <Link href="/forgot-password" className="font-semibold text-brand">
           Forgot your password?
         </Link>
       </p>
@@ -192,6 +192,14 @@ export function RegisterForm() {
         placeholder="0770123456"
         autoComplete="tel"
         hint="Optional — lets you log in with your phone number too."
+      />
+      <Field
+        label="Email"
+        name="email"
+        type="email"
+        placeholder="you@example.com"
+        autoComplete="email"
+        hint="Optional, but needed to reset your password if you forget it."
       />
       <Field label="Full name" name="fullName" placeholder="Joseph Kollie" autoComplete="name" />
       <Field label="School" name="school" placeholder="St. Peter's High School" />
