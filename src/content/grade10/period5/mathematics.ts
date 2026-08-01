@@ -62,11 +62,33 @@ Solve: 3x + 2y = 16 and x + y = 6.
 
 ## Always check
 
-Substitute your answer into **both** original equations to be sure it works.
+Substitute your answer into **both** original equations to be sure it works. Using x = 4, y = 3 in the elimination example: 2(4) + 3 = 11 ✓ and 4 − 3 = 1 ✓ — both true, so the solution is correct. A pair that fails either equation is wrong.
 
 ## When to use which method
-- Use **substitution** when one equation already has a single x or y (e.g. y = …).
-- Use **elimination** when the equations are lined up as ax + by = c.`,
+- Use **substitution** when one equation already has a single x or y made the subject (e.g. *y = 2x − 1*), or is easy to rearrange.
+- Use **elimination** when both equations are lined up as *ax + by = c*, especially when a pair of coefficients is already equal or opposite.
+
+Both methods always give the **same** answer; choose whichever involves less work for the particular pair.
+
+## Using simultaneous equations to solve word problems
+
+Many real problems hide a pair of simultaneous equations. The skill is to **turn the words into two equations**, then solve as above. Follow four steps: (1) choose letters for the two unknowns; (2) write one equation from each fact; (3) solve; (4) answer in words.
+
+**Example.** *Two exercise books and three pens cost 130 dollars. Three exercise books and two pens cost 120 dollars. Find the price of one book and one pen.*
+
+1. Let a book cost **b** and a pen cost **p**.
+2. From the two facts: 2b + 3p = 130 and 3b + 2p = 120.
+3. Eliminate: multiply the first by 3 and the second by 2 → 6b + 9p = 390 and 6b + 4p = 240; subtract → 5p = 150 → **p = 30**; then 2b + 3(30) = 130 → 2b = 40 → **b = 20**.
+4. **A book costs 20 dollars and a pen costs 30 dollars.**
+
+## Special cases: when there is no single solution
+
+Not every pair has exactly one solution. When you try to solve and **both unknowns disappear**, look at what is left:
+
+- If you reach a **false** statement such as *0 = 5*, the equations **contradict** each other (their lines are **parallel**) — there is **no solution**.
+- If you reach a statement that is **always true** such as *0 = 0*, the two equations are really the **same line** — there are **infinitely many** solutions.
+
+A pair with exactly one solution (the usual case) represents two lines that **cross at one point**, which is the idea we make graphical in the next topic.`,
       workedExample: `**Problem.** Solve the simultaneous equations by elimination, and check your answer:
    3x + 2y = 12
    x − 2y = 4

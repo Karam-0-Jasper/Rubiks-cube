@@ -43,6 +43,13 @@ Solve 5x − 2 = 3x + 8:
 ### Equations with brackets
 Expand first, then solve: 3(x − 4) = 9 → 3x − 12 = 9 → 3x = 21 → **x = 7**.
 
+### Equations with fractions
+Clear the fractions first by **multiplying every term** by the lowest common denominator (LCD).
+
+Solve x/2 + x/3 = 5:
+- The LCD of 2 and 3 is 6. Multiply every term by 6: 6(x/2) + 6(x/3) = 6(5) → 3x + 2x = 30.
+- Collect: 5x = 30 → **x = 6**. (Check: 6/2 + 6/3 = 3 + 2 = 5 ✓)
+
 ## Word problems
 
 Turn the words into an equation, then solve.
@@ -67,6 +74,13 @@ Solve 2x + 1 < 9:
 
 Solve −3x ≥ 12:
 - Divide by −3 and **flip** the sign: **x ≤ −4**.
+
+### Compound (double) inequalities
+An inequality can trap the variable between two values. Do the same operation to **all three parts**.
+
+Solve 1 ≤ 2x − 3 < 7:
+- Add 3 throughout: 4 ≤ 2x < 10.
+- Divide throughout by 2: **2 ≤ x < 5** — every value from 2 (included) up to 5 (not included).
 
 ## Showing solutions on a number line
 
