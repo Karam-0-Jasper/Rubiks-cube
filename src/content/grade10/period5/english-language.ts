@@ -18,42 +18,50 @@ export const englishLanguageG10P5: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## What a preposition does
 
-A **preposition** is a word that shows the **relationship** between a noun (or pronoun) and another word in the sentence — usually its **position, direction, time** or manner.
+A **preposition** is a small but powerful word that shows the **relationship** between a noun (or pronoun) and another word in the sentence — most often a relationship of **position, direction, time** or manner. Think of two things — a cat and a table — and the preposition is the word that tells you how they stand to each other: the cat is *on*, *under*, *beside*, *near* or *behind* the table.
 
-- Position: *The book is **on** the table.*
-- Direction: *She walked **to** the market.*
-- Time: *We met **after** lunch.*
+- **Position:** *The book is **on** the table.*
+- **Direction:** *She walked **to** the market.*
+- **Time:** *We met **after** lunch.*
 
-The noun or pronoun that follows the preposition is called its **object**.
+The noun or pronoun that comes after the preposition is called its **object**. Because it is an object, a pronoun after a preposition must be in the **object form**: *between you and **me*** (not *I*), *for **him** and **her***.
 
-## Common prepositions
+## Common prepositions, grouped
 
-- **Place/position:** in, on, under, over, above, below, between, beside, near, behind, in front of.
-- **Direction/movement:** to, into, onto, from, towards, across, through, along.
-- **Time:** at, on, in, before, after, during, until, since.
-- **Others:** of, for, with, without, by, about, against.
+| Relationship | Prepositions |
+| --- | --- |
+| Place / position | in, on, under, over, above, below, between, beside, near, behind, in front of |
+| Direction / movement | to, into, onto, from, towards, across, through, along, up, down |
+| Time | at, on, in, before, after, during, until, since, by, for |
+| Others | of, for, with, without, by, about, against, like |
+
+Some prepositions are made of more than one word — **compound prepositions**: *in front of, according to, because of, instead of, in spite of, next to*.
 
 ## Prepositional phrases
 
-A **prepositional phrase** begins with a preposition and ends with its object (the noun/pronoun), plus any words describing that object.
+A **prepositional phrase** begins with a preposition and ends with its object, together with any words that describe that object:
 
-- *under **the old wooden table*** — preposition "under" + object "table".
-- *after **the long meeting*** — preposition "after" + object "meeting".
+> **preposition + (describing words) + object**
+> *under the old wooden table* · *after the long meeting* · *because of the heavy rain*
 
-A prepositional phrase acts as a describing part of the sentence, telling *where, when* or *how*.
+A prepositional phrase does one of two jobs in the sentence:
+
+- as an **adjective phrase**, describing a noun: *the girl **in the blue dress*** (which girl?);
+- as an **adverb phrase**, describing a verb: *She waited **at the gate*** (waited where?).
 
 ## Using prepositions correctly
 
-Some prepositions cause difficulty:
+Prepositions are the hardest words in English to use, because their choice is often fixed by custom rather than logic.
 
-- **in / on / at (time):** *at* 6 o'clock; *on* Monday; *in* June / in 2026.
-- **in / on / at (place):** *at* the door; *on* the wall; *in* the room.
-- **between / among:** *between* is used for **two**; *among* for **more than two**. (*Share it between the two of you; among the whole class.*)
-- Avoid unnecessary prepositions: ✗ *where are you **at**?* → ✓ *where are you?*
+- **at / on / in for TIME** (smallest to largest): **at** a clock time (*at 6 o'clock*), **on** a day or date (*on Monday, on 26 July*), **in** a longer period (*in June, in 2026, in the morning*).
+- **at / on / in for PLACE:** **at** a point (*at the door*), **on** a surface (*on the wall*), **in** an enclosed space (*in the room*).
+- **between / among:** use **between** for **two** and **among** for **more than two** — *share it **between** the two of you; **among** the whole class*.
+- **Verbs with fixed prepositions:** many verbs demand a particular preposition — *depend **on**, listen **to**, arrive **at/in**, agree **with** a person / **to** a plan, good **at**, afraid **of**, interested **in**.* These must be learned as pairs.
+- **Avoid unnecessary prepositions:** ✗ *Where are you **at**?* → ✓ *Where are you?*
 
 ## A note on ending sentences
 
-It was once taught that a sentence should never end with a preposition, but natural English often does (*What are you looking **for**?*). The important thing is that the preposition is **used correctly**, not its position.`,
+You may have been told that a sentence should never end with a preposition. In natural English it often does — *What are you looking **for**? Who did you go **with**?* — and there is nothing wrong with it. What matters is that the preposition is the **right** one, not where it sits.`,
       workedExample: `**Task.** In each sentence, identify the preposition and its object, and name what relationship it shows (place, direction or time).
 
 1. *The cat slept **under** the bed.*

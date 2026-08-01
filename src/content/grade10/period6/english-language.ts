@@ -24,12 +24,29 @@ A **phrase** is a **group of related words** that works together as a unit in a 
 
 ## Phrase versus clause
 
-This distinction is important:
+This is the distinction the whole topic rests on:
 
-- A **phrase** has **no subject–verb pair** and cannot stand alone. *in the morning*.
-- A **clause** **does** contain a subject and a verb. *the sun rose* (subject "sun" + verb "rose").
+- A **phrase** has **no subject–verb pair** and cannot stand alone: *in the morning*.
+- A **clause** **does** contain a subject and a verb: *the sun rose* (subject *sun* + verb *rose*).
 
-A sentence is built from clauses; phrases are the smaller building blocks inside them.
+\`\`\`svg A phrase has no subject–verb pair; a clause does
+<svg viewBox="0 0 460 150" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect x="20" y="20" width="200" height="110" rx="10" fill="#efe2cd" stroke="#c9a86e"/>
+  <rect x="240" y="20" width="200" height="110" rx="10" fill="#e5efe2" stroke="#8fb08a"/>
+  <g text-anchor="middle">
+    <text x="120" y="46" font-size="14" font-weight="bold">PHRASE</text>
+    <text x="120" y="74" font-size="14" font-style="italic">in the morning</text>
+    <text x="120" y="102" font-size="12" fill="#6a5a48">no subject + verb</text>
+    <text x="120" y="120" font-size="12" fill="#6a5a48">not a full idea</text>
+    <text x="340" y="46" font-size="14" font-weight="bold">CLAUSE</text>
+    <text x="340" y="74" font-size="14" font-style="italic">the sun rose</text>
+    <text x="340" y="100" font-size="12" fill="#4a6a45">subject (sun) +</text>
+    <text x="340" y="118" font-size="12" fill="#4a6a45">verb (rose)</text>
+  </g>
+</svg>
+\`\`\`
+
+A sentence is built from clauses; phrases are the smaller building blocks **inside** them. The quick test for any group of words is: *does it contain a subject and its verb?* If yes, it is a clause; if no, it is a phrase.
 
 ## Kinds of phrase
 
@@ -43,12 +60,14 @@ Phrases are named after the **head word** (the most important word) or the job t
 
 ## Noun phrase
 
-A **noun phrase** is a noun together with the words that describe it (its modifiers). It does the job of a **noun** in the sentence — as a subject or an object.
+A **noun phrase** is a noun together with the words that describe it (its **modifiers** — articles, adjectives, and other words). It does every job a single noun can do:
 
-- ***The big black dog*** barked. (noun phrase as **subject**)
-- She bought ***a beautiful new dress***. (noun phrase as **object**)
+- as the **subject**: ***The big black dog*** barked.
+- as the **object**: She bought ***a beautiful new dress***.
+- as the **complement** after a linking verb: He became ***a respected elder***.
+- as the **object of a preposition**: She sat on ***the wooden bench***.
 
-The **head word** is the noun (*dog, dress*); the other words (the, big, black; a, beautiful, new) modify it.
+The **head word** is the noun itself (*dog, dress, elder, bench*); the surrounding words (*the, big, black; a, beautiful, new*) modify it. A noun phrase can also be built round a **gerund** (the *-ing* form used as a noun): ***Swimming in the river*** is dangerous.
 
 ## Verb phrase
 

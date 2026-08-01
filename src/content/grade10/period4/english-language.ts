@@ -17,54 +17,71 @@ export const englishLanguageG10P4: PeriodContent = {
       estimatedMinutes: 160,
       notes: `## What an adjective does
 
-An **adjective** is a word that **describes or modifies a noun or a pronoun** — it tells us *what kind, which one, how many* or *whose*.
+An **adjective** is a word that **describes or modifies a noun or a pronoun**. It adds information, answering one of these questions about the noun: *what kind? which one? how many? whose?*
 
-- *a **tall** boy* (what kind)
-- ***this** book* (which one)
-- ***three** oranges* (how many)
+- *a **tall** boy* — what kind?
+- ***this** book* — which one?
+- ***three** oranges* — how many?
+- ***her** bag* — whose?
 
-An adjective usually comes **before** the noun it describes (*a red car*) or **after a linking verb** (*the car is red*).
+An adjective can stand in two positions. When it comes **directly before** the noun it is called **attributive**: *a **red** car, a **kind** teacher*. When it comes **after a linking verb** (is, seems, became, looks…) and describes the subject, it is called **predicative**: *the car is **red**; the teacher seems **kind***.
 
-## Kinds of adjective
+## The kinds of adjective
 
-- **Descriptive (quality):** tell what kind — *kind, brave, wooden, Liberian*.
-- **Quantitative:** tell how much/many — *some, few, many, three*.
-- **Demonstrative:** point out which — *this, that, these, those*.
-- **Possessive:** show ownership — *my, your, his, her, our, their*.
-- **Interrogative:** ask a question — *which, what, whose* (*Which book?*).
+1. **Descriptive (quality) adjectives** tell what kind: *kind, brave, wooden, dirty, enormous*.
+2. **Proper adjectives** are formed from proper nouns and take a capital letter: *Liberian rice, African history, Islamic art*.
+3. **Quantitative adjectives** tell how much or how many: *some, little, much, enough, several*.
+4. **Numeral adjectives** give a number or order: *three mangoes (cardinal), the first prize (ordinal)*.
+5. **Demonstrative adjectives** point out which: *this, that, these, those* — ***this** house, **those** girls*.
+6. **Possessive adjectives** show ownership: *my, your, his, her, its, our, their*.
+7. **Interrogative adjectives** ask a question before a noun: *which, what, whose* — ***Which** book?*
+8. **Articles** — *a, an, the* — are the commonest adjectives of all. *A / an* (the **indefinite** articles) point to any one member of a class (*a book, an egg*); *the* (the **definite** article) points to a particular one (*the book on my desk*). Use *an* before a vowel **sound** (*an hour, an honest man*) and *a* before a consonant sound (*a university, a European*).
+
+## The order of adjectives
+
+When two or more adjectives describe the same noun, English follows a natural order: **opinion → size → age → shape → colour → origin → material → purpose**. We say *a **beautiful large old round brown wooden** table*, not *a wooden brown round old large beautiful table*. Learners rarely need the full list, but they should feel that *a nice new shirt* sounds right while *a new nice shirt* does not.
 
 ## The degrees of comparison
 
 Adjectives change form to **compare**. There are three degrees:
 
-- **Positive** — the plain form: *tall*.
+- **Positive** — the plain form, describing one thing: *tall*.
 - **Comparative** — compares **two** things: *taller*.
 - **Superlative** — compares **three or more**: *tallest*.
 
 ### Forming the degrees
 
 | Rule | Positive | Comparative | Superlative |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | short words: add -er / -est | tall | taller | tallest |
 | ending in -e: add -r / -st | large | larger | largest |
 | consonant + y → i | happy | happier | happiest |
+| short vowel + consonant: double it | big | bigger | biggest |
 | long words: use more / most | beautiful | more beautiful | most beautiful |
+
+Note that the superlative usually takes **the** before it: *the tallest boy, the most careful driver*.
+
+### Comparing things that are equal
+
+To show two things are the **same**, use **as … as**: *Kou is **as tall as** Musu.* To show they are not, use **not as … as**: *This road is **not as busy as** that one.*
 
 ### Irregular comparisons
 
-Some common adjectives are irregular and must be learned:
+A few very common adjectives do not follow the rules and must be learned:
 
 | Positive | Comparative | Superlative |
-|---|---|---|
+| --- | --- | --- |
 | good | better | best |
 | bad | worse | worst |
 | little | less | least |
-| many/much | more | most |
+| many / much | more | most |
+| far | farther / further | farthest / furthest |
 
 ## Common errors
 
-- Do **not** use *-er/-est* and *more/most* together: ✗ *more taller* → ✓ *taller*.
-- Use the **comparative** for two, the **superlative** for three or more: *the taller of the two*, *the tallest in the class*.`,
+- **Double comparison** — never use *-er/-est* and *more/most* together: ✗ *more taller*, ✗ *most cleverest* → ✓ *taller*, *cleverest*.
+- **Wrong degree for the number compared** — use the **comparative** for two, the **superlative** for three or more: *the taller **of the two***, *the tallest **in the class***.
+- **Wrong article** — ✗ *a apple, a hour* → ✓ *an apple, an hour* (go by the sound, not the spelling).`,
       workedExample: `**Task.** For each sentence, name the adjective and the noun it describes, and give its degree of comparison; then correct any error.
 
 1. *Musu is the **cleverest** girl in the class.*
@@ -255,44 +272,58 @@ Some common adjectives are irregular and must be learned:
       estimatedMinutes: 160,
       notes: `## What an adverb does
 
-An **adverb** is a word that **modifies a verb, an adjective, or another adverb**. It usually answers *how, when, where,* or *to what extent*.
+If the adjective is the friend of the noun, the **adverb** is the friend of the **verb**. An **adverb** is a word that **modifies a verb, an adjective, or another adverb**, adding information that answers *how? when? where? how often?* or *to what extent?*
 
-- Modifying a verb: *She sings **beautifully**.* (how she sings)
-- Modifying an adjective: *It is **very** hot.* (how hot)
-- Modifying another adverb: *He ran **quite** quickly.* (how quickly)
+- modifying a **verb**: *She sings **beautifully**.* (how she sings)
+- modifying an **adjective**: *It is **very** hot.* (how hot)
+- modifying **another adverb**: *He ran **quite** quickly.* (how quickly)
 
-## Kinds of adverb
+## The kinds of adverb
 
-- **Manner** — how? — *quickly, well, carefully, badly*
-- **Time** — when? — *now, yesterday, soon, already*
-- **Place** — where? — *here, there, outside, everywhere*
-- **Frequency** — how often? — *always, often, never, sometimes*
-- **Degree** — to what extent? — *very, too, quite, almost, so*
+| Kind | Question it answers | Examples |
+| --- | --- | --- |
+| Manner | how? | quickly, well, carefully, badly, loudly |
+| Time | when? | now, yesterday, soon, already, tomorrow |
+| Place | where? | here, there, outside, everywhere, above |
+| Frequency | how often? | always, often, never, sometimes, daily |
+| Degree | to what extent? | very, too, quite, almost, so, enough |
+| Affirmation / negation | is it so? | certainly, surely, yes, not, never |
 
 ## Forming adverbs from adjectives
 
-Many adverbs of manner are formed by adding **-ly** to an adjective:
+Many adverbs of manner are made by adding **-ly** to an adjective, with a few spelling changes:
 
-- quick → quick**ly**
-- careful → careful**ly**
-- happy → happi**ly** (y → i)
-- gentle → gent**ly** (drop the -e before -ly after -le)
+- quick → quick**ly**, careful → careful**ly** (most just add -ly);
+- happy → happi**ly** (consonant + *y* changes to *i*);
+- gentle → gent**ly** (words ending in *-le* drop the *e*);
+- true → tru**ly** (a few drop a final *e*).
 
-But **not every -ly word is an adverb** (e.g. *friendly, lovely* are adjectives), and some adverbs have no -ly (*fast, hard, well*).
+Two warnings: **not every -ly word is an adverb** — *friendly, lovely, silly, ugly* are **adjectives**; and some adverbs have **no -ly** at all — *fast, hard, late, well, straight* keep the same form as the adjective (*a fast car → he drives fast*).
+
+## Comparison of adverbs
+
+Like adjectives, adverbs have three degrees. Short adverbs add **-er / -est** (*fast → faster → fastest*), while -ly adverbs use **more / most** (*carefully → more carefully → most carefully*). A few are irregular: *well → better → best; badly → worse → worst.*
+
+## The position of adverbs
+
+- **Adverbs of manner** usually come after the verb or its object: *She read the letter **slowly**.*
+- **Adverbs of frequency** usually come **before** the main verb but **after** *be*: *He **always** arrives early; She **is always** early.*
+- **Degree adverbs** (*very, too, quite, so*) come **before** the word they modify: ***very** tired*, not *tired very*.
 
 ## Adjective or adverb? — the key distinction
 
-This is the most tested point:
+This is the most heavily tested point in the topic:
 
-- An **adjective** describes a **noun**: *She is a **careful** driver.* (careful → driver)
-- An **adverb** describes a **verb**: *She drives **carefully**.* (carefully → drives)
+- an **adjective** describes a **noun or pronoun**: *She is a **careful** driver.* (careful → driver)
+- an **adverb** describes a **verb, adjective or adverb**: *She drives **carefully**.* (carefully → drives)
 
-**Good vs well:** *good* is an adjective (*a good student*); *well* is the adverb (*she writes well*). ✗ *She writes good* → ✓ *She writes well*.
+**good vs well.** *Good* is the adjective (*a good student, the food is good*); *well* is the adverb (*she writes well*). ✗ *She writes good* → ✓ *She writes **well***. (Note: *well* is an adjective only when it means "healthy": *I feel well*.)
 
 ## Common errors
 
-- Do not use an adjective in place of an adverb: ✗ *He ran quick* → ✓ *He ran **quickly***.
-- Position degree adverbs correctly: *very*, *too*, *quite* come **before** the word they modify (*very tired*, not *tired very*).`,
+- Using an adjective where an adverb is needed: ✗ *He ran quick* → ✓ *He ran **quickly**; ✗ speak clear* → ✓ *speak **clearly***.
+- *very* vs *too*: *very* simply intensifies (*very hot*), while *too* means "more than is good" (*too hot to drink*). They are not interchangeable.
+- Double negatives: ✗ *I didn't see nobody* → ✓ *I didn't see **anybody***.`,
       workedExample: `**Task.** For each sentence, find the adverb, say what word it modifies and what kind of adverb it is; then correct any error.
 
 1. *The children played **happily** in the yard.*
