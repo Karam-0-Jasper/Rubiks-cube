@@ -42,11 +42,17 @@ export default async function SubjectPage({
   const grades = [...gradeMap.values()].sort((x, y) => x.grade - y.grade);
 
   const topicTotal = subject.periods.reduce((n, p) => n + p.topics.length, 0);
+  const backGrade = subject.periods.length
+    ? Math.min(...subject.periods.map((p) => p.grade))
+    : 10;
 
   return (
     <div className="animate-fade-up">
-      <Link href="/dashboard" className="book-eyebrow transition hover:text-ink">
-        ← All subjects
+      <Link
+        href={`/grade/${backGrade}`}
+        className="book-eyebrow transition hover:text-ink"
+      >
+        ← Grade {backGrade} library
       </Link>
 
       <div className="mt-6 border-b border-line pb-8 text-center">
