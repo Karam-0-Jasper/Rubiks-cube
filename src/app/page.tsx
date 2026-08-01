@@ -15,10 +15,9 @@ export default async function LandingPage() {
   return (
     <div className="min-h-screen">
       <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-        <div className="flex items-center gap-2">
-          <Logo />
-          <span className="font-display text-xl font-semibold">Nuvex</span>
-        </div>
+        <span className="font-display text-xl font-semibold tracking-tight">
+          Nuvex
+        </span>
         <div className="flex items-center gap-3">
           <ThemeToggle />
           <Link
@@ -164,10 +163,3 @@ function PlanCard({
   );
 }
 
-function Logo() {
-  return (
-    <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand font-display text-sm font-semibold text-brand-ink">
-      N
-    </span>
-  );
-}
