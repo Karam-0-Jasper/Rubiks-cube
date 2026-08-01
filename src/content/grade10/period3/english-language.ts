@@ -18,51 +18,83 @@ export const englishLanguageG10P3: PeriodContent = {
       estimatedMinutes: 160,
       notes: `## What the perfect tenses do
 
-The **perfect tenses** describe actions in relation to *another point in time* — usually an action that is **completed** before that point. They are all built with the helping verb **have** plus the **past participle** of the main verb.
+We have already met the **simple** tenses (I walk, I walked, I will walk) and the **progressive** tenses (I am walking). The **perfect tenses** are the third group. They describe an action in relation to **another point in time** — normally an action that is **completed before** that point, or that began earlier and still matters. All three perfect tenses are built the same way:
 
-- **have/has + past participle** → present perfect
-- **had + past participle** → past perfect
-- **will have + past participle** → future perfect
+> **a form of the helping verb *have* + the past participle of the main verb**
 
-The **past participle** is the "third form" of a verb: walk → walked → **walked**; eat → ate → **eaten**; write → wrote → **written**.
+## The past participle — the "third form"
 
-## The present perfect
+Every verb has three key forms: the **base**, the **simple past**, and the **past participle**. The perfect tenses use the third one.
 
-Formed with **has/have + past participle**. It links the **past to the present** — an action that happened at an unspecified time, or that started in the past and continues now.
+| Base | Simple past | Past participle |
+| --- | --- | --- |
+| walk | walked | walked |
+| eat | ate | eaten |
+| write | wrote | written |
+| go | went | gone |
+| see | saw | seen |
+| do | did | done |
+| take | took | taken |
+| speak | spoke | spoken |
+| break | broke | broken |
+| give | gave | given |
 
-- *She **has finished** her homework.* (completed, and it matters now)
-- *They **have lived** in Gbarnga for ten years.* (started in the past, still true)
+Regular verbs use the same word (*-ed*) for both past and participle; irregular verbs often differ (*ate* / *eaten*), so the participle must be learned.
 
-Use it with words like *just, already, ever, never, yet, since, for*.
+## The present perfect — *has / have + past participle*
 
-## The past perfect
+The present perfect links the **past to the present**. Use it when:
 
-Formed with **had + past participle**. It shows an action completed **before another past action** — the "past before the past."
+- the action happened at an **unspecified** past time and still matters now: *She **has finished** her homework* (so she is free now);
+- the action **began in the past and continues** to the present: *They **have lived** in Gbarnga for ten years* (and still do).
 
-- *By the time we arrived, the bus **had left**.* (leaving happened first, then arriving)
+It goes with the signal words *just, already, ever, never, yet, so far, since* (a point in time) and *for* (a length of time): *I **have just eaten**; **Have** you **ever** flown? We **have** known each other **since** 2015.*
 
-The past perfect makes the **order of two past events** clear.
+## The past perfect — *had + past participle*
 
-## The future perfect
+The past perfect is the "**past before the past**." It shows which of **two past actions happened first**.
 
-Formed with **will have + past participle**. It shows an action that **will be completed before a point in the future**.
+- *By the time we arrived, the bus **had left**.* → the bus left **first**, then we arrived.
 
-- *By next June, she **will have graduated**.* (graduation completed before June)
+\`\`\`svg How the past perfect orders two past events
+<svg viewBox="0 0 460 130" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <line x1="20" y1="70" x2="440" y2="70" stroke="#8a5833" stroke-width="2"/>
+  <polygon points="440,70 430,65 430,75" fill="#8a5833"/>
+  <circle cx="140" cy="70" r="5" fill="#8a5833"/>
+  <circle cx="300" cy="70" r="5" fill="#8a5833"/>
+  <g font-size="12.5" text-anchor="middle">
+    <text x="140" y="52" font-weight="bold">the bus had left</text>
+    <text x="140" y="92">(earlier past)</text>
+    <text x="300" y="52" font-weight="bold">we arrived</text>
+    <text x="300" y="92">(later past)</text>
+    <text x="415" y="60">now</text>
+  </g>
+</svg>
+\`\`\`
+
+## The future perfect — *will have + past participle*
+
+The future perfect shows an action that **will be completed before a stated point in the future**.
+
+- *By next June, she **will have graduated**.* (the graduating is finished before June arrives)
+- *By the time you return, I **will have cooked** dinner.*
 
 ## Summary table
 
 | Tense | Form | Example |
-|---|---|---|
-| Present perfect | has/have + past participle | *I have eaten.* |
-| Past perfect | had + past participle | *I had eaten before he came.* |
-| Future perfect | will have + past participle | *I will have eaten by noon.* |
+| --- | --- | --- |
+| Present perfect | has / have + past participle | *I **have eaten**.* |
+| Past perfect | had + past participle | *I **had eaten** before he came.* |
+| Future perfect | will have + past participle | *I **will have eaten** by noon.* |
 
 ## A common confusion: simple past vs present perfect
 
-- Simple past — a finished action at a **stated** past time: *I **saw** him yesterday.*
-- Present perfect — a past action with a **link to now**, no stated time: *I **have seen** that film.*
+This is the error to attack directly:
 
-You cannot use the present perfect with a finished-time word: ✗ *I have seen him yesterday.* → ✓ *I saw him yesterday.*`,
+- **Simple past** — a finished action at a **stated** past time: *I **saw** him **yesterday**.*
+- **Present perfect** — a past action with a **link to now** and **no** stated time: *I **have seen** that film.*
+
+You may **not** use the present perfect with a finished-time expression: ✗ *I have seen him yesterday* → ✓ *I **saw** him yesterday.* If the sentence names exactly when (yesterday, last week, in 2019), use the simple past.`,
       workedExample: `**Task.** Choose the correct perfect tense for each sentence and explain why.
 
 1. *By the time the teacher entered, the students ___ (finish) their test.*
@@ -303,20 +335,42 @@ For regular verbs, the simple past and past participle are **the same word**.
 
 ## Irregular verbs
 
-An **irregular verb** does **not** add -ed; it changes its form in an unpredictable way. There is no single rule — they must be learned.
+An **irregular verb** does **not** add -ed; it changes its form in a way you cannot predict from spelling. There is no single rule, so irregular verbs must be memorised. It helps, though, to notice that they fall into a few **patterns**.
+
+**Pattern 1 — all three forms different** (base / past / participle):
 
 | Base | Simple past | Past participle |
-|---|---|---|
+| --- | --- | --- |
 | go | went | gone |
 | eat | ate | eaten |
 | write | wrote | written |
 | take | took | taken |
 | begin | began | begun |
 | see | saw | seen |
-| bring | brought | brought |
-| put | put | put |
+| speak | spoke | spoken |
+| drink | drank | drunk |
 
-Notice that for many irregular verbs the simple past and past participle are **different** (go/went/gone), while a few keep one form throughout (put/put/put).
+**Pattern 2 — past and participle the same, but different from the base:**
+
+| Base | Simple past | Past participle |
+| --- | --- | --- |
+| bring | brought | brought |
+| buy | bought | bought |
+| teach | taught | taught |
+| make | made | made |
+| find | found | found |
+| sit | sat | sat |
+
+**Pattern 3 — all three forms the same:**
+
+| Base | Simple past | Past participle |
+| --- | --- | --- |
+| put | put | put |
+| cut | cut | cut |
+| let | let | let |
+| hit | hit | hit |
+
+So for many irregular verbs the simple past and past participle **differ** (*go / went / gone*), for others they are **identical** (*buy / bought / bought*), and for a few every form is the **same** (*put / put / put*).
 
 ## Why it matters
 
