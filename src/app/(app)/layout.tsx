@@ -5,6 +5,7 @@ import { getCurrentUser } from "@/lib/auth";
 import { getQuota } from "@/lib/quota";
 import { logoutAction } from "@/app/actions/auth";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { StudyTimer } from "@/components/StudyTimer";
 import { PLANS } from "@/lib/plans";
 
 export default async function AppLayout({
@@ -31,11 +32,13 @@ export default async function AppLayout({
 
           <nav className="flex items-center gap-1 text-sm">
             <NavLink href="/dashboard" label="Subjects" />
+            <NavLink href="/search" label="Search" />
             <NavLink href="/nyvora" label="Nyvora" />
             <NavLink href="/billing" label="Plan" />
           </nav>
 
           <div className="flex items-center gap-2">
+            <StudyTimer />
             <Link
               href="/nyvora"
               className="hidden rounded-lg border border-line px-2.5 py-1.5 text-xs font-medium text-ink-muted transition hover:bg-surface-sunken sm:block"
