@@ -16,57 +16,84 @@ export const englishLanguageG10P2: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to identify action verbs and classify them as transitive or intransitive, recognise linking verbs and the words they connect, and use helping and modal auxiliary verbs correctly in sentences.",
       estimatedMinutes: 160,
-      notes: `## What a verb does
+      notes: `## Introduction: the verb is the engine of the sentence
 
-A **verb** is a word that expresses an action or a state of being. Every complete sentence needs at least one verb — it is the engine of the sentence.
+Of all the parts of speech, the **verb** is the one a sentence cannot do without. You can build a complete sentence from a single verb — *Run! Stop! Listen!* — but no group of words is a sentence until it contains a verb. A **verb** is a word that expresses either an **action** (something done) or a **state of being** (how something is).
 
-- *The farmer **planted** cassava.* (action)
-- *Monrovia **is** the capital.* (state of being)
+- *The farmer **planted** cassava.* — an action.
+- *Monrovia **is** the capital of Liberia.* — a state of being.
+
+Verbs fall into two broad families. **Main (lexical) verbs** carry the real meaning of the action or state — *plant, run, think, seem*. **Auxiliary (helping) verbs** support a main verb to build a longer verb phrase — *is, have, will, can*. In this lesson we study the three jobs verbs do: **action** verbs, **linking** verbs, and **helping** verbs.
 
 ## Action verbs
 
-An **action verb** tells what the subject does. The action can be **visible** (you can see it) or **mental** (it happens in the mind).
+An **action verb** tells what the subject **does**. The action may be one you can see, or one that happens silently in the mind:
 
-- Visible: run, write, cook, dance, throw
-- Mental: think, believe, remember, know, imagine
+- **Physical (visible) action:** *run, write, cook, dance, throw, dig, carry, build.*
+- **Mental action:** *think, believe, remember, know, imagine, decide, understand, forget.*
 
-### Transitive and intransitive
+Both kinds are action verbs, even though you cannot watch someone "believe" — the mind is doing the work.
 
-Action verbs split into two kinds according to whether the action passes on to a receiver.
+### Transitive and intransitive verbs
 
-- A **transitive verb** carries its action to a **direct object** — a noun that receives the action. Ask "*what?*" or "*whom?*" after the verb.
-  - *She **kicked** the ball.* (Kicked what? the ball → transitive)
-- An **intransitive verb** has **no** object; the action stops with the subject.
-  - *The baby **slept**.* (Slept what? — no answer → intransitive)
+Action verbs are divided according to whether the action **passes on to a receiver**.
 
-Some verbs can be either, depending on the sentence:
+- A **transitive verb** carries its action across to a **direct object** — a noun (or pronoun) that receives the action. To find it, say the verb and ask "**what?**" or "**whom?**"
+  - *She **kicked** the ball.* → Kicked **what**? *the ball* → transitive; *ball* is the direct object.
+- An **intransitive verb** has **no object**; the action stops with the subject and does not pass on.
+  - *The baby **slept**.* → Slept **what**? — no answer → intransitive.
 
-- *He **sang** a song.* (transitive — object "song")
-- *He **sang** loudly.* ("loudly" is an adverb, not an object → intransitive)
+Many verbs can be **either**, depending on the sentence:
+
+- *He **sang** a song.* → transitive (object *a song*).
+- *He **sang** beautifully.* → intransitive (*beautifully* is an adverb, not an object).
+
+### Verbs with two objects (ditransitive)
+
+Some transitive verbs take **two** objects — an **indirect object** (the person who benefits) and a **direct object** (the thing acted on): *The teacher **gave** the pupils some books.* Gave **what**? *books* (direct object); gave books **to whom**? *the pupils* (indirect object). Common examples: *give, send, tell, show, buy, offer, teach, lend.*
 
 ## Linking verbs
 
-A **linking verb** does not show action. It **links** the subject to a word that renames or describes it (a subject complement).
+A **linking verb** shows no action. It acts like an equals sign, **linking** the subject to a word in the predicate that renames or describes it. That word is called the **subject complement**, and it comes in two types:
 
-The most common linking verb is **be** (am, is, are, was, were, been). Others include *become, seem, appear, feel, look, taste, smell, sound, remain*.
+- a **predicate noun**, which renames the subject: *Kollie **is** a **teacher**.* (Kollie = teacher)
+- a **predicate adjective**, which describes the subject: *The soup **tastes** **delicious**.* (soup → delicious)
 
-- *Kollie **is** a teacher.* (links Kollie → teacher)
-- *The soup **tastes** delicious.* (links soup → delicious)
+The commonest linking verb is **be** in all its forms — *am, is, are, was, were, be, been, being*. Other linking verbs are the "sense" and "state" verbs: *become, seem, appear, look, feel, taste, smell, sound, remain, grow, stay*.
 
-**Test:** if you can replace the verb with a form of *be* and the sentence still makes sense, it is working as a linking verb. *The soup **is** delicious* still makes sense, so *tastes* is linking here.
+**The substitution test.** Replace the verb with a form of *be*. If the sentence still makes sense, the verb is **linking**; if it turns to nonsense, the verb is an **action** verb.
+
+- *The soup tastes delicious* → *The soup **is** delicious* ✓ → *tastes* is **linking**.
+- *She tastes the soup* → *She **is** the soup* ✗ → *tastes* is an **action** verb.
 
 ## Helping (auxiliary) verbs
 
-A **helping verb** works before a main verb to build a verb phrase, showing tense, mood or voice.
+A **helping (auxiliary) verb** comes before a main verb to build a **verb phrase** and to show tense, question form, negation, or shades of meaning. There are two groups.
 
-- Primary auxiliaries: forms of **be, have, do** — *She **is** singing; They **have** eaten; **Do** you know?*
-- **Modal auxiliaries**: *can, could, may, might, must, shall, should, will, would, ought to*. Modals add meaning such as ability, permission, possibility or obligation:
-  - Ability: *She **can** swim.*
-  - Permission: *You **may** leave.*
-  - Obligation: *Students **must** arrive on time.*
-  - Possibility: *It **might** rain.*
+**1. Primary auxiliaries — be, have, do.** These help form tenses, questions and negatives:
 
-In a verb phrase, the helping verb comes first and the main verb comes last: *They **will have finished** by noon* (will, have = helpers; finished = main).`,
+- *be* → progressive tenses and the passive: *She **is** singing; The gate **was** painted.*
+- *have* → perfect tenses: *They **have** eaten; He **had** left.*
+- *do* → questions, negatives and emphasis: ***Do** you know? I **do not** agree; She **does** try hard.*
+
+**2. Modal auxiliaries.** These never change their form and add meaning to the main verb: *can, could, may, might, must, shall, should, will, would, ought to.*
+
+| Modal | Meaning it adds | Example |
+| --- | --- | --- |
+| can / could | ability, possibility | *She **can** swim.* |
+| may / might | permission, possibility | *You **may** leave.* / *It **might** rain.* |
+| must | obligation, strong certainty | *Students **must** arrive early.* |
+| shall / will | the future, promise | *We **will** travel tomorrow.* |
+| should / ought to | advice, duty | *You **should** rest.* |
+| would | polite requests, the conditional | *I **would** help if I could.* |
+
+In a verb phrase the helping verbs come **first** and the main verb comes **last**: *They **will have finished** by noon* (*will, have* = helpers; *finished* = main verb).
+
+## Common errors to watch for
+
+- Leaving out the helping verb in the progressive: ✗ *She writing a letter* → ✓ *She **is** writing a letter.*
+- Adding an object to an intransitive verb: ✗ *He slept the bed.*
+- Changing a modal after another verb: ✗ *He can to swim* → ✓ *He **can** swim* (no *to* after a modal).`,
       workedExample: `**Task.** For each sentence, name the underlined verb as *action (transitive)*, *action (intransitive)*, *linking*, or *helping*, and justify your choice.
 
 1. *The players **were** exhausted.*
@@ -260,50 +287,75 @@ In a verb phrase, the helping verb comes first and the main verb comes last: *Th
       estimatedMinutes: 160,
       notes: `## Tense: locating an action in time
 
-**Tense** is the form of a verb that shows **when** an action happens — in the present, the past, or the future.
+**Tense** is the form of a verb that shows **when** an action happens — in the **present**, the **past**, or the **future**. Choosing the right tense, and keeping it steady, is what makes writing clear and believable.
 
-| Tense | Example | Use |
-|---|---|---|
-| Present | *I walk to school.* | habit, general truth, now |
-| Past | *I walked to school.* | finished action |
-| Future | *I will walk to school.* | action still to come |
+\`\`\`svg The three simple tenses on a timeline
+<svg viewBox="0 0 460 150" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <line x1="20" y1="70" x2="440" y2="70" stroke="#8a5833" stroke-width="2"/>
+  <polygon points="440,70 430,65 430,75" fill="#8a5833"/>
+  <circle cx="120" cy="70" r="5" fill="#8a5833"/>
+  <circle cx="230" cy="70" r="5" fill="#8a5833"/>
+  <circle cx="340" cy="70" r="5" fill="#8a5833"/>
+  <g font-size="13" text-anchor="middle">
+    <text x="120" y="45" font-weight="bold">PAST</text>
+    <text x="120" y="95">I walked</text>
+    <text x="230" y="45" font-weight="bold">PRESENT</text>
+    <text x="230" y="95">I walk</text>
+    <text x="340" y="45" font-weight="bold">FUTURE</text>
+    <text x="340" y="95">I will walk</text>
+  </g>
+  <text x="230" y="128" text-anchor="middle" font-size="11.5" fill="#6a5a48">Time flows left to right; tense fixes the verb at a point on the line.</text>
+</svg>
+\`\`\`
 
 ## The simple present
 
-The simple present describes habits, routines, and general truths.
+The simple present is used for **habits and routines**, **general truths**, and permanent situations.
 
-- *Water **boils** at 100 °C.* (general truth)
-- *She **teaches** biology.* (habit)
+- *She **teaches** biology.* (a habit / routine)
+- *Water **boils** at 100 °C.* (a general truth)
+- *Liberia **lies** on the west coast of Africa.* (a permanent fact)
 
-**Rule:** with a singular third-person subject (he, she, it) add **-s** or **-es** to the verb: *He **plays**; She **watches**.*
+**Spelling rule — the third-person -s.** With a singular third-person subject (*he, she, it*), add **-s** to the verb: *He plays.* Add **-es** after *-s, -sh, -ch, -x, -o* (*She watch**es**; He go**es***), and change a consonant + *y* to *-ies* (*carry → she carr**ies***).
 
 ## The simple past
 
-The simple past describes an action already completed.
+The simple past describes an action that is **finished**.
 
-- Regular verbs add **-ed**: walk → walk**ed**, play → play**ed**.
-- Irregular verbs change their form: go → **went**, eat → **ate**, write → **wrote**, buy → **bought**.
+- **Regular verbs** add **-ed**: *walk → walked, play → played, cook → cooked.* (Spelling notes: a final *-e* just adds *-d*, *live → lived*; a consonant + *y* changes to *-ied*, *study → studied*; a short verb often doubles its last letter, *stop → stopped*.)
+- **Irregular verbs** change their spelling and must be memorised. Learn this core set:
+
+| Base | Simple past | Base | Simple past |
+| --- | --- | --- | --- |
+| go | went | buy | bought |
+| eat | ate | bring | brought |
+| write | wrote | take | took |
+| see | saw | come | came |
+| do | did | give | gave |
+| begin | began | run | ran |
 
 ## The simple future
 
-The simple future uses **will** (or *shall*) before the base verb: *They **will travel** tomorrow.*
+The simple future places the action **still to come**, using **will** (or *shall*) before the base verb: *They **will travel** tomorrow. I **shall return**.* English also shows the future with *going to*: *It **is going to** rain.*
 
 ## The progressive (continuous) forms
 
-The **progressive** shows an action **in progress** at a point in time. It is built from a form of **be** + the **-ing** form (present participle) of the main verb.
+The **progressive** (also called **continuous**) shows an action **in progress** at a particular time. It is built from a form of **be** + the **-ing** form of the main verb (the *present participle*).
 
-- Present progressive: *She **is writing** a letter.* (happening now)
-- Past progressive: *They **were playing** football.* (in progress in the past)
-- Future progressive: *I **will be studying** at nine.* (in progress in the future)
+- **Present progressive** — happening now: *She **is writing** a letter.*
+- **Past progressive** — in progress at a past moment: *They **were playing** football when it rained.*
+- **Future progressive** — will be in progress later: *At nine o'clock I **will be studying**.*
+
+**Spelling of the -ing form.** Drop a silent *-e* (*write → writing*), and double the final consonant of a short stressed verb (*run → running, sit → sitting, swim → swimming*).
 
 ## Keeping tense consistent
 
-Within a single passage, keep the tense steady unless the time really changes. A common error is drifting between past and present in a story:
+Within one passage, hold the tense steady unless the time genuinely changes. **Tense-drift** — sliding between past and present — is the commonest fault in learners' stories:
 
 - ✗ *He **opened** the door and **sees** a stranger.*
 - ✓ *He **opened** the door and **saw** a stranger.*
 
-Narrative writing (telling a story) usually uses the **past**; descriptive writing (painting a picture in words) often uses the **present** to make a scene feel alive.`,
+As a rule of thumb, **narrative** writing (telling a story that happened) uses the **past**, while **descriptive** writing (painting a scene) often uses the **present** to make it feel alive. Whichever you choose, stay in it.`,
       workedExample: `**Task.** Rewrite the passage so that the tense is consistent in the **simple past**, then identify one progressive verb in your answer.
 
 *"Musu walks to the market. She is carrying a basket of pepper. A trader calls her over and she stops to bargain. She was buying rice for the week."*
