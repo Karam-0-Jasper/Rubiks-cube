@@ -54,6 +54,19 @@ export const biology: SubjectContent = {
 | **Robert Koch** | Linked specific micro-organisms to specific diseases (Koch's postulates) |
 | **Gregor Mendel** | The laws of inheritance; the father of genetics |
 
+## How biologists work: the scientific method
+
+Biology is a **science**, which means its knowledge is built by a disciplined process of observing, testing and checking rather than by guessing. The steps of the **scientific method** are:
+
+1. **Observation** — notice something in nature (e.g. *plants near the window grow taller*).
+2. **Question** — ask why it happens (*does light affect growth?*).
+3. **Hypothesis** — a testable, tentative answer (*plants given more light grow taller*).
+4. **Experiment** — a fair test that changes **one** factor (the *variable*) while keeping the others the same, and includes a **control** for comparison.
+5. **Results and observation** — record what actually happens, in tables or graphs.
+6. **Conclusion** — decide whether the results support or reject the hypothesis, and share the findings so others can repeat the test.
+
+A good experiment is **fair** (only one variable changed), **repeatable**, and has a **control** group used as the standard of comparison.
+
 ## Characteristics of living things
 
 Remember them as **MRS GREN**:
