@@ -27,55 +27,148 @@ export const englishLanguage: SubjectContent = {
           objective:
             "By the end of the unit, learners should be able to define a noun, identify the kinds of nouns (common and proper, concrete and abstract, countable and uncountable, collective and compound), form plurals correctly, and use nouns accurately in writing.",
           estimatedMinutes: 160,
-          notes: `## What a noun is
+          notes: `## Introduction
 
-A **noun** is a word that names a **person, place, thing, or idea**.
+Every sentence we speak or write is built out of words, and those words are sorted into groups called the **parts of speech** (noun, pronoun, verb, adjective, adverb, preposition, conjunction and interjection). The **noun** is the first and most important of these, because it is the naming word — without nouns we could not talk about the people, places and things around us at all. In this lesson we study what a noun is, the work a noun does inside a sentence, the different kinds of nouns, and how nouns change their form for number, gender and possession.
 
-- Person: *teacher, Musu, doctor*
-- Place: *Monrovia, market, school*
-- Thing: *book, cassava, phone*
-- Idea: *freedom, honesty, fear*
+## What a noun is
 
-A quick test: if you can put *the* or *a* in front of it, or make it plural, it is usually a noun.
+A **noun** is a word that **names** a person, an animal, a place, a thing, or an idea. Anything that can be named is named by a noun. This is why nouns are sometimes called **naming words**.
+
+Look carefully at what nouns can name:
+
+- **People:** *teacher, Musu, doctor, farmer, President Weah, mother, carpenter*.
+- **Animals:** *goat, lion, mosquito, cow, parrot, fish*.
+- **Places:** *Monrovia, market, school, Liberia, Africa, kitchen, River Gee*.
+- **Things (objects you can see or touch):** *book, cassava, phone, chair, motorbike, cutlass*.
+- **Ideas, qualities and feelings (things you cannot touch):** *freedom, honesty, fear, poverty, love, independence*.
+
+**Three quick tests to recognise a noun.** A word is usually a noun if:
+
+1. You can put **the**, **a** or **an** in front of it — *the market, a book, an idea*.
+2. You can make it **plural** or count it — *one boy, two boys*.
+3. You can put a **possessive** in front of it — *my phone, Musu's basket, our school*.
+
+If a word passes these tests, it is almost always a noun.
+
+## The work a noun does in a sentence
+
+Naming is only part of the story. Inside a sentence a noun also does a **job** (this is called its *function*). The same noun can do different jobs in different sentences, so we name the job, not just the word.
+
+- **Subject** — the noun that does the action or that the sentence is about: *The **teacher** entered the class.* (Who entered? The teacher.)
+- **Object** — the noun that receives the action of the verb: *The teacher marked the **books**.* (Marked what? The books.)
+- **Complement** — the noun after verbs like *is, was, became* that renames the subject: *Musu is a **nurse**.*
+- **Object of a preposition** — the noun after a preposition: *She sat under the **tree**.*
+
+\`\`\`svg The four common jobs a noun does in a sentence
+<svg viewBox="0 0 460 210" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect x="10" y="12" width="440" height="44" rx="8" fill="#efe2cd" stroke="#c9a86e"/>
+  <text x="230" y="39" text-anchor="middle" font-size="15">The teacher marked the books under the tree.</text>
+  <g font-size="12.5">
+    <rect x="14" y="80" width="100" height="52" rx="6" fill="#fff" stroke="#c9a86e"/>
+    <text x="64" y="100" text-anchor="middle" font-weight="bold">teacher</text>
+    <text x="64" y="120" text-anchor="middle">subject</text>
+    <rect x="126" y="80" width="100" height="52" rx="6" fill="#fff" stroke="#c9a86e"/>
+    <text x="176" y="100" text-anchor="middle" font-weight="bold">books</text>
+    <text x="176" y="120" text-anchor="middle">object</text>
+    <rect x="238" y="80" width="100" height="52" rx="6" fill="#fff" stroke="#c9a86e"/>
+    <text x="288" y="100" text-anchor="middle" font-weight="bold">tree</text>
+    <text x="288" y="120" text-anchor="middle">obj. of prep.</text>
+    <rect x="350" y="80" width="96" height="52" rx="6" fill="#fff" stroke="#c9a86e"/>
+    <text x="398" y="100" text-anchor="middle" font-weight="bold">Musu → nurse</text>
+    <text x="398" y="120" text-anchor="middle">complement</text>
+  </g>
+  <text x="230" y="164" text-anchor="middle" font-size="12" fill="#6a5a48">One noun, many possible jobs — always name the job it is doing in the sentence.</text>
+</svg>
+\`\`\`
 
 ## The kinds of nouns
 
-**Common vs proper**
-- **Common noun** — a general name, written in lower case: *city, river, boy*.
-- **Proper noun** — the particular name of one person, place or thing, written with a **capital letter**: *Monrovia, St. Paul River, Joseph*.
+Nouns are grouped in several overlapping ways. A single noun usually belongs to more than one group at the same time — *Monrovia* is proper, concrete and countable all at once — so when you classify a noun you say which feature is being asked about.
 
-**Concrete vs abstract**
-- **Concrete noun** — something perceived by the senses: *rice, music, smoke*.
-- **Abstract noun** — an idea, quality or state that cannot be touched: *courage, poverty, joy*.
+### 1. Common nouns and proper nouns
 
-**Countable vs uncountable**
-- **Countable noun** — can be counted and made plural: *one book, two books*.
-- **Uncountable (mass) noun** — cannot be counted directly and has no plural: *water, sugar, information, advice*. We say *some water*, not *two waters*.
+- A **common noun** is the **general** name shared by every member of a class of things. It begins with a small (lower-case) letter: *city, river, boy, month, day, dog, country*.
+- A **proper noun** is the **particular** name of one specific person, place or thing. It always begins with a **capital letter**: *Monrovia, St. Paul River, Joseph, January, Monday, Liberia*.
 
-**Collective nouns**
-- Name a **group** treated as a single unit: *a herd of cattle, a committee, a team, a bunch of bananas*.
+Proper nouns include people's names (*Musu, Mr. Kollie*), countries and towns (*Ghana, Gbarnga*), rivers, mountains and oceans (*Mano River, Mount Nimba*), days and months (*Sunday, December*), festivals and holidays (*Christmas, Independence Day*), titles of books and films, and the names of organisations (*University of Liberia*). Remember: days and months are proper nouns and take a capital, but the **seasons** (*rainy season, dry season*) do not.
 
-**Compound nouns**
-- Made of two or more words: *classroom, mother-in-law, palm oil*.
+### 2. Concrete nouns and abstract nouns
 
-## Forming plurals
+- A **concrete noun** names something you can perceive with one of the five senses — see, hear, smell, taste or touch: *rice, music, smoke, perfume, thunder, sand*.
+- An **abstract noun** names something that exists only in the mind — an idea, quality, feeling, state or action — and cannot be touched: *courage, poverty, joy, freedom, childhood, education, honesty*.
 
-- Most nouns add **-s**: *book → books*.
-- Nouns ending in *-s, -sh, -ch, -x, -z* add **-es**: *bus → buses, church → churches*.
-- Nouns ending in a consonant + *-y* change to **-ies**: *baby → babies*.
-- Nouns ending in *-f/-fe* often change to **-ves**: *leaf → leaves, knife → knives*.
-- **Irregular plurals** must be learned: *child → children, foot → feet, man → men, tooth → teeth, mouse → mice*.
-- Some nouns are the **same** in singular and plural: *sheep, deer, fish*.
+Abstract nouns are often formed from other words by adding an ending (a *suffix*):
+
+- from **adjectives**: *kind → kindness, happy → happiness, honest → honesty, free → freedom, brave → bravery*;
+- from **verbs**: *act → action, decide → decision, arrive → arrival, choose → choice*;
+- from **nouns**: *child → childhood, friend → friendship, king → kingdom*.
+
+Common abstract-noun endings to point out to learners are **-ness, -ity, -ment, -hood, -ship, -dom, -tion** and **-ance**.
+
+### 3. Countable nouns and uncountable nouns
+
+- A **countable noun** names something that can be counted as separate units. It has both a singular and a plural form: *one book → two books, a chair → three chairs, an orange → many oranges*.
+- An **uncountable (mass) noun** names something seen as a whole mass that cannot be counted directly. It has **no plural** and is not used with *a/an*: *water, sugar, rice, sand, milk, information, advice, furniture, luggage, news, bread*.
+
+To talk about a quantity of an uncountable noun we use a measuring phrase: *a **glass of** water, a **bag of** rice, a **piece of** advice, an **item of** news, a **loaf of** bread*. We use **much** with uncountables and **many** with countables: *much water, many bottles*.
+
+### 4. Collective nouns
+
+A **collective noun** names a **group of people, animals or things** spoken of as one whole: *a **team** of players, a **herd** of cattle, a **flock** of sheep, a **committee**, a **class**, a **crowd**, a **bunch** of bananas, a **swarm** of bees, a **fleet** of ships*. When the group acts together as one, it takes a singular verb (*The team **is** winning*); when the members act separately, some writers use a plural verb (*The team **are** arguing among themselves*).
+
+### 5. Compound nouns
+
+A **compound noun** is a noun made of two or more words joined to name one thing. They appear in three written forms:
+
+- **written as one word (closed):** *classroom, blackboard, toothpaste, sunrise*;
+- **written with a hyphen:** *mother-in-law, passer-by, six-year-old*;
+- **written as separate words (open):** *palm oil, bus stop, police officer*.
+
+To make most compound nouns plural, add *-s* to the **main word**: *mother**s**-in-law, passer**s**-by, bus stop**s***.
+
+## Number: singular and plural
+
+**Number** tells us whether a noun means **one** (singular) or **more than one** (plural). Learn these rules and their exceptions:
+
+1. **Most nouns** simply add **-s**: *book → books, girl → girls, table → tables*.
+2. Nouns ending in **-s, -ss, -sh, -ch, -x, -z** add **-es**: *bus → buses, glass → glasses, dish → dishes, church → churches, box → boxes*.
+3. Nouns ending in a **consonant + y** change *y* to **-ies**: *baby → babies, city → cities, lady → ladies*. But a **vowel + y** just adds *-s*: *boy → boys, key → keys*.
+4. Many nouns ending in **-f / -fe** change to **-ves**: *leaf → leaves, knife → knives, wife → wives, thief → thieves*. A few just add *-s*: *roof → roofs, chief → chiefs*.
+5. Nouns ending in a **consonant + o** often add **-es**: *tomato → tomatoes, potato → potatoes, hero → heroes* (but *photo → photos, piano → pianos*).
+6. **Irregular plurals** change their spelling and must be memorised: *child → children, man → men, woman → women, foot → feet, tooth → teeth, mouse → mice, ox → oxen, person → people*.
+7. Some nouns are the **same** in singular and plural: *sheep, deer, fish, aircraft, series*.
+8. A few nouns are **only plural** and take a plural verb: *scissors, trousers, spectacles, cattle, police*.
+9. **Foreign plurals** kept from other languages: *radius → radii, crisis → crises, phenomenon → phenomena, cactus → cacti*.
+
+## Gender of nouns
+
+**Gender** shows whether a noun is male, female, either, or neither:
+
+- **Masculine** (male): *man, boy, king, cock, uncle, actor*.
+- **Feminine** (female): *woman, girl, queen, hen, aunt, actress*.
+- **Common** (either sex): *pupil, teacher, doctor, cousin, friend, child*.
+- **Neuter** (no sex — things): *stone, table, book, house*.
+
+## Case: the possessive of nouns
+
+**Case** shows the noun's relationship to other words. The one that changes a noun's spelling is the **possessive (genitive) case**, which shows ownership:
+
+- Add **'s** to a singular noun: *the boy**'s** book, Musu**'s** basket, the child**'s** toy*.
+- Add only an **apostrophe** to a plural noun that already ends in -s: *the boys**'** books, the teachers**'** room*.
+- Add **'s** to irregular plurals that do not end in -s: *the children**'s** playground, the men**'s** meeting*.
+- For things, we more often use an **of-phrase**: *the leg **of** the table* rather than *the table's leg*.
 
 ## Common errors to watch for
 
-- Making uncountable nouns plural: *informations, advices, furnitures* are wrong.
-- Forgetting the capital on a proper noun: *monrovia* should be *Monrovia*.
-- Wrong plural of irregular nouns: *childs, foots, mans* are wrong.
+- **Making uncountable nouns plural.** *informations, advices, furnitures, luggages* are all wrong. Say *information, some advice, a piece of furniture*.
+- **Forgetting the capital on a proper noun.** *monrovia, january, liberia* should be *Monrovia, January, Liberia*.
+- **Wrong plural of irregular nouns.** *childs, foots, mans, tooths* are wrong; use *children, feet, men, teeth*.
+- **Apostrophe mistakes in the plural.** *banana's for sale* is wrong — a plain plural (*bananas*) takes no apostrophe; the apostrophe is only for possession.
 
 ## Nouns in composition
 
-Strong writing uses **precise nouns**. *He sat under the tree* is weaker than *He sat under the mango tree*. Encourage exact, concrete nouns in narration and description rather than vague ones.`,
+Good writing depends on **precise nouns**. Compare *He sat under the tree* with *He sat under the **mango tree***, or *A bird flew past* with *A **hawk** flew past*: the exact noun paints a clearer picture in the reader's mind. Train learners to replace vague, general nouns (*thing, place, stuff, people*) with specific, concrete ones when they narrate and describe.`,
           workedExample: `**Question:** Read the passage and classify each underlined noun.
 
 *"**Musu** carried a basket of **cassava** to the **market** in **Gbarnga**, hoping the **money** would pay for her sister's **education**."*
@@ -132,60 +225,93 @@ Take each in turn and ask what kind of noun it is.
           estimatedMinutes: 160,
           notes: `## What a pronoun is
 
-A **pronoun** is a word used **in place of a noun**, so that we do not have to repeat the noun.
+A **pronoun** is a word used **in place of a noun**, so that we do not have to keep repeating the same noun. Look at how clumsy writing becomes without pronouns:
 
 *Musu went to the market. **Musu** bought fish and **Musu** came home.*
-→ *Musu went to the market. **She** bought fish and **she** came home.*
 
-The noun a pronoun stands for is called its **antecedent**. In the sentence above, *Musu* is the antecedent of *she*.
+By replacing the repeated noun we get natural English:
+
+*Musu went to the market. **She** bought fish and **she** came home.*
+
+The noun (or noun phrase) that a pronoun stands for is called its **antecedent** — *ante* means "before". In the sentence above, *Musu* is the antecedent of *she*. Good writing keeps the link between a pronoun and its antecedent crystal clear, so the reader always knows exactly who or what is meant.
 
 ## The kinds of pronouns
 
-**Personal pronouns** — stand for people or things.
-- Subject: *I, you, he, she, it, we, they*
-- Object: *me, you, him, her, it, us, them*
+There are eight main kinds of pronouns. Learn the name of each kind, what it does, and its members.
 
-**Possessive pronouns** — show ownership.
-- *mine, yours, his, hers, its, ours, theirs*
-- *This book is **mine**.* (Note: no apostrophe in *yours, hers, theirs, its*.)
+### 1. Personal pronouns
 
-**Indefinite pronouns** — refer to no particular person or thing.
-- *someone, anyone, everyone, nobody, each, all, some, few, many, none*
+**Personal pronouns** stand for people or things. They change their form depending on the **job** they do in the sentence — whether they are the subject or the object — and this is the source of many common errors.
 
-**Demonstrative pronouns** — point to specific things.
-- *this, that, these, those*
-- *This* and *these* are near; *that* and *those* are far.
+| Person | Subject form | Object form |
+| --- | --- | --- |
+| 1st singular | I | me |
+| 2nd singular | you | you |
+| 3rd singular | he / she / it | him / her / it |
+| 1st plural | we | us |
+| 2nd plural | you | you |
+| 3rd plural | they | them |
 
-**Interrogative pronouns** — ask questions.
-- *who, whom, whose, which, what*
+- **Subject pronouns** do the action: ***She** teaches. **We** are ready.*
+- **Object pronouns** receive the action or follow a preposition: *The teacher praised **her**. Give the book to **me**.*
 
-**Relative pronouns** — join a describing clause to a noun.
-- *who, whom, whose, which, that* — *The boy **who** won the prize is my brother.*
+### 2. Possessive pronouns
 
-**Reflexive pronouns** — refer back to the subject.
-- *myself, yourself, himself, herself, itself, ourselves, themselves*
+**Possessive pronouns** show ownership and stand alone in place of a noun: *mine, yours, his, hers, its, ours, theirs*. *This book is **mine**. The choice is **yours**.*
+
+Do not confuse them with **possessive adjectives** (also called possessive determiners) — *my, your, his, her, its, our, their* — which come **before** a noun: ***my** book, **their** house*. **Important:** none of the possessive words *yours, hers, theirs, its* takes an apostrophe.
+
+### 3. Reflexive pronouns
+
+**Reflexive pronouns** end in *-self / -selves* and refer back to the subject when the subject and object are the same person: *myself, yourself, himself, herself, itself, ourselves, yourselves, themselves*. *She taught **herself** to read. They blamed **themselves**.* (Note there is no such word as *hisself* or *theirselves*.)
+
+### 4. Demonstrative pronouns
+
+**Demonstrative pronouns** point to particular things: *this, that, these, those*. *This* and *these* point to what is **near**; *that* and *those* point to what is **far**. ***This** is my seat. **Those** are the new textbooks.*
+
+### 5. Interrogative pronouns
+
+**Interrogative pronouns** ask questions: *who, whom, whose, which, what*. ***Who** called? **Which** do you prefer? **Whose** is this bag?* Use *who* for the subject and *whom* for the object of the question.
+
+### 6. Relative pronouns
+
+**Relative pronouns** join a describing clause to a noun: *who, whom, whose, which, that*. *The boy **who** won the prize is my brother. The house **that** collapsed was old.* Use *who/whom* for people and *which* for things; *that* can be used for both.
+
+### 7. Indefinite pronouns
+
+**Indefinite pronouns** refer to no particular person or thing: *someone, anyone, everyone, no one, nobody, somebody, each, either, neither, one, all, some, few, many, several, none, both*. Note that *everyone, each, either, neither, nobody, someone* are treated as **singular**.
+
+### 8. Reciprocal pronouns
+
+**Reciprocal pronouns** — *each other* (two) and *one another* (more than two) — show a two-way action: *The two friends helped **each other**. The players passed the ball to **one another**.*
 
 ## Pronoun–antecedent agreement
 
 A pronoun must **agree** with its antecedent in three ways:
 
-1. **Number** — singular antecedent takes a singular pronoun.
-   *Each learner must bring **his or her** book* (not *their book*, in formal writing).
-2. **Gender** — masculine, feminine or neuter.
-   *The girl lost **her** pen* (not *his*).
-3. **Person** — first, second or third.
-   *If a student studies, **he or she** (not *you*) will pass.*
+1. **Number** — a singular antecedent takes a singular pronoun; a plural antecedent takes a plural pronoun. *The **girl** lost **her** pen. The **girls** lost **their** pens.* In formal writing, singular indefinite pronouns take a singular pronoun: *Each learner must bring **his or her** book.*
+2. **Gender** — masculine, feminine or neuter must match. *The **boy** raised **his** hand* (not *her*).
+3. **Person** — do not shift between first, second and third person. *If a **student** studies hard, **he or she** will pass* (not *…you will pass*).
+
+## Case of pronouns
+
+Because personal pronouns change form, choosing the right **case** matters:
+
+- Use the **subject** form for the subject of a verb: ***He and I** went home* (not *Me and him*).
+- Use the **object** form after a verb or preposition: *between **you and me**, the teacher called **him and me***.
+- A quick test: **drop the other person**. You would say *I went*, never *me went* — so the correct pair is *He and I went*.
 
 ## Common errors to watch for
 
-- **Vague reference:** *Kou told Ma that she had won* — who won? Rewrite to make the antecedent clear.
-- **Wrong case:** *Me and him went* should be *He and I went* (subject pronouns).
-- **Apostrophe in possessives:** *its* (belonging to it) has no apostrophe; *it's* means *it is*. This is the single most common pronoun error in English.
-- **Agreement with indefinite pronouns:** *everyone, each, nobody* are singular — *Everyone has **his or her** ticket*.
+- **Vague reference.** *Kou told Ma that she had won* — who won, Kou or Ma? Rewrite so the antecedent is unmistakable.
+- **Wrong case.** *Me and him went* should be *He and I went*; *between you and I* should be *between you and me*.
+- **its vs it's.** *its* shows possession (*the dog wagged its tail*); *it's* means *it is* or *it has*. This is the single most common pronoun error in English. Test it by reading *it is* in its place.
+- **Apostrophes in possessive pronouns.** *your's, her's, their's* do not exist — write *yours, hers, theirs*.
+- **Agreement with indefinite pronouns.** *everyone, each, nobody* are singular: *Everyone has **his or her** ticket* (formal).
 
 ## Why this matters
 
-Correct pronoun use keeps writing clear. A reader who cannot tell which noun a pronoun refers to loses the meaning, so agreement and clear reference are not decoration — they are what makes a sentence understandable.`,
+Correct pronoun use keeps writing clear. A reader who cannot tell which noun a pronoun refers to loses the meaning, so agreement and clear reference are not decoration — they are what make a sentence understandable.`,
           workedExample: `**Question:** Correct the pronoun errors in each sentence and name the rule broken.
 
 *(a) Me and Kou walked to school.*
