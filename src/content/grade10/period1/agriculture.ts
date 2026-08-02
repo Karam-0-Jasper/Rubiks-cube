@@ -23,7 +23,11 @@ export const agriculture: SubjectContent = {
           objective:
             "By the end of the lesson, learners should be able to define agriculture, state its importance to Liberia, and identify the problems facing Liberian agriculture with possible solutions.",
           estimatedMinutes: 80,
-          notes: `## Definition
+          notes: `## Introduction
+
+For most Liberians, farming is not a subject in a book — it is daily life, and the source of the rice on the table. **Agriculture** is the science and practice behind that: growing crops and rearing animals to feed and support a nation. This lesson defines agriculture, sets out why it is so central to Liberia's **economy** — food, jobs, exports, raw materials and more — and looks honestly at the **problems** that hold the sector back, together with the practical **solutions** that could unlock its potential.
+
+## Definition
 
 **Agriculture** is the science and practice of cultivating the soil, producing crops, and rearing livestock for the benefit of humankind.
 
@@ -77,7 +81,14 @@ The word derives from the Latin *ager* (field) and *cultura* (cultivation).
 
 ## Agriculture and other subjects
 
-Agriculture draws on biology for crop and animal science, chemistry for soils and fertilisers, physics for farm machinery and irrigation, economics for farm management and marketing, and geography for climate and land use. It is an applied science, not an isolated one.`,
+Agriculture draws on biology for crop and animal science, chemistry for soils and fertilisers, physics for farm machinery and irrigation, economics for farm management and marketing, and geography for climate and land use. It is an applied science, not an isolated one.
+
+## Common errors and misconceptions
+
+- **Thinking bigger yields are the only way to a better harvest** — much of the loss in Liberia is **post-harvest** (poor drying, storage and roads); *reducing loss* is often cheaper and faster than raising output.
+- **Believing agriculture is only "farming rice"** — it also supplies **raw materials, exports, jobs, government revenue and rural development**, and includes livestock, fisheries and forestry.
+- **Treating agriculture as a subject cut off from science** — it is an **applied science**, drawing on biology, chemistry, physics, economics and geography.
+- **Assuming problems have single, instant fixes** — solutions (roads, credit, extension, storage, land reform) must be **prioritised** by cost, speed and the size of the problem they address.`,
           workedExample: `**Question:** A farmer in Nimba County harvests 40 bags of rice but manages to sell only 25 bags, the rest being lost. Identify the likely causes of the loss and recommend practical solutions, indicating which should be tackled first.
 
 **Solution**
@@ -283,7 +294,11 @@ If improved drying and storage alone recovered two-thirds of the loss, the farme
           objective:
             "By the end of the lesson, learners should be able to classify the branches of agriculture, describe the main farming systems practised in Liberia, and evaluate the advantages and disadvantages of each system.",
           estimatedMinutes: 80,
-          notes: `## Branches of agriculture
+          notes: `## Introduction
+
+Agriculture is not one activity but many — from raising poultry to growing rubber to keeping bees — and Liberian farmers organise their land in strikingly different ways. This lesson maps out the **branches** of agriculture (crop production, animal production and their supporting sciences) and then the **farming systems** actually practised in Liberia — shifting cultivation, mixed farming, intercropping, plantations and more — weighing the **advantages and disadvantages** of each, so you can judge which system suits which conditions.
+
+## Branches of agriculture
 
 ### Crop production (agronomy)
 
@@ -373,7 +388,14 @@ Production primarily for sale.
 
 ## Choosing a system
 
-No system is best in the abstract. The appropriate system depends on the availability of land, the population density, the capital and labour available, the market, the soil and climate, and the farmer's objectives.`,
+No system is best in the abstract. The appropriate system depends on the availability of land, the population density, the capital and labour available, the market, the soil and climate, and the farmer's objectives.
+
+## Common errors and misconceptions
+
+- **Confusing mixed farming with mixed cropping** — **mixed farming** combines *crops and livestock* on one holding; **mixed cropping (intercropping)** grows *two or more crops together* on one plot.
+- **Dismissing shifting cultivation as simply "primitive"** — it is a **rational** response to abundant land and scarce capital; what defeats it is **population growth** shortening the fallows.
+- **Assuming one system is best everywhere** — no system is best in the abstract; the right choice depends on land, population, capital, market, soil, climate and the farmer's goals.
+- **Answering "evaluate" questions one-sidedly** — every system has **advantages *and* disadvantages**; marks are awarded for balance, not for arguing only one way.`,
           workedExample: `**Question:** Two farmers hold five hectares each in the same district. Farmer A practises shifting cultivation of rice. Farmer B practises mixed farming, growing rice and cassava while keeping goats and poultry. Compare the two systems and advise which is better suited to a district where population is rising.
 
 **Solution**
@@ -582,7 +604,11 @@ Mixed farming does not face this constraint, because it **maintains fertility on
           objective:
             "By the end of the lesson, learners should be able to define soil, describe its formation and composition, identify the soil profile and the main soil types, and explain the properties that determine agricultural value.",
           estimatedMinutes: 80,
-          notes: `## What soil is
+          notes: `## Introduction
+
+Everything a crop becomes begins in the soil beneath it — yet soil is far more than "dirt." It is a living, layered mixture of weathered rock, organic matter, water and air, built up over centuries. This lesson explains what soil is and how it **forms**, examines its **profile** (the horizons revealed in a pit), classifies the main **types** by texture, and sets out the **properties** — texture, structure, pH and fertility — that decide a soil's farming value. It closes on the point that matters most in Liberia: why protecting the thin, fertile **topsoil** is the heart of good soil management.
+
+## What soil is
 
 **Soil** is the loose upper layer of the earth's crust in which plants grow, formed from weathered rock mixed with organic matter, water, air and living organisms.
 
@@ -685,7 +711,14 @@ Under heavy tropical rainfall, Liberian soils are typically **highly weathered, 
 - Agroforestry and windbreaks
 - Adding manure and compost to maintain organic matter
 - Avoiding overgrazing and excessive burning
-- Controlled drainage`,
+- Controlled drainage
+
+## Common errors and misconceptions
+
+- **Confusing soil texture with soil structure** — **texture** (the proportion of sand, silt and clay) is essentially *fixed*; **structure** (how particles clump into crumbs) *can* be improved with organic matter and careful tillage.
+- **Thinking the burning "flush" lasts** — clearing and burning gives a *short* boost of nutrients from ash; in Liberia's leached soils it soon washes away, so fertility must be **maintained continuously**.
+- **Believing fertiliser can replace lost topsoil** — the fertile **A horizon** is thin and slow to rebuild; once it erodes, no amount of fertiliser restores it — **erosion control comes first**.
+- **Assuming more water is always better** — water and air *share* the pore space, so a **waterlogged** soil starves roots of air; good soil needs both.`,
           workedExample: `**Question:** A farmer complains that his upland plot gives good yields in the first year after clearing but poor yields thereafter, while his neighbour's valley plot stays productive. Both grow rice. Explain the difference and recommend a management plan.
 
 **Solution**
@@ -889,7 +922,11 @@ The farmer is treating fertility as something that arrives with clearing. In the
           objective:
             "By the end of the lesson, learners should be able to identify common farm tools and implements, state their uses, describe their maintenance, and observe safety precautions in their use.",
           estimatedMinutes: 80,
-          notes: `## Classification of farm tools
+          notes: `## Introduction
+
+A farmer is only as effective as the tools in their hands — and, on a Liberian smallholding, those tools represent real, hard-won capital. This lesson identifies the common **farm tools and implements**, from the cutlass and hoe to the plough and sprayer, and states what each is for. Just as importantly, it covers **maintenance** — how to make a cutlass last five years instead of two — and the **safety** precautions that prevent the injuries poorly kept tools so often cause.
+
+## Classification of farm tools
 
 ### 1. Cutting tools
 
@@ -968,7 +1005,14 @@ Good maintenance is not optional; a neglected tool is dangerous as well as ineff
 
 ## Why maintenance matters economically
 
-For a smallholder, tools represent a significant share of invested capital. A cutlass that lasts five years instead of two, because it was cleaned, dried and sharpened, is a real saving. Tool maintenance is among the cheapest improvements available to a Liberian farmer, requiring time and discipline rather than money.`,
+For a smallholder, tools represent a significant share of invested capital. A cutlass that lasts five years instead of two, because it was cleaned, dried and sharpened, is a real saving. Tool maintenance is among the cheapest improvements available to a Liberian farmer, requiring time and discipline rather than money.
+
+## Common errors and misconceptions
+
+- **Thinking sharp tools are the dangerous ones** — a **blunt** blade needs more force and is more likely to **slip**; sharpening is a *safety* measure, not just efficiency.
+- **Repairing a cracked handle with tape or wire** — binding hides the fault without restoring strength; a cracked or loose handle must be **replaced** (and a loose head re-wedged) before use.
+- **Storing a sprayer with chemical inside** — residue **corrodes** nozzles and seals and is a **poisoning hazard**; sprayers must be emptied, triple-rinsed and stored dry in a locked store.
+- **Treating maintenance as optional** — cleaning, drying and checking after every use costs *no money*, only minutes, yet it prevents both avoidable injuries and avoidable loss of a farmer's capital.`,
           workedExample: `**Question:** A school farm has a shed containing a cutlass with a rusted blade and cracked handle, a hoe with a loose head, and a sprayer that was stored with chemical left inside. Assess each item for safety and serviceability, describe the correct remedy, and set out a maintenance routine that would have prevented these problems.
 
 **Solution**
