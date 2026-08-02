@@ -16,7 +16,11 @@ export const geographyG10P2: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to distinguish the Earth's external spheres and describe their importance, and name and describe the internal layers of the Earth from the crust to the core.",
       estimatedMinutes: 150,
-      notes: `## Two ways to look at the Earth
+      notes: `## Introduction
+
+The Earth is not the same all the way through, nor is its surface a single kind of environment. To make sense of it, geographers study the Earth in two ways: the **external** structure — the great "spheres" of rock, water, air and life at the surface — and the **internal** structure — the hidden layers of rock and metal that reach down to the centre. This topic describes both, and why each matters to life on the surface.
+
+## Two ways to look at the Earth
 
 The Earth can be studied by its **external structure** — the major spheres that make up its surface environment — and its **internal structure** — the layers beneath the surface.
 
@@ -54,7 +58,14 @@ Cutting the Earth open reveals three main layers, like a boiled egg:
 
 ## Why the layers differ
 
-Temperature and pressure increase with depth. The crust is cool and solid; the mantle is hot enough to flow slowly; the core is hottest of all — the inner core stays solid only because of the enormous pressure.`,
+Temperature and pressure increase with depth. The crust is cool and solid; the mantle is hot enough to flow slowly; the core is hottest of all — the inner core stays solid only because of the enormous pressure.
+
+## Common errors and misconceptions
+
+- **Thinking the crust is thick** — the crust is very **thin** compared with the whole Earth (like the skin of an orange); the mantle is by far the largest layer.
+- **Saying the whole core is liquid** — the **outer core** is liquid, but the **inner core** is **solid** because the immense pressure keeps it so despite the heat.
+- **Confusing the spheres** — the **lithosphere** is the solid rock, the **hydrosphere** the water, the **atmosphere** the air, and the **biosphere** all living things; don't mix them up.
+- **Believing the mantle is molten liquid throughout** — it is mostly **solid** rock that flows only very slowly, like thick tar.`,
       workedExample: `**Task.** (a) Name the four external spheres and give one importance of each. (b) Describe the three internal layers of the Earth in order from the surface to the centre.
 
 **Part (a) — external spheres**
@@ -251,7 +262,11 @@ Temperature and pressure increase with depth. The crust is cool and solid; the m
       objective:
         "By the end of the topic, learners should be able to distinguish between rocks and minerals, classify rocks by their mode of formation into igneous, sedimentary and metamorphic, and describe the characteristics and economic uses of each type.",
       estimatedMinutes: 150,
-      notes: `## Rocks and minerals
+      notes: `## Introduction
+
+The solid Earth beneath our feet is made of **rock**, and rock is the raw material of the landscape, the soil that feeds crops, and the ores that Liberia mines — iron, gold, diamonds. But not all rock is the same: it forms in three very different ways, giving three great families with different looks and uses. This topic distinguishes **rocks** from **minerals** and classifies rocks into **igneous, sedimentary and metamorphic**, describing how each forms and what it is used for.
+
+## Rocks and minerals
 
 - A **mineral** is a naturally occurring solid with a definite chemical composition — for example quartz, mica, feldspar, gold, iron ore.
 - A **rock** is a solid made of one or more minerals joined together — for example granite, which contains quartz, feldspar and mica.
@@ -307,7 +322,14 @@ Rocks and the minerals in them are vital to Liberia's economy and everyday life:
 - **Building and roads:** granite, sandstone and gravel for construction.
 - **Cement and lime:** from limestone.
 - **Minerals and ores:** iron ore, gold and diamonds are mined from rocks.
-- **Soil:** weathered rock forms the soil that agriculture depends on.`,
+- **Soil:** weathered rock forms the soil that agriculture depends on.
+
+## Common errors and misconceptions
+
+- **Confusing a rock with a mineral** — a **mineral** is a single pure substance (quartz, gold); a **rock** is a mixture of one or more minerals (granite contains quartz, feldspar and mica).
+- **Muddling how the three types form** — **igneous** forms from cooled molten rock, **sedimentary** from compacted layers of sediment (often with fossils), **metamorphic** from existing rock changed by heat and pressure.
+- **Thinking rocks never change** — the **rock cycle** turns one type into another over long ages (e.g. limestone → marble under heat and pressure).
+- **Believing all valuable minerals are gold/diamonds** — iron ore, limestone (for cement) and gravel are also economically vital rocks/minerals.`,
       workedExample: `**Task.** Classify each of the following rocks by type and give the evidence you used: (i) a rock with clear layers containing sea-shell fossils; (ii) a hard rock made of large interlocking crystals with no layers; (iii) marble.
 
 **(i) Layered rock with fossils → sedimentary**
