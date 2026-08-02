@@ -15,7 +15,11 @@ export const mathematicsG10P2: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to translate word statements into algebraic expressions, evaluate expressions, expand products, add and subtract algebraic fractions, and factorise expressions including quadratics, perfect squares and the difference of two squares.",
       estimatedMinutes: 200,
-      notes: `## From words to algebra
+      notes: `## Introduction
+
+Arithmetic works with known numbers; **algebra** works with numbers we do not yet know, which we stand in for with letters called **variables**. This single idea — letting a letter hold a number — lets us describe patterns, write formulas and solve problems in general rather than one case at a time. In this topic we translate words into algebra, name the parts of an expression, evaluate and simplify expressions, expand brackets, and **factorise** — the reverse of expanding — including quadratics, perfect squares and the difference of two squares.
+
+## From words to algebra
 
 Algebra uses **letters (variables)** to stand for numbers we do not yet know. Turning a sentence into an algebraic expression is the first skill of the topic.
 
@@ -100,7 +104,15 @@ x/2 + x/3 = 3x/6 + 2x/6 = **5x/6**
 **Quadratic trinomials** ax² + bx + c: find two numbers that multiply to give c (or a×c) and add to give b.
 
 x² + 7x + 12: two numbers multiplying to 12 and adding to 7 are 3 and 4, so
-x² + 7x + 12 = **(x + 3)(x + 4)**.`,
+x² + 7x + 12 = **(x + 3)(x + 4)**.
+
+## Common errors to watch for
+
+- **Sign slip after a minus sign:** 5 − (x − 3) is **not** 5 − x − 3; treat it as 5 − 1(x − 3) = 5 − x + 3 = 8 − x.
+- **Adding unlike terms:** 3x + 2x² is already simplified — you cannot make it 5x³.
+- **Forgetting the middle term** in a perfect square: (a + b)² is a² + 2ab + b², **not** a² + b².
+- **Only factoring part of a term:** in 4a² − 6a the HCF is 2a, giving 2a(2a − 3); check by expanding.
+- Always **check a factorisation by expanding** it back to the original.`,
       workedExample: `**Problem.** (a) Expand and simplify (x + 6)(x − 2). (b) Factorise x² − 5x − 14.
 
 **Part (a) — expand with FOIL**
@@ -291,7 +303,11 @@ So x² − 5x − 14 = **(x − 7)(x + 2)**.
       objective:
         "By the end of the topic, learners should be able to explain the base-ten place-value system, convert between base ten and other bases, add, subtract and multiply in other bases, and solve simple equations involving bases.",
       estimatedMinutes: 180,
-      notes: `## Place value and the base-ten system
+      notes: `## Introduction
+
+We count in **tens** because we have ten fingers — but there is nothing special about ten. A computer counts in **twos**, an old clock in **sixties**. The number of digits a system uses is called its **base**, and the same quantity looks different written in different bases. In this topic we revisit how place value works in base ten, learn to convert numbers between base ten and other bases, and add, subtract and multiply directly in another base.
+
+## Place value and the base-ten system
 
 Our everyday numbers use **base ten** (the denary system): ten digits, 0–9, and each place is worth ten times the one to its right.
 
