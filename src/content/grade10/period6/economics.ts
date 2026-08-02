@@ -15,7 +15,11 @@ export const economicsG10P6: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to describe the sole proprietorship and the partnership, and state the advantages and disadvantages of each.",
       estimatedMinutes: 150,
-      notes: `## What is a business organization?
+      notes: `## Introduction
+
+Not all businesses are built the same way. The woman selling doughnuts at the roadside, the two friends who open a shop together, and a large trading company are all "businesses" — but they differ in who owns them, who makes the decisions, and, crucially, who is on the hook if the business runs into debt. This topic begins with the two simplest forms — the **sole proprietorship** and the **partnership** — weighing the advantages and disadvantages of each, and introduces the single idea (**liability**) that explains why bigger businesses take on other forms.
+
+## What is a business organization?
 
 A **business organization** is a firm set up to produce goods or services, usually to make a **profit**. Businesses differ in **who owns them, who controls them, how they raise money**, and how far the owners are responsible for the firm's debts (their **liability**). We begin with the two simplest forms.
 
@@ -61,7 +65,14 @@ A **partnership** is a business owned by **two to twenty people (partners)** who
 | Profits | all to owner | shared |
 | Decisions | one person | shared |
 
-Both are simple to form and both have **unlimited liability** — the key weakness that companies overcome (the next topic).`,
+Both are simple to form and both have **unlimited liability** — the key weakness that companies overcome (the next topic).
+
+## Common errors and misconceptions
+
+- **Thinking a partnership has limited liability** — like the sole proprietor, partners usually have **unlimited liability** and can lose personal property to pay the firm's debts; limited liability belongs to *companies*.
+- **Believing the sole proprietor has no responsibility for debts** — with **unlimited liability**, the owner is *personally* responsible for **all** the business's debts.
+- **Assuming a partnership can have unlimited partners** — a partnership has **2 to 20** partners; a single owner is a sole proprietorship, and larger numbers of owners point to a company.
+- **Forgetting that a partner's actions bind the others** — one partner's business decisions legally commit *all* the partners, which is a real risk of the form.`,
       workedExample: `**Task.** A tailor runs her shop alone. She is thinking of taking a partner. (a) What form of business does she run now? (b) Give two advantages and one disadvantage of her current form. (c) How would taking a partner help, and what new risk appears?
 
 **Part (a) — her current form**
@@ -240,7 +251,11 @@ But a **new risk** appears: in a partnership the partners still have **unlimited
       objective:
         "By the end of the topic, learners should be able to describe limited liability companies (private and public), cooperatives and public (state) enterprises, and explain the meaning and importance of limited liability.",
       estimatedMinutes: 150,
-      notes: `## Beyond the simple firms
+      notes: `## Introduction
+
+How does a business grow big enough to build a factory, a bank or a shipping line — when a single owner or a handful of partners could never risk that much of their own money? The answer is a clever legal invention: the **limited liability company**, which lets many people invest without risking everything they own. This topic explains companies (both **private** and **public**), the pivotal idea of **limited liability**, and two further forms — the member-owned **cooperative** and the government-owned **public enterprise** — completing the picture of how businesses are organised.
+
+## Beyond the simple firms
 
 The sole proprietorship and partnership are limited by **unlimited liability** and **small capital**. Larger businesses use forms that offer **limited liability** and can raise much more money.
 
@@ -281,7 +296,14 @@ A **public (state) enterprise** is a business **owned and run by the government*
 | Partnership | 2–20 partners | unlimited |
 | Company | shareholders | **limited** |
 | Cooperative | its members | limited (usually) |
-| Public enterprise | the government | (state-owned) |`,
+| Public enterprise | the government | (state-owned) |
+
+## Common errors and misconceptions
+
+- **Thinking limited liability means the company pays no debts** — the *company* still owes its debts; limited liability protects the **shareholder**, who can lose only what they *invested*, not their personal property.
+- **Confusing a private with a public limited company** — a **private** company sells shares *privately* (to invited people); a **public** company sells shares to the **general public** (on a stock exchange) and can raise far more capital.
+- **Treating a cooperative like an ordinary company** — a cooperative runs for its **members' mutual benefit** with **one member, one vote**; a company runs for **shareholder profit**, with votes weighted by shares owned.
+- **Assuming a public (state) enterprise exists only to make profit** — its main aim is to **provide essential services** (electricity, water, ports), sometimes where private firms would not.`,
       workedExample: `**Task.** (a) Explain what limited liability means and why it is important. (b) Distinguish a private limited company from a public limited company. (c) How does a cooperative differ from an ordinary company?
 
 **Part (a) — limited liability and its importance**

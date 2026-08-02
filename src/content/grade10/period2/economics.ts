@@ -16,7 +16,11 @@ export const economicsG10P2: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to define demand, state and explain the law of demand, construct a demand schedule and curve, and distinguish a change in quantity demanded from a change in demand.",
       estimatedMinutes: 150,
-      notes: `## What demand means
+      notes: `## Introduction
+
+Why does a market trader lower the price of tomatoes at the end of the day, and why do shoppers rush to buy when they do? The answer lies in **demand** — one half of the machinery that sets every price. This topic explains what economists really mean by demand (not just wanting a thing, but being *able* to buy it), states the **law of demand**, shows how to build a **demand schedule** and **curve**, and teaches the single most important skill in the topic: telling a **movement along** the curve apart from a **shift** of the whole curve.
+
+## What demand means
 
 In economics, **demand** is not just a wish to have something. **Demand** is the quantity of a good or service that consumers are **willing and able to buy** at a given price during a period of time. It combines *desire* with the *ability to pay* (backed by money).
 
@@ -75,7 +79,14 @@ Factors that **shift** demand (the *conditions of demand*):
 - **Prices of related goods** — a rise in the price of rice can increase demand for cassava (a substitute).
 - **Tastes and preferences** — fashion, advertising, culture.
 - **Population** — more people, more demand.
-- **Expectations** — if prices are expected to rise, people buy now.`,
+- **Expectations** — if prices are expected to rise, people buy now.
+
+## Common errors and misconceptions
+
+- **Confusing a movement along the curve with a shift of the curve** — a change in the good's **own price** moves you *along* the curve (a change in *quantity demanded*); any *other* factor shifts the *whole* curve (a change in *demand*). This is the most examined error in the topic.
+- **Thinking demand just means "wanting" something** — demand needs both the *desire* **and** the *ability to pay*; a wish with no money behind it is not demand.
+- **Believing the demand curve slopes upward** — it slopes **downward**, because price and quantity demanded move in **opposite** directions.
+- **Forgetting "other things being equal"** — the law of demand isolates price by holding income, tastes and related prices constant; in the real world several factors change at once.`,
       workedExample: `**Task.** Using the ideas of the law of demand, explain the difference between a *movement along* the demand curve and a *shift* of the demand curve, with an example of each for garri (cassava flour).
 
 **Step 1 — State the law of demand**
@@ -289,7 +300,11 @@ This is caused by a change in a factor **other than the price of garri**.
       objective:
         "By the end of the topic, learners should be able to state the law of supply, construct a supply schedule and curve, identify factors that shift supply, and find the equilibrium (market-clearing) price and quantity, explaining shortages and surpluses.",
       estimatedMinutes: 150,
-      notes: `## What supply means
+      notes: `## Introduction
+
+Demand is only half the story. For a price to exist, someone must be **willing to sell** as well as to buy. This topic introduces **supply** — the seller's side of the market — states the **law of supply**, and shows why the supply curve slopes the *opposite* way to demand. It then brings the two sides together at the market's meeting point, **equilibrium**, and explains what happens when the price is set too high (a **surplus**) or too low (a **shortage**), and how the market pushes itself back to balance.
+
+## What supply means
 
 **Supply** is the quantity of a good or service that producers are **willing and able to sell** at a given price during a period of time.
 
@@ -347,7 +362,14 @@ The market brings buyers and sellers together. **Equilibrium** is the price at w
 - If the price is **above** equilibrium, quantity supplied exceeds quantity demanded → a **surplus** (goods unsold). Sellers cut the price.
 - If the price is **below** equilibrium, quantity demanded exceeds quantity supplied → a **shortage** (goods run out). Buyers bid the price up.
 
-In both cases price moves back toward equilibrium — the **market-clearing price**.`,
+In both cases price moves back toward equilibrium — the **market-clearing price**.
+
+## Common errors and misconceptions
+
+- **Thinking the supply curve slopes downward like demand** — supply slopes **upward**: price and quantity supplied move in the **same** direction, because a higher price makes production more profitable.
+- **Mixing up shortage and surplus** — a **shortage** happens when the price is *below* equilibrium (demand exceeds supply, goods run out); a **surplus** happens when the price is *above* equilibrium (supply exceeds demand, goods go unsold).
+- **Confusing a movement along the supply curve with a shift** — only the good's **own price** moves you along; costs, technology, weather, taxes and the number of sellers **shift** the whole curve.
+- **Believing a fixed price can hold against market forces** — above equilibrium, unsold surpluses push the price down; below it, shortages push it up, until the market clears.`,
       workedExample: `**Task.** From the schedules below, find the equilibrium price and quantity, and explain what happens at a price of L$80.
 
 | Price (L$/kg) | Quantity demanded (kg) | Quantity supplied (kg) |
