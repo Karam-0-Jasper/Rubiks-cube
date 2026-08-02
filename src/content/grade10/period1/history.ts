@@ -28,7 +28,11 @@ export const history: SubjectContent = {
           objective:
             "By the end of the unit, learners should be able to define history, explain its purpose, disprove the myth that Africa has no history, and identify and evaluate the sources historians use.",
           estimatedMinutes: 160,
-          notes: `## What history is
+          notes: `## Introduction
+
+Why should we study things that are over and done with? Because the present grows out of the past: the countries, customs and conflicts of today were all shaped by what came before. But the past cannot be watched directly — it has to be *reconstructed* from clues that survive. This topic explains what **history** is, why we study it, and the **sources** — written, oral and material — from which historians rebuild the story of the past, along with their strengths and weaknesses.
+
+## What history is
 
 **History** is the systematic study of past human events, based on evidence, and the interpretation of those events to understand how the present came to be.
 
@@ -71,7 +75,14 @@ No source is accepted uncritically. Historians ask **who** produced it, **when**
 ## Oral tradition: strengths and limits
 
 - *Strengths:* preserves the past of societies with few written records; conveys values and perspective from within a community; often the only evidence for the pre-literate period.
-- *Limits:* details may change with retelling; chronology can be imprecise; accounts may be shaped to favour a ruling lineage. The sound approach is to **corroborate** oral tradition against archaeology, linguistics and any written record.`,
+- *Limits:* details may change with retelling; chronology can be imprecise; accounts may be shaped to favour a ruling lineage. The sound approach is to **corroborate** oral tradition against archaeology, linguistics and any written record.
+
+## Common errors and misconceptions
+
+- **Thinking history is only names and dates to memorise** — history is the *interpretation* of the past from evidence; two historians can read the same sources differently.
+- **Believing societies without writing have no history** — they do; their past is recovered from **oral tradition**, **archaeology** and **language**, which is why African history is not "unrecorded."
+- **Treating every source as fully reliable** — all sources have **bias and limits**; historians **cross-check** (corroborate) them against one another.
+- **Confusing primary and secondary sources** — a **primary** source comes from the time studied (a letter, a tool, an eyewitness); a **secondary** source is a later account written about it (a textbook).`,
           workedExample: `**Question:** A visitor claims that "Africa had no history before Europeans came, because Africans kept no written records." Using what you know about the nature and sources of history, explain why this claim is wrong.
 
 **Solution**
@@ -127,7 +138,11 @@ The myth arose partly because much African history was preserved **orally** rath
           objective:
             "By the end of the unit, learners should be able to describe the role of North Africa in African history, explain the place of Egypt, and trace the rise of the kingdom of Kush, its conquest of Egypt, and the significance of Meroe and Napata.",
           estimatedMinutes: 160,
-          notes: `## The role of North Africa
+          notes: `## Introduction
+
+Some of the very first great civilisations in the world arose not in Europe but in **Africa**, along the valley of the River Nile. Egypt built pyramids and a writing system thousands of years ago, and to its south the African kingdom of **Kush** grew so powerful that it conquered Egypt itself. Studying them corrects the false idea that Africa had no great history of its own. This topic describes the role of North Africa, the achievement of ancient **Egypt**, and the rise of **Kush**, its cities of **Napata** and **Meroe**, and its conquest of Egypt.
+
+## The role of North Africa
 
 North Africa — the lands along the Mediterranean and the Nile — was one of the **earliest centres of civilisation** in the world. Its position linked Africa to the Mediterranean world and to the trade of the Nile valley, and it was the setting for **ancient Egypt**, one of the oldest and most influential civilisations in human history.
 
@@ -163,7 +178,14 @@ The kingdom of Kush had two great successive centres:
 
 ## Why this matters
 
-The story of Egypt and Kush shows that Africa was home to **ancient, literate, wealthy and powerful states** thousands of years ago — states that built monuments, worked iron, developed writing, and at one point saw an African kingdom conquer and rule Egypt. It is among the clearest answers to the myth that Africa has no history.`,
+The story of Egypt and Kush shows that Africa was home to **ancient, literate, wealthy and powerful states** thousands of years ago — states that built monuments, worked iron, developed writing, and at one point saw an African kingdom conquer and rule Egypt. It is among the clearest answers to the myth that Africa has no history.
+
+## Common errors and misconceptions
+
+- **Thinking Egypt was not part of Africa** — ancient Egypt was an **African** civilisation on the Nile, connected to the lands to its south.
+- **Believing Kush merely copied Egypt** — Kush borrowed some ideas but developed its **own** writing (Meroitic), its own culture, and a major **iron industry**, and it even **conquered** Egypt.
+- **Confusing Napata and Meroe** — **Napata** was the earlier capital; **Meroe** the later, southern capital famous for iron working.
+- **Assuming great early civilisations were only European or Asian** — the Nile valley shows Africa among the *earliest* homes of cities, writing and government.`,
           workedExample: `**Question:** Explain the relationship between Egypt and the kingdom of Kush, and why the history of Kush is significant for understanding the African past.
 
 **Solution**
