@@ -159,7 +159,11 @@ It behaves like an **animal** (swimming, responding) *and* like a **plant** (gre
           objective:
             "By the end of the unit, learners should be able to state the cell theory, name the structures of plant and animal cells and their functions, distinguish prokaryotic, eukaryotic and akaryotic cells, and compare plant and animal cells.",
           estimatedMinutes: 160,
-          notes: `## The cell theory
+          notes: `## Introduction
+
+If biology is the study of life, then the **cell** is where that study begins, because the cell is the smallest unit that is itself alive. A single cell — an *Amoeba*, a bacterium — can carry out every process of life on its own, while a large organism like a human is built from trillions of cells working together. In this topic we meet the **cell theory**, tour the structures (organelles) inside plant and animal cells and what each does, compare plant with animal cells, and see how cells are organised into tissues, organs and systems.
+
+## The cell theory
 
 Built from the work of Schleiden, Schwann and Virchow:
 
@@ -225,7 +229,15 @@ Built from the work of Schleiden, Schwann and Virchow:
 
 ## Tissues, organs and systems
 
-Cells of the same kind form a **tissue**; tissues form an **organ**; organs working together form a **system**; systems form the **organism**. This is the *hierarchy of organisation* — cell → tissue → organ → system → organism.`,
+Cells of the same kind form a **tissue**; tissues form an **organ**; organs working together form a **system**; systems form the **organism**. This is the *hierarchy of organisation* — cell → tissue → organ → system → organism.
+
+## Common errors and misconceptions
+
+- **Cell wall vs cell membrane** — the wall is a rigid outer cellulose layer found *only* in plant cells; the membrane is a thin, living layer found in *all* cells. Don't use the terms interchangeably.
+- **Every plant cell is green** — false; only cells with chloroplasts (mainly in leaves and green stems) are green. Root cells have no chloroplasts.
+- **The nucleus makes energy** — no; the **mitochondrion** releases energy in respiration. The nucleus controls the cell.
+- **Bacteria have a nucleus** — they do not; bacteria are prokaryotic, with their genetic material free in the cytoplasm.
+- **Chlorophyll and chloroplast are the same** — the chloroplast is the *structure*; chlorophyll is the *green pigment* inside it.`,
           workedExample: `**Question:** A cell viewed under the microscope has a rigid outer boundary, one large vacuole filling most of its volume, and several green bodies in the cytoplasm.
 
 (a) Is it a plant or an animal cell? Give three reasons.
@@ -284,7 +296,11 @@ All three agree, so the cell is a **plant cell**, and the chloroplasts show it c
           objective:
             "By the end of the unit, learners should be able to describe diffusion, osmosis, facilitated diffusion, active transport, endocytosis and exocytosis, and explain their importance to the cell.",
           estimatedMinutes: 160,
-          notes: `## The selectively permeable membrane
+          notes: `## Introduction
+
+A cell is not sealed off from the world — it must constantly take in the substances it needs (oxygen, water, glucose, mineral salts) and get rid of its wastes (carbon dioxide, urea). All of this traffic passes through the **cell membrane**, which is *selectively permeable*: it lets some substances through and holds others back. This topic explains the ways substances cross the membrane — the **passive** ways that need no energy (diffusion, osmosis, facilitated diffusion) and the **active** ways that cost the cell energy (active transport, endocytosis, exocytosis) — and why each matters to the life of the cell.
+
+## The selectively permeable membrane
 
 The cell membrane lets some substances through while restricting others. Substances cross it in two broad ways:
 
@@ -350,7 +366,14 @@ For particles too large to cross the membrane directly:
 | Osmosis | No | High → low water | Water only |
 | Facilitated diffusion | No | High → low | Via protein channel |
 | Active transport | Yes | Low → high | Against gradient |
-| Endo/exocytosis | Yes | In / out | Large particles |`,
+| Endo/exocytosis | Yes | In / out | Large particles |
+
+## Common errors and misconceptions
+
+- **Osmosis is not just "diffusion of water"** loosely — it is specifically the movement of **water** across a **selectively permeable membrane** from a dilute to a concentrated solution.
+- **"Water moves to where there is more water"** — the opposite: water moves *from* the region of higher water concentration (dilute) *to* lower water concentration (concentrated).
+- **Diffusion needs energy** — it does not; only *active* transport, endocytosis and exocytosis use ATP.
+- **Active transport goes down the gradient** — no; its whole purpose is to move substances *against* the gradient (low → high), which is why it costs energy.`,
           workedExample: `**Question:** A piece of fresh cassava is placed in strong salt solution for an hour. Explain, in terms of water movement, what happens to its cells and to the cassava as a whole. What would happen instead in pure water?
 
 **Solution**
