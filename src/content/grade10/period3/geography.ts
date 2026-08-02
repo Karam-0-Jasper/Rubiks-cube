@@ -15,7 +15,11 @@ export const geographyG10P3: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to define population and related terms, explain how births, deaths and migration change a population, and describe how a census is used to count people.",
       estimatedMinutes: 150,
-      notes: `## What is population?
+      notes: `## Introduction
+
+Geography is not only about the land — it is about the **people** who live on it. How many people there are, whether their number is rising or falling, and why, decides how many schools, hospitals, farms and jobs a country needs. This branch is **population geography**. This topic defines population and its key terms, explains the three things that change a population — **births, deaths and migration** — and describes how a **census** counts the people.
+
+## What is population?
 
 **Population** is the **total number of people** living in a particular area — a town, a county or a country — at a given time.
 
@@ -50,7 +54,14 @@ Improvements in health care and clean water lower the death rate, which is a maj
 
 ## Migration
 
-People migrate for **push factors** (things driving them away — war, unemployment, poor land) and **pull factors** (things attracting them — jobs, safety, better services). Rural-to-urban migration, for example, moves people from villages to cities in search of work.`,
+People migrate for **push factors** (things driving them away — war, unemployment, poor land) and **pull factors** (things attracting them — jobs, safety, better services). Rural-to-urban migration, for example, moves people from villages to cities in search of work.
+
+## Common errors and misconceptions
+
+- **Thinking only births and deaths change a population** — **migration** matters too: a place can grow or shrink purely because people move in or out.
+- **Confusing birth rate with natural increase** — **natural increase** is birth rate *minus* death rate; a country can have a high birth rate yet slow growth if the death rate is also high.
+- **Muddling emigration and immigration** — **emigration** is leaving a country; **immigration** is entering one.
+- **Believing a census counts only citizens** — a census counts *all* the people present in the area at the time, and is used to plan services.`,
       workedExample: `**Task.** A country has a birth rate of 38 per 1 000 and a death rate of 12 per 1 000. During the year 5 000 people immigrated and 2 000 emigrated. (a) Calculate the natural increase per 1 000. (b) Explain the overall effect on the population. (c) State two reasons the death rate might be falling.
 
 **Part (a) — natural increase**
@@ -235,7 +246,11 @@ Any two of: better **medical care** and vaccination; cleaner **water and sanitat
       objective:
         "By the end of the topic, learners should be able to define and calculate population density, explain why population is unevenly distributed, and discuss the causes and effects of rapid population growth.",
       estimatedMinutes: 150,
-      notes: `## Population density
+      notes: `## Introduction
+
+People are not spread evenly across the Earth — great cities are packed tight while deserts and forests lie almost empty. Two ideas help geographers describe this: **density** (how crowded an area is) and **distribution** (the pattern of where people live). This topic defines and calculates population **density**, explains why population is so **unevenly distributed**, and discusses the causes and effects of **rapid population growth**.
+
+## Population density
 
 **Population density** is the **average number of people per unit of area** (usually per square kilometre). It shows how crowded an area is.
 
@@ -274,7 +289,14 @@ The world's population has grown very fast, especially where the death rate has 
 - a larger workforce and market,
 - more people to develop the country.
 
-A country is **overpopulated** when it has more people than its resources can support, and **underpopulated** when it has too few people to use its resources fully.`,
+A country is **overpopulated** when it has more people than its resources can support, and **underpopulated** when it has too few people to use its resources fully.
+
+## Common errors and misconceptions
+
+- **Confusing density with total population** — **density** is people *per square kilometre*; a huge country can have a large population but a *low* density if it has plenty of land.
+- **Muddling distribution and density** — **distribution** is the *pattern* (where people live); **density** is the *number per area*.
+- **Thinking overpopulation just means "many people"** — it means too many people **for the available resources**; a small population can still be "overpopulated" if resources are very scarce.
+- **Believing everywhere is crowded** — population is very uneven: fertile lowlands and cities are dense, while deserts, high mountains and thick forests are sparsely settled.`,
       workedExample: `**Task.** A county has a population of 600 000 people and a land area of 3 000 km². (a) Calculate its population density. (b) Suggest two reasons an area might be sparsely populated. (c) State two problems that rapid population growth can cause.
 
 **Part (a) — population density**
