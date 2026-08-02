@@ -27,7 +27,11 @@ export const mathematics: SubjectContent = {
           objective:
             "By the end of the unit, learners should be able to use set notation, name the types of sets, form subsets, and use Venn diagrams to find unions, intersections and complements and to solve two- and three-set problems.",
           estimatedMinutes: 160,
-          notes: `## What a set is
+          notes: `## Introduction
+
+Much of senior mathematics is about **groups of things** — the whole numbers, the factors of 12, the learners who study Physics. The language we use to talk about such groups precisely is the language of **sets**. Once you can name a set, count it, and combine it with another set, you can solve survey and counting problems that would otherwise be guesswork. In this unit we define a set, learn the notation, name the types of sets, form subsets, and use **Venn diagrams** to find unions, intersections and complements and to solve two- and three-set problems.
+
+## What a set is
 
 A **set** is a well-defined collection of distinct objects, called its **elements** or **members**.
 
@@ -71,8 +75,15 @@ For {a, b, c}: 2^3 = 8 subsets — { }, {a}, {b}, {c}, {a,b}, {a,c}, {b,c}, {a,b
 **Union (A ∪ B):** everything in A, in B, or in both — each element once.
 **Intersection (A ∩ B):** only what is in both.
 **Complement (A′):** everything in the universal set that is **not** in A.
+**Difference (A − B):** the elements in A that are **not** in B.
 
-If A = {1, 2, 3} and B = {3, 4}, then A ∪ B = {1, 2, 3, 4} and A ∩ B = {3}.
+If A = {1, 2, 3} and B = {3, 4}, then:
+- A ∪ B = {1, 2, 3, 4}
+- A ∩ B = {3}
+- A − B = {1, 2} (in A but not B), and B − A = {4}
+- with U = {1,…,5}, A′ = {4, 5}
+
+Two useful facts to point out (**De Morgan's laws**): the complement of a union is the intersection of the complements, and the complement of an intersection is the union of the complements — (A ∪ B)′ = A′ ∩ B′ and (A ∩ B)′ = A′ ∪ B′.
 
 ## The Venn diagram
 
@@ -104,7 +115,15 @@ n(A ∪ B ∪ C) = n(A) + n(B) + n(C) − n(A ∩ B) − n(A ∩ C) − n(B ∩ 
 
 ## Solving word problems — fill the middle first
 
-Always enter the **innermost region (the triple/double overlap) first**, then work outward by subtraction. Learners who start from the outer regions almost always double-count.`,
+Always enter the **innermost region (the triple/double overlap) first**, then work outward by subtraction. Learners who start from the outer regions almost always double-count.
+
+## Common errors to watch for
+
+- **Listing an element twice** in a set — {1, 2, 2, 3} is written {1, 2, 3}; elements are distinct.
+- **Confusing ∪ and ∩** — union is *everything* (bigger), intersection is *only the shared part* (smaller).
+- **Forgetting the universal set** when finding a complement — A′ depends entirely on what U is.
+- **Double-counting the overlap** in word problems — this is why we subtract n(A ∩ B), and why we fill the centre of the Venn diagram first.
+- **Writing 2 × n instead of 2ⁿ** for the number of subsets — a 4-element set has 2⁴ = 16 subsets, not 8.`,
           workedExample: `**Question:** In a class of 40 learners, 25 offer Agriculture, 18 offer Economics and 5 offer neither subject. How many offer both?
 
 **Solution**
@@ -165,7 +184,11 @@ Total = 17 + 8 + 10 + 5 = 40, which matches the class size. ✔
           objective:
             "By the end of the unit, learners should be able to identify rational numbers, add, subtract, multiply and divide them, apply the properties of operations, convert between fractions and decimals, and place real numbers on the number line.",
           estimatedMinutes: 160,
-          notes: `## What a rational number is
+          notes: `## Introduction
+
+Numbers come in families that fit inside one another: the **natural** numbers (1, 2, 3, …), the **whole** numbers (0, 1, 2, …), the **integers** (…, −2, −1, 0, 1, 2, …), and then the **rational** numbers, which include all of these plus every fraction. In this unit we learn exactly what makes a number rational, how to add, subtract, multiply and divide rational numbers, the properties those operations obey, how to move between fractions and decimals, and how to place any real number on the number line.
+
+## What a rational number is
 
 A **rational number** is any number that can be written as a fraction **a/b**, where a and b are integers and b ≠ 0.
 
@@ -204,6 +227,20 @@ Multiply numerators together and denominators together; cancel common factors fi
 - **Inverse:** a + (−a) = 0 and a × (1/a) = 1 for a ≠ 0
 
 Note that subtraction and division are **not** commutative: 5 − 3 ≠ 3 − 5.
+
+## Order of operations with fractions
+
+When an expression mixes operations, work in **BODMAS** order — **B**rackets, **O**rders (powers/roots), **D**ivision and **M**ultiplication (left to right), then **A**ddition and **S**ubtraction (left to right).
+
+1/2 + 1/3 × 3/4 → do the multiplication first: 1/3 × 3/4 = 3/12 = 1/4; then 1/2 + 1/4 = 2/4 + 1/4 = **3/4**.
+
+## Comparing and ordering rational numbers
+
+To compare two fractions, write them with a **common denominator** and compare numerators, or convert both to decimals. To order 2/3, 3/5 and 7/10: the LCD of 3, 5 and 10 is 30, giving 20/30, 18/30 and 21/30, so in order they are **3/5 < 2/3 < 7/10**.
+
+## Mixed numbers and improper fractions
+
+A **mixed number** such as 2¾ is converted to an improper fraction before calculating: 2¾ = (2 × 4 + 3)/4 = 11/4. Convert back at the end if the question asks for a mixed number.
 
 ## Decimal representation
 
