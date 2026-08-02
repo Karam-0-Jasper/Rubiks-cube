@@ -29,7 +29,11 @@ export const geography: SubjectContent = {
           objective:
             "By the end of the unit, learners should be able to describe the solar system, name the planets in order, distinguish inner from outer planets, and state the Earth's position and the conditions that make it able to support life.",
           estimatedMinutes: 160,
-          notes: `## The solar system
+          notes: `## Introduction
+
+Before we study the land, weather and people of our own world, we should see where that world sits in space. The Earth is one small planet among many, circling an ordinary star we call the Sun. Understanding the **solar system** and the Earth's place in it explains day and night, the seasons, and why Earth — unlike its neighbours — teems with life. This topic introduces the solar system, the planets, and what makes Earth unique.
+
+## The solar system
 
 The **solar system** is the Sun together with all the bodies that orbit it: **eight planets**, their moons, asteroids, comets and meteoroids.
 
@@ -63,7 +67,14 @@ The Earth is the **third planet** from the Sun. Its position is one reason it ca
 - It has a **moderate temperature range** suitable for living things.
 - It has a protective **ozone layer** and a **magnetic field** shielding it from harmful radiation.
 
-This combination — the right distance, water, atmosphere and temperature — is why Earth is, so far as we know, the only planet that supports life.`,
+This combination — the right distance, water, atmosphere and temperature — is why Earth is, so far as we know, the only planet that supports life.
+
+## Common errors and misconceptions
+
+- **Calling the Sun a planet** — the Sun is a **star** (a ball of hot gas that gives its own light); the planets shine only by reflecting the Sun's light.
+- **Thinking the Sun moves round the Earth** — the Earth and the other planets orbit the **Sun**; the Sun only *appears* to move because the Earth rotates.
+- **Believing the Moon is a planet** — the Moon is a **satellite** that orbits the Earth, not the Sun.
+- **Confusing rotation and revolution** — **rotation** is the Earth spinning on its axis (causing day and night); **revolution** is its year-long orbit round the Sun.`,
           workedExample: `**Question:** A learner claims that Jupiter, being the largest planet, must be the closest to the Sun and the most likely to support life. Correct the claim and explain properly.
 
 **Solution**
@@ -119,7 +130,11 @@ Being large does not make a planet suitable for life. Jupiter is a **gas giant**
           objective:
             "By the end of the unit, learners should be able to describe the shape of the Earth, state its dimensions, and give evidence that the Earth is spherical rather than flat.",
           estimatedMinutes: 120,
-          notes: `## The shape of the Earth
+          notes: `## Introduction
+
+People once believed the Earth was flat, and feared sailing off its edge. Today we know its true shape and size — and, more interestingly, we can look at the everyday **evidence** that proves it, from ships disappearing hull-first over the horizon to photographs from space. This topic describes the Earth's true shape, states its dimensions, and sets out the proofs that it is round.
+
+## The shape of the Earth
 
 The Earth is not a perfect sphere. It is an **oblate spheroid** — a sphere slightly **flattened at the poles** and **bulging at the equator**. This bulge is caused by the Earth's rotation.
 
@@ -140,7 +155,13 @@ The Earth is not a perfect sphere. It is an **oblate spheroid** — a sphere sli
 
 ## Why the shape and size matter
 
-The Earth's spherical shape means the Sun's rays strike different latitudes at different angles, which is the basis of the world's climate zones. Its size and curvature are also why maps of large areas must deal with the problem of showing a curved surface on flat paper.`,
+The Earth's spherical shape means the Sun's rays strike different latitudes at different angles, which is the basis of the world's climate zones. Its size and curvature are also why maps of large areas must deal with the problem of showing a curved surface on flat paper.
+
+## Common errors and misconceptions
+
+- **Saying the Earth is a perfect sphere** — it is an **oblate spheroid**, slightly flattened at the poles and bulging at the equator because of its rotation.
+- **Thinking "round" means flat-and-circular like a coin** — the proofs (ships vanishing hull-first, the round shadow in a lunar eclipse, photos from space) show it is a **ball**, not a disc.
+- **Believing the equator and poles are the same distance around** — the equatorial circumference is slightly *larger* than the polar circumference because of the bulge.`,
           workedExample: `**Question:** Standing on the shore, a learner watches a ship sail away and notices that the lower part of the ship disappears before the top of its mast. He also hears that during a recent lunar eclipse the Earth's shadow on the Moon was curved. Explain how each observation shows that the Earth is spherical, and why a flat Earth would look different.
 
 **Solution**
@@ -192,7 +213,11 @@ During a **lunar eclipse** the Earth passes between the Sun and the Moon and cas
           objective:
             "By the end of the unit, learners should be able to define latitude and longitude, use them to locate places, name the main lines of latitude, and calculate local time differences from longitude.",
           estimatedMinutes: 160,
-          notes: `## Locating places on the globe
+          notes: `## Introduction
+
+How do you describe *exactly* where a place is on a round Earth that has no natural edges or corners? Geographers solve this with a grid of imaginary lines — **latitude** and **longitude** — that give every point on the globe a unique "address." The same grid, tied to the Earth's rotation, also explains why it is midday in Monrovia while it is the middle of the night elsewhere. This topic defines latitude and longitude, uses them to locate places, and shows how to calculate **local time** from longitude.
+
+## Locating places on the globe
 
 Any place on Earth can be fixed using two sets of imaginary lines: **latitude** and **longitude**.
 
@@ -242,7 +267,14 @@ To find the time difference between two places:
 
 ## The International Date Line
 
-Roughly along 180°, this is where the date changes. Crossing it westward you move the calendar **forward one day**; crossing eastward you move it **back one day**.`,
+Roughly along 180°, this is where the date changes. Crossing it westward you move the calendar **forward one day**; crossing eastward you move it **back one day**.
+
+## Common errors and misconceptions
+
+- **Mixing up latitude and longitude** — **latitude** lines run *east–west* and measure distance *north/south* of the equator; **longitude** lines run *north–south* (pole to pole) and measure distance *east/west* of the Prime Meridian.
+- **Getting the time-difference rule backwards** — the Earth turns 15° of longitude per hour; places to the **east** are **ahead** in time (add), those to the **west** are **behind** (subtract).
+- **Confusing the equator and the Prime Meridian** — the **equator** is 0° latitude; the **Prime Meridian (Greenwich)** is 0° longitude.
+- **Forgetting to state N/S or E/W** — a location must give the direction, e.g. 6°N, 10°W, or it is ambiguous.`,
           workedExample: `**Question:** When it is 12:00 noon at Greenwich (0°), what is the local time at a town on longitude 45° W?
 
 **Solution**
@@ -301,7 +333,11 @@ The town is to the **west** of Greenwich. Places west are **behind** in time, so
           objective:
             "By the end of the unit, learners should be able to distinguish the Earth's rotation from its revolution and explain their effects, including day and night, time differences, the seasons and leap years.",
           estimatedMinutes: 160,
-          notes: `## Two movements
+          notes: `## Introduction
+
+The Earth never stops moving, and its two great movements shape our daily and yearly lives. As it **spins** on its axis we get day and night; as it **travels** round the Sun over a year, with its axis tilted, we get the seasons. This topic distinguishes the Earth's **rotation** from its **revolution** and explains their effects — day and night, time differences, the seasons and the leap year.
+
+## Two movements
 
 The Earth has two motions at once:
 
@@ -344,7 +380,14 @@ Because the axis keeps pointing the same way, different hemispheres lean towards
 
 ## Why Liberia has wet and dry seasons, not four temperature seasons
 
-Liberia lies close to the equator (about 4°–8° N). The Sun is nearly overhead all year, so temperature changes little. Instead of hot and cold seasons, Liberia has a **wet season (May–October)** and a **dry season (November–April)**, governed by the movement of the rain-bringing wind belt (the Inter-Tropical Convergence Zone) rather than by the tilt-driven temperature seasons of higher latitudes.`,
+Liberia lies close to the equator (about 4°–8° N). The Sun is nearly overhead all year, so temperature changes little. Instead of hot and cold seasons, Liberia has a **wet season (May–October)** and a **dry season (November–April)**, governed by the movement of the rain-bringing wind belt (the Inter-Tropical Convergence Zone) rather than by the tilt-driven temperature seasons of higher latitudes.
+
+## Common errors and misconceptions
+
+- **Confusing rotation and revolution** — **rotation** is the Earth spinning on its axis once a day (day and night); **revolution** is its orbit round the Sun once a year (the seasons).
+- **Thinking the seasons are caused by distance from the Sun** — they are caused by the **tilt** of the Earth's axis, not by how near or far the Earth is; when it is summer in the north it is winter in the south *at the same distance*.
+- **Believing the whole Earth has four temperature seasons** — near the equator (like Liberia) the tilt has little effect, so there are **wet and dry** seasons instead.
+- **Saying the Sun rises in the west** — because the Earth rotates west-to-east, the Sun appears to rise in the **east** and set in the **west**.`,
           workedExample: `**Question:** A learner says the Earth has seasons because it moves closer to and further from the Sun during the year. Explain why this is wrong, give the correct cause, and explain why Liberia does not have four temperature seasons.
 
 **Solution**
