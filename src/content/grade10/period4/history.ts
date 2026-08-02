@@ -16,7 +16,11 @@ export const historyG10P4: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to locate the ancient Ghana Empire, explain the factors behind its rise, and describe how it was governed.",
       estimatedMinutes: 150,
-      notes: `## Which Ghana?
+      notes: `## Introduction
+
+One of the greatest and richest empires the world has ever seen grew up in West Africa over a thousand years ago — the empire of **ancient Ghana**. Its kings grew wealthy by controlling the trade in **gold and salt** across the Sahara, and ruled a well-organised state with an army and a system of taxation. Its story is a cornerstone of West African history. This topic locates the empire, explains the factors behind its **rise**, and describes how it was **governed** — beginning with an important warning about its name.
+
+## Which Ghana?
 
 The **ancient Ghana Empire** was **not** in the same place as the modern country of Ghana. It lay in the **western Sudan** — the grassland belt south of the Sahara, in the region of present-day **Mauritania, Mali and southern Senegal**. Its own people called it **Wagadu**; "Ghana" was actually the **title of its king**, meaning "war chief", which later became the name Arab traders used for the whole empire. It flourished from about the **8th to the 11th century CE**.
 
@@ -41,7 +45,14 @@ Ghana was ruled by a powerful **king** who held great authority:
 
 ## The capital
 
-The empire's capital, **Kumbi Saleh**, is described by Arab writers as having **two towns**: one for the **king and the local people** (with the royal palace and sacred groves), and one for the **Muslim traders** (with mosques). This shows Ghana as a busy centre where different peoples and religions met through trade.`,
+The empire's capital, **Kumbi Saleh**, is described by Arab writers as having **two towns**: one for the **king and the local people** (with the royal palace and sacred groves), and one for the **Muslim traders** (with mosques). This shows Ghana as a busy centre where different peoples and religions met through trade.
+
+## Common errors and misconceptions
+
+- **Confusing ancient Ghana with modern Ghana** — the empire lay in the **western Sudan** (around today's Mauritania, Mali and Senegal), *not* where the modern country of Ghana is; the modern nation took the name later as a tribute.
+- **Thinking "Ghana" was the country's own name** — the people called it **Wagadu**; "Ghana" was the **king's title** ("war chief") that traders applied to the empire.
+- **Believing gold was mined by the king** — the king **controlled and taxed** the gold–salt trade; the gold came from mines to the south (Wangara), whose location was kept secret.
+- **Assuming West Africa had no organised states before Europeans** — Ghana had an army, taxation and a capital city centuries before European contact.`,
       workedExample: `**Task.** Explain three factors that helped the ancient Ghana Empire rise to power, and describe the position of the king in its government.
 
 **Three factors behind Ghana's rise**
@@ -222,7 +233,11 @@ The king held **great, almost sacred authority**. He was the **head of state, ch
       objective:
         "By the end of the topic, learners should be able to describe the trans-Saharan trade that enriched Ghana, explain the role of gold and salt, and give the causes of the empire's decline.",
       estimatedMinutes: 150,
-      notes: `## The trans-Saharan trade
+      notes: `## Introduction
+
+The ancient Ghana Empire did not grow rich from farming or conquest alone — its power rested on **trade**. Great **camel caravans** crossed the burning Sahara carrying **salt** south and **gold** north, and Ghana sat astride the routes, taxing the exchange. This topic describes that **trans-Saharan trade**, explains why **gold and salt** mattered so much, looks at the curious **"silent trade"** and the peaceful spread of **Islam**, and then sets out the reasons Ghana eventually **declined** and gave way to Mali.
+
+## The trans-Saharan trade
 
 Ghana's wealth came from the **trans-Saharan trade** — the exchange of goods carried by **camel caravans** across the **Sahara Desert** between North Africa and the western Sudan.
 
@@ -251,7 +266,14 @@ Ghana weakened from about the **11th century** for several reasons:
 - **Rebellion of subject peoples:** vassal states broke away, weakening the empire.
 - **Overuse of resources / drought:** overgrazing and dry conditions damaged farmland around the capital.
 
-As Ghana declined, the empire of **Mali** rose to take its place as the great power of the western Sudan (the subject of later study).`,
+As Ghana declined, the empire of **Mali** rose to take its place as the great power of the western Sudan (the subject of later study).
+
+## Common errors and misconceptions
+
+- **Thinking salt is worth less than gold, so the trade was unfair** — in the hot western Sudan salt was **scarce and essential for life**, so it was sometimes traded weight-for-weight with gold; both sides gained what they lacked.
+- **Believing the Almoravids alone destroyed Ghana** — the Almoravid pressure was one cause, but **internal** problems (rebellious vassal states, drought and overgrazing) and the **shifting of trade routes** mattered just as much.
+- **Confusing the "silent trade" with ordinary bargaining** — in the silent trade the two groups **never met or spoke**; goods were left and adjusted until both were satisfied.
+- **Assuming Islam was forced on Ghana** — it spread **peacefully through trade**; the kings and most people kept their traditional beliefs at first, and Muslim traders also brought **literacy**.`,
       workedExample: `**Task.** (a) Describe the trans-Saharan trade and the main goods exchanged. (b) Explain the "silent trade". (c) Give two reasons for the decline of Ghana.
 
 **Part (a) — the trans-Saharan trade**
