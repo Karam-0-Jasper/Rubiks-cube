@@ -16,7 +16,11 @@ export const literatureG10P6: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to recall the elements and types of drama, the tools of characterisation, and apply them to analyse a dramatic text.",
       estimatedMinutes: 150,
-      notes: `## Pulling drama together
+      notes: `## Introduction
+
+A year of study comes together here. Across Periods I–III you met **drama** — its elements, its kinds, its characters and its special techniques — through Shakespeare's *A Midsummer Night's Dream* and Soyinka's *The Lion and the Jewel*. This review gathers all of that in one place so it is ready for the exam: the **elements** of a play, the **types** of drama, the tools of **characterisation**, and the techniques of **soliloquy, aside and dramatic irony** — all analysed with the one reliable method, *name–evidence–explanation*.
+
+## Pulling drama together
 
 This period **reviews** the study of **drama** from earlier in the year. Drama is literature written to be **performed** by actors before an audience.
 
@@ -57,7 +61,14 @@ Whatever the play, use **name–evidence–explanation**:
 2. **Give evidence** from the text (an event, an action, a line).
 3. **Explain** its effect — how it works and why the playwright used it.
 
-This turns reading into analysis and avoids mere **plot summary**. Studying *A Midsummer Night's Dream* and *The Lion and the Jewel* this year gave learners the practice; the method is the lasting skill.`,
+This turns reading into analysis and avoids mere **plot summary**. Studying *A Midsummer Night's Dream* and *The Lion and the Jewel* this year gave learners the practice; the method is the lasting skill.
+
+## Common errors and misconceptions
+
+- **Answering drama questions with plot summary** — the marks come from *analysis* (name–evidence–explanation), not from retelling what happens in the play.
+- **Confusing the kinds of drama** — a **tragedy** ends in the main character's downfall; a **comedy** is light and usually ends happily; a **tragicomedy** blends the two.
+- **Mixing up soliloquy, aside and dramatic irony** — a **soliloquy** is spoken *alone*; an **aside** is a short remark to the audience with others present; **dramatic irony** is the *audience* knowing what a character does not.
+- **Confusing a trait with a role, or flat/round with static/dynamic** — keep the pairs straight: trait = quality, role = function; flat/round = depth, static/dynamic = change.`,
       workedExample: `**Task.** Using a play you have studied, show your command of drama by identifying (a) its type, (b) its central conflict and theme, (c) one technique the playwright uses, applying name–evidence–explanation.
 
 **Play:** *The Lion and the Jewel* by Wole Soyinka
@@ -238,7 +249,11 @@ It is a **comedy** (with elements of African drama — music, dance and village 
       objective:
         "By the end of the topic, learners should be able to recall the forms and elements of prose and the main figures of speech, and apply one consistent analytical method across drama, prose and poetry.",
       estimatedMinutes: 150,
-      notes: `## Pulling prose (and the whole year) together
+      notes: `## Introduction
+
+This is the capstone of the whole year. Here **prose** (Periods IV–V) is pulled together and joined to the **drama** and **figurative devices** studied all along — so that you can pick up *any* literary text, in any genre, and analyse it with confidence. The big lesson of Grade 10 Literature is a single, transferable one: **one method — name, evidence, explain — unlocks a poem, a play and a novel alike.** This review proves it, and points the way to the higher skills of comparison, evaluation and the reasoned personal response.
+
+## Pulling prose (and the whole year) together
 
 This final review draws together **prose** (Periods IV–V) and connects it with **drama** and the **figurative devices** studied all year, so learners can analyse **any** literary text with confidence.
 
@@ -275,7 +290,14 @@ At the highest level, learners **compare** two texts (linking them, not describi
 
 ## The year in one idea
 
-Across figurative expression, drama, and prose — poems, plays, novels and short stories — literature explores human life and ideas through language, and we understand it by **naming what the writer does, showing the evidence, and explaining its effect.** That single skill is what Grade 10 Literature has built.`,
+Across figurative expression, drama, and prose — poems, plays, novels and short stories — literature explores human life and ideas through language, and we understand it by **naming what the writer does, showing the evidence, and explaining its effect.** That single skill is what Grade 10 Literature has built.
+
+## Common errors and misconceptions
+
+- **Thinking each genre needs a different approach** — the *same* method (name–evidence–explanation) works for **poetry, drama and prose**; only the features you name change.
+- **Falling back on plot summary** — the enemy in *every* genre is retelling the story; always analyse the writer's technique and its effect instead.
+- **Confusing novel and short story** — both are **prose fiction**, but the novel is long with many characters and several themes, while the short story is compact, with one incident and one main theme.
+- **Giving an unsupported personal response** — "I liked it" earns nothing; judgements must be *effective/weak **because**…* with evidence from the text.`,
       workedExample: `**Task.** Show that one analytical method works for all three genres by applying **name–evidence–explanation** to (a) a line of poetry, (b) a moment of drama, and (c) an element of a novel.
 
 **(a) Poetry** — the line "the black woman is a ripe fruit"

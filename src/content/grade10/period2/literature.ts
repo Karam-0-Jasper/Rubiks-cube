@@ -18,7 +18,11 @@ export const literatureG10P2: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to describe the main types of character in a drama, explain how a playwright reveals character (characterisation), and outline the traits and roles of characters in set plays.",
       estimatedMinutes: 150,
-      notes: `## Character and characterisation
+      notes: `## Introduction
+
+The people in a play are not real, yet a great playwright makes us laugh with them, fear for them, and remember them for life. How? Through **characterisation** — the craft of building believable characters and revealing who they are. This topic sorts the different **types of character** (protagonist, antagonist, round, flat, dynamic, static, foil), sets out the **methods** a playwright uses to reveal them, and separates a character's **traits** (their qualities) from their **role** (their function) — using Puck in *A Midsummer Night's Dream* and Baroka and Lakunle in *The Lion and the Jewel* as worked examples.
+
+## Character and characterisation
 
 A **character** is a person (or being) who takes part in the action of a play. **Characterisation** is the way the playwright **creates and reveals** those characters so that the audience understands them.
 
@@ -55,7 +59,14 @@ Because a play is meant to be **performed**, character is shown mainly through w
 
 ## Why characterisation matters
 
-Strong characterisation makes an audience care about the story. By studying a character's traits, actions and role, we uncover the play's **themes** — for example, the clash between tradition and modernity in *The Lion and the Jewel*.`,
+Strong characterisation makes an audience care about the story. By studying a character's traits, actions and role, we uncover the play's **themes** — for example, the clash between tradition and modernity in *The Lion and the Jewel*.
+
+## Common errors and misconceptions
+
+- **Confusing a trait with a role** — a **trait** is a *quality* (brave, cunning, vain); a **role** is a *function* in the play (protagonist, foil, trickster). A good answer names both.
+- **Naming traits with no evidence** — never write "Puck is funny" and stop; state the trait, the **evidence**, and the **method** of characterisation that reveals it.
+- **Mixing up flat/round with static/dynamic** — **flat vs round** is about *depth* (one-sided vs fully developed); **static vs dynamic** is about *change* (stays the same vs grows or falls).
+- **Retelling the plot instead of analysing character** — examiners reward *trait + evidence + method* linked to theme, not a summary of what happens.`,
       workedExample: `**Task.** Choosing one character from *The Lion and the Jewel*, show how the playwright reveals character. Identify two traits, the character's role, and the method of characterisation that reveals each trait.
 
 **Chosen character: Lakunle** (the village schoolteacher)
@@ -270,7 +281,11 @@ By examining Lakunle's own words (vanity) and his actions (impracticality), and 
       objective:
         "By the end of the topic, learners should be able to identify figures of speech in a poem, explain their effect, and use the 'name-and-effect' method to analyse figurative expression in set poems such as Black Woman and Bats.",
       estimatedMinutes: 150,
-      notes: `## Figurative language in poetry
+      notes: `## Introduction
+
+A poem packs enormous feeling into very few words — and it does so largely through **figures of speech**. This topic takes the devices you met in Period I and puts them to work on whole poems, teaching a reliable three-step routine — **name, quote, explain the effect** — for analysing figurative expression. It then applies that routine to two set poems: Senghor's proud *Black Woman*, where the woman becomes a symbol of Africa itself, and D. H. Lawrence's *Bats*, where vivid images turn an ordinary dusk into a study of wonder shading into unease.
+
+## Figurative language in poetry
 
 Poets rarely say things plainly. They use **figurative expressions (figures of speech)** — language that means more than its literal words — to create images, feeling and music. Period I introduced these devices; here we apply them to whole poems.
 
@@ -311,7 +326,14 @@ Lawrence describes bats at dusk with a mixture of wonder and disgust.
 
 ## Why it matters
 
-Recognising figures of speech is only half the skill. The marks — and the meaning — come from explaining **why** the poet chose them and **what they do** to the reader.`,
+Recognising figures of speech is only half the skill. The marks — and the meaning — come from explaining **why** the poet chose them and **what they do** to the reader.
+
+## Common errors and misconceptions
+
+- **Device-spotting** — listing "metaphor, simile, personification" with no explanation earns almost nothing; always complete the **effect** step of the name–quote–effect routine.
+- **Confusing simile and metaphor** — a **simile** keeps *like* or *as*; a **metaphor** drops them and says one thing *is* another.
+- **Reading a symbol too literally** — in *Black Woman* the woman is a **symbol of Africa**; treating the poem as being only about one person misses its whole meaning.
+- **Assuming a poet's attitude is simple** — in *Bats*, Lawrence feels **wonder *and* unease** at once; good analysis captures mixed feeling rather than forcing a single label.`,
       workedExample: `**Task.** Analyse the following two lines using the name-and-effect method:
 
 *"The black woman is a ripe fruit, / and the wind whispers her name through the tall grass."*

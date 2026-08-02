@@ -16,7 +16,11 @@ export const literatureG10P3: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to explain what African drama is, describe its origins in ritual, festival and oral tradition, identify its distinctive features, and name major African playwrights.",
       estimatedMinutes: 150,
-      notes: `## What is African drama?
+      notes: `## Introduction
+
+Long before anyone wrote a play in Africa, Africans were already *performing* — in the masked dance of a festival, the chant of a ritual, and the voice and gesture of a village storyteller. **African drama** grows straight out of these living traditions, which is why it is far more than "European drama written by Africans." This topic explains what African drama is, traces its **origins** in ritual, festival and oral storytelling, sets out the **features** that make it distinctive, and introduces its major **playwrights**, from Nobel laureate Wole Soyinka onwards.
+
+## What is African drama?
 
 **Drama** is literature written to be **performed** by actors before an audience (studied in Period I). **African drama** is drama written by African playwrights, often rooted in African life, culture and traditions, and usually exploring African experiences and concerns.
 
@@ -51,7 +55,14 @@ African plays often show features drawn from these roots:
 
 ## Why African drama matters
 
-African drama gives African writers a way to tell their **own stories in their own voice**, drawing on indigenous performance traditions rather than only European models. It preserves culture, examines society, and entertains — carrying the community's concerns onto the stage.`,
+African drama gives African writers a way to tell their **own stories in their own voice**, drawing on indigenous performance traditions rather than only European models. It preserves culture, examines society, and entertains — carrying the community's concerns onto the stage.
+
+## Common errors and misconceptions
+
+- **Thinking African drama is "just European drama written by Africans"** — it has its own roots in **ritual, festival and oral storytelling**, giving it features European drama does not share.
+- **Believing drama began in Africa only when plays were written down** — African **performance** traditions (masquerade, ritual, the griot's storytelling) are centuries older than the written African play.
+- **Treating music and dance as mere decoration** — in African drama song, drumming and dance are often **woven into the story itself**, not added on.
+- **Confusing the country of major playwrights** — e.g. Wole Soyinka is **Nigerian** (and the first African Nobel laureate in Literature), while Ama Ata Aidoo and Efua Sutherland are **Ghanaian**.`,
       workedExample: `**Task.** A student says, "African drama is just European drama written by Africans." Explain why this is wrong, and describe three features that make African drama distinctive.
 
 **Why the statement is wrong**
@@ -244,7 +255,11 @@ African drama is **not** merely European drama in African hands. It grows out of
       objective:
         "By the end of the topic, learners should be able to apply the elements of drama to an African play, identify its major themes, analyse how character and conflict develop those themes, and support their views with reference to the text.",
       estimatedMinutes: 150,
-      notes: `## Applying the tools of drama
+      notes: `## Introduction
+
+Knowing *about* African drama is one thing; *reading a play well* is another. This topic puts the tools you have gathered — plot, character, conflict, dialogue and characterisation — to work on a full African play such as Soyinka's *The Lion and the Jewel* or Aidoo's *The Dilemma of a Ghost*. It focuses on **theme** (a play's central idea), on how a playwright **develops** a theme through character, conflict, plot and dialogue rather than stating it outright, and on the analytical discipline — **name, evidence, explanation** — that turns plot summary into real literary analysis.
+
+## Applying the tools of drama
 
 In Periods I and II, learners met the **elements of drama** (plot, character, conflict, theme, dialogue) and **characterisation**. Studying an African play means using those tools on a full African text — for example Wole Soyinka's *The Lion and the Jewel* or Ama Ata Aidoo's *The Dilemma of a Ghost*.
 
@@ -280,7 +295,14 @@ A good analysis:
 2. **Shows how it is developed** through character, conflict, plot or dialogue.
 3. **Supports the point with reference to the text** (an event, a character's action, or a line).
 
-This is the same **name–evidence–explanation** discipline used for figures of speech and characterisation, now applied to a whole play.`,
+This is the same **name–evidence–explanation** discipline used for figures of speech and characterisation, now applied to a whole play.
+
+## Common errors and misconceptions
+
+- **Stating a theme as one word** — a theme is a *full idea* ("the clash between tradition and modernity"), not a bare topic ("tradition").
+- **Retelling the plot instead of analysing it** — examiners reward *how* character, conflict and the ending **develop** a theme, supported by textual evidence, not a summary of events.
+- **Expecting the theme to be stated outright** — a good playwright lets the theme **emerge** through opposed characters and conflict; there is usually no spelled-out moral.
+- **Ignoring the ending** — how a play ends (e.g. Baroka winning Sidi) reveals the playwright's *attitude* to the theme and is key evidence for any reading.`,
       workedExample: `**Task.** Choose one theme from an African play you have studied and show how the playwright develops it. Name the theme, and explain how character, conflict and the ending each help to convey it.
 
 **Play:** *The Lion and the Jewel* by Wole Soyinka
