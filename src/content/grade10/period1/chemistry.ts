@@ -27,7 +27,11 @@ export const chemistry: SubjectContent = {
           objective:
             "By the end of the unit, learners should be able to define chemistry and its branches, describe the scientific method, use the SI units of measurement, express quantities in scientific notation to the correct number of significant figures, and carry out simple unit conversions.",
           estimatedMinutes: 160,
-          notes: `## What chemistry is
+          notes: `## Introduction
+
+Everything you can touch, taste, drink or breathe — water, salt, air, iron, palm oil — is **matter**, and **chemistry** is the science of what matter is made of and how it changes. When cassava ferments, when iron rusts, when soap is made from oil and lye, chemistry is at work. This first topic defines chemistry and its branches, explains why it matters to daily life and industry in Liberia, and introduces the safe use of the laboratory.
+
+## What chemistry is
 
 **Chemistry** is the branch of science that studies the **composition, structure, properties and changes** of matter.
 
@@ -101,7 +105,14 @@ Convert step by step, one unit at a time.
 
 ## Laboratory safety
 
-Chemistry is practical, and safety comes first: know the hazard signs, wear eye protection, never taste chemicals, add acid to water (not water to acid), and keep the bench clear. A safe laboratory is the condition for all experimental work.`,
+Chemistry is practical, and safety comes first: know the hazard signs, wear eye protection, never taste chemicals, add acid to water (not water to acid), and keep the bench clear. A safe laboratory is the condition for all experimental work.
+
+## Common errors and misconceptions
+
+- **Adding water to acid** — always add **acid to water**; the reverse can make the mixture boil and spit dangerous acid.
+- **Confusing accuracy and precision** — *accuracy* is closeness to the true value; *precision* is how closely repeated readings agree. A reading can be precise but inaccurate.
+- **Muddling mass and weight** — mass (kg) is the amount of matter and is constant; weight is the pull of gravity on it and changes with location.
+- **Unit-conversion slips** — 1 kg = 1000 g, 1 g = 1000 mg, 1 litre = 1000 cm³; convert one step at a time.`,
           workedExample: `**Question:** A student measures the mass of a sample four times and gets 24.8 g, 24.9 g, 24.8 g and 24.9 g. The true mass is 25.0 g.
 
 (a) Are the readings precise? Are they accurate?
@@ -161,7 +172,11 @@ In scientific notation: **2.485 × 10¹ g**.
           objective:
             "By the end of the unit, learners should be able to describe the three states of matter and the changes between them, distinguish physical from chemical changes, classify matter as elements, compounds and mixtures, and choose appropriate techniques to separate mixtures.",
           estimatedMinutes: 160,
-          notes: `## The three states of matter
+          notes: `## Introduction
+
+Matter comes in a few forms and can be sorted, changed and separated in orderly ways. Water can be ice, liquid or steam; a mixture of sand and salt can be pulled apart again; but burning wood makes something new that cannot be un-burned. This topic explains the three **states of matter** and the changes between them, the difference between a **physical** and a **chemical** change, how matter is classified into **elements, compounds and mixtures**, and the techniques used to **separate mixtures**.
+
+## The three states of matter
 
 All matter is made of tiny particles. The state depends on how much energy the particles have and how strongly they attract one another.
 
@@ -227,7 +242,14 @@ Choose the method by the difference in properties between the components.
 - **Magnetic separation** — magnetic from non-magnetic solids (iron filings from sand): a **solid–solid** method.
 - **Decantation** — pouring off a liquid from a settled solid.
 
-The syllabus groups these by the kind of mixture: **solid–solid, solid–liquid, and liquid–liquid**.`,
+The syllabus groups these by the kind of mixture: **solid–solid, solid–liquid, and liquid–liquid**.
+
+## Common errors and misconceptions
+
+- **Confusing physical and chemical change** — a **physical** change makes no new substance and is usually reversible (melting ice, dissolving salt); a **chemical** change makes a new substance and is hard to reverse (burning, rusting).
+- **Calling a compound a mixture** — in a **compound** the elements are chemically joined in a fixed ratio (water is always H₂O); in a **mixture** they are simply mixed in any ratio and keep their own properties.
+- **Thinking melting and boiling are the same** — melting is solid → liquid; boiling/evaporation is liquid → gas.
+- **Choosing the wrong separation method** — match it to the mixture: filtration for an insoluble solid in liquid, distillation to recover the solvent, a magnet for iron from sand.`,
           workedExample: `**Question:** A learner is given a mixture of iron filings, common salt and sand. Describe how to recover each component separately, and classify the original mixture and each recovered substance.
 
 **Solution**

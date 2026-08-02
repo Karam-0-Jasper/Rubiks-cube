@@ -17,7 +17,11 @@ export const chemistryG10P2: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to outline the contributions of Dalton, Thomson, Rutherford and Bohr to atomic theory, and name the three fundamental particles with their charges, masses and positions in the atom.",
       estimatedMinutes: 150,
-      notes: `## The idea of the atom
+      notes: `## Introduction
+
+Everything is built from **atoms**, particles far too small to see even with an ordinary microscope. Because no one could look at an atom directly, our picture of it was built up piece by piece over two hundred years, each scientist improving on the last as new experiments revealed more. This topic follows that story — from Dalton's solid sphere to Bohr's shells — and then names the three **fundamental particles** (proton, neutron, electron) with their charges, masses and positions inside the atom. It is a fine example of how a scientific model changes as evidence grows.
+
+## The idea of the atom
 
 An **atom** is the smallest particle of an element that still has the properties of that element. The idea developed over two centuries as scientists tested and improved earlier models.
 
@@ -61,7 +65,14 @@ Key points:
 
 ## Why the gold-foil result mattered
 
-Before Rutherford, the plum-pudding model spread the positive charge evenly. The fact that a few alpha particles bounced **straight back** could only be explained if the positive charge was concentrated in a tiny, dense centre — the nucleus. This single experiment overturned Thomson's model.`,
+Before Rutherford, the plum-pudding model spread the positive charge evenly. The fact that a few alpha particles bounced **straight back** could only be explained if the positive charge was concentrated in a tiny, dense centre — the nucleus. This single experiment overturned Thomson's model.
+
+## Common errors and misconceptions
+
+- **Thinking the atom is mostly solid** — an atom is mostly **empty space**; its mass is packed into a tiny central nucleus.
+- **Getting the charges wrong** — the **proton** is positive, the **electron** negative, the **neutron** has no charge. Protons and neutrons sit in the nucleus; electrons occupy shells around it.
+- **Saying electrons weigh as much as protons** — an electron's mass is about 1/1836 of a proton's; almost all the mass is in the nucleus.
+- **Treating a model as the final truth** — each atomic model was the best picture *at the time* and was replaced when new evidence appeared.`,
       workedExample: `**Task.** Explain what Rutherford's gold-foil experiment showed, and use a labelled account of the results to justify the nuclear model of the atom.
 
 **The experiment**
@@ -250,7 +261,11 @@ The atom has a **small, dense, positively charged nucleus** at its centre contai
       objective:
         "By the end of the topic, learners should be able to define atomic number and mass number, work out the numbers of protons, neutrons and electrons in an atom, explain what isotopes are, and write the electron configuration of the first twenty elements.",
       estimatedMinutes: 150,
-      notes: `## Atomic number and mass number
+      notes: `## Introduction
+
+Now that we know an atom is made of protons, neutrons and electrons, we can count them and see how they are arranged. Two simple numbers — the **atomic number** and the **mass number** — tell us everything about the make-up of an atom's nucleus, explain why **isotopes** of the same element exist, and let us write out the arrangement of an atom's electrons (its **electron configuration**), which in turn decides how the element behaves.
+
+## Atomic number and mass number
 
 Two numbers describe an atom:
 
@@ -307,7 +322,14 @@ We write the arrangement as numbers separated by commas or dots.
 
 ## Why the outer shell matters
 
-The electrons in the **outermost shell** are called **valence electrons**. They decide how an element reacts. Sodium (2, 8, **1**) has one outer electron it readily loses; that is why it is a very reactive metal. This links atomic structure directly to chemical behaviour — the theme of the next period, the periodic table.`,
+The electrons in the **outermost shell** are called **valence electrons**. They decide how an element reacts. Sodium (2, 8, **1**) has one outer electron it readily loses; that is why it is a very reactive metal. This links atomic structure directly to chemical behaviour — the theme of the next period, the periodic table.
+
+## Common errors and misconceptions
+
+- **Mass number vs atomic number** — atomic number (Z) = protons; mass number (A) = protons + neutrons. Neutrons = A − Z (don't forget to subtract).
+- **Thinking isotopes are different elements** — isotopes have the **same** number of protons (same element) but **different** numbers of neutrons, so different mass numbers.
+- **Overfilling shells** — the shells fill 2, then 8, then 8 for the first twenty elements; the first shell holds a **maximum of 2**.
+- **Confusing atomic number with the number of electrons in a charged ion** — in a *neutral atom* protons = electrons, but an ion has gained or lost electrons.`,
       workedExample: `**Task.** An atom of aluminium is written ²⁷₁₃Al. (a) State its atomic number and mass number. (b) Work out its numbers of protons, neutrons and electrons. (c) Write its electron configuration. (d) Explain how an isotope of aluminium would differ.
 
 **Part (a)**
