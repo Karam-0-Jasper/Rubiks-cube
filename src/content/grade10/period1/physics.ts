@@ -28,7 +28,11 @@ export const physics: SubjectContent = {
           objective:
             "By the end of the unit, learners should be able to state the branches of physics, distinguish fundamental from derived quantities with their SI units, use metric prefixes and instruments, express answers to correct significant figures, and classify quantities as scalar or vector.",
           estimatedMinutes: 160,
-          notes: `## What physics is
+          notes: `## Introduction
+
+**Physics** tries to explain, in the simplest possible terms, how the universe works — why things fall, float, get hot, or move. But before we can explain, we must **measure**: physics is an exact science, and every law in it connects quantities that can be measured with a number and a unit. That is why this first topic begins with measurement — the fundamental quantities, their SI units, and how to measure length, mass, time and volume accurately.
+
+## What physics is
 
 **Physics** is the study of matter, energy and the interactions between them. Every branch rests on **measurement**, which is why measurement comes first.
 
@@ -97,7 +101,14 @@ Note the pairs — distance/displacement and speed/velocity — where the vector
 ## Mass and weight
 
 - **Mass** is the quantity of matter, measured in kg by a beam balance; it does not change with location.
-- **Weight** is the gravitational force on a body, measured in newtons by a spring balance; **W = mg**, and it varies with g.`,
+- **Weight** is the gravitational force on a body, measured in newtons by a spring balance; **W = mg**, and it varies with g.
+
+## Common errors and misconceptions
+
+- **Confusing mass and weight** — **mass** (kg) is constant; **weight** (N) is a force that changes with gravity. The same person has the same mass but less weight on the Moon.
+- **Mixing scalars and vectors** — a **scalar** has size only (distance, speed, mass); a **vector** has size *and* direction (displacement, velocity, force).
+- **Forgetting to convert units** — work in SI units: metres, kilograms, seconds. Mixing cm with m or g with kg is a common source of wrong answers.
+- **Reading instruments carelessly** — avoid *parallax* error by looking straight at the scale, and check the instrument reads zero before use.`,
           workedExample: `**Question:** A metal block measures 4.0 cm × 2.5 cm × 2.0 cm and has a mass of 156 g.
 
 (a) Calculate its density in g/cm³ and in kg/m³.
@@ -159,7 +170,11 @@ Convert to kg/m³: multiply g/cm³ by 1000.
           objective:
             "By the end of the unit, learners should be able to define and calculate density and relative density, define pressure, and explain and calculate pressure in solids, liquids and gases.",
           estimatedMinutes: 160,
-          notes: `## Density
+          notes: `## Introduction
+
+Why does a huge ship of steel float while a small nail sinks? Why does a sharp knife cut more easily than a blunt one? The answers lie in two properties of matter: **density** — how much matter is packed into a space — and **pressure** — how a force is spread over an area. This topic defines and calculates both, and uses them to explain floating, sinking, and how pressure acts in solids, liquids and gases.
+
+## Density
 
 **Density** is mass per unit volume: **density = mass ÷ volume**, unit kg/m³ (or g/cm³).
 
@@ -217,7 +232,14 @@ Gases exert pressure because their fast-moving particles collide with the walls 
 
 - **Wide tyres and tank tracks** spread weight over a large area to reduce pressure on soft ground.
 - **Dam walls are thicker at the bottom** because water pressure increases with depth.
-- **Drinking straws and suction** work because atmospheric pressure pushes liquid up when you reduce the pressure inside.`,
+- **Drinking straws and suction** work because atmospheric pressure pushes liquid up when you reduce the pressure inside.
+
+## Common errors and misconceptions
+
+- **Thinking heavy things are always dense** — density is mass *per volume*: a large light object (foam) has low density; a small heavy object (lead) has high density. Floating depends on density, not weight.
+- **Confusing pressure and force** — the same force gives **more** pressure over a **small** area (a sharp knife, a drawing pin) and less over a large area (snowshoes, wide tyres). Pressure = force ÷ area.
+- **Forgetting units** — density in kg/m³ needs mass in kg and volume in m³; mixing g/cm³ with kg/m³ (they differ by 1000) causes errors.
+- **Thinking pressure in a liquid acts only downward** — liquid pressure acts **equally in all directions** at a given depth and increases with depth.`,
           workedExample: `**Question:** A rectangular concrete block has a mass of 60 kg and a base measuring 0.5 m × 0.4 m. Take g = 10 N/kg.
 
 (a) Calculate the pressure it exerts on the ground.
