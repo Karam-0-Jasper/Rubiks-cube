@@ -15,7 +15,11 @@ export const physicsG10P4: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to distinguish between heat and temperature, describe the Celsius and Kelvin scales, explain how a thermometer works, and convert between temperature scales.",
       estimatedMinutes: 150,
-      notes: `## Heat and temperature are not the same
+      notes: `## Introduction
+
+We use the words "hot" and "heat" loosely every day, but physics draws a sharp line between **temperature** (how hot something is) and **heat** (the energy that flows because of a temperature difference). Getting this distinction right is the key to the whole of thermal physics. This topic separates the two ideas, describes the **Celsius** and **Kelvin** temperature scales, explains how a **thermometer** works, and shows how to convert between the scales.
+
+## Heat and temperature are not the same
 
 These two terms are often confused, but they are different.
 
@@ -51,7 +55,14 @@ So 27 °C = 27 + 273 = **300 K**, and 0 K = **−273 °C** (absolute zero).
 
 - **Clinical thermometer** — measures body temperature (about 35–42 °C), with a narrow range and a kink to hold the reading.
 - **Laboratory thermometer** — a wider range for experiments.
-- **Digital and thermocouple thermometers** — use electrical changes with temperature.`,
+- **Digital and thermocouple thermometers** — use electrical changes with temperature.
+
+## Common errors and misconceptions
+
+- **Confusing heat and temperature** — **temperature** is how hot something is (°C or K); **heat** is the *energy* that flows from hot to cold. A cup of boiling water and a bathtub of warm water: the cup is at a higher temperature, but the bath holds far more heat energy.
+- **Converting scales wrongly** — Kelvin = Celsius **+ 273** (so 0 °C = 273 K); don't multiply.
+- **Thinking heat flows from big to small objects** — heat always flows from **higher to lower temperature**, regardless of size.
+- **Reading a thermometer with parallax** — look straight at the scale, level with the liquid, to avoid an error.`,
       workedExample: `**Task.** (a) Explain the difference between heat and temperature. (b) Convert 37 °C (normal body temperature) to kelvin, and convert 350 K to Celsius.
 
 **Part (a) — heat vs temperature**
@@ -239,7 +250,11 @@ Use K = °C + 273 and °C = K − 273.
       objective:
         "By the end of the topic, learners should be able to describe the three methods of heat transfer — conduction, convection and radiation — and explain the thermal expansion of solids, liquids and gases with everyday examples.",
       estimatedMinutes: 150,
-      notes: `## Three ways heat travels
+      notes: `## Introduction
+
+Heat never stays still — it flows from the sun to the earth, from a fire to a pot, from a warm body to the cold night air. Understanding **how** heat travels lets us both use it (cooking, drying) and stop it (keeping a house cool, insulating a flask). Heat also makes materials **expand**, an effect with important everyday consequences. This topic describes the three ways heat travels — **conduction, convection and radiation** — and the **thermal expansion** of solids, liquids and gases.
+
+## Three ways heat travels
 
 Heat energy moves from hot places to cold places in three ways: **conduction, convection and radiation**.
 
@@ -286,7 +301,14 @@ Most substances **expand when heated and contract when cooled**, because their p
 - A tight metal lid loosens when warmed under hot water (the metal expands).
 - The liquid in a **thermometer** works by thermal expansion.
 
-**Water is unusual:** between 0 °C and 4 °C it actually expands as it cools, so ice floats — important for aquatic life.`,
+**Water is unusual:** between 0 °C and 4 °C it actually expands as it cools, so ice floats — important for aquatic life.
+
+## Common errors and misconceptions
+
+- **Confusing convection and conduction** — **conduction** passes heat through a solid without the material moving; **convection** carries heat by the actual movement of a heated fluid (liquid or gas) that rises because it is less dense.
+- **Thinking radiation needs a medium** — **radiation** travels as waves and needs **no material** at all; that is how the Sun's heat reaches us across empty space.
+- **Believing metals are "naturally cold"** — a metal feels cold because it is a good **conductor** that draws heat from your hand quickly, not because it is colder than nearby wood.
+- **Forgetting gases expand most** — for the same temperature rise, gases expand more than liquids, and liquids more than solids.`,
       workedExample: `**Task.** (a) Name the method of heat transfer in each case: (i) a metal rod heated at one end; (ii) warm air rising in a room; (iii) heat from the Sun reaching Earth. (b) Explain why gaps are left between sections of a railway line.
 
 **Part (a) — identify the heat-transfer method**
