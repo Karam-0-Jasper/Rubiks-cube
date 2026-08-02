@@ -15,7 +15,11 @@ export const mathematicsG10P3: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to measure and calculate angles, apply the angle properties of parallel lines and triangles, use the Pythagoras theorem in right-angled triangles, and calculate angles in quadrilaterals and polygons.",
       estimatedMinutes: 200,
-      notes: `## Angles and their types
+      notes: `## Introduction
+
+**Geometry** is the mathematics of shape, size and position. "Plane" geometry deals with flat figures — lines, angles, triangles and polygons drawn on a flat surface. Its power is that a handful of **angle facts**, applied carefully, let you work out unknown angles and lengths you were never told, which is exactly what examinations test. In this topic we name and measure angles, use the angle properties of straight lines, parallel lines, triangles and polygons, and apply the **Pythagoras theorem** in right-angled triangles.
+
+## Angles and their types
 
 An **angle** is formed where two lines meet, measured in **degrees (°)**.
 
@@ -93,7 +97,14 @@ A **quadrilateral** has four sides; its **angles add up to 360°**.
 - **Trapezium** — one pair of parallel sides.
 - **Kite** — two pairs of adjacent equal sides.
 
-For any polygon with **n** sides, the interior angles add up to **(n − 2) × 180°**.`,
+For any polygon with **n** sides, the interior angles add up to **(n − 2) × 180°**. The **exterior** angles of any polygon always add up to **360°**, so each exterior angle of a regular n-sided polygon is 360°/n.
+
+## Common errors to watch for
+
+- **Applying the parallel-line rules when the lines are not parallel** — corresponding/alternate/co-interior facts only hold for parallel lines.
+- **Pythagoras direction:** *add* the squares to find the hypotenuse (a² + b² = c²), but *subtract* to find a shorter side (b² = c² − a²). Reversing this is the commonest slip.
+- **Assuming a triangle is isosceles or right-angled** because it looks that way — use only the facts given.
+- **Forgetting the angle sum grows with sides:** a pentagon's angles total (5 − 2) × 180° = 540°, not 360°.`,
       workedExample: `**Problem.** (a) In a right-angled triangle the two shorter sides are 6 cm and 8 cm. Find the hypotenuse. (b) Two angles of a triangle are 55° and 65°. Find the third angle and the exterior angle at that vertex.
 
 **Part (a) — Pythagoras**

@@ -15,7 +15,11 @@ export const mathematicsG10P6: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to explain what a rigid motion is, perform and describe translations using a vector, and reflect a figure in a given mirror line.",
       estimatedMinutes: 160,
-      notes: `## What is a rigid motion?
+      notes: `## Introduction
+
+**Transformation geometry** studies what happens to a shape when we move it about the plane — slide it, flip it or turn it. These particular moves keep the shape's size and angles exactly the same, so the moved shape is a perfect copy in a new place. Understanding them builds the idea of **congruence** and prepares learners for coordinate geometry. In this topic we meet translation (sliding) and reflection (flipping); rotation (turning) follows in the next topic.
+
+## What is a rigid motion?
 
 A **transformation** moves or changes a figure. A **rigid motion** (or isometry) is a transformation that moves a figure **without changing its size or shape** — the image is **congruent** (identical) to the original, only its **position** (and possibly orientation) changes.
 
@@ -53,14 +57,23 @@ Common mirror lines and their rules on coordinates:
 
 - Reflection in the **x-axis:** (x, y) → **(x, −y)** (the y-coordinate changes sign).
 - Reflection in the **y-axis:** (x, y) → **(−x, y)** (the x-coordinate changes sign).
+- Reflection in the line **y = x:** (x, y) → **(y, x)** (the coordinates swap).
+- Reflection in the line **y = −x:** (x, y) → **(−y, −x)**.
 
-*Example:* reflecting P(3, 2) in the x-axis gives P′(3, −2).
+*Example:* reflecting P(3, 2) in the x-axis gives P′(3, −2); reflecting it in y = x gives (2, 3).
 
 Points **on** the mirror line do not move. The mirror line is the **perpendicular bisector** of the line joining each point to its image.
 
 ## Congruence under rigid motion
 
-Because translation and reflection do not change size or shape, the object and image are always **congruent**. This is the key property of every rigid motion — distances and angles are preserved.`,
+Because translation and reflection do not change size or shape, the object and image are always **congruent**. This is the key property of every rigid motion — distances and angles are preserved.
+
+## Common errors to watch for
+
+- **Mixing up the axis rules:** reflecting in the **x-axis** changes the sign of **y** (not x); reflecting in the **y-axis** changes the sign of **x**.
+- **Translating by subtracting instead of adding** the vector — to move right and up you *add* positive numbers.
+- **Reading a column vector wrong way round** — the top number is the horizontal move (across), the bottom is the vertical move (up/down).
+- **Thinking a reflection changes size** — it never does; only the orientation flips.`,
       workedExample: `**Task.** A triangle has vertices A(1, 1), B(4, 1) and C(1, 3).
 (a) Translate the triangle by the vector ( 2, 3 ) and give the new coordinates.
 (b) Reflect the original triangle in the x-axis and give the new coordinates.
@@ -250,7 +263,11 @@ The image is a mirror image below the x-axis, the same size and shape as the ori
       objective:
         "By the end of the topic, learners should be able to rotate a figure about a centre through a given angle and direction, and state the properties common to all rigid motions.",
       estimatedMinutes: 150,
-      notes: `## Rotation — turning
+      notes: `## Introduction
+
+We have slid figures (translation) and flipped them (reflection). The third rigid motion is the **rotation** — a turn about a fixed point, like the hands of a clock sweeping around its centre. Rotation completes the family of rigid motions, and this topic also draws together the **properties they all share**, which is a favourite examination question.
+
+## Rotation — turning
 
 A **rotation** turns a figure about a fixed point called the **centre of rotation**, through a given **angle** and in a given **direction** (clockwise or anticlockwise).
 
@@ -301,7 +318,14 @@ What can change is the figure's **position** (all three) and its **orientation**
 |---|---|---|
 | **Translation** | a vector | unchanged |
 | **Reflection** | a mirror line | reversed (mirror image) |
-| **Rotation** | centre, angle, direction | turned |`,
+| **Rotation** | centre, angle, direction | turned |
+
+## Common errors to watch for
+
+- **Forgetting the direction** — a rotation is only fully described with centre, angle **and** direction (clockwise vs anticlockwise); 90° clockwise and 90° anticlockwise give different images.
+- **Confusing the 90° rules** — 90° anticlockwise about the origin is (x, y) → (−y, x); 90° clockwise is (x, y) → (y, −x). Check with a quick sketch.
+- **Rotating about the wrong point** — unless told otherwise, use the given centre; the centre itself never moves.
+- **Thinking rotation changes size** — like all rigid motions, it preserves lengths and angles.`,
       workedExample: `**Task.** A point P has coordinates (3, 1).
 (a) Rotate P by 180° about the origin.
 (b) Rotate P by 90° anticlockwise about the origin.
