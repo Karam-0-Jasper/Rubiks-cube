@@ -17,7 +17,11 @@ export const physicsG10P2: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to distinguish distance from displacement and speed from velocity, calculate acceleration, and apply the equations of uniformly accelerated motion to solve problems.",
       estimatedMinutes: 170,
-      notes: `## Distance and displacement
+      notes: `## Introduction
+
+The most familiar thing in the world is that things **move** — people walk, cars drive, rain falls. **Mechanics** begins by describing motion precisely: not just "fast" or "far", but exact distances, speeds and accelerations. Once motion is described with the right quantities, a small set of **equations** lets us predict where a moving object will be and how fast it will be going. This topic sets up those quantities and the equations of uniformly accelerated motion.
+
+## Distance and displacement
 
 - **Distance** is the total length of the path travelled. It is a **scalar** — it has size only. Unit: metre (m).
 - **Displacement** is the straight-line distance from start to finish, **in a stated direction**. It is a **vector** — it has size *and* direction.
@@ -56,7 +60,14 @@ Choose the equation that contains the three quantities you know and the one you 
 
 ## Units and sign convention
 
-Always work in SI units — metres, seconds, m/s, m/s². Pick one direction as positive; a velocity or acceleration in the opposite direction is then negative. Keeping the signs consistent is what separates a correct answer from a wrong one.`,
+Always work in SI units — metres, seconds, m/s, m/s². Pick one direction as positive; a velocity or acceleration in the opposite direction is then negative. Keeping the signs consistent is what separates a correct answer from a wrong one.
+
+## Common errors and misconceptions
+
+- **Confusing speed and velocity** — speed is a scalar (size only); velocity is a vector (size *and* direction). An object moving at steady speed round a circle has changing velocity.
+- **Thinking acceleration means "speeding up" only** — acceleration is any *change* in velocity: speeding up, slowing down (negative acceleration/deceleration), or changing direction.
+- **Forgetting u = 0 for "starts from rest"** — this simplifies the equations; missing it gives wrong answers.
+- **Mixing up the equations** — list what you know (u, v, a, s, t), then pick the equation containing exactly those; don't guess.`,
       workedExample: `**Problem.** A car starts from rest and accelerates uniformly, reaching 20 m/s in 8 s. Find (a) its acceleration, and (b) the distance it travels in that time.
 
 **List what is given**
@@ -268,7 +279,11 @@ The car accelerates at 2.5 m/s² and covers 80 m in the 8 seconds.`,
       objective:
         "By the end of the topic, learners should be able to interpret displacement-time and velocity-time graphs, describe the motion of freely falling bodies under gravity, and state and apply Newton's three laws of motion and the law of universal gravitation.",
       estimatedMinutes: 170,
-      notes: `## Motion graphs
+      notes: `## Introduction
+
+Numbers describe motion, but a **graph** shows it at a glance — you can *see* an object speeding up, stopping, or turning back. And behind all motion lie **Newton's three laws**, three short statements that explain why things move as they do, from a falling mango to a rocket. This topic reads motion from displacement–time and velocity–time graphs, describes **free fall** under gravity, and states and applies **Newton's laws** and the law of universal gravitation.
+
+## Motion graphs
 
 Graphs are a powerful way to describe motion.
 
@@ -318,7 +333,14 @@ Force is measured in **newtons (N)**; 1 N is the force that gives a 1 kg mass an
 
 ## Newton's law of universal gravitation
 
-Every object attracts every other object with a **gravitational force**. The force is larger for larger masses and weaker as the distance between them grows. This same force keeps the Moon orbiting the Earth and makes objects fall to the ground — weight is the pull of the Earth's gravity on a mass (W = mg).`,
+Every object attracts every other object with a **gravitational force**. The force is larger for larger masses and weaker as the distance between them grows. This same force keeps the Moon orbiting the Earth and makes objects fall to the ground — weight is the pull of the Earth's gravity on a mass (W = mg).
+
+## Common errors and misconceptions
+
+- **Reading a graph's shape wrongly** — on a *displacement–time* graph the **gradient (slope)** is the velocity; on a *velocity–time* graph the gradient is the **acceleration** and the **area under the line** is the distance. Don't confuse the two graph types.
+- **Thinking heavier objects fall faster** — ignoring air resistance, all objects fall with the **same** acceleration g (~10 m/s²); a stone and a feather would land together in a vacuum.
+- **Misreading Newton's third law** — the action and reaction forces act on **different** objects, so they never cancel each other out.
+- **Believing a moving object needs a constant force** — by the first law, an object keeps moving at constant velocity with **no** net force; force is needed only to *change* motion.`,
       workedExample: `**Problem.** A stone of mass 2 kg is dropped from a cliff. Taking g = 10 m/s², find (a) its velocity after 3 s, (b) the distance it has fallen in that time, and (c) the force of gravity acting on it.
 
 **Given**
