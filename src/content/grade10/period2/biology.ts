@@ -16,7 +16,11 @@ export const biologyG10P2: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to explain why living things are classified, list the seven taxonomic ranks from kingdom to species, and describe the main characteristics of the five kingdoms of living things.",
       estimatedMinutes: 150,
-      notes: `## Why we classify
+      notes: `## Introduction
+
+Life on Earth is astonishingly varied — from bacteria too small to see, through moulds, mosses and mango trees, to fish, birds and human beings. To study such variety without becoming lost, biologists **classify** living things: they sort them into named groups by the features they share. This topic explains why we classify, the ladder of ranks from kingdom down to species, how each organism gets a two-part scientific name, and the main features of the **five kingdoms** into which all life is divided.
+
+## Why we classify
 
 There are millions of kinds of living things. **Classification (taxonomy)** is the science of sorting them into groups based on **shared characteristics**. It helps scientists to:
 
@@ -64,7 +68,15 @@ Each species has a two-part scientific name (the **binomial system**, devised by
 
 ## Where do viruses fit?
 
-**Viruses** sit on the border between living and non-living. They have genetic material and can reproduce — but **only inside a host cell**. Outside a host they show no signs of life, so most biologists do not place them in any kingdom.`,
+**Viruses** sit on the border between living and non-living. They have genetic material and can reproduce — but **only inside a host cell**. Outside a host they show no signs of life, so most biologists do not place them in any kingdom.
+
+## Common errors and misconceptions
+
+- **Writing a scientific name wrongly** — the genus takes a capital and the species is lower case, both italic (or underlined when handwritten): *Homo sapiens*, not *homo Sapiens*.
+- **Confusing the order of ranks** — it runs Kingdom → Phylum → Class → Order → Family → Genus → **Species** (broad to narrow); species is the *smallest* group, not the largest.
+- **Thinking fungi are plants** — fungi cannot photosynthesise; they *absorb* their food and have walls of chitin, so they are their own kingdom.
+- **Calling all micro-organisms "germs" or bacteria** — bacteria (Monera) are prokaryotic; *Amoeba* and *Paramecium* are protists; yeast is a fungus. They are different kingdoms.
+- **Classing viruses as a kingdom** — they are not placed in any kingdom because they are not fully living.`,
       workedExample: `**Task.** Classify the domestic cat, whose scientific name is *Felis catus*, and answer the questions below.
 
 The full classification of the cat is:
@@ -278,7 +290,11 @@ The full classification of the cat is:
       objective:
         "By the end of the topic, learners should be able to describe the structure and life processes of unicellular organisms such as Amoeba, Paramecium and Euglena, and name common unicellular microbes that cause disease.",
       estimatedMinutes: 150,
-      notes: `## What is a unicellular organism?
+      notes: `## Introduction
+
+A whole organism made of just **one cell** may sound too simple to survive — yet single-celled creatures are among the most successful life forms on Earth, living in ponds, soil, and inside other organisms. Each must do, within one cell, everything your billions of cells share out between them: move, feed, breathe, remove waste and reproduce. This topic examines three classic unicellular organisms — *Amoeba*, *Paramecium* and *Euglena* — and the microbes that cause disease.
+
+## What is a unicellular organism?
 
 A **unicellular organism** is made of a **single cell** that carries out all the processes of life — feeding, movement, respiration, excretion and reproduction — on its own. Most belong to kingdom Protista or Monera.
 
@@ -324,7 +340,14 @@ Some unicellular organisms cause human disease:
 - **Viruses** (HIV causes AIDS) — not cellular, but microscopic infectious agents.
 - **Protozoa:** *Plasmodium* (a sporozoan carried by mosquitoes) causes **malaria**; *Trichomonas* causes an STI; *Entamoeba* causes amoebic dysentery.
 
-Understanding these organisms underpins hygiene, clean water and disease prevention.`,
+Understanding these organisms underpins hygiene, clean water and disease prevention.
+
+## Common errors and misconceptions
+
+- **Confusing the locomotion structures** — *Amoeba* moves with **pseudopodia**, *Paramecium* with **cilia**, and *Euglena* with a **flagellum**. Matching the wrong one loses easy marks.
+- **Thinking malaria is caused by the mosquito** — the mosquito is only the *vector* (carrier); the actual cause is the protozoan ***Plasmodium***.
+- **Calling all microbes bacteria** — *Amoeba*, *Paramecium* and *Euglena* are protozoa/protists, not bacteria.
+- **Assuming a single cell is "incomplete"** — a unicellular organism is a *complete* organism carrying out all seven life processes by itself.`,
       workedExample: `**Task.** Compare how the Amoeba and the Paramecium move and feed, and explain what makes the Euglena special.
 
 **Amoeba**
