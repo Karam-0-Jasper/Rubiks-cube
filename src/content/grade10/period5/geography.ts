@@ -16,7 +16,11 @@ export const geographyG10P5: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to name and locate the continents and oceans, and describe their relative sizes and positions on the Earth.",
       estimatedMinutes: 150,
-      notes: `## The great divisions of the Earth's surface
+      notes: `## Introduction
+
+Seen from space, the Earth is a blue planet, its surface split into vast blocks of land and even vaster stretches of water. These are the **continents** and the **oceans** — the largest features on Earth and the framework onto which every country, mountain and river is placed. Knowing them, their sizes and their positions is basic geographical literacy. This topic names and locates the seven continents and the oceans and compares their sizes.
+
+## The great divisions of the Earth's surface
 
 The Earth's surface is divided into large land masses (**continents**) and large bodies of salt water (**oceans**).
 
@@ -66,7 +70,14 @@ An **ocean** is a vast body of salt water. The oceans are all connected, but are
 
 ## Why it matters
 
-Knowing where the continents and oceans are is the foundation of geography: it lets us locate countries, understand climate, trade routes, and the movement of people and goods across the world.`,
+Knowing where the continents and oceans are is the foundation of geography: it lets us locate countries, understand climate, trade routes, and the movement of people and goods across the world.
+
+## Common errors and misconceptions
+
+- **Confusing a continent with a country** — a **continent** is a huge land mass containing many countries; Africa is a continent, Liberia is a country within it.
+- **Thinking Australia is a country only** — Australia is both a **country** and the smallest **continent**.
+- **Miscounting or misnaming oceans** — the oceans are the **Pacific, Atlantic, Indian, Southern (Antarctic) and Arctic**; the Pacific is the largest.
+- **Believing land covers most of the Earth** — water covers about **71%** of the surface; land is the smaller part.`,
       workedExample: `**Task.** (a) Name the seven continents, stating the largest and smallest. (b) On which ocean does Liberia lie, and what is the largest ocean? (c) In which hemisphere is most of the world's land found?
 
 **Part (a) — the seven continents**
@@ -244,7 +255,11 @@ Most of the world's **land** is found in the **Northern Hemisphere**; the Southe
       objective:
         "By the end of the topic, learners should be able to describe the proportion of the Earth covered by land and water, explain how it is unevenly distributed, and state the importance of the seas and oceans.",
       estimatedMinutes: 150,
-      notes: `## How much land and how much water?
+      notes: `## Introduction
+
+Land and water are not shared out evenly across the Earth — there is far more water than land, and even the land is bunched into one half of the globe. This uneven split shapes climate, farming, fishing and trade for every country, including Liberia with its Atlantic coast. This topic states the **proportion** of land to water, describes how unevenly they are **distributed** between the hemispheres, and explains why the **seas and oceans** are so important.
+
+## How much land and how much water?
 
 The Earth is often called the **"blue planet"** because most of its surface is water. Of the Earth's total surface:
 
@@ -290,7 +305,14 @@ The oceans and seas are vital to life and human activity:
 
 ## Land and the environment
 
-The land, though smaller in area, is where people **live, farm and build**. Understanding the balance and importance of land and water is part of caring for the environment — the theme of this unit.`,
+The land, though smaller in area, is where people **live, farm and build**. Understanding the balance and importance of land and water is part of caring for the environment — the theme of this unit.
+
+## Common errors and misconceptions
+
+- **Thinking land and water are roughly equal** — water covers about **71%** and land only about **29%**; there is more than twice as much water.
+- **Believing the hemispheres are balanced** — most of the world's **land** is in the **Northern Hemisphere**, while the **Southern Hemisphere** is mostly ocean.
+- **Underrating the ocean** — the seas provide food, water (through the water cycle), transport routes, and regulate climate; they are not just empty space.
+- **Confusing a sea with an ocean** — an **ocean** is one of the great water bodies; a **sea** is a smaller part of an ocean, often partly enclosed by land.`,
       workedExample: `**Task.** (a) State the approximate percentages of the Earth's surface covered by water and by land. (b) Why is the Earth called the "blue planet"? (c) Give three reasons the oceans are important to people.
 
 **Part (a) — the proportions**

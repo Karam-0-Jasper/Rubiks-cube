@@ -15,7 +15,11 @@ export const geographyG10P4: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to state the essential parts of a map, find direction and bearing, use a map's scale to measure real distances, and explain the difference between the types of scale.",
       estimatedMinutes: 160,
-      notes: `## What is a map?
+      notes: `## Introduction
+
+A **map** is one of geography's most powerful tools — it lets you hold a whole country, or the world, in your hands and study places you could never see all at once. But a map is only useful if you can read it: find directions, measure real distances, and understand its symbols. This topic sets out the **essential parts** of a map, how to find **direction and bearing**, and how to use a map's **scale** to turn map distances into real ones.
+
+## What is a map?
 
 A **map** is a **drawing of the Earth's surface (or part of it) as seen from above**, drawn to scale on flat paper. Maps let us study places we cannot see all at once.
 
@@ -69,7 +73,14 @@ To find a real distance:
 1. Measure the map distance with a ruler (straight line) or a piece of string (winding roads/rivers).
 2. Multiply by the scale.
 
-*Example:* on a 1 : 100 000 map, 4 cm represents 4 × 100 000 cm = 400 000 cm = **4 km**.`,
+*Example:* on a 1 : 100 000 map, 4 cm represents 4 × 100 000 cm = 400 000 cm = **4 km**.
+
+## Common errors and misconceptions
+
+- **Forgetting to convert units** — a scale of 1 : 100 000 gives the real distance in the *same unit* first (cm), which you then convert to km (÷100 000 for cm→km). Missing the conversion is the commonest slip.
+- **Thinking a large-scale map covers a large area** — the opposite: a **large-scale** map (e.g. 1 : 10 000) shows a **small** area in great detail; a **small-scale** map shows a large area with less detail.
+- **Confusing direction and bearing** — a **direction** is a compass point (NE); a **bearing** is a precise angle measured *clockwise from north* (0°–360°).
+- **Measuring a winding route with a straight ruler** — use string along the curves for roads and rivers, then straighten it against the ruler.`,
       workedExample: `**Task.** On a map with a scale of 1 : 50 000, the straight-line distance between two towns measures 6 cm. (a) What is the real distance in kilometres? (b) If town B is directly to the right of town A on the map, in which direction and on what bearing does B lie from A?
 
 **Part (a) — real distance**
@@ -252,7 +263,11 @@ The scale 1 : 50 000 means 1 cm on the map = 50 000 cm on the ground.
       objective:
         "By the end of the topic, learners should be able to use four- and six-figure grid references to locate places on a map, and identify common conventional map symbols.",
       estimatedMinutes: 150,
-      notes: `## The grid
+      notes: `## Introduction
+
+Once you can read a map's scale and direction, the next skill is **pinpointing an exact spot** — a village, a bridge, a hilltop — so that anyone else can find the same place. Maps make this possible with two tools: a numbered **grid** that gives every point a reference number, and a set of standard **symbols** that pack a lot of information into a small space. This topic teaches four- and six-figure **grid references** and the common **conventional symbols**.
+
+## The grid
 
 Topographic maps are covered by a network of numbered lines called a **grid**, which divides the map into squares. The lines make it possible to give the exact **location** of any place.
 
@@ -302,7 +317,14 @@ Because maps are drawn to scale, real features are shown by small **conventional
 - **Black** — roads, railways, buildings, boundaries.
 - Small pictures/letters for a **church, school, post office, bridge, hospital**, etc.
 
-Reading symbols with the key lets you interpret what the land is really like — where the rivers, roads, settlements and high ground are.`,
+Reading symbols with the key lets you interpret what the land is really like — where the rivers, roads, settlements and high ground are.
+
+## Common errors and misconceptions
+
+- **Reading the grid reference in the wrong order** — always give **eastings first, then northings** ("along the corridor, then up the stairs"). Reversing them points to the wrong square.
+- **Confusing four- and six-figure references** — a **four-figure** reference names a whole *square*; a **six-figure** reference pinpoints a *precise point* within it by imagining each square divided into tenths.
+- **Guessing symbols instead of using the key** — always check the map's **key (legend)**; the same symbol can mean different things on different maps.
+- **Mixing up colours** — blue is usually water, brown is contours/relief, green is vegetation; don't assume from memory.`,
       workedExample: `**Task.** (a) Explain the difference between a four-figure and a six-figure grid reference. (b) A feature lies in the square with bottom-left corner at easting 56, northing 32, and is 3 tenths east and 5 tenths north within that square. Give its four-figure and six-figure references.
 
 **Part (a) — four vs six figures**
