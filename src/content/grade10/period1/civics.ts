@@ -23,7 +23,11 @@ export const civics: SubjectContent = {
           objective:
             "By the end of the lesson, learners should be able to define civics, explain why it is studied, and distinguish between rights, duties, obligations and privileges.",
           estimatedMinutes: 80,
-          notes: `## What civics is
+          notes: `## Introduction
+
+What does it really mean to be a citizen — and not merely a resident — of a country? **Civics** answers that question. It is the study of the **rights** citizens hold, the **duties** they owe, and the government that binds the two together. This lesson defines civics and explains why it matters, then draws the careful distinctions — between a **right**, a **duty**, an **obligation** and a **privilege** — that the whole subject depends on, showing why a right can never be taken away lightly while a privilege can be withdrawn.
+
+## What civics is
 
 **Civics** is the study of the rights and duties of citizens and of the structure and functioning of government.
 
@@ -81,7 +85,14 @@ Freedom of speech does not extend to defamation or incitement to violence. Freed
 - Vote in elections when qualified
 - Protect public property and the environment
 - Report crime and assist in the administration of justice
-- Render national service where required`,
+- Render national service where required
+
+## Common errors and misconceptions
+
+- **Confusing a right with a privilege** — a **right** (e.g. a fair trial) cannot lawfully be removed without due process; a **privilege** (e.g. a driving licence) can be withdrawn by the authority that granted it.
+- **Thinking rights are absolute** — *no* right is unlimited; rights may lawfully be restricted where they injure others or threaten public order, health, safety or national security.
+- **Claiming rights while rejecting duties** — every right implies a corresponding **duty** on others; a society that claims rights but shirks duties cannot function.
+- **Treating "duty" and "obligation" as identical to a wish** — both are **binding** (legally or morally), not optional preferences; failing them has consequences.`,
           workedExample: `**Question:** A student union announces a protest march through Monrovia against a rise in school fees. The city authority refuses permission on the ground that the route would block the main hospital access road, and offers an alternative route. The union claims its constitutional rights have been violated.
 
 Analyse the situation using the concepts of rights, duties and limitations.
@@ -292,7 +303,11 @@ The union also has **duties**: to respect the rights of others and to obey lawfu
           objective:
             "By the end of the lesson, learners should be able to define citizenship, describe the ways in which Liberian citizenship is acquired and lost, and explain the rights and responsibilities attaching to it.",
           estimatedMinutes: 80,
-          notes: `## What citizenship is
+          notes: `## Introduction
+
+Being physically present in a country is not the same as *belonging* to it. **Citizenship** is full legal membership of a state — the status that carries political rights, duties and the state's protection. This lesson explains what citizenship is, the worldwide ways it is **acquired** (by birth, descent, naturalisation and more) and **lost**, and how Liberia's own law works, including the debated **Negro-descent requirement** of Article 27(b) and the shifting position on **dual citizenship**.
+
+## What citizenship is
 
 **Citizenship** is full legal membership of a state, carrying rights, duties and the protection of that state.
 
@@ -357,7 +372,14 @@ The historical justification advanced for this provision was the protection of t
 - Participation in elections
 - Respect for the rights of others
 - Protection of public property and the environment
-- Service to the community`,
+- Service to the community
+
+## Common errors and misconceptions
+
+- **Confusing *jus soli* with *jus sanguinis*** — *jus soli* is citizenship by **birth in the territory**; *jus sanguinis* is citizenship by the **nationality of one's parents** (descent).
+- **Thinking long residence alone confers citizenship** — residence is a *requirement* for naturalisation, not the source of citizenship; under Article 27(b), a non-Negro person cannot naturalise however long they have lived in Liberia.
+- **Assuming a citizen and an alien have the same rights** — an **alien** may reside and trade but cannot vote, hold public office or **own real property** (only lease it).
+- **Believing the dual-citizenship rule is fixed** — Liberian law here has been **changing**; learners should check the current position rather than assume the historic prohibition.`,
           workedExample: `**Question:** Consider three people.
 
 *Kou* was born in Ganta to two Liberian parents.
@@ -570,7 +592,11 @@ He nonetheless **cannot become a Liberian citizen**, because Article 27(b) of th
           objective:
             "By the end of the lesson, learners should be able to define a constitution, distinguish its types, outline the structure of the 1986 Constitution, and explain constitutional supremacy and the amendment process.",
           estimatedMinutes: 80,
-          notes: `## What a constitution is
+          notes: `## Introduction
+
+Every organised state needs a supreme rulebook — one that says how power is held, how it is limited, and what the government may never do to its people. That rulebook is the **constitution**. This lesson defines a constitution and its **types** (written or unwritten, rigid or flexible), traces Liberia's constitutional history from 1847 to the present **1986 Constitution**, outlines that document's structure, and explains the two ideas that give it teeth: **constitutional supremacy** (Article 2) and the difficult **amendment** process that keeps rights safe from a passing majority.
+
+## What a constitution is
 
 A **constitution** is the body of fundamental rules by which a state is governed. It establishes the organs of government, defines and limits their powers, and sets out the relationship between the state and the citizen.
 
@@ -634,7 +660,14 @@ The requirement of a referendum places the final decision with the people rather
 - Provides the procedure for changing the government peacefully
 - Defines the relationship between citizen and state
 - Serves as the standard against which all other law is measured
-- Provides for its own amendment`,
+- Provides for its own amendment
+
+## Common errors and misconceptions
+
+- **Thinking a properly passed law must be valid** — under **Article 2**, any law inconsistent with the Constitution is **void**, no matter that both Houses passed it and the President signed it.
+- **Confusing "unwritten" with "non-existent"** — an **unwritten** constitution (e.g. the UK's) still exists; it is simply drawn from statutes, cases and conventions rather than one document.
+- **Mixing up rigid and flexible** — Liberia's Constitution is **rigid** (a special, hard amendment procedure); a **flexible** one changes by ordinary legislation.
+- **Believing the legislature can amend the Constitution alone** — amendment needs **two-thirds of both Houses *and* a two-thirds referendum**, putting the final say with the people.`,
           workedExample: `**Question:** The Legislature passes an Act requiring every newspaper to obtain a licence from the Ministry of Information before publishing, with the Ministry given complete discretion to refuse. A publisher challenges the Act.
 
 Explain how the constitutional system responds, and set out the correct procedure if the government genuinely wishes to achieve this result lawfully.
@@ -844,7 +877,11 @@ This is the part learners most often miss. The government cannot obtain by ordin
           objective:
             "By the end of the lesson, learners should be able to describe the composition and functions of the legislature, executive and judiciary in Liberia, and explain the separation of powers and the system of checks and balances.",
           estimatedMinutes: 80,
-          notes: `## The separation of powers
+          notes: `## Introduction
+
+Why does no single person or office run the whole Liberian state? Because power, once concentrated, is dangerous. This lesson explains the **separation of powers** — the division of government into three branches, the **Legislature**, the **Executive** and the **Judiciary** — setting out the composition and functions of each in Liberia, and then the system of **checks and balances** by which each branch restrains the others. The deep idea to grasp is that this arrangement is deliberately *inefficient*, and that its inefficiency is exactly what protects citizens from tyranny.
+
+## The separation of powers
 
 The doctrine, associated with the French writer **Montesquieu**, that governmental power should be divided among three separate organs, each with its own personnel and functions, so that no single body can control the state.
 
@@ -936,7 +973,14 @@ Separation alone is insufficient; each branch must be able to restrain the other
 
 ## Why the budget check matters most
 
-Of all the checks, legislative control of money is in practice the most powerful. An executive may hold every formal power, but it cannot act without funds. This is why the appropriation process is where genuine accountability is exercised.`,
+Of all the checks, legislative control of money is in practice the most powerful. An executive may hold every formal power, but it cannot act without funds. This is why the appropriation process is where genuine accountability is exercised.
+
+## Common errors and misconceptions
+
+- **Thinking the separation of powers exists for efficiency** — it exists to **prevent tyranny**; a single authority would be *more* efficient, but nothing could check its abuse.
+- **Confusing the Liberian figures with American ones** — Liberia has **30 senators** (nine-year terms), representatives on **six-year** terms, a **six-year** presidential term (two-term limit) and **five** Supreme Court justices.
+- **Believing the President's signature makes a treaty binding** — treaties require **legislative ratification**; the President negotiates but cannot bring a treaty into force alone.
+- **Overlooking judicial review as a check** — the courts can declare an Act **unconstitutional and void** *even when both political branches support it*, which is precisely why the power exists.`,
           workedExample: `**Question:** The President signs a treaty with a foreign state granting it a fifty-year lease over a large area of forest land. The Legislature objects, and a citizens' group argues the treaty violates constitutional protections. Trace how each branch may act, identifying the checks involved.
 
 **Solution**

@@ -23,7 +23,11 @@ export const computerScience: SubjectContent = {
           objective:
             "By the end of the lesson, learners should be able to define a computer and ICT, describe the information processing cycle, classify computers by size and type, and state the uses and effects of ICT in Liberia.",
           estimatedMinutes: 80,
-          notes: `## What a computer is
+          notes: `## Introduction
+
+From the mobile phone that carries someone's money to the machine that prints an examination result, computers now shape daily life in Liberia. But what *is* a computer, and what does it actually do? This lesson defines the **computer** and **ICT**, draws the vital line between **data** and **information**, and walks through the **information processing cycle** (input → processing → output, supported by storage) that lies behind every computing task. It then classifies computers by type and size, and surveys how ICT is used — and what it costs — across Liberian life.
+
+## What a computer is
 
 A **computer** is an electronic device that accepts data, processes it according to a set of instructions, produces information as output, and stores the result for future use.
 
@@ -97,7 +101,14 @@ The distinction matters: a computer processes data to produce information. Data 
 
 **Advantages:** speed and efficiency; accurate storage and retrieval; wider access to information and education; improved communication; new employment opportunities; better service delivery.
 
-**Disadvantages:** unemployment where automation displaces workers; cost of equipment and connectivity; health effects of prolonged use; cybercrime and fraud; loss of privacy; dependence on unreliable electricity; the **digital divide** between those with access and those without, which in Liberia falls heavily along urban-rural lines.`,
+**Disadvantages:** unemployment where automation displaces workers; cost of equipment and connectivity; health effects of prolonged use; cybercrime and fraud; loss of privacy; dependence on unreliable electricity; the **digital divide** between those with access and those without, which in Liberia falls heavily along urban-rural lines.
+
+## Common errors and misconceptions
+
+- **Confusing data with information** — **data** is raw, unprocessed facts (45, 67, 89); **information** is data *processed* into a meaningful form ("the average score is 67").
+- **Thinking computers are intelligent** — a computer has **no intelligence of its own**; it blindly follows instructions and cannot judge whether they make sense (**GIGO** — garbage in, garbage out).
+- **Believing a wrong answer means the computer "made a mistake"** — given faulty input or instructions, the machine produces a *confidently wrong* result; the fault is the data, not the computer.
+- **Mixing up the classes of computer** — a **supercomputer** is fastest for scientific modelling; a **mainframe** serves many users at once (banks, census); a **microcomputer** is a single-user PC.`,
           workedExample: `**Question:** A clinic in Grand Gedeh County keeps patient records on paper. The administrator proposes a computerised system. Explain how the information processing cycle would apply, identify the classification of computer required, and assess the advantages and difficulties in this specific setting.
 
 **Solution**
@@ -318,7 +329,11 @@ Computerisation is worthwhile, chiefly because it makes disease-trend analysis p
           objective:
             "By the end of the lesson, learners should be able to identify the major hardware components, classify devices as input, output, processing or storage, and explain the function of the CPU and memory.",
           estimatedMinutes: 80,
-          notes: `## What hardware is
+          notes: `## Introduction
+
+Open up any computer — a laptop, a phone, a desktop — and you find the same kinds of parts working together: something to put data in, something to work on it, something to store it, and something to show the result. These physical parts are the **hardware**. This lesson identifies the major hardware components and sorts them into the four functional groups — **input, processing, storage and output** — before looking closely at the **CPU** (the machine's brain) and the all-important difference between **RAM and ROM**, and between primary and secondary storage.
+
+## What hardware is
 
 **Hardware** is the collection of physical, tangible components of a computer system — everything you can touch.
 
@@ -405,7 +420,14 @@ Primary storage is **fast, small and directly accessible** to the CPU. Secondary
 
 ## Ports and peripherals
 
-**Peripherals** are devices attached to the computer: printers, scanners, external drives. They connect through **ports** — USB, HDMI, Ethernet, audio jacks.`,
+**Peripherals** are devices attached to the computer: printers, scanners, external drives. They connect through **ports** — USB, HDMI, Ethernet, audio jacks.
+
+## Common errors and misconceptions
+
+- **Confusing RAM with ROM** — **RAM** is *volatile* working memory (lost on power off); **ROM** is *non-volatile* and holds permanent startup instructions.
+- **Thinking saved work is lost in a power cut** — unsaved work in **volatile RAM** is lost, but anything **saved** to non-volatile secondary storage (disk/SSD) survives; hence *save often*.
+- **Believing a program runs straight from the hard disk** — a program must first be **loaded from secondary storage into RAM**; the CPU cannot execute directly from a disk.
+- **Assuming a faster CPU always means a faster computer** — when RAM is too small the machine slows dramatically; often **more RAM** matters more than a higher clock speed for everyday tasks.`,
           workedExample: `**Question:** A school is buying computers for a new laboratory. A supplier offers two machines at similar prices.
 
 *Machine A:* 2.4 GHz processor, 4 GB RAM, 1 TB hard disk drive
@@ -622,7 +644,11 @@ So a power failure destroys everything in RAM and nothing in secondary storage. 
           objective:
             "By the end of the lesson, learners should be able to distinguish system software from application software, describe the functions of an operating system, name common operating systems, and explain the file and folder structure.",
           estimatedMinutes: 80,
-          notes: `## What software is
+          notes: `## Introduction
+
+Hardware on its own is a lifeless collection of metal and plastic — it does nothing until **software** tells it what to do. This lesson explains what software is and divides it into its two great families: **system software** (led by the **operating system**, the master program that runs the whole machine) and **application software** (the programs that do useful work for the user). It sets out what an operating system actually does, names the common ones, and — a genuinely practical matter for Liberian schools — weighs **free, open-source** options against costly proprietary ones.
+
+## What software is
 
 **Software** is the set of programs and instructions that tell the hardware what to do. Software is **intangible** — it cannot be touched.
 
@@ -716,7 +742,14 @@ For Liberian schools this distinction is practical rather than academic: **Ubunt
 - **Freeware** — free to use, but the source code is not available
 - **Shareware** — free for a trial period, then payment is required
 - **Open source** — free to use, modify and redistribute
-- **Piracy** — using software without a valid licence, which is both illegal and a security risk, since pirated copies frequently carry malware`,
+- **Piracy** — using software without a valid licence, which is both illegal and a security risk, since pirated copies frequently carry malware
+
+## Common errors and misconceptions
+
+- **Thinking the operating system is hardware** — the OS is **system *software***; the hardware is the physical machine it controls (hardware is the pot and fire, software is the recipe).
+- **Confusing system software with application software** — **system** software runs and manages the computer (the OS, drivers, utilities); **application** software does user tasks (writing a letter, a spreadsheet).
+- **Believing paid software is the only real option** — **open-source** software (Ubuntu Linux, LibreOffice) is free, legal, runs on older machines and opens Microsoft file formats; piracy is unlawful *and* a malware risk.
+- **Forgetting the OS is the intermediary** — applications don't address the printer or disk directly; they ask the **operating system**, which uses the right **driver** — which is why one program runs on many different machines.`,
           workedExample: `**Question:** A secondary school has twenty older computers with 2 GB RAM each and no budget for software licences. The principal wants learners to write documents, work with spreadsheets and make presentations. Advise on a complete software solution and explain the role of the operating system.
 
 **Solution**
@@ -940,7 +973,11 @@ This is why the same version of Writer runs on many different machines with diff
           objective:
             "By the end of the lesson, learners should be able to explain why computers use binary, convert between binary, decimal and hexadecimal, and describe how text and other data are represented.",
           estimatedMinutes: 80,
-          notes: `## Why computers use binary
+          notes: `## Introduction
+
+Deep down, a computer knows only two things: **on** and **off**. Every document, photograph, song and video it handles is, underneath, nothing but patterns of **1s and 0s**. This lesson explains *why* computers work this way — the surprising answer is reliability, not simplicity — and teaches the practical skills of converting between **binary, decimal and hexadecimal** and adding in binary. It then shows how those 1s and 0s come to represent **text** (through codes like ASCII and Unicode, which encodes even the Liberian Vai script), **images**, **sound** and **video**.
+
+## Why computers use binary
 
 A computer is built from electronic circuits that reliably distinguish only **two states**: on and off, high voltage and low voltage, current flowing and not flowing.
 
@@ -1042,7 +1079,14 @@ Note that the character '0' is not the number 0. The character is stored as 48.
 
 ## Why file sizes differ
 
-A page of plain text is a few kilobytes. A photograph is megabytes. A film is gigabytes. The reason is the **quantity of numbers required**: text needs one byte per character, an image needs several bytes per pixel across millions of pixels, and video needs that many times over for every frame.`,
+A page of plain text is a few kilobytes. A photograph is megabytes. A film is gigabytes. The reason is the **quantity of numbers required**: text needs one byte per character, an image needs several bytes per pixel across millions of pixels, and video needs that many times over for every frame.
+
+## Common errors and misconceptions
+
+- **Thinking binary is used because it is "simple"** — it is used because two-state circuits are **reliable**; they tolerate voltage fluctuation where ten levels would cause errors.
+- **Reading remainders the wrong way in decimal-to-binary** — after repeated division by 2, read the remainders **upwards** (last to first), and always **check** by converting back.
+- **Confusing the character '0' with the number 0** — in ASCII the character '0' is stored as **48**, not as zero; likewise 'A' (65) and 'a' (97) differ, which is why passwords are case-sensitive.
+- **Grouping binary from the left for hexadecimal** — split into groups of **four bits from the *right*** (padding the left with zeros), because each group of four maps to exactly one hex digit.`,
           workedExample: `**Question:**
 
 (a) Convert 45 from decimal to binary.
