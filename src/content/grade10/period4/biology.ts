@@ -15,7 +15,11 @@ export const biologyG10P4: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to state the general characteristics of arthropods, name and describe the main classes of arthropods, and give examples of each.",
       estimatedMinutes: 150,
-      notes: `## What are arthropods?
+      notes: `## Introduction
+
+If you counted every animal on Earth, most of them would be **arthropods** — the insects, spiders, crabs and their relatives. They live in almost every habitat, from the deep sea to the air, and they matter enormously to Liberian life: bees pollinate crops, mosquitoes spread malaria, and locusts can destroy a harvest. This topic sets out the features that make an animal an arthropod and the main **classes** into which the phylum is divided.
+
+## What are arthropods?
 
 The **arthropods** (Phylum Arthropoda) are the **largest group of animals** on Earth — more than three-quarters of all known animal species. The name means "**jointed legs**" (*arthron* = joint, *podos* = foot).
 
@@ -64,7 +68,14 @@ Arthropods are divided into classes by the number of body parts and legs:
 
 ## Why arthropods matter
 
-Arthropods are hugely important: insects **pollinate** crops and flowers; crustaceans are **food**; but some are serious **pests** and **disease carriers** (the mosquito spreads malaria). Understanding them is the basis of the next topic — controlling pests.`,
+Arthropods are hugely important: insects **pollinate** crops and flowers; crustaceans are **food**; but some are serious **pests** and **disease carriers** (the mosquito spreads malaria). Understanding them is the basis of the next topic — controlling pests.
+
+## Common errors and misconceptions
+
+- **Calling a spider an insect** — a spider is an **arachnid**: 8 legs, two body parts and **no antennae**. Insects have 6 legs and three body parts.
+- **Miscounting body parts** — an insect body has **three** parts (head, thorax, abdomen); an arachnid has **two** (cephalothorax and abdomen).
+- **Thinking the exoskeleton grows** — it cannot; arthropods must **moult** (shed it) to grow a bigger one.
+- **Confusing millipedes and centipedes** — both are myriapods, but a millipede has two pairs of legs per segment (slow, herbivore) and a centipede one pair (fast, predator).`,
       workedExample: `**Task.** A learner finds three small animals: (A) has 6 legs and three body parts; (B) has 8 legs, no antennae; (C) is a crab from the river. Classify each into its arthropod class and justify your choice.
 
 **Animal A — 6 legs, three body parts → Class Insecta (an insect)**
@@ -240,7 +251,11 @@ Arthropods are hugely important: insects **pollinate** crops and flowers; crusta
       objective:
         "By the end of the topic, learners should be able to explain what a pest is, describe how insect pests damage crops and spread disease, and compare biological and chemical methods of controlling pests.",
       estimatedMinutes: 150,
-      notes: `## What is a pest?
+      notes: `## Introduction
+
+Now that we know what insects are, we can look at the ones that harm us. Insect **pests** cost Liberian farmers dearly — eating crops in the field and in store, and carrying diseases like malaria. But the poisons used to kill them bring their own problems. This topic explains what a pest is, how insect pests damage crops and spread disease, and compares the two great approaches to controlling them: **chemical** control (pesticides) and **biological** control (using living enemies of the pest).
+
+## What is a pest?
 
 A **pest** is any organism that is **harmful to humans, crops or livestock**. Many pests are insects (Class Insecta), which are numerous, breed quickly and can spread widely.
 
@@ -271,7 +286,14 @@ Using **living organisms** — the pest's natural enemies — to control it.
 
 ## Integrated pest management
 
-The best approach is often **integrated pest management (IPM)** — combining biological control, careful use of chemicals, good farming practices (crop rotation, cleanliness) and resistant crop varieties — to control pests while protecting the environment.`,
+The best approach is often **integrated pest management (IPM)** — combining biological control, careful use of chemicals, good farming practices (crop rotation, cleanliness) and resistant crop varieties — to control pests while protecting the environment.
+
+## Common errors and misconceptions
+
+- **Thinking chemical control is always best because it is fast** — pesticides also kill *useful* insects, pollute water and soil, leave residues, and pests can become **resistant** to them over time.
+- **Believing biological control is instant** — it works **slowly**, as the predator population builds up; its advantage is being clean and self-sustaining.
+- **Assuming all insects are pests** — most insects are harmless or helpful (pollinators, predators of pests); only some are pests.
+- **Introducing any predator without care** — a badly chosen control organism can itself become a new pest.`,
       workedExample: `**Task.** A farmer's cassava is being destroyed by aphids. Compare using a chemical pesticide with introducing ladybirds (a biological control), and recommend an approach.
 
 **Option 1 — chemical pesticide**

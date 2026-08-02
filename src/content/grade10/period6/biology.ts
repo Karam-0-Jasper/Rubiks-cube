@@ -15,7 +15,11 @@ export const biologyG10P6: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to name the main parts of a flowering plant and describe the function of the root, stem and leaf.",
       estimatedMinutes: 150,
-      notes: `## The most advanced plants
+      notes: `## Introduction
+
+The plants we grow for food and see all around us — rice, cassava, mango, hibiscus — are **flowering plants**, the most advanced group in the plant kingdom. Their success comes from a well-organised body in which each part does a particular job, and from reproducing by seeds protected inside flowers and fruits. In this topic we name the main parts of a flowering plant and study the jobs of the three vegetative organs: the **root, stem and leaf**.
+
+## The most advanced plants
 
 **Flowering plants** (also called **angiosperms**) are the most advanced and most numerous plants. Unlike the mosses and ferns of Period V, they have **true roots, stems, leaves and flowers**, proper **vascular (transport) tissue**, and they reproduce by **seeds** produced inside **flowers**.
 
@@ -63,7 +67,14 @@ The **leaf** is the plant's main **food factory**. Its functions are:
 - **Gas exchange** — gases (CO₂ and O₂) pass in and out through tiny pores called **stomata**.
 - **Transpiration** — the loss of water vapour from the leaf, which helps draw water up the plant.
 
-The broad, flat shape of a leaf gives it a large surface to catch sunlight and exchange gases.`,
+The broad, flat shape of a leaf gives it a large surface to catch sunlight and exchange gases.
+
+## Common errors and misconceptions
+
+- **"Roots take in food from the soil"** — roots absorb **water and mineral salts**, not food; the plant makes its food in the leaves.
+- **Confusing xylem and phloem** — **xylem** carries **water** (and minerals) **upward** from the roots; **phloem** carries **food** made in the leaves to the rest of the plant.
+- **Thinking stomata are on the stem** — the gas-exchange pores (**stomata**) are mainly on the **leaves**, especially the underside.
+- **Mixing up transpiration and respiration** — transpiration is the **loss of water vapour** from leaves; respiration is the release of energy from food.`,
       workedExample: `**Task.** For a named flowering plant, describe the functions of (a) the root, (b) the stem, and (c) the leaf, and explain how these parts work together to keep the plant alive.
 
 **Part (a) — the root**
@@ -242,7 +253,11 @@ The **root** absorbs water and minerals; the **stem** transports this water up t
       objective:
         "By the end of the topic, learners should be able to name the parts of a flower and their functions, and describe pollination and fertilisation in flowering plants.",
       estimatedMinutes: 150,
-      notes: `## The flower — the organ of reproduction
+      notes: `## Introduction
+
+Having studied the plant's vegetative parts, we now reach the part that makes new plants: the **flower**. A flower is a reproductive organ, and its beauty and scent are not for us — they are for attracting the insects and birds that carry pollen from flower to flower. This topic names the parts of a flower and their jobs, then follows the two key events of plant reproduction: **pollination** (the transfer of pollen) and **fertilisation** (the joining of the sex cells to form a seed).
+
+## The flower — the organ of reproduction
 
 The **flower** is the part of a flowering plant responsible for **sexual reproduction** — it makes the seeds that grow into new plants.
 
@@ -292,7 +307,14 @@ After pollination:
 2. The **male sex cell** travels down the tube and joins with the **female sex cell** in an ovule — this joining is **fertilisation**.
 3. The fertilised ovule develops into a **seed**; the ovary grows into the **fruit**, which protects the seeds and helps to spread them.
 
-The seed can later **germinate** to grow into a new flowering plant — completing the life cycle.`,
+The seed can later **germinate** to grow into a new flowering plant — completing the life cycle.
+
+## Common errors and misconceptions
+
+- **Confusing pollination and fertilisation** — **pollination** is the *transfer of pollen* from anther to stigma; **fertilisation** is the later *joining of the male and female sex cells* inside the ovule. Pollination comes first.
+- **Mixing up the male and female parts** — the **stamen** (anther + filament) is **male**; the **carpel/pistil** (stigma, style, ovary) is **female**.
+- **Thinking the ovary becomes the seed** — after fertilisation the **ovule** becomes the **seed**, while the **ovary** becomes the **fruit**.
+- **Believing all flowers are insect-pollinated** — wind-pollinated flowers exist too; they are small and dull with feathery stigmas and light pollen.`,
       workedExample: `**Task.** (a) Name the male and female parts of a flower and their sub-parts. (b) Explain the difference between pollination and fertilisation. (c) What happens to the ovule and the ovary after fertilisation?
 
 **Part (a) — the male and female parts**
