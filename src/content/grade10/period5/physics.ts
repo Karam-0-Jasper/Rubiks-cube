@@ -15,7 +15,11 @@ export const physicsG10P5: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to describe the two types of electric charge, explain how objects become charged by friction in terms of electron transfer, and distinguish conductors from insulators.",
       estimatedMinutes: 150,
-      notes: `## Static electricity
+      notes: `## Introduction
+
+Rub a plastic comb on your hair and it will pick up small pieces of paper; walk across a dry floor and a metal door-handle may give you a tiny shock. These are everyday signs of **static electricity** — electric charge that has built up and is sitting still. Understanding it is the first step toward the electric currents that power the modern world. This topic describes the **two kinds of charge**, explains how objects become charged by **friction** (the transfer of electrons), and distinguishes **conductors** from **insulators**.
+
+## Static electricity
 
 **Electrostatics** is the study of **electric charges at rest** (static electricity), as opposed to charges flowing in a current. You meet it when a comb picks up bits of paper, or when you feel a small shock touching a metal door.
 
@@ -61,7 +65,14 @@ Materials differ in how easily charge moves through them:
 
 ## Detecting charge: the electroscope
 
-A **gold-leaf electroscope** is a simple instrument that detects charge. When a charged object is brought near, the thin gold leaf **rises (diverges)** because like charges spread to the leaf and repel — showing that the object is charged.`,
+A **gold-leaf electroscope** is a simple instrument that detects charge. When a charged object is brought near, the thin gold leaf **rises (diverges)** because like charges spread to the leaf and repel — showing that the object is charged.
+
+## Common errors and misconceptions
+
+- **Thinking protons move during charging** — only **electrons** transfer. An object becomes **negative** by *gaining* electrons and **positive** by *losing* them; protons stay in the nucleus.
+- **Believing charge is created** — charging by friction only **transfers** charge from one object to the other; the total charge is conserved (one gains what the other loses).
+- **Confusing conductors and insulators** — a **conductor** (metal) lets charge move freely; an **insulator** (plastic, glass) holds charge where it is put, which is why insulators show static effects.
+- **Getting the force rule backwards** — **like charges repel; unlike charges attract**.`,
       workedExample: `**Task.** A glass rod is rubbed with a silk cloth. After rubbing, the glass rod is found to be positively charged. (a) Explain, in terms of electrons, what happened. (b) What is the charge on the silk cloth, and why? (c) Why does the charge stay on the glass rod?
 
 **Part (a) — what happened to the electrons**
@@ -242,7 +253,11 @@ Glass is an **insulator**, so charge **cannot move through it easily** and stays
       objective:
         "By the end of the topic, learners should be able to state and apply the law of electric charges, explain attraction and repulsion, and describe everyday effects and dangers of static electricity such as lightning.",
       estimatedMinutes: 150,
-      notes: `## The law of electric charges
+      notes: `## Introduction
+
+Charges do not just sit there — they **push and pull on each other** across a distance, and this simple fact explains effects from a balloon sticking to a wall to the terrifying flash of **lightning**. This topic states the **law of electric charges**, explains attraction and repulsion, and looks at everyday electrostatics — its useful applications and its dangers, especially lightning and how a lightning conductor protects a building.
+
+## The law of electric charges
 
 Charged objects exert **forces** on one another. The **law of electric charges** states:
 
@@ -293,7 +308,14 @@ The region around a charge where its force can be felt is its **electric field**
 To protect against static dangers:
 
 - A **lightning conductor** — a metal strip from the top of a tall building to the ground — safely carries lightning's charge to the earth, protecting the building.
-- **Earthing (grounding)** connects an object to the ground with a conductor so that excess charge flows safely away, preventing dangerous build-up (e.g. on fuel tankers).`,
+- **Earthing (grounding)** connects an object to the ground with a conductor so that excess charge flows safely away, preventing dangerous build-up (e.g. on fuel tankers).
+
+## Common errors and misconceptions
+
+- **Getting the force law backwards** — **like charges repel; unlike charges attract**. Two positives push apart; a positive and a negative pull together.
+- **Thinking only opposite charges exert forces** — like charges also exert a force; it is a force of **repulsion**.
+- **Believing a lightning conductor attracts lightning to harm the building** — it provides a **safe, easy path** for the charge to reach earth, protecting the building.
+- **Confusing charged and uncharged attraction** — a charged object can attract a *neutral* light object (like paper) by inducing opposite charge in it; that is attraction between charged and neutral, not between two charges.`,
       workedExample: `**Task.** (a) Two balloons are each rubbed on hair and hung side by side; they swing apart. Explain why, using the law of charges. (b) Explain how a lightning conductor protects a tall building.
 
 **Part (a) — why the balloons swing apart**

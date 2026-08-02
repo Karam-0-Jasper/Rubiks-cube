@@ -17,7 +17,11 @@ export const physicsG10P6: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to describe the arrangement and movement of particles in solids, liquids and gases using the kinetic theory, and explain cohesion, adhesion and diffusion.",
       estimatedMinutes: 150,
-      notes: `## The structure of matter
+      notes: `## Introduction
+
+Why is a stone hard, water runny, and air invisible and free to spread? The answer to all three lies in one powerful idea: matter is made of tiny **particles in constant motion**, and the *arrangement* and *movement* of those particles decides whether a substance is a solid, a liquid or a gas. This is the **kinetic theory of matter**. This topic uses it to explain the three states and the changes between them, and the everyday effects of **cohesion, adhesion and diffusion**.
+
+## The structure of matter
 
 All matter is made of tiny particles — **atoms and molecules** (Period V). An **atom** is the smallest particle of an element; a **molecule** is two or more atoms joined together. These particles are always **moving**.
 
@@ -59,7 +63,14 @@ Particles attract one another. There are two kinds of attraction:
 **Diffusion** is the **spreading of particles from a region of high concentration to a region of low concentration**, because the particles are moving. It happens fastest in **gases** (particles move freely) and slower in liquids; it does not occur in solids.
 
 - *Example:* the smell of food spreads across a room because its particles **diffuse** through the air.
-- Diffusion is faster at **higher temperatures**, because the particles move faster.`,
+- Diffusion is faster at **higher temperatures**, because the particles move faster.
+
+## Common errors and misconceptions
+
+- **Thinking particles in a solid do not move** — they **vibrate** in fixed positions; they simply cannot move from place to place as in a liquid or gas.
+- **Confusing cohesion and adhesion** — **cohesion** is attraction between *like* particles (water to water); **adhesion** is attraction between *different* particles (water to glass).
+- **Believing gases have no mass or particles** — a gas is made of the same kind of particles, just spread far apart and moving fast; it still has mass.
+- **Thinking heating adds particles** — heating gives the *same* particles more energy so they move faster and spread out; it does not create new particles.`,
       workedExample: `**Task.** (a) Use the kinetic theory to explain why a solid has a fixed shape but a gas fills its container. (b) Explain the difference between cohesion and adhesion. (c) Why can you smell food cooking from across a room?
 
 **Part (a) — solid vs gas (kinetic theory)**
@@ -238,7 +249,11 @@ The smell reaches you by **diffusion**: the particles giving the food its smell 
       objective:
         "By the end of the topic, learners should be able to explain elasticity and state and apply Hooke's Law, and describe surface tension and viscosity as properties of liquids.",
       estimatedMinutes: 160,
-      notes: `## Elasticity
+      notes: `## Introduction
+
+Stretch a rubber band and it springs back; bend a stick of chalk and it snaps and stays broken. The property that decides which happens is **elasticity**, and for elastic materials there is a beautifully simple rule linking the stretching force to the amount of stretch — **Hooke's Law** — which is the basis of every spring balance. This topic explains elasticity, states and applies Hooke's Law, and looks at two surface properties of liquids: **surface tension** and **viscosity**.
+
+## Elasticity
 
 **Elasticity** is the ability of a material to **return to its original shape and size** after a stretching or squeezing **force is removed**. A material that does this is **elastic** (e.g. a rubber band, a spring); a material that stays deformed is **plastic** (e.g. modelling clay).
 
@@ -290,7 +305,14 @@ Effects of surface tension:
 - A **low-viscosity** fluid flows **easily** (e.g. water, petrol).
 - Viscosity of a liquid usually **decreases when it is heated** (warm honey flows more easily).
 
-Viscosity matters for engine oils, blood flow, and how liquids are pumped and poured.`,
+Viscosity matters for engine oils, blood flow, and how liquids are pumped and poured.
+
+## Common errors and misconceptions
+
+- **Applying Hooke's Law beyond the elastic limit** — force is proportional to extension **only up to the elastic limit**; stretch a spring too far and it no longer returns to shape and the law fails.
+- **Confusing extension with total length** — the **extension** is the *increase* in length (new length − original length), not the whole length; use extension in Hooke's Law.
+- **Mixing up elastic and plastic** — an **elastic** material returns to shape (rubber, spring); a **plastic** material stays deformed (clay).
+- **Getting viscosity's temperature trend backwards** — a liquid's viscosity **decreases** on heating (warm oil flows more easily), the opposite of what many expect.`,
       workedExample: `**Task.** A spring has a natural length of 20 cm. When a force of 6 N is hung on it, it stretches to 26 cm.
 (a) Find the extension. (b) Calculate the spring constant k. (c) What force would give an extension of 4 cm (within the elastic limit)?
 
