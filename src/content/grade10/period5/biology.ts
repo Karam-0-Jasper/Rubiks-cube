@@ -16,7 +16,11 @@ export const biologyG10P5: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to describe the main features of algae, mosses and ferns, and explain the process of photosynthesis, its requirements and its importance.",
       estimatedMinutes: 160,
-      notes: `## Simple plant-like organisms
+      notes: `## Introduction
+
+Green plants and plant-like organisms feed the whole living world. Through **photosynthesis** they capture the energy of sunlight and lock it into food, releasing the oxygen every animal breathes. Before we study the complex flowering plant, this topic looks at the simpler plant-like organisms — **algae, mosses and ferns** — and then explains photosynthesis itself: what it needs, what it makes, and why all life depends on it.
+
+## Simple plant-like organisms
 
 Before flowering plants, there are simpler plant-like organisms, all of which contain **chlorophyll** and make their own food by **photosynthesis**.
 
@@ -71,7 +75,14 @@ Before flowering plants, there are simpler plant-like organisms, all of which co
 - It releases the **oxygen** that living things need to breathe.
 - It removes **carbon dioxide** from the air.
 
-Photosynthesis makes green plants the **producers** at the base of nearly every food chain.`,
+Photosynthesis makes green plants the **producers** at the base of nearly every food chain.
+
+## Common errors and misconceptions
+
+- **"Plants take in oxygen and give out carbon dioxide"** — that is back to front for photosynthesis: plants take in **carbon dioxide** and give out **oxygen**. (They *do* respire too, using oxygen, but photosynthesis in daylight far exceeds it.)
+- **Thinking plants get their food from the soil** — plants **make** their food (glucose) by photosynthesis; from the soil they take only water and mineral salts.
+- **Confusing chlorophyll and chloroplast** — chlorophyll is the green *pigment*; the chloroplast is the *structure* that contains it.
+- **Forgetting sunlight is energy, not a raw material** — the raw materials are carbon dioxide and water; sunlight provides the energy.`,
       workedExample: `**Task.** (a) Write the word equation for photosynthesis and name what each input and product is. (b) A fern can grow much larger than a moss — explain why, using their structure.
 
 **Part (a) — photosynthesis**
@@ -255,7 +266,11 @@ Photosynthesis makes green plants the **producers** at the base of nearly every 
       objective:
         "By the end of the topic, learners should be able to describe the general characteristics of fungi, explain how they feed, and give examples of their harmful and useful roles.",
       estimatedMinutes: 150,
-      notes: `## What are fungi?
+      notes: `## Introduction
+
+**Fungi** are neither plants nor animals — they are their own kingdom, with a way of life all their own. They cannot make their own food as plants do, yet they are not hunters like animals; instead they **absorb** their food from dead or living matter around them. This makes them nature's great recyclers, but also the cause of rot, mould and disease. This topic sets out what fungi are, how they feed, and their useful and harmful roles in Liberian life.
+
+## What are fungi?
 
 **Fungi** (singular: fungus) are a separate kingdom of living things (Kingdom Fungi, from the classification in Period II). They include **mushrooms, moulds, mildews, yeasts and toadstools**.
 
@@ -299,7 +314,14 @@ Because they cannot make their own food, fungi are **heterotrophic** — they ge
 - **Medicine:** the antibiotic **penicillin** comes from a mould (*Penicillium*).
 
 ## Warning
-Some mushrooms and toadstools are **very poisonous**. Never eat wild fungi unless an expert has confirmed they are safe.`,
+Some mushrooms and toadstools are **very poisonous**. Never eat wild fungi unless an expert has confirmed they are safe.
+
+## Common errors and misconceptions
+
+- **Calling fungi plants** — fungi have **no chlorophyll** and cannot photosynthesise; they *absorb* food, and their cell walls are **chitin**, not cellulose.
+- **Thinking all fungi are harmful** — many are essential decomposers, food (mushrooms, yeast) and the source of medicines such as **penicillin**.
+- **Confusing saprophyte and parasite** — a **saprophyte** feeds on **dead** matter; a **parasite** feeds on a **living** host and causes disease.
+- **Believing fungi digest food inside them** — they release **enzymes onto** the food and digest it **externally**, then absorb the products.`,
       workedExample: `**Task.** (a) Give three ways in which fungi differ from green plants. (b) Explain how a saprophytic fungus feeds. (c) State one harmful and one useful role of fungi.
 
 **Part (a) — three differences between fungi and green plants**
