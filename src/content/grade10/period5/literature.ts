@@ -17,7 +17,11 @@ export const literatureG10P5: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to describe the features of the short story as a form, distinguish it from the novel, and analyse the plot, character and theme of an African short story.",
       estimatedMinutes: 150,
-      notes: `## What is a short story?
+      notes: `## Introduction
+
+If a novel is a long journey, a **short story** is a single, vivid moment — a tale complete enough to be read in one sitting, yet able to leave a lasting impression. Africa's deep tradition of oral storytelling makes it a natural home for the form. This topic explains what a short story is, sets out the features that flow from its **brevity** — single focus, few characters, economy, and often a final twist — contrasts it with the novel, and shows how to analyse an African short story using the same tools, in miniature.
+
+## What is a short story?
 
 A **short story** is a work of **prose fiction** short enough to be read in one sitting. It uses the same **elements** as a novel — plot, character, setting, theme, point of view — but in a **compact** form.
 
@@ -58,7 +62,14 @@ Use the same tools as for the novel, but expect them in miniature:
 - **Theme:** what one central idea does the story leave you with?
 - **Point of view:** who tells the story (first or third person)?
 
-As always, follow **name–evidence–explanation**, and avoid mere plot summary.`,
+As always, follow **name–evidence–explanation**, and avoid mere plot summary.
+
+## Common errors and misconceptions
+
+- **Thinking a short story is just "a novel that is shorter"** — the difference is one of **focus**, not only length: it concentrates on **one incident, a few characters and one theme** for a single unified impression.
+- **Expecting sub-plots and a large cast** — a short story has no room for them; it usually develops **one or two** characters and begins **close to the main action**.
+- **Missing the ending's importance** — in many short stories the **point or twist** lands at the very end; skimming it loses the story's meaning.
+- **Retelling instead of analysing** — even in miniature, use *name–evidence–explanation*; identify the single central theme and show how the incident, character and ending build it.`,
       workedExample: `**Task.** Explain how a short story differs from a novel, and describe how you would analyse the theme of an African short story.
 
 **How a short story differs from a novel**
@@ -239,7 +250,11 @@ In short, the short story does in miniature, with great economy, what the novel 
       objective:
         "By the end of the topic, learners should be able to compare two prose works, evaluate a writer's craft (style, point of view and use of language), and write a reasoned personal response supported by the text.",
       estimatedMinutes: 150,
-      notes: `## Beyond one text: comparison and evaluation
+      notes: `## Introduction
+
+So far you have analysed single texts. This final prose topic asks you to do two more demanding things — to **compare** two works, and to **evaluate** a writer's craft and offer a reasoned **personal response**. These are the skills that separate a confident reader from a beginner: not just understanding one story, but weighing it against another, judging *how well* a writer achieves their purpose (through point of view, style and characterisation), and defending your own opinion with evidence. It is the culmination of the *name–evidence–explanation* method that runs through the whole Literature course.
+
+## Beyond one text: comparison and evaluation
 
 Having studied African prose (Period IV) and the short story, learners now practise two higher skills: **comparing** two prose works and **evaluating** a writer's craft.
 
@@ -275,7 +290,14 @@ Across all the Literature topics — poetry, drama and prose — the same discip
 2. **Give evidence** from the text.
 3. **Explain** its effect — and, in evaluation, **judge** how well it works.
 
-This turns reading into genuine literary analysis.`,
+This turns reading into genuine literary analysis.
+
+## Common errors and misconceptions
+
+- **Describing each text in turn instead of comparing** — a real comparison **links** the two works ("Both…, but whereas the first…, the second…"), rather than two separate summaries.
+- **Giving an unsupported opinion** — "I liked it" is not evaluation; every judgement needs **opinion + because + evidence** from the text.
+- **Confusing first- and third-person point of view** — **first person** uses *"I"* (personal, immediate, possibly biased); **third person** uses *"he/she/they"* (a wider, more balanced view).
+- **Mistaking evaluation for description** — evaluation **judges how well** the writing works and why, not merely what happens in the story.`,
       workedExample: `**Task.** (a) How would you compare two African short stories that share a theme? (b) Explain how a writer's choice of point of view affects the reader, and how you would write a supported personal response.
 
 **Part (a) — comparing two stories on a shared theme**

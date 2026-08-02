@@ -29,7 +29,11 @@ export const literature: SubjectContent = {
           objective:
             "By the end of the unit, learners should be able to define literature and its elements, and identify and explain the effect of the main figures of speech — simile, metaphor, personification, hyperbole and others — in a text.",
           estimatedMinutes: 160,
-          notes: `## What literature is
+          notes: `## Introduction
+
+When a poet writes that "the wind whispered" or that grief is "an ocean with no shore," they are not lying or making a mistake — they are using the special, imaginative language that makes literature *literature*. This unit begins the whole subject: it defines what **literature** is, names its **elements** (theme, plot, character and more), and then studies the **figures of speech** — simile, metaphor, personification, hyperbole and the rest — that give writing its power. Most importantly, it trains the one habit that separates a top answer from a weak one: never just *naming* a device, but explaining the **effect** it creates.
+
+## What literature is
 
 **Literature** is the imaginative expression of human experience in language, valued for its artistic quality as well as its content. It differs from ordinary writing in using language **deliberately and artistically** — for beauty, feeling and effect — not merely to give information.
 
@@ -75,7 +79,14 @@ export const literature: SubjectContent = {
 
 The most important habit in this topic: **do not simply name a device — explain what it does.**
 
-"The poet uses alliteration in line 3" is not analysis. "The alliteration in *wind whipped the withered* forces the reader to repeat a harsh sound, so the line enacts the roughness it describes" is analysis. Always ask: *what effect does this device have on the reader?*`,
+"The poet uses alliteration in line 3" is not analysis. "The alliteration in *wind whipped the withered* forces the reader to repeat a harsh sound, so the line enacts the roughness it describes" is analysis. Always ask: *what effect does this device have on the reader?*
+
+## Common errors and misconceptions
+
+- **Naming a device without explaining its effect** — "the poet uses a metaphor" earns almost nothing; the marks come from saying **what the metaphor makes the reader see or feel**.
+- **Confusing simile with metaphor** — a **simile** compares using *like* or *as* ("brave as a lion"); a **metaphor** compares *directly*, without them ("he is a lion").
+- **Mixing up tone and mood** — **tone** is the *writer's* attitude to the subject; **mood** is the emotional *atmosphere the reader* feels.
+- **Reading figurative language literally** — "the wind whispered" does not mean the wind made a sound like speech; it is **personification**, giving the wind a human quality for effect.`,
           workedExample: `**Question:** Read the extract and answer the questions.
 
 *"The old palm stood like a tired soldier, its green arms lifted against the wind. O sea, keeper of our fathers' bones, the tide counts out its patient arithmetic of loss."*
@@ -141,7 +152,11 @@ Calling the tide's action **arithmetic** joins two very different registers: *ar
           objective:
             "By the end of the unit, learners should be able to define drama, identify its kinds (tragedy, comedy, tragicomedy), analyse character, conflict and theme, and apply these to a Shakespearean play such as A Midsummer Night's Dream.",
           estimatedMinutes: 160,
-          notes: `## What drama is
+          notes: `## Introduction
+
+A novel is finished the moment it is written, but a play is only *half* made on the page — it waits for actors, a stage and an audience to bring it fully to life. This unit explores **drama**: what makes it different from prose and poetry, its main **kinds** (tragedy, comedy, tragicomedy), and its building blocks — **character, conflict, dialogue and theme** — together with techniques like the **soliloquy**, the **aside** and **dramatic irony**. It then puts all of this to work on the set text, Shakespeare's comedy *A Midsummer Night's Dream*.
+
+## What drama is
 
 **Drama** is literature written to be **performed** by actors before an audience. The word comes from the Greek *dran*, to do or to act.
 
@@ -192,7 +207,14 @@ Drama differs from prose and poetry in one basic way: it is **incomplete on the 
 
 ## Reading a play
 
-Because a play is written for performance, read it actively: **assign parts and read aloud**, picture the stage, and treat the **stage directions as part of the text**, not decoration.`,
+Because a play is written for performance, read it actively: **assign parts and read aloud**, picture the stage, and treat the **stage directions as part of the text**, not decoration.
+
+## Common errors and misconceptions
+
+- **Confusing a soliloquy with an aside** — a **soliloquy** is a longer speech by a character *alone* on stage; an **aside** is a *short* remark made to the audience while other characters are present but do not hear it.
+- **Mixing up protagonist and antagonist** — the **protagonist** is the main character; the **antagonist** is the character or force *opposing* them.
+- **Thinking dramatic irony just means something surprising** — it is specifically when the **audience knows something a character does not**, which is what drives much of the comedy in *A Midsummer Night's Dream*.
+- **Skipping the stage directions** — they are part of the text and carry meaning (movement, mood, delivery); ignoring them means missing half the play.`,
           workedExample: `**Question:** Explain, with reference to A Midsummer Night's Dream, why the play is a comedy rather than a tragedy, and how conflict and dramatic irony work in it.
 
 **Solution**

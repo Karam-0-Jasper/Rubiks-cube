@@ -15,7 +15,11 @@ export const literatureG10P4: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to define prose and distinguish its forms, describe the features of African prose, and name major African prose writers and their works.",
       estimatedMinutes: 150,
-      notes: `## What is prose?
+      notes: `## Introduction
+
+Most of the stories we read — novels and short stories alike — are written in **prose**, the ordinary flowing language of sentences and paragraphs. **African prose** turns this everyday form into something powerful: a way for Africans to tell their own stories, in their own settings and voice. This topic defines prose and its forms, sets out the **features** that make African prose distinctive, and introduces its great writers — above all Chinua Achebe, whose *Things Fall Apart* is the most famous African novel ever written.
+
+## What is prose?
 
 **Prose** is ordinary written or spoken language — sentences and paragraphs — **without the regular rhythm and line pattern of poetry**. Most storytelling is written in prose.
 
@@ -51,7 +55,14 @@ African prose often shows these distinctive features:
 
 ## Why African prose matters
 
-Like African drama, African prose lets African writers **tell their own stories** and correct outsiders' misrepresentations of Africa. *Things Fall Apart*, for example, was written partly to show the richness and order of African society before colonialism — a purpose that made it one of the most important books in world literature.`,
+Like African drama, African prose lets African writers **tell their own stories** and correct outsiders' misrepresentations of Africa. *Things Fall Apart*, for example, was written partly to show the richness and order of African society before colonialism — a purpose that made it one of the most important books in world literature.
+
+## Common errors and misconceptions
+
+- **Thinking African prose is "only about villages and old customs"** — it also deals with **city life, colonialism, politics, women's lives and modern struggles**; its "Africanness" is a set of features, not a single subject.
+- **Confusing prose with poetry** — **prose** runs in sentences and paragraphs without poetry's regular metre and line breaks; a poem is verse, not prose.
+- **Mixing up fiction and non-fiction** — the **novel, novella and short story** are prose *fiction* (imagined); biography, autobiography and essays are prose *non-fiction* (factual).
+- **Getting the writers' nationalities wrong** — e.g. **Chinua Achebe** (*Things Fall Apart*) is **Nigerian**, while **Ngũgĩ wa Thiong'o** (*Weep Not, Child*) is **Kenyan** and **Camara Laye** is **Guinean**.`,
       workedExample: `**Task.** A reader says, "African prose is only about villages and old customs." Correct this view, and describe three features that genuinely characterise African prose, naming a major writer.
 
 **Correcting the view**
@@ -239,7 +250,11 @@ The statement is too narrow. African prose is not *only* about villages and old 
       objective:
         "By the end of the topic, learners should be able to identify and analyse the elements of prose fiction — plot, character, setting and theme — in an African novel, and support their views with reference to the text.",
       estimatedMinutes: 150,
-      notes: `## The elements of prose fiction
+      notes: `## Introduction
+
+Reading a novel for pleasure is one thing; *studying* one for literature is another. To understand how a novel achieves its effects, we take it apart into its main **elements** — **plot, character, setting and theme** (plus point of view and style) — and then, crucially, see how they fit back together. This topic sets out those elements and applies them to an African novel such as *Things Fall Apart*, showing how a village on the edge of colonial change and a proud, rigid hero combine to dramatise the book's meaning — and how to write about it without slipping into mere plot summary.
+
+## The elements of prose fiction
 
 To study a novel or short story, we analyse its main **elements**. These are the tools for understanding any work of prose fiction.
 
@@ -281,7 +296,14 @@ As with poetry and drama, a good analysis follows **name–evidence–explanatio
 2. **Give evidence** from the text (an event, a setting detail, a line).
 3. **Explain** how it works to create meaning.
 
-This avoids mere **plot summary** — the commonest weakness — and produces real analysis.`,
+This avoids mere **plot summary** — the commonest weakness — and produces real analysis.
+
+## Common errors and misconceptions
+
+- **Retelling the story instead of analysing it** — **plot summary** is the commonest weakness; use *name–evidence–explanation* to show how the elements *create meaning*.
+- **Listing the elements separately** — a strong answer shows how **setting, character, plot and theme connect** (e.g. the setting creates the conflict the character reacts to), not four unlinked paragraphs.
+- **Confusing plot with theme** — **plot** is *what happens*; **theme** is the *central idea* the events convey.
+- **Mixing up the parts of plot** — the order is **exposition → rising action → climax → falling action → resolution**; the *climax* is the turning point of highest tension, not the ending.`,
       workedExample: `**Task.** Using an African novel you have studied, show how the elements of prose fiction work together. Identify the setting, the protagonist, a key plot movement, and the central theme, and explain how they connect.
 
 **Novel:** *Things Fall Apart* by Chinua Achebe
