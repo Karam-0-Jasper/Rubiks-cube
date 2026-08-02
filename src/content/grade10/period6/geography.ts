@@ -16,7 +16,11 @@ export const geographyG10P6: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to define a land form and describe the main types — mountains, plateaus, plains and valleys — with their characteristics and importance.",
       estimatedMinutes: 150,
-      notes: `## What is a land form?
+      notes: `## Introduction
+
+The surface of the land is not flat and featureless — it rises into mountains, spreads into plains, lifts into plateaus and is cut by valleys. These natural shapes are called **land forms**, and they decide where people can farm, build and travel. This topic defines a land form and describes the four major types — **mountains, plateaus, plains and valleys** — with their characteristics and their importance to human life.
+
+## What is a land form?
 
 A **land form** is a **natural feature of the Earth's surface** — a shape of the land such as a mountain, a plain or a valley. The study of land forms is part of **physical geography**. Land forms differ in their **height, shape and slope**.
 
@@ -65,7 +69,14 @@ There are many more land forms — **hills** (smaller than mountains), **basins*
 
 ## Why land forms matter
 
-Land forms influence where people live and how they earn a living: plains and valleys favour farming and settlement, mountains and plateaus provide minerals and rivers, and relief affects transport, climate and rainfall.`,
+Land forms influence where people live and how they earn a living: plains and valleys favour farming and settlement, mountains and plateaus provide minerals and rivers, and relief affects transport, climate and rainfall.
+
+## Common errors and misconceptions
+
+- **Confusing a plateau and a plain** — a **plain** is low and flat; a **plateau** is flat on top but stands **high** above the surrounding land (a "table land").
+- **Thinking a hill and a mountain are the same** — a **mountain** is much higher and steeper; a **hill** is a smaller rise.
+- **Believing land forms are permanent** — they are slowly built up and worn down over ages by the forces studied in the next topic.
+- **Assuming flat land is best for everything** — plains suit farming and settlement, but mountains and plateaus give minerals, rivers and water power.`,
       workedExample: `**Task.** (a) Define a land form. (b) Describe a mountain, a plateau, a plain and a valley. (c) Explain why plains are usually more densely populated than mountains.
 
 **Part (a) — definition**
@@ -244,7 +255,11 @@ Plains are **low and flat with fertile soil**, so they are **easy to farm, build
       objective:
         "By the end of the topic, learners should be able to distinguish the internal and external forces that shape land forms, and explain weathering, erosion and deposition.",
       estimatedMinutes: 150,
-      notes: `## How land forms are made and changed
+      notes: `## Introduction
+
+Mountains were not always there, and one day they will be gone — worn flat over millions of years. The Earth's surface is caught in a slow, endless struggle between two sets of forces: those from **inside** the Earth that push the land up, and those at the **surface** that grind it down. Understanding this struggle explains how every land form came to be. This topic distinguishes the **internal** and **external** forces and explains **weathering, erosion and deposition**.
+
+## How land forms are made and changed
 
 Land forms are shaped by two groups of forces working over long periods of time: **internal forces** (which build the land up from inside the Earth) and **external forces** (which wear the land down at the surface).
 
@@ -291,7 +306,14 @@ These forces generally **build up** and **create** relief.
 
 ## The balance
 
-Land forms are the result of a long **struggle** between the internal forces building the land up and the external forces wearing it down. A young mountain is high and jagged; over millions of years, weathering and erosion wear it down to lower, rounder hills. Understanding these forces explains how the Earth's landscape came to look as it does.`,
+Land forms are the result of a long **struggle** between the internal forces building the land up and the external forces wearing it down. A young mountain is high and jagged; over millions of years, weathering and erosion wear it down to lower, rounder hills. Understanding these forces explains how the Earth's landscape came to look as it does.
+
+## Common errors and misconceptions
+
+- **Confusing weathering and erosion** — **weathering** is the *breaking down* of rock **where it is** (no movement); **erosion** is the *wearing away and carrying off* of the broken material by water, wind or ice.
+- **Thinking internal and external forces are the same** — **internal** forces (volcanoes, earthquakes, folding) build the land **up** from within; **external** forces (weathering, erosion, deposition) wear it **down** at the surface.
+- **Forgetting deposition builds new land** — eroded material is dropped elsewhere (**deposition**), forming deltas, beaches and fertile flood plains.
+- **Believing landscapes form quickly** — these processes act over **thousands to millions of years**, not in a human lifetime.`,
       workedExample: `**Task.** (a) Distinguish between internal and external forces that shape land forms. (b) Explain the difference between weathering and erosion. (c) How is a fertile plain built by external forces?
 
 **Part (a) — internal vs external forces**
