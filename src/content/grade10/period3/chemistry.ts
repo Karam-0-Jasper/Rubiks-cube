@@ -17,7 +17,11 @@ export const chemistryG10P3: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to state the periodic law, describe how the periodic table is arranged into periods and groups, and relate an element's position to its electron arrangement.",
       estimatedMinutes: 150,
-      notes: `## Ordering the elements
+      notes: `## Introduction
+
+With over a hundred elements known, chemistry would be chaos if each had to be learned separately. The **periodic table** brings order: by arranging the elements sensibly, it places those that behave alike in the same column, so that knowing where an element sits lets you predict how it will react. This topic states the **periodic law**, explains how the table is built into **periods** and **groups**, and links an element's position directly to its electron arrangement.
+
+## Ordering the elements
 
 There are over 100 chemical **elements**. The **periodic table** arranges them in a way that groups elements with similar properties together, so their behaviour can be predicted from their position.
 
@@ -61,7 +65,14 @@ This means that when the elements are arranged in order of **increasing atomic n
 
 ## Why position predicts properties
 
-Because an element's group gives its number of **outer electrons**, and chemistry is driven by outer electrons, the table lets you **predict** how an element will react just from where it sits. This is the power of the periodic table — introduced here and used throughout senior chemistry.`,
+Because an element's group gives its number of **outer electrons**, and chemistry is driven by outer electrons, the table lets you **predict** how an element will react just from where it sits. This is the power of the periodic table — introduced here and used throughout senior chemistry.
+
+## Common errors and misconceptions
+
+- **Confusing periods and groups** — a **period** is a horizontal **row**; a **group** is a vertical **column**. Elements in the same group behave alike, not those in the same period.
+- **Ordering by mass, not atomic number** — the modern table is arranged by **atomic number** (protons), which fixed the few places where mass order went wrong.
+- **Thinking the group number never links to electrons** — for the main groups, the group number equals the number of **outer (valence) electrons**.
+- **Calling all elements metals** — the table has metals (left/middle), non-metals (right) and metalloids along the dividing zig-zag.`,
       workedExample: `**Task.** An element has the electron configuration 2, 8, 7. (a) State its period and group. (b) Predict whether it is a metal or non-metal and how it tends to react. (c) Name the element.
 
 **Part (a) — period and group**
@@ -250,7 +261,11 @@ Because an element's group gives its number of **outer electrons**, and chemistr
       objective:
         "By the end of the topic, learners should be able to describe the characteristic properties of the alkali metals, the halogens and the noble gases, and outline how reactivity changes down these groups.",
       estimatedMinutes: 150,
-      notes: `## Families of elements
+      notes: `## Introduction
+
+Some columns of the periodic table are so distinctive that chemists give them family names — the soft, fiercely reactive **alkali metals**, the colourful, poisonous **halogens**, and the aloof, unreactive **noble gases**. Studying these families shows the periodic table's greatest lesson: that properties repeat in patterns (**trends**) you can predict. This topic describes each family and how reactivity changes as you go **down** a group.
+
+## Families of elements
 
 Certain groups are so distinctive that they have special names. These "families" share properties because their members have the same number of outer electrons.
 
@@ -284,7 +299,14 @@ Elements: helium, neon, argon. Each has a **full outer shell** (helium 2; the ot
 Everything in this topic follows from Period II's atomic structure:
 
 - **Metals** (few outer electrons) **lose** them; **non-metals** (nearly full shells) **gain** them; **noble gases** (full shells) do neither.
-- The goal of almost every reaction is a **stable, noble-gas-like full outer shell**. This idea prepares learners for chemical bonding in later periods.`,
+- The goal of almost every reaction is a **stable, noble-gas-like full outer shell**. This idea prepares learners for chemical bonding in later periods.
+
+## Common errors and misconceptions
+
+- **Reactivity trends go opposite ways** — alkali metals get **more** reactive **down** the group; halogens get **less** reactive down the group. Don't apply one rule to both.
+- **Thinking noble gases react easily** — they have full outer shells, so they are almost completely **unreactive**.
+- **Storing or handling alkali metals like ordinary metals** — sodium and potassium react violently with water and are stored under oil.
+- **Confusing Group I and Group VII** — Group I are metals with **one** outer electron (lose it); Group VII (halogens) are non-metals with **seven** (gain one).`,
       workedExample: `**Task.** (a) Why is potassium more reactive than lithium, even though both are Group I metals? (b) Explain why the noble gases are unreactive, and how this explains why sodium reacts.
 
 **Part (a) — reactivity down Group I**
