@@ -16,7 +16,11 @@ export const historyG10P2: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to explain the place of King Solomon and the Queen of Sheba in Ethiopian tradition, describe the achievements of the Kingdom of Aksum, and discuss Ethiopia's contribution to African history.",
       estimatedMinutes: 150,
-      notes: `## Ethiopia: one of Africa's oldest states
+      notes: `## Introduction
+
+While much of the world was still without cities, the Horn of Africa was home to one of the oldest and proudest civilisations on Earth — **Ethiopia**. Its kingdom of **Aksum** minted its own coins, built towering stone monuments, controlled Red Sea trade, and was among the first states in the world to adopt Christianity. Its story, wrapped in the tradition of **King Solomon and the Queen of Sheba**, is a powerful answer to the myth that Africa lacked great states. This topic explores that tradition, the achievements of Aksum, and Ethiopia's place in African history.
+
+## Ethiopia: one of Africa's oldest states
 
 **Ethiopia** (in the Horn of Africa) is one of the oldest continuous civilizations in the world. Long before European contact it had its own kingdoms, writing, religion and trade — proof that Africa produced advanced, organised states.
 
@@ -44,7 +48,14 @@ The real historical greatness of early Ethiopia is seen in the **Kingdom of Aksu
 
 - It shows that Africa had literate, coin-using, monument-building civilizations in ancient times.
 - Its long independence and unique church made it a symbol of African dignity.
-- Ethiopia famously defeated a European invasion at the **Battle of Adwa (1896)**, becoming a source of pride for Africans everywhere and, later, for the Pan-African movement.`,
+- Ethiopia famously defeated a European invasion at the **Battle of Adwa (1896)**, becoming a source of pride for Africans everywhere and, later, for the Pan-African movement.
+
+## Common errors and misconceptions
+
+- **Confusing the kingdom's name** — the great ancient kingdom of the region was **Aksum (Axum)**; "Ethiopia" is the wider and modern name for the country.
+- **Treating the Solomon–Sheba story as plain fact** — it is a **tradition** that gave the ruling line its legitimacy; historians treat it as an important belief, not a documented event.
+- **Thinking Christianity came to Africa only with Europeans** — Aksum adopted **Christianity in the 4th century AD**, centuries before European colonisers arrived.
+- **Believing all of Africa was colonised** — Ethiopia kept its **independence**, defeating Italy at **Adwa (1896)**.`,
       workedExample: `**Task.** A student claims, "Ancient Africa had no organised states before Europeans arrived." Using the example of Aksum, write a short answer that corrects this claim with evidence.
 
 **Model answer**
@@ -245,7 +256,11 @@ The claim is false, and the Kingdom of Aksum in ancient Ethiopia disproves it cl
       objective:
         "By the end of the topic, learners should be able to describe the origins and character of the Swahili civilization of the East African coast, identify the peoples who contributed to it, and outline the civilization of ancient Sudan and the origins of African societies.",
       estimatedMinutes: 150,
-      notes: `## The Swahili civilization
+      notes: `## Introduction
+
+Africa's greatness was not only inland — along its **eastern coast**, trade with the wider Indian Ocean world gave rise to the wealthy **Swahili** city-states, where African, Arab and Asian influences blended into a new culture and language. Together with the earlier civilisation of **ancient Sudan**, these societies show Africans building cities, commerce and culture through their own trade and enterprise. This topic describes the origins and character of the **Swahili** civilisation, the peoples who shaped it, and the civilisation of **ancient Sudan**.
+
+## The Swahili civilization
 
 Along the **East African coast** — from present-day Somalia down through Kenya, Tanzania and Mozambique — a rich trading civilization grew up from about the 8th century CE: the **Swahili civilization**.
 
@@ -278,7 +293,14 @@ Early African societies grew from small kin-based communities into larger organi
 - **farming and herding**, which allowed settled village life,
 - **trade**, which brought wealth and contact with other peoples,
 - **ironworking**, which improved tools and weapons,
-- and shared **language, religion and rule**, which bound people together into kingdoms and civilizations such as Aksum, the Swahili coast and Kush.`,
+- and shared **language, religion and rule**, which bound people together into kingdoms and civilizations such as Aksum, the Swahili coast and Kush.
+
+## Common errors and misconceptions
+
+- **Thinking Swahili is only a language** — **Swahili** names both a **people/civilisation** of the East African coast and the **language** that grew from their trade contacts.
+- **Believing Arabs "founded" the Swahili cities** — the Swahili civilisation was fundamentally **African**, enriched by trade contact with Arab and Asian merchants; it was a *blend*, not a foreign creation.
+- **Confusing ancient Sudan with the modern country** — "the Sudan" here means the broad belt of Africa south of the Sahara, not only today's Republic of Sudan.
+- **Assuming African states arose without trade or iron** — farming, **ironworking** and **trade** were the very foundations on which these kingdoms grew.`,
       workedExample: `**Task.** Explain how trade shaped the Swahili civilization, and identify the peoples who contributed to it.
 
 **How trade shaped the Swahili civilization**
