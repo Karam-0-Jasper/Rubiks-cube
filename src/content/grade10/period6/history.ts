@@ -16,7 +16,11 @@ export const historyG10P6: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to explain the causes and organisation of the trans-Atlantic slave trade, describe the triangular trade and its effects on Africa, and outline how the trade was abolished.",
       estimatedMinutes: 160,
-      notes: `## What was the trans-Atlantic slave trade?
+      notes: `## Introduction
+
+Few events have shaped the modern world — and modern Africa — as deeply, or as tragically, as the **trans-Atlantic slave trade**. Over some four hundred years, millions of Africans were seized and shipped across the ocean to labour in the Americas, at an immense human cost. This topic explains **why** the trade happened, how it was organised as the three-sided **triangular trade** with its brutal **Middle Passage**, what **effects** it had on Africa, and how, in the end, it was **abolished** — a story that connects directly to the founding of **Liberia**.
+
+## What was the trans-Atlantic slave trade?
 
 The **trans-Atlantic slave trade** was the forced transport of **millions of enslaved Africans** across the **Atlantic Ocean** to the Americas (the Caribbean, Brazil, and North America) between about the **16th and 19th centuries**. It was one of the greatest and most tragic forced movements of people in history.
 
@@ -63,7 +67,14 @@ By the late 18th and 19th centuries, growing **opposition** ended the trade:
 - **Humanitarian and religious campaigns** (abolitionists) argued that slavery was morally wrong.
 - Formerly enslaved people and their descendants campaigned against it.
 - Britain abolished the slave **trade** in **1807** and slavery itself in its empire in **1833**; other nations followed over the century.
-- The founding of **Liberia** (1822/1847) and Sierra Leone was connected to resettling freed and formerly enslaved Africans.`,
+- The founding of **Liberia** (1822/1847) and Sierra Leone was connected to resettling freed and formerly enslaved Africans.
+
+## Common errors and misconceptions
+
+- **Confusing the trans-Atlantic trade with the trans-Saharan trade** — the Atlantic trade crossed the **ocean to the Americas** by ship; the Saharan trade (Period IV) crossed the **desert to North Africa** by camel.
+- **Thinking the "Middle Passage" was the whole trade** — the Middle Passage was only the **second leg** (Africa → Americas); the triangle had three legs in all.
+- **Believing abolishing the trade (1807) ended slavery at once** — Britain abolished the **trade** in 1807 but **slavery itself** in its empire only in **1833**, and other nations later still.
+- **Assuming only Europeans were involved** — European demand and ships drove the trade, but **some coastal African rulers and traders** also took part by selling captives; recognising this does not lessen Europe's central responsibility.`,
       workedExample: `**Task.** (a) Explain what the "triangular trade" was. (b) Give three effects of the slave trade on Africa. (c) How and when was the slave trade abolished?
 
 **Part (a) — the triangular trade**
@@ -251,7 +262,11 @@ Growing **humanitarian, religious and abolitionist campaigns** (joined by former
       objective:
         "By the end of the topic, learners should be able to explain why Europeans explored the African interior, describe the 'Scramble for Africa' and the Berlin Conference, and outline the effects of colonization.",
       estimatedMinutes: 160,
-      notes: `## From the coast to the interior
+      notes: `## Introduction
+
+For hundreds of years, Europeans knew Africa only as a coastline of trading forts. Then, in the **19th century**, everything changed: explorers pushed into the **interior**, and within a single lifetime nearly the whole continent was seized and ruled by European powers. This topic explains **why** Europeans first explored Africa, **why** they went on to colonize it, how they carved it up at the **Berlin Conference (1884–1885)** with no African voice, and the lasting **effects** of colonization — ending with Africa's resistance and its recovery of **independence**.
+
+## From the coast to the interior
 
 For centuries Europeans traded only along Africa's **coasts**. In the **19th century**, after the slave trade was abolished, Europeans began to **explore the interior** of Africa and then to **colonize** it — to take political control.
 
@@ -289,7 +304,14 @@ The rush of European powers to seize African territory in the late 1800s is call
 
 ## Africa's response and independence
 
-Africans resisted colonization and, in the 20th century, struggled for and won their **independence**. The story of Africa's colonization and its recovery of freedom is central to understanding the modern continent.`,
+Africans resisted colonization and, in the 20th century, struggled for and won their **independence**. The story of Africa's colonization and its recovery of freedom is central to understanding the modern continent.
+
+## Common errors and misconceptions
+
+- **Thinking the Berlin Conference was attended by Africans** — it was a meeting of **European powers only**; Africa was divided with **no African representation**.
+- **Confusing exploration with colonization** — **exploration** (mapping rivers, missionary journeys) came first; **colonization** (taking political control) followed, driven mainly by the Industrial Revolution's need for raw materials and markets.
+- **Believing all of Africa was colonized** — **Ethiopia and Liberia** remained independent throughout the colonial era.
+- **Assuming Africans accepted colonial rule passively** — many peoples **resisted** conquest, and that experience later fuelled the **independence movements** of the 20th century.`,
       workedExample: `**Task.** (a) Give two reasons Europeans explored and then colonized Africa. (b) What was decided at the Berlin Conference, and what was wrong with it? (c) Name the two African states that remained independent.
 
 **Part (a) — reasons for exploration and colonization**

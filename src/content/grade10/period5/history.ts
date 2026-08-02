@@ -16,7 +16,11 @@ export const historyG10P5: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to describe the founding, growth and government of Kanem-Bornu, and explain the origins of the Hausa city-states and the role of Islam and trade in the savanna region.",
       estimatedMinutes: 150,
-      notes: `## The savanna states
+      notes: `## Introduction
+
+Ghana and Mali were not the only states of the West African grasslands. Across the wide **savanna** belt, other powerful societies rose and lasted for centuries — some as **single enduring kingdoms**, some as clusters of proud **city-states**. This topic looks at two of the most important: the long-lived kingdom of **Kanem-Bornu** around Lake Chad, and the **Hausa city-states** of northern Nigeria — examining how they were founded, how they were governed, and how **trade** and **Islam** shaped them, just as they had shaped Ghana and Mali.
+
+## The savanna states
 
 South of the Sahara, in the grassland (**savanna**) belt of the western and central Sudan, several important states grew up alongside the great empires of Ghana and Mali. Two groups stand out: **Kanem-Bornu** and the **Hausa city-states**.
 
@@ -45,7 +49,14 @@ The **Hausa** people of northern Nigeria organised themselves into a number of i
 - Growth through **trans-Saharan and regional trade**.
 - The spread and influence of **Islam** (rulers, scholars, learning, law).
 - Organised **government** under kings, with walled cities and armies.
-- Contact with North Africa across the Sahara.`,
+- Contact with North Africa across the Sahara.
+
+## Common errors and misconceptions
+
+- **Treating the Hausa as one empire** — the Hausa were **several independent, sometimes rival city-states** (Kano, Katsina, Zaria, Gobir…), *not* a single state; they were only united later under the Sokoto Caliphate.
+- **Confusing Kanem-Bornu's Mai with the Hausa Sarki** — the ruler of Kanem-Bornu was the **Mai**; each Hausa city-state had its own **Sarki**.
+- **Assuming Islam was forced on the savanna states** — it spread **peacefully through trade and scholars**; rulers adopted it and cities such as Kano and Katsina became centres of learning.
+- **Thinking these states were small or short-lived** — Kanem-Bornu was one of the **longest-lasting** African states, surviving many centuries.`,
       workedExample: `**Task.** Compare Kanem-Bornu and the Hausa states, and explain the role of Islam and trade in both.
 
 **Kanem-Bornu**
@@ -230,7 +241,11 @@ The **Hausa** people of northern Nigeria organised themselves into a number of i
       objective:
         "By the end of the topic, learners should be able to describe the origins, government and achievements of the forest states of Oyo and Benin, and outline the Akan and Mossi states.",
       estimatedMinutes: 150,
-      notes: `## The forest states
+      notes: `## Introduction
+
+Not every great West African state grew from the desert trade. In the thick **forest zone** near the coast, powerful societies developed from the land itself — from farming, from **gold**, from remarkable **art**, and from strong **armies**. This topic explores four of them: the Yoruba empire of **Oyo** and the Edo kingdom of **Benin** (famous for its bronzes) in modern Nigeria, and the gold-rich **Akan** and the cavalry states of the **Mossi** in the region of modern Ghana and Burkina Faso — showing how varied and sophisticated West Africa's civilizations were.
+
+## The forest states
 
 South of the savanna, in the **forest zone** of West Africa, other important states developed — including **Oyo** and **Benin** (in present-day Nigeria) and the **Akan** states and the **Mossi** states (in the region of modern Ghana and Burkina Faso). Unlike the savanna states, these were less shaped by trans-Saharan trade and Islam, and more by the forest environment, farming, and (later) trade with Europeans on the coast.
 
@@ -266,7 +281,14 @@ The **Mossi** (in the region of modern Burkina Faso) formed a group of states in
 
 ## What these states show
 
-The forest states show that West Africa had **many advanced, organised societies** — with kings and councils, great art (Benin), gold wealth (Akan), and strong armies (Oyo, Mossi) — developing in their own way, not only through Saharan trade and Islam.`,
+The forest states show that West Africa had **many advanced, organised societies** — with kings and councils, great art (Benin), gold wealth (Akan), and strong armies (Oyo, Mossi) — developing in their own way, not only through Saharan trade and Islam.
+
+## Common errors and misconceptions
+
+- **Confusing the historic kingdom of Benin with the modern Republic of Benin** — the kingdom studied here is the **Edo kingdom of Benin** (in modern Nigeria), *not* the present-day country of that name.
+- **Thinking the Alaafin of Oyo was an all-powerful king** — his power was deliberately **balanced by the Oyo Mesi**, a council of chiefs led by the Bashorun — an early example of organised, checked government.
+- **Believing the "Benin Bronzes" were made by Europeans** — they were made by **skilled Edo craftsmen** for the royal court, proof of advanced African art and metalworking.
+- **Mixing up the forest states' foundations** — Oyo rested on **cavalry**, Benin on **art and organised government**, the Akan on **gold**, and the Mossi on **cavalry and resistance to Islam**; each has its own signature.`,
       workedExample: `**Task.** (a) Who ruled Oyo and Benin, and how was the Oyo king's power limited? (b) What is Benin most famous for? (c) On what was the wealth of the Akan states based?
 
 **Part (a) — rulers of Oyo and Benin, and the check on Oyo's king**
