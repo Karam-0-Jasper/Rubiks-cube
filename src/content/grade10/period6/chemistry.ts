@@ -15,7 +15,11 @@ export const chemistryG10P6: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to define oxidation and reduction in terms of oxygen, hydrogen and electrons, and identify each in a chemical reaction.",
       estimatedMinutes: 160,
-      notes: `## Two processes that happen together
+      notes: `## Introduction
+
+Rusting iron, a burning fire, a battery powering a torch, respiration in your own cells — all of these are the same kind of chemical change: a **redox reaction**, in which electrons pass from one substance to another. Because so much of chemistry (and life) is redox, learning to recognise **oxidation** and **reduction** is one of the most useful skills in the subject. This topic gives the three definitions of oxidation and reduction and shows how to spot each in a reaction.
+
+## Two processes that happen together
 
 **Oxidation** and **reduction** are two chemical changes that always happen **together** — when one substance is oxidised, another is reduced. A reaction involving both is called a **redox reaction** (**red**uction–**ox**idation).
 
@@ -66,7 +70,16 @@ In any redox reaction, the **electrons lost by one substance are gained by anoth
 | | Oxygen | Hydrogen | Electrons |
 |---|---|---|---|
 | **Oxidation** | gain O | lose H | **lose e⁻** |
-| **Reduction** | lose O | gain H | **gain e⁻** |`,
+| **Reduction** | lose O | gain H | **gain e⁻** |
+
+Remember **OIL RIG**: **O**xidation **I**s **L**oss (of electrons), **R**eduction **I**s **G**ain.
+
+## Common errors and misconceptions
+
+- **Thinking reduction means "getting smaller"** — in chemistry, **reduction** means **gaining electrons** (or losing oxygen), nothing to do with size.
+- **Forgetting the two go together** — you cannot have oxidation without reduction; the electrons lost by one substance are gained by another (**redox**).
+- **Mixing up the electron rule** — use **OIL RIG**: Oxidation Is Loss, Reduction Is Gain (of electrons).
+- **Defining redox only by oxygen** — the *electron* definition is the most general; a reaction can be redox even when no oxygen is involved.`,
       workedExample: `**Task.** For the reaction CuO + H₂ → Cu + H₂O:
 (a) Which substance is oxidised and which is reduced, in terms of oxygen? (b) State the electron definitions of oxidation and reduction. (c) In the reaction of sodium with chlorine, which is oxidised?
 
@@ -257,7 +270,11 @@ When sodium reacts with chlorine, **sodium loses an electron** (Na → Na⁺ + e
       objective:
         "By the end of the topic, learners should be able to identify oxidising and reducing agents in a reaction, and describe everyday examples of redox such as rusting, combustion and respiration.",
       estimatedMinutes: 150,
-      notes: `## Oxidising and reducing agents
+      notes: `## Introduction
+
+Now that we can recognise oxidation and reduction, we can name the two "actors" in every redox reaction: the substance that *causes* oxidation and the one that *causes* reduction. These are the **oxidising** and **reducing agents**. The same idea explains a great deal of everyday life in Liberia — why iron roofs rust, why fuel burns, why food must be respired to release its energy, and why bleach removes colour. This topic identifies the agents in a reaction and looks at redox all around us.
+
+## Oxidising and reducing agents
 
 In a redox reaction, the two reactants play opposite roles:
 
@@ -294,7 +311,14 @@ Because rusting is harmful, we try to prevent it by keeping **oxygen and water a
 
 ## Why redox matters
 
-Redox reactions run **batteries**, extract **metals** from their ores, power **respiration** and **combustion**, and cause **rusting**. Understanding oxidation and reduction explains a huge range of everyday and industrial chemistry.`,
+Redox reactions run **batteries**, extract **metals** from their ores, power **respiration** and **combustion**, and cause **rusting**. Understanding oxidation and reduction explains a huge range of everyday and industrial chemistry.
+
+## Common errors and misconceptions
+
+- **Mixing up the agents** — the **oxidising agent** is itself **reduced**; the **reducing agent** is itself **oxidised**. Each does the *opposite* to itself of what it does to the other.
+- **Thinking rusting needs only air** — rusting of iron needs **both oxygen and water**; either alone will not rust it, which is why oiling or painting (keeping water out) prevents it.
+- **Believing combustion and respiration are unrelated** — both are redox reactions that oxidise a fuel/food to release energy; respiration is, in effect, slow, controlled "burning" of glucose.
+- **Assuming an agent is used up doing nothing** — the agent is chemically changed in the reaction (reduced or oxidised); it is a reactant, not a bystander.`,
       workedExample: `**Task.** In the reaction CuO + H₂ → Cu + H₂O:
 (a) Identify the oxidising agent and the reducing agent, with reasons. (b) Explain, as a redox process, why iron rusts and give one way to prevent it.
 
