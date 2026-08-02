@@ -15,7 +15,11 @@ export const economicsG10P4: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to define utility, distinguish total from marginal utility, and state and explain the law of diminishing marginal utility with examples.",
       estimatedMinutes: 160,
-      notes: `## What is consumer behaviour about?
+      notes: `## Introduction
+
+Why is the first cold drink on a hot day so wonderful, while the fourth barely tempts you? Economists answer this with the idea of **utility** — the satisfaction we get from what we consume — and one of the most powerful rules in the whole subject: the **law of diminishing marginal utility**. This topic defines utility, separates **total utility** from **marginal utility**, and shows how the extra satisfaction from each new unit steadily falls — a pattern that quietly explains why we buy variety, why demand curves slope downward, and how much a shopper is willing to pay.
+
+## What is consumer behaviour about?
 
 **Consumer behaviour** studies how people decide **what to buy** with their limited income in order to get the most **satisfaction** from their wants. The key idea is **utility**.
 
@@ -65,7 +69,14 @@ Notice: **total utility keeps rising** (or stays level) as long as marginal util
 
 ## Why the law matters
 
-Diminishing marginal utility explains a lot of economic behaviour — why people **buy a variety** of goods rather than only one, and why a consumer will pay less for extra units. It is the foundation for understanding how a consumer spreads a limited income across different goods, which is the next topic.`,
+Diminishing marginal utility explains a lot of economic behaviour — why people **buy a variety** of goods rather than only one, and why a consumer will pay less for extra units. It is the foundation for understanding how a consumer spreads a limited income across different goods, which is the next topic.
+
+## Common errors and misconceptions
+
+- **Confusing total utility with marginal utility** — **total** utility is the satisfaction from *all* units together; **marginal** utility is the extra satisfaction from *one more* unit (the *change* in total utility).
+- **Thinking total utility falls whenever marginal utility falls** — while marginal utility is still **positive**, total utility keeps **rising** (just by smaller amounts); total utility only falls once marginal utility turns **negative**.
+- **Believing total utility is greatest where marginal utility is greatest** — total utility is at its **maximum** where marginal utility reaches **zero** (satiation), not where it is highest.
+- **Forgetting utility is subjective** — the same good gives different satisfaction to different people and depends on how much one already has; utility is not a fixed property of the good.`,
       workedExample: `**Task.** From the table below, (a) calculate the marginal utility of each mango, (b) state the law being illustrated, and (c) say at which mango total utility is maximised.
 
 | Mango | Total utility |
@@ -259,7 +270,11 @@ Total utility is highest at the **4th and 5th mango** (27), which is where **mar
       objective:
         "By the end of the topic, learners should be able to explain how a rational consumer allocates a limited income among goods to maximise satisfaction, and state the condition for consumer equilibrium.",
       estimatedMinutes: 150,
-      notes: `## The consumer's problem
+      notes: `## Introduction
+
+If every extra unit of a good gives less satisfaction, how does a shopper with limited money decide *how much* of each good to buy? This topic answers that question. It explains what it means to be a **rational consumer**, introduces the **equi-marginal principle** — the clever rule of getting equal satisfaction from the last dollar spent on every good — and shows how a consumer reaches **equilibrium**, the balance point where no reshuffling of spending could make them any happier. It ties the whole term together by linking this balance back to the **law of demand**.
+
+## The consumer's problem
 
 A consumer has **unlimited wants** but a **limited income** and faces **given prices**. The problem is: how should they spend their money to get the **greatest possible total satisfaction (utility)**? A consumer who does this is acting **rationally**.
 
@@ -297,7 +312,14 @@ In real life, a consumer's choices also depend on:
 - the **prices of related goods** (substitutes and complements),
 - **advertising** and habit.
 
-Understanding consumer behaviour helps explain the **demand** studied earlier: as a consumer gains less marginal utility from extra units, they will only buy more at a **lower price** — which is exactly the law of demand.`,
+Understanding consumer behaviour helps explain the **demand** studied earlier: as a consumer gains less marginal utility from extra units, they will only buy more at a **lower price** — which is exactly the law of demand.
+
+## Common errors and misconceptions
+
+- **Equalising marginal utility instead of marginal utility per dollar** — equilibrium requires MU **÷ price** to be equal across goods, *not* the marginal utilities themselves; a costly good can be worth buying if its MU is high enough relative to its price.
+- **Thinking equilibrium means buying equal amounts of each good** — it means the *last dollar* spent on each good yields the same satisfaction, which usually means buying *different* quantities.
+- **Forgetting the income constraint** — the consumer must also spend their **whole income**; equal MU-per-dollar ratios only describe equilibrium when all the money is allocated.
+- **Missing the link to diminishing marginal utility** — switching spending works *because* buying more of a good lowers its marginal utility; without that falling MU, the ratios would never settle into balance.`,
       workedExample: `**Task.** A consumer has L$ to spend on two goods, rice and fish. The marginal utility per Liberian dollar is currently 6 for rice and 9 for fish. (a) Is the consumer in equilibrium? (b) What should they do, and what happens as they act? (c) State the condition for equilibrium.
 
 **Part (a) — is the consumer in equilibrium?**

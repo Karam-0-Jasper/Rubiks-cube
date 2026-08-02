@@ -28,7 +28,11 @@ export const economics: SubjectContent = {
           objective:
             "By the end of the unit, learners should be able to define economics, distinguish wants from needs, and explain scarcity, choice, scale of preference and opportunity cost, relating them to everyday life.",
           estimatedMinutes: 160,
-          notes: `## What economics is
+          notes: `## Introduction
+
+Every day, in every home and every country, people face the same stubborn fact: there is never *enough*. Money runs out before the shopping list does; a government cannot build every road, clinic and school it would like. **Economics** is the study of how people cope with this — how they use **limited resources** to satisfy their **unlimited wants**. This unit introduces the foundation of the whole subject: what economics is, the difference between **wants and needs**, and the linked ideas of **scarcity, choice, scale of preference** and **opportunity cost** that follow from them.
+
+## What economics is
 
 **Economics** is the social science that studies how people and societies use their **limited resources** to satisfy their **unlimited wants**.
 
@@ -76,7 +80,14 @@ Because choosing one thing means giving up another, every choice has an **opport
 
 ## Why these concepts matter
 
-Scarcity, choice and opportunity cost are the foundation of the whole subject. Every economic decision — by a household, a business or a government — is a choice made under scarcity, and every choice has a cost measured in what is given up.`,
+Scarcity, choice and opportunity cost are the foundation of the whole subject. Every economic decision — by a household, a business or a government — is a choice made under scarcity, and every choice has a cost measured in what is given up.
+
+## Common errors and misconceptions
+
+- **Adding up everything given up to find opportunity cost** — opportunity cost is only the **next best** alternative forgone, *not* the sum of all the options you did not choose.
+- **Thinking opportunity cost must be money** — it is a *value*, often measured in **time** or forgone goods; the studying a footballer misses is a real cost even though no money changes hands.
+- **Confusing wants with needs** — **needs** are survival essentials (food, water, shelter) and are limited; **wants** go beyond survival and are **unlimited**.
+- **Believing scarcity means "not much of something"** — scarcity means resources are limited **relative to the wants** they could satisfy; even something plentiful is scarce if wants for it outstrip it.`,
           workedExample: `**Question:** A family has 3,000 Liberian dollars and the following wants, in order of importance: (1) buy rice for the week — 1,500; (2) pay a child's school fee — 1,200; (3) repair the roof — 1,000; (4) buy a radio — 800. Draw up the family's scale of preference, decide what they can afford, and state the opportunity cost of their choices.
 
 **Solution**
@@ -141,7 +152,11 @@ The family chose to spend its last portion on the school fee rather than on the 
           objective:
             "By the end of the unit, learners should be able to state the three basic economic problems, distinguish microeconomics from macroeconomics, and describe the main economic systems, including the one practised in Liberia.",
           estimatedMinutes: 160,
-          notes: `## The three basic economic problems
+          notes: `## Introduction
+
+If scarcity forces every society to make choices, then every society must somehow decide *which* choices to make — and organise itself to carry them out. This unit sets out the **three basic economic problems** that no economy can escape, divides the subject into its two great branches — **microeconomics** and **macroeconomics** — and compares the main **economic systems** (capitalism, socialism and the mixed economy) by which societies answer those problems, ending with the system Liberia itself practises.
+
+## The three basic economic problems
 
 Because resources are scarce, **every society** — however it is organised — must answer three basic questions:
 
@@ -185,7 +200,14 @@ Liberia operates a **mixed economy**. Private individuals and firms produce most
 
 ## Why this matters
 
-Understanding the basic questions, the branches and the systems gives a framework for the whole subject: every later topic — demand and supply, production, money, trade — is about how an economy answers *what, how and for whom* to produce.`,
+Understanding the basic questions, the branches and the systems gives a framework for the whole subject: every later topic — demand and supply, production, money, trade — is about how an economy answers *what, how and for whom* to produce.
+
+## Common errors and misconceptions
+
+- **Mixing up micro and macro** — **micro**economics studies *individual* units (one household, one firm, one market); **macro**economics studies the economy *as a whole* (national income, inflation, unemployment).
+- **Thinking Liberia is a pure capitalist or pure socialist economy** — Liberia runs a **mixed economy**: private firms, government provision and a large **subsistence** sector operate side by side.
+- **Believing one system is simply "best"** — each has advantages *and* disadvantages; the mixed economy is common precisely because it tries to keep the market's incentives while letting the state correct its failures.
+- **Confusing "how to produce" with "what to produce"** — *what* is which goods and quantities; *how* is the method (labour-intensive vs capital-intensive); *for whom* is how output is shared.`,
           workedExample: `**Question:** Compare capitalism and socialism as ways of answering the three basic economic questions, and explain which system Liberia practises and why a mixed economy is often preferred.
 
 **Solution**

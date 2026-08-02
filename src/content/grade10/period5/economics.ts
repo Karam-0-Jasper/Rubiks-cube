@@ -15,7 +15,11 @@ export const economicsG10P5: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to read and construct simple tables, and interpret line graphs, bar charts and pie charts used to present economic data.",
       estimatedMinutes: 150,
-      notes: `## Why economists use tools
+      notes: `## Introduction
+
+A long list of prices or population figures tells you very little at a glance — but the *same* numbers drawn as a rising line, compared as bars, or sliced into a pie suddenly reveal a story. Economists rely on a small toolkit for exactly this: **tables, line graphs, bar charts and pie charts**. This topic shows what each tool does best, how to read one properly (title, axes, units and key), and — the skill most tested in exams — how to **choose the right tool** for the question in front of you.
+
+## Why economists use tools
 
 Economics deals with lots of **data** — prices, quantities, incomes, populations. To make sense of it, economists use **tools** that organise data and reveal patterns: **tables, graphs and charts**, and simple **statistics**. These tools turn raw numbers into information that can be understood and compared.
 
@@ -69,7 +73,14 @@ A **pie chart** is a circle divided into slices, showing how a **whole is shared
 - **Parts of a whole →** pie chart.
 - **Exact figures →** table.
 
-Reading these correctly — including the **title, axes, units and key** — is an essential economics skill.`,
+Reading these correctly — including the **title, axes, units and key** — is an essential economics skill.
+
+## Common errors and misconceptions
+
+- **Using a pie chart to show change over time** — pie charts show **parts of a whole** at one moment; to show a trend across years, use a **line graph**.
+- **Forgetting the pie-chart angle formula** — a slice's angle is **(share% ÷ 100) × 360°**, because the whole circle is 360° = 100% (so 25% = 90°, not 25°).
+- **Reading a graph without its labels** — always check the **title, axes, units and key**; marks are routinely lost for ignoring them.
+- **Confusing the axes** — on a time graph the **horizontal (x) axis** shows time and the **vertical (y) axis** shows the value; swapping them misreads the whole graph.`,
       workedExample: `**Task.** A country's main exports in one year are: rubber 40%, iron ore 30%, gold 20%, and others 10%.
 (a) Which chart best shows how the total exports are shared, and why? (b) If instead you wanted to compare the value of each export in Liberian dollars, which chart would you use? (c) In the pie chart, what angle would the rubber slice take?
 
@@ -253,7 +264,11 @@ angle = (40 ÷ 100) × 360° = **144°**.
       objective:
         "By the end of the topic, learners should be able to calculate and interpret the mean (average), the median and the mode, and use percentages and ratios in simple economic problems.",
       estimatedMinutes: 150,
-      notes: `## Making sense of numbers
+      notes: `## Introduction
+
+How do we say, in a single number, what a "typical" wage is, or how much a price has gone up? For that, economists reach for a handful of simple but powerful measures: **averages** (the mean, median and mode), **percentages** and **ratios**. This topic shows how to calculate and — just as importantly — how to *interpret* each one, so that a long column of figures can be summed up in a few clear, comparable numbers. These are the everyday arithmetic behind interest rates, inflation, incomes and much more.
+
+## Making sense of numbers
 
 Besides charts, economists use simple **statistical measures** to summarise data: **averages, percentages and ratios**.
 
@@ -298,7 +313,14 @@ A **ratio** compares two quantities, showing how many times one contains the oth
 
 ## Why these matter
 
-Averages, percentages and ratios turn long lists of figures into a few clear numbers that can be compared and understood — the everyday arithmetic of economic analysis.`,
+Averages, percentages and ratios turn long lists of figures into a few clear numbers that can be compared and understood — the everyday arithmetic of economic analysis.
+
+## Common errors and misconceptions
+
+- **Confusing the median with the mode** — the **median** is the *middle* value in an ordered list; the **mode** is the *most frequent* value; always put the numbers in order before finding the median.
+- **Dividing by the new value in percentage change** — percentage change is (change ÷ **original** value) × 100; using the new value as the denominator is the commonest slip.
+- **Forgetting to order the data for the median** — the middle value only makes sense once the numbers are arranged from smallest to largest.
+- **Not simplifying a ratio** — a ratio like 12 : 18 should be reduced to its simplest form (2 : 3) by dividing both sides by their common factor.`,
       workedExample: `**Task.** The daily wages (in L$) of five workers are: 400, 600, 600, 800, 1000.
 (a) Find the mean, median and mode. (b) One worker's wage of 400 rises to 500 — what is the percentage increase? (c) Express the ratio of the lowest wage (400) to the highest (1000) in its simplest form.
 

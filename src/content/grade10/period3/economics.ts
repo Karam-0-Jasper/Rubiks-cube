@@ -15,7 +15,11 @@ export const economicsG10P3: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to name and define the four factors of production, give examples of each, and state the reward earned by each factor.",
       estimatedMinutes: 160,
-      notes: `## What are the factors of production?
+      notes: `## Introduction
+
+Where do the goods and services we buy actually come from? Behind every loaf of bread, every taxi ride and every bag of rice lies a combination of **resources** brought together to make it. Economists call these resources the **factors of production**, and they group them into just four kinds — **land, labour, capital and the entrepreneur**. This topic defines each factor, gives everyday Liberian examples, names the **reward** each one earns, and shows why nothing can be produced until all four are combined.
+
+## What are the factors of production?
 
 To produce any good or service, resources are needed. The **factors of production** are the **resources used to produce goods and services**. There are **four** of them: **land, labour, capital and the entrepreneur**.
 
@@ -58,7 +62,14 @@ The **entrepreneur** is the person who **organises the other three factors** (la
 
 ## Combining the factors
 
-No single factor can produce on its own — they must be **combined**. A bakery, for example, needs **land** (the site and wheat), **labour** (the bakers), **capital** (the oven and mixers) and an **entrepreneur** to organise them and take the risk. Production happens only when all four are brought together.`,
+No single factor can produce on its own — they must be **combined**. A bakery, for example, needs **land** (the site and wheat), **labour** (the bakers), **capital** (the oven and mixers) and an **entrepreneur** to organise them and take the risk. Production happens only when all four are brought together.
+
+## Common errors and misconceptions
+
+- **Thinking capital means money** — in economics, **capital** is the *man-made goods* used in production (tools, machines, buildings); money merely *buys* capital, it is not itself a factor of production.
+- **Forgetting the entrepreneur is a separate factor** — the entrepreneur is not just "the boss": they **organise** the other three factors and **bear the risk**, which is why their reward (profit) is uncertain.
+- **Mixing up the factor–reward pairs** — remember them as fixed pairs: **land → rent, labour → wages, capital → interest, entrepreneur → profit**.
+- **Believing one factor can produce alone** — no good is made by land, labour or capital by itself; production happens only when **all four are combined**.`,
       workedExample: `**Task.** A farmer runs a rice farm. (a) Identify the four factors of production on the farm. (b) State the reward earned by each factor. (c) Explain why the entrepreneur's reward is different from the others.
 
 **Part (a) — the four factors on the rice farm**
