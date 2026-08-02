@@ -15,7 +15,11 @@ export const chemistryG10P4: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to explain why atoms form bonds, describe how ionic and covalent bonds form, and relate each bond type to the properties of the substances it produces.",
       estimatedMinutes: 160,
-      notes: `## Why atoms bond
+      notes: `## Introduction
+
+Left to themselves, most atoms are unstable and "want" a full outer shell of electrons like the unreactive noble gases. They achieve it by **joining together** — forming chemical **bonds** — and this is why atoms are almost never found alone but locked into compounds like salt and water. This topic explains *why* atoms bond and the two great ways they do it: by **transferring** electrons (ionic bonding) and by **sharing** them (covalent bonding) — and how each produces substances with very different properties.
+
+## Why atoms bond
 
 Atoms bond in order to achieve a **stable, full outer electron shell**, like the noble gases (the idea from Period III). An atom can reach this by **losing, gaining or sharing** electrons — and the way it does so determines the **type of bond**.
 
@@ -76,7 +80,14 @@ Atoms bond in order to achieve a **stable, full outer electron shell**, like the
 | Electrons | transferred | shared |
 | Particles | ions | molecules |
 | Conducts electricity | when molten/dissolved | no |
-| Melting point | high | low |`,
+| Melting point | high | low |
+
+## Common errors and misconceptions
+
+- **Confusing which type forms where** — **ionic** = metal + non-metal (electrons *transferred*); **covalent** = non-metal + non-metal (electrons *shared*).
+- **Thinking ionic solids conduct electricity** — a solid ionic compound does **not** conduct; it conducts only when **molten or dissolved**, because the ions are then free to move.
+- **Saying covalent compounds conduct** — they have no free ions or electrons, so most do not conduct at all.
+- **Muddling ions and atoms** — an **ion** is a charged atom that has lost or gained electrons; a metal forms a **positive** ion, a non-metal a **negative** one.`,
       workedExample: `**Task.** (a) Describe how an ionic bond forms in magnesium oxide (MgO), given Mg is 2,8,2 and O is 2,6. (b) Explain why sodium chloride conducts electricity when molten but not when solid.
 
 **Part (a) — ionic bonding in MgO**
@@ -259,7 +270,11 @@ Electricity is carried by **charged particles that are free to move**.
       objective:
         "By the end of the topic, learners should be able to describe metallic bonding as a lattice of positive ions in a sea of delocalised electrons, and use this model to explain the characteristic properties of metals.",
       estimatedMinutes: 130,
-      notes: `## The third type of bond
+      notes: `## Introduction
+
+We have seen atoms transfer electrons (ionic) and share them (covalent). But what holds a lump of pure metal — a copper wire, an iron nail — together? The answer is a third kind of bond, **metallic bonding**, and its unusual model beautifully explains the very properties that make metals so useful: they conduct electricity and heat, they can be hammered into shape, and they shine. This topic describes metallic bonding and uses it to explain those properties.
+
+## The third type of bond
 
 The first two bonds joined metals to non-metals (ionic) and non-metals to each other (covalent). The third, **metallic bonding**, holds a **metal** together.
 
@@ -303,7 +318,14 @@ The metallic model explains why metals behave as they do:
 |---|---|---|
 | **Ionic** | metal + non-metal | attraction of + and − ions |
 | **Covalent** | non-metal + non-metal | shared electron pairs |
-| **Metallic** | metal atoms | + ions in a sea of free electrons |`,
+| **Metallic** | metal atoms | + ions in a sea of free electrons |
+
+## Common errors and misconceptions
+
+- **Thinking metals are held by ionic bonds** — a pure metal has only *one* kind of atom, so there are no negative ions; it is held by **metallic** bonding.
+- **Explaining conduction wrongly** — metals conduct because of the **delocalised (free) electrons** that drift through the lattice, not because of moving ions.
+- **Confusing malleable and brittle** — metals are **malleable** (layers of ions slide without breaking the bond); ionic solids are **brittle** (the lattice shatters when like charges meet).
+- **Saying metals share electrons in pairs** — the electrons are **delocalised** across the whole structure, not shared between two atoms as in covalent bonding.`,
       workedExample: `**Task.** Use the metallic bonding model to explain (a) why copper is used for electrical wires, and (b) why a metal can be bent and hammered into shape without breaking.
 
 **Part (a) — copper conducts electricity**
