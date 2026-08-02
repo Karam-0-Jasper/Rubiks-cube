@@ -17,7 +17,11 @@ export const biologyG10P3: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to describe how cells build tissues, tissues build organs and organs build systems, name the four main types of tissue and their functions, and list the characteristics of multicellular organisms.",
       estimatedMinutes: 150,
-      notes: `## Building a body, step by step
+      notes: `## Introduction
+
+A single cell can do everything for itself, but it stays small and simple. Larger, more capable organisms take a different path: they build their bodies from **many** cells that **divide the labour**, each type specialising in one job. The result is a body organised in **levels**, from the single cell up to the whole organism. This topic follows that ladder — cell to tissue to organ to system — and names the four main tissue types and what multicellular life has in common.
+
+## Building a body, step by step
 
 Unlike a single-celled organism, a **multicellular organism** is made of many cells that work together. Its body is organised in **levels**, each built from the one below:
 
@@ -61,7 +65,14 @@ Unlike a single-celled organism, a **multicellular organism** is made of many ce
 
 ## Why organisation matters
 
-**Division of labour** makes a complex body efficient: nerve cells signal, muscle cells move, red blood cells carry oxygen. Because tasks are shared out, a multicellular organism can grow large and do things a single cell never could.`,
+**Division of labour** makes a complex body efficient: nerve cells signal, muscle cells move, red blood cells carry oxygen. Because tasks are shared out, a multicellular organism can grow large and do things a single cell never could.
+
+## Common errors and misconceptions
+
+- **Muddling tissue, organ and system** — a *tissue* is many similar cells (muscle tissue); an *organ* is several tissues doing one job (the heart); a *system* is several organs (the circulatory system). Keep the order cell → tissue → organ → system.
+- **Naming an organ as a tissue** — the stomach is an *organ*, not a tissue; the tissue is, for example, its muscle layer.
+- **Thinking every organism has organs** — unicellular organisms and very simple animals have no organs; organs appear only with greater complexity.
+- **Forgetting blood is a tissue** — blood is a *connective* tissue, even though it is liquid.`,
       workedExample: `**Task.** Using the human digestive system, show how the levels of organisation fit together, and match each of the four tissue types to a job it does in the body.
 
 **Levels of organisation in the digestive system**
@@ -270,7 +281,11 @@ Unlike a single-celled organism, a **multicellular organism** is made of many ce
       objective:
         "By the end of the topic, learners should be able to describe the general characteristics and structure of sponges and hydra as simple multicellular animals, and relate their body features to how they feed, move and reproduce.",
       estimatedMinutes: 150,
-      notes: `## Simple multicellular animals
+      notes: `## Introduction
+
+Between the single-celled *Amoeba* and a complex animal like a fish lie the **simplest multicellular animals**. Studying them shows the very first steps of the multicellular body — a handful of cell types arranged in layers, with no true organs yet. This topic looks at two classic examples, the **sponge** and the **hydra**, and relates their simple body plans to how they feed, move and reproduce.
+
+## Simple multicellular animals
 
 Not all multicellular animals have complex organs and systems. The simplest ones — such as **sponges** and **hydra** — have bodies of just a few cell layers, yet they clearly show the step from single cells to a true multicellular body.
 
@@ -319,7 +334,14 @@ The **hydra** is a small freshwater animal, a little more advanced than a sponge
 | Movement | fixed (does not move) | can move by looping/gliding |
 | Reproduction | budding and sexual | mainly budding |
 
-Both show how life advances from single cells toward organised, multicellular bodies.`,
+Both show how life advances from single cells toward organised, multicellular bodies.
+
+## Common errors and misconceptions
+
+- **Calling a sponge a plant** — a sponge is an **animal** (Phylum Porifera); it is fixed and looks plant-like, but it feeds on food particles rather than photosynthesising.
+- **Thinking a hydra has organs** — it does not; it has two cell layers and *tissues* at most, but no true organs or systems.
+- **Confusing the stinging cells' name** — a hydra captures prey with **cnidocytes (stinging cells)** on its tentacles.
+- **Assuming "simple" means "not an animal"** — sponges and hydra are genuine multicellular animals, just simple ones.`,
       workedExample: `**Task.** Explain how a hydra captures and digests its food, and identify two ways it is more advanced than a sponge.
 
 **How a hydra feeds**
