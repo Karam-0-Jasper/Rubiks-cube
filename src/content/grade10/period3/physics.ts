@@ -15,7 +15,11 @@ export const physicsG10P3: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to define work and calculate it, describe the main forms of energy, use the formulas for kinetic and potential energy, and state the principle of conservation of energy.",
       estimatedMinutes: 170,
-      notes: `## Work in physics
+      notes: `## Introduction
+
+**Energy** is the single most important idea in physics — it is what makes anything happen, from a lorry climbing a hill to a torch giving light. Closely tied to it is **work**, the physicist's measure of energy transferred when a force moves something. This topic gives the exact meaning of work, the main forms of energy, the formulas for **kinetic** and **potential** energy, and the great **principle of conservation of energy** — that energy is never created or destroyed, only changed from one form to another.
+
+## Work in physics
 
 In everyday language "work" means any effort. In physics, **work** has a precise meaning:
 
@@ -72,7 +76,14 @@ The **principle of conservation of energy** states:
 </svg>
 \`\`\`
 
-When a ball falls, its **potential energy is converted into kinetic energy**: as it drops, height (and PE) decreases while speed (and KE) increases. The total energy stays the same. When it hits the ground the energy becomes heat and sound. Energy just keeps changing form.`,
+When a ball falls, its **potential energy is converted into kinetic energy**: as it drops, height (and PE) decreases while speed (and KE) increases. The total energy stays the same. When it hits the ground the energy becomes heat and sound. Energy just keeps changing form.
+
+## Common errors and misconceptions
+
+- **Thinking effort always means work** — in physics, if there is **no movement**, **no work** is done. Holding a heavy load still does no work (W = force × distance, and distance = 0), even though it is tiring.
+- **Forgetting direction** — work counts only the force (or component) **in the direction of motion**; a force at right angles to the motion does no work.
+- **Muddling the KE and PE formulas** — kinetic energy is **½mv²** (note the *square* on v and the ½); potential energy is **mgh**.
+- **Thinking energy is "used up"** — energy is **conserved**; it changes form (PE → KE → heat/sound), it is never destroyed.`,
       workedExample: `**Problem.** A worker lifts a 20 kg bag of rice to a shelf 2 m high (g = 10 m/s²).
 (a) How much work does the worker do? (b) How much gravitational potential energy does the bag gain? (c) If the bag then falls off the shelf, how much kinetic energy will it have just before hitting the ground?
 
@@ -256,7 +267,11 @@ KE just before landing = PE at the top = **400 J**.
       objective:
         "By the end of the topic, learners should be able to define power as the rate of doing work, calculate power using its formula, state its unit, and relate power to work, energy and time.",
       estimatedMinutes: 130,
-      notes: `## What power measures
+      notes: `## Introduction
+
+Two labourers may both carry the same load of blocks up the same stairs — the same **work** is done — but the one who finishes in half the time is more **powerful**. Doing work quickly matters as much as doing it at all: it is why we rate engines, generators and light bulbs in **watts**. This short topic defines **power** as the rate of doing work, gives its formula and unit, and links it back to work, energy and time.
+
+## What power measures
 
 Two machines may do the **same amount of work**, but one may do it **faster**. **Power** measures how **quickly** work is done — the **rate of doing work** (or of transferring energy).
 
@@ -288,7 +303,14 @@ Since work equals energy transferred, power is also **energy ÷ time**. A 100 W 
 
 ## Why power matters
 
-Power tells you how powerful a machine is, not just how much work it can eventually do. A strong engine and a weak one might both lift a load 10 m — the same work — but the powerful engine does it in far less time, so it has **greater power**. This is why engines, pumps and generators are rated by their power.`,
+Power tells you how powerful a machine is, not just how much work it can eventually do. A strong engine and a weak one might both lift a load 10 m — the same work — but the powerful engine does it in far less time, so it has **greater power**. This is why engines, pumps and generators are rated by their power.
+
+## Common errors and misconceptions
+
+- **Confusing work/energy with power** — **work** (joules) is the energy transferred; **power** (watts) is how *fast* it is transferred. Same work in less time = more power.
+- **Forgetting the unit** — power is measured in **watts (W)**, where 1 W = 1 joule per second. Don't quote power in joules.
+- **Using the wrong formula** — power = work ÷ time (P = W/t). To find work from power, rearrange to W = P × t.
+- **Thinking a bigger machine is always more powerful** — power depends on work done *per second*, not on size.`,
       workedExample: `**Problem.** A pump lifts 600 kg of water through a height of 5 m in 20 seconds (g = 10 m/s²). Find (a) the work done and (b) the power of the pump.
 
 **Part (a) — work done**
