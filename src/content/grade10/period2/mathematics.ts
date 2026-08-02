@@ -379,7 +379,15 @@ Multiply as usual, then convert any product that reaches the base into a carry. 
 Sometimes the base itself is unknown. Convert both sides to base ten and solve.
 
 Find b if 24_b = 14₁₀:
-2×b + 4 = 14 → 2b = 10 → **b = 5**.`,
+2×b + 4 = 14 → 2b = 10 → **b = 5**.
+
+## Common errors to watch for
+
+- **Reading a non-ten number as base ten** — 132₅ is "one-three-two, base five", **not** one hundred and thirty-two; read it digit by digit.
+- **Using a digit as large as (or larger than) the base** — base five has **no digit 5**; the largest digit is always one less than the base.
+- **Reading division remainders the wrong way** — when converting to another base, read the remainders from **bottom to top**, not top to bottom.
+- **Forgetting to carry at the base, not at ten** — in base five a column total of 7 gives write **2, carry 1** (since 7 = 1×5 + 2), not the base-ten carry.
+- **Skipping the check** — convert your answer **back** to base ten to confirm it; the round-trip catches almost every carrying slip.`,
       workedExample: `**Problem.** (a) Convert 2103₄ to base ten. (b) Add 143₅ + 24₅, giving the answer in base five.
 
 **Part (a) — base four to base ten**

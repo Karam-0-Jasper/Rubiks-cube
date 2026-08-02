@@ -16,7 +16,11 @@ export const mathematicsG10P4: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to solve linear equations in one variable, translate and solve word problems, solve linear inequalities, and represent inequality solutions on a number line.",
       estimatedMinutes: 190,
-      notes: `## Equations and equality
+      notes: `## Introduction
+
+So much of mathematics — and of everyday problem-solving — comes down to a single question: *what value makes this statement true?* This topic answers it for **linear equations** (where the unknown appears only to the power one) and for **inequalities** (where one side is greater or less than the other, not equal). You will learn to solve equations with brackets, fractions and the variable on both sides, to turn **word problems** into equations, and to solve and picture inequalities on a **number line** — mastering the one rule that makes inequalities different from equations.
+
+## Equations and equality
 
 An **equation** is a mathematical statement that two expressions are **equal**, joined by an "=" sign, e.g. 2x + 3 = 11.
 
@@ -98,7 +102,15 @@ The solution of an inequality is a range of values, shown on a number line:
 \`\`\`
 
 - An **open circle** (○) means the value is **not** included (< or >).
-- A **filled circle** (●) means the value **is** included (≤ or ≥).`,
+- A **filled circle** (●) means the value **is** included (≤ or ≥).
+
+## Common errors to watch for
+
+- **Forgetting to flip the inequality sign** — when you **multiply or divide both sides by a negative** number, the sign reverses (−3x ≥ 12 gives x ≤ −4, not x ≥ −4).
+- **Doing something to one side only** — whatever you do to one side of an equation you must do to the **other** (and to *all three* parts of a compound inequality).
+- **Not clearing fractions properly** — multiply **every term** by the LCD, including terms without a fraction, before solving.
+- **Forgetting to expand brackets first** — 3(x − 4) must become 3x − 12 before you collect terms.
+- **Mixing up the circles** — an **open** circle excludes the value (< or >); a **filled** circle includes it (≤ or ≥).`,
       workedExample: `**Problem.** (a) Solve 4(x − 2) = 2x + 6. (b) Solve the inequality 5 − 2x ≤ 11 and show the solution on a number line.
 
 **Part (a) — linear equation with brackets**
@@ -302,7 +314,11 @@ Divide both sides by −2 — and because we divided by a **negative**, **revers
       objective:
         "By the end of the topic, learners should be able to define a relation and a function, describe a mapping and give its domain and range, use function notation, and find the gradient of a straight line and the distance between two points.",
       estimatedMinutes: 190,
-      notes: `## Relations
+      notes: `## Introduction
+
+Mathematics is full of *relationships* — between a number and its double, between a person and their age, between a point's position and its distance from another. This topic gives us the language to describe such links precisely. We meet **relations** and their **mappings**, learn the all-important idea of a **function** (a relation where every input has exactly one output), use **function notation** f(x), and then apply these ideas to straight lines by finding a line's **gradient** and the **distance** between two points.
+
+## Relations
 
 A **relation** is a rule that links the members of one set (the **domain**) to the members of another set (the **range**). For example, "is the capital of" relates Monrovia to Liberia.
 
@@ -364,7 +380,15 @@ A positive gradient rises left to right; a negative gradient falls. The equation
 
 The **distance** between two points (x₁, y₁) and (x₂, y₂) is found with the distance formula (from Pythagoras):
 
-$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$`,
+$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
+
+## Common errors to watch for
+
+- **Thinking every relation is a function** — a relation is a function only if **each input has exactly one output**; a **one-to-many** relation is *not* a function.
+- **Confusing domain and range** — the **domain** is the set of *inputs* (x-values); the **range** is the set of *outputs* (y-values).
+- **Misreading f(x)** — f(x) means "the output of f at x", *not* f multiplied by x; f(3) is found by substituting 3 for x.
+- **Flipping the gradient formula** — gradient is (change in **y**) ÷ (change in **x**); keep the coordinates in the same order in the top and bottom.
+- **Dropping the square in the distance formula** — you must **square** each difference, add, *then* take the square root.`,
       workedExample: `**Problem.** For the points A(1, 2) and B(4, 6): (a) find the gradient of the line AB; (b) find the distance AB. (c) If f(x) = 3x − 4, find f(5).
 
 **Part (a) — gradient**

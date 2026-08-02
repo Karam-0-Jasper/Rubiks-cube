@@ -15,7 +15,11 @@ export const mathematicsG10P5: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to solve a pair of simultaneous linear equations in two unknowns using the substitution method and the elimination method, and check their solutions.",
       estimatedMinutes: 190,
-      notes: `## What are simultaneous equations?
+      notes: `## Introduction
+
+One equation with two unknowns has endless answers — but *two* equations that must hold at the same time usually pin the unknowns down to a single pair of values. That is the power of **simultaneous equations**, and this topic teaches the two reliable algebraic ways to solve them: **substitution** (make one unknown the subject and slot it in) and **elimination** (add or subtract the equations to cancel an unknown). You will also learn to turn **word problems** into a pair of equations and to recognise the special cases where there is no solution or infinitely many.
+
+## What are simultaneous equations?
 
 A single linear equation in two unknowns, such as x + y = 7, has **many** solutions (x = 3, y = 4 works, but so do x = 5, y = 2, and many others).
 
@@ -88,7 +92,15 @@ Not every pair has exactly one solution. When you try to solve and **both unknow
 - If you reach a **false** statement such as *0 = 5*, the equations **contradict** each other (their lines are **parallel**) — there is **no solution**.
 - If you reach a statement that is **always true** such as *0 = 0*, the two equations are really the **same line** — there are **infinitely many** solutions.
 
-A pair with exactly one solution (the usual case) represents two lines that **cross at one point**, which is the idea we make graphical in the next topic.`,
+A pair with exactly one solution (the usual case) represents two lines that **cross at one point**, which is the idea we make graphical in the next topic.
+
+## Common errors to watch for
+
+- **Finding only one unknown** — a full solution needs **both** x and y; always substitute back to find the second unknown.
+- **Sign slips when subtracting equations** — subtracting flips *every* sign in the second equation; work carefully, or add a negative instead.
+- **Adding when you should subtract (or vice versa)** — to eliminate, **add** when the matched coefficients are *opposite* (+2y, −2y) and **subtract** when they are the *same* (+2y, +2y).
+- **Forgetting to make coefficients match first** — if no unknown cancels directly, **multiply** one or both equations before eliminating.
+- **Skipping the check** — substitute your pair into **both** original equations; a pair that fails either one is wrong.`,
       workedExample: `**Problem.** Solve the simultaneous equations by elimination, and check your answer:
    3x + 2y = 12
    x − 2y = 4
@@ -274,7 +286,11 @@ Substitute x = 4 into either equation. Using x − 2y = 4:
       objective:
         "By the end of the topic, learners should be able to solve simultaneous linear equations graphically by plotting both lines and reading the point of intersection, and interpret cases with one, none or infinitely many solutions.",
       estimatedMinutes: 150,
-      notes: `## The graphical idea
+      notes: `## Introduction
+
+The algebra of the last topic finds the solution to a pair of simultaneous equations; this topic lets you *see* it. Because every linear equation draws as a **straight line**, a pair of equations is simply **two lines**, and their solution is the **point where they cross**. This topic shows how to solve simultaneous equations **graphically** — by tabulating, plotting and reading off the intersection — and, just as valuably, how the picture reveals the three possible cases: lines that cross (one solution), lines that are parallel (none), and lines that coincide (infinitely many).
+
+## The graphical idea
 
 Every linear equation in x and y can be drawn as a **straight line**. A pair of simultaneous equations is therefore **two straight lines**, and their solution is the **point where the two lines cross (intersect)** — the single (x, y) that lies on both lines.
 
@@ -315,7 +331,15 @@ Two straight lines can be positioned in three ways:
 - The **graphical method** shows the solution clearly and helps you *see* the three cases, but it is only as accurate as your drawing — good for whole-number answers.
 - The **algebraic methods** (substitution, elimination) give **exact** answers, including fractions, and are more reliable for precise work.
 
-Together, the graph gives the picture and the algebra gives the precision.`,
+Together, the graph gives the picture and the algebra gives the precision.
+
+## Common errors to watch for
+
+- **Plotting from too few or guessed points** — make a proper **table of values** (two or three points) for *each* line before drawing; guessing loses accuracy.
+- **Misreading the intersection** — the solution is the (x, y) where the lines actually **cross**; read both coordinates carefully off the axes.
+- **Trusting the graph for non-whole-number answers** — a drawing is only as accurate as the plotting; for fractions, use the **algebraic** methods.
+- **Confusing the three cases** — lines that **cross** give one solution, **parallel** lines give none, and lines that **coincide** (same line) give infinitely many.
+- **Forgetting to check** — substitute the read-off point into **both** equations to confirm it.`,
       workedExample: `**Task.** Solve the simultaneous equations x + y = 6 and y = 2x graphically.
 
 **Step 1 — table of values for each line**

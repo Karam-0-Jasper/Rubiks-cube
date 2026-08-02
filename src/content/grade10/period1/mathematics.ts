@@ -272,7 +272,15 @@ Every real number has one position on the line; larger numbers lie to the right.
 
 ## Approximation
 
-Rounding gives a manageable value: 2/7 = 0.2857… ≈ 0.29 to two decimal places. Always state the degree of accuracy (decimal places or significant figures).`,
+Rounding gives a manageable value: 2/7 = 0.2857… ≈ 0.29 to two decimal places. Always state the degree of accuracy (decimal places or significant figures).
+
+## Common errors to watch for
+
+- **Adding fractions by adding tops and bottoms** — 1/2 + 1/3 is *not* 2/5; you must use a **common denominator** first (3/6 + 2/6 = 5/6).
+- **Flipping the wrong fraction when dividing** — invert the **divisor** only: "keep, change, flip" (keep the first, change ÷ to ×, flip the second).
+- **Ignoring order of operations with fractions** — do multiplication and division **before** addition and subtraction (BODMAS), not left to right regardless.
+- **Thinking a square-root sign always means irrational** — it is the *value* that decides: √4 = 2 is **rational**, while √2 is irrational.
+- **Leaving an answer unsimplified** — always reduce a fraction to its **lowest terms** (e.g. 24/36 → 2/3).`,
           workedExample: `**Question:** Simplify 2/3 + 3/4 × 8/9, giving your answer as a fraction in lowest terms.
 
 **Solution**
