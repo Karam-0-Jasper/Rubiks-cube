@@ -15,7 +15,11 @@ export const chemistryG10P5: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to distinguish atoms, molecules and ions, interpret a chemical formula, and name simple compounds.",
       estimatedMinutes: 150,
-      notes: `## Atoms, molecules and ions
+      notes: `## Introduction
+
+Chemistry has its own written language. Just as words are built from letters, every substance is written as a **chemical formula** built from element symbols and numbers — H₂O, NaCl, CO₂. To read and write these formulae you first need to be clear about the three basic particles they describe: the **atom**, the **molecule** and the **ion**. This topic distinguishes the three, shows how to interpret a formula, and names simple compounds.
+
+## Atoms, molecules and ions
 
 Three basic particles describe matter in chemistry:
 
@@ -53,7 +57,14 @@ In an ionic compound the **total positive charge must balance the total negative
 ## Naming simple compounds
 
 - A metal + a non-metal: name the metal, then the non-metal ending in **-ide**: sodium + chlorine → **sodium chloride**; magnesium + oxygen → **magnesium oxide**.
-- Compounds with oxygen in a group often end in **-ate**: sulfate, carbonate, nitrate.`,
+- Compounds with oxygen in a group often end in **-ate**: sulfate, carbonate, nitrate.
+
+## Common errors and misconceptions
+
+- **Confusing a subscript with a coefficient** — in **2H₂O**, the small **2** (subscript) means two atoms *within* the molecule; the big **2** in front means *two molecules*. They change different things.
+- **Muddling molecule and compound** — a **molecule** can be one element (O₂); a **compound** always has *different* elements chemically joined.
+- **Getting ion charges backwards** — a metal *loses* electrons to form a **positive** ion; a non-metal *gains* electrons to form a **negative** ion.
+- **Writing formulae without balancing charge** — in an ionic formula the total positive and negative charge must cancel (Al³⁺ and O²⁻ give Al₂O₃).`,
       workedExample: `**Task.** (a) State whether each is an atom, a molecule or an ion: O, O₂, Na⁺, H₂O. (b) Write the formula of the compound formed between calcium (Ca²⁺) and chloride (Cl⁻), and name it.
 
 **Part (a) — classify each particle**
@@ -232,7 +243,11 @@ In an ionic compound the **total positive charge must balance the total negative
       objective:
         "By the end of the topic, learners should be able to use relative atomic mass to work out relative molecular (formula) mass, explain the mole as the chemist's counting unit, and carry out simple mole calculations.",
       estimatedMinutes: 160,
-      notes: `## Why we need relative mass
+      notes: `## Introduction
+
+Chemical reactions happen between *countless* atoms and molecules — far too many to count one by one, and each far too small to weigh alone. Chemists solve this with two brilliant ideas: a scale of **relative mass** (comparing every atom to carbon-12) and the **mole**, a "chemist's dozen" that links the invisible world of atoms to masses we can weigh on a balance. This topic explains relative atomic and molecular mass, the mole, and how to use them in simple calculations.
+
+## Why we need relative mass
 
 Atoms are far too small to weigh individually, so chemists compare their masses using a scale of **relative mass**, based on the carbon-12 atom.
 
@@ -269,7 +284,14 @@ This links the mass you can weigh to the number of moles (and so the number of p
 
 ## Why stoichiometry matters
 
-Chemical equations tell us the **ratio** in which substances react. Using moles, chemists can work out **exactly how much** of a reactant is needed or how much product will form — essential for industry, medicine and the laboratory.`,
+Chemical equations tell us the **ratio** in which substances react. Using moles, chemists can work out **exactly how much** of a reactant is needed or how much product will form — essential for industry, medicine and the laboratory.
+
+## Common errors and misconceptions
+
+- **Thinking a mole is a mass** — a **mole** is a *number* of particles (6.02 × 10²³, Avogadro's number); its *mass* in grams equals the relative molecular mass.
+- **Using the wrong formula** — moles = mass ÷ Mr. To find mass, rearrange to mass = moles × Mr; don't multiply when you should divide.
+- **Forgetting to multiply atoms in a formula** — for the Mr of H₂O it is (2 × 1) + 16 = 18, not 1 + 16.
+- **Assuming equal masses mean equal moles** — 12 g of carbon and 12 g of magnesium contain *different* numbers of moles because their Ar values differ.`,
       workedExample: `**Task.** Using Ar values H = 1, C = 12, O = 16, Ca = 40:
 (a) Work out the relative molecular mass of calcium carbonate, CaCO₃.
 (b) How many moles are there in 50 g of CaCO₃?
