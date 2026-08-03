@@ -18,13 +18,15 @@ export const englishLanguageG10P3: PeriodContent = {
       estimatedMinutes: 160,
       notes: `## What the perfect tenses do
 
-We have already met the **simple** tenses (I walk, I walked, I will walk) and the **progressive** tenses (I am walking). The **perfect tenses** are the third group. They describe an action in relation to **another point in time** — normally an action that is **completed before** that point, or that began earlier and still matters. All three perfect tenses are built the same way:
+- Tenses so far: **simple** (I walk / walked / will walk) and **progressive** (I am walking).
+- **Perfect tenses** = the third group. They relate an action to **another point in time** — usually completed *before* it, or begun earlier and still mattering.
+- All three are built the same way:
 
 > **a form of the helping verb *have* + the past participle of the main verb**
 
 ## The past participle — the "third form"
 
-Every verb has three key forms: the **base**, the **simple past**, and the **past participle**. The perfect tenses use the third one.
+Every verb has three key forms: **base**, **simple past**, **past participle**. The perfect tenses use the third.
 
 | Base | Simple past | Past participle |
 | --- | --- | --- |
@@ -372,15 +374,12 @@ An **irregular verb** does **not** add -ed; it changes its form in a way you can
 
 So for many irregular verbs the simple past and past participle **differ** (*go / went / gone*), for others they are **identical** (*buy / bought / bought*), and for a few every form is the **same** (*put / put / put*).
 
-## Why it matters
+## Common errors to watch for
 
-Choosing the wrong form is a very common error:
-
-- ✗ *I have went to the market.* → ✓ *I have **gone** to the market.* (past participle after "have")
+- ✗ *I have went to the market.* → ✓ *I have **gone**.* (past participle after *have*)
 - ✗ *She teached us.* → ✓ *She **taught** us.* (irregular past)
 - ✗ *He drinked the water.* → ✓ *He **drank** the water.*
-
-Using the correct principal parts is essential for clear, correct writing in every kind of essay.`,
+- Wrong principal parts spoil otherwise clear writing — learn the irregular forms.`,
       workedExample: `**Task.** For each verb, give the simple past and the past participle, say whether it is regular or irregular, and use the past participle correctly in a present-perfect sentence.
 
 **1. jump**

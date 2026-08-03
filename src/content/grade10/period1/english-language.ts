@@ -29,36 +29,36 @@ export const englishLanguage: SubjectContent = {
           estimatedMinutes: 160,
           notes: `## Introduction
 
-Every sentence we speak or write is built out of words, and those words are sorted into groups called the **parts of speech** (noun, pronoun, verb, adjective, adverb, preposition, conjunction and interjection). The **noun** is the first and most important of these, because it is the naming word — without nouns we could not talk about the people, places and things around us at all. In this lesson we study what a noun is, the work a noun does inside a sentence, the different kinds of nouns, and how nouns change their form for number, gender and possession.
+- Words are grouped into **parts of speech**: noun, pronoun, verb, adjective, adverb, preposition, conjunction, interjection.
+- The **noun** = the naming word. It comes first.
+- **This lesson:** what a noun is; the work of a noun; kinds of nouns; number, gender, case.
 
 ## What a noun is
 
-A **noun** is a word that **names** a person, an animal, a place, a thing, or an idea. Anything that can be named is named by a noun. This is why nouns are sometimes called **naming words**.
+**Noun** — a word that **names** a person, animal, place, thing, or idea. (Also called a *naming word*.)
 
-Look carefully at what nouns can name:
+Nouns name:
 
-- **People:** *teacher, Musu, doctor, farmer, President Weah, mother, carpenter*.
-- **Animals:** *goat, lion, mosquito, cow, parrot, fish*.
-- **Places:** *Monrovia, market, school, Liberia, Africa, kitchen, River Gee*.
-- **Things (objects you can see or touch):** *book, cassava, phone, chair, motorbike, cutlass*.
-- **Ideas, qualities and feelings (things you cannot touch):** *freedom, honesty, fear, poverty, love, independence*.
+- **People:** teacher, Musu, doctor, farmer, mother, carpenter
+- **Animals:** goat, lion, mosquito, cow, parrot, fish
+- **Places:** Monrovia, market, school, Liberia, kitchen, River Gee
+- **Things (can see/touch):** book, cassava, phone, chair, motorbike, cutlass
+- **Ideas/feelings (cannot touch):** freedom, honesty, fear, poverty, love
 
-**Three quick tests to recognise a noun.** A word is usually a noun if:
+**Test for a noun** — a word is a noun if you can:
 
-1. You can put **the**, **a** or **an** in front of it — *the market, a book, an idea*.
-2. You can make it **plural** or count it — *one boy, two boys*.
-3. You can put a **possessive** in front of it — *my phone, Musu's basket, our school*.
-
-If a word passes these tests, it is almost always a noun.
+1. put **the / a / an** before it — the market, a book, an idea
+2. make it **plural** or count it — one boy, two boys
+3. put a **possessive** before it — my phone, Musu's basket
 
 ## The work a noun does in a sentence
 
-Naming is only part of the story. Inside a sentence a noun also does a **job** (this is called its *function*). The same noun can do different jobs in different sentences, so we name the job, not just the word.
+A noun also does a **job** in the sentence (its *function*). Name the job, not just the word.
 
-- **Subject** — the noun that does the action or that the sentence is about: *The **teacher** entered the class.* (Who entered? The teacher.)
-- **Object** — the noun that receives the action of the verb: *The teacher marked the **books**.* (Marked what? The books.)
-- **Complement** — the noun after verbs like *is, was, became* that renames the subject: *Musu is a **nurse**.*
-- **Object of a preposition** — the noun after a preposition: *She sat under the **tree**.*
+- **Subject** — does the action / what the sentence is about: *The **teacher** entered.*
+- **Object** — receives the action: *The teacher marked the **books**.*
+- **Complement** — renames the subject after *is, was, became*: *Musu is a **nurse**.*
+- **Object of a preposition** — follows a preposition: *She sat under the **tree**.*
 
 \`\`\`svg The four common jobs a noun does in a sentence
 <svg viewBox="0 0 460 210" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
@@ -84,7 +84,9 @@ Naming is only part of the story. Inside a sentence a noun also does a **job** (
 
 ## The kinds of nouns
 
-Nouns are grouped in several overlapping ways. A single noun usually belongs to more than one group at the same time — *Monrovia* is proper, concrete and countable all at once — so when you classify a noun you say which feature is being asked about.
+- Nouns are grouped in several overlapping ways.
+- One noun can belong to more than one group at once (*Monrovia* = proper + concrete + countable).
+- When you classify a noun, state the **feature being asked about**.
 
 ### 1. Common nouns and proper nouns
 
@@ -168,7 +170,9 @@ To make most compound nouns plural, add *-s* to the **main word**: *mother**s**-
 
 ## Nouns in composition
 
-Good writing depends on **precise nouns**. Compare *He sat under the tree* with *He sat under the **mango tree***, or *A bird flew past* with *A **hawk** flew past*: the exact noun paints a clearer picture in the reader's mind. Train learners to replace vague, general nouns (*thing, place, stuff, people*) with specific, concrete ones when they narrate and describe.`,
+- Good writing uses **precise nouns**.
+- *the tree* → *the **mango tree***; *a bird* → *a **hawk***. The exact noun gives a clearer picture.
+- Replace vague nouns (*thing, place, stuff, people*) with specific, concrete ones.`,
           workedExample: `**Question:** Read the passage and classify each underlined noun.
 
 *"**Musu** carried a basket of **cassava** to the **market** in **Gbarnga**, hoping the **money** would pay for her sister's **education**."*
@@ -225,23 +229,20 @@ Take each in turn and ask what kind of noun it is.
           estimatedMinutes: 160,
           notes: `## What a pronoun is
 
-A **pronoun** is a word used **in place of a noun**, so that we do not have to keep repeating the same noun. Look at how clumsy writing becomes without pronouns:
+**Pronoun** — a word used **in place of a noun**, to avoid repeating it.
 
-*Musu went to the market. **Musu** bought fish and **Musu** came home.*
+- Without pronouns: *Musu went to the market. **Musu** bought fish and **Musu** came home.*
+- With pronouns: *Musu went to the market. **She** bought fish and **she** came home.*
 
-By replacing the repeated noun we get natural English:
-
-*Musu went to the market. **She** bought fish and **she** came home.*
-
-The noun (or noun phrase) that a pronoun stands for is called its **antecedent** — *ante* means "before". In the sentence above, *Musu* is the antecedent of *she*. Good writing keeps the link between a pronoun and its antecedent crystal clear, so the reader always knows exactly who or what is meant.
+**Antecedent** — the noun a pronoun stands for (*ante* = "before"). Above, *Musu* is the antecedent of *she*. Keep the link between pronoun and antecedent clear.
 
 ## The kinds of pronouns
 
-There are eight main kinds of pronouns. Learn the name of each kind, what it does, and its members.
+Eight main kinds. For each: name, what it does, its members.
 
 ### 1. Personal pronouns
 
-**Personal pronouns** stand for people or things. They change their form depending on the **job** they do in the sentence — whether they are the subject or the object — and this is the source of many common errors.
+**Personal pronouns** stand for people or things. They change form with the **job** they do (subject or object) — the source of many errors.
 
 | Person | Subject form | Object form |
 | --- | --- | --- |
@@ -309,9 +310,10 @@ Because personal pronouns change form, choosing the right **case** matters:
 - **Apostrophes in possessive pronouns.** *your's, her's, their's* do not exist — write *yours, hers, theirs*.
 - **Agreement with indefinite pronouns.** *everyone, each, nobody* are singular: *Everyone has **his or her** ticket* (formal).
 
-## Why this matters
+## Why pronouns matter
 
-Correct pronoun use keeps writing clear. A reader who cannot tell which noun a pronoun refers to loses the meaning, so agreement and clear reference are not decoration — they are what make a sentence understandable.`,
+- A pronoun with an unclear antecedent loses the meaning.
+- Clear reference + agreement = a sentence the reader can follow.`,
           workedExample: `**Question:** Correct the pronoun errors in each sentence and name the rule broken.
 
 *(a) Me and Kou walked to school.*

@@ -16,23 +16,23 @@ export const englishLanguageG10P2: PeriodContent = {
       objective:
         "By the end of the topic, learners should be able to identify action verbs and classify them as transitive or intransitive, recognise linking verbs and the words they connect, and use helping and modal auxiliary verbs correctly in sentences.",
       estimatedMinutes: 160,
-      notes: `## Introduction: the verb is the engine of the sentence
+      notes: `## Introduction
 
-Of all the parts of speech, the **verb** is the one a sentence cannot do without. You can build a complete sentence from a single verb — *Run! Stop! Listen!* — but no group of words is a sentence until it contains a verb. A **verb** is a word that expresses either an **action** (something done) or a **state of being** (how something is).
-
-- *The farmer **planted** cassava.* — an action.
-- *Monrovia **is** the capital of Liberia.* — a state of being.
-
-Verbs fall into two broad families. **Main (lexical) verbs** carry the real meaning of the action or state — *plant, run, think, seem*. **Auxiliary (helping) verbs** support a main verb to build a longer verb phrase — *is, have, will, can*. In this lesson we study the three jobs verbs do: **action** verbs, **linking** verbs, and **helping** verbs.
+- The **verb** is the one part of speech a sentence cannot do without. A one-verb sentence is complete: *Run! Stop! Listen!*
+- **Verb** — a word expressing an **action** (something done) or a **state of being** (how something is).
+  - *The farmer **planted** cassava.* — action
+  - *Monrovia **is** the capital of Liberia.* — state of being
+- Two families: **main (lexical) verbs** carry the meaning (*plant, run, seem*); **auxiliary (helping) verbs** support a main verb (*is, have, will, can*).
+- **This lesson:** action verbs, linking verbs, helping verbs.
 
 ## Action verbs
 
-An **action verb** tells what the subject **does**. The action may be one you can see, or one that happens silently in the mind:
+**Action verb** — tells what the subject **does**. The action may be visible or mental:
 
-- **Physical (visible) action:** *run, write, cook, dance, throw, dig, carry, build.*
-- **Mental action:** *think, believe, remember, know, imagine, decide, understand, forget.*
+- **Physical (visible):** run, write, cook, dance, throw, dig, carry, build
+- **Mental:** think, believe, remember, know, imagine, decide, understand, forget
 
-Both kinds are action verbs, even though you cannot watch someone "believe" — the mind is doing the work.
+Both are action verbs — *believe* is not visible, but the mind does the work.
 
 ### Transitive and intransitive verbs
 
@@ -287,7 +287,7 @@ In a verb phrase the helping verbs come **first** and the main verb comes **last
       estimatedMinutes: 160,
       notes: `## Tense: locating an action in time
 
-**Tense** is the form of a verb that shows **when** an action happens — in the **present**, the **past**, or the **future**. Choosing the right tense, and keeping it steady, is what makes writing clear and believable.
+**Tense** — the form of a verb that shows **when** an action happens: **present**, **past**, or **future**. Choose the right tense and keep it steady.
 
 \`\`\`svg The three simple tenses on a timeline
 <svg viewBox="0 0 460 150" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
@@ -355,7 +355,9 @@ Within one passage, hold the tense steady unless the time genuinely changes. **T
 - ✗ *He **opened** the door and **sees** a stranger.*
 - ✓ *He **opened** the door and **saw** a stranger.*
 
-As a rule of thumb, **narrative** writing (telling a story that happened) uses the **past**, while **descriptive** writing (painting a scene) often uses the **present** to make it feel alive. Whichever you choose, stay in it.`,
+- **Narrative** (a story that happened) → **past**.
+- **Descriptive** (painting a scene) → often **present**.
+- Whichever you choose, stay in it.`,
       workedExample: `**Task.** Rewrite the passage so that the tense is consistent in the **simple past**, then identify one progressive verb in your answer.
 
 *"Musu walks to the market. She is carrying a basket of pepper. A trader calls her over and she stops to bargain. She was buying rice for the week."*

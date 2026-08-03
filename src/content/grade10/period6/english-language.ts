@@ -80,7 +80,9 @@ The **head** is the main verb (*working, finish*); the helping verbs support it 
 
 ## Why phrases matter
 
-Recognising phrases helps you understand how sentences are built and how to write clearly. A noun phrase can be a subject or object; a verb phrase carries the action and its tense. Seeing these units makes analysing and improving sentences much easier.`,
+- A **noun phrase** can be a subject or object.
+- A **verb phrase** carries the action and its tense.
+- Spotting these units makes a sentence easier to analyse and improve.`,
       workedExample: `**Task.** In each sentence, identify the underlined group as a phrase or a clause; if it is a phrase, name its kind (noun or verb) and its head word.
 
 1. *__The old wooden bridge__ collapsed.*
@@ -297,7 +299,9 @@ So to name the phrase, ask **what word it describes**: a noun → adjective phra
 
 ## Why this matters
 
-Adjective and adverb phrases add rich detail to writing without extra clauses. Recognising them — and what they describe — is the key to analysing sentences and to writing with variety and precision, rounding off the study of the parts of speech and phrases.`,
+- Adjective and adverb phrases add detail without extra clauses.
+- Name the phrase by **what it describes**: a noun → adjective phrase; a verb → adverb phrase.
+- Spotting them = the key to analysing sentences and writing with variety.`,
       workedExample: `**Task.** For each underlined prepositional phrase, say whether it is an **adjective phrase** or an **adverb phrase**, and state the word it describes.
 
 1. *The girl __with the red bag__ is my sister.*
