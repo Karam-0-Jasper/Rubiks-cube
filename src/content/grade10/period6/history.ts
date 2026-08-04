@@ -18,7 +18,8 @@ export const historyG10P6: PeriodContent = {
       estimatedMinutes: 160,
       notes: `## Introduction
 
-Few events have shaped the modern world — and modern Africa — as deeply, or as tragically, as the **trans-Atlantic slave trade**. Over some four hundred years, millions of Africans were seized and shipped across the ocean to labour in the Americas, at an immense human cost. This topic explains **why** the trade happened, how it was organised as the three-sided **triangular trade** with its brutal **Middle Passage**, what **effects** it had on Africa, and how, in the end, it was **abolished** — a story that connects directly to the founding of **Liberia**.
+- The **trans-Atlantic slave trade** — over ~400 years, millions of Africans seized and shipped to the Americas at immense human cost.
+- **This lesson:** **why** the trade happened; the three-sided **triangular trade** and the brutal **Middle Passage**; its **effects** on Africa; how it was **abolished** (and the link to founding **Liberia**).
 
 ## What was the trans-Atlantic slave trade?
 
@@ -264,7 +265,8 @@ Growing **humanitarian, religious and abolitionist campaigns** (joined by former
       estimatedMinutes: 160,
       notes: `## Introduction
 
-For hundreds of years, Europeans knew Africa only as a coastline of trading forts. Then, in the **19th century**, everything changed: explorers pushed into the **interior**, and within a single lifetime nearly the whole continent was seized and ruled by European powers. This topic explains **why** Europeans first explored Africa, **why** they went on to colonize it, how they carved it up at the **Berlin Conference (1884–1885)** with no African voice, and the lasting **effects** of colonization — ending with Africa's resistance and its recovery of **independence**.
+- For centuries Europeans knew Africa only as a coastline of forts; in the **19th century** they pushed inland and seized nearly the whole continent.
+- **This lesson:** **why** Europeans explored, then colonized, Africa; the **Berlin Conference (1884–1885)** carve-up with no African voice; the **effects** of colonization; Africa's resistance and recovery of **independence**.
 
 ## From the coast to the interior
 

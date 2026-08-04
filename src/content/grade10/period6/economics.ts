@@ -17,7 +17,8 @@ export const economicsG10P6: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Not all businesses are built the same way. The woman selling doughnuts at the roadside, the two friends who open a shop together, and a large trading company are all "businesses" — but they differ in who owns them, who makes the decisions, and, crucially, who is on the hook if the business runs into debt. This topic begins with the two simplest forms — the **sole proprietorship** and the **partnership** — weighing the advantages and disadvantages of each, and introduces the single idea (**liability**) that explains why bigger businesses take on other forms.
+- A roadside seller, two friends with a shop, and a large company are all "businesses" — but differ in who owns them, who decides, and who bears the debts.
+- **This topic:** the two simplest forms — **sole proprietorship** and **partnership** — their advantages and disadvantages, and the key idea of **liability**.
 
 ## What is a business organization?
 
@@ -253,7 +254,9 @@ But a **new risk** appears: in a partnership the partners still have **unlimited
       estimatedMinutes: 150,
       notes: `## Introduction
 
-How does a business grow big enough to build a factory, a bank or a shipping line — when a single owner or a handful of partners could never risk that much of their own money? The answer is a clever legal invention: the **limited liability company**, which lets many people invest without risking everything they own. This topic explains companies (both **private** and **public**), the pivotal idea of **limited liability**, and two further forms — the member-owned **cooperative** and the government-owned **public enterprise** — completing the picture of how businesses are organised.
+- Sole proprietorships and partnerships are limited by **unlimited liability** and small capital.
+- The **limited liability company** lets many people invest without risking everything they own.
+- **This topic:** companies (private & public); **limited liability**; **cooperatives**; public (state) enterprises.
 
 ## Beyond the simple firms
 

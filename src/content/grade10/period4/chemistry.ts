@@ -17,7 +17,9 @@ export const chemistryG10P4: PeriodContent = {
       estimatedMinutes: 160,
       notes: `## Introduction
 
-Left to themselves, most atoms are unstable and "want" a full outer shell of electrons like the unreactive noble gases. They achieve it by **joining together** — forming chemical **bonds** — and this is why atoms are almost never found alone but locked into compounds like salt and water. This topic explains *why* atoms bond and the two great ways they do it: by **transferring** electrons (ionic bonding) and by **sharing** them (covalent bonding) — and how each produces substances with very different properties.
+- Most atoms are unstable and reach a full outer shell (like the noble gases) by **joining together** — forming chemical **bonds**.
+- This is why atoms are almost never found alone but locked into compounds like salt and water.
+- **This topic:** why atoms bond; **transferring** electrons (ionic) vs **sharing** them (covalent); and the different properties each produces.
 
 ## Why atoms bond
 
@@ -272,7 +274,9 @@ Electricity is carried by **charged particles that are free to move**.
       estimatedMinutes: 130,
       notes: `## Introduction
 
-We have seen atoms transfer electrons (ionic) and share them (covalent). But what holds a lump of pure metal — a copper wire, an iron nail — together? The answer is a third kind of bond, **metallic bonding**, and its unusual model beautifully explains the very properties that make metals so useful: they conduct electricity and heat, they can be hammered into shape, and they shine. This topic describes metallic bonding and uses it to explain those properties.
+- Ionic bonding transfers electrons; covalent bonding shares them. A third kind holds pure metals together: **metallic bonding**.
+- Its model explains why metals **conduct heat and electricity, can be hammered into shape, and shine**.
+- **This topic:** metallic bonding, and how it explains the properties of metals.
 
 ## The third type of bond
 

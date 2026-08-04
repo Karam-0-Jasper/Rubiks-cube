@@ -17,18 +17,16 @@ export const physicsG10P4: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-We use the words "hot" and "heat" loosely every day, but physics draws a sharp line between **temperature** (how hot something is) and **heat** (the energy that flows because of a temperature difference). Getting this distinction right is the key to the whole of thermal physics. This topic separates the two ideas, describes the **Celsius** and **Kelvin** temperature scales, explains how a **thermometer** works, and shows how to convert between the scales.
+- **Temperature** — how hot something is; **heat** — the energy that flows because of a temperature difference.
+- This distinction is the key to thermal physics.
+- **This topic:** separating heat and temperature; the **Celsius** and **Kelvin** scales; how a **thermometer** works; converting between scales.
 
 ## Heat and temperature are not the same
 
-These two terms are often confused, but they are different.
-
 - **Temperature** is a measure of **how hot or cold** a body is — the average kinetic energy of its particles. It is measured in **degrees Celsius (°C)** or **kelvin (K)**.
 - **Heat** is a form of **energy** that flows from a **hotter** body to a **colder** one. It is measured in **joules (J)**.
-
-A cup of boiling water and a large pot of warm water can hold the **same amount of heat energy**, yet have very different temperatures — a bucket of warm water contains more heat energy than a spark, even though the spark is hotter.
-
-**Heat always flows from hot to cold** until both reach the same temperature (thermal equilibrium).
+- A bucket of warm water contains more heat energy than a spark, even though the spark is hotter — the same heat can go with very different temperatures.
+- **Heat always flows from hot to cold** until both reach the same temperature (thermal equilibrium).
 
 ## Measuring temperature: the thermometer
 
@@ -252,7 +250,10 @@ Use K = °C + 273 and °C = K − 273.
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Heat never stays still — it flows from the sun to the earth, from a fire to a pot, from a warm body to the cold night air. Understanding **how** heat travels lets us both use it (cooking, drying) and stop it (keeping a house cool, insulating a flask). Heat also makes materials **expand**, an effect with important everyday consequences. This topic describes the three ways heat travels — **conduction, convection and radiation** — and the **thermal expansion** of solids, liquids and gases.
+- Heat flows from hot to cold — sun to earth, fire to pot, warm body to cold night air.
+- Knowing how heat travels lets us use it (cooking, drying) and stop it (insulating a flask).
+- Heat also makes materials **expand**.
+- **This topic:** the three ways heat travels — **conduction, convection, radiation**; the **thermal expansion** of solids, liquids and gases.
 
 ## Three ways heat travels
 

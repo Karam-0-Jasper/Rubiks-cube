@@ -19,7 +19,8 @@ export const physicsG10P6: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Why is a stone hard, water runny, and air invisible and free to spread? The answer to all three lies in one powerful idea: matter is made of tiny **particles in constant motion**, and the *arrangement* and *movement* of those particles decides whether a substance is a solid, a liquid or a gas. This is the **kinetic theory of matter**. This topic uses it to explain the three states and the changes between them, and the everyday effects of **cohesion, adhesion and diffusion**.
+- Matter is made of tiny **particles in constant motion**; their arrangement and movement decide whether a substance is solid, liquid or gas — the **kinetic theory of matter**.
+- **This topic:** explaining the three states and the changes between them; **cohesion, adhesion and diffusion**.
 
 ## The structure of matter
 
@@ -251,7 +252,9 @@ The smell reaches you by **diffusion**: the particles giving the food its smell 
       estimatedMinutes: 160,
       notes: `## Introduction
 
-Stretch a rubber band and it springs back; bend a stick of chalk and it snaps and stays broken. The property that decides which happens is **elasticity**, and for elastic materials there is a beautifully simple rule linking the stretching force to the amount of stretch — **Hooke's Law** — which is the basis of every spring balance. This topic explains elasticity, states and applies Hooke's Law, and looks at two surface properties of liquids: **surface tension** and **viscosity**.
+- Stretch a rubber band and it springs back; snap chalk and it stays broken — the difference is **elasticity**.
+- For elastic materials, **Hooke's Law** links stretching force to stretch (the basis of every spring balance).
+- **This topic:** elasticity; stating and applying Hooke's Law; two liquid surface properties — **surface tension** and **viscosity**.
 
 ## Elasticity
 

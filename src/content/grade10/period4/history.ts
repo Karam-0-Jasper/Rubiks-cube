@@ -18,11 +18,16 @@ export const historyG10P4: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-One of the greatest and richest empires the world has ever seen grew up in West Africa over a thousand years ago — the empire of **ancient Ghana**. Its kings grew wealthy by controlling the trade in **gold and salt** across the Sahara, and ruled a well-organised state with an army and a system of taxation. Its story is a cornerstone of West African history. This topic locates the empire, explains the factors behind its **rise**, and describes how it was **governed** — beginning with an important warning about its name.
+- **Ancient Ghana** = one of the great empires of the western Sudan (8th–11th century CE).
+- Grew rich by controlling the trans-Saharan **gold-and-salt** trade, ruling a well-organised state with an army and taxation.
+- **This lesson:** where the empire was; the factors behind its rise; how it was governed.
 
 ## Which Ghana?
 
-The **ancient Ghana Empire** was **not** in the same place as the modern country of Ghana. It lay in the **western Sudan** — the grassland belt south of the Sahara, in the region of present-day **Mauritania, Mali and southern Senegal**. Its own people called it **Wagadu**; "Ghana" was actually the **title of its king**, meaning "war chief", which later became the name Arab traders used for the whole empire. It flourished from about the **8th to the 11th century CE**.
+- **Not** the same place as the modern country of Ghana.
+- Lay in the **western Sudan** — grassland belt south of the Sahara, in present-day **Mauritania, Mali and southern Senegal**.
+- Own people called it **Wagadu**; "Ghana" was the **king's title** ("war chief"), later used by Arab traders for the whole empire.
+- Flourished from about the **8th to 11th century CE**.
 
 ## Why Ghana rose to power
 
@@ -45,7 +50,8 @@ Ghana was ruled by a powerful **king** who held great authority:
 
 ## The capital
 
-The empire's capital, **Kumbi Saleh**, is described by Arab writers as having **two towns**: one for the **king and the local people** (with the royal palace and sacred groves), and one for the **Muslim traders** (with mosques). This shows Ghana as a busy centre where different peoples and religions met through trade.
+- Capital = **Kumbi Saleh**; Arab writers describe **two towns**: one for the **king and local people** (royal palace, sacred groves), one for the **Muslim traders** (mosques).
+- Shows Ghana as a busy centre where different peoples and religions met through trade.
 
 ## Common errors and misconceptions
 
@@ -235,7 +241,9 @@ The king held **great, almost sacred authority**. He was the **head of state, ch
       estimatedMinutes: 150,
       notes: `## Introduction
 
-The ancient Ghana Empire did not grow rich from farming or conquest alone — its power rested on **trade**. Great **camel caravans** crossed the burning Sahara carrying **salt** south and **gold** north, and Ghana sat astride the routes, taxing the exchange. This topic describes that **trans-Saharan trade**, explains why **gold and salt** mattered so much, looks at the curious **"silent trade"** and the peaceful spread of **Islam**, and then sets out the reasons Ghana eventually **declined** and gave way to Mali.
+- Ghana's power rested on **trade**, not farming or conquest alone.
+- **Camel caravans** crossed the Sahara — **salt** south, **gold** north — and Ghana taxed the exchange.
+- **This lesson:** the **trans-Saharan trade**; why **gold and salt** mattered; the **"silent trade"** and the spread of **Islam**; the reasons Ghana **declined** and gave way to Mali.
 
 ## The trans-Saharan trade
 

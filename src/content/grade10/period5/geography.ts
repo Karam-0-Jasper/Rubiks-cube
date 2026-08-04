@@ -18,7 +18,9 @@ export const geographyG10P5: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Seen from space, the Earth is a blue planet, its surface split into vast blocks of land and even vaster stretches of water. These are the **continents** and the **oceans** — the largest features on Earth and the framework onto which every country, mountain and river is placed. Knowing them, their sizes and their positions is basic geographical literacy. This topic names and locates the seven continents and the oceans and compares their sizes.
+- The Earth's surface splits into vast blocks of land and water — the **continents** and **oceans**.
+- They are the largest features on Earth, the framework for every country, mountain and river.
+- **This topic:** naming and locating the **seven continents** and the **oceans**, and comparing their sizes.
 
 ## The great divisions of the Earth's surface
 
@@ -257,7 +259,9 @@ Most of the world's **land** is found in the **Northern Hemisphere**; the Southe
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Land and water are not shared out evenly across the Earth — there is far more water than land, and even the land is bunched into one half of the globe. This uneven split shapes climate, farming, fishing and trade for every country, including Liberia with its Atlantic coast. This topic states the **proportion** of land to water, describes how unevenly they are **distributed** between the hemispheres, and explains why the **seas and oceans** are so important.
+- Land and water are shared out **unevenly** — far more water than land, and the land bunched into one half of the globe.
+- This split shapes climate, farming, fishing and trade (including Liberia's Atlantic coast).
+- **This topic:** the **proportion** of land to water; their uneven **distribution** between the hemispheres; why the **seas and oceans** matter.
 
 ## How much land and how much water?
 

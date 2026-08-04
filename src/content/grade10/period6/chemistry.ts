@@ -17,7 +17,9 @@ export const chemistryG10P6: PeriodContent = {
       estimatedMinutes: 160,
       notes: `## Introduction
 
-Rusting iron, a burning fire, a battery powering a torch, respiration in your own cells — all of these are the same kind of chemical change: a **redox reaction**, in which electrons pass from one substance to another. Because so much of chemistry (and life) is redox, learning to recognise **oxidation** and **reduction** is one of the most useful skills in the subject. This topic gives the three definitions of oxidation and reduction and shows how to spot each in a reaction.
+- **Redox reaction** — electrons pass from one substance to another (rusting, burning, batteries, respiration).
+- So much of chemistry and life is redox, so recognising **oxidation** and **reduction** is a key skill.
+- **This topic:** the three definitions of oxidation and reduction, and how to spot each in a reaction.
 
 ## Two processes that happen together
 
@@ -272,7 +274,9 @@ When sodium reacts with chlorine, **sodium loses an electron** (Na → Na⁺ + e
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Now that we can recognise oxidation and reduction, we can name the two "actors" in every redox reaction: the substance that *causes* oxidation and the one that *causes* reduction. These are the **oxidising** and **reducing agents**. The same idea explains a great deal of everyday life in Liberia — why iron roofs rust, why fuel burns, why food must be respired to release its energy, and why bleach removes colour. This topic identifies the agents in a reaction and looks at redox all around us.
+- Every redox reaction has two actors: the substance that *causes* oxidation and the one that *causes* reduction — the **oxidising** and **reducing agents**.
+- Explains everyday life: why iron roofs rust, why fuel burns, why food is respired, why bleach removes colour.
+- **This topic:** identifying the oxidising and reducing agents in a reaction; redox all around us.
 
 ## Oxidising and reducing agents
 
@@ -311,7 +315,8 @@ Because rusting is harmful, we try to prevent it by keeping **oxygen and water a
 
 ## Why redox matters
 
-Redox reactions run **batteries**, extract **metals** from their ores, power **respiration** and **combustion**, and cause **rusting**. Understanding oxidation and reduction explains a huge range of everyday and industrial chemistry.
+- Redox runs **batteries**, extracts **metals** from ores, powers **respiration** and **combustion**, and causes **rusting**.
+- Understanding oxidation and reduction explains a huge range of everyday and industrial chemistry.
 
 ## Common errors and misconceptions
 

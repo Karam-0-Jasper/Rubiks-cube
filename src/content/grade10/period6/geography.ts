@@ -18,7 +18,9 @@ export const geographyG10P6: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-The surface of the land is not flat and featureless — it rises into mountains, spreads into plains, lifts into plateaus and is cut by valleys. These natural shapes are called **land forms**, and they decide where people can farm, build and travel. This topic defines a land form and describes the four major types — **mountains, plateaus, plains and valleys** — with their characteristics and their importance to human life.
+- **Land forms** — the natural shapes of the land's surface: mountains, plains, plateaus, valleys.
+- They decide where people can farm, build and travel.
+- **This topic:** defining a land form; the four major types — **mountains, plateaus, plains, valleys** — their features and importance.
 
 ## What is a land form?
 
@@ -69,7 +71,9 @@ There are many more land forms — **hills** (smaller than mountains), **basins*
 
 ## Why land forms matter
 
-Land forms influence where people live and how they earn a living: plains and valleys favour farming and settlement, mountains and plateaus provide minerals and rivers, and relief affects transport, climate and rainfall.
+- Land forms shape where people live and how they earn a living.
+- Plains and valleys → farming and settlement; mountains and plateaus → minerals and rivers.
+- Relief affects transport, climate and rainfall.
 
 ## Common errors and misconceptions
 
@@ -257,7 +261,9 @@ Plains are **low and flat with fertile soil**, so they are **easy to farm, build
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Mountains were not always there, and one day they will be gone — worn flat over millions of years. The Earth's surface is caught in a slow, endless struggle between two sets of forces: those from **inside** the Earth that push the land up, and those at the **surface** that grind it down. Understanding this struggle explains how every land form came to be. This topic distinguishes the **internal** and **external** forces and explains **weathering, erosion and deposition**.
+- The Earth's surface is caught between forces from **inside** that push land up and forces at the **surface** that grind it down.
+- This slow struggle explains how every land form came to be.
+- **This topic:** the **internal** and **external** forces; **weathering, erosion and deposition**.
 
 ## How land forms are made and changed
 

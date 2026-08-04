@@ -18,7 +18,9 @@ export const historyG10P5: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Ghana and Mali were not the only states of the West African grasslands. Across the wide **savanna** belt, other powerful societies rose and lasted for centuries — some as **single enduring kingdoms**, some as clusters of proud **city-states**. This topic looks at two of the most important: the long-lived kingdom of **Kanem-Bornu** around Lake Chad, and the **Hausa city-states** of northern Nigeria — examining how they were founded, how they were governed, and how **trade** and **Islam** shaped them, just as they had shaped Ghana and Mali.
+- Ghana and Mali were not the only savanna states — other powerful societies rose across the **savanna** belt.
+- Some were **single enduring kingdoms**, some clusters of **city-states**.
+- **This lesson:** **Kanem-Bornu** (around Lake Chad) and the **Hausa city-states** — their founding, government, and how **trade** and **Islam** shaped them.
 
 ## The savanna states
 
@@ -243,7 +245,8 @@ The **Hausa** people of northern Nigeria organised themselves into a number of i
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Not every great West African state grew from the desert trade. In the thick **forest zone** near the coast, powerful societies developed from the land itself — from farming, from **gold**, from remarkable **art**, and from strong **armies**. This topic explores four of them: the Yoruba empire of **Oyo** and the Edo kingdom of **Benin** (famous for its bronzes) in modern Nigeria, and the gold-rich **Akan** and the cavalry states of the **Mossi** in the region of modern Ghana and Burkina Faso — showing how varied and sophisticated West Africa's civilizations were.
+- In the coastal **forest zone**, powerful states grew from the land — farming, **gold**, **art** and strong **armies**.
+- **This lesson:** four forest states — the Yoruba **Oyo**, the Edo **Benin** (famous for its bronzes), the gold-rich **Akan**, and the cavalry **Mossi**.
 
 ## The forest states
 
