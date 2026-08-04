@@ -337,7 +337,7 @@ For regular verbs, the simple past and past participle are **the same word**.
 
 ## Irregular verbs
 
-An **irregular verb** does **not** add -ed; it changes its form in a way you cannot predict from spelling. There is no single rule, so irregular verbs must be memorised. It helps, though, to notice that they fall into a few **patterns**.
+An **irregular verb** does **not** add -ed; it changes its form in a way you cannot predict from spelling. There is no single rule, so irregular verbs must be memorised. They fall into a few **patterns**.
 
 **Pattern 1 — all three forms different** (base / past / participle):
 

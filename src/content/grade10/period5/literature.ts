@@ -59,7 +59,7 @@ African writers have produced many fine short stories, often collected in anthol
 Use the same tools as for the novel, but expect them in miniature:
 
 - **Plot:** what single incident happens, and how does it build to a climax and resolution?
-- **Character:** who is the main character, and what do we learn about them from their words and actions?
+- **Character:** the main character, and what their words and actions reveal about them.
 - **Setting:** where and when — and how does it matter?
 - **Theme:** what one central idea does the story leave you with?
 - **Point of view:** who tells the story (first or third person)?
