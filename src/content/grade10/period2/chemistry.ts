@@ -19,7 +19,10 @@ export const chemistryG10P2: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Everything is built from **atoms**, particles far too small to see even with an ordinary microscope. Because no one could look at an atom directly, our picture of it was built up piece by piece over two hundred years, each scientist improving on the last as new experiments revealed more. This topic follows that story — from Dalton's solid sphere to Bohr's shells — and then names the three **fundamental particles** (proton, neutron, electron) with their charges, masses and positions inside the atom. It is a fine example of how a scientific model changes as evidence grows.
+- Everything is built from **atoms**, far too small to see with an ordinary microscope.
+- The picture of the atom was built up over two hundred years, each scientist improving on the last.
+- **This topic:** the story from Dalton's solid sphere to Bohr's shells; the three **fundamental particles** (proton, neutron, electron) with their charges, masses and positions.
+- Shows how a scientific model changes as evidence grows.
 
 ## The idea of the atom
 
@@ -65,7 +68,9 @@ Key points:
 
 ## Why the gold-foil result mattered
 
-Before Rutherford, the plum-pudding model spread the positive charge evenly. The fact that a few alpha particles bounced **straight back** could only be explained if the positive charge was concentrated in a tiny, dense centre — the nucleus. This single experiment overturned Thomson's model.
+- The plum-pudding model spread the positive charge evenly.
+- A few alpha particles bouncing **straight back** could only mean the positive charge is concentrated in a tiny, dense centre — the nucleus.
+- This single experiment overturned Thomson's model.
 
 ## Common errors and misconceptions
 
@@ -263,7 +268,9 @@ The atom has a **small, dense, positively charged nucleus** at its centre contai
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Now that we know an atom is made of protons, neutrons and electrons, we can count them and see how they are arranged. Two simple numbers — the **atomic number** and the **mass number** — tell us everything about the make-up of an atom's nucleus, explain why **isotopes** of the same element exist, and let us write out the arrangement of an atom's electrons (its **electron configuration**), which in turn decides how the element behaves.
+- An atom is made of protons, neutrons and electrons, which can be counted and arranged.
+- Two numbers — **atomic number** and **mass number** — fix the make-up of the nucleus.
+- **This topic:** counting protons, neutrons and electrons; why **isotopes** exist; writing **electron configurations**, which decide how an element behaves.
 
 ## Atomic number and mass number
 
@@ -322,7 +329,9 @@ We write the arrangement as numbers separated by commas or dots.
 
 ## Why the outer shell matters
 
-The electrons in the **outermost shell** are called **valence electrons**. They decide how an element reacts. Sodium (2, 8, **1**) has one outer electron it readily loses; that is why it is a very reactive metal. This links atomic structure directly to chemical behaviour — the theme of the next period, the periodic table.
+- **Valence electrons** — the electrons in the outermost shell; they decide how an element reacts.
+- Sodium (2, 8, **1**) has one outer electron it readily loses — a very reactive metal.
+- Links atomic structure to chemical behaviour — the theme of the next period, the periodic table.
 
 ## Common errors and misconceptions
 

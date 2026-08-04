@@ -25,7 +25,10 @@ export const agriculture: SubjectContent = {
           estimatedMinutes: 80,
           notes: `## Introduction
 
-For most Liberians, farming is not a subject in a book — it is daily life, and the source of the rice on the table. **Agriculture** is the science and practice behind that: growing crops and rearing animals to feed and support a nation. This lesson defines agriculture, sets out why it is so central to Liberia's **economy** — food, jobs, exports, raw materials and more — and looks honestly at the **problems** that hold the sector back, together with the practical **solutions** that could unlock its potential.
+- **Agriculture** = the science and practice of growing crops and rearing animals to feed and support a nation.
+- Central to Liberia's economy: food, jobs, exports, raw materials and government revenue.
+- The sector is held back by problems that have practical solutions.
+- **This topic:** what agriculture is; why it matters to Liberia; the problems facing Liberian agriculture and their solutions.
 
 ## Definition
 
@@ -81,7 +84,13 @@ The word derives from the Latin *ager* (field) and *cultura* (cultivation).
 
 ## Agriculture and other subjects
 
-Agriculture draws on biology for crop and animal science, chemistry for soils and fertilisers, physics for farm machinery and irrigation, economics for farm management and marketing, and geography for climate and land use. It is an applied science, not an isolated one.
+Agriculture is an **applied science**, not an isolated one. It draws on:
+
+- **Biology** — crop and animal science
+- **Chemistry** — soils and fertilisers
+- **Physics** — farm machinery and irrigation
+- **Economics** — farm management and marketing
+- **Geography** — climate and land use
 
 ## Common errors and misconceptions
 
@@ -296,7 +305,10 @@ If improved drying and storage alone recovered two-thirds of the loss, the farme
           estimatedMinutes: 80,
           notes: `## Introduction
 
-Agriculture is not one activity but many — from raising poultry to growing rubber to keeping bees — and Liberian farmers organise their land in strikingly different ways. This lesson maps out the **branches** of agriculture (crop production, animal production and their supporting sciences) and then the **farming systems** actually practised in Liberia — shifting cultivation, mixed farming, intercropping, plantations and more — weighing the **advantages and disadvantages** of each, so you can judge which system suits which conditions.
+- Agriculture is many activities — from poultry to rubber to beekeeping.
+- Liberian farmers organise their land in strikingly different ways.
+- Each farming system has advantages and disadvantages; none is best in the abstract.
+- **This topic:** the branches of agriculture (crop production, animal production and supporting sciences); the farming systems practised in Liberia and the advantages and disadvantages of each.
 
 ## Branches of agriculture
 
@@ -388,7 +400,8 @@ Production primarily for sale.
 
 ## Choosing a system
 
-No system is best in the abstract. The appropriate system depends on the availability of land, the population density, the capital and labour available, the market, the soil and climate, and the farmer's objectives.
+- No system is best in the abstract.
+- The appropriate system depends on: availability of land; population density; capital and labour available; the market; soil and climate; the farmer's objectives.
 
 ## Common errors and misconceptions
 
@@ -606,7 +619,10 @@ Mixed farming does not face this constraint, because it **maintains fertility on
           estimatedMinutes: 80,
           notes: `## Introduction
 
-Everything a crop becomes begins in the soil beneath it — yet soil is far more than "dirt." It is a living, layered mixture of weathered rock, organic matter, water and air, built up over centuries. This lesson explains what soil is and how it **forms**, examines its **profile** (the horizons revealed in a pit), classifies the main **types** by texture, and sets out the **properties** — texture, structure, pH and fertility — that decide a soil's farming value. It closes on the point that matters most in Liberia: why protecting the thin, fertile **topsoil** is the heart of good soil management.
+- **Soil** = a living, layered mixture of weathered rock, organic matter, water and air, built up over centuries.
+- It is far more than "dirt"; its properties decide its farming value.
+- In Liberia, protecting the thin, fertile topsoil is the heart of good soil management.
+- **This topic:** what soil is and how it forms; the soil profile; the main soil types by texture; the properties — texture, structure, pH and fertility — that decide farming value.
 
 ## What soil is
 
@@ -661,7 +677,11 @@ A vertical section through the soil shows distinct **horizons**:
 - **C horizon** — partly weathered parent rock
 - **R horizon** — unweathered bedrock
 
-**Why this matters:** the A horizon is where farming happens. Erosion removes it first, and it is the layer that takes longest to replace. A soil stripped of its topsoil may take a lifetime to recover.
+**Why this matters:**
+
+- The A horizon is where farming happens.
+- Erosion removes it first, and it is the layer that takes longest to replace.
+- A soil stripped of its topsoil may take a lifetime to recover.
 
 ## Soil types by texture
 
@@ -700,7 +720,11 @@ Texture is determined by the proportions of sand, silt and clay.
 
 ## Liberian soils
 
-Under heavy tropical rainfall, Liberian soils are typically **highly weathered, acidic and heavily leached**, with the nutrients concentrated in a thin surface layer of organic matter. This has a direct practical consequence: **when the topsoil is lost, fertility goes with it**, because the subsoil holds little. It also explains why clearing and burning gives a short flush of fertility that does not last, and why maintaining organic matter is the central task of soil management in Liberia.
+- Under heavy tropical rainfall, Liberian soils are typically **highly weathered, acidic and heavily leached**.
+- Nutrients are concentrated in a thin surface layer of organic matter.
+- **When the topsoil is lost, fertility goes with it** — the subsoil holds little.
+- Clearing and burning gives only a short flush of fertility that does not last.
+- Maintaining organic matter is the central task of soil management in Liberia.
 
 ## Soil conservation
 
@@ -924,7 +948,9 @@ The farmer is treating fertility as something that arrives with clearing. In the
           estimatedMinutes: 80,
           notes: `## Introduction
 
-A farmer is only as effective as the tools in their hands — and, on a Liberian smallholding, those tools represent real, hard-won capital. This lesson identifies the common **farm tools and implements**, from the cutlass and hoe to the plough and sprayer, and states what each is for. Just as importantly, it covers **maintenance** — how to make a cutlass last five years instead of two — and the **safety** precautions that prevent the injuries poorly kept tools so often cause.
+- On a Liberian smallholding, farm tools represent real, hard-won capital.
+- Good maintenance makes tools last longer and prevents injuries.
+- **This topic:** the common farm tools and implements and their uses; maintenance of tools; safety precautions in their use.
 
 ## Classification of farm tools
 
@@ -1005,7 +1031,9 @@ Good maintenance is not optional; a neglected tool is dangerous as well as ineff
 
 ## Why maintenance matters economically
 
-For a smallholder, tools represent a significant share of invested capital. A cutlass that lasts five years instead of two, because it was cleaned, dried and sharpened, is a real saving. Tool maintenance is among the cheapest improvements available to a Liberian farmer, requiring time and discipline rather than money.
+- For a smallholder, tools represent a significant share of invested capital.
+- A cutlass that lasts five years instead of two, because it was cleaned, dried and sharpened, is a real saving.
+- Tool maintenance is among the cheapest improvements available to a Liberian farmer — it costs time and discipline, not money.
 
 ## Common errors and misconceptions
 

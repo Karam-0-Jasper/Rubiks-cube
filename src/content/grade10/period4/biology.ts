@@ -17,7 +17,9 @@ export const biologyG10P4: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-If you counted every animal on Earth, most of them would be **arthropods** — the insects, spiders, crabs and their relatives. They live in almost every habitat, from the deep sea to the air, and they matter enormously to Liberian life: bees pollinate crops, mosquitoes spread malaria, and locusts can destroy a harvest. This topic sets out the features that make an animal an arthropod and the main **classes** into which the phylum is divided.
+- Most animals on Earth are **arthropods** — insects, spiders, crabs and their relatives.
+- They live in almost every habitat and matter to Liberian life: bees pollinate crops, mosquitoes spread malaria, locusts destroy harvests.
+- **This topic:** the features that make an animal an arthropod, and the main **classes** of the phylum.
 
 ## What are arthropods?
 
@@ -68,7 +70,9 @@ Arthropods are divided into classes by the number of body parts and legs:
 
 ## Why arthropods matter
 
-Arthropods are hugely important: insects **pollinate** crops and flowers; crustaceans are **food**; but some are serious **pests** and **disease carriers** (the mosquito spreads malaria). Understanding them is the basis of the next topic — controlling pests.
+- Insects **pollinate** crops and flowers; crustaceans are **food**.
+- Some are serious **pests** and **disease carriers** (the mosquito spreads malaria).
+- Basis for the next topic — controlling pests.
 
 ## Common errors and misconceptions
 
@@ -253,7 +257,9 @@ Arthropods are hugely important: insects **pollinate** crops and flowers; crusta
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Now that we know what insects are, we can look at the ones that harm us. Insect **pests** cost Liberian farmers dearly — eating crops in the field and in store, and carrying diseases like malaria. But the poisons used to kill them bring their own problems. This topic explains what a pest is, how insect pests damage crops and spread disease, and compares the two great approaches to controlling them: **chemical** control (pesticides) and **biological** control (using living enemies of the pest).
+- Insect **pests** cost Liberian farmers dearly — eating crops in the field and in store, and carrying diseases like malaria.
+- The poisons used to kill them bring their own problems.
+- **This topic:** what a pest is; how insect pests damage crops and spread disease; **chemical** control (pesticides) vs **biological** control (living enemies of the pest).
 
 ## What is a pest?
 

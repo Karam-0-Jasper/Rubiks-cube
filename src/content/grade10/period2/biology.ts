@@ -18,7 +18,9 @@ export const biologyG10P2: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Life on Earth is astonishingly varied — from bacteria too small to see, through moulds, mosses and mango trees, to fish, birds and human beings. To study such variety without becoming lost, biologists **classify** living things: they sort them into named groups by the features they share. This topic explains why we classify, the ladder of ranks from kingdom down to species, how each organism gets a two-part scientific name, and the main features of the **five kingdoms** into which all life is divided.
+- Life is hugely varied — from unseen bacteria through moulds, mosses and mango trees to fish, birds and humans.
+- **Classification** = sorting living things into named groups by shared features.
+- **This topic:** why we classify; the ranks from kingdom to species; two-part scientific names; the main features of the **five kingdoms**.
 
 ## Why we classify
 
@@ -292,7 +294,9 @@ The full classification of the cat is:
       estimatedMinutes: 150,
       notes: `## Introduction
 
-A whole organism made of just **one cell** may sound too simple to survive — yet single-celled creatures are among the most successful life forms on Earth, living in ponds, soil, and inside other organisms. Each must do, within one cell, everything your billions of cells share out between them: move, feed, breathe, remove waste and reproduce. This topic examines three classic unicellular organisms — *Amoeba*, *Paramecium* and *Euglena* — and the microbes that cause disease.
+- Single-celled organisms live in ponds, soil, and inside other organisms.
+- One cell must do everything: move, feed, respire, remove waste, reproduce.
+- **This topic:** three classic unicellular organisms — *Amoeba*, *Paramecium* and *Euglena* — and the microbes that cause disease.
 
 ## What is a unicellular organism?
 
@@ -340,7 +344,7 @@ Some unicellular organisms cause human disease:
 - **Viruses** (HIV causes AIDS) — not cellular, but microscopic infectious agents.
 - **Protozoa:** *Plasmodium* (a sporozoan carried by mosquitoes) causes **malaria**; *Trichomonas* causes an STI; *Entamoeba* causes amoebic dysentery.
 
-Understanding these organisms underpins hygiene, clean water and disease prevention.
+- Understanding these organisms underpins hygiene, clean water and disease prevention.
 
 ## Common errors and misconceptions
 

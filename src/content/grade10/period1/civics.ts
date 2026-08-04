@@ -25,7 +25,10 @@ export const civics: SubjectContent = {
           estimatedMinutes: 80,
           notes: `## Introduction
 
-What does it really mean to be a citizen — and not merely a resident — of a country? **Civics** answers that question. It is the study of the **rights** citizens hold, the **duties** they owe, and the government that binds the two together. This lesson defines civics and explains why it matters, then draws the careful distinctions — between a **right**, a **duty**, an **obligation** and a **privilege** — that the whole subject depends on, showing why a right can never be taken away lightly while a privilege can be withdrawn.
+- **Civics** = the study of the rights and duties of citizens and of government.
+- A citizen is more than a resident: citizenship carries rights held and duties owed.
+- A right cannot be taken away lightly; a privilege can be withdrawn.
+- **This topic:** what civics is and why it is studied; the distinctions between a right, a duty, an obligation and a privilege.
 
 ## What civics is
 
@@ -56,7 +59,10 @@ The distinction that matters most: a **right** cannot lawfully be taken away wit
 
 ## Rights carry corresponding duties
 
-Every right implies a duty on others. If a citizen has a right to life, all others have a duty not to take it. If a citizen has a right to property, others have a duty not to steal. A society in which people claim rights but reject duties cannot function.
+- Every right implies a duty on others.
+- Right to life → all others have a duty not to take it.
+- Right to property → others have a duty not to steal.
+- A society in which people claim rights but reject duties cannot function.
 
 ## Types of rights
 
@@ -305,7 +311,10 @@ The union also has **duties**: to respect the rights of others and to obey lawfu
           estimatedMinutes: 80,
           notes: `## Introduction
 
-Being physically present in a country is not the same as *belonging* to it. **Citizenship** is full legal membership of a state — the status that carries political rights, duties and the state's protection. This lesson explains what citizenship is, the worldwide ways it is **acquired** (by birth, descent, naturalisation and more) and **lost**, and how Liberia's own law works, including the debated **Negro-descent requirement** of Article 27(b) and the shifting position on **dual citizenship**.
+- **Citizenship** = full legal membership of a state, carrying political rights, duties and the state's protection.
+- Presence in a country is not the same as belonging to it.
+- Liberian law includes the debated Negro-descent requirement of Article 27(b) and a shifting position on dual citizenship.
+- **This topic:** what citizenship is; how it is acquired (birth, descent, naturalisation and more) and lost; how Liberia's law works.
 
 ## What citizenship is
 
@@ -594,7 +603,9 @@ He nonetheless **cannot become a Liberian citizen**, because Article 27(b) of th
           estimatedMinutes: 80,
           notes: `## Introduction
 
-Every organised state needs a supreme rulebook — one that says how power is held, how it is limited, and what the government may never do to its people. That rulebook is the **constitution**. This lesson defines a constitution and its **types** (written or unwritten, rigid or flexible), traces Liberia's constitutional history from 1847 to the present **1986 Constitution**, outlines that document's structure, and explains the two ideas that give it teeth: **constitutional supremacy** (Article 2) and the difficult **amendment** process that keeps rights safe from a passing majority.
+- **Constitution** = a state's supreme rulebook: how power is held, how it is limited, and what government may never do to its people.
+- Two ideas give it teeth: constitutional supremacy (Article 2) and a difficult amendment process.
+- **This topic:** what a constitution is and its types (written/unwritten, rigid/flexible); Liberia's constitutional history from 1847 to the 1986 Constitution; the structure of that document; constitutional supremacy and the amendment process.
 
 ## What a constitution is
 
@@ -879,7 +890,10 @@ This is the part learners most often miss. The government cannot obtain by ordin
           estimatedMinutes: 80,
           notes: `## Introduction
 
-Why does no single person or office run the whole Liberian state? Because power, once concentrated, is dangerous. This lesson explains the **separation of powers** — the division of government into three branches, the **Legislature**, the **Executive** and the **Judiciary** — setting out the composition and functions of each in Liberia, and then the system of **checks and balances** by which each branch restrains the others. The deep idea to grasp is that this arrangement is deliberately *inefficient*, and that its inefficiency is exactly what protects citizens from tyranny.
+- Power, once concentrated, is dangerous — so no single person or office runs the whole state.
+- Government is divided into three branches: the **Legislature**, the **Executive** and the **Judiciary**.
+- The arrangement is deliberately inefficient; that inefficiency is what protects citizens from tyranny.
+- **This topic:** the separation of powers; the composition and functions of each branch in Liberia; the system of checks and balances by which each branch restrains the others.
 
 ## The separation of powers
 
@@ -973,7 +987,9 @@ Separation alone is insufficient; each branch must be able to restrain the other
 
 ## Why the budget check matters most
 
-Of all the checks, legislative control of money is in practice the most powerful. An executive may hold every formal power, but it cannot act without funds. This is why the appropriation process is where genuine accountability is exercised.
+- Of all the checks, legislative control of money is in practice the most powerful.
+- An executive may hold every formal power, but it cannot act without funds.
+- The appropriation process is where genuine accountability is exercised.
 
 ## Common errors and misconceptions
 

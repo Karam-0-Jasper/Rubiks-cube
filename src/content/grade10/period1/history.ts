@@ -30,13 +30,15 @@ export const history: SubjectContent = {
           estimatedMinutes: 160,
           notes: `## Introduction
 
-Why should we study things that are over and done with? Because the present grows out of the past: the countries, customs and conflicts of today were all shaped by what came before. But the past cannot be watched directly — it has to be *reconstructed* from clues that survive. This topic explains what **history** is, why we study it, and the **sources** — written, oral and material — from which historians rebuild the story of the past, along with their strengths and weaknesses.
+- The present grows out of the past — today's countries, customs and conflicts were shaped by what came before.
+- The past cannot be observed directly; it is **reconstructed** from surviving clues.
+- **This lesson:** what history is; why we study it; the written, oral and material **sources** historians use, and their strengths and weaknesses.
 
 ## What history is
 
-**History** is the systematic study of past human events, based on evidence, and the interpretation of those events to understand how the present came to be.
-
-History is not merely a record of what happened; it is an **argument about the past supported by evidence**. Two historians may study the same evidence and reach different conclusions, and both may be reasonable.
+- **History** — the systematic study of past human events, based on evidence, and the interpretation of those events to understand how the present came to be.
+- Not merely a record of what happened — an **argument about the past supported by evidence**.
+- Two historians may read the same evidence and reach different, equally reasonable conclusions.
 
 ## The purpose of history
 
@@ -48,13 +50,15 @@ History is not merely a record of what happened; it is an **argument about the p
 
 ## The myth of African history
 
-For a long time some European writers claimed that **"Africa has no history"** — that nothing worth studying happened in Africa before Europeans arrived. This claim is **false**, and disproving it is one purpose of studying African history.
+- Some European writers claimed **"Africa has no history"** — that nothing worth studying happened before Europeans arrived.
+- The claim is **false**; disproving it is one purpose of studying African history.
 
 The myth arose because:
 - Much African history was preserved **orally**, not in European-style written records, so outsiders wrongly assumed there was nothing to record.
 - Prejudice led some writers to dismiss African achievements.
 
-The evidence against the myth is overwhelming: ancient **Egypt** and the kingdom of **Kush**, the empires of **Ghana, Mali and Songhai**, the **Swahili** city-states, Great Zimbabwe, sophisticated systems of government, trade, art, iron-working and learning. Africa has a long and rich history; the myth reflects the ignorance and prejudice of those who spread it, not the African past.
+- Evidence against the myth: ancient **Egypt** and the kingdom of **Kush**; the empires of **Ghana, Mali and Songhai**; the **Swahili** city-states; Great Zimbabwe; systems of government, trade, art, iron-working and learning.
+- Africa has a long, rich history; the myth reflects the ignorance and prejudice of those who spread it, not the African past.
 
 ## Sources of history
 
@@ -70,7 +74,9 @@ Historians reconstruct the past from **sources**, which fall into groups.
 
 ## Evaluating sources
 
-No source is accepted uncritically. Historians ask **who** produced it, **when**, **why**, and **whether other evidence agrees** (corroboration). A source may be **biased** — written from one point of view — but a biased source is still useful, because it reliably reveals the beliefs and aims of the person who produced it, even where it is unreliable about events.
+- No source is accepted uncritically.
+- Historians ask: **who** produced it, **when**, **why**, and **whether other evidence agrees** (corroboration).
+- A **biased** source — written from one point of view — is still useful: it reliably reveals its author's beliefs and aims, even where unreliable about events.
 
 ## Oral tradition: strengths and limits
 
@@ -140,13 +146,16 @@ The myth arose partly because much African history was preserved **orally** rath
           estimatedMinutes: 160,
           notes: `## Introduction
 
-Some of the very first great civilisations in the world arose not in Europe but in **Africa**, along the valley of the River Nile. Egypt built pyramids and a writing system thousands of years ago, and to its south the African kingdom of **Kush** grew so powerful that it conquered Egypt itself. Studying them corrects the false idea that Africa had no great history of its own. This topic describes the role of North Africa, the achievement of ancient **Egypt**, and the rise of **Kush**, its cities of **Napata** and **Meroe**, and its conquest of Egypt.
+- Some of the world's first great civilisations arose in **Africa**, along the valley of the **River Nile**.
+- **Egypt** built pyramids and a writing system thousands of years ago; to its south the African kingdom of **Kush** grew strong enough to conquer Egypt itself.
+- **This lesson:** the role of North Africa; the achievement of ancient **Egypt**; the rise of **Kush**, its cities of **Napata** and **Meroe**, and its conquest of Egypt.
 
 ## The role of North Africa
 
-North Africa — the lands along the Mediterranean and the Nile — was one of the **earliest centres of civilisation** in the world. Its position linked Africa to the Mediterranean world and to the trade of the Nile valley, and it was the setting for **ancient Egypt**, one of the oldest and most influential civilisations in human history.
-
-Over the centuries North Africa saw waves of **inhabitants and invaders** — Egyptians, Kushites, Assyrians, Persians, Greeks, Romans and later Arabs — each leaving their mark.
+- **North Africa** — the lands along the Mediterranean and the Nile — one of the world's **earliest centres of civilisation**.
+- Its position linked Africa to the Mediterranean world and to the trade of the Nile valley.
+- Setting for **ancient Egypt**, one of the oldest and most influential civilisations in human history.
+- Saw waves of **inhabitants and invaders** — Egyptians, Kushites, Assyrians, Persians, Greeks, Romans and later Arabs — each leaving their mark.
 
 ## The place of Egypt
 
@@ -165,9 +174,9 @@ To the **south of Egypt**, along the Nile in what is now Sudan, lay the kingdom 
 
 ## Kush conquers Egypt
 
-For much of its history Kush was influenced by Egypt, but the relationship reversed. Around the **8th century BC**, the kings of Kush **conquered Egypt** and ruled it as the **25th Dynasty** — the so-called "Black Pharaohs" — for about a century, until pushed back by an **Assyrian** invasion.
-
-This is a striking fact of African history: an African kingdom to the south of Egypt grew strong enough to **rule Egypt itself**.
+- Early on, Kush was influenced by Egypt; later the relationship reversed.
+- **8th century BC** — the kings of Kush **conquered Egypt** and ruled it as the **25th Dynasty** (the "Black Pharaohs") for about a century, until pushed back by an **Assyrian** invasion.
+- Striking fact: an African kingdom south of Egypt grew strong enough to **rule Egypt itself**.
 
 ## Napata and Meroe
 
@@ -178,7 +187,9 @@ The kingdom of Kush had two great successive centres:
 
 ## Why this matters
 
-The story of Egypt and Kush shows that Africa was home to **ancient, literate, wealthy and powerful states** thousands of years ago — states that built monuments, worked iron, developed writing, and at one point saw an African kingdom conquer and rule Egypt. It is among the clearest answers to the myth that Africa has no history.
+- Africa was home to **ancient, literate, wealthy and powerful states** thousands of years ago — building monuments, working iron, developing writing.
+- An African kingdom (Kush) conquered and ruled Egypt itself.
+- Among the clearest answers to the myth that Africa has no history.
 
 ## Common errors and misconceptions
 

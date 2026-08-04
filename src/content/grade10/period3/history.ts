@@ -19,11 +19,15 @@ export const historyG10P3: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Liberia has a story unlike any other in Africa: it was founded as a home for **freed Black people from America**, yet the land was already home to many African peoples with societies of their own. Understanding how these two histories met — the **indigenous** nations and the **settlers** brought by the American Colonization Society — is the key to the whole of Liberian history that follows. This topic describes Liberia's indigenous peoples, the role of the **American Colonization Society**, and the founding of the settlement at **Cape Mesurado**.
+- **Liberia** = founded as a home for **freed Black people from America**, on land already home to many African peoples.
+- Two histories meet: the **indigenous** nations and the **settlers** brought by the American Colonization Society.
+- **This topic:** Liberia's indigenous peoples; the role of the **American Colonization Society**; the founding of the settlement at **Cape Mesurado**.
 
 ## Liberia before the settlers
 
-Long before any settlers arrived, the land now called Liberia was home to many **indigenous peoples** — including the Kpelle, Bassa, Grebo, Kru, Gola, Vai, Mandingo and others — organised into their own societies, with farming, trade, crafts and systems of rule. The **Vai** even developed their own **written script** in the early 19th century. These communities traded along the coast and rivers long before contact with the settlers.
+- Home to many **indigenous peoples** — Kpelle, Bassa, Grebo, Kru, Gola, Vai, Mandingo and others — with their own societies, farming, trade, crafts and systems of rule.
+- The **Vai** developed their own **written script** in the early 19th century.
+- These communities traded along the coast and rivers long before contact with the settlers.
 
 ## The American Colonization Society
 
@@ -46,7 +50,8 @@ In the United States in the early 1800s, a group formed the **American Colonizat
 
 ## Toward a nation
 
-By the 1840s the colony was largely governing itself under ACS oversight, with its own settlements, trade and a growing population — setting the stage for the declaration of an independent republic, which the next topic examines.
+- By the 1840s the colony was largely governing itself under ACS oversight, with its own settlements, trade and a growing population.
+- Set the stage for the declaration of an independent republic (next topic).
 
 ## Common errors and misconceptions
 
@@ -245,7 +250,9 @@ It ignores the **indigenous peoples** who had lived in the region for centuries 
       estimatedMinutes: 150,
       notes: `## Introduction
 
-In 1847 the settlers' colony took a momentous step: it declared itself the **Republic of Liberia**, becoming the **first independent republic in Africa**. Understanding *why* it did so — the trading disputes, the need to be recognised as a sovereign state — and *what kind* of nation it became explains the shape of Liberia to this day. This topic explains why the colony sought independence, the **founding of the Republic in 1847** under its first president **Joseph Jenkins Roberts**, and the early character of the new nation.
+- **1847** — the settlers' colony declared itself the **Republic of Liberia**, the **first independent republic in Africa**.
+- Driven by trade disputes and the need to be recognised as a sovereign state.
+- **This topic:** why the colony sought independence; the **founding of the Republic in 1847** under first president **Joseph Jenkins Roberts**; and the early character of the new nation.
 
 ## Why the colony sought independence
 

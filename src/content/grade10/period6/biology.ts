@@ -17,7 +17,9 @@ export const biologyG10P6: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-The plants we grow for food and see all around us — rice, cassava, mango, hibiscus — are **flowering plants**, the most advanced group in the plant kingdom. Their success comes from a well-organised body in which each part does a particular job, and from reproducing by seeds protected inside flowers and fruits. In this topic we name the main parts of a flowering plant and study the jobs of the three vegetative organs: the **root, stem and leaf**.
+- Common crops — rice, cassava, mango, hibiscus — are **flowering plants**, the most advanced group in the plant kingdom.
+- Each part does a particular job; they reproduce by seeds protected inside flowers and fruits.
+- **This topic:** the main parts of a flowering plant, and the jobs of the three vegetative organs — **root, stem and leaf**.
 
 ## The most advanced plants
 
@@ -66,8 +68,7 @@ The **leaf** is the plant's main **food factory**. Its functions are:
 - **Photosynthesis** — the leaf makes food (glucose) using its chlorophyll (Period V).
 - **Gas exchange** — gases (CO₂ and O₂) pass in and out through tiny pores called **stomata**.
 - **Transpiration** — the loss of water vapour from the leaf, which helps draw water up the plant.
-
-The broad, flat shape of a leaf gives it a large surface to catch sunlight and exchange gases.
+- Broad, flat shape gives a large surface to catch sunlight and exchange gases.
 
 ## Common errors and misconceptions
 
@@ -255,7 +256,9 @@ The **root** absorbs water and minerals; the **stem** transports this water up t
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Having studied the plant's vegetative parts, we now reach the part that makes new plants: the **flower**. A flower is a reproductive organ, and its beauty and scent are not for us — they are for attracting the insects and birds that carry pollen from flower to flower. This topic names the parts of a flower and their jobs, then follows the two key events of plant reproduction: **pollination** (the transfer of pollen) and **fertilisation** (the joining of the sex cells to form a seed).
+- The **flower** is the part that makes new plants — a reproductive organ.
+- Its colour and scent attract the insects and birds that carry pollen from flower to flower.
+- **This topic:** the parts of a flower and their jobs; the two key events — **pollination** (transfer of pollen) and **fertilisation** (joining of sex cells to form a seed).
 
 ## The flower — the organ of reproduction
 

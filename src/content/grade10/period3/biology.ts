@@ -19,7 +19,9 @@ export const biologyG10P3: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-A single cell can do everything for itself, but it stays small and simple. Larger, more capable organisms take a different path: they build their bodies from **many** cells that **divide the labour**, each type specialising in one job. The result is a body organised in **levels**, from the single cell up to the whole organism. This topic follows that ladder — cell to tissue to organ to system — and names the four main tissue types and what multicellular life has in common.
+- A single cell stays small and simple; larger organisms build bodies from **many** specialised cells that **divide the labour**.
+- The body is organised in **levels**, from the single cell up to the whole organism.
+- **This topic:** the ladder cell → tissue → organ → system; the four main tissue types; the shared features of multicellular life.
 
 ## Building a body, step by step
 
@@ -65,7 +67,8 @@ Unlike a single-celled organism, a **multicellular organism** is made of many ce
 
 ## Why organisation matters
 
-**Division of labour** makes a complex body efficient: nerve cells signal, muscle cells move, red blood cells carry oxygen. Because tasks are shared out, a multicellular organism can grow large and do things a single cell never could.
+- **Division of labour** makes a complex body efficient — nerve cells signal, muscle cells move, red blood cells carry oxygen.
+- Sharing tasks lets a multicellular organism grow large and do what a single cell never could.
 
 ## Common errors and misconceptions
 
@@ -283,11 +286,15 @@ Unlike a single-celled organism, a **multicellular organism** is made of many ce
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Between the single-celled *Amoeba* and a complex animal like a fish lie the **simplest multicellular animals**. Studying them shows the very first steps of the multicellular body — a handful of cell types arranged in layers, with no true organs yet. This topic looks at two classic examples, the **sponge** and the **hydra**, and relates their simple body plans to how they feed, move and reproduce.
+- Between the single-celled *Amoeba* and a complex animal like a fish lie the **simplest multicellular animals**.
+- They show the first steps of the multicellular body — a few cell types in layers, no true organs yet.
+- **This topic:** the **sponge** and the **hydra**, and how their simple body plans relate to feeding, movement and reproduction.
 
 ## Simple multicellular animals
 
-Not all multicellular animals have complex organs and systems. The simplest ones — such as **sponges** and **hydra** — have bodies of just a few cell layers, yet they clearly show the step from single cells to a true multicellular body.
+- Not all multicellular animals have complex organs and systems.
+- The simplest — **sponges** and **hydra** — have bodies of just a few cell layers.
+- They show the step from single cells to a true multicellular body.
 
 ## Sponges (Phylum Porifera)
 
@@ -334,7 +341,7 @@ The **hydra** is a small freshwater animal, a little more advanced than a sponge
 | Movement | fixed (does not move) | can move by looping/gliding |
 | Reproduction | budding and sexual | mainly budding |
 
-Both show how life advances from single cells toward organised, multicellular bodies.
+- Both show how life advances from single cells toward organised, multicellular bodies.
 
 ## Common errors and misconceptions
 

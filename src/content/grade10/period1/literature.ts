@@ -31,11 +31,14 @@ export const literature: SubjectContent = {
           estimatedMinutes: 160,
           notes: `## Introduction
 
-When a poet writes that "the wind whispered" or that grief is "an ocean with no shore," they are not lying or making a mistake — they are using the special, imaginative language that makes literature *literature*. This unit begins the whole subject: it defines what **literature** is, names its **elements** (theme, plot, character and more), and then studies the **figures of speech** — simile, metaphor, personification, hyperbole and the rest — that give writing its power. Most importantly, it trains the one habit that separates a top answer from a weak one: never just *naming* a device, but explaining the **effect** it creates.
+- **Literature** = the imaginative expression of human experience in language.
+- Uses language artistically — for beauty, feeling and effect — not just to inform.
+- **This lesson:** what literature is; its elements; the main figures of speech; naming a device AND explaining its effect.
 
 ## What literature is
 
-**Literature** is the imaginative expression of human experience in language, valued for its artistic quality as well as its content. It differs from ordinary writing in using language **deliberately and artistically** — for beauty, feeling and effect — not merely to give information.
+- **Literature** — the imaginative expression of human experience in language, valued for artistic quality as well as content.
+- Differs from ordinary writing: uses language **deliberately and artistically** (beauty, feeling, effect), not merely to give information.
 
 ## The elements of literature
 
@@ -77,9 +80,10 @@ When a poet writes that "the wind whispered" or that grief is "an ocean with no 
 
 ## Analysing a figure of speech — name AND effect
 
-The most important habit in this topic: **do not simply name a device — explain what it does.**
-
-"The poet uses alliteration in line 3" is not analysis. "The alliteration in *wind whipped the withered* forces the reader to repeat a harsh sound, so the line enacts the roughness it describes" is analysis. Always ask: *what effect does this device have on the reader?*
+- **Rule:** do not simply name a device — explain what it does.
+- "The poet uses alliteration in line 3" = not analysis.
+- "The alliteration in *wind whipped the withered* forces the reader to repeat a harsh sound, so the line enacts the roughness it describes" = analysis.
+- Always ask: *what effect does this device have on the reader?*
 
 ## Common errors and misconceptions
 
@@ -154,13 +158,15 @@ Calling the tide's action **arithmetic** joins two very different registers: *ar
           estimatedMinutes: 160,
           notes: `## Introduction
 
-A novel is finished the moment it is written, but a play is only *half* made on the page — it waits for actors, a stage and an audience to bring it fully to life. This unit explores **drama**: what makes it different from prose and poetry, its main **kinds** (tragedy, comedy, tragicomedy), and its building blocks — **character, conflict, dialogue and theme** — together with techniques like the **soliloquy**, the **aside** and **dramatic irony**. It then puts all of this to work on the set text, Shakespeare's comedy *A Midsummer Night's Dream*.
+- **Drama** = literature written to be performed by actors before an audience.
+- Differs from prose and poetry: incomplete on the page; waits for performance.
+- **This lesson:** the kinds of drama (tragedy, comedy, tragicomedy); its elements — character, conflict, dialogue, theme; techniques — soliloquy, aside, dramatic irony; applied to Shakespeare's *A Midsummer Night's Dream*.
 
 ## What drama is
 
-**Drama** is literature written to be **performed** by actors before an audience. The word comes from the Greek *dran*, to do or to act.
-
-Drama differs from prose and poetry in one basic way: it is **incomplete on the page**. A novel is finished when written; a play is a set of instructions for a performance. Character is revealed almost entirely through **speech and action**, because there is normally no narrator to explain.
+- **Drama** — literature written to be **performed** by actors before an audience. From the Greek *dran*, to do or to act.
+- **Incomplete on the page** — a novel is finished when written; a play is a set of instructions for performance.
+- Character revealed almost entirely through **speech and action** — normally no narrator to explain.
 
 ## The kinds of drama
 
@@ -197,9 +203,9 @@ Drama differs from prose and poetry in one basic way: it is **incomplete on the 
 
 ## Shakespearean drama: A Midsummer Night's Dream
 
-**William Shakespeare** (1564–1616) is the most famous playwright in the English language. His plays are grouped as tragedies (*Macbeth*, *Romeo and Juliet*), comedies (*A Midsummer Night's Dream*, *Twelfth Night*) and histories.
-
-*A Midsummer Night's Dream* is a **comedy**. Its interwoven plots — the four young lovers who flee into the forest and are confused by a magic love potion, the fairy king and queen Oberon and Titania and their servant Puck, and a group of workmen rehearsing a play — cross and tangle before all is happily resolved.
+- **William Shakespeare** (1564–1616) — most famous playwright in the English language.
+- Plays grouped as tragedies (*Macbeth*, *Romeo and Juliet*), comedies (*A Midsummer Night's Dream*, *Twelfth Night*) and histories.
+- *A Midsummer Night's Dream* — a **comedy**. Interwoven plots: four young lovers who flee into the forest and are confused by a magic love potion; the fairy king and queen Oberon and Titania and their servant Puck; a group of workmen rehearsing a play. All cross and tangle before a happy resolution.
 
 - **Themes** include love and its confusions, illusion versus reality (the "dream"), and order restored after disorder.
 - **Conflict:** the lovers' quarrels (person against person) and the dispute between Oberon and Titania.
@@ -207,7 +213,9 @@ Drama differs from prose and poetry in one basic way: it is **incomplete on the 
 
 ## Reading a play
 
-Because a play is written for performance, read it actively: **assign parts and read aloud**, picture the stage, and treat the **stage directions as part of the text**, not decoration.
+- Written for performance — read actively.
+- **Assign parts and read aloud**; picture the stage.
+- Treat **stage directions as part of the text**, not decoration.
 
 ## Common errors and misconceptions
 

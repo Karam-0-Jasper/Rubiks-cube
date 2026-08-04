@@ -19,7 +19,9 @@ export const literatureG10P5: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-If a novel is a long journey, a **short story** is a single, vivid moment — a tale complete enough to be read in one sitting, yet able to leave a lasting impression. Africa's deep tradition of oral storytelling makes it a natural home for the form. This topic explains what a short story is, sets out the features that flow from its **brevity** — single focus, few characters, economy, and often a final twist — contrasts it with the novel, and shows how to analyse an African short story using the same tools, in miniature.
+- **Short story** = a work of prose fiction complete enough to be read in one sitting.
+- Africa's strong oral storytelling tradition makes it a natural home for the form.
+- **This topic:** what a short story is; the features that flow from its **brevity** (single focus, few characters, economy, often a final twist); contrast with the novel; analysing an African short story with the same tools, in miniature.
 
 ## What is a short story?
 
@@ -252,7 +254,9 @@ In short, the short story does in miniature, with great economy, what the novel 
       estimatedMinutes: 150,
       notes: `## Introduction
 
-So far you have analysed single texts. This final prose topic asks you to do two more demanding things — to **compare** two works, and to **evaluate** a writer's craft and offer a reasoned **personal response**. These are the skills that separate a confident reader from a beginner: not just understanding one story, but weighing it against another, judging *how well* a writer achieves their purpose (through point of view, style and characterisation), and defending your own opinion with evidence. It is the culmination of the *name–evidence–explanation* method that runs through the whole Literature course.
+- Two higher skills: **compare** two works, and **evaluate** a writer's craft with a reasoned **personal response**.
+- Comparison = weighing one text against another; evaluation = judging how well a writer achieves their purpose (point of view, style, characterisation) and defending an opinion with evidence.
+- **This topic:** the culmination of the **name–evidence–explanation** method that runs through the whole Literature course.
 
 ## Beyond one text: comparison and evaluation
 
@@ -280,7 +284,8 @@ To **evaluate** is to judge **how well** a writer achieves their purpose, using 
 
 ## Writing a personal response
 
-A **personal response** gives **your own reasoned opinion** of a text — what you found effective, moving or weak — but it must be **supported by evidence** from the text, not just "I liked it." For example: "The ending is powerful **because**… (evidence)."
+- **Personal response** — a reasoned opinion of a text (effective, moving or weak), **supported by evidence** from the text, not just "I liked it."
+- Form: opinion + **because** + evidence. E.g. "The ending is powerful **because**… (evidence)."
 
 ## The whole method, one last time
 

@@ -17,11 +17,14 @@ export const economicsG10P3: PeriodContent = {
       estimatedMinutes: 160,
       notes: `## Introduction
 
-Where do the goods and services we buy actually come from? Behind every loaf of bread, every taxi ride and every bag of rice lies a combination of **resources** brought together to make it. Economists call these resources the **factors of production**, and they group them into just four kinds — **land, labour, capital and the entrepreneur**. This topic defines each factor, gives everyday Liberian examples, names the **reward** each one earns, and shows why nothing can be produced until all four are combined.
+- Every good and service — a loaf of bread, a taxi ride, a bag of rice — comes from **resources** brought together to make it.
+- Economists call these the **factors of production** — four kinds: **land, labour, capital and the entrepreneur**.
+- **This topic:** each factor defined; everyday Liberian examples; the **reward** each earns; and why nothing is produced until all four are combined.
 
 ## What are the factors of production?
 
-To produce any good or service, resources are needed. The **factors of production** are the **resources used to produce goods and services**. There are **four** of them: **land, labour, capital and the entrepreneur**.
+- **Factors of production** — the **resources used to produce goods and services**.
+- Four of them: **land, labour, capital and the entrepreneur**.
 
 ## 1. Land
 
@@ -62,7 +65,9 @@ The **entrepreneur** is the person who **organises the other three factors** (la
 
 ## Combining the factors
 
-No single factor can produce on its own — they must be **combined**. A bakery, for example, needs **land** (the site and wheat), **labour** (the bakers), **capital** (the oven and mixers) and an **entrepreneur** to organise them and take the risk. Production happens only when all four are brought together.
+- No single factor can produce on its own — they must be **combined**.
+- Example (a bakery): **land** (site and wheat), **labour** (the bakers), **capital** (oven and mixers), **entrepreneur** (organises them and takes the risk).
+- Production happens only when all four are brought together.
 
 ## Common errors and misconceptions
 

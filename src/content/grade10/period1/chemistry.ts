@@ -29,7 +29,9 @@ export const chemistry: SubjectContent = {
           estimatedMinutes: 160,
           notes: `## Introduction
 
-Everything you can touch, taste, drink or breathe — water, salt, air, iron, palm oil — is **matter**, and **chemistry** is the science of what matter is made of and how it changes. When cassava ferments, when iron rusts, when soap is made from oil and lye, chemistry is at work. This first topic defines chemistry and its branches, explains why it matters to daily life and industry in Liberia, and introduces the safe use of the laboratory.
+- **Matter** = anything you can touch, taste, drink or breathe — water, salt, air, iron, palm oil.
+- **Chemistry** = the science of what matter is made of and how it changes (fermenting cassava, rusting iron, soap from oil and lye).
+- **This topic:** chemistry and its branches; the scientific method; SI units and measurement; scientific notation, significant figures, precision and accuracy; unit conversion; and safe use of the laboratory.
 
 ## What chemistry is
 
@@ -81,8 +83,7 @@ A large or small number written as a number between 1 and 10 multiplied by a pow
 
 - 6 500 000 = 6.5 × 10⁶
 - 0.000 042 = 4.2 × 10⁻⁵
-
-This keeps very large and very small measurements manageable.
+- Keeps very large and very small measurements manageable.
 
 ## Significant figures
 
@@ -93,7 +94,8 @@ The digits in a measurement that carry meaning. Give an answer to the same preci
 - **Accuracy** — how close a measurement is to the true value.
 - **Precision** — how close repeated measurements are to one another.
 
-A set of readings can be precise (tightly grouped) yet inaccurate (all wrong in the same way, e.g. from a faulty balance). Good measurement needs both.
+- Readings can be precise (tightly grouped) yet inaccurate (all wrong the same way, e.g. faulty balance).
+- Good measurement needs both.
 
 ## Unit conversion
 
@@ -105,7 +107,9 @@ Convert step by step, one unit at a time.
 
 ## Laboratory safety
 
-Chemistry is practical, and safety comes first: know the hazard signs, wear eye protection, never taste chemicals, add acid to water (not water to acid), and keep the bench clear. A safe laboratory is the condition for all experimental work.
+- Safety first: know the hazard signs; wear eye protection; never taste chemicals.
+- Add acid to water (not water to acid); keep the bench clear.
+- A safe laboratory is the condition for all experimental work.
 
 ## Common errors and misconceptions
 
@@ -174,7 +178,9 @@ In scientific notation: **2.485 × 10¹ g**.
           estimatedMinutes: 160,
           notes: `## Introduction
 
-Matter comes in a few forms and can be sorted, changed and separated in orderly ways. Water can be ice, liquid or steam; a mixture of sand and salt can be pulled apart again; but burning wood makes something new that cannot be un-burned. This topic explains the three **states of matter** and the changes between them, the difference between a **physical** and a **chemical** change, how matter is classified into **elements, compounds and mixtures**, and the techniques used to **separate mixtures**.
+- Matter can be sorted, changed and separated in orderly ways.
+- Water can be ice, liquid or steam; sand and salt can be pulled apart; but burnt wood cannot be un-burned.
+- **This topic:** the three **states of matter** and changes between them; **physical** vs **chemical** change; **elements, compounds and mixtures**; techniques to **separate mixtures**.
 
 ## The three states of matter
 
