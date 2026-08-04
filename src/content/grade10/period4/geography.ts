@@ -23,7 +23,7 @@ export const geographyG10P4: PeriodContent = {
 
 ## What is a map?
 
-A **map** is a **drawing of the Earth's surface (or part of it) as seen from above**, drawn to scale on flat paper. Maps let us study places we cannot see all at once.
+A **map** is a **drawing of the Earth's surface (or part of it) as seen from above**, drawn to scale on flat paper. Maps show places too large to see all at once.
 
 ## Essential parts of a map
 

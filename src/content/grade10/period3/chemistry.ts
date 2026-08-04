@@ -302,7 +302,7 @@ Elements: helium, neon, argon. Each has a **full outer shell** (helium 2; the ot
 
 ## The link back to atomic structure
 
-Everything in this topic follows from Period II's atomic structure:
+This topic all follows from Period II's atomic structure:
 
 - **Metals** (few outer electrons) **lose** them; **non-metals** (nearly full shells) **gain** them; **noble gases** (full shells) do neither.
 - The goal of almost every reaction is a **stable, noble-gas-like full outer shell**. This idea prepares learners for chemical bonding in later periods.
