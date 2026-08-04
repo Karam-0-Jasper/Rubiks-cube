@@ -114,20 +114,10 @@ export default async function TopicPage({
         </div>
       </section>
 
-      {/* Teaching tip */}
-      <section className="mt-12">
-        <SectionHeading numeral="IV" title="Teaching tip" />
-        <div className="mt-5 rounded-card border border-line border-l-4 border-l-brand bg-brand-soft/40 p-6">
-          <p className="text-lg italic leading-relaxed text-ink">
-            {topic.teachingTip}
-          </p>
-        </div>
-      </section>
-
       {/* Quiz */}
       <section className="mt-14">
         <SectionHeading
-          numeral="V"
+          numeral="IV"
           title="Practice quiz"
           note={`${quiz.length} questions · for your class`}
         />
@@ -139,7 +129,7 @@ export default async function TopicPage({
       {/* Test questions — gated */}
       <section className="mt-14">
         <SectionHeading
-          numeral="VI"
+          numeral="V"
           title="Test questions"
           note={`${topic._count.testQuestions} questions · teacher only`}
         />
