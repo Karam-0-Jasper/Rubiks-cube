@@ -17,7 +17,9 @@ export const geographyG10P3: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Geography is not only about the land — it is about the **people** who live on it. How many people there are, whether their number is rising or falling, and why, decides how many schools, hospitals, farms and jobs a country needs. This branch is **population geography**. This topic defines population and its key terms, explains the three things that change a population — **births, deaths and migration** — and describes how a **census** counts the people.
+- **Population geography** studies the people who live on the land.
+- Population numbers decide how many schools, hospitals, farms and jobs a country needs.
+- **This topic:** population and its key terms; the three things that change a population — **births, deaths, migration**; how a **census** counts people.
 
 ## What is population?
 
@@ -248,7 +250,9 @@ Any two of: better **medical care** and vaccination; cleaner **water and sanitat
       estimatedMinutes: 150,
       notes: `## Introduction
 
-People are not spread evenly across the Earth — great cities are packed tight while deserts and forests lie almost empty. Two ideas help geographers describe this: **density** (how crowded an area is) and **distribution** (the pattern of where people live). This topic defines and calculates population **density**, explains why population is so **unevenly distributed**, and discusses the causes and effects of **rapid population growth**.
+- People are unevenly spread — cities packed tight, deserts and forests almost empty.
+- **Density** — how crowded an area is; **distribution** — the pattern of where people live.
+- **This topic:** calculating population **density**; why population is **unevenly distributed**; causes and effects of **rapid population growth**.
 
 ## Population density
 

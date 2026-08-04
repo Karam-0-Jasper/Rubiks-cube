@@ -17,7 +17,9 @@ export const physicsG10P3: PeriodContent = {
       estimatedMinutes: 170,
       notes: `## Introduction
 
-**Energy** is the single most important idea in physics — it is what makes anything happen, from a lorry climbing a hill to a torch giving light. Closely tied to it is **work**, the physicist's measure of energy transferred when a force moves something. This topic gives the exact meaning of work, the main forms of energy, the formulas for **kinetic** and **potential** energy, and the great **principle of conservation of energy** — that energy is never created or destroyed, only changed from one form to another.
+- **Energy** — what makes anything happen, from a lorry climbing a hill to a torch giving light.
+- **Work** — the measure of energy transferred when a force moves something.
+- **This topic:** the exact meaning of work; the main forms of energy; the formulas for **kinetic** and **potential** energy; the **principle of conservation of energy**.
 
 ## Work in physics
 
@@ -33,7 +35,7 @@ $$W = F \\times d$$
 
 **One joule** is the work done when a force of 1 N moves an object 1 m.
 
-**Important:** if the object does not move (d = 0), **no work is done**, no matter how hard you push. Holding a heavy load still does no *physical* work.
+**Important:** if the object does not move (d = 0), **no work is done**, however great the force. Holding a heavy load still does no *physical* work.
 
 ## Energy
 
@@ -76,7 +78,9 @@ The **principle of conservation of energy** states:
 </svg>
 \`\`\`
 
-When a ball falls, its **potential energy is converted into kinetic energy**: as it drops, height (and PE) decreases while speed (and KE) increases. The total energy stays the same. When it hits the ground the energy becomes heat and sound. Energy just keeps changing form.
+- When a ball falls, its **potential energy is converted into kinetic energy**: height (and PE) decreases while speed (and KE) increases.
+- The total energy stays the same.
+- On impact the energy becomes heat and sound.
 
 ## Common errors and misconceptions
 
@@ -269,7 +273,9 @@ KE just before landing = PE at the top = **400 J**.
       estimatedMinutes: 130,
       notes: `## Introduction
 
-Two labourers may both carry the same load of blocks up the same stairs — the same **work** is done — but the one who finishes in half the time is more **powerful**. Doing work quickly matters as much as doing it at all: it is why we rate engines, generators and light bulbs in **watts**. This short topic defines **power** as the rate of doing work, gives its formula and unit, and links it back to work, energy and time.
+- The same **work** done in less time = more **powerful**.
+- Machines (engines, generators, light bulbs) are rated in **watts** because the speed of doing work matters.
+- **This topic:** **power** as the rate of doing work; its formula and unit; links to work, energy and time.
 
 ## What power measures
 
@@ -303,7 +309,9 @@ Since work equals energy transferred, power is also **energy ÷ time**. A 100 W 
 
 ## Why power matters
 
-Power tells you how powerful a machine is, not just how much work it can eventually do. A strong engine and a weak one might both lift a load 10 m — the same work — but the powerful engine does it in far less time, so it has **greater power**. This is why engines, pumps and generators are rated by their power.
+- Power shows how powerful a machine is, not just how much work it can eventually do.
+- A strong and a weak engine may both lift a load 10 m (same work), but the powerful one does it in far less time — **greater power**.
+- This is why engines, pumps and generators are rated by their power.
 
 ## Common errors and misconceptions
 

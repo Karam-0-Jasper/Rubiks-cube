@@ -25,7 +25,9 @@ export const computerScience: SubjectContent = {
           estimatedMinutes: 80,
           notes: `## Introduction
 
-From the mobile phone that carries someone's money to the machine that prints an examination result, computers now shape daily life in Liberia. But what *is* a computer, and what does it actually do? This lesson defines the **computer** and **ICT**, draws the vital line between **data** and **information**, and walks through the **information processing cycle** (input → processing → output, supported by storage) that lies behind every computing task. It then classifies computers by type and size, and surveys how ICT is used — and what it costs — across Liberian life.
+- Computers now shape daily life in Liberia — from mobile money to printed examination results.
+- **Data** and **information** are not the same thing; a computer turns one into the other.
+- **This topic:** definitions of the computer and ICT; data vs information; the information processing cycle (input → processing → output, supported by storage); classification of computers by type and size; the uses and effects of ICT in Liberia.
 
 ## What a computer is
 
@@ -331,7 +333,9 @@ Computerisation is worthwhile, chiefly because it makes disease-trend analysis p
           estimatedMinutes: 80,
           notes: `## Introduction
 
-Open up any computer — a laptop, a phone, a desktop — and you find the same kinds of parts working together: something to put data in, something to work on it, something to store it, and something to show the result. These physical parts are the **hardware**. This lesson identifies the major hardware components and sorts them into the four functional groups — **input, processing, storage and output** — before looking closely at the **CPU** (the machine's brain) and the all-important difference between **RAM and ROM**, and between primary and secondary storage.
+- **Hardware** = the physical parts of a computer — everything you can touch.
+- Every computer has the same kinds of parts: input, processing, storage and output.
+- **This topic:** the major hardware components and the four functional groups (input, processing, storage, output); the CPU; the difference between RAM and ROM, and between primary and secondary storage.
 
 ## What hardware is
 
@@ -646,7 +650,10 @@ So a power failure destroys everything in RAM and nothing in secondary storage. 
           estimatedMinutes: 80,
           notes: `## Introduction
 
-Hardware on its own is a lifeless collection of metal and plastic — it does nothing until **software** tells it what to do. This lesson explains what software is and divides it into its two great families: **system software** (led by the **operating system**, the master program that runs the whole machine) and **application software** (the programs that do useful work for the user). It sets out what an operating system actually does, names the common ones, and — a genuinely practical matter for Liberian schools — weighs **free, open-source** options against costly proprietary ones.
+- Hardware does nothing until **software** tells it what to do.
+- Software has two great families: **system software** (led by the operating system) and **application software** (programs that do useful work).
+- For Liberian schools, free open-source options weigh against costly proprietary ones.
+- **This topic:** what software is; system vs application software; the functions of an operating system; common operating systems; the file and folder structure.
 
 ## What software is
 
@@ -975,7 +982,10 @@ This is why the same version of Writer runs on many different machines with diff
           estimatedMinutes: 80,
           notes: `## Introduction
 
-Deep down, a computer knows only two things: **on** and **off**. Every document, photograph, song and video it handles is, underneath, nothing but patterns of **1s and 0s**. This lesson explains *why* computers work this way — the surprising answer is reliability, not simplicity — and teaches the practical skills of converting between **binary, decimal and hexadecimal** and adding in binary. It then shows how those 1s and 0s come to represent **text** (through codes like ASCII and Unicode, which encodes even the Liberian Vai script), **images**, **sound** and **video**.
+- A computer knows only two states: **on** and **off**.
+- Every document, photograph, song and video is, underneath, patterns of **1s and 0s**.
+- Computers use binary for reliability, not simplicity.
+- **This topic:** why computers use binary; converting between binary, decimal and hexadecimal, and binary addition; how text (ASCII, Unicode including the Vai script), images, sound and video are represented.
 
 ## Why computers use binary
 
@@ -1065,7 +1075,7 @@ Characters are stored as numbers according to a coding scheme.
 - 'a' = 97
 - '0' (the character zero) = 48
 
-Note that the character '0' is not the number 0. The character is stored as 48.
+The character '0' is not the number 0 — it is stored as 48.
 
 **Unicode** — a much larger scheme representing characters from all the world's writing systems, including the Vai syllabary. This matters directly for Liberia: Unicode is what allows the Vai script devised by Bukele to be typed, stored and displayed on a computer.
 
@@ -1079,7 +1089,11 @@ Note that the character '0' is not the number 0. The character is stored as 48.
 
 ## Why file sizes differ
 
-A page of plain text is a few kilobytes. A photograph is megabytes. A film is gigabytes. The reason is the **quantity of numbers required**: text needs one byte per character, an image needs several bytes per pixel across millions of pixels, and video needs that many times over for every frame.
+- A page of plain text is a few kilobytes; a photograph is megabytes; a film is gigabytes.
+- The reason is the **quantity of numbers required**:
+  - text — one byte per character
+  - image — several bytes per pixel across millions of pixels
+  - video — that many times over for every frame
 
 ## Common errors and misconceptions
 

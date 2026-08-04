@@ -18,7 +18,9 @@ export const literatureG10P6: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-A year of study comes together here. Across Periods I–III you met **drama** — its elements, its kinds, its characters and its special techniques — through Shakespeare's *A Midsummer Night's Dream* and Soyinka's *The Lion and the Jewel*. This review gathers all of that in one place so it is ready for the exam: the **elements** of a play, the **types** of drama, the tools of **characterisation**, and the techniques of **soliloquy, aside and dramatic irony** — all analysed with the one reliable method, *name–evidence–explanation*.
+- Review of **drama** from Periods I–III — studied through Shakespeare's *A Midsummer Night's Dream* and Soyinka's *The Lion and the Jewel*.
+- Drama = literature written to be performed by actors before an audience.
+- **This topic:** the elements of a play; the types of drama; the tools of characterisation; the techniques of soliloquy, aside and dramatic irony — all analysed with **name–evidence–explanation**.
 
 ## Pulling drama together
 
@@ -251,7 +253,9 @@ It is a **comedy** (with elements of African drama — music, dance and village 
       estimatedMinutes: 150,
       notes: `## Introduction
 
-This is the capstone of the whole year. Here **prose** (Periods IV–V) is pulled together and joined to the **drama** and **figurative devices** studied all along — so that you can pick up *any* literary text, in any genre, and analyse it with confidence. The big lesson of Grade 10 Literature is a single, transferable one: **one method — name, evidence, explain — unlocks a poem, a play and a novel alike.** This review proves it, and points the way to the higher skills of comparison, evaluation and the reasoned personal response.
+- Capstone review: **prose** (Periods IV–V) joined to the **drama** and **figurative devices** studied all year.
+- Big lesson: **one method — name, evidence, explain — unlocks a poem, a play and a novel alike.**
+- **This topic:** analysing any literary text with that method, and the higher skills of comparison, evaluation and the reasoned personal response.
 
 ## Pulling prose (and the whole year) together
 
@@ -286,11 +290,15 @@ The enemy in every genre is **plot summary** — retelling instead of analysing.
 
 ## Comparing and evaluating
 
-At the highest level, learners **compare** two texts (linking them, not describing each separately) and **evaluate** a writer's craft — judging **how well** the writer achieves their purpose, and giving a **reasoned personal response supported by evidence** ("effective because…", not just "I liked it").
+- **Compare** two texts — link them, do not describe each separately.
+- **Evaluate** a writer's craft — judge **how well** the writer achieves their purpose.
+- **Personal response** — a reasoned opinion supported by evidence ("effective because…", not just "I liked it").
 
 ## The year in one idea
 
-Across figurative expression, drama, and prose — poems, plays, novels and short stories — literature explores human life and ideas through language, and we understand it by **naming what the writer does, showing the evidence, and explaining its effect.** That single skill is what Grade 10 Literature has built.
+- Literature — poems, plays, novels, short stories — explores human life and ideas through language.
+- Understand it by **naming what the writer does, showing the evidence, and explaining its effect**.
+- That single skill is what Grade 10 Literature has built.
 
 ## Common errors and misconceptions
 

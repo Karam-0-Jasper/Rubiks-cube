@@ -30,17 +30,21 @@ export const physics: SubjectContent = {
           estimatedMinutes: 160,
           notes: `## Introduction
 
-**Physics** tries to explain, in the simplest possible terms, how the universe works — why things fall, float, get hot, or move. But before we can explain, we must **measure**: physics is an exact science, and every law in it connects quantities that can be measured with a number and a unit. That is why this first topic begins with measurement — the fundamental quantities, their SI units, and how to measure length, mass, time and volume accurately.
+- **Physics** = the study of how the universe works — why things fall, float, get hot, move.
+- Physics is an **exact science**: every law connects quantities measured as a number and a unit.
+- Measurement comes first — no law without it.
+- **This topic:** fundamental quantities; their SI units; measuring length, mass, time and volume accurately.
 
 ## What physics is
 
-**Physics** is the study of matter, energy and the interactions between them. Every branch rests on **measurement**, which is why measurement comes first.
-
-Branches include **mechanics** (motion and forces), **thermal physics** (heat), **optics** (light), **electricity and magnetism**, **waves and sound**, and **modern/atomic physics**.
+- **Physics** — the study of matter, energy and the interactions between them.
+- Every branch rests on **measurement**.
+- Branches: **mechanics** (motion and forces), **thermal physics** (heat), **optics** (light), **electricity and magnetism**, **waves and sound**, **modern/atomic physics**.
 
 ## Fundamental quantities
 
-Seven quantities are defined independently; all others are built from them. The five you need now:
+- Seven quantities defined independently; all others built from them.
+- The five in scope:
 
 | Quantity | SI unit | Symbol |
 | --- | --- | --- |
@@ -80,23 +84,26 @@ Formed by combining fundamental quantities.
 
 ## Significant figures, accuracy and precision
 
-Give an answer to the same precision as the least precise measurement used.
-
+- Give answers to the same precision as the least precise measurement used.
 - **Accuracy** — closeness to the true value.
 - **Precision** — closeness of repeated readings to one another.
 
-**Errors:** *random error* varies unpredictably and is reduced by repeating and averaging; *systematic error* (e.g. a zero error) shifts every reading the same way and is not reduced by averaging — it must be corrected. *Parallax error* comes from reading a scale at an angle; read at eye level.
+**Errors:**
+- *Random error* — varies unpredictably; reduced by repeating and averaging.
+- *Systematic error* (e.g. a zero error) — shifts every reading the same way; not reduced by averaging; must be corrected.
+- *Parallax error* — from reading a scale at an angle; read at eye level.
 
 ## Dimensional analysis
 
-Checking or deriving relationships using the fundamental dimensions — mass [M], length [L], time [T]. A correct equation must have the **same dimensions on both sides**. For example, speed = distance/time has dimensions [L]/[T] = [LT⁻¹], which is why its unit is m/s.
+- Checking or deriving relationships using the fundamental dimensions — mass [M], length [L], time [T].
+- A correct equation has the **same dimensions on both sides**.
+- Example: speed = distance/time has dimensions [L]/[T] = [LT⁻¹] → unit m/s.
 
 ## Scalars and vectors
 
 - A **scalar** has magnitude only: *distance, speed, mass, time, energy, temperature, volume, density*.
 - A **vector** has magnitude **and direction**: *displacement, velocity, acceleration, force, weight, momentum*.
-
-Note the pairs — distance/displacement and speed/velocity — where the vector carries direction and the scalar does not.
+- Pairs — distance/displacement, speed/velocity — where the vector carries direction and the scalar does not.
 
 ## Mass and weight
 
@@ -172,7 +179,10 @@ Convert to kg/m³: multiply g/cm³ by 1000.
           estimatedMinutes: 160,
           notes: `## Introduction
 
-Why does a huge ship of steel float while a small nail sinks? Why does a sharp knife cut more easily than a blunt one? The answers lie in two properties of matter: **density** — how much matter is packed into a space — and **pressure** — how a force is spread over an area. This topic defines and calculates both, and uses them to explain floating, sinking, and how pressure acts in solids, liquids and gases.
+- **Density** — how much matter is packed into a space.
+- **Pressure** — how a force is spread over an area.
+- These two properties explain floating, sinking, and cutting.
+- **This topic:** defining and calculating density and pressure; pressure in solids, liquids and gases.
 
 ## Density
 
@@ -180,8 +190,8 @@ Why does a huge ship of steel float while a small nail sinks? Why does a sharp k
 
 - A dense material has a lot of mass packed into a small volume (lead, iron).
 - A less dense material has little mass for its volume (wood, cork).
-
-An object **floats** if its density is **less** than that of the liquid, and **sinks** if greater. Wood (about 600 kg/m³) floats on water (1000 kg/m³); iron (7800 kg/m³) sinks.
+- **Floats** if density **less** than the liquid; **sinks** if greater.
+- Wood (about 600 kg/m³) floats on water (1000 kg/m³); iron (7800 kg/m³) sinks.
 
 ## Relative density
 
@@ -194,7 +204,8 @@ An object **floats** if its density is **less** than that of the liquid, and **s
 
 **Pressure** is force per unit area: **pressure = force ÷ area**, unit **pascal (Pa)**, where 1 Pa = 1 N/m².
 
-The **same force** gives a **larger pressure** over a **smaller area**. This is why a sharp knife (small area) cuts easily, a nail is pointed, and a tractor with wide tyres (large area) does not sink into soft ground.
+- **Same force** gives a **larger pressure** over a **smaller area**.
+- Sharp knife (small area) cuts easily; a nail is pointed; a tractor's wide tyres (large area) do not sink into soft ground.
 
 ## Pressure in solids
 
@@ -226,7 +237,9 @@ The pressure at a depth *h* in a liquid of density *ρ* is **P = ρgh**, where g
 
 ## Pressure in gases
 
-Gases exert pressure because their fast-moving particles collide with the walls of the container. Atmospheric pressure is the pressure of the air around us, measured with a **barometer**; it **decreases with altitude** because there is less air above. Gas pressure in a container is measured with a **manometer**.
+- Gases exert pressure because their fast-moving particles collide with the container walls.
+- **Atmospheric pressure** — the pressure of the surrounding air; measured with a **barometer**; **decreases with altitude** (less air above).
+- Gas pressure in a container is measured with a **manometer**.
 
 ## Everyday applications
 

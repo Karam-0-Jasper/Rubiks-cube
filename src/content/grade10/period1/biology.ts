@@ -56,7 +56,8 @@ export const biology: SubjectContent = {
 
 ## How biologists work: the scientific method
 
-Biology is a **science**, which means its knowledge is built by a disciplined process of observing, testing and checking rather than by guessing. The steps of the **scientific method** are:
+- Biology is a **science** — knowledge built by observing, testing and checking, not by guessing.
+- Steps of the **scientific method**:
 
 1. **Observation** — notice something in nature (e.g. *plants near the window grow taller*).
 2. **Question** — ask why it happens (*does light affect growth?*).
@@ -65,7 +66,7 @@ Biology is a **science**, which means its knowledge is built by a disciplined pr
 5. **Results and observation** — record what actually happens, in tables or graphs.
 6. **Conclusion** — decide whether the results support or reject the hypothesis, and share the findings so others can repeat the test.
 
-A good experiment is **fair** (only one variable changed), **repeatable**, and has a **control** group used as the standard of comparison.
+- A good experiment is **fair** (one variable changed), **repeatable**, and has a **control** as the standard of comparison.
 
 ## Characteristics of living things
 
@@ -79,13 +80,15 @@ Remember them as **MRS GREN**:
 - **E**xcretion — removing metabolic waste
 - **N**utrition — taking in and using materials for energy and growth
 
-A thing must show **all** of these to be classed as living. A motor car moves and uses fuel, but it does not grow, reproduce or respond, so it is not alive.
-
-*Euglena* is a useful borderline organism: it moves and responds like an animal but also photosynthesises like a plant, which is why biologists place it among the protists rather than in either kingdom.
+- Must show **all seven** to be classed as living.
+- A motor car moves and uses fuel but does not grow, reproduce or respond — not alive.
+- *Euglena* — borderline: moves and responds like an animal, photosynthesises like a plant; placed among the protists.
 
 ## Why biology matters in Liberia
 
-Biology underpins agriculture, public health and the management of the country's forests and fisheries. Understanding disease transmission, soil fertility and reproduction has direct consequences for food security and for controlling illnesses such as malaria, cholera, Lassa fever and Ebola.
+- Underpins agriculture, public health, and the management of forests and fisheries.
+- Disease transmission, soil fertility and reproduction bear directly on food security.
+- Basis for controlling malaria, cholera, Lassa fever and Ebola.
 
 ## The light microscope
 
@@ -161,7 +164,9 @@ It behaves like an **animal** (swimming, responding) *and* like a **plant** (gre
           estimatedMinutes: 160,
           notes: `## Introduction
 
-If biology is the study of life, then the **cell** is where that study begins, because the cell is the smallest unit that is itself alive. A single cell — an *Amoeba*, a bacterium — can carry out every process of life on its own, while a large organism like a human is built from trillions of cells working together. In this topic we meet the **cell theory**, tour the structures (organelles) inside plant and animal cells and what each does, compare plant with animal cells, and see how cells are organised into tissues, organs and systems.
+- **Cell** = smallest unit that is itself alive.
+- A single cell (*Amoeba*, bacterium) carries out every life process alone; large organisms are built from trillions of cells.
+- **This topic:** the cell theory; structures (organelles) of plant and animal cells and their functions; plant vs animal cells; organisation into tissues, organs and systems.
 
 ## The cell theory
 
@@ -298,7 +303,9 @@ All three agree, so the cell is a **plant cell**, and the chloroplasts show it c
           estimatedMinutes: 160,
           notes: `## Introduction
 
-A cell is not sealed off from the world — it must constantly take in the substances it needs (oxygen, water, glucose, mineral salts) and get rid of its wastes (carbon dioxide, urea). All of this traffic passes through the **cell membrane**, which is *selectively permeable*: it lets some substances through and holds others back. This topic explains the ways substances cross the membrane — the **passive** ways that need no energy (diffusion, osmosis, facilitated diffusion) and the **active** ways that cost the cell energy (active transport, endocytosis, exocytosis) — and why each matters to the life of the cell.
+- Cells take in what they need (oxygen, water, glucose, mineral salts) and remove wastes (carbon dioxide, urea).
+- All this traffic crosses the **cell membrane**, which is *selectively permeable*.
+- **This topic:** the **passive** routes that need no energy (diffusion, osmosis, facilitated diffusion) and the **active** routes that cost energy (active transport, endocytosis, exocytosis).
 
 ## The selectively permeable membrane
 
@@ -337,7 +344,7 @@ The cell membrane lets some substances through while restricting others. Substan
 - A plant cell in concentrated solution loses water; the membrane pulls away from the wall — **plasmolysis**.
 - An animal cell (no wall) in dilute solution may swell and **burst (lyse)**; in concentrated solution it shrinks (**crenation**).
 
-This is why wilting plants recover when watered, and why fresh water and salt water affect cells differently.
+- Explains why wilting plants recover when watered, and why fresh and salt water affect cells differently.
 
 ## Facilitated diffusion
 

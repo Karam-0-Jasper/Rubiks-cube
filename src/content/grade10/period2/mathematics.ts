@@ -17,7 +17,9 @@ export const mathematicsG10P2: PeriodContent = {
       estimatedMinutes: 200,
       notes: `## Introduction
 
-Arithmetic works with known numbers; **algebra** works with numbers we do not yet know, which we stand in for with letters called **variables**. This single idea — letting a letter hold a number — lets us describe patterns, write formulas and solve problems in general rather than one case at a time. In this topic we translate words into algebra, name the parts of an expression, evaluate and simplify expressions, expand brackets, and **factorise** — the reverse of expanding — including quadratics, perfect squares and the difference of two squares.
+- **Algebra** works with unknown numbers, written as letters (**variables**).
+- Letting a letter hold a number lets us describe patterns and solve problems in general.
+- **This lesson:** words → algebra; the parts of an expression; evaluating and simplifying; expanding brackets; **factorising** (quadratics, perfect squares, difference of two squares).
 
 ## From words to algebra
 
@@ -305,7 +307,9 @@ So x² − 5x − 14 = **(x − 7)(x + 2)**.
       estimatedMinutes: 180,
       notes: `## Introduction
 
-We count in **tens** because we have ten fingers — but there is nothing special about ten. A computer counts in **twos**, an old clock in **sixties**. The number of digits a system uses is called its **base**, and the same quantity looks different written in different bases. In this topic we revisit how place value works in base ten, learn to convert numbers between base ten and other bases, and add, subtract and multiply directly in another base.
+- We count in **tens** (ten fingers) — but any number can be the **base**.
+- A computer counts in **twos**; an old clock in **sixties**. The same quantity looks different in different bases.
+- **This lesson:** place value in base ten; converting between base ten and other bases; adding, subtracting and multiplying in another base.
 
 ## Place value and the base-ten system
 

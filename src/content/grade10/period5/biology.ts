@@ -18,7 +18,9 @@ export const biologyG10P5: PeriodContent = {
       estimatedMinutes: 160,
       notes: `## Introduction
 
-Green plants and plant-like organisms feed the whole living world. Through **photosynthesis** they capture the energy of sunlight and lock it into food, releasing the oxygen every animal breathes. Before we study the complex flowering plant, this topic looks at the simpler plant-like organisms — **algae, mosses and ferns** — and then explains photosynthesis itself: what it needs, what it makes, and why all life depends on it.
+- Green plants and plant-like organisms feed the whole living world.
+- **Photosynthesis** captures sunlight energy as food and releases the oxygen animals breathe.
+- **This topic:** the simpler plant-like organisms — **algae, mosses and ferns** — and photosynthesis: what it needs, what it makes, why life depends on it.
 
 ## Simple plant-like organisms
 
@@ -74,8 +76,7 @@ Before flowering plants, there are simpler plant-like organisms, all of which co
 - It is the source of **almost all food** — plants feed themselves and, through food chains, feed animals and humans.
 - It releases the **oxygen** that living things need to breathe.
 - It removes **carbon dioxide** from the air.
-
-Photosynthesis makes green plants the **producers** at the base of nearly every food chain.
+- Makes green plants the **producers** at the base of nearly every food chain.
 
 ## Common errors and misconceptions
 
@@ -268,7 +269,10 @@ Photosynthesis makes green plants the **producers** at the base of nearly every 
       estimatedMinutes: 150,
       notes: `## Introduction
 
-**Fungi** are neither plants nor animals — they are their own kingdom, with a way of life all their own. They cannot make their own food as plants do, yet they are not hunters like animals; instead they **absorb** their food from dead or living matter around them. This makes them nature's great recyclers, but also the cause of rot, mould and disease. This topic sets out what fungi are, how they feed, and their useful and harmful roles in Liberian life.
+- **Fungi** are neither plants nor animals — their own kingdom.
+- They cannot make their own food; they **absorb** it from dead or living matter.
+- Nature's recyclers, but also the cause of rot, mould and disease.
+- **This topic:** what fungi are; how they feed; their useful and harmful roles.
 
 ## What are fungi?
 
@@ -314,7 +318,8 @@ Because they cannot make their own food, fungi are **heterotrophic** — they ge
 - **Medicine:** the antibiotic **penicillin** comes from a mould (*Penicillium*).
 
 ## Warning
-Some mushrooms and toadstools are **very poisonous**. Never eat wild fungi unless an expert has confirmed they are safe.
+- Some mushrooms and toadstools are **very poisonous**.
+- Never eat wild fungi unless an expert has confirmed they are safe.
 
 ## Common errors and misconceptions
 

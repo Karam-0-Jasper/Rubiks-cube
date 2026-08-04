@@ -18,7 +18,8 @@ export const geographyG10P2: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-The Earth is not the same all the way through, nor is its surface a single kind of environment. To make sense of it, geographers study the Earth in two ways: the **external** structure — the great "spheres" of rock, water, air and life at the surface — and the **internal** structure — the hidden layers of rock and metal that reach down to the centre. This topic describes both, and why each matters to life on the surface.
+- The Earth is studied two ways: **external** structure (the surface "spheres" of rock, water, air, life) and **internal** structure (the hidden layers of rock and metal down to the centre).
+- **This topic:** both structures, and why each matters to life on the surface.
 
 ## Two ways to look at the Earth
 
@@ -32,8 +33,7 @@ Four great **spheres** interact at the Earth's surface to support life:
 - **Hydrosphere** — all the water: oceans, seas, rivers, lakes, groundwater and ice. It supplies water for life and shapes the land.
 - **Lithosphere** — the solid outer rocky shell (the crust and upper mantle). It provides land, soil and minerals.
 - **Biosphere** — the zone where living things exist, where the other three spheres overlap.
-
-These spheres are not separate: they constantly exchange matter and energy. Rain (hydrosphere) falls from clouds (atmosphere) onto soil (lithosphere) to nourish plants (biosphere).
+- Not separate: the spheres constantly exchange matter and energy — rain (hydrosphere) falls from clouds (atmosphere) onto soil (lithosphere) to nourish plants (biosphere).
 
 ## The internal structure
 
@@ -58,7 +58,9 @@ Cutting the Earth open reveals three main layers, like a boiled egg:
 
 ## Why the layers differ
 
-Temperature and pressure increase with depth. The crust is cool and solid; the mantle is hot enough to flow slowly; the core is hottest of all — the inner core stays solid only because of the enormous pressure.
+- Temperature and pressure increase with depth.
+- Crust — cool and solid; mantle — hot enough to flow slowly; core — hottest of all.
+- Inner core stays solid only because of the enormous pressure.
 
 ## Common errors and misconceptions
 
@@ -264,14 +266,15 @@ Temperature and pressure increase with depth. The crust is cool and solid; the m
       estimatedMinutes: 150,
       notes: `## Introduction
 
-The solid Earth beneath our feet is made of **rock**, and rock is the raw material of the landscape, the soil that feeds crops, and the ores that Liberia mines — iron, gold, diamonds. But not all rock is the same: it forms in three very different ways, giving three great families with different looks and uses. This topic distinguishes **rocks** from **minerals** and classifies rocks into **igneous, sedimentary and metamorphic**, describing how each forms and what it is used for.
+- The solid Earth is made of **rock** — raw material of the landscape, soil that feeds crops, and the ores Liberia mines (iron, gold, diamonds).
+- Rock forms in three ways, giving three families with different looks and uses.
+- **This topic:** **rocks** vs **minerals**; the three rock types — **igneous, sedimentary, metamorphic** — how each forms and its uses.
 
 ## Rocks and minerals
 
 - A **mineral** is a naturally occurring solid with a definite chemical composition — for example quartz, mica, feldspar, gold, iron ore.
 - A **rock** is a solid made of one or more minerals joined together — for example granite, which contains quartz, feldspar and mica.
-
-So minerals are the "ingredients"; rocks are the "mixtures" built from them.
+- Minerals are the "ingredients"; rocks are the "mixtures" built from them.
 
 ## The three types of rock
 

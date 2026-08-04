@@ -17,7 +17,9 @@ export const chemistryG10P5: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Chemistry has its own written language. Just as words are built from letters, every substance is written as a **chemical formula** built from element symbols and numbers — H₂O, NaCl, CO₂. To read and write these formulae you first need to be clear about the three basic particles they describe: the **atom**, the **molecule** and the **ion**. This topic distinguishes the three, shows how to interpret a formula, and names simple compounds.
+- Every substance is written as a **chemical formula** from element symbols and numbers — H₂O, NaCl, CO₂.
+- To read formulae, first be clear on three particles: the **atom**, the **molecule**, the **ion**.
+- **This topic:** distinguishing atom, molecule and ion; interpreting a formula; naming simple compounds.
 
 ## Atoms, molecules and ions
 
@@ -245,7 +247,9 @@ In an ionic compound the **total positive charge must balance the total negative
       estimatedMinutes: 160,
       notes: `## Introduction
 
-Chemical reactions happen between *countless* atoms and molecules — far too many to count one by one, and each far too small to weigh alone. Chemists solve this with two brilliant ideas: a scale of **relative mass** (comparing every atom to carbon-12) and the **mole**, a "chemist's dozen" that links the invisible world of atoms to masses we can weigh on a balance. This topic explains relative atomic and molecular mass, the mole, and how to use them in simple calculations.
+- Reactions involve *countless* atoms — too many to count, each too small to weigh alone.
+- Chemists use **relative mass** (compared to carbon-12) and the **mole** (a "chemist's dozen") to link atoms to weighable masses.
+- **This topic:** relative atomic and molecular mass; the mole; simple mole calculations.
 
 ## Why we need relative mass
 

@@ -19,7 +19,9 @@ export const chemistryG10P3: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-With over a hundred elements known, chemistry would be chaos if each had to be learned separately. The **periodic table** brings order: by arranging the elements sensibly, it places those that behave alike in the same column, so that knowing where an element sits lets you predict how it will react. This topic states the **periodic law**, explains how the table is built into **periods** and **groups**, and links an element's position directly to its electron arrangement.
+- Over a hundred elements — too many to learn one by one.
+- The **periodic table** places elements that behave alike in the same column, so position predicts behaviour.
+- **This topic:** the **periodic law**; how the table is built into **periods** and **groups**; the link between position and electron arrangement.
 
 ## Ordering the elements
 
@@ -65,7 +67,9 @@ This means that when the elements are arranged in order of **increasing atomic n
 
 ## Why position predicts properties
 
-Because an element's group gives its number of **outer electrons**, and chemistry is driven by outer electrons, the table lets you **predict** how an element will react just from where it sits. This is the power of the periodic table — introduced here and used throughout senior chemistry.
+- Group gives the number of **outer electrons**, and outer electrons drive chemistry.
+- So the table lets you **predict** how an element reacts from where it sits.
+- This is the power of the periodic table — used throughout senior chemistry.
 
 ## Common errors and misconceptions
 
@@ -263,7 +267,9 @@ Because an element's group gives its number of **outer electrons**, and chemistr
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Some columns of the periodic table are so distinctive that chemists give them family names — the soft, fiercely reactive **alkali metals**, the colourful, poisonous **halogens**, and the aloof, unreactive **noble gases**. Studying these families shows the periodic table's greatest lesson: that properties repeat in patterns (**trends**) you can predict. This topic describes each family and how reactivity changes as you go **down** a group.
+- Some columns are distinctive enough to have family names — the reactive **alkali metals**, the poisonous **halogens**, the inert **noble gases**.
+- These families show that properties repeat in predictable patterns (**trends**).
+- **This topic:** each family, and how reactivity changes **down** a group.
 
 ## Families of elements
 

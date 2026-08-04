@@ -17,7 +17,8 @@ export const mathematicsG10P5: PeriodContent = {
       estimatedMinutes: 190,
       notes: `## Introduction
 
-One equation with two unknowns has endless answers — but *two* equations that must hold at the same time usually pin the unknowns down to a single pair of values. That is the power of **simultaneous equations**, and this topic teaches the two reliable algebraic ways to solve them: **substitution** (make one unknown the subject and slot it in) and **elimination** (add or subtract the equations to cancel an unknown). You will also learn to turn **word problems** into a pair of equations and to recognise the special cases where there is no solution or infinitely many.
+- One equation, two unknowns → endless answers. **Two** equations at once → usually one pair of values.
+- **This lesson:** solving simultaneous equations by **substitution** and **elimination**; **word problems** → a pair of equations; special cases (no solution / infinitely many).
 
 ## What are simultaneous equations?
 
@@ -288,7 +289,9 @@ Substitute x = 4 into either equation. Using x − 2y = 4:
       estimatedMinutes: 150,
       notes: `## Introduction
 
-The algebra of the last topic finds the solution to a pair of simultaneous equations; this topic lets you *see* it. Because every linear equation draws as a **straight line**, a pair of equations is simply **two lines**, and their solution is the **point where they cross**. This topic shows how to solve simultaneous equations **graphically** — by tabulating, plotting and reading off the intersection — and, just as valuably, how the picture reveals the three possible cases: lines that cross (one solution), lines that are parallel (none), and lines that coincide (infinitely many).
+- Last topic solved simultaneous equations by algebra; this topic lets you **see** the solution.
+- Each linear equation = a **straight line**; a pair = **two lines**; the solution = the **point where they cross**.
+- **This lesson:** solving graphically (table → plot → read the intersection); the three cases — cross (one solution), parallel (none), coincide (infinitely many).
 
 ## The graphical idea
 

@@ -17,7 +17,9 @@ export const economicsG10P4: PeriodContent = {
       estimatedMinutes: 160,
       notes: `## Introduction
 
-Why is the first cold drink on a hot day so wonderful, while the fourth barely tempts you? Economists answer this with the idea of **utility** — the satisfaction we get from what we consume — and one of the most powerful rules in the whole subject: the **law of diminishing marginal utility**. This topic defines utility, separates **total utility** from **marginal utility**, and shows how the extra satisfaction from each new unit steadily falls — a pattern that quietly explains why we buy variety, why demand curves slope downward, and how much a shopper is willing to pay.
+- **Utility** — the satisfaction we get from consuming something.
+- The first cold drink delights; the fourth barely tempts — the **law of diminishing marginal utility**.
+- **This topic:** utility; **total** vs **marginal** utility; how extra satisfaction falls with each unit (and why demand curves slope downward).
 
 ## What is consumer behaviour about?
 
@@ -69,7 +71,8 @@ Notice: **total utility keeps rising** (or stays level) as long as marginal util
 
 ## Why the law matters
 
-Diminishing marginal utility explains a lot of economic behaviour — why people **buy a variety** of goods rather than only one, and why a consumer will pay less for extra units. It is the foundation for understanding how a consumer spreads a limited income across different goods, which is the next topic.
+- Diminishing marginal utility explains much economic behaviour — why people **buy a variety** and pay less for extra units.
+- It is the foundation for how a consumer spreads a limited income across goods (the next topic).
 
 ## Common errors and misconceptions
 
@@ -272,7 +275,8 @@ Total utility is highest at the **4th and 5th mango** (27), which is where **mar
       estimatedMinutes: 150,
       notes: `## Introduction
 
-If every extra unit of a good gives less satisfaction, how does a shopper with limited money decide *how much* of each good to buy? This topic answers that question. It explains what it means to be a **rational consumer**, introduces the **equi-marginal principle** — the clever rule of getting equal satisfaction from the last dollar spent on every good — and shows how a consumer reaches **equilibrium**, the balance point where no reshuffling of spending could make them any happier. It ties the whole term together by linking this balance back to the **law of demand**.
+- If each extra unit gives less satisfaction, how much of each good should a shopper buy?
+- **This topic:** the **rational consumer**; the **equi-marginal principle** (equal satisfaction from the last dollar on every good); consumer **equilibrium**; the link back to the **law of demand**.
 
 ## The consumer's problem
 
@@ -300,7 +304,9 @@ If the marginal utility per dollar is **higher** for one good, the consumer shou
 
 ## Why this makes sense
 
-The idea rests on the law of diminishing marginal utility from the last topic: because extra units of any one good give less and less satisfaction, it pays to **switch spending** toward whichever good currently gives more satisfaction per dollar, until no such switch can improve total satisfaction. That balance point is consumer equilibrium.
+- Rests on diminishing marginal utility: extra units of one good give less and less satisfaction.
+- So it pays to **switch spending** toward whichever good gives more satisfaction per dollar — until no switch can improve total satisfaction.
+- That balance point = consumer equilibrium.
 
 ## Factors that affect consumer choice
 

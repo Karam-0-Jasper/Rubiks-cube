@@ -31,13 +31,15 @@ export const geography: SubjectContent = {
           estimatedMinutes: 160,
           notes: `## Introduction
 
-Before we study the land, weather and people of our own world, we should see where that world sits in space. The Earth is one small planet among many, circling an ordinary star we call the Sun. Understanding the **solar system** and the Earth's place in it explains day and night, the seasons, and why Earth — unlike its neighbours — teems with life. This topic introduces the solar system, the planets, and what makes Earth unique.
+- The Earth is one small planet circling an ordinary star, the Sun.
+- The **solar system** and Earth's place in it explain day and night, the seasons, and why Earth supports life.
+- **This topic:** the solar system; the planets; what makes Earth unique.
 
 ## The solar system
 
-The **solar system** is the Sun together with all the bodies that orbit it: **eight planets**, their moons, asteroids, comets and meteoroids.
-
-The Sun is a **star** — a huge ball of hot gas — and its gravity holds the system together. It provides the light and heat on which life depends.
+- The **solar system** — the Sun and all bodies orbiting it: **eight planets**, their moons, asteroids, comets, meteoroids.
+- The Sun is a **star** — a huge ball of hot gas; its gravity holds the system together.
+- The Sun provides the light and heat on which life depends.
 
 ## The planets in order from the Sun
 
@@ -66,8 +68,7 @@ The Earth is the **third planet** from the Sun. Its position is one reason it ca
 - It has an **atmosphere** containing oxygen and providing pressure and protection.
 - It has a **moderate temperature range** suitable for living things.
 - It has a protective **ozone layer** and a **magnetic field** shielding it from harmful radiation.
-
-This combination — the right distance, water, atmosphere and temperature — is why Earth is, so far as we know, the only planet that supports life.
+- **Result:** the right distance, water, atmosphere and temperature make Earth the only known planet that supports life.
 
 ## Common errors and misconceptions
 
@@ -132,7 +133,9 @@ Being large does not make a planet suitable for life. Jupiter is a **gas giant**
           estimatedMinutes: 120,
           notes: `## Introduction
 
-People once believed the Earth was flat, and feared sailing off its edge. Today we know its true shape and size — and, more interestingly, we can look at the everyday **evidence** that proves it, from ships disappearing hull-first over the horizon to photographs from space. This topic describes the Earth's true shape, states its dimensions, and sets out the proofs that it is round.
+- Once people believed the Earth was flat.
+- Everyday **evidence** proves it is round — ships vanishing hull-first over the horizon, photographs from space.
+- **This topic:** the Earth's true shape; its dimensions; the proofs that it is round.
 
 ## The shape of the Earth
 
@@ -155,7 +158,8 @@ The Earth is not a perfect sphere. It is an **oblate spheroid** — a sphere sli
 
 ## Why the shape and size matter
 
-The Earth's spherical shape means the Sun's rays strike different latitudes at different angles, which is the basis of the world's climate zones. Its size and curvature are also why maps of large areas must deal with the problem of showing a curved surface on flat paper.
+- Spherical shape → the Sun's rays strike different latitudes at different angles → basis of the world's climate zones.
+- Size and curvature → maps of large areas must show a curved surface on flat paper.
 
 ## Common errors and misconceptions
 
@@ -215,7 +219,9 @@ During a **lunar eclipse** the Earth passes between the Sun and the Moon and cas
           estimatedMinutes: 160,
           notes: `## Introduction
 
-How do you describe *exactly* where a place is on a round Earth that has no natural edges or corners? Geographers solve this with a grid of imaginary lines — **latitude** and **longitude** — that give every point on the globe a unique "address." The same grid, tied to the Earth's rotation, also explains why it is midday in Monrovia while it is the middle of the night elsewhere. This topic defines latitude and longitude, uses them to locate places, and shows how to calculate **local time** from longitude.
+- A grid of imaginary lines — **latitude** and **longitude** — gives every point on the globe a unique "address."
+- The same grid, tied to the Earth's rotation, explains time differences between places.
+- **This topic:** defining latitude and longitude; locating places; calculating **local time** from longitude.
 
 ## Locating places on the globe
 
@@ -267,7 +273,8 @@ To find the time difference between two places:
 
 ## The International Date Line
 
-Roughly along 180°, this is where the date changes. Crossing it westward you move the calendar **forward one day**; crossing eastward you move it **back one day**.
+- Runs roughly along 180°; where the date changes.
+- Crossing westward → calendar **forward one day**; crossing eastward → **back one day**.
 
 ## Common errors and misconceptions
 
@@ -335,7 +342,9 @@ The town is to the **west** of Greenwich. Places west are **behind** in time, so
           estimatedMinutes: 160,
           notes: `## Introduction
 
-The Earth never stops moving, and its two great movements shape our daily and yearly lives. As it **spins** on its axis we get day and night; as it **travels** round the Sun over a year, with its axis tilted, we get the seasons. This topic distinguishes the Earth's **rotation** from its **revolution** and explains their effects — day and night, time differences, the seasons and the leap year.
+- The Earth has two movements: it **spins** on its axis and **travels** round the Sun.
+- Spin → day and night; tilted orbit → seasons.
+- **This topic:** **rotation** vs **revolution** and their effects — day and night, time differences, the seasons, the leap year.
 
 ## Two movements
 
@@ -380,7 +389,9 @@ Because the axis keeps pointing the same way, different hemispheres lean towards
 
 ## Why Liberia has wet and dry seasons, not four temperature seasons
 
-Liberia lies close to the equator (about 4°–8° N). The Sun is nearly overhead all year, so temperature changes little. Instead of hot and cold seasons, Liberia has a **wet season (May–October)** and a **dry season (November–April)**, governed by the movement of the rain-bringing wind belt (the Inter-Tropical Convergence Zone) rather than by the tilt-driven temperature seasons of higher latitudes.
+- Liberia lies close to the equator (about 4°–8° N); the Sun is nearly overhead all year, so temperature changes little.
+- Instead of hot and cold seasons: a **wet season (May–October)** and a **dry season (November–April)**.
+- Governed by the movement of the rain-bringing wind belt (the Inter-Tropical Convergence Zone), not by the tilt-driven temperature seasons of higher latitudes.
 
 ## Common errors and misconceptions
 

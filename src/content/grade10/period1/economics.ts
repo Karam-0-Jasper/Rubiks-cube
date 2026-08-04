@@ -30,7 +30,9 @@ export const economics: SubjectContent = {
           estimatedMinutes: 160,
           notes: `## Introduction
 
-Every day, in every home and every country, people face the same stubborn fact: there is never *enough*. Money runs out before the shopping list does; a government cannot build every road, clinic and school it would like. **Economics** is the study of how people cope with this — how they use **limited resources** to satisfy their **unlimited wants**. This unit introduces the foundation of the whole subject: what economics is, the difference between **wants and needs**, and the linked ideas of **scarcity, choice, scale of preference** and **opportunity cost** that follow from them.
+- People everywhere face one stubborn fact: there is never **enough** — money runs out before the shopping list does; a government cannot build every road, clinic and school it wants.
+- **Economics** — the study of how people use **limited resources** to satisfy **unlimited wants**.
+- **This topic:** what economics is; **wants vs needs**; and the linked ideas of **scarcity, choice, scale of preference** and **opportunity cost**.
 
 ## What economics is
 
@@ -45,7 +47,8 @@ The word comes from the Greek *oikonomia*, meaning household management — mana
 - **Needs** are things essential for survival: food, water, shelter, clothing, basic health care.
 - **Wants** are desires beyond survival: a phone, a motorbike, a better house.
 
-Needs are limited, but **wants are unlimited** — as soon as one is satisfied, another appears. Economics studies both, because both compete for the same scarce resources.
+- Needs are limited, but **wants are unlimited** — as soon as one is satisfied, another appears.
+- Economics studies both, because both compete for the same scarce resources.
 
 ## Scarcity — the central problem
 
@@ -60,11 +63,13 @@ Three conditions make something an economic problem:
 
 ## Choice
 
-Because resources are scarce, we cannot have everything, so we must **choose**. Every individual, firm and government must decide which wants to satisfy and which to leave unsatisfied.
+- Scarce resources mean not everything can be had — one must **choose**.
+- Every individual, firm and government decides which wants to satisfy and which to leave unsatisfied.
 
 ## Scale of preference
 
-A **scale of preference** is a list of wants arranged in order of importance, most pressing first. Because we cannot satisfy all our wants, we rank them and satisfy the most important ones our resources allow, working down the list.
+- **Scale of preference** — a list of wants arranged in order of importance, most pressing first.
+- Since not all wants can be met, they are ranked and the most important ones resources allow are satisfied, working down the list.
 
 ## Opportunity cost
 
@@ -80,7 +85,9 @@ Because choosing one thing means giving up another, every choice has an **opport
 
 ## Why these concepts matter
 
-Scarcity, choice and opportunity cost are the foundation of the whole subject. Every economic decision — by a household, a business or a government — is a choice made under scarcity, and every choice has a cost measured in what is given up.
+- Scarcity, choice and opportunity cost are the foundation of the whole subject.
+- Every economic decision — household, business or government — is a choice made under scarcity.
+- Every choice has a cost, measured in what is given up.
 
 ## Common errors and misconceptions
 
@@ -154,7 +161,8 @@ The family chose to spend its last portion on the school fee rather than on the 
           estimatedMinutes: 160,
           notes: `## Introduction
 
-If scarcity forces every society to make choices, then every society must somehow decide *which* choices to make — and organise itself to carry them out. This unit sets out the **three basic economic problems** that no economy can escape, divides the subject into its two great branches — **microeconomics** and **macroeconomics** — and compares the main **economic systems** (capitalism, socialism and the mixed economy) by which societies answer those problems, ending with the system Liberia itself practises.
+- Scarcity forces every society to decide which choices to make and to organise itself to carry them out.
+- **This topic:** the **three basic economic problems** no economy can escape; the two branches — **microeconomics** and **macroeconomics**; and the main **economic systems** (capitalism, socialism, mixed economy), ending with the system Liberia practises.
 
 ## The three basic economic problems
 
@@ -196,11 +204,15 @@ An **economic system** is the way a society organises the production and distrib
 
 ## Liberia's economic system
 
-Liberia operates a **mixed economy**. Private individuals and firms produce most goods and services through the market — farming, trade, mining, services — while the government provides public services, collects taxes, and regulates economic activity. A large **subsistence** sector, where households produce mainly for their own use, sits alongside the market and government sectors.
+- Liberia operates a **mixed economy**.
+- Private individuals and firms produce most goods and services through the market — farming, trade, mining, services.
+- The government provides public services, collects taxes, and regulates economic activity.
+- A large **subsistence** sector (households producing mainly for their own use) sits alongside the market and government sectors.
 
 ## Why this matters
 
-Understanding the basic questions, the branches and the systems gives a framework for the whole subject: every later topic — demand and supply, production, money, trade — is about how an economy answers *what, how and for whom* to produce.
+- The basic questions, branches and systems give a framework for the whole subject.
+- Every later topic — demand and supply, production, money, trade — is about how an economy answers *what, how and for whom* to produce.
 
 ## Common errors and misconceptions
 

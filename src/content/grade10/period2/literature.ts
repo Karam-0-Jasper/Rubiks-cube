@@ -20,7 +20,9 @@ export const literatureG10P2: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-The people in a play are not real, yet a great playwright makes us laugh with them, fear for them, and remember them for life. How? Through **characterisation** — the craft of building believable characters and revealing who they are. This topic sorts the different **types of character** (protagonist, antagonist, round, flat, dynamic, static, foil), sets out the **methods** a playwright uses to reveal them, and separates a character's **traits** (their qualities) from their **role** (their function) — using Puck in *A Midsummer Night's Dream* and Baroka and Lakunle in *The Lion and the Jewel* as worked examples.
+- **Character** = a person or being who takes part in the action of a play.
+- **Characterisation** = the craft of building and revealing characters.
+- **This topic:** the types of character; the methods that reveal them; **traits** (qualities) vs **roles** (function) — using Puck in *A Midsummer Night's Dream* and Baroka and Lakunle in *The Lion and the Jewel*.
 
 ## Character and characterisation
 
@@ -59,7 +61,9 @@ Because a play is meant to be **performed**, character is shown mainly through w
 
 ## Why characterisation matters
 
-Strong characterisation makes an audience care about the story. By studying a character's traits, actions and role, we uncover the play's **themes** — for example, the clash between tradition and modernity in *The Lion and the Jewel*.
+- Strong characterisation makes an audience care about the story.
+- Traits, actions and role uncover the play's **themes**.
+- Example: the clash between tradition and modernity in *The Lion and the Jewel*.
 
 ## Common errors and misconceptions
 
@@ -283,11 +287,15 @@ By examining Lakunle's own words (vanity) and his actions (impracticality), and 
       estimatedMinutes: 150,
       notes: `## Introduction
 
-A poem packs enormous feeling into very few words — and it does so largely through **figures of speech**. This topic takes the devices you met in Period I and puts them to work on whole poems, teaching a reliable three-step routine — **name, quote, explain the effect** — for analysing figurative expression. It then applies that routine to two set poems: Senghor's proud *Black Woman*, where the woman becomes a symbol of Africa itself, and D. H. Lawrence's *Bats*, where vivid images turn an ordinary dusk into a study of wonder shading into unease.
+- Poetry packs feeling into few words, largely through **figures of speech**.
+- Three-step routine for analysis: **name, quote, explain the effect**.
+- **This topic:** applying the devices from Period I to whole poems — Senghor's *Black Woman* (the woman as symbol of Africa) and D. H. Lawrence's *Bats* (images of wonder shading into unease).
 
 ## Figurative language in poetry
 
-Poets rarely say things plainly. They use **figurative expressions (figures of speech)** — language that means more than its literal words — to create images, feeling and music. Period I introduced these devices; here we apply them to whole poems.
+- Poets rarely say things plainly.
+- **Figurative expressions (figures of speech)** — language that means more than its literal words — create images, feeling and music.
+- Period I introduced these devices; here they are applied to whole poems.
 
 ## The main figures to recognise
 
@@ -326,7 +334,8 @@ Lawrence describes bats at dusk with a mixture of wonder and disgust.
 
 ## Why it matters
 
-Recognising figures of speech is only half the skill. The marks — and the meaning — come from explaining **why** the poet chose them and **what they do** to the reader.
+- Recognising figures of speech is only half the skill.
+- The marks — and the meaning — come from explaining **why** the poet chose them and **what they do** to the reader.
 
 ## Common errors and misconceptions
 

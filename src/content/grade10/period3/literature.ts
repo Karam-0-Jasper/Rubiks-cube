@@ -18,7 +18,9 @@ export const literatureG10P3: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Long before anyone wrote a play in Africa, Africans were already *performing* — in the masked dance of a festival, the chant of a ritual, and the voice and gesture of a village storyteller. **African drama** grows straight out of these living traditions, which is why it is far more than "European drama written by Africans." This topic explains what African drama is, traces its **origins** in ritual, festival and oral storytelling, sets out the **features** that make it distinctive, and introduces its major **playwrights**, from Nobel laureate Wole Soyinka onwards.
+- African performance predates the written play — masked festival dance, ritual chant, the village storyteller.
+- **African drama** grows out of these living traditions; it is more than "European drama written by Africans."
+- **This topic:** what African drama is; its origins in ritual, festival and oral storytelling; its distinctive features; its major playwrights, from Nobel laureate Wole Soyinka onwards.
 
 ## What is African drama?
 
@@ -55,7 +57,9 @@ African plays often show features drawn from these roots:
 
 ## Why African drama matters
 
-African drama gives African writers a way to tell their **own stories in their own voice**, drawing on indigenous performance traditions rather than only European models. It preserves culture, examines society, and entertains — carrying the community's concerns onto the stage.
+- Lets African writers tell their **own stories in their own voice**, drawing on indigenous performance traditions rather than only European models.
+- Preserves culture, examines society, and entertains.
+- Carries the community's concerns onto the stage.
 
 ## Common errors and misconceptions
 
@@ -257,7 +261,9 @@ African drama is **not** merely European drama in African hands. It grows out of
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Knowing *about* African drama is one thing; *reading a play well* is another. This topic puts the tools you have gathered — plot, character, conflict, dialogue and characterisation — to work on a full African play such as Soyinka's *The Lion and the Jewel* or Aidoo's *The Dilemma of a Ghost*. It focuses on **theme** (a play's central idea), on how a playwright **develops** a theme through character, conflict, plot and dialogue rather than stating it outright, and on the analytical discipline — **name, evidence, explanation** — that turns plot summary into real literary analysis.
+- Applies the tools of drama — plot, character, conflict, dialogue, characterisation — to a full African play (Soyinka's *The Lion and the Jewel* or Aidoo's *The Dilemma of a Ghost*).
+- Focus: **theme** (a play's central idea) and how a playwright develops it through character, conflict, plot and dialogue rather than stating it outright.
+- **This topic:** the analytical discipline — **name, evidence, explanation** — that turns plot summary into real literary analysis.
 
 ## Applying the tools of drama
 

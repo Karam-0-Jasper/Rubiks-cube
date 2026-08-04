@@ -17,7 +17,9 @@ export const economicsG10P5: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-A long list of prices or population figures tells you very little at a glance — but the *same* numbers drawn as a rising line, compared as bars, or sliced into a pie suddenly reveal a story. Economists rely on a small toolkit for exactly this: **tables, line graphs, bar charts and pie charts**. This topic shows what each tool does best, how to read one properly (title, axes, units and key), and — the skill most tested in exams — how to **choose the right tool** for the question in front of you.
+- The same numbers hide in a list but tell a story as a line, bars, or a pie.
+- Economists' toolkit: **tables, line graphs, bar charts, pie charts**.
+- **This topic:** what each tool does best; how to read one (title, axes, units, key); how to **choose the right tool**.
 
 ## Why economists use tools
 
@@ -266,7 +268,9 @@ angle = (40 ÷ 100) × 360° = **144°**.
       estimatedMinutes: 150,
       notes: `## Introduction
 
-How do we say, in a single number, what a "typical" wage is, or how much a price has gone up? For that, economists reach for a handful of simple but powerful measures: **averages** (the mean, median and mode), **percentages** and **ratios**. This topic shows how to calculate and — just as importantly — how to *interpret* each one, so that a long column of figures can be summed up in a few clear, comparable numbers. These are the everyday arithmetic behind interest rates, inflation, incomes and much more.
+- How to state, in one number, a "typical" wage or how much a price rose?
+- Tools: **averages** (mean, median, mode), **percentages**, **ratios**.
+- **This topic:** calculating *and* interpreting each, to sum up a long column of figures clearly.
 
 ## Making sense of numbers
 
@@ -313,7 +317,8 @@ A **ratio** compares two quantities, showing how many times one contains the oth
 
 ## Why these matter
 
-Averages, percentages and ratios turn long lists of figures into a few clear numbers that can be compared and understood — the everyday arithmetic of economic analysis.
+- Averages, percentages and ratios turn long lists of figures into a few clear, comparable numbers.
+- The everyday arithmetic of economic analysis.
 
 ## Common errors and misconceptions
 

@@ -17,7 +17,9 @@ export const physicsG10P5: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Rub a plastic comb on your hair and it will pick up small pieces of paper; walk across a dry floor and a metal door-handle may give you a tiny shock. These are everyday signs of **static electricity** — electric charge that has built up and is sitting still. Understanding it is the first step toward the electric currents that power the modern world. This topic describes the **two kinds of charge**, explains how objects become charged by **friction** (the transfer of electrons), and distinguishes **conductors** from **insulators**.
+- **Static electricity** — electric charge built up and sitting still (a comb picking up paper; a shock from a door-handle).
+- The first step toward the electric currents that power the modern world.
+- **This topic:** the **two kinds of charge**; charging by **friction** (electron transfer); **conductors** vs **insulators**.
 
 ## Static electricity
 
@@ -255,7 +257,8 @@ Glass is an **insulator**, so charge **cannot move through it easily** and stays
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Charges do not just sit there — they **push and pull on each other** across a distance, and this simple fact explains effects from a balloon sticking to a wall to the terrifying flash of **lightning**. This topic states the **law of electric charges**, explains attraction and repulsion, and looks at everyday electrostatics — its useful applications and its dangers, especially lightning and how a lightning conductor protects a building.
+- Charges **push and pull on each other** across a distance — from a balloon sticking to a wall to a flash of **lightning**.
+- **This topic:** the **law of electric charges**; attraction and repulsion; everyday electrostatics — uses and dangers, especially lightning and the lightning conductor.
 
 ## The law of electric charges
 

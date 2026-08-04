@@ -17,7 +17,9 @@ export const literatureG10P4: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Most of the stories we read — novels and short stories alike — are written in **prose**, the ordinary flowing language of sentences and paragraphs. **African prose** turns this everyday form into something powerful: a way for Africans to tell their own stories, in their own settings and voice. This topic defines prose and its forms, sets out the **features** that make African prose distinctive, and introduces its great writers — above all Chinua Achebe, whose *Things Fall Apart* is the most famous African novel ever written.
+- **Prose** = the ordinary flowing language of sentences and paragraphs; most novels and short stories are prose.
+- **African prose** — Africans telling their own stories, in their own settings and voice.
+- **This topic:** what prose is and its forms; the features that make African prose distinctive; its great writers, above all Chinua Achebe, whose *Things Fall Apart* is the most famous African novel.
 
 ## What is prose?
 
@@ -55,7 +57,9 @@ African prose often shows these distinctive features:
 
 ## Why African prose matters
 
-Like African drama, African prose lets African writers **tell their own stories** and correct outsiders' misrepresentations of Africa. *Things Fall Apart*, for example, was written partly to show the richness and order of African society before colonialism — a purpose that made it one of the most important books in world literature.
+- Lets African writers **tell their own stories** and correct outsiders' misrepresentations of Africa.
+- *Things Fall Apart* was written partly to show the richness and order of African society before colonialism.
+- That purpose made it one of the most important books in world literature.
 
 ## Common errors and misconceptions
 
@@ -252,7 +256,9 @@ The statement is too narrow. African prose is not *only* about villages and old 
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Reading a novel for pleasure is one thing; *studying* one for literature is another. To understand how a novel achieves its effects, we take it apart into its main **elements** — **plot, character, setting and theme** (plus point of view and style) — and then, crucially, see how they fit back together. This topic sets out those elements and applies them to an African novel such as *Things Fall Apart*, showing how a village on the edge of colonial change and a proud, rigid hero combine to dramatise the book's meaning — and how to write about it without slipping into mere plot summary.
+- Studying a novel means taking it apart into its main **elements** — **plot, character, setting, theme** (plus point of view and style) — then seeing how they fit back together.
+- Applied to an African novel such as *Things Fall Apart*: a village on the edge of colonial change and a proud, rigid hero combine to dramatise the book's meaning.
+- **This topic:** the elements of prose fiction, and how to write about them without slipping into plot summary.
 
 ## The elements of prose fiction
 

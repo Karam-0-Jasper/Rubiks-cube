@@ -18,11 +18,16 @@ export const historyG10P2: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-While much of the world was still without cities, the Horn of Africa was home to one of the oldest and proudest civilisations on Earth — **Ethiopia**. Its kingdom of **Aksum** minted its own coins, built towering stone monuments, controlled Red Sea trade, and was among the first states in the world to adopt Christianity. Its story, wrapped in the tradition of **King Solomon and the Queen of Sheba**, is a powerful answer to the myth that Africa lacked great states. This topic explores that tradition, the achievements of Aksum, and Ethiopia's place in African history.
+- **Ethiopia** (Horn of Africa) = one of the oldest and proudest civilisations on Earth.
+- Its kingdom of **Aksum** minted its own coins, built towering stone monuments, controlled Red Sea trade, and was among the first states in the world to adopt Christianity.
+- Its story is wrapped in the tradition of **King Solomon and the Queen of Sheba**.
+- **This topic:** that tradition; the achievements of Aksum; and Ethiopia's place in African history.
 
 ## Ethiopia: one of Africa's oldest states
 
-**Ethiopia** (in the Horn of Africa) is one of the oldest continuous civilizations in the world. Long before European contact it had its own kingdoms, writing, religion and trade — proof that Africa produced advanced, organised states.
+- **Ethiopia** (Horn of Africa) — one of the oldest continuous civilizations in the world.
+- Long before European contact it had its own kingdoms, writing, religion and trade.
+- Proof that Africa produced advanced, organised states.
 
 ## The tradition of Solomon and the Queen of Sheba
 
@@ -32,11 +37,11 @@ A famous tradition, told in the Ethiopian national epic the **Kebra Nagast** ("G
 - According to the tradition, their son **Menelik I** became the first emperor of Ethiopia.
 - From this story the Ethiopian royal family claimed the title of the **"Solomonic dynasty"**, a line of rulers who traced their descent to Solomon.
 
-Whether or not the events happened exactly as told, the tradition was historically important: it gave Ethiopian kings great prestige and helped bind the nation together for centuries.
+- The tradition was historically important regardless of literal truth: it gave Ethiopian kings great prestige and bound the nation together for centuries.
 
 ## The Kingdom of Aksum
 
-The real historical greatness of early Ethiopia is seen in the **Kingdom of Aksum** (roughly the first to the seventh centuries CE), one of the great trading powers of the ancient world.
+**Kingdom of Aksum** (roughly 1st–7th centuries CE) — the real historical greatness of early Ethiopia; one of the great trading powers of the ancient world.
 
 - **Trade:** Aksum lay near the Red Sea and traded ivory, gold and other goods with Egypt, Arabia, India and the Roman world.
 - **Coins:** Aksum minted its own **gold, silver and bronze coins** — a sign of a strong, organised economy.
@@ -258,14 +263,19 @@ The claim is false, and the Kingdom of Aksum in ancient Ethiopia disproves it cl
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Africa's greatness was not only inland — along its **eastern coast**, trade with the wider Indian Ocean world gave rise to the wealthy **Swahili** city-states, where African, Arab and Asian influences blended into a new culture and language. Together with the earlier civilisation of **ancient Sudan**, these societies show Africans building cities, commerce and culture through their own trade and enterprise. This topic describes the origins and character of the **Swahili** civilisation, the peoples who shaped it, and the civilisation of **ancient Sudan**.
+- Africa's greatness was not only inland — the **eastern coast** traded with the wider Indian Ocean world.
+- That trade gave rise to the wealthy **Swahili** city-states, blending African, Arab and Asian influences into a new culture and language.
+- Together with the earlier civilisation of **ancient Sudan**, these societies show Africans building cities, commerce and culture through their own trade and enterprise.
+- **This topic:** the origins and character of the **Swahili** civilisation; the peoples who shaped it; and the civilisation of **ancient Sudan**.
 
 ## The Swahili civilization
 
 Along the **East African coast** — from present-day Somalia down through Kenya, Tanzania and Mozambique — a rich trading civilization grew up from about the 8th century CE: the **Swahili civilization**.
 
 ### A civilization built on trade
-The Swahili coast sat at the meeting point of Africa and the **Indian Ocean** trade routes. Traders exchanged African goods — **gold, ivory, timber and enslaved people** — for goods from Arabia, Persia, India and China, such as **cloth, porcelain and beads**. Ships called **dhows** used the seasonal **monsoon winds** to sail back and forth.
+- Sat at the meeting point of Africa and the **Indian Ocean** trade routes.
+- Exported African goods — **gold, ivory, timber and enslaved people**; imported **cloth, porcelain and beads** from Arabia, Persia, India and China.
+- Ships called **dhows** used the seasonal **monsoon winds** to sail back and forth.
 
 ### A blend of peoples and cultures
 The Swahili civilization was created by the mixing of several peoples:
@@ -273,10 +283,10 @@ The Swahili civilization was created by the mixing of several peoples:
 - **Africans** (Bantu-speaking coastal peoples) formed its foundation,
 - together with **Arabs**, **Persians**, and traders from **India** and **China**.
 
-Out of this contact came the **Swahili (Kiswahili) language** — a **Bantu African language** enriched with many Arabic words — and the spread of **Islam** along the coast.
+- Out of this contact came the **Swahili (Kiswahili) language** — a **Bantu African language** enriched with many Arabic words — and the spread of **Islam** along the coast.
 
 ### City-states
-The civilization was organised into wealthy, independent **city-states** such as **Kilwa, Mombasa, Zanzibar** and **Sofala**, each ruled by its own leaders and famous for stone buildings, mosques and busy ports.
+- Organised into wealthy, independent **city-states** — **Kilwa, Mombasa, Zanzibar, Sofala** — each ruled by its own leaders and famous for stone buildings, mosques and busy ports.
 
 ## The civilization of Ancient Sudan
 

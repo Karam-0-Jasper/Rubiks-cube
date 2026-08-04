@@ -18,11 +18,14 @@ export const economicsG10P2: PeriodContent = {
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Why does a market trader lower the price of tomatoes at the end of the day, and why do shoppers rush to buy when they do? The answer lies in **demand** — one half of the machinery that sets every price. This topic explains what economists really mean by demand (not just wanting a thing, but being *able* to buy it), states the **law of demand**, shows how to build a **demand schedule** and **curve**, and teaches the single most important skill in the topic: telling a **movement along** the curve apart from a **shift** of the whole curve.
+- **Demand** = one half of the machinery that sets every price (supply is the other).
+- Market traders cut end-of-day prices; shoppers buy more when prices fall.
+- **This topic:** what demand means (desire *plus* ability to pay); the **law of demand**; building a **demand schedule** and **curve**; and telling a **movement along** the curve from a **shift** of the whole curve.
 
 ## What demand means
 
-In economics, **demand** is not just a wish to have something. **Demand** is the quantity of a good or service that consumers are **willing and able to buy** at a given price during a period of time. It combines *desire* with the *ability to pay* (backed by money).
+- **Demand** — the quantity of a good or service consumers are **willing and able to buy** at a given price during a period of time.
+- Not merely a wish — it combines *desire* with the *ability to pay* (backed by money).
 
 ## The law of demand
 
@@ -30,7 +33,8 @@ The **law of demand** states:
 
 > As the price of a good rises, the quantity demanded falls; and as the price falls, the quantity demanded rises — **other things being equal**.
 
-Price and quantity demanded move in **opposite directions** (an inverse relationship). This is because at a lower price consumers can afford more, and are willing to buy more, of the good.
+- Price and quantity demanded move in **opposite directions** (an inverse relationship).
+- At a lower price consumers can afford more and will buy more of the good.
 
 ## The demand schedule
 
@@ -302,7 +306,9 @@ This is caused by a change in a factor **other than the price of garri**.
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Demand is only half the story. For a price to exist, someone must be **willing to sell** as well as to buy. This topic introduces **supply** — the seller's side of the market — states the **law of supply**, and shows why the supply curve slopes the *opposite* way to demand. It then brings the two sides together at the market's meeting point, **equilibrium**, and explains what happens when the price is set too high (a **surplus**) or too low (a **shortage**), and how the market pushes itself back to balance.
+- Demand is only half the story — a price needs someone **willing to sell** as well as to buy.
+- **Supply** = the seller's side of the market; its curve slopes *opposite* to demand.
+- **This topic:** the meaning of supply; the **law of supply**; bringing demand and supply together at **equilibrium**; and what happens at a **surplus** (price too high) or a **shortage** (price too low), and how the market returns to balance.
 
 ## What supply means
 
@@ -314,7 +320,8 @@ The **law of supply** states:
 
 > As the price of a good rises, the quantity supplied rises; and as the price falls, the quantity supplied falls — **other things being equal**.
 
-Price and quantity supplied move in the **same direction** (a direct relationship), because a higher price makes production more profitable, so producers offer more.
+- Price and quantity supplied move in the **same direction** (a direct relationship).
+- A higher price makes production more profitable, so producers offer more.
 
 ## The supply schedule and curve
 

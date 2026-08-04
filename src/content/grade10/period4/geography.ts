@@ -17,7 +17,9 @@ export const geographyG10P4: PeriodContent = {
       estimatedMinutes: 160,
       notes: `## Introduction
 
-A **map** is one of geography's most powerful tools — it lets you hold a whole country, or the world, in your hands and study places you could never see all at once. But a map is only useful if you can read it: find directions, measure real distances, and understand its symbols. This topic sets out the **essential parts** of a map, how to find **direction and bearing**, and how to use a map's **scale** to turn map distances into real ones.
+- A **map** shows a whole country, or the world, on flat paper — places that cannot be seen all at once.
+- A map is only useful if it can be read: directions, real distances, symbols.
+- **This topic:** the **essential parts** of a map; **direction and bearing**; using a map's **scale** to turn map distances into real ones.
 
 ## What is a map?
 
@@ -265,7 +267,9 @@ The scale 1 : 50 000 means 1 cm on the map = 50 000 cm on the ground.
       estimatedMinutes: 150,
       notes: `## Introduction
 
-Once you can read a map's scale and direction, the next skill is **pinpointing an exact spot** — a village, a bridge, a hilltop — so that anyone else can find the same place. Maps make this possible with two tools: a numbered **grid** that gives every point a reference number, and a set of standard **symbols** that pack a lot of information into a small space. This topic teaches four- and six-figure **grid references** and the common **conventional symbols**.
+- After scale and direction, the next skill is **pinpointing an exact spot** so anyone can find it.
+- Two tools: a numbered **grid** (a reference number for every point) and standard **symbols** (much information in little space).
+- **This topic:** four- and six-figure **grid references**; the common **conventional symbols**.
 
 ## The grid
 

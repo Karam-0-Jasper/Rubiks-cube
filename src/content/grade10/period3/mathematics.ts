@@ -17,7 +17,10 @@ export const mathematicsG10P3: PeriodContent = {
       estimatedMinutes: 200,
       notes: `## Introduction
 
-**Geometry** is the mathematics of shape, size and position. "Plane" geometry deals with flat figures — lines, angles, triangles and polygons drawn on a flat surface. Its power is that a handful of **angle facts**, applied carefully, let you work out unknown angles and lengths you were never told, which is exactly what examinations test. In this topic we name and measure angles, use the angle properties of straight lines, parallel lines, triangles and polygons, and apply the **Pythagoras theorem** in right-angled triangles.
+- **Geometry** = the mathematics of shape, size and position.
+- **Plane geometry** = flat figures: lines, angles, triangles, polygons.
+- A few **angle facts**, applied carefully, reveal unknown angles and lengths.
+- **This lesson:** naming and measuring angles; angle properties of straight lines, parallel lines, triangles and polygons; the **Pythagoras theorem**.
 
 ## Angles and their types
 

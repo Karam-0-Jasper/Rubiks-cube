@@ -19,14 +19,15 @@ export const physicsG10P2: PeriodContent = {
       estimatedMinutes: 170,
       notes: `## Introduction
 
-The most familiar thing in the world is that things **move** — people walk, cars drive, rain falls. **Mechanics** begins by describing motion precisely: not just "fast" or "far", but exact distances, speeds and accelerations. Once motion is described with the right quantities, a small set of **equations** lets us predict where a moving object will be and how fast it will be going. This topic sets up those quantities and the equations of uniformly accelerated motion.
+- **Mechanics** describes motion precisely — exact distances, speeds and accelerations, not just "fast" or "far".
+- A small set of **equations** predicts where a moving object will be and how fast.
+- **This topic:** the quantities of motion; the equations of uniformly accelerated motion.
 
 ## Distance and displacement
 
 - **Distance** is the total length of the path travelled. It is a **scalar** — it has size only. Unit: metre (m).
 - **Displacement** is the straight-line distance from start to finish, **in a stated direction**. It is a **vector** — it has size *and* direction.
-
-If you walk 3 m east then 3 m west, the **distance** is 6 m but the **displacement** is 0 (you end where you began).
+- Walk 3 m east then 3 m west: **distance** = 6 m but **displacement** = 0 (end where you began).
 
 ## Speed, velocity and acceleration
 
@@ -51,7 +52,7 @@ For constant acceleration, four equations link the quantities u, v, a, t and s (
 3. **v² = u² + 2as**
 4. **s = ½(u + v)t**
 
-Choose the equation that contains the three quantities you know and the one you want to find.
+- Pick the equation containing the three known quantities and the one to find.
 
 ## Worked relationships
 
@@ -60,7 +61,9 @@ Choose the equation that contains the three quantities you know and the one you 
 
 ## Units and sign convention
 
-Always work in SI units — metres, seconds, m/s, m/s². Pick one direction as positive; a velocity or acceleration in the opposite direction is then negative. Keeping the signs consistent is what separates a correct answer from a wrong one.
+- Always work in SI units — metres, seconds, m/s, m/s².
+- Pick one direction as positive; a velocity or acceleration in the opposite direction is negative.
+- Keep signs consistent throughout.
 
 ## Common errors and misconceptions
 
@@ -281,11 +284,11 @@ The car accelerates at 2.5 m/s² and covers 80 m in the 8 seconds.`,
       estimatedMinutes: 170,
       notes: `## Introduction
 
-Numbers describe motion, but a **graph** shows it at a glance — you can *see* an object speeding up, stopping, or turning back. And behind all motion lie **Newton's three laws**, three short statements that explain why things move as they do, from a falling mango to a rocket. This topic reads motion from displacement–time and velocity–time graphs, describes **free fall** under gravity, and states and applies **Newton's laws** and the law of universal gravitation.
+- A **graph** shows motion at a glance — speeding up, stopping, turning back.
+- **Newton's three laws** explain why things move as they do.
+- **This topic:** displacement–time and velocity–time graphs; **free fall** under gravity; **Newton's laws** and universal gravitation.
 
 ## Motion graphs
-
-Graphs are a powerful way to describe motion.
 
 **Displacement–time graphs**
 - A **horizontal line** means the object is **at rest** (displacement not changing).
@@ -333,7 +336,10 @@ Force is measured in **newtons (N)**; 1 N is the force that gives a 1 kg mass an
 
 ## Newton's law of universal gravitation
 
-Every object attracts every other object with a **gravitational force**. The force is larger for larger masses and weaker as the distance between them grows. This same force keeps the Moon orbiting the Earth and makes objects fall to the ground — weight is the pull of the Earth's gravity on a mass (W = mg).
+- Every object attracts every other object with a **gravitational force**.
+- Larger for larger masses; weaker as the distance between them grows.
+- The same force keeps the Moon orbiting the Earth and makes objects fall to the ground.
+- **Weight** — the pull of the Earth's gravity on a mass (W = mg).
 
 ## Common errors and misconceptions
 
