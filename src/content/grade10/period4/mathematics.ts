@@ -18,7 +18,9 @@ export const mathematicsG10P4: PeriodContent = {
       estimatedMinutes: 190,
       notes: `## Introduction
 
-So much of mathematics — and of everyday problem-solving — comes down to a single question: *what value makes this statement true?* This topic answers it for **linear equations** (where the unknown appears only to the power one) and for **inequalities** (where one side is greater or less than the other, not equal). You will learn to solve equations with brackets, fractions and the variable on both sides, to turn **word problems** into equations, and to solve and picture inequalities on a **number line** — mastering the one rule that makes inequalities different from equations.
+- Core question of much of maths: *what value makes this statement true?*
+- **Equation** — two sides equal. **Inequality** — one side greater/less than the other.
+- **This lesson:** solving linear equations (brackets, fractions, variable on both sides); **word problems** → equations; solving inequalities and showing them on a **number line**.
 
 ## Equations and equality
 
@@ -316,7 +318,8 @@ Divide both sides by −2 — and because we divided by a **negative**, **revers
       estimatedMinutes: 190,
       notes: `## Introduction
 
-Mathematics is full of *relationships* — between a number and its double, between a person and their age, between a point's position and its distance from another. This topic gives us the language to describe such links precisely. We meet **relations** and their **mappings**, learn the all-important idea of a **function** (a relation where every input has exactly one output), use **function notation** f(x), and then apply these ideas to straight lines by finding a line's **gradient** and the **distance** between two points.
+- Maths describes **relationships** — a number and its double, a point and its distance from another.
+- **This lesson:** relations and **mappings**; the idea of a **function** (each input → exactly one output); **function notation** f(x); the **gradient** of a line and the **distance** between two points.
 
 ## Relations
 

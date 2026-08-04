@@ -17,7 +17,9 @@ export const mathematicsG10P6: PeriodContent = {
       estimatedMinutes: 160,
       notes: `## Introduction
 
-**Transformation geometry** studies what happens to a shape when we move it about the plane — slide it, flip it or turn it. These particular moves keep the shape's size and angles exactly the same, so the moved shape is a perfect copy in a new place. Understanding them builds the idea of **congruence** and prepares learners for coordinate geometry. In this topic we meet translation (sliding) and reflection (flipping); rotation (turning) follows in the next topic.
+- **Transformation geometry** = moving a shape about the plane: slide, flip, turn.
+- These moves keep the shape's **size and angles** unchanged — the image is a perfect copy (**congruence**).
+- **This lesson:** **translation** (sliding) and **reflection** (flipping). Rotation follows next.
 
 ## What is a rigid motion?
 
@@ -265,7 +267,9 @@ The image is a mirror image below the x-axis, the same size and shape as the ori
       estimatedMinutes: 150,
       notes: `## Introduction
 
-We have slid figures (translation) and flipped them (reflection). The third rigid motion is the **rotation** — a turn about a fixed point, like the hands of a clock sweeping around its centre. Rotation completes the family of rigid motions, and this topic also draws together the **properties they all share**, which is a favourite examination question.
+- Done: sliding (translation) and flipping (reflection).
+- Third rigid motion = **rotation** — a turn about a fixed point, like clock hands about the centre.
+- **This lesson:** rotation, and the **properties all rigid motions share** (a favourite exam question).
 
 ## Rotation — turning
 

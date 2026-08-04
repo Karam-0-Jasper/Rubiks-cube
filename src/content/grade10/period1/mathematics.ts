@@ -29,7 +29,9 @@ export const mathematics: SubjectContent = {
           estimatedMinutes: 160,
           notes: `## Introduction
 
-Much of senior mathematics is about **groups of things** — the whole numbers, the factors of 12, the learners who study Physics. The language we use to talk about such groups precisely is the language of **sets**. Once you can name a set, count it, and combine it with another set, you can solve survey and counting problems that would otherwise be guesswork. In this unit we define a set, learn the notation, name the types of sets, form subsets, and use **Venn diagrams** to find unions, intersections and complements and to solve two- and three-set problems.
+- A **set** = a well-defined collection of things (numbers, learners, the factors of 12).
+- Sets give a precise language to group, count and combine things.
+- **This lesson:** defining a set; set notation; types of sets; subsets; **Venn diagrams** (union, intersection, complement) and two- and three-set problems.
 
 ## What a set is
 
@@ -186,7 +188,8 @@ Total = 17 + 8 + 10 + 5 = 40, which matches the class size. ✔
           estimatedMinutes: 160,
           notes: `## Introduction
 
-Numbers come in families that fit inside one another: the **natural** numbers (1, 2, 3, …), the **whole** numbers (0, 1, 2, …), the **integers** (…, −2, −1, 0, 1, 2, …), and then the **rational** numbers, which include all of these plus every fraction. In this unit we learn exactly what makes a number rational, how to add, subtract, multiply and divide rational numbers, the properties those operations obey, how to move between fractions and decimals, and how to place any real number on the number line.
+- Number families nest inside one another: **natural** (1, 2, 3, …) ⊂ **whole** (0, 1, 2, …) ⊂ **integers** (…, −1, 0, 1, …) ⊂ **rational** (all of these + every fraction).
+- **This lesson:** what makes a number rational; adding, subtracting, multiplying and dividing rationals; the properties of the operations; fractions ↔ decimals; placing real numbers on the number line.
 
 ## What a rational number is
 
