@@ -1,0 +1,3570 @@
+
+===== PAGE 1 =====
+Page 1 
+ 
+  
+INTRODUCTION 
+ 
+The Physics syllabus has been designed to provide learners with a sound knowledge of the fundamental concepts in Physics. It assumes a conceptual 
+approach that focuses on enabling learners to acquire an understanding of scientific phenomena, facts, concepts, theories, laws and principles. Ample 
+scope for laboratory and practical work which is essential for learners to develop the critical scientific skills needed in the successful study and 
+application of Physics. 
+The General objectives for Grades 10 – 12 Physics: 
+1. Demonstrate comprehension of the basic principles and applications of Physics. 
+2. Exhibit scientific skills, competencies and attitudes which are necessary for the advancement of Physics. 
+3. Recognize the usefulness as well as limitations of the scientific method.  
+A learner-centered approach is emphasized in this curriculum. This is based on the firm belief that learning becomes more permanent, meaningful and 
+exciting when learners themselves take ownership of the learning process. Instructors are therefore urged to contrive those classroom strategies that 
+engage learners actively in the teaching and learning process. 
+===== PAGE 2 =====
+Page 2 
+ 
+SEMESTER ONE 
+GRADE: 10     
+PERIOD: I    
+TOPIC: INTRODUCTION TO PHYSICS AND PROPERTIES OF MATTER.    
+OUTCOMES SPECIFIC OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able 
+to:  
+ 
+ Appreciate the 
+importance of 
+Physics in 
+everyday life 
+and the 
+importance of 
+making  
+accurate  
+measurement  
+of physical 
+quantities and 
+their 
+applications in 
+science and 
+technology.  
+  
+ 
+Upon completion of this topic 
+students will be able to: 
+ 
+1. Discuss the importance of 
+Physics;   
+ 
+2. Identify scalar and vector 
+quantities;  
+ 
+3. Identify some basic  
+Mathematical Concepts 
+(scientific notation, 
+significant figures).  
+ 
+4. Distinguish between 
+fundamental and derived 
+physical quantities and their 
+units.  
+ 
+5. Analyze dimensional 
+Analysis in terms of the 
+relationship between 
+fundamental and derived 
+quantities.  
+ 
+6. Measure with various 
+measuring instruments.  
+1. Development of physics:  
+  
+(a) Branches of Physics  
+ 
+(b) Basic mathematical 
+concepts.  
+ 
+(c) Measurement 
+i. Systems of    
+Measurement 
+ 
+ii. Fundamental 
+Quantities and Units 
+ 
+iii. Derived      
+Quantities and Units 
+ 
+iv. Metric Prefixes and 
+Conversion 
+ 
+v. Significant Figures 
+ 
+vi. Accuracy and 
+Precision-Errors in 
+Measurement 
+ 
+ 
+Inclusive and  
+Differentiated Learning 
+Individual seat works or work 
+in mixed groups according to 
+gender, abilities, learning 
+styles.   
+  
+1. Assignments/exercise  
+    Calculation and deriving   of 
+units.  
+  
+2. Group Assignments    
+exercises:  
+a. Discuss the importance of the 
+study of Physics.   
+ 
+b. Discuss the branches of 
+Physics.  
+ 
+c. Discuss some basic 
+mathematical concepts, eg, 
+scientific notation, 
+Significant figures, 
+conversion of units, etc.  
+ 
+ 
+Primary Text 
+Brian Arnold, Steve Wolley & Penny  
+Johnson, Edexcel IGCSE Physics 
+(Pearson, 2009).   
+   
+B.  Secondary Text   
+John Motey Addo & Barry  Jackson, 
+Senior High    Physics (Longman, 2009) 
+ 
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola Series- 
+(Millennium Edition 4-2011) 
+ 
+-meter-rule; 
+-balances (beam and spring); 
+-stop-watch; 
+-thermometer; 
+-hydrometer; 
+-density bottle; 
+-beakers; 
+-graduated cylinders. 
+ 
+C.  Other   
+     Resources/Supplementary  
+     Readings 
+     Bob McDuell, Senior High  
+Integrated Science (Pearson, 2009)   
+Expected Competencies 
+• Effective Communication  
+skills  
+ 
+• Research and Problem  
+Solving  
+ 
+• Digital Skills  
+ 
+• Analytical Skills 
+  
+• Creativity and Innovation  
+Skills  
+  
+Assessment strategies that can be 
+used to check competencies: Select 
+relevant options.  
+• Presentations; 
+• Writing Assignments; 
+• Quizzes; 
+• Lab Reports;  
+• Class participation;   
+• Attendance; 
+===== PAGE 3 =====
+Page 3 
+ 
+7. Distinguish between density 
+and relative density.    
+ 
+(d) Pressure in 
+(i) Solids; 
+(ii) Liquids; 
+(iii) Gasses.  
+ 
+ 
+e. Dimensional analysis 
+and its use in physics. 
+  
+f. Measuring 
+instruments:  
+  
+Meter rule, venire 
+caliper, Micro- meter 
+screw gauge, beam 
+balance, spring balance, 
+stop watches, (digital) 
+electronic balance, 
+thermometer.  
+  
+2.  Scalar and vector 
+quantities.  
+(a) Definitions of Scalars 
+and Vectors 
+(b) Classification of 
+Quantities as Scalars 
+and Vectors 
+Scientific notation  and  
+Units conversion 
+d. Discuss the fundamental and 
+derived quantities and their 
+corresponding S.I. units. 
+ 
+3. Individual Assignments    
+exercises 
+a. Use dimensional analysis to 
+derive the relationship 
+between quantities. 
+ 
+b. Distinguish scalar and vector 
+quantities. 
+   
+Links: 
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+ 
+ 
+ 
+ 
+• Test. 
+ 
+ 
+ 
+ 
+===== PAGE 4 =====
+Page 4 
+ 
+SEMESTER ONE 
+GRADE:     10  
+PERIOD:     II   
+TOPIC:  VELOCITY AND ACCELERATION 
+OUTCOMES SPECIFIC 
+OBJECTIVES: 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are 
+able to:  
+ 
+Recognize the 
+various types of 
+motion, their 
+applications and 
+the various 
+forms in which 
+forces affect the 
+state of a body  
+Upon completion of this 
+topic students will be able 
+to: 
+ 
+1.  analyze motion 
+(Uniformly accelerated) 
+   
+2. apply the basic equations 
+of motion (Interpret the 
+motion graph);  
+ 
+3. use the Newton’s laws of 
+motion and analyze the 
+effect of gravity on 
+falling bodies; and    
+ 
+4. discuss the force of  
+    gravitation between 
+objects.  
+  
+Nature and types of motion.  
+a. Elements of Motion  
+i. Distance and Displacement 
+ii. Speed, Velocity and 
+Acceleration  
+ 
+b. Uniformly accelerated motion  
+i. Uniform acceleration 
+ii. Equations  of Uniform Linear 
+Motion 
+ 
+c. Graphical Analysis of Uniform 
+Motion(Using Standard Graph 
+Sheets) 
+i. Position Time Graphs 
+ii. Displacement Time Graphs 
+iii. Velocity Time Graphs 
+ 
+d. Freely falling bodies (gravity).  
+  
+2 .Newton’s Laws of motion and 
+Newton’s Law of  
+   Universal Gravitation. 
+ Inclusive and Differentiated  
+Learning   
+Individual seat works or work 
+in mixed groups according to 
+gender, abilities, learning 
+styles.   
+ 
+1. Assignments/exercises  
+Calculation and deriving of 
+units.    
+2.  Group Discussion:  
+Assignments /exercises: (Small 
+mixed groups according to 
+gender).  
+a. Discuss using appropriate 
+examples to distinguish 
+distance, displacement, 
+speed, velocity, acceleration, 
+uniform velocity, 
+instantaneous velocity and 
+average velocity  
+b. Calculate displacement, and 
+acceleration of a moving 
+object respect to time. 
+c. Derive equation of 
+uniformly accelerated 
+motion to solve its problems.  
+ 
+A. Primary Text  
+Brian Arnold, Steve Wolley & Penny    
+Johnson,  Edexcel IGCSE  Physics 
+(Pearson, 2009).   
+ 
+B. Secondary Text 
+John Motey Addo & Barry Jackson, 
+Senior High Physics  (Longman, 2009)  
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition)   
+ 
+C. Other Resources/Supplementary   
+Readings   
+Bob McDuell, Senior High  Integrated 
+Science  (Pearson, 2009)  
+ 
+ --Simple pendulum  -meter stick   
+-Stop watch/clock   
+-Graph papers   
+-Rubber band, balloon,  
+-cart,  
+-rubber or glass tube,  
+-cork   
+ 
+Links: 
+Expected Competencies  
+ Effective Communication  skills  
+ 
+ Research and Problems  
+ Solving  
+ Digital Skills  
+ Analytical Skills  
+ Creativity and Innovation  
+ Skills  
+Assessment Strategies that can be 
+used to check competencies; Select 
+relevant options.  
+  
+ Presentations  
+ Writing Assignment  
+ Quizzes  
+ Lab Report  
+ Class participation   
+ Attendance  
+ Test   
+   
+ 
+===== PAGE 5 =====
+Page 5 
+ 
+3. Class Exercises:  
+(individual)  
+ 
+Draw and interpret graphs to 
+illustrate uniformly accelerated 
+motion.  
+  
+4. Group Practical(LAB):  
+Learners are placed into 
+small mixed groups 
+according to gender and 
+learning styles. 
+(a) Demonstrate motion of 
+freely falling bodies due to 
+gravity; 
+(b) Newton’s Laws of Motion; 
+(c) Newton’s Universal Law of 
+Gravitation; 
+Hammering nails to demonstrate 
+Newton’s Third Law of Motion 
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+===== PAGE 6 =====
+Page 6 
+ 
+SEMESTER:  ONE 
+    GRADE:      10   
+    PERIOD:     III   
+    TOPIC:      WORK, ENERGY AND POWER   
+OUTCOMES SPECIFIC OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able 
+to:  
+ 
+1. Appreciate the 
+works of 
+machines in life 
+and the 
+interrelationship 
+between  
+(a) Matter and 
+energy.   
+(b) work and 
+energy 
+(c) work/energy 
+and Power 
+do simple 
+calculations 
+on Work, 
+Energy and 
+Power 
+Upon completion of this topic 
+students will be able to: 
+ 
+1. Identify the characteristics 
+of work, energy and  
+power and their  
+S.I units;   
+ 
+2. Solve simple problems 
+involving work, 
+energy(potential and kinetic) 
+and power 
+ 
+3. Distinguish the types of 
+simple machines   
+ 
+4. Distinguish between work 
+input and workoutput   
+ 
+5. Compute  
+potential and kinetic 
+energies problems.    
+ 
+6. Demonstrate the law of 
+conservation of mechanical 
+energy and its application.   
+ 
+1. Work, Energy and 
+Power.  
+(a) Kinds of 
+Energy(potential and 
+kinetic) 
+(b) Conservation of 
+Energy 
+(transformation) 
+ 
+2.  Machines 
+(a) Kinds of simple 
+machines 
+Mechanical advantage, 
+velocity ratios and efficiency 
+of machines   Universal 
+Gravitation. 
+ Inclusive and Differentiated  
+Learning   
+Individual seat works or work 
+in mixed groups according to 
+gender, abilities, learning 
+styles.   
+ 
+Calculation and LAB.  
+Group Assignments 
+exercise (Small mixed 
+groups according to gender 
+and ability to:   
+a. Examine characteristics of 
+Work, energy, and power.  
+b. Analyze the system of pulleys 
+and inclined plane.  
+  
+2. Group Demonstration: LAB 
+(Small mixed groups 
+according to gender and 
+learning styles):  
+  
+a. to discover some simple 
+machines at home and in 
+school   
+b. Display Hooke’s law in 
+relationship to Young’s 
+modulus.  
+A. Primary Text  
+Brian Arnold, Steve Wolley & Penny   
+Johnson, Edexcel IGCSE Physics 
+(Pearson, 2009). 
+   
+B. Secondary Text   
+John Motey Addo & Barry Jackson,    
+Senior High Physics (Longman, 2009).  
+ 
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola Series- 
+(Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+-standard graph sheets; 
+-strings/springs 
+ 
+C. Other   
+Resources/Supplementary  Readings   
+Bob McDuell, Senior High Integrated 
+Science  (Pearson, 2009)   
+ 
+Set of simple machines,   
+Meter rule,  Stop clock, coil spring, 
+assorted masses  
+ 
+ 
+Expected Competencies  
+ Effective Communication skills  
+ 
+ Research and  
+ 
+ Problems Solving  
+ 
+ Digital Skills  
+ 
+ Analytical Skills  
+  
+Assessment  
+Strategies that can be used to 
+check competencies; Select 
+relevant options.  
+ Presentations  
+ Writing Assignment  
+ Quizzes  
+ Lab Report  
+ Class participation   
+ Attendance  
+ Test    
+    
+ 
+===== PAGE 7 =====
+Page 7 
+ 
+3.  Individual Assignments 
+/exercise:  
+a. Analyze potential and kinetic 
+energies.   
+  
+Discuss the Law of Conservation 
+of mechanical energy and relate 
+it to the changes energy 
+undergoes.   
+Links: 
+ 
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===== PAGE 8 =====
+Page 8 
+ 
+SEMESTER TWO 
+  
+GRADE:  10   
+PERIOD:  IV  
+TOPIC: THERMAL PHYSICS      
+OUTCOMES SPECIFIC OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able 
+to:  
+ 
+Elaborate the 
+concept of heat, its 
+relationship with 
+temperature and its 
+effects on 
+substances in 
+accordance with the 
+Gas Laws.  
+ 
+Upon completion of this topic 
+students will be able to: 
+ 
+1. Distinguish between 
+Temperature and Heat  
+ 
+2. Outline the steps and 
+principles involved in the  
+measurement of temperature 
+.  
+3. Describe the features and 
+use of different types of  
+thermometers.  
+ 
+4. Identify fundamental 
+intervals of thermometers. 
+ 
+5. Solve simple thermometry 
+problems. 
+ 
+6. Demonstrate  
+Charles, Boyle’s, Combined  
+gas laws,  
+Temperature   and heat.  
+(a) Difference between 
+temperature and 
+heat 
+ 
+(b) Temperature scales 
+(Fahrenheit, 
+Celsius, and 
+Kelvin-
+conversions) 
+ 
+(c)Thermometry 
+    (i) Types of 
+thermometers and 
+their properties. 
+   (ii) Calibrations of 
+thermometers.  
+  
+Expansion: Linear, 
+area, and volume.  
+  
+Charles, Boyle’s,  
+Combined gas and 
+Pressure Laws. 
+ Inclusive and Differentiated  
+Learning   
+Individual seat works or work in 
+mixed groups according to gender, 
+abilities, learning styles.   
+ 
+1. . Assignments/exercise  
+Calculation and Lab.  
+  
+2. Individual  
+Assignments/exercise:  
+a) to bring out the concept of 
+heat and      
+b) temperature  
+c) Distinguishing between heat 
+and temperature,  
+ Thermometric property and 
+associated characteristics with 
+calculations. 
+3.  Group assignments/exercise 
+small mixed Groups according 
+to gender, and learning styles 
+to discuss:  
+(a)  the Celsius; 
+(b)  Fahrenheit; and 
+(c)   Kelvin scales of temperature 
+and their relationship.  
+A. Primary Text   
+Brian Arnold,      
+Steve Wolley & Penny    
+Johnson,  Edexcel   IGCSE   
+Physics (Pearson,       2009).   
+ 
+B. Secondary Text   
+John Motey Addo & Barry  Jackson, 
+Senior High  Physics   (Longman, 
+2009)   
+        
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola 
+Series- (Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+ 
+Paul Attakorah, Atta Kay Physics 
+(Vol. 1, 2012 Edition) 
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition)  
+ 
+-thermometers (Liquid-in-glass)  
+Expected Competencies  
+                    Effective  
+ Communication skills  
+ Research and Problems  
+ Solving  
+ Digital Skills  
+ Analytical Skills  
+  
+Assessment Strategies That can 
+be used to check competencies:  
+  Select relevant options.  
+  
+ 1.Presentations  
+ 2.Writing Assignment   
+ 3.Quizzes  
+ 4.Lab Report  
+ Class participation   
+ 6.Attendencec  
+ 7.Test   
+ 
+===== PAGE 9 =====
+Page 9 
+ 
+.  
+3.  Individual Assignments 
+/exercises:   
+ to solve problems associated with 
+Charles, Boyle’s, Combined gas, and 
+Pressure Laws.    
+  
+4. Group Demonstration (Lab): 
+Small mixed groups (according to 
+ability and learning styles) Use 
+syringes to demonstrate pressure 
+laws.  
+Charles, Boyle’s, Combined gas, and 
+Pressure Laws.    
+  
+  
+ 
+ 
+C.  Other   
+Resources/Supplementary  
+Readings   
+Bob McDuell, Senior High   
+Integrated Science  (Pearson, 2009)  
+  
+Linear expansion apparatus   
+Metal rods, weight meter  stick   
+Heat engine apparatus   
+Rubber tubing   
+Thermo flask   
+Source of heat   
+ 
+Links: 
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+ 
+ 
+ 
+ 
+ 
+===== PAGE 10 =====
+Page 10 
+ 
+SEMESTER: TWO  
+GRADE:  10   
+PERIOD:  V   
+TOPIC:  ELECTROSTATICS  
+OUTCOMES SPECIFIC OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able 
+to recognize: 
+ 
+1. An electric 
+charge 
+produces an 
+electric field. 
+ 
+2. The methods 
+of detecting an 
+electric 
+charge. 
+ 
+3. The 
+importance of 
+capacitors in 
+electrical and 
+electronic 
+devices 
+   
+Upon completion of this topic 
+students will be able to: 
+ 
+1. Identify the two kinds of 
+electric charges.   
+ 
+2. Distinguish between 
+conductors and insulators. 
+ 
+3. State the Basic dan 
+Coulomb’s Laws of 
+Electrostatics. 
+ 
+4. Illustrate lines of force 
+relative to electric charges.  
+ 
+5. Explain/Discuss the methods 
+of charging a body. 
+ 
+6. Solve problems on 
+Coulomb’s Law, electric 
+field intensity and work 
+done in an electric field. 
+ 
+7. Identify/Describe the types 
+of capacitors and their uses. 
+ 
+1. Concept     of electric 
+charge. 
+   
+2. Basic law of 
+Electrostatics. 
+ 
+3. Coulombs law of 
+Electrostatics  
+   
+4. Electric fields and 
+Potential difference   
+ 
+5. Electric field 
+intensity(strength) 
+   
+6. Capacitors and 
+Capacitance. 
+ 
+7. Network of capacitors. 
+ 
+(a) Series; 
+(b) Parallel; 
+(c) Series-Parallel. 
+   
+ 
+ Inclusive and Differentiated  
+Learning   
+Individual seat works or work in 
+mixed groups according to 
+gender, abilities, learning styles.   
+Assignments/exercise  
+Calculation and Lab.  
+1. Individual Assignments 
+exercises:  
+ 
+The two charges of electrostatic in 
+an electric field.  
+ 
+2. Group Demonstration (Lab 
+Small groups of mixed 
+gender and learning styles) 
+to: examine electrification 
+using silk and glass rod.  
+ 
+3. Group: Assignments/exercises 
+Small mixed groups  according 
+to gender and learning styles: to 
+(a) Calculate applying the 
+equation of Coulomb’s Law; 
+(b) Experiments involving charge 
+and discharge of capacitors; 
+ 
+A. Primary Text  
+Brian Arnold, Steve Wolley & Penny    
+Johnson, Edexcel IGCSE Physics 
+(Pearson, 2009).   
+ 
+B. Secondary Text   
+John Motey Addo & Barry  Jackson, 
+Senior High Physics (Longman, 2009)   
+ 
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola Series- 
+(Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+ 
+Paul Attakorah, Atta Kay Physics (Vol. 
+1, 2012 Edition) 
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition)  
+-thermometers (Liquid-in-glass)  
+ 
+    
+ 
+ 
+Expected Competencies 
+ Effective Communication skills  
+ 
+ Research and Problems  
+ 
+ Solving  
+ 
+ Digital Skills  
+ 
+ Analytical Skills  
+ 
+ Creativity and Innovation  
+Skills  
+  
+Assessment Strategies that can be 
+used to check competencies:  
+ 
+ Presentations  
+ Writing Assignment  
+ Quizzes  
+ Lab Report  
+ Class participation   
+ Attendance  
+ Test   
+   
+===== PAGE 11 =====
+Page 11 
+ 
+8. Discuss the relationship 
+between potential difference 
+and capacitance. 
+ 
+9. Solve problems on networks 
+of capacitors. 
+ 
+(c) Calculation involving electric 
+field intensity, potential 
+difference and gradients; 
+ 
+ 
+(d) Design the structure of 
+capacitors. 
+ 
+C. Other  Resources/Supplementary 
+     Readings   
+ 
+Bob McDuell, Senior High Integrated 
+Science(Pearson, 2009)   
+ 
+Links: 
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===== PAGE 12 =====
+Page 12 
+ 
+SEMESTER:  TWO  
+GRADE:  10   
+PERIOD:  VI   
+TOPIC:  PROPERTIES OF MATTER        
+OUTCOMES SPECIFIC OBJECTIVES: CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are 
+able to:  
+  
+Recognize the 
+structure of 
+matter and  
+determine  
+the effect of 
+applied force 
+due to Hooke’s 
+Law.   
+ 
+Upon completion of this topic, 
+learners will:   
+ 
+1. Distinguish between atoms 
+and molecules   
+ 
+2. Examine the kinetic theory 
+of matter   
+ 
+3. Distinguish between 
+cohesion and adhesion  
+ 
+4.  Analyze Hooke’s law and 
+apply Young’s modulus in 
+solving problems.   
+  
+1. The states of matter. 
+ 
+2. The structure of matter.   
+ 
+3. Kinetic theory.   
+ 
+4. Forces between           
+molecules.   
+ 
+5. Elasticity and Hooke’s 
+Law (Young’s/Elastic  
+       modulus)  
+ Graphical representation 
+of elasticity. 
+ 
+6. Surface tension 
+ 
+7. Viscosity, Diffusion, and  
+Elastic strings 
+Inclusive and Differentiated 
+Learning Individual seat 
+works or work in mixed 
+groups according to gender, 
+abilities and learning styles.   
+1. Calculation and Lab. Group 
+Assignments/exercise:  Small 
+mixed groups (according to 
+gender, ability and learning 
+styles).  
+a. To distinguish between 
+atom and molecules.  
+ 
+b. The properties of matter.  
+ 
+c. Viscosity and diffusion in 
+solid, liquid and gas. work 
+done in   
+ 
+d. Springs and elastic strings.  
+ 
+e. The Phases of matter.  
+2. Group Demonstration 
+(LAB):  Small mixed groups 
+A. Primary Text  
+Brian Arnold,     Steve Wolley & Penny    
+Johnson,  Edexcel IGCSE  Physics 
+ (Pearson, 2009).  
+  
+B. Secondary Text   
+John Motey Addo &     Barry Jackson, 
+Senior High  Physics (Longman, 2009)  
+  
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola Series- 
+(Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+ 
+Paul Attakorah, Atta Kay Physics (Vol. 
+1, 2012 Edition) 
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition)  
+ 
+ 
+ 
+ 
+  
+Expected Competencies  
+ Effective Communication 
+skills  
+ 
+ Research and Problems 
+Solving  
+ 
+ Digital Skills  
+ 
+ Analytical Skills  
+ 
+ Creativity and Innovation 
+Skills  
+  
+Assessment Strategies That can 
+be used to check competencies; 
+Select relevant option.  
+ Presentations  
+ Writing Assignment  
+ Quizzes  
+ Lab Report  
+ Class participation   
+ Attendance  
+ Test   
+   
+===== PAGE 13 =====
+Page 13 
+ 
+(according to gender and 
+learning styles):   
+a. Experiment using test tube 
+hydrometer.  
+b. Demonstrating with 
+(i) inner tube; 
+(ii) force siphons; 
+(iii) life pumps; 
+(iv) hydrometer; 
+   
+3. Demonstrating cohesion and 
+adhesion.   
+ 
+C. Other  Resources/Supplementary   
+    Readings   
+Bob McDuell, Senior High  Integrated 
+Science  (Pearson, 2009)  
+ 
+U-tubes, liquids  Hares  
+apparatus  Gravity bottle  hydrometer, 
+test tubes, force siphons, life pump 
+crystal samples   balloons   
+ 
+  Links: 
+ 
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 14 =====
+Page 14 
+ 
+SEMESTER ONE  
+GRADE:  11   
+PERIOD: I    
+TOPIC:  MOTION IN TWO DIMENSIONS    
+OUTCOMES SPECIFIC OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able 
+to:  
+  
+Appreciate the 
+use force in 
+motion and its 
+impacts in 
+everyday activity  
+Upon completion of this topic: 
+learners will:  
+ 
+1. Add and resolve vectors. 
+ 
+2. Solve problems on simple 
+harmonic motion. 
+ 
+3. Use the equations of motion 
+in solving (One and Two 
+dimensions) problems.  
+ 
+4. Distinguish the types of 
+motion (Projectile, 
+rotational, Circular, Simple 
+Harmonic and oscillatory) 
+and their applications 
+1. Vectors 
+(a)Addition/Composition  
+(b)Resolution 
+ 
+2. Projectile motion 
+ 
+3. Circular  motion 
+ 
+4. Rotary/Rotational  motion 
+ 
+5. Simple harmonic/oscillatory  
+motion 
+      
+ Inclusive and 
+Differentiated Learning 
+Individual seat works or 
+work in mixed groups 
+according to gender, 
+abilities and learning styles.   
+Assignments/exercises:   
+Calculation.  
+  
+1. Group analyzing     
+    vectors in:  
+a. one and two dimension  
+b. Two dimension  
+c. Motion and types.  
+  
+2.   Calculate the dimension of   
+vectors in one and two 
+dimensions.  
+a. Examine the equations of 
+motion to solve exercises.  
+ 
+b. demonstrate the types of 
+motion(solving problems):  
+      i. Projectile  
+      ii. Rotational   
+     iii. Circular   
+A Primary Text  
+Brian Arnold,     Steve Wolley & Penny    
+Johnson,  Edexcel IGCSE  Physics 
+(Pearson, 2009).  
+  
+B. Secondary Text   
+John Motey Addo &     Barry Jackson, 
+Senior High  Physics (Longman, 2009)   
+ 
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola Series- 
+(Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+ 
+Paul Attakorah, Atta Kay Physics (Vol. 
+1, 2012 Edition) 
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition)  
+ 
+ 
+ 
+ 
+Expected Competencies  
+ Effective Communication 
+skills  
+ 
+ Research and  
+ 
+ Problems Solving  
+ 
+ Digital Skills  
+ 
+ Analytical Skills  
+ 
+  Creativity and Innovation 
+Skills  
+  
+Assessment Strategies That 
+can be used to check  
+competencies:  
+ 
+ Presentations  
+ Writing Assignment  
+ Quizzes  
+ Lab Report  
+ Class participation   
+===== PAGE 15 =====
+Page 15 
+ 
+     iv. Simple harmonic   
+     v. oscillatory   
+  
+  
+C. Other  Resources/Supplementary   
+    Readings   
+Bob McDuell, Senior High  Integrated 
+Science  (Pearson, 2009)  
+ 
+ U-tubes, liquids  Hares  
+apparatus  Gravity bottle 
+hydrometer, test tubes, force siphons, 
+life pump crystal samples   balloons   
+ 
+ Links: 
+ 
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+ Attendance  
+ Test    
+ 
+   
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 16 =====
+Page 16 
+ 
+SEMESTER:  ONE  
+GRADE:  11   
+PERIOD:  II   
+TOPIC:  COMPOSITION AND RESOLUTION OF FORCES   
+OUTCOMES SPECIFIC OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able to  
+ 
+1. Recognize the 
+a. Various types of forces 
+and the conditions that 
+bring them to the state 
+of equilibrium. 
+ 
+b. advantages and 
+disadvantages of fiction 
+ 
+c. Conditions for 
+equilibrium of parallel 
+forces. 
+ 
+2. Demonstrate the types     
+of equilibrium. 
+   
+Upon completion  
+of this topic, learners will:   
+ 
+1. Combine force vectors 
+to produce resultant 
+force.   
+ 
+2. Use the cosine and sine 
+laws in the resolution of 
+force.   
+  
+3. Distinguish between 
+resultant and equilibrant 
+force.   
+ 
+4. Demonstrate the two 
+conditions for 
+equilibrium.   
+ 
+5. Distinguish the types of 
+Friction and calculate its 
+coefficient.   
+ 
+Distinguish between center 
+of gravity and center of 
+mass. 
+1. Composition and 
+equilibrium of 
+forces.   
+ 
+2. Composition and 
+Resolution of forces 
+ 
+3. Parallel forces and    
+Moments    (torque) 
+Center of gravity. 
+ 
+Friction 
+ Inclusive and Differentiated 
+Learning Individual seat 
+works or work in mixed 
+groups according to gender, 
+abilities and learning styles.   
+Calculation.  
+1. Group Demonstrations:   
+a. Construct Vectors with 
+magnitudes in:  
+ 
+i. the same direction  
+ 
+ii. the opposite direction, to 
+find the resultant.  
+ 
+b. Construct a vector with a 
+magnitude and direction in 
+a plane and compute its 
+components  
+ 
+c. Demonstrate (gravity and 
+equilibrium) experiment 
+using force table. 
+demonstrate composition 
+and resolution of forces 
+using the force table  
+A.  Primary Text  
+ Brian Arnold, Steve Wolley & Penny     
+Johnson, Edexcel IGCSE Physics 
+(Pearson, 2009).   
+ 
+B, Secondary Text   
+John Motey Addo & Barry 
+Jackson, Senior High  Physics  
+(Longman, 2009)           
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola Series- 
+(Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+ 
+Paul Attakorah, Atta Kay Physics (Vol. 
+1, 2012 Edition) 
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition)  
+-meter rule; 
+-assorted  
+-masses/weights  
+ 
+ 
+Expected Competencies  
+ Effective Communication  
+skills  
+ 
+ Research and Problems  
+ 
+ Solving  
+ 
+ Digital Skills  
+ 
+ Analytical Skills  
+ 
+ Creativity and Innovation  
+Skills  
+Assessment Strategies that can 
+be used to check competencies; 
+Select relevant options.  
+ Presentations  
+ Writing Assignment  
+ Quizzes  
+ Lab Report  
+ Class participation   
+ Attendencec  
+ Test     
+===== PAGE 17 =====
+Page 17 
+ 
+2. Group  
+Assignments/exercises to discuss 
+the:  
+a. Co-efficient of kinetic and 
+static frictions on the 
+inclined plan.  
+ 
+b. The methods of reducing 
+friction.  
+ 
+3. Group Demonstrations:  
+a. Calculation involving 
+forces  
+ 
+b. Using the pencils as roller 
+to overcome the friction of 
+block wood or matchbox to 
+practice how to overcome  
+    friction    
+ 
+C. Other  Resources/Supplementary   
+Readings   
+Bob McDuell, Senior High  Integrated 
+Science  (Pearson, 2009)   
+ 
+Weights   
+Pulleys, force table   
+Air track and accessories   
+Hard board   
+Inclined plane wooden blocks. 
+ 
+Links: 
+    
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===== PAGE 18 =====
+Page 18 
+ 
+SEMESTER:  ONE  
+GRADE:   11   
+PERIOD:  III   
+TOPIC:     MOMENTUM AND ITS CONSERVATION    
+OUTCOMES SPECIFIC OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able to  
+  
+Recognize the dangers in 
+the collision of moving 
+objects and take measure in 
+avoiding it.    
+   
+   
+Upon completion of this 
+topic, learners will:  
+  
+1. Analyze the nature and 
+the effect of momentum. 
+   
+2. Differential between 
+impulse and momentum.  
+  
+3. Distinguish between 
+elastic and inelastic 
+collisions.   
+ 
+4. Distinguish between the 
+laws of conservation of 
+linear and  
+angular momentum and 
+their applications.  
+ 
+1.  Nature of Linear 
+    momentum and 
+Impulse.   
+   
+2. Elastic and inelastic 
+collisions.   
+ 
+3. Conservation    of 
+Momentum 
+ 
+4. Angular Momentum  
+    and  its conservation 
+ Inclusive and Differentiated 
+Learning Individual seat 
+works or work in mixed 
+groups according to gender, 
+abilities and learning styles.   
+Calculation.  
+1.Group Assignments  
+/exercise: to discuss the nature 
+and effect of:  
+a. Momentum.  
+b. Impulse.  
+ 
+2. Group Demonstrations:   
+  
+a. Construct an experiment 
+verifying conservation of 
+momentum by using 
+pendulum.   
+   
+b. Construct the steps 
+(equations) involving the 
+calculations of elastic and 
+inelastic collision.   
+   
+c. Design a momentum carts 
+to displace conservation of 
+A. Primary Text  
+Brian Arnold, Steve Wolley &  
+Penny   Johnson, Edexcel IGCS Physics 
+(Pearson, 2009).   
+ 
+B. Secondary Text   
+John Motey Addo & Barry  Jackson, 
+Senior High  Physics (Longman, 2009)   
+        
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola Series- 
+(Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+ 
+Paul Attakorah, Atta Kay Physics (Vol. 
+1, 2012 Edition) 
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition) 
+ 
+C. Other   
+Resources/Supplementa ry  Readings   
+Bob McDuell, Senior High Integrated 
+Science  (Pearson, 2009)   
+Expected Competencies  
+ Effective Communication 
+skills  
+ 
+ Research and Problems 
+Solving  
+ 
+ Digital Skills  
+ 
+ Analytical Skills  
+ 
+ Creativity and Innovation 
+Skills  
+  
+Assessment Strategies that can 
+be used to check competencies; 
+Select relevant Options.  
+ Presentations  
+ Writing Assignment  
+ Quizzes  
+ Lab Report  
+ Class participation   
+ Attendencec  
+ 7.Test   
+ 
+===== PAGE 19 =====
+Page 19 
+ 
+momentum elastic and 
+inelastic.   
+  
+Air track (set)   
+Bump putty cars   
+ 
+Links: 
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===== PAGE 20 =====
+Page 20 
+ 
+SEMESTER:  TWO 
+GRADE:  11   
+PERIOD:  IV   
+TOPIC: HEAT    
+OUTCOMES SPECIFIC OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able to  
+  
+Recognize and appreciate 
+the importance and effect of 
+heat energy in our 
+environment.   
+ 
+Upon completion of this 
+topic, learners will:   
+ 
+1. Elaborate the concept 
+and characteristics of 
+heat.   
+ 
+2. Distinguish between  
+specific heat and 
+specific heat capacity.   
+ 
+3. Distinguish between the 
+methods of heat transfer 
+and the laws of heat 
+exchange. 
+ 
+4. Discuss heat transfer in a 
+vacuum flask.   
+  
+1. Heat 
+ 
+2. Specific heat and 
+specific capacity   
+ 
+3. Heat transfer and 
+the laws of heat 
+exchange.  
+ 
+4. Latent heat of 
+fusion and  
+    vaporization   
+   
+ 
+Inclusive and Differentiated 
+Learning Individual seat 
+works or work in mixed 
+groups according to gender, 
+abilities and learning styles.   
+Calculation and Lab.    
+1. Group Assignments /exercise:  
+Discuss the characteristics of 
+heat.  
+   
+2. Group Demonstrations:   
+a. Conduct Calorimeter heat 
+experiments. 
+   
+b. Estimate and calculate 
+specific heat and specific 
+heat capacity of an object.  
+ 
+c. Examine the equation, and 
+calculate the latent heat of 
+fusion and heat of 
+vaporization.   
+    
+Group Demonstration LAB:  
+To demonstrate the principles of 
+the combustion engines.   
+A. Primary Text  
+Brian Arnold, Steve Wolley &  
+Penny   Johnson, Edexcel IGCSE 
+Physics (Pearson, 2009).   
+ 
+B. Secondary Text   
+John Motey Addo & Barry  Jackson, 
+Senior High  Physics (Longman, 2009)   
+        
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola Series- 
+(Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+ 
+Paul Attakorah, Atta Kay Physics (Vol. 
+1, 2012 Edition) 
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition) 
+ 
+C. Other  Resources/Supplementary  
+Readings   
+Bob McDuell, Senior High Integrated 
+Science (Pearson, 2009)   
+Expected Competencies  
+ Effective Communication 
+skills  
+ 
+ Research and Problems 
+Solving  
+ 
+ Digital Skills  
+ 
+ Analytical Skills  
+ 
+ Creativity and Innovation 
+Skills  
+  
+Assessment Strategies that can 
+be used to check competencies; 
+Select relevant Options.  
+ Presentations  
+ Writing Assignment  
+ Quizzes  
+ Lab Report  
+ Class participation   
+ Attendance  
+ Test   
+ 
+===== PAGE 21 =====
+Page 21 
+ 
+ Air track (set)   
+Bump putty cars   
+ 
+Links: 
+ 
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===== PAGE 22 =====
+Page 22 
+ 
+ 
+SEMESTER:  TWO 
+GRADE:  11   
+PERIOD:  V   
+TOPIC: WAVES  
+OUTCOMES SPECIFIC OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able to:  
+ 
+Recognize and appreciate 
+the  importance of the 
+nature of wave’s 
+characteristic s and  
+components in daily 
+activities.  
+   
+ 
+Upon completion of  
+this topic, learners will:   
+ 
+1. Analyze characteristics, 
+concept and component 
+of waves.  
+ 
+2. Elaborate on the 
+properties and the 
+categories of waves.    
+ 
+3. Design methods of 
+production and 
+transmission of sound  
+wave and its application 
+.   
+4. Compute the speed of 
+sound relative to its 
+temperature 
+ 
+5. Analyze the Doppler 
+Effect.  
+  
+6. Distinguish between 
+(a) loudness and 
+intensity of sound; 
+ 
+1. Nature 
+characteristics and 
+properties of waves 
+and  
+ 
+2. Types of waves  
+ 
+3. Sound waves 
+(a) Production, 
+characteristics 
+and 
+transmission. 
+ 
+(b) Intensity and 
+intensity level 
+ 
+ 
+2. Doppler effect  
+ 
+3. Vibrations in strings 
+and tubes 
+ 
+4. Beats 
+  
+  
+ Inclusive and Differentiated 
+Learning Individual seat 
+works or work in mixed 
+groups according to gender, 
+abilities and learning styles.   
+Calculation.  
+1. Group Assignments 
+/exercise:  
+ 
+2. Discuss the nature of waves    
+     and its components.  
+ 
+3. Discuss the characteristics of   
+     waves (Reflection,   
+     Refraction, Diffraction,     
+     interference, Polarization)  
+ 
+4. Group Demonstrations:        
+Examine the wave equations 
+(v=λf) relative to its:   
+i. Velocity  
+ii. Length  
+iii. Frequency  
+ 
+A. Primary Text  
+Brian Arnold, Steve Wolley &  
+Penny Johnson, Edexcel IGCSE Physics 
+(Pearson, 2009).   
+ 
+B. Secondary Text   
+John Motey Addo & Barry  Jackson, 
+Senior High  Physics  (Longman, 2009)   
+        
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola Series- 
+(Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+ 
+Paul Attakorah, Atta Kay Physics (Vol. 
+1, 2012 Edition) 
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition) 
+ 
+ 
+ 
+ 
+Expected Competencies  
+ Effective Communication 
+skills  
+ 
+ Research and Problems 
+Solving  
+ 
+ Digital Skills  
+ 
+ Analytical Skills  
+ 
+ Creativity and Innovation 
+Skills  
+  
+Assessment Strategies that can 
+be used to check competencies; 
+Select relevant Options.  
+ Presentations  
+ Writing Assignment  
+ Quizzes  
+ Lab Report  
+ Class participation   
+ Attendance  
+ Test   
+ 
+===== PAGE 23 =====
+Page 23 
+ 
+(b)  intensity and     
+       intensity level; 
+ 
+(c) music and noise; 
+ 
+(d)  stringed and non-
+stringed music 
+instruments. 
+ 
+7.     Analyze vibrations in 
+strings and tubes 
+(pipes). 
+ 
+ 5. Individual Assignments 
+/exercises:   
+a. Distinguish between 
+transverse and longitudinal 
+waves using a string and 
+cool spring.   
+ 
+Distinguish the classification of 
+musical instruments relative to 
+beat, noise, and echoes and 
+demonstrate Doppler effect using 
+turning forks   
+ 
+6. Individual Demonstrate  
+the nature of sound relative 
+to its transmission and use         
+percussion instruments  
+(drum, bells, cymbal, horn, 
+guitar, flute, and sassa) to   
+produce different sounds to 
+illustrate methods of sound 
+transmission.   
+ 
+7. Group Demonstration(lab) 
+Production and transmission of 
+sound in tubes (closed and 
+open). 
+C. Other  Resources/Supplementary      
+      Readings   
+Bob McDuell, Senior High Integrated 
+Science (Pearson, 2009)   
+ 
+Air track (set)   
+Bump putty cars   
+ 
+Links: 
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+   
+ 
+ 
+ 
+ 
+ 
+===== PAGE 24 =====
+Page 24 
+ 
+SEMESTER:  TWO 
+GRADE:  11   
+PERIOD:  VI   
+TOPIC: LIGHT   
+OUTCOMES SPECIFIC OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able to:  
+ 
+Recognize the source of 
+light and its effects on 
+mirrors in producing 
+images.   
+   
+ 
+Upon completion of this 
+topic, learners will:  
+  
+1. Determine the sources 
+and importance of 
+radiant energy.   
+ 
+2. Construct the linear  
+propagation of a light 
+indicating shadows and 
+eclipses.  
+ 
+3. Analyze the major 
+regions of the  
+electromagnetic 
+spectrum, the 
+photoelectric effect and a 
+principle of a laser 
+ 
+4. Examine the effects of 
+burning on the 
+environment 
+ 
+5. Analyze and 
+demonstrate the image 
+formation using a mirror 
+1. Nature and  
+    Sources of light.    
+   
+2. Properties of light 
+ 
+3. Propagation of light 
+(a) Shadow and 
+ellipse 
+(b) Pin-hole camera 
+ 
+4. Reflection of light 
+by plane and 
+spherical mirrors. 
+ 
+5. Electromagnetic 
+Spectrum 
+   
+ 
+Inclusive and Differentiated 
+Learning Individual seat 
+works or work in mixed 
+groups according to gender, 
+abilities and learning styles.  
+  
+Calculation.  
+1. Group Assignments 
+/exercises:   
+a. Discuss the sources of light 
+and its production.  
+b. Distinguish between 
+shadow and ellipse   
+ 
+2. Group Demonstrations (lab)    
+a. Using Torch light and copy 
+book and Torch light and 
+ball to demonstrate how 
+shadow and ellipse are 
+produced.   
+b. Construct a ray box to 
+indicate rectilinear 
+propagation of light rays.   
+3. Individual Assignments 
+/exercises:  
+a. Discuss the properties of 
+luminous and none 
+luminous objects.  
+A. Primary Text  
+Brian Arnold, Steve Wolley & Penny   
+Johnson, Edexcel IGCSE Physics 
+(Pearson, 2009). 
+   
+B. Secondary Text 
+    John Motey Addo & Barry Jackson, 
+Senior High Physics  (Longman, 2009) 
+  
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola Series- 
+(Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+ 
+Paul Attakorah, Atta Kay Physics (Vol. 1, 
+2012 Edition) 
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition)   
+-standard graph sheets 
+ 
+ C. Other  Resources/Supplementary   
+Readings   
+ Bob McDuell, Senior High Integrated 
+Science (Pearson, 2009)   
+Expected Competencies 
+ Effective Communication  
+skills  
+ 
+ Research and Problems 
+Solving  
+ 
+ Digital Skills  
+ 
+ Analytical Skills  
+ 
+ Creativity and Innovation  
+Skills  
+  
+Assessment Strategies  
+That can be used to check 
+Competencies; select relevant 
+options.  
+ Presentations  
+ Writing Assignment  
+ Quizzes  
+ Lab Report  
+ Class participation   
+ Attendance  
+ Test   
+   
+===== PAGE 25 =====
+Page 25 
+ 
+b. Discuss the nature and 
+types of mirrors.   
+ 
+4.  Individual Demonstration: 
+Construct the rays diagram 
+displaying image formation by 
+mirror 
+ 
+Examine the mirror equation and 
+apply it in calculating mirror 
+problems 
+   
+Ray-box   
+Pin-hole camera   
+Plane and curve   
+Mirrors   
+Air track (set)    
+Meter rule   
+Posters   
+Markers    
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===== PAGE 26 =====
+Page 26 
+ 
+SEMESTER:  ONE 
+  
+GRADE:  12   
+ PERIOD:  I   
+ TOPIC: REFRACTION AND DISPERSION OF LIGHT  
+OUTCOMES SPECIFIC OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able to:  
+  
+Recognize the sources of 
+colors in respect to 
+producing others colors and 
+identify the lenses and their 
+uses in the correction of eye 
+defects.  
+ 
+Upon completion of this 
+topic, learner will:   
+ 
+1. Analyze and justify the 
+laws of refraction.  
+  
+2. Calculate the refractive 
+index of various 
+materials.  
+ 
+3. Apply the Snells law 
+equation to compute the 
+index of refraction.   
+ 
+4. Distinguish between 
+primary colors and 
+primary pigments. 
+ 
+5. Distinguish between  
+total internal reflection 
+and critical angle   
+1. Refraction at plane         
+     interface 
+ Laws of 
+refraction 
+ 
+2. Refractive index  
+(a) Snell’s Law 
+(b) The speed of 
+light; 
+(c) Real depth and 
+apparent depth; 
+(d) Critical angle and 
+total internal 
+reflection. 
+  
+3. Critical angle and 
+the total internal 
+reflection.    
+  
+4. Lenses and eye 
+defects.  
+  
+Dispersion   
+Inclusive and Differentiated 
+Learning Individual seat 
+works or work in mixed 
+groups according to gender, 
+abilities and learning styles.   
+Calculation.  
+1. Group Assignments 
+/exercise:   
+a. Discuss the Law of 
+refraction.  
+b. Discuss optical 
+instruments for 
+description (Lens, 
+Magnifying glass, Prism 
+glass, torch light on water 
+in plastic)    
+ 
+2. Group Demonstration (Lab):   
+Use glass block and prism to 
+create the refractive index of 
+material.  
+ 
+3. Group Assignments 
+/exercises:    
+A. Primary Text    
+Brian Arnold, Steve Wolley & Penny    
+Johnson, Edexcel IGCSE Physics 
+(Pearson, 2009).   
+   
+B. Secondary Text   
+John Motey Addo & Barry Jackson, 
+Senior High Physics  (Longman, 2009) 
+  
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola Series- 
+(Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+ 
+Paul Attakorah, Atta Kay Physics (Vol. 
+1, 2012 Edition) 
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition)   
+-standard graph sheets 
+ 
+ 
+Expected Competencies  
+ Effective Communication  
+skills  
+ 
+ Research and Problems 
+Solving  
+ 
+ Digital Skills  
+ 
+ Analytical Skills  
+ 
+ Creativity and Innovation  
+Skills  
+  
+Assessment Strategies  
+That can be used to check 
+Competencies; select relevant 
+options.  
+ Presentations  
+ Writing Assignment  
+ Quizzes  
+ Lab Report  
+ Class participation   
+ Attendance  
+===== PAGE 27 =====
+Page 27 
+ 
+Analyze the way in which 
+primary colors are used to 
+produce secondary colors.  
+a. Discuss how light ray 
+leaves water to create 
+critical angle.  
+b. Discuss eye defects and 
+correction,   
+c. the camera,    
+d. projection,   
+e. simple and compound  
+            microscopes and   
+ f)   telescopes.  
+ 
+4. Individual demonstration 
+Lab: Use bending pencil in the 
+glass of water to practice 
+refraction 
+ C. Other  Resources/Supplementary   
+Readings   
+ Bob McDuell, Senior High Integrated 
+Science (Pearson, 2009)   
+Ray-box   
+Pin-hole camera   
+Plane and curve   
+Mirrors   
+Air track (set)    
+Meter rule   
+Posters   
+Markers    
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+ Test   
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===== PAGE 28 =====
+Page 28 
+ 
+SEMESTER:  ONE 
+GRADE:  12   
+PERIOD:  II   
+TOPIC: DIRECT CURRENT ELECTRICITY 
+OUTCOMES SPECIFIC 
+OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able to:  
+  
+1. Construct and analyze 
+electric circuit in 
+determining the 
+resistance, potential 
+difference and the 
+current in accordance 
+with Ohm’s and 
+Kirchhoff’ Laws. 
+ 
+2. Identify factors 
+affecting the resistance 
+of a conductor.  
+ 
+Upon completion of this 
+topic, learners will:   
+ 
+ Identify sources of 
+direct current.  
+  
+ Distinguish and analyze 
+series and parallel 
+circuits.   
+ 
+ Analyze Ohms  
+law and its uses  
+in circuit analysis.   
+ 
+ Formulate  
+Kirchhoff’s laws of 
+electric energy and its 
+application in circuit.  
+  
+ Calculate internal 
+resistance of 
+cells/battery. 
+ 
+Sources of direct current  
+(a) Primary and secondary 
+cells; 
+ 
+(b) Fuel and solar cells.   
+   
+2. Resistance and 
+Resistivity 
+(a) Ohm’s Law; 
+ 
+(b) Factors affecting 
+the resistance of 
+the conductor. 
+ 
+3. DC Circuits 
+(a) Series; 
+(b) Parallel; 
+(c) Series --Parallel. 
+ 
+4. Electromotive 
+Force (EMF) and 
+Internal Resistance 
+ 
+5. Electrical Energy 
+and Power 
+ Cost of electrical 
+energy 
+ 
+ Inclusive and 
+Differentiated Learning 
+Individual seat works or 
+work in mixed groups 
+according to gender, 
+abilities and learning 
+styles.   
+ 
+Calculation and Lab.  
+1. Group Assignments 
+/exercises: Discuss the 
+process in which direct 
+currents are produced.  
+  
+2. Group Demonstration 
+(Lab) to Construct        
+and analyze:  
+a. series circuits (three in    
+b. parallel circuits  
+ 
+c. Combination of series 
+and parallel circuits, 
+using  
+ lamps, and dry 
+cell.   
+ 
+A. Primary Text   
+Brian Arnold, Steve Wolley & Penny                 
+Johnson, Edexcel IGCSE Physics 
+(Pearson, 2009).   
+ 
+B. Secondary Text   
+John Motey Addo & Barry  Jackson, 
+Senior High Physics (Longman 2009)   
+        
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola Series- 
+(Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+ 
+Paul Attakorah, Atta Kay Physics (Vol. 
+2, 2012 Edition) 
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition)   
+ 
+C. Other  Resources/Supplementary   
+Readings   
+Bob McDuell, Senior High  Integrated 
+Science (Pearson, 2009)   
+Expected Competencies  
+ Effective Communication  
+Skills 
+  
+ Research and Problems 
+Solving  
+ 
+ Digital Skills  
+ 
+ Analytical Skills  
+ 
+ Creativity and Innovation  
+Skills  
+Assessment Strategies  
+That can be used to check 
+Competencies; select relevant 
+options.  
+ Presentations  
+ Writing Assignment  
+ Quizzes  
+ Lab Report  
+ Class participation   
+ Attendance  
+ Test   
+   
+===== PAGE 29 =====
+Page 29 
+ 
+6. Heating Effects 
+and Electrolysis. 
+ 
+7. Kirchhoff’s Law of 
+electric energy.   
+   
+3. Group Demonstration 
+(Lab) Verification of 
+Ohm’s Law 
+ 
+4. Individual 
+Demonstration:  to 
+Construct practical circuit 
+diagram to apply ohms’ 
+law by calculate:  
+a. Resistance   
+b. potential difference  
+Current   
+ 
+Individual Assignments  
+ The importance of 
+ammeter, volt meter, 
+and ohms meter in 
+circuit analysis.  
+ Heating effect in 
+circuits using cells and 
+light bulb. 
+ 
+ 
+ 
+ 
+ 
+ Sources of emf (cells) 
+   Electric meters; 
+  Wheatstone bridge 
+  Constantan wire (28 gauge)  
+ Conduction wire; 
+   Tungsten wires; 
+   Photocell; 
+   Resistance box; 
+   Lamps (6 or 12 volt)  
+ 
+Links: 
+ 
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+===== PAGE 30 =====
+Page 30 
+ 
+SEMESTER:  ONE 
+GRADE:       12   
+PERIOD:      III     
+TOPIC:     MAGNETISM AND ELECTRO - MAGNETISM   
+OUTCOMES SPECIFIC OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able to:  
+  
+Recognize that it is 
+magnetic effect that  
+produces electricity.  
+   
+ 
+Upon completion of this 
+topic, learners will:   
+ 
+1. Analyze the origin of 
+magnets.   
+ 
+2. Compare the 
+relationship between 
+electricity and 
+magnetism.   
+ 
+3. Distinguish motor from 
+generator.   
+ 
+4. Elaborate the principle 
+of transformer and its 
+function.   
+ 
+5. Distinguish between AC 
+and DC motors.   
+  
+MAGNETISM  
+1. Magnets 
+(a) Types and 
+Properties; 
+(b) Magnetic 
+Materials; 
+(c) Concept of 
+Magnetic 
+Fields; 
+(d) Methods of 
+Magnetizing 
+and 
+Demagnetizing 
+Magnets. 
+  
+2. Magnetic Fields 
+(a) Types; 
+(b) Magnetic Flux 
+and Magnetic 
+Flux Density; 
+(c) Force in a 
+Magnetic Field; 
+(d) Moving Cord 
+Galvanometer. 
+ 
+3. Electromagnetic 
+Induction 
+Inclusive and Differentiated 
+Learning Individual seat 
+works or work in mixed 
+groups according to gender, 
+abilities and learning styles.   
+Calculation and Lab.  
+ 1. Group 
+Assignments/exercises:    
+i. The origin of magnets and its   
+importance. 
+ 
+ ii. Distinguish the various types 
+of magnets and it applications.  
+ 
+iii.  Discuss the relationship 
+between electricity and 
+magnetism 
+ 
+ iv.  The effect of electricity on 
+magnetism. v.  Discuss 
+the factors that differential 
+motor and generator.  
+ 
+2.  Group Demonstration:   
+a. Construct a diagram 
+showing the conversion 
+A. Primary Text  
+Brian Arnold, Steve Wolley & Penny    
+Johnson, Edexcel IGCSE Physics 
+(Pearson, 2009). 
+   
+B. Secondary Text   
+John Motey Addo & Barry   
+Jackson, Senior High Physics  
+(Longman, 2009)   
+ 
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola Series- 
+(Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+ 
+Paul Attakorah, Atta Kay Physics (Vol. 
+2, 2012 Edition) 
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition)   
+ 
+ 
+ 
+ 
+Expected Competencies  
+ Effective Communication  
+skills  
+ 
+ Research and Problems  
+Solving  
+ 
+ Digital Skills  
+ 
+ Analytical Skills  
+ 
+ Creativity and Innovation  
+Skills  
+Assessment Strategies  
+That can be used to check 
+Competencies; select relevant 
+options.  
+ Presentations  
+ Writing Assignment  
+ Quizzes  
+ Lab Report  
+ Class participation   
+ Attendance  
+ Test   
+   
+===== PAGE 31 =====
+Page 31 
+ 
+(a) The Laws of 
+Electromagnetic 
+Induction; 
+(b) Induced current 
+and emf; 
+(c) Inductors, 
+generators, 
+motors and 
+transformers. 
+ 
+   
+process between AC to DC 
+motor.   
+b. Construct and analyze the 
+diagrams of:  
+i. Motor 
+ ii. Generator  
+c. Verify the equation 
+transformer:   
+   to calculate the 
+input or output of 
+a transformer.  
+  
+ 
+ 
+ 
+C. Other  Resources/Supplementary  
+    Readings   
+Bob McDuell, Senior High  Integrated 
+Science (Pearson, 2009)   
+ 
+Magnets (Bar, U-shape and horse-
+shoe)   
+Iron fillings   
+Magnetometer   
+Mapping compass Nails, 
+galvanometer transformer  
+Demonstration motor   
+Ammeter and volt meter  
+ 
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 32 =====
+Page 32 
+ 
+SEMESTER:  TWO 
+GRADE:   12  
+PERIOD:  IV   
+TOPIC: ALTERNATING CURRENT ( AC) AND ELECTRONICS 
+OUTCOMES SPECIFIC OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able to:  
+ 
+Recognize usage of 
+alternating current and the 
+application of transistors in 
+a circuit.  
+  
+Upon completion of this 
+topic, learners will:   
+ 
+1. Identify electrical  
+measuring instruments 
+and state their uses.    
+ 
+2. Demonstrate  
+the functions of   
+alternating current.   
+ 
+3. Distinguish between 
+resistance and 
+impedance.   
+ 
+4. Analyze the  
+R, C, L circuits and the 
+phase diagram of the 
+(R.C.L.) Circuits. 
+ 
+Analyze the principle of the 
+cathode ray tube and 
+applications of transistors 
+and diodes. 
+1. AC  
+(a) Measurements; 
+(b) Function; 
+(c) AC Circuits 
+(RCL); 
+ 
+2. Resonance 
+ 
+3. Basic Electronics 
+(a) Semi-Conductors 
+ 
+(i) Doping; 
+(ii)Intrinsic and 
+Extrinsic Semi-
+Conductors 
+(iii) P-type and N-
+type semi-
+conductors 
+(iv) Band Theory 
+ 
+(b) Semiconductor 
+devices: 
+-transistors; 
+-thermistors; 
+-diodes. 
+   
+ Inclusive and Differentiated 
+Learning Individual seat 
+works or work in mixed 
+groups according to gender, 
+abilities and learning styles.   
+Calculation and Lab.    
+1. Group Assignments 
+/exercises:  
+  
+a. discuss electrical measuring 
+instruments for verification  
+b. discuss vacuum tubes     
+  
+2. Group Demonstration (Lab): 
+Perform experiment in circuits 
+involving: inductor, capacitor, 
+resistor   
+  
+3. Individual Demonstration:  
+demonstrating  the uses of 
+transistors and diodes in a circuit  
+ 
+ 
+ 
+A. Primary Text 
+Brian Arnold, Steve Wolley & Penny    
+Johnson, Edexcel IGCSE Physics 
+(Pearson, 2009).   
+ 
+B. Secondary Text   
+ John Motey Addo & Barry  Jackson, 
+Senior High  Physics  (Longman, 2009)  
+  
+ Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola 
+Series- (Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+ 
+Paul Attakorah, Atta Kay Physics (Vol. 
+2, 2012 Edition) 
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition)   
+     
+C. Other  Resources/Supplementary  
+Readings   
+Bob McDuell, Senior High   
+Integrated Science (Pearson, 2009)   
+EXPECTED Competencies  
+ Effective Communication  
+skills  
+ 
+ Research and Problems  
+Solving  
+ 
+ Digital Skills  
+ 
+ Analytical Skills  
+ 
+ Creativity and Innovation  
+Skills  
+  
+Assessment Strategies That can 
+be used to CheckCompetencies; 
+Select relevant options.  
+ Presentations  
+ Writing Assignment  
+ Quizzes written   
+exercises Identification 
+of Lab apparatus  
+ Lab Report  
+ Class participation   
+ Attendance  
+===== PAGE 33 =====
+Page 33 
+ 
+Vacuum tubes   
+Voltmeter, ammeter ohm meter   
+Resistors, capacitors and inductors   
+Diodes and transistors    
+Conduction wires   
+Power source  
+ 
+Links: 
+ 
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+ Test   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===== PAGE 34 =====
+Page 34 
+ 
+SEMESTER:  TWO 
+GRADE:  12   
+PERIOD:  V   
+TOPIC: ATOMIC AND NUCLEAR PHYSICS   
+OUTCOMES SPECIFIC OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able to:    
+Identify substances that can 
+emit harmful particles and 
+take appropriate 
+precautions against the 
+harm of long term exposure 
+to radioactive substances.   
+   
+ 
+Upon completion of this 
+topic, learners will be able 
+to:   
+ 
+1. Examine the properties 
+of an electron.   
+ 
+2. Analyze the  
+effect of radioactivity 
+substances on the human 
+body.   
+ 
+3. Draw and analyze the 
+typical atom and the 
+applications of nuclear 
+energy.   
+ 
+4. Distinguish between 
+fission and fusion.   
+ 
+1. The nucleus and  
+the electron   
+   
+2. Types of nuclear 
+reactions and the 
+uses of nuclear 
+energy   
+ 
+3. Radioactivity 
+a. Types; 
+b. Radioactive 
+substances and 
+their effects; 
+c. Radioactive 
+decay and half-
+life. 
+ 
+4. Nuclear fission and 
+fusion   
+   
+5. Thermionic and 
+Photoelectric 
+emissions 
+ Cathode rays; 
+ X-rays 
+   
+Inclusive and Differentiated 
+Learning Individual seat 
+works or work in mixed 
+groups according to gender, 
+abilities and learning styles.   
+Calculation.  
+  
+1. Group Assignments  
+/exercises:  to discuss:  
+a. The existence and strength of 
+radioactive detectors and 
+radioactive substance.  
+b. Fission and fusion reaction.  
+(exp. U238 disintegration)  
+c. Listing application of nuclear 
+energy.    
+ 
+2. Group Demonstration:   
+ Drawing and displaying a  
+Simple Performing tracer 
+experiment.   
+   
+3. Individual  
+Assignments/exercises:   
+A. Primary Text  
+Brian Arnold, Steve Wolley & Penny    
+Johnson, Edexcel IGCSE Physics 
+(Pearson, 2009).   
+ 
+B. Secondary Text   
+John Motey Addo & Barry  Jackson, 
+Senior High  Physics (Longman, 2009) 
+   
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola Series- 
+(Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+ 
+Paul Attakorah, Atta Kay Physics (Vol. 
+2, 2012 Edition) 
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition)   
+ 
+C. Other  Resources/Supplementary  
+Readings   
+Bob McDuell, Senior High  Integrated 
+Science  (Pearson, 2009)   
+EXPECTED Competencies  
+ Effective Communication  
+skills  
+ 
+ Research and Problems  
+Solving  
+ 
+ Digital Skills  
+ 
+ Analytical Skills  
+ 
+ Creativity and Innovation  
+Skills  
+  
+Assessment Strategies That can 
+be used to CheckCompetencies; 
+Select relevant options.  
+ Presentations  
+ Writing Assignment  
+ Quizzes written  
+exercises Identification 
+of Lab apparatus  
+ Lab Report  
+ Class participation   
+ Attendencec  
+===== PAGE 35 =====
+Page 35 
+ 
+a. Stating and discussing effects 
+of radioactive substances on 
+lives.  
+b. Explanation should include 
+the cathode ray and x – rays, 
+their nature, properties and 
+characteristics 
+  
+Vacuum tubes   
+Voltmeter, ammeter ohm meter   
+Resistors, capacitors and inductors   
+Diodes and transistors    
+Conduction wires   
+Power source  
+ 
+Links: 
+ 
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+ Test  Identification of 
+Lab apparatus  
+ Lab Report  
+ Class participation   
+ Attendance  
+ Test   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+===== PAGE 36 =====
+Page 36 
+ 
+SEMESTER:  TWO 
+GRADE:  12   
+PERIOD:  V   
+TOPIC: ATOMIC AND NUCLEAR PHYSICS   
+OUTCOMES SPECIFIC OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able to:  
+  
+Identify substances that 
+can emit harmful 
+particles and take 
+appropriate precautions 
+against the harm of long 
+term exposure to 
+radioactive substances.   
+   
+  
+Upon completion of this 
+topic, learners will be able 
+to:   
+ 
+1. Examine the properties 
+of an electron.   
+ 
+2. Analyze the  
+effect of radioactivity 
+substances on the human 
+body.   
+ 
+3. Draw and analyze the 
+typical atom and the 
+applications of nuclear 
+energy.  
+  
+4. Distinguish between 
+fission and fusion.   
+  
+1.The nucleus and  
+    the electron   
+   
+2. Types of nuclear 
+reactions and the uses 
+of nuclear energy   
+   
+3. Radioactivity 
+a. Types; 
+b. Radioactive 
+substances and their 
+effects; 
+c. Radioactive decay 
+and half-life. 
+ 
+4. Nuclear fission and 
+fusion  4Termionic and 
+Photo electric emissions 
+ Cathode rays; 
+ X-rays 
+   
+Inclusive and Differentiated 
+Learning Individual seat works 
+or work in mixed groups 
+according to gender, abilities and 
+learning styles.   
+Calculation.  
+  
+1. Group Assignments  
+/exercises:  to discuss:  
+d. The existence and strength of 
+radioactive detectors and 
+radioactive substance.  
+e. Fission and fusion reaction.  
+(exp. U238 disintegration)  
+f. Listing application of nuclear 
+energy.    
+ 
+2. Group Demonstration:   
+ Drawing and displaying a Simple  
+Performing tracer experiment.   
+   
+3. Individual Assignments/exercises:   
+c. Stating and discussing effects of 
+radioactive substances on lives.  
+C. Primary Text  
+Brian Arnold, Steve Wolley & Penny 
+Johnson, Edexcel IGCSE Physics 
+(Pearson, 2009).  
+  
+D. Secondary Text   
+John Motey Addo & Barry Jackson, 
+Senior High Physics (Longman, 2009)   
+ 
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola Series- 
+(Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+ 
+Paul Attakorah, Atta Kay Physics (Vol. 
+2, 2012 Edition) 
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition)   
+ 
+C. Other  Resources/Supplementary  
+Readings   
+Bob McDuell, Senior High   
+Integrated Science (Pearson, 2009)   
+EXPECTED Competencies  
+ Effective Communication  
+    Skills  
+ 
+ Research and Problems  
+Solving  
+ 
+ Digital Skills 
+  
+ Analytical Skills  
+ 
+ Creativity and Innovation  
+Skills  
+  
+Assessment Strategies That 
+can be used to Check 
+Competencies; Select 
+relevant options.  
+ Presentations  
+ Writing Assignment  
+ Quizzes written  
+exercises 
+Identification of Lab 
+apparatus  
+ Lab Report  
+===== PAGE 37 =====
+Page 37 
+ 
+d. Explanation should include the 
+cathode ray and x – rays, their 
+nature,  
+properties and characteristics 
+ 
+Vacuum tubes   
+Voltmeter, ammeter ohm meter   
+Resistors, capacitors and inductors   
+Diodes and transistors    
+Conduction wires   
+Power source  
+ 
+Links: 
+ 
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+ Class participation   
+ Attendance  
+ Test  Identification of 
+Lab apparatus  
+ Lab Report  
+ Class participation   
+ Attendance 
+  Test   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===== PAGE 38 =====
+Page 38 
+ 
+SEMESTER:  TWO 
+  
+GRADE:  12   
+PERIOD:  VI   
+TOPIC: HIGH ENERGY PHYSICS   
+OUTCOMES SPECIFIC OBJECTIVES: 
+ 
+CONTENTS ACTIVITIES MATERIALS/RESOURCES COMPETENCIES 
+ASSESSMENTS 
+Learners are able to:  
+  
+Describe the disintegration 
+of atoms in produces 
+energy particles can be 
+accelerated and captured   
+Upon completion of this 
+topic, students will:   
+1. Examine  
+the   uncertainty principle  
+  
+2. Analyze the principle 
+quantum numbers and 
+describe the motion of an 
+electron   
+ 
+3. Discuss various types of 
+particle accelerators   
+ 
+4. Identify and discuss the 
+four basic interaction s 
+between particles of 
+matter   
+ 
+5. A
+nalyze the conservation 
+laws of particle physics 
+1. Quantum 
+mechanics   
+   
+2. Particle  
+Accelerators   
+   
+3. Detecting 
+instruments   
+   
+4. Subatomic  
+reactions   
+   
+Einstein’s 
+photoelectric equation     
+Inclusive and Differentiated 
+Learning Individual seat 
+works or work in mixed 
+groups according to gender, 
+abilities and learning styles.   
+Calculation.  
+1. Group Assignments/exercises:  
+to examine the:  
+a. Half –life experiment 
+using Geiger counters   
+b. Electron configuration of 
+some light elements   
+   
+2. Group Demonstration: to:  
+a. Drawing and libeling 
+diagram of various 
+particle accelerators   
+ 
+Preparing a chart of subatomic 
+particles 
+A. Primary Text    
+Brian Arnold, Steve Wolley & Penny 
+Johnson, Edexcel IGCSE Physics 
+(Pearson, 2009).   
+ 
+B. Secondary Text 
+John Motey Addo & Barry Jackson, 
+Senior  High Physics  (Longman, 
+2009) 
+   
+Peter Asiedu, Physics for Senior High 
+Schools in West Africa- Aki-Ola 
+Series- (Millennium Edition 4-2011) 
+ 
+M. Melkon, Principles of Physics, (8th 
+Edition) 
+ 
+Paul Attakorah, Atta Kay Physics 
+(Vol. 2, 2012 Edition) 
+ 
+M. W. Anyakoha, New School Physics 
+for Senior Secondary Schools(2016 
+Edition)   
+ 
+ 
+ 
+ 
+EXPECTED Competencies  
+ Effective Communication  
+skills  
+ 
+ Research and Problems  
+Solving  
+ 
+ Digital Skills  
+ 
+ Analytical Skills  
+ 
+ Creativity and Innovation  
+Skills  
+  
+Assessment Strategies That can 
+be used to Check Competencies;  
+Select relevant options.  
+ Presentations  
+ Writing Assignment  
+ Quizzes written  exercises 
+Identification of Lab 
+apparatus  
+ .Lab Report  
+ Class participation   
+===== PAGE 39 =====
+Page 39 
+ 
+C. Other  Resources/Supplementary  
+Readings   
+ 
+Bob McDuell, Senior High Integrated 
+Science  (Pearson, 2009)  Geiger 
+Muller 
+Counter   
+ 
+www.dictionary.com 
+www.khanacademy.com 
+www.reviewgamezone.com 
+www.commomsence.org 
+www.redit.com 
+www.study.com 
+www.physicsworldm.com 
+ Attendance  
+ Test  Identification of Lab 
+apparatus  
+ Lab Report  
+ Class participation   
+ Attendencec  
+.Test   
+ 
