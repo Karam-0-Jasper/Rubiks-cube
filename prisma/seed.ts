@@ -61,7 +61,7 @@ async function main() {
             objective: topic.objective,
             notes: topic.notes,
             workedExample: topic.workedExample,
-            teachingTip: topic.teachingTip,
+            teachingTip: topic.teachingTip ?? "",
             estimatedMinutes: topic.estimatedMinutes,
           },
           create: {
@@ -72,7 +72,7 @@ async function main() {
             objective: topic.objective,
             notes: topic.notes,
             workedExample: topic.workedExample,
-            teachingTip: topic.teachingTip,
+            teachingTip: topic.teachingTip ?? "",
             estimatedMinutes: topic.estimatedMinutes,
           },
         });

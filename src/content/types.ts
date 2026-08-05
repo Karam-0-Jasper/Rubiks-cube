@@ -23,7 +23,9 @@ export type TopicContent = {
   /// `*italic*`, `` `code` ``. Rendered by src/components/Notes.tsx.
   notes: string;
   workedExample: string;
-  teachingTip: string;
+  /// Deprecated: no longer shown to users. Retained as optional so existing
+  /// content still type-checks; new topics omit it.
+  teachingTip?: string;
   estimatedMinutes: number;
   quiz: QuizQuestionContent[];
   test: TestQuestionContent[];

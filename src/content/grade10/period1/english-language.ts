@@ -222,6 +222,85 @@ Take each in turn and ask what kind of noun it is.
           ],
         },
         {
+          slug: "narration-autobiographical-writing",
+          title: "Narration: Autobiographical Writing",
+          objective:
+            "By the end of the topic, learners should be able to define autobiographical writing, use first-person past-tense narration, organise a personal experience into a clear beginning, middle and end, and write a short autobiographical account.",
+          estimatedMinutes: 120,
+          notes: `## Introduction
+
+- **Narration** = telling a story of events in order.
+- **Autobiography** = the story of your *own* life, written by *you* (Greek *auto* = self, *bios* = life, *graph* = writing).
+- **This topic:** what autobiographical writing is; first-person, past-tense narration; structure (beginning–middle–end); writing a personal account.
+
+## What autobiographical writing is
+
+- A **true** account of an event or period from the writer's **own life**.
+- Written in the **first person** — *I, me, my, we*.
+- Usually in the **past tense** (the events already happened).
+- Different from a **biography**, where **someone else** writes about a person's life.
+
+## Features
+
+- **First-person voice:** *I remember the day…*
+- **Past tense** throughout.
+- **Real** people, places and feelings — honest, personal detail.
+- **Chronological order** — events in the order they happened.
+- **Reflection** — what the experience meant to you.
+
+## Structure
+
+1. **Beginning** — set the scene: when, where, who.
+2. **Middle** — the events in order, building to the main moment.
+3. **End** — how it finished, and what you learnt or felt.
+
+## Language to use
+
+- **Time signals** to order events: *first, then, after that, later, finally.*
+- **Sensory detail** — what you saw, heard, felt.
+- **Precise nouns and verbs**, and varied sentences.
+
+## Common errors to watch for
+
+- **Slipping out of the past tense** (tense-drift) — keep it past throughout.
+- **Writing in the third person** — autobiography is **first person (I)**.
+- **Listing events with no feeling** — say what the experience meant.
+- **No clear order** — use time signals so the reader can follow.`,
+          workedExample: `**Task.** Plan and open a short autobiographical account: "A Day I Will Never Forget."
+
+**Plan (beginning–middle–end)**
+- **Beginning:** the morning of my first day at a new school in Gbarnga.
+- **Middle:** getting lost in the compound; a kind classmate helping me; the moment I had to speak in class.
+- **End:** how the day ended, and what it taught me about courage.
+
+**Opening paragraph (first person, past tense):**
+*"I will never forget my first day at the new school. It was a cool morning in September, and my heart beat fast as I walked through the gate in my stiff new uniform. I knew no one, and the compound seemed enormous…"*
+
+**Why it works:** first person (*I*), consistent past tense (*was, walked, knew*), the scene is set (when / where / who), and a time signal is ready to move the story on.`,
+          quiz: [
+            { prompt: "Autobiographical writing is the story of…", options: ["your own life", "a famous person by another writer", "an imaginary hero", "a country's history"], correctIndex: 0, explanation: "An autobiography is written by the person about their own life." },
+            { prompt: "Autobiographical writing is written in the…", options: ["first person", "second person", "third person", "no person"], correctIndex: 0, explanation: "It uses I, me, my, we." },
+            { prompt: "Which tense is normally used?", options: ["past", "future", "present continuous", "none"], correctIndex: 0, explanation: "The events already happened, so the past tense is used." },
+            { prompt: "The prefix 'auto-' means…", options: ["self", "life", "writing", "other"], correctIndex: 0, explanation: "Auto = self; bios = life; graph = writing." },
+            { prompt: "A biography differs from an autobiography because it is…", options: ["written by someone else about a person", "always fictional", "written in the future tense", "a list of dates"], correctIndex: 0, explanation: "A biography is another writer's account of a person's life." },
+            { prompt: "Which is a first-person pronoun?", options: ["I", "he", "they", "it"], correctIndex: 0, explanation: "I is first person." },
+            { prompt: "Events in an autobiography should be arranged in…", options: ["the order they happened", "alphabetical order", "random order", "reverse only"], correctIndex: 0, explanation: "Chronological order helps the reader follow." },
+            { prompt: "Which word signals time order?", options: ["finally", "beautiful", "large", "quickly"], correctIndex: 0, explanation: "First, then, later, finally signal the order of events." },
+            { prompt: "The beginning of the account should…", options: ["set the scene (when, where, who)", "give the ending", "list the characters only", "state a moral"], correctIndex: 0, explanation: "The opening sets time, place and people." },
+            { prompt: "A good ending includes…", options: ["how it finished and what you learnt/felt", "a new unrelated story", "only dialogue", "the title again"], correctIndex: 0, explanation: "Reflection on the experience rounds it off." },
+            { prompt: "A common error in autobiographical writing is…", options: ["slipping out of the past tense", "using the first person", "adding sensory detail", "ordering events"], correctIndex: 0, explanation: "Tense-drift between past and present is the commonest fault." },
+            { prompt: "Autobiographical writing is based on…", options: ["real, true events", "imaginary events only", "another person's diary", "future plans"], correctIndex: 0, explanation: "It recounts real events from the writer's life." },
+            { prompt: "'I remember the morning it rained' shows which two features?", options: ["first person and past tense", "third person and future", "second person and present", "no person and past"], correctIndex: 0, explanation: "'I' is first person; 'remember/rained' are past." },
+            { prompt: "Sensory detail means describing what you…", options: ["saw, heard and felt", "will do tomorrow", "read in a book", "were told to write"], correctIndex: 0, explanation: "Sensory detail brings a personal account to life." },
+          ],
+          test: [
+            { type: "SHORT_ANSWER", prompt: "Define autobiographical writing and state two of its features.", answerKey: "Autobiographical writing is a true account of an event or period from the writer's own life, written by that person. Features (any two): first-person voice (I, me, my); past tense; real people/places/feelings; chronological order; reflection on meaning. Award 3 marks for the definition and 2 per feature.", marks: 7 },
+            { type: "MULTIPLE_CHOICE", prompt: "Which sentence is correctly autobiographical?", options: ["I walked to the farm and felt the cool morning air.", "She will walk to the farm tomorrow.", "You are walking to the farm now.", "The farm is three miles away."], correctIndex: 0, answerKey: "Option A is first person and past tense — the marks of autobiographical narration.", marks: 4 },
+            { type: "SHORT_ANSWER", prompt: "Outline, in note form, the beginning, middle and end of an autobiographical account of a memorable event in your life.", answerKey: "Accept a clear three-part plan: beginning sets the scene (when/where/who); middle gives the events in order building to the main moment; end states the outcome and what was learnt or felt. Award marks for a coherent beginning, middle and end that fit a single real experience.", marks: 6 },
+            { type: "ESSAY", prompt: "Write an autobiographical account of 12–15 sentences titled 'A Day I Will Never Forget.' Use the first person and the past tense throughout, order the events clearly, and end by saying what the day meant to you.", answerKey: "Award marks as follows: a coherent personal account with a clear beginning, middle and end, 8 marks; consistent first person and past tense throughout, 6 marks; clear ordering with time signals and some sensory detail, 4 marks; a reflective ending stating the meaning of the day, 3 marks; grammatical accuracy and precise vocabulary, 4 marks. Deduct up to 3 marks for tense-drift into the present.", marks: 25 },
+          ],
+        },
+        {
           slug: "pronouns",
           title: "Pronouns and Their Antecedents",
           objective:
@@ -374,6 +453,165 @@ The antecedent is *each*, which is **singular**, so the pronoun must be singular
             { type: "MULTIPLE_CHOICE", prompt: "Which sentence shows correct pronoun–antecedent agreement in formal English?", options: ["Everyone brought their lunch.", "Each boy brought their book.", "Neither of the girls raised her hand.", "Somebody left their bag."], correctIndex: 2, answerKey: "'Neither' is singular and the antecedents are girls, so 'her' agrees correctly. The others pair a singular indefinite pronoun with 'their'. Option C.", marks: 4 },
             { type: "SHORT_ANSWER", prompt: "Explain what an antecedent is and why unclear pronoun reference causes problems, giving one example of an ambiguous sentence and a corrected version.", answerKey: "An antecedent is the noun a pronoun stands for. Unclear reference occurs when a pronoun could point to more than one noun, so the reader cannot tell the meaning. Example: 'Kou told Ma that she had won' — 'she' could be Kou or Ma. Correction: 'Kou told Ma, \"I have won\"' or 'Kou told Ma that Kou had won.' Award 3 marks for the definition, 3 for the explanation, 3 for a valid ambiguous example with a correction.", marks: 9 },
             { type: "ESSAY", prompt: "Write a short story of 10–12 sentences. Use at least one personal, one possessive, one demonstrative and one relative pronoun, underline each, and ensure every pronoun agrees clearly with its antecedent.", answerKey: "Award marks as follows: coherence and interest of the narrative, 5 marks; correct inclusion and underlining of a personal, possessive, demonstrative and relative pronoun, 8 marks (2 each); clear pronoun–antecedent agreement throughout, with no ambiguous references, 5 marks; grammatical accuracy and correct use of its/it's and yours/hers, 4 marks. Deduct up to 3 marks for any pronoun whose antecedent is unclear.", marks: 22 },
+          ],
+        },
+        {
+          slug: "narration-short-story",
+          title: "Narration: Short Story",
+          objective:
+            "By the end of the topic, learners should be able to define a short story, identify its elements (setting, character, plot, conflict, theme), and plan and write a short imaginative story with a clear beginning, middle and end.",
+          estimatedMinutes: 130,
+          notes: `## Introduction
+
+- A **short story** = a short piece of **imaginative (fictional) narration** — a made-up story read in one sitting.
+- Unlike autobiography, it need **not** be true, and may be told in the **first or third person**.
+- **This topic:** the elements of a short story; its structure; planning and writing one.
+
+## Elements of a short story
+
+- **Setting** — the **time and place** of the story.
+- **Character** — the people (or beings) in it; the **main character** is the *protagonist*.
+- **Plot** — the **sequence of events**.
+- **Conflict** — the **problem or struggle** that drives the plot.
+- **Theme** — the **central idea or message**.
+- **Point of view** — who tells it: **first person** (*I*) or **third person** (*he/she/they*).
+
+## Plot structure
+
+1. **Beginning (exposition)** — introduce the setting and characters.
+2. **Rising action** — the conflict develops; tension builds.
+3. **Climax** — the turning point of highest tension.
+4. **Falling action** — events after the climax.
+5. **Ending (resolution)** — the conflict is settled.
+
+## Writing a good short story
+
+- Keep to **one main incident** and **few characters** — a short story is compact.
+- Start **close to the action**; do not over-explain.
+- Use **dialogue** and **sensory detail** to show, not just tell.
+- Keep the **tense consistent** (usually the past).
+- Aim for a **single, clear effect** — one feeling or idea the reader takes away.
+
+## Common errors to watch for
+
+- **Too many characters or events** — a short story has room for only a few.
+- **No conflict** — without a problem to solve, there is no story.
+- **Tense-drift** — keep the narration in one tense (usually past).
+- **A rushed or missing ending** — the conflict must be resolved.`,
+          workedExample: `**Task.** Plan a short story around a single conflict, then write its opening.
+
+**Plan**
+- **Setting:** a fishing village on the Liberian coast, at dawn.
+- **Character:** Kollie, a boy who has never been allowed to take the canoe out alone.
+- **Conflict:** a storm rises while he is out at sea against his father's warning (person vs nature, and person vs self).
+- **Climax:** the canoe nearly capsizes; Kollie must decide to turn back or push on.
+- **Resolution:** he returns safely and learns why the warning was given.
+- **Theme:** the value of listening to experience.
+
+**Opening (third person, past tense, close to the action):**
+*"The sea was calm when Kollie pushed the canoe from the sand, but he did not see the grey line gathering on the horizon. His father's warning still rang in his ears — 'Not alone, not yet' — as the village shrank behind him…"*
+
+**Why it works:** the setting and character are established in two sentences, the **conflict** is already seeded (the warning, the gathering storm), and the tense is consistent past.`,
+          quiz: [
+            { prompt: "A short story is a piece of…", options: ["imaginative (fictional) narration", "true personal history", "factual reporting", "instruction writing"], correctIndex: 0, explanation: "A short story is fiction, unlike an autobiography." },
+            { prompt: "The time and place of a story is its…", options: ["setting", "plot", "theme", "climax"], correctIndex: 0, explanation: "Setting = time and place." },
+            { prompt: "The sequence of events in a story is the…", options: ["plot", "setting", "character", "theme"], correctIndex: 0, explanation: "Plot is what happens and in what order." },
+            { prompt: "The problem or struggle that drives the story is the…", options: ["conflict", "setting", "resolution", "narrator"], correctIndex: 0, explanation: "Conflict drives the plot." },
+            { prompt: "The central idea or message of a story is its…", options: ["theme", "plot", "setting", "climax"], correctIndex: 0, explanation: "Theme is the underlying idea." },
+            { prompt: "The main character of a story is the…", options: ["protagonist", "antagonist", "narrator", "author"], correctIndex: 0, explanation: "The protagonist is the central character." },
+            { prompt: "The turning point of highest tension is the…", options: ["climax", "exposition", "resolution", "setting"], correctIndex: 0, explanation: "The climax is the peak of the conflict." },
+            { prompt: "A story told using 'I' is written in the…", options: ["first person", "third person", "second person", "no person"], correctIndex: 0, explanation: "'I' narration is first person." },
+            { prompt: "A short story should focus on…", options: ["one main incident and few characters", "many sub-plots", "dozens of characters", "several decades"], correctIndex: 0, explanation: "The form is compact." },
+            { prompt: "Which part of the plot introduces setting and characters?", options: ["exposition (beginning)", "climax", "falling action", "resolution"], correctIndex: 0, explanation: "The exposition opens the story." },
+            { prompt: "'Show, not tell' means using…", options: ["dialogue and sensory detail", "long explanations", "a list of facts", "the future tense"], correctIndex: 0, explanation: "Showing through detail and action is more vivid." },
+            { prompt: "A story without a conflict usually has…", options: ["no real story", "too many themes", "a strong climax", "clear characters only"], correctIndex: 0, explanation: "Conflict is what makes events into a story." },
+            { prompt: "The conflict is settled at the…", options: ["resolution (ending)", "exposition", "rising action", "setting"], correctIndex: 0, explanation: "The resolution ends the story." },
+            { prompt: "A common error in a short story is…", options: ["too many characters and events", "having a single conflict", "using dialogue", "a clear ending"], correctIndex: 0, explanation: "A short story has room for only a few characters and one main incident." },
+          ],
+          test: [
+            { type: "SHORT_ANSWER", prompt: "Name and briefly explain four elements of a short story.", answerKey: "Any four: setting (time and place); character (the people, esp. the protagonist); plot (the sequence of events); conflict (the problem/struggle); theme (the central idea); point of view (first or third person). Award 2 marks per element correctly named and explained.", marks: 8 },
+            { type: "MULTIPLE_CHOICE", prompt: "Which is the correct order of the plot?", options: ["exposition, rising action, climax, falling action, resolution", "climax, exposition, resolution", "resolution, climax, exposition", "rising action, resolution, climax"], correctIndex: 0, answerKey: "The plot moves exposition → rising action → climax → falling action → resolution.", marks: 4 },
+            { type: "SHORT_ANSWER", prompt: "Explain why conflict is essential to a short story.", answerKey: "Conflict is the problem or struggle the characters face; it creates tension and drives the events forward. Without a conflict there is nothing for the characters to overcome, so there is no real story — only a description. Award marks for defining conflict and explaining that it drives the plot/creates the story.", marks: 5 },
+            { type: "ESSAY", prompt: "Write a short story of about 15 sentences built around a single conflict. Include a clear setting, at least one main character, a climax and a resolution, and keep the tense consistent.", answerKey: "Award marks as follows: a clear setting and main character established early, 5 marks; a single, well-developed conflict driving the plot, 6 marks; a recognisable climax and a resolution that settles the conflict, 6 marks; consistent tense and point of view, 4 marks; grammatical accuracy, dialogue or sensory detail, and overall effect, 4 marks. Deduct up to 3 marks for tense-drift or an unresolved ending.", marks: 25 },
+          ],
+        },
+        {
+          slug: "vocabulary-development",
+          title: "Vocabulary Development",
+          objective:
+            "By the end of the topic, learners should be able to use context clues, prefixes, suffixes and roots to work out word meanings, and to use synonyms, antonyms, homophones and a dictionary to build and use vocabulary accurately.",
+          estimatedMinutes: 120,
+          notes: `## Introduction
+
+- **Vocabulary** = the stock of words a person knows and uses.
+- A wider vocabulary means clearer reading, writing and speech.
+- **This topic:** working out word meanings from **context** and **word parts**; **synonyms, antonyms, homophones**; and using a **dictionary**.
+
+## Working out meaning from context
+
+- **Context clues** = the other words around a new word that hint at its meaning.
+- Types of clue: a **definition** in the sentence, an **example**, a **contrast** (*but, unlike*), or the **general sense** of the passage.
+- *Example:* "The path was **arduous** — steep, rocky and tiring." (The detail shows *arduous* = difficult.)
+
+## Word parts (roots, prefixes, suffixes)
+
+- **Root** — the core of a word carrying its basic meaning (*port* = carry).
+- **Prefix** — added to the **front** to change meaning: *un-* (not), *re-* (again), *pre-* (before), *dis-* (opposite), *mis-* (wrongly).
+- **Suffix** — added to the **end**, often changing the word class: *-ness, -ment, -tion* (nouns); *-ful, -less, -able* (adjectives); *-ly* (adverbs).
+- *Example:* **re + view + able = reviewable** ("able to be viewed again").
+
+## Word relationships
+
+- **Synonyms** — words with **similar** meaning: *big / large / huge.*
+- **Antonyms** — words with **opposite** meaning: *hot / cold.*
+- **Homophones** — words that **sound alike** but differ in spelling and meaning: *their / there / they're; to / too / two; hear / here.*
+
+## Using a dictionary
+
+- Gives the **spelling, pronunciation, word class, meaning(s)** and often the **origin**.
+- Entries are in **alphabetical order**; use the **guide words** at the top of the page.
+- A **thesaurus** lists synonyms and antonyms.
+
+## Common errors to watch for
+
+- **Confusing homophones** — *their / there / they're*, *its / it's*.
+- **Guessing without using the clues** — read the whole sentence first.
+- **Adding a prefix/suffix wrongly** — mind the spelling (*happy → happiness*, not *happyness*).
+- **Treating synonyms as identical** — they are *similar*, not always interchangeable (*slim* vs *skinny*).`,
+          workedExample: `**Task.** Use context and word parts to work out the meaning of the underlined words.
+
+*"The road was **impassable** after the flood, so the aid could not reach the village until the water **subsided**."*
+
+**Step 1 — impassable (word parts).**
+- **im-** = not; **pass** = go through; **-able** = able to be.
+- So **impassable** = "not able to be passed through." The context (after the flood, aid could not reach) confirms it.
+
+**Step 2 — subsided (context clue).**
+- The aid "could not reach the village **until** the water subsided" — the contrast word *until* shows the water had to change for the road to be usable again.
+- So **subsided** = "went down / became less." (A dictionary confirms: *subside* = to sink or lessen.)
+
+**Conclusion:** breaking a word into **prefix + root + suffix** and reading the **surrounding context** together give the meaning without being told it directly.`,
+          quiz: [
+            { prompt: "Context clues are…", options: ["the surrounding words that hint at a word's meaning", "the letters of a word", "the dictionary spelling", "the page number"], correctIndex: 0, explanation: "Context clues come from the words around the new word." },
+            { prompt: "A prefix is added to the … of a word.", options: ["front", "end", "middle", "root only"], correctIndex: 0, explanation: "Prefixes go at the front; suffixes at the end." },
+            { prompt: "The prefix 'un-' means…", options: ["not", "again", "before", "after"], correctIndex: 0, explanation: "un- means not (unhappy = not happy)." },
+            { prompt: "The prefix 're-' means…", options: ["again", "not", "wrongly", "before"], correctIndex: 0, explanation: "re- means again (rewrite = write again)." },
+            { prompt: "A suffix is added to the … of a word.", options: ["end", "front", "middle", "root's front"], correctIndex: 0, explanation: "Suffixes are added at the end." },
+            { prompt: "The root of a word carries its…", options: ["basic meaning", "spelling only", "pronunciation only", "page number"], correctIndex: 0, explanation: "The root holds the core meaning." },
+            { prompt: "Synonyms are words with…", options: ["similar meaning", "opposite meaning", "the same sound", "no meaning"], correctIndex: 0, explanation: "Synonyms mean nearly the same (big/large)." },
+            { prompt: "Antonyms are words with…", options: ["opposite meaning", "similar meaning", "the same spelling", "the same sound"], correctIndex: 0, explanation: "Antonyms are opposites (hot/cold)." },
+            { prompt: "Homophones are words that…", options: ["sound alike but differ in spelling and meaning", "mean the same", "are opposites", "have no vowels"], correctIndex: 0, explanation: "e.g. their / there / they're." },
+            { prompt: "Which set are homophones?", options: ["to / too / two", "big / large / huge", "hot / cold", "run / ran / run"], correctIndex: 0, explanation: "to/too/two sound alike but differ in meaning." },
+            { prompt: "A dictionary entry gives the spelling, pronunciation, word class and…", options: ["meaning(s)", "the reader's name", "the price", "the author"], correctIndex: 0, explanation: "It also often gives the origin." },
+            { prompt: "The words at the top of a dictionary page that help you find an entry are…", options: ["guide words", "footnotes", "prefixes", "captions"], correctIndex: 0, explanation: "Guide words show the first and last entries on the page." },
+            { prompt: "A book that lists synonyms and antonyms is a…", options: ["thesaurus", "dictionary of dates", "atlas", "novel"], correctIndex: 0, explanation: "A thesaurus groups words by meaning." },
+            { prompt: "'Impassable' breaks into im- + pass + -able, meaning…", options: ["not able to be passed", "able to pass again", "passing wrongly", "before passing"], correctIndex: 0, explanation: "im- (not) + pass + -able (able to be)." },
+          ],
+          test: [
+            { type: "SHORT_ANSWER", prompt: "Explain what context clues are and describe two kinds, with an example.", answerKey: "Context clues are the surrounding words that hint at a new word's meaning. Kinds (any two): a definition given in the sentence; an example; a contrast (but, unlike); the general sense of the passage. Accept a valid example, e.g. 'The path was arduous — steep and tiring' shows arduous = difficult. Award 3 marks for the explanation and 2 per kind with example.", marks: 7 },
+            { type: "MULTIPLE_CHOICE", prompt: "Which sentence uses the correct homophone?", options: ["They left their books over there because they're heavy.", "They left there books over their because their heavy.", "They left they're books over there because their heavy.", "They left their books over they're because there heavy."], correctIndex: 0, answerKey: "their (possessive), there (place), they're (they are) are all used correctly in option A.", marks: 4 },
+            { type: "SHORT_ANSWER", prompt: "Give the meaning of each prefix and use it in a word: un-, re-, pre-, dis-.", answerKey: "un- = not (unfair); re- = again (rebuild); pre- = before (preview); dis- = opposite/not (dishonest). Award 1 mark per correct meaning and 1 per correct word (max 8, scaled to 6).", marks: 6 },
+            { type: "ESSAY", prompt: "Read a passage of your choice and pick five unfamiliar words. For each, work out the meaning using context clues or word parts, then check it in a dictionary and use the word in a sentence of your own.", answerKey: "Award marks as follows: five suitable words identified, 5 marks; a reasoned meaning for each from context clues or word parts (prefix/root/suffix), 10 marks; confirmation against a dictionary and correct word class noted, 5 marks; each word used correctly in an original sentence, 5 marks. Deduct where a sentence misuses the word.", marks: 25 },
           ],
         },
       ],

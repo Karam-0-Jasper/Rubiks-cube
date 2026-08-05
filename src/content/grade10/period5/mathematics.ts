@@ -13,7 +13,7 @@ export const mathematicsG10P5: PeriodContent = {
       slug: "solving-simultaneous-equations",
       title: "Solving Simultaneous Equations by Substitution and Elimination",
       objective:
-        "By the end of the topic, learners should be able to solve a pair of simultaneous linear equations in two unknowns using the substitution method and the elimination method, and check their solutions.",
+        "By the end of the topic, learners should be able to explain the truth set of a pair of simultaneous linear equations, solve them in two unknowns by the substitution and elimination methods, form and solve simultaneous equations from word problems, and check their solutions. (MoE Grade 10 Period V, 'Simultaneous Linear Equations'; aligned to Common Core 8.EE.C.8 — analyse and solve pairs of simultaneous linear equations.)",
       estimatedMinutes: 190,
       notes: `## Introduction
 
@@ -32,7 +32,13 @@ Example:
 
 The solution (x = 4, y = 3) satisfies **both** equations.
 
-There are two main algebraic methods: **substitution** and **elimination**.
+## The truth set (solution set)
+
+- The **truth set** of a pair of simultaneous equations is the set of value‑pairs that make **both** equations true at the same time.
+- Usually it is a **single pair**, written as a set: {(4, 3)} for the example above.
+- It can also be **empty** { } (no solution) or **infinite** (every point on one line) — see the special cases below.
+
+There are two main algebraic methods for finding the truth set: **substitution** and **elimination**.
 
 ## Method 1 — substitution
 
@@ -90,8 +96,8 @@ Many real problems hide a pair of simultaneous equations. The skill is to **turn
 
 Not every pair has exactly one solution. When you try to solve and **both unknowns disappear**, look at what is left:
 
-- If you reach a **false** statement such as *0 = 5*, the equations **contradict** each other (their lines are **parallel**) — there is **no solution**.
-- If you reach a statement that is **always true** such as *0 = 0*, the two equations are really the **same line** — there are **infinitely many** solutions.
+- A **false** statement such as *0 = 5* → the lines are **parallel**, the truth set is **empty** → **no solution**. *(e.g. x + y = 4 and x + y = 7.)*
+- An **always‑true** statement such as *0 = 0* → the two equations are the **same line** → **infinitely many** solutions. *(e.g. x + y = 3 and 2x + 2y = 6, giving y = 3 − x.)*
 
 A pair with exactly one solution (the usual case) represents two lines that **cross at one point**, which is the idea we make graphical in the next topic.
 
@@ -124,8 +130,6 @@ Substitute x = 4 into either equation. Using x − 2y = 4:
 - 4 − 2(0) = 4 ✓
 
 **Solution: x = 4, y = 0.** Because the answer satisfies both original equations, it is correct. When the coefficients of one unknown are equal and opposite, adding eliminates that unknown; when they are equal and the same sign, subtracting eliminates it.`,
-      teachingTip:
-        "The commonest elimination error is subtracting when the coefficients are the same sign but forgetting to change every sign in the second equation. Give the rule: 'same signs, subtract; opposite signs, add' (SSS/OSA). Always insist on the final check in BOTH equations — it catches almost every arithmetic slip and is worth easy marks. For substitution, tell learners to substitute the whole bracket, keeping the expression in parentheses to avoid sign mistakes.",
       quiz: [
         {
           prompt: "Simultaneous equations are two equations that are true…",
@@ -526,6 +530,288 @@ The two lines cross at the point **(2, 4)**.
           answerKey:
             "A strong answer explains that the graphical method plots both lines and reads the intersection point, clearly showing the solution and the three possible cases (one, none or infinitely many solutions), but its accuracy depends on the drawing and it is best for whole-number answers. The algebraic methods (substitution and elimination) give exact answers, including fractions, and are more reliable for precise work but do not show the picture. Advantage of graphical: visual/shows cases; advantage of algebraic: exact/precise. Award marks for describing both methods and a valid advantage of each.",
           marks: 5,
+        },
+      ],
+    },
+    {
+      slug: "vector-in-a-plane",
+      title: "Vector in a Plane",
+      objective:
+        "By the end of the topic, learners should be able to distinguish scalar from vector quantities, name the types of vectors, find the magnitude and direction of a vector in a plane, add and subtract vectors (both by diagram and in component form), and multiply a vector by a scalar. (MoE Grade 10 Semester Two, Period V, 'Vector in a Plane'.)",
+      estimatedMinutes: 170,
+      notes: `## Introduction
+
+- Some quantities need a **size only**; others need a **size and a direction**.
+- A **vector** carries both — it is drawn as an arrow: length = size, arrowhead = direction.
+- **This lesson:** scalar vs vector quantities; types of vectors; magnitude and direction; addition and subtraction; multiplication by a scalar.
+
+## Scalar and vector quantities
+
+- **Scalar** — a quantity with **magnitude (size) only**. Examples: mass, time, temperature, distance, speed, area.
+- **Vector** — a quantity with **magnitude and direction**. Examples: displacement, velocity, acceleration, force, weight.
+- Key contrast: **distance** (scalar) vs **displacement** (vector); **speed** (scalar) vs **velocity** (vector).
+
+## Notation
+
+- A vector is written **a** (bold), or **AB** with an arrow above it — the vector from point A to point B.
+- Its **magnitude** is written |**a**| or |**AB**|.
+- In a plane a vector is given by its **components**: **a** = (x, y) — x across, y up.
+
+\`\`\`svg A vector drawn as an arrow in the plane
+<svg viewBox="0 0 220 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A vector as an arrow from the origin to the point (3,4)">
+  <line x1="30" y1="150" x2="205" y2="150" stroke="#3730a3" stroke-width="1.5"/>
+  <line x1="30" y1="150" x2="30" y2="15" stroke="#3730a3" stroke-width="1.5"/>
+  <line x1="30" y1="150" x2="150" y2="50" stroke="#dc2626" stroke-width="2.5"/>
+  <polygon points="150,50 140,52 146,60" fill="#dc2626"/>
+  <line x1="150" y1="50" x2="150" y2="150" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="30" y1="150" x2="150" y2="150" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="95" y="88" font-size="11" fill="#dc2626">a</text>
+  <text x="120" y="168" font-size="10" fill="#334155">x = 3</text>
+  <text x="154" y="105" font-size="10" fill="#334155">y = 4</text>
+  <text x="190" y="165" font-size="10" fill="#3730a3">x</text>
+  <text x="14" y="30" font-size="10" fill="#3730a3">y</text>
+</svg>
+\`\`\`
+
+## Types of vectors
+
+- **Equal vectors** — same magnitude **and** same direction (position does not matter).
+- **Negative vector** — **−a** has the same magnitude as **a** but the **opposite** direction.
+- **Zero (null) vector** — magnitude 0, no definite direction; written **0**.
+- **Unit vector** — magnitude exactly 1; used to show direction.
+- **Position vector** — a vector from the **origin O** to a point, e.g. **OP**.
+- **Parallel vectors** — same or opposite direction; one is a scalar multiple of the other.
+- **Collinear vectors** — parallel vectors that lie on the same straight line.
+
+## Magnitude and direction
+
+For a vector **a** = (x, y) in a plane:
+
+- **Magnitude** (length): |**a**| = √(x² + y²) — from Pythagoras.
+- **Direction**: the angle θ measured from the positive x-axis, where tan θ = y / x.
+
+*Example:* for **a** = (3, 4), |**a**| = √(3² + 4²) = √25 = **5**, and θ = tan⁻¹(4/3) ≈ **53.1°**.
+
+## Addition and subtraction of vectors
+
+**By components** — add/subtract matching parts:
+
+- **a** + **b** = (x₁ + x₂, y₁ + y₂)
+- **a** − **b** = (x₁ − x₂, y₁ − y₂)
+
+**By diagram:**
+
+- **Triangle law** — draw **b** starting at the head of **a**; the sum **a** + **b** is the arrow from the tail of **a** to the head of **b**.
+- **Parallelogram law** — draw **a** and **b** from the same point; the diagonal of the parallelogram is **a** + **b**.
+- **Subtraction** — **a** − **b** = **a** + (−**b**): reverse **b**, then add.
+
+\`\`\`svg Triangle law of vector addition
+<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Triangle law: vector a followed by vector b gives the resultant a plus b">
+  <line x1="20" y1="130" x2="120" y2="90" stroke="#dc2626" stroke-width="2.5"/>
+  <polygon points="120,90 110,90 114,98" fill="#dc2626"/>
+  <line x1="120" y1="90" x2="200" y2="40" stroke="#2563eb" stroke-width="2.5"/>
+  <polygon points="200,40 190,42 194,50" fill="#2563eb"/>
+  <line x1="20" y1="130" x2="200" y2="40" stroke="#059669" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <polygon points="200,40 189,44 194,52" fill="#059669"/>
+  <text x="60" y="122" font-size="11" fill="#dc2626">a</text>
+  <text x="158" y="58" font-size="11" fill="#2563eb">b</text>
+  <text x="95" y="78" font-size="11" fill="#059669">a + b</text>
+</svg>
+\`\`\`
+
+## Multiplication of a vector by a scalar
+
+- Multiplying **a** = (x, y) by a scalar k gives **k a** = (kx, ky).
+- The result is **parallel** to **a**; its magnitude is **|k| × |a|**.
+- If **k > 0**, same direction; if **k < 0**, opposite direction; if **k = 0**, the zero vector.
+
+*Example:* if **a** = (3, 4), then 3**a** = (9, 12) and −2**a** = (−6, −8).
+
+## Common errors to watch for
+
+- **Treating a vector as a scalar** — a vector needs both magnitude **and** direction; do not drop the direction (distance vs displacement, speed vs velocity).
+- **Adding magnitudes instead of components** — |**a** + **b**| is **not** |**a**| + |**b**| in general; add the x-parts and y-parts separately.
+- **Wrong magnitude formula** — magnitude is √(x² + y²), not x + y.
+- **Misplacing the second arrow in the triangle law** — **b** must start at the **head** of **a**, not at the same tail.
+- **Sign slips in subtraction** — **a** − **b** reverses **b**; subtract each component (x₁ − x₂, y₁ − y₂), watch negatives.`,
+      workedExample: `**Task.** Given the vectors **a** = (3, 4) and **b** = (−2, 5):
+(i) find |**a**| and its direction, (ii) find **a** + **b** and **a** − **b**, (iii) find 3**a**.
+
+**Part (i) — magnitude and direction of a = (3, 4)**
+- |**a**| = √(3² + 4²) = √(9 + 16) = √25 = **5**.
+- direction θ = tan⁻¹(4/3) ≈ **53.1°** above the positive x-axis.
+
+**Part (ii) — addition and subtraction**
+- **a** + **b** = (3 + (−2), 4 + 5) = **(1, 9)**.
+- **a** − **b** = (3 − (−2), 4 − 5) = **(5, −1)**.
+
+**Part (iii) — scalar multiple**
+- 3**a** = (3 × 3, 3 × 4) = **(9, 12)**.
+- Check: |3**a**| = √(9² + 12²) = √225 = 15 = 3 × 5 = 3|**a**| ✓ (magnitude scales by the scalar).
+
+**Answers:** |**a**| = 5 at ≈ 53.1°; **a** + **b** = (1, 9); **a** − **b** = (5, −1); 3**a** = (9, 12).`,
+      quiz: [
+        {
+          prompt: "A quantity with magnitude only is called a…",
+          options: ["scalar", "vector", "unit vector", "resultant"],
+          correctIndex: 0,
+          explanation: "Scalars have size only; vectors have size and direction.",
+        },
+        {
+          prompt: "A quantity with both magnitude and direction is a…",
+          options: ["vector", "scalar", "digit", "constant"],
+          correctIndex: 0,
+          explanation: "Direction is what makes a quantity a vector.",
+        },
+        {
+          prompt: "Which of these is a vector quantity?",
+          options: ["velocity", "mass", "time", "temperature"],
+          correctIndex: 0,
+          explanation: "Velocity has direction; the others are scalars.",
+        },
+        {
+          prompt: "Which of these is a scalar quantity?",
+          options: ["distance", "displacement", "force", "acceleration"],
+          correctIndex: 0,
+          explanation: "Distance has size only; the others carry direction.",
+        },
+        {
+          prompt: "The magnitude of the vector (x, y) is…",
+          options: ["√(x² + y²)", "x + y", "x² + y²", "xy"],
+          correctIndex: 0,
+          explanation: "Magnitude comes from Pythagoras: √(x² + y²).",
+        },
+        {
+          prompt: "The magnitude of the vector (3, 4) is…",
+          options: ["5", "7", "12", "25"],
+          correctIndex: 0,
+          explanation: "√(9 + 16) = √25 = 5.",
+        },
+        {
+          prompt: "The magnitude of the vector (6, 8) is…",
+          options: ["10", "14", "48", "100"],
+          correctIndex: 0,
+          explanation: "√(36 + 64) = √100 = 10.",
+        },
+        {
+          prompt: "A vector with magnitude exactly 1 is a…",
+          options: ["unit vector", "zero vector", "position vector", "negative vector"],
+          correctIndex: 0,
+          explanation: "A unit vector has length 1 and shows direction.",
+        },
+        {
+          prompt: "The zero (null) vector has magnitude…",
+          options: ["0", "1", "undefined size", "infinity"],
+          correctIndex: 0,
+          explanation: "Its magnitude is 0 and it has no definite direction.",
+        },
+        {
+          prompt: "The negative vector −a has, compared with a, the same magnitude but…",
+          options: ["opposite direction", "same direction", "half the size", "zero size"],
+          correctIndex: 0,
+          explanation: "−a reverses direction, keeping the same length.",
+        },
+        {
+          prompt: "If a = (2, 3) and b = (4, 1), then a + b =",
+          options: ["(6, 4)", "(2, 4)", "(8, 3)", "(6, 3)"],
+          correctIndex: 0,
+          explanation: "Add components: (2+4, 3+1) = (6, 4).",
+        },
+        {
+          prompt: "If a = (5, 6) and b = (2, 4), then a − b =",
+          options: ["(3, 2)", "(7, 10)", "(3, 10)", "(7, 2)"],
+          correctIndex: 0,
+          explanation: "Subtract components: (5−2, 6−4) = (3, 2).",
+        },
+        {
+          prompt: "If a = (3, −2), then 4a =",
+          options: ["(12, −8)", "(7, 2)", "(12, 8)", "(3, −8)"],
+          correctIndex: 0,
+          explanation: "Multiply each component by 4: (12, −8).",
+        },
+        {
+          prompt: "Multiplying a vector by a positive scalar k changes its…",
+          options: ["magnitude, keeping direction", "direction, keeping magnitude", "components' signs", "nothing"],
+          correctIndex: 0,
+          explanation: "|ka| = |k||a|; direction is unchanged when k > 0.",
+        },
+        {
+          prompt: "A position vector is measured from the…",
+          options: ["origin", "x-axis", "nearest point", "arrowhead"],
+          correctIndex: 0,
+          explanation: "A position vector runs from the origin O to a point.",
+        },
+        {
+          prompt: "In the triangle law, the second vector b is drawn starting at the…",
+          options: ["head of a", "tail of a", "origin", "midpoint of a"],
+          correctIndex: 0,
+          explanation: "Head-to-tail: b begins where a ends.",
+        },
+        {
+          prompt: "Two vectors that are scalar multiples of each other are…",
+          options: ["parallel", "perpendicular", "equal in size", "always equal"],
+          correctIndex: 0,
+          explanation: "k a is parallel to a (same or opposite direction).",
+        },
+        {
+          prompt: "The direction of the vector (x, y) satisfies tan θ =",
+          options: ["y / x", "x / y", "x · y", "x + y"],
+          correctIndex: 0,
+          explanation: "θ = tan⁻¹(y/x) from the positive x-axis.",
+        },
+        {
+          prompt: "Equal vectors must have the same magnitude and the same…",
+          options: ["direction", "starting point", "colour", "length only"],
+          correctIndex: 0,
+          explanation: "Equal vectors match in both magnitude and direction.",
+        },
+        {
+          prompt: "Speed is a scalar; the matching vector quantity is…",
+          options: ["velocity", "distance", "mass", "time"],
+          correctIndex: 0,
+          explanation: "Velocity is speed together with a direction.",
+        },
+      ],
+      test: [
+        {
+          type: "SHORT_ANSWER",
+          prompt:
+            "Define a scalar and a vector quantity, and give two examples of each.",
+          answerKey:
+            "A scalar has magnitude (size) only — e.g. mass, time, temperature, distance, speed (any two). A vector has magnitude and direction — e.g. displacement, velocity, acceleration, force, weight (any two). Award marks for two correct definitions and two valid examples of each.",
+          marks: 4,
+        },
+        {
+          type: "SHORT_ANSWER",
+          prompt:
+            "The vector a = (5, 12). Find its magnitude, and find −2a.",
+          answerKey:
+            "|a| = √(5² + 12²) = √(25 + 144) = √169 = 13. −2a = (−10, −24). Award marks for the magnitude 13 and the components (−10, −24).",
+          marks: 4,
+        },
+        {
+          type: "SHORT_ANSWER",
+          prompt:
+            "Given a = (4, −1) and b = (−3, 5), find a + b and a − b.",
+          answerKey:
+            "a + b = (4 + (−3), −1 + 5) = (1, 4). a − b = (4 − (−3), −1 − 5) = (7, −6). Award marks for each correct resultant.",
+          marks: 4,
+        },
+        {
+          type: "MULTIPLE_CHOICE",
+          prompt: "Which pair lists a scalar followed by a vector?",
+          options: ["distance, displacement", "velocity, speed", "force, mass", "displacement, distance"],
+          correctIndex: 0,
+          answerKey: "Distance is a scalar; displacement is the matching vector.",
+          marks: 2,
+        },
+        {
+          type: "ESSAY",
+          prompt:
+            "Explain the difference between scalar and vector quantities, and describe how two vectors are added both by components and by the triangle law.",
+          answerKey:
+            "A strong answer states that a scalar has magnitude only while a vector has magnitude and direction, with correct examples (distance/speed vs displacement/velocity/force). For component addition it explains adding matching parts: (x₁+x₂, y₁+y₂). For the triangle law it describes drawing the second vector from the head of the first, with the resultant running from the tail of the first to the head of the second (head-to-tail), and notes the parallelogram law as an equivalent construction. Award marks for the scalar/vector distinction, correct examples, the component rule, and a correct description of the triangle (head-to-tail) construction.",
+          marks: 6,
         },
       ],
     },
