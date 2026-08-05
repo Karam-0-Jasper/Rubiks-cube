@@ -13,7 +13,7 @@ export const mathematicsG10P5: PeriodContent = {
       slug: "solving-simultaneous-equations",
       title: "Solving Simultaneous Equations by Substitution and Elimination",
       objective:
-        "By the end of the topic, learners should be able to solve a pair of simultaneous linear equations in two unknowns using the substitution method and the elimination method, and check their solutions.",
+        "By the end of the topic, learners should be able to explain the truth set of a pair of simultaneous linear equations, solve them in two unknowns by the substitution and elimination methods, form and solve simultaneous equations from word problems, and check their solutions. (MoE Grade 10 Period V, 'Simultaneous Linear Equations'; aligned to Common Core 8.EE.C.8 — analyse and solve pairs of simultaneous linear equations.)",
       estimatedMinutes: 190,
       notes: `## Introduction
 
@@ -32,7 +32,13 @@ Example:
 
 The solution (x = 4, y = 3) satisfies **both** equations.
 
-There are two main algebraic methods: **substitution** and **elimination**.
+## The truth set (solution set)
+
+- The **truth set** of a pair of simultaneous equations is the set of value‑pairs that make **both** equations true at the same time.
+- Usually it is a **single pair**, written as a set: {(4, 3)} for the example above.
+- It can also be **empty** { } (no solution) or **infinite** (every point on one line) — see the special cases below.
+
+There are two main algebraic methods for finding the truth set: **substitution** and **elimination**.
 
 ## Method 1 — substitution
 
@@ -90,8 +96,8 @@ Many real problems hide a pair of simultaneous equations. The skill is to **turn
 
 Not every pair has exactly one solution. When you try to solve and **both unknowns disappear**, look at what is left:
 
-- If you reach a **false** statement such as *0 = 5*, the equations **contradict** each other (their lines are **parallel**) — there is **no solution**.
-- If you reach a statement that is **always true** such as *0 = 0*, the two equations are really the **same line** — there are **infinitely many** solutions.
+- A **false** statement such as *0 = 5* → the lines are **parallel**, the truth set is **empty** → **no solution**. *(e.g. x + y = 4 and x + y = 7.)*
+- An **always‑true** statement such as *0 = 0* → the two equations are the **same line** → **infinitely many** solutions. *(e.g. x + y = 3 and 2x + 2y = 6, giving y = 3 − x.)*
 
 A pair with exactly one solution (the usual case) represents two lines that **cross at one point**, which is the idea we make graphical in the next topic.
 
@@ -124,8 +130,6 @@ Substitute x = 4 into either equation. Using x − 2y = 4:
 - 4 − 2(0) = 4 ✓
 
 **Solution: x = 4, y = 0.** Because the answer satisfies both original equations, it is correct. When the coefficients of one unknown are equal and opposite, adding eliminates that unknown; when they are equal and the same sign, subtracting eliminates it.`,
-      teachingTip:
-        "The commonest elimination error is subtracting when the coefficients are the same sign but forgetting to change every sign in the second equation. Give the rule: 'same signs, subtract; opposite signs, add' (SSS/OSA). Always insist on the final check in BOTH equations — it catches almost every arithmetic slip and is worth easy marks. For substitution, tell learners to substitute the whole bracket, keeping the expression in parentheses to avoid sign mistakes.",
       quiz: [
         {
           prompt: "Simultaneous equations are two equations that are true…",
