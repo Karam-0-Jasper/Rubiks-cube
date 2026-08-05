@@ -43,12 +43,25 @@ Read this fully before touching content. It exists because earlier work went wro
 
 6. **Grade 10 only for now.** Grades 11–12 deferred.
 
-## Network / sources
+## Network / sources — DO THIS FIRST
 
-- General web was blocked in the previous session (403 on everything except GitHub). The user
-  has since set the cloud environment's **Network access** to Full/Custom. **Verify first**:
-  fetch e.g. `https://openstax.org/…` or a CK-12 page. If it still 403s, the session did not
-  start in the edited environment — stop and tell the user to relaunch in the right environment.
+Run this check before writing any content:
+
+1. **WebFetch** `https://openstax.org/books/physics/pages/1-1-physics-definitions-and-applications`.
+   - **200 → you have full page access.** Read the actual source pages and build notes from them.
+     This is the good case and is much stronger than what earlier sessions could do.
+   - **403 → the egress proxy is still blocking**, meaning this session did not start in the
+     network-enabled environment. Say so, then fall back to step 2.
+2. **WebSearch fallback.** Search routes through Anthropic's servers, not this container's
+   network, so it works even when WebFetch 403s. Use `allowed_domains` to pin results to the
+   approved sites, e.g.
+   `WebSearch(query: "…", allowed_domains: ["openstax.org","libretexts.org","ck12.org","khanacademy.org","siyavula.com","teachoo.com"])`.
+   Note `bbc.co.uk` is rejected by the search tool — don't include it.
+   This yields sourced definitions and summaries rather than full page text; it is how the
+   Physics P1 and Chemistry P1 topics were built.
+3. **Connectors** (Wolfram, Learning Commons) also bypass the block when connected, and are
+   useful for verifying numeric worked examples and for standards alignment. They drop in and
+   out of the session — check availability rather than assuming.
 
 ## Where the content lives
 
@@ -59,24 +72,63 @@ Read this fully before touching content. It exists because earlier work went wro
 - Notes markup is rendered by `src/components/Notes.tsx` (`##`, `-`, `1.`, `**bold**`, tables,
   and ` ```svg ` fenced diagrams — inside the TS template literals svg fences are escaped backticks).
 
-## Current state (as of this handoff)
+## Current state
 
-- ✅ Teaching-tip block removed (render + type + seed).
-- ✅ English **Period 1** topic list now matches the curriculum: Nouns → Narration:
-  Autobiographical Writing → Pronouns → Narration: Short Story → Vocabulary Development.
-  **BUT** the note *bodies* for those are still AI-written — they must be **re-sourced**.
-- ⛔ Everything else still needs work:
-  - English **P2–P6** and **all other subjects/periods** are missing their curriculum
-    composition/vocabulary/clause/etc. topics — add them.
-  - **All** note bodies should be re-sourced from the mapped sites, not AI-written.
-- Prior style passes (blackboard form, common-errors boxes) are already merged; keep that form.
+**Done and verified (on branch, PR #57):**
+
+- ✅ Teaching-tip block removed (render + type + seed). Do not reintroduce it.
+- ✅ **Physics Period 1** — rebuilt from 2 topics to **8**, one per syllabus CONTENTS item:
+  branches of physics; basic mathematical concepts; measurement (systems, quantities, units,
+  prefixes, significant figures, accuracy/errors); dimensional analysis; measuring instruments;
+  scalar and vector quantities; density and relative density; pressure in solids/liquids/gases.
+- ✅ **Chemistry Period 1** — rebuilt from 2 topics to **6**, covering both syllabus topics:
+  development of chemistry; units of measurement; states of matter and their changes;
+  properties and changes of matter; separation techniques; classification of mixtures.
+- ✅ **Maths** — added the two Grade 10 topics that were missing entirely: **Vector in a Plane**
+  (P5) and **Statistics: Frequency Tables and Averages** (P6); completed Simultaneous Equations.
+- ✅ `curriculum/` syllabus files committed — the authoritative topic lists.
+
+**Not done:**
+
+- ⛔ **English Period 1** — topic list matches the curriculum, but the note *bodies* for
+  Autobiographical Writing, Short Story and Vocabulary Development are still AI-written and
+  must be **re-sourced**.
+- ⛔ **Every other subject and period has not been audited against its CONTENTS list.**
+  Expect the same defect found in Physics/Chemistry P1: several syllabus items collapsed into
+  one or two oversized topics. Physics P2–P6 and Chemistry P2–P6 in particular each have only
+  two topics and almost certainly under-cover their CONTENTS.
+- Prior style passes (blackboard form, common-errors boxes) are merged; keep that form.
+
+## The audit method (use this on every subject/period)
+
+This is what found the missing Maths topics and the collapsed Physics/Chemistry periods:
+
+1. Open `curriculum/<Subject>.txt`, find each `GRADE: 10` → `PERIOD` block. Beware: the OCR
+   interleaves the CONTENTS column with the OBJECTIVES and ACTIVITIES columns, and the period
+   numbering in the file is unreliable — trust the `TOPIC:` heading and the CONTENTS list.
+2. Write out the CONTENTS list. **Each top-level numbered/lettered item is one topic.**
+   Sub-items (i, ii, iii…) become `##` sections inside that topic, not separate topics.
+3. List the app's current topics: `grep -n "slug:" src/content/grade10/period*/<subject>.ts`.
+4. Diff the two. Add what's missing; split what's been collapsed.
+5. Before deleting or renaming a slug, check nothing references it:
+   `grep -rn "<old-slug>" --include=*.ts --include=*.tsx . | grep -v node_modules`.
 
 ## Workflow
 
 - Branch: **`claude/nuvex-teacher-platform-jqy47u`**. Commit per subject/period.
   `git config user.email noreply@anthropic.com && git config user.name Claude`.
 - Verify each batch: `npx tsc --noEmit` and `SKIP_ENV_VALIDATION=1 npx next build`.
+- Watch for two mistakes that have actually bitten:
+  - **No LaTeX.** `Notes.tsx` does not render `$…$`; it prints literally. Use plain text
+    (`√(x² + y²)`, `θ`, `tan θ = y / x`).
+  - **Markdown tables must have the same number of cells in every row as in the header.**
 - Open a draft PR per batch and squash-merge to `main` (repo auto-watches PRs).
-- Suggested order: finish **English** (all periods, re-sourced) first — it's the one the user
-  keeps checking — then Maths, Biology, Chemistry, Physics, Geography, History, Economics,
-  Literature, then the single-file subjects.
+
+## Suggested order from here
+
+1. **Merge PR #57** if it is still open.
+2. **English, all periods, re-sourced** — the user checks this one most.
+3. **Physics P2–P6** and **Chemistry P2–P6** — same collapse defect as P1, already diagnosed.
+4. **Maths P1–P4** — audit for missing topics the way P5/P6 were.
+5. Biology, Geography, History, Economics, Literature, then the single-file subjects
+   (agriculture, civics, computer-science).
