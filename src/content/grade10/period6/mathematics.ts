@@ -508,5 +508,112 @@ Any two of:
         },
       ],
     },
+    {
+      slug: "statistics-averages",
+      title: "Statistics: Frequency Tables and Averages",
+      objective:
+        "By the end of the topic, learners should be able to organise data in a frequency table, calculate the mean, median, mode and range of a set of data, and read and interpret bar charts and pie charts. (MoE Grade 10 Mathematics — Statistics: frequency tables and averages.)",
+      estimatedMinutes: 160,
+      notes: `## Introduction
+
+- **Statistics** — collecting, organising, presenting and interpreting **data** (information, usually numbers).
+- **This topic:** frequency tables; the three **averages** (mean, median, mode); the **range**; reading bar and pie charts.
+
+## Data and frequency tables
+
+- **Data** — the values collected (e.g. the test scores of a class).
+- A **frequency table** records how many times each value occurs (its **frequency**). Use **tally marks** while counting, then write the frequency.
+
+| Score | Tally | Frequency |
+|---|---|---|
+| 4 | / | 1 |
+| 6 | // | 2 |
+| 8 | / | 1 |
+| 9 | / | 1 |
+| 10 | / | 1 |
+| 13 | / | 1 |
+
+## The three averages
+
+An **average** is a single value that represents a whole set of data. There are three kinds.
+
+### Mean
+- **Mean** = (sum of all values) ÷ (number of values).
+- For 4, 6, 6, 8, 9, 10, 13: sum = 56, count = 7 → mean = 56 ÷ 7 = **8**.
+- **From a frequency table:** mean = Σ(value × frequency) ÷ Σ(frequency).
+
+### Median
+- **Median** = the **middle value** once the data is put **in order**.
+- For 4, 6, 6, 8, 9, 10, 13 (7 values), the middle (4th) value is **8**.
+- With an **even** number of values, the median is the **mean of the two middle values**.
+
+### Mode
+- **Mode** = the value that occurs **most often**.
+- For 4, 6, 6, 8, 9, 10, 13, the value 6 appears twice → mode = **6**.
+- A set can have **no mode**, one mode, or **more than one** mode.
+
+## The range
+
+- **Range** = **largest value − smallest value**; it measures the **spread** of the data.
+- For 4, 6, 6, 8, 9, 10, 13: range = 13 − 4 = **9**.
+
+## Reading bar charts and pie charts
+
+- **Bar chart** — bars whose **heights** show the frequency of each category; good for **comparing categories**.
+- **Pie chart** — a circle split into slices; each slice's angle = **(frequency ÷ total) × 360°**, showing each category's **share of the whole**.
+- Always read the **title, labels and scale** first.
+
+## Common errors to watch for
+
+- **Not ordering the data before finding the median** — the median needs the values in order first.
+- **Confusing mode and median** — **mode** = most frequent value; **median** = middle value.
+- **Wrong divisor for the mean from a frequency table** — divide by the **total frequency (Σf)**, not by the number of different values.
+- **Writing the range as a range of values** — the range is a **single number** (largest − smallest), e.g. 9, not "4 to 13".`,
+      workedExample: `**Problem.** The marks of 7 learners are 4, 6, 6, 8, 9, 10, 13. Find the mean, median, mode and range. Then find the mean of the frequency table below.
+
+**Mean.** Sum = 4 + 6 + 6 + 8 + 9 + 10 + 13 = 56; count = 7 → mean = 56 ÷ 7 = **8**.
+
+**Median.** The data is already in order; with 7 values the middle is the 4th value → **8**.
+
+**Mode.** 6 occurs twice (every other value once) → **6**.
+
+**Range.** 13 − 4 = **9**.
+
+*(All four verified with Wolfram: mean 8, median 8, mode 6, range 9.)*
+
+**Mean from a frequency table.** Scores 5 (×2), 7 (×3), 9 (×1):
+mean = Σ(value × frequency) ÷ Σ(frequency) = (5×2 + 7×3 + 9×1) ÷ (2 + 3 + 1) = (10 + 21 + 9) ÷ 6 = 40 ÷ 6 = **6.67 (2 d.p.)**.
+
+**Conclusion:** order the data for the median, count frequencies for the mode, add-and-divide for the mean, and subtract smallest from largest for the range.`,
+      quiz: [
+        { prompt: "Statistics is the study of collecting, organising and interpreting…", options: ["data", "shapes", "equations", "angles"], correctIndex: 0, explanation: "Statistics deals with data." },
+        { prompt: "A table showing how often each value occurs is a…", options: ["frequency table", "multiplication table", "truth table", "times table"], correctIndex: 0, explanation: "Frequency = how many times a value occurs." },
+        { prompt: "The mean is found by…", options: ["adding the values and dividing by how many there are", "taking the middle value", "taking the most common value", "subtracting smallest from largest"], correctIndex: 0, explanation: "Mean = sum ÷ count." },
+        { prompt: "The mean of 2, 4, 6 is…", options: ["4", "6", "12", "3"], correctIndex: 0, explanation: "(2+4+6) ÷ 3 = 12 ÷ 3 = 4." },
+        { prompt: "The mean of 10, 20, 30, 40 is…", options: ["25", "30", "100", "20"], correctIndex: 0, explanation: "100 ÷ 4 = 25." },
+        { prompt: "The median is…", options: ["the middle value when data is in order", "the sum of the values", "the most common value", "the largest value"], correctIndex: 0, explanation: "Median = middle value of ordered data." },
+        { prompt: "Before finding the median you must…", options: ["arrange the data in order", "add the data", "square the data", "double the data"], correctIndex: 0, explanation: "The middle value only makes sense in order." },
+        { prompt: "The median of 3, 5, 7, 9, 11 is…", options: ["7", "5", "9", "35"], correctIndex: 0, explanation: "7 is the middle of five values." },
+        { prompt: "For an even number of values, the median is…", options: ["the mean of the two middle values", "the larger middle value", "always the mode", "the range"], correctIndex: 0, explanation: "Average the two middle values." },
+        { prompt: "The mode is…", options: ["the value that occurs most often", "the middle value", "the average", "the spread"], correctIndex: 0, explanation: "Mode = most frequent value." },
+        { prompt: "The mode of 2, 3, 3, 5, 7 is…", options: ["3", "5", "2", "7"], correctIndex: 0, explanation: "3 appears most often." },
+        { prompt: "The range is…", options: ["largest value − smallest value", "sum ÷ count", "the middle value", "the most common value"], correctIndex: 0, explanation: "Range measures spread." },
+        { prompt: "The range of 4, 6, 6, 8, 9, 10, 13 is…", options: ["9", "13", "4", "6"], correctIndex: 0, explanation: "13 − 4 = 9." },
+        { prompt: "For 4, 6, 6, 8, 9, 10, 13, the mean is…", options: ["8", "6", "9", "7"], correctIndex: 0, explanation: "56 ÷ 7 = 8." },
+        { prompt: "For 4, 6, 6, 8, 9, 10, 13, the mode is…", options: ["6", "8", "13", "4"], correctIndex: 0, explanation: "6 occurs twice." },
+        { prompt: "To find the mean from a frequency table, divide Σ(value × frequency) by…", options: ["the total frequency (Σf)", "the number of different values", "the largest value", "360"], correctIndex: 0, explanation: "Divide by the total number of items, Σf." },
+        { prompt: "On a bar chart, the height of each bar shows the…", options: ["frequency of the category", "range", "median", "angle"], correctIndex: 0, explanation: "Taller bar = greater frequency." },
+        { prompt: "In a pie chart, a category with 25% of the total takes an angle of…", options: ["90°", "25°", "180°", "360°"], correctIndex: 0, explanation: "25% × 360° = 90°." },
+        { prompt: "In a pie chart, a category with 10% of the total takes an angle of…", options: ["36°", "10°", "100°", "72°"], correctIndex: 0, explanation: "10% × 360° = 36°." },
+        { prompt: "A set of data can have…", options: ["no mode, one mode, or more than one mode", "only one mode always", "no median ever", "no mean ever"], correctIndex: 0, explanation: "Mode depends on how values repeat." },
+      ],
+      test: [
+        { type: "SHORT_ANSWER", prompt: "For the data 5, 8, 8, 11, 13, find the mean, median, mode and range.", answerKey: "Mean = (5+8+8+11+13) ÷ 5 = 45 ÷ 5 = 9. Median = middle value = 8. Mode = 8 (occurs twice). Range = 13 − 5 = 8. Award 1 mark each for mean, median, mode, range (method + answer).", marks: 4 },
+        { type: "MULTIPLE_CHOICE", prompt: "The middle value of an ordered set of data is the…", options: ["median", "mean", "mode", "range"], correctIndex: 0, answerKey: "The middle value is the median.", marks: 2 },
+        { type: "SHORT_ANSWER", prompt: "A frequency table shows: value 3 (frequency 4), value 5 (frequency 3), value 8 (frequency 3). Calculate the mean.", answerKey: "Mean = Σ(value × frequency) ÷ Σ(frequency) = (3×4 + 5×3 + 8×3) ÷ (4+3+3) = (12+15+24) ÷ 10 = 51 ÷ 10 = 5.1. Award marks for the correct method (Σfx ÷ Σf) and the answer 5.1.", marks: 3 },
+        { type: "SHORT_ANSWER", prompt: "Explain the difference between the mode and the median, and state one situation where the median is more useful than the mean.", answerKey: "The mode is the value that occurs most often; the median is the middle value when the data is arranged in order. The median is more useful than the mean when there are a few very large or very small values (outliers) that would distort the mean — the median gives a better 'typical' value. Award marks for both definitions and a valid situation.", marks: 5 },
+        { type: "ESSAY", prompt: "The daily sales (in Liberian dollars) of a shop over 8 days were: 200, 250, 250, 300, 350, 400, 400, 650. Calculate the mean, median, mode and range, and discuss which average best represents the 'typical' daily sales, giving a reason.", answerKey: "Mean = (200+250+250+300+350+400+400+650) ÷ 8 = 2800 ÷ 8 = 350. Median = mean of the 4th and 5th values (300 and 350) = 325. Mode = 250 and 400 (both appear twice) — bimodal. Range = 650 − 200 = 450. Discussion: the single high value of 650 pulls the mean up, so the median (325) may better represent a typical day; award credit for a reasoned choice referring to the outlier. Award marks for correct mean, median, mode, range, and a justified discussion of the best average.", marks: 6 },
+      ],
+    },
   ],
 };
