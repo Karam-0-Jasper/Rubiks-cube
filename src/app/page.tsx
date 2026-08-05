@@ -21,12 +21,6 @@ export default async function LandingPage() {
         <div className="flex items-center gap-3">
           <ThemeToggle />
           <Link
-            href="/login"
-            className="rounded-lg px-3 py-2 text-sm font-medium text-ink-muted transition hover:text-ink"
-          >
-            Log in
-          </Link>
-          <Link
             href="/register"
             className="rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-brand-ink transition hover:opacity-90"
           >
@@ -57,12 +51,6 @@ export default async function LandingPage() {
                 className="rounded-xl bg-brand px-5 py-3 text-sm font-semibold text-brand-ink transition hover:opacity-90"
               >
                 Start free
-              </Link>
-              <Link
-                href="/login"
-                className="rounded-xl border border-line bg-surface-raised px-5 py-3 text-sm font-semibold transition hover:bg-surface-sunken"
-              >
-                I have an account
               </Link>
             </div>
             <p className="mt-4 text-sm text-ink-faint">
