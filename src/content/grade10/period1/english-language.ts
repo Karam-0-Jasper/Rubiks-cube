@@ -222,6 +222,9 @@ Take each in turn and ask what kind of noun it is.
           ],
         },
         {
+          // Source: "Autobiographical Narrative", Commonsense Composition, K12 LibreTexts
+          // (k12.libretexts.org, 2.2); "Writing Process: Making the Personal Public",
+          // Writing Guide with Handbook, OpenStax (openstax.org, 4.5).
           slug: "narration-autobiographical-writing",
           title: "Narration: Autobiographical Writing",
           objective:
@@ -250,9 +253,22 @@ Take each in turn and ask what kind of noun it is.
 
 ## Structure
 
+- Built around **one significant event**, or a **collection of interrelated events**.
+- Follows the traditional narrative arc: **exposition → rising action → climax → falling action → resolution**.
+
 1. **Beginning** — set the scene: when, where, who.
 2. **Middle** — the events in order, building to the main moment.
 3. **End** — how it finished, and what you learnt or felt.
+
+## Organising events and feelings
+
+Two ways to combine the **events** and your **motivations/feelings**:
+
+- **Integrated** — weave feelings into the events as they happen; reads smoothly, usually the better choice.
+- **Blocked** — put the events in one paragraph and the feelings in another; can build suspense but needs clear links between paragraphs.
+
+- **One event:** most of the body describes it; the opening and close frame your before-and-after thoughts.
+- **Several events:** one body paragraph each; the opening and close show the overall change in you.
 
 ## Language to use
 
@@ -456,6 +472,8 @@ The antecedent is *each*, which is **singular**, so the pronoun must be singular
           ],
         },
         {
+          // Source: "Elements of Fiction", Literature for the Humanities (Lumen),
+          // Humanities LibreTexts (human.libretexts.org, 4.4).
           slug: "narration-short-story",
           title: "Narration: Short Story",
           objective:
@@ -469,20 +487,20 @@ The antecedent is *each*, which is **singular**, so the pronoun must be singular
 
 ## Elements of a short story
 
-- **Setting** — the **time and place** of the story.
-- **Character** — the people (or beings) in it; the **main character** is the *protagonist*.
-- **Plot** — the **sequence of events**.
-- **Conflict** — the **problem or struggle** that drives the plot.
-- **Theme** — the **central idea or message**.
-- **Point of view** — who tells it: **first person** (*I*) or **third person** (*he/she/they*).
+- **Setting** — the **time and place** of the story: landscape, buildings, season, weather, time of day.
+- **Character** — the people (or beings) in it; the **protagonist** is the main character, the **antagonist** the opposing force.
+- **Plot** — the **series of events** and character actions tied to the central conflict.
+- **Conflict** — the **struggle** between two people or things that drives the plot.
+- **Theme** — the **central idea or issue** conveyed by the story.
+- **Point of view** — who tells it: **first person** (*I*) or **third person** (*he/she/they*). A narrator whose account cannot be trusted is an **unreliable narrator**.
 
 ## Plot structure
 
-1. **Beginning (exposition)** — introduce the setting and characters.
-2. **Rising action** — the conflict develops; tension builds.
-3. **Climax** — the turning point of highest tension.
-4. **Falling action** — events after the climax.
-5. **Ending (resolution)** — the conflict is settled.
+1. **Exposition** — introduce the setting and characters.
+2. **Rising action** — related events complicate and intensify the conflict.
+3. **Climax** — the turning point that shows how the conflict will resolve.
+4. **Falling action** — the tension unwinds after the climax.
+5. **Resolution (denouement)** — the "knot" of conflict is loosened and settled.
 
 ## Writing a good short story
 
@@ -536,6 +554,9 @@ The antecedent is *each*, which is **singular**, so the pronoun must be singular
           ],
         },
         {
+          // Source: "Prefixes and Suffixes", Let's Get Writing, Composition, LibreTexts
+          // (human.libretexts.org, 10.4); "Vocabulary Strategies", LACC Writing Handbook,
+          // Humanities LibreTexts (human.libretexts.org, 1.7).
           slug: "vocabulary-development",
           title: "Vocabulary Development",
           objective:
@@ -559,6 +580,29 @@ The antecedent is *each*, which is **singular**, so the pronoun must be singular
 - **Prefix** — added to the **front** to change meaning: *un-* (not), *re-* (again), *pre-* (before), *dis-* (opposite), *mis-* (wrongly).
 - **Suffix** — added to the **end**, often changing the word class: *-ness, -ment, -tion* (nouns); *-ful, -less, -able* (adjectives); *-ly* (adverbs).
 - *Example:* **re + view + able = reviewable** ("able to be viewed again").
+
+## Common prefixes
+
+| Prefix | Meaning | Example |
+| --- | --- | --- |
+| un- | not | unacceptable |
+| dis- | not, opposite of | dissatisfied |
+| mis- | wrongly | misspell |
+| re- | again | re-election |
+| pre- | before | prepay |
+| non- | not | nonsense |
+| inter- | between | interrelated |
+| sub- | under | submerge |
+| super- | above | superscript |
+| anti- | against | antibacterial |
+
+## Spelling rules for suffixes
+
+- **Do not add or drop letters** when joining a prefix to a word: *mis- + spell = misspell.*
+- **-ness / -ly:** keep the spelling — except a final *y* becomes *i* (*happy → happiness, happily*).
+- **Vowel suffix (-ing, -able):** drop a silent *e* (*hope → hoping*).
+- **Consonant suffix (-ment, -ful):** keep the silent *e* (*move → movement*).
+- **Consonant + y:** change *y* to *i* before a suffix not starting with *i* (*carry → carried*, but *carrying*).
 
 ## Word relationships
 
