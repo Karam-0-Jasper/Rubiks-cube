@@ -1,9 +1,7 @@
 import Link from "next/link";
-import { redirect } from "next/navigation";
 
 import { getCurrentUser } from "@/lib/auth";
 import { getQuota } from "@/lib/quota";
-import { logoutAction } from "@/app/actions/auth";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { StudyTimer } from "@/components/StudyTimer";
 import { PLANS } from "@/lib/plans";
@@ -14,10 +12,7 @@ export default async function AppLayout({
   children: React.ReactNode;
 }) {
   const user = await getCurrentUser();
-  if (!user) redirect("/login");
-
   const quota = await getQuota(user);
-  const displayName = user.fullName || user.username;
 
   return (
     <div className="min-h-screen">
@@ -48,15 +43,6 @@ export default async function AppLayout({
               <span className="text-ink-faint">/{quota.limit} left</span>
             </Link>
             <ThemeToggle />
-            <form action={logoutAction}>
-              <button
-                type="submit"
-                className="rounded-lg px-2.5 py-1.5 text-xs font-medium text-ink-muted transition hover:bg-surface-sunken hover:text-ink"
-                title={`Logged in as ${displayName}`}
-              >
-                Log out
-              </button>
-            </form>
           </div>
         </div>
       </header>
