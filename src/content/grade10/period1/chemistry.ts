@@ -28,9 +28,10 @@ export const chemistry: SubjectContent = {
       number: 1,
       title: "Introduction to Chemistry and Matter",
       summary:
-        "Period I of the MoE Grade 10 Chemistry syllabus. Learners meet the development of chemistry — the scientific method, its contributors and its branches — then units and measurement, and go on to study the states of matter and their changes, the properties and changes of matter, the standard techniques for separating mixtures, and the classification of mixtures.",
+        "Period I of the MoE Grade 10 Chemistry syllabus. Learners meet the development of chemistry — the scientific method, its contributors and its branches — then units and measurement, chemical symbols, formulae and the naming of compounds, and laboratory apparatus and safety. Topic II goes on to the states of matter and their changes, the properties and changes of matter, the standard techniques for separating mixtures, and the classification of mixtures.",
       topics: [
         {
+          // source: LibreTexts (Introductory Chemistry) — The Scientific Method: How Chemists Think & Areas of Chemistry (https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/01%3A_The_Chemical_World/1.03%3A_The_Scientific_Method_-_How_Chemists_Think)
           slug: "development-of-chemistry",
           title: "Development of Chemistry: Scientific Method, Contributors and Branches",
           objective:
@@ -356,6 +357,7 @@ export const chemistry: SubjectContent = {
           ],
         },
         {
+          // source: LibreTexts — SI Units of Measurement & Accuracy, Precision, and Significant Figures (https://chem.libretexts.org/Courses/Sacramento_City_College/Chem_400%3A_General_Chemistry_I/01%3A_Matter_Measurement_and_Problem_Solving/1.6%3A_The_Units_of_Measurement)
           slug: "units-of-measurement",
           title: "Units of Measurement, Scientific Notation and Accuracy",
           objective:
@@ -673,6 +675,522 @@ export const chemistry: SubjectContent = {
           ],
         },
         {
+          // source: LibreTexts — Nomenclature of Ionic, Covalent and Acid Compounds (https://chem.libretexts.org/Courses/University_of_Arkansas_Little_Rock/Chem_1300:_Preparatory_Chemistry/Learning_Modules/04:_Compounds_and_Molecules/4.05:_Nomenclature) and Naming Ionic/Covalent Compounds (Averill, General Chemistry)
+          slug: "chemical-symbols-formulae-and-naming",
+          title: "Chemical Symbols, Formulae and Naming Compounds",
+          objective:
+            "By the end of the topic, learners should be able to explain the origin of element symbols, write and interpret chemical formulae, distinguish empirical, molecular and structural formulae, and name simple ionic, molecular and acid compounds. (MoE Grade 10 Period I, Topic I, CONTENTS 3.)",
+          estimatedMinutes: 150,
+          notes: `## Introduction
+
+- Chemistry has its own shorthand: **symbols** for elements, **formulae** for substances, and rules for turning a formula into a **name**.
+- **This topic:** where element symbols come from; how to write and read a formula; the types of formula; and the rules for naming ionic, molecular and acid compounds.
+
+## Origin of chemical symbols
+
+- Each element has a one- or two-letter **symbol** agreed internationally (IUPAC).
+- **Rule:** first letter is a CAPITAL, second letter (if any) is lower-case — Ca (calcium) not CA, Co (cobalt) not CO.
+- Many symbols come from the **English name** — O (oxygen), H (hydrogen), C (carbon).
+- Some come from **Latin or other older names**:
+
+| Element | Symbol | Origin of symbol |
+|---|---|---|
+| Sodium | Na | Latin *natrium* |
+| Potassium | K | Latin *kalium* |
+| Iron | Fe | Latin *ferrum* |
+| Copper | Cu | Latin *cuprum* |
+| Lead | Pb | Latin *plumbum* |
+| Silver | Ag | Latin *argentum* |
+| Gold | Au | Latin *aurum* |
+| Tin | Sn | Latin *stannum* |
+| Mercury | Hg | Latin *hydrargyrum* |
+
+## Writing chemical formulae
+
+- A **chemical formula** shows the elements in a substance and the ratio of their atoms, using symbols and subscripts.
+- A **subscript** gives the number of atoms of the element to its left: H₂O = 2 H and 1 O; H₂SO₄ = 2 H, 1 S, 4 O.
+- **Ions** carry a charge (valency). To write the formula of an ionic compound, balance total positive and total negative charge so the compound is neutral.
+- **Cross-over method:** write the two ions, then use each ion's charge as the subscript of the other; cancel to the simplest whole-number ratio.
+
+| Ion | Formula | Ion | Formula |
+|---|---|---|---|
+| Sodium | Na⁺ | Chloride | Cl⁻ |
+| Potassium | K⁺ | Hydroxide | OH⁻ |
+| Calcium | Ca²⁺ | Oxide | O²⁻ |
+| Magnesium | Mg²⁺ | Sulfate | SO₄²⁻ |
+| Aluminium | Al³⁺ | Nitrate | NO₃⁻ |
+| Ammonium | NH₄⁺ | Carbonate | CO₃²⁻ |
+
+- Example: Ca²⁺ with NO₃⁻ → charges 2 and 1 → Ca(NO₃)₂. A polyatomic ion taken more than once is written in **brackets** with the subscript outside.
+
+## Types of formula
+
+- **Empirical formula** — the simplest whole-number ratio of atoms. Glucose C₆H₁₂O₆ has empirical formula CH₂O.
+- **Molecular formula** — the actual number of atoms in one molecule. Glucose = C₆H₁₂O₆.
+- **Structural formula** — shows how the atoms are joined by bonds, e.g. H–O–H for water.
+
+## Naming ionic compounds
+
+- **Cation (metal) first, then anion (non-metal).** The non-metal ending changes to **-ide**: NaCl = sodium chloride, MgO = magnesium oxide.
+- **Metals with more than one charge** (most transition metals) take a **Roman numeral** giving the charge: FeCl₂ = iron(II) chloride, FeCl₃ = iron(III) chloride.
+- **Polyatomic ions** keep their own names: CaCO₃ = calcium carbonate, KNO₃ = potassium nitrate, Na₂SO₄ = sodium sulfate.
+- Oxyanion endings: more oxygen = **-ate** (SO₄²⁻ sulfate, NO₃⁻ nitrate); fewer oxygen = **-ite** (SO₃²⁻ sulfite, NO₂⁻ nitrite).
+
+## Naming molecular (covalent) compounds
+
+- Two **non-metals** combine. Use **Greek prefixes** to show how many atoms of each: mono-, di-, tri-, tetra-, penta-.
+- **mono-** is not used on the first element.
+
+| Formula | Name |
+|---|---|
+| CO | carbon monoxide |
+| CO₂ | carbon dioxide |
+| N₂O₅ | dinitrogen pentoxide |
+| SF₄ | sulfur tetrafluoride |
+| CCl₄ | carbon tetrachloride |
+
+- A few keep **common names**: H₂O water, NH₃ ammonia, CH₄ methane.
+
+## Naming acids (brief)
+
+- **-ide → hydro…ic acid:** HCl = hydrochloric acid.
+- **-ate → …ic acid:** HNO₃ = nitric acid, H₂SO₄ = sulfuric acid.
+- **-ite → …ous acid:** HNO₂ = nitrous acid.
+
+## Common errors and misconceptions
+
+- **Wrong capitalisation** — Co is cobalt, but CO is carbon monoxide. Case changes the meaning.
+- **Forgetting brackets** — calcium nitrate is Ca(NO₃)₂, not CaNO₃₂.
+- **Using prefixes on ionic compounds** — prefixes are only for molecular (non-metal + non-metal) compounds; ionic names use charge balance and Roman numerals instead.`,
+          workedExample: `**Task.** (a) Write the formula of aluminium sulfate. (b) Name Fe₂O₃ and N₂O₅.
+
+**(a) Aluminium sulfate**
+1. Identify the ions: aluminium Al³⁺ and sulfate SO₄²⁻.
+2. Balance the charge by cross-over: Al gets subscript 2, sulfate gets subscript 3.
+3. Because sulfate (a polyatomic ion) is taken 3 times, put it in brackets.
+   → **Al₂(SO₄)₃**. Check: 2 × (+3) = +6 and 3 × (−2) = −6 → neutral. ✓
+
+**(b) Naming**
+- Fe₂O₃: oxide is O²⁻, so three oxides carry −6; two iron ions must total +6, so each Fe is +3 → **iron(III) oxide**.
+- N₂O₅: two non-metals, so use prefixes — 2 nitrogen (di-) and 5 oxygen (penta-) → **dinitrogen pentoxide**.`,
+          quiz: [
+            {
+              prompt: "The correct way to write the symbol for cobalt is…",
+              options: ["Co", "CO", "CO₂", "cO"],
+              correctIndex: 0,
+              explanation: "First letter capital, second lower-case: Co. CO is carbon monoxide.",
+            },
+            {
+              prompt: "The symbol Na for sodium comes from the Latin word…",
+              options: ["natrium", "sodium", "kalium", "natron ash"],
+              correctIndex: 0,
+              explanation: "Na is from Latin natrium.",
+            },
+            {
+              prompt: "Which symbol correctly represents iron?",
+              options: ["Fe", "Ir", "In", "Fr"],
+              correctIndex: 0,
+              explanation: "Fe is from Latin ferrum; Ir is iridium, Fr is francium.",
+            },
+            {
+              prompt: "In H₂SO₄ the number of oxygen atoms is…",
+              options: ["4", "2", "1", "6"],
+              correctIndex: 0,
+              explanation: "The subscript 4 on O gives four oxygen atoms.",
+            },
+            {
+              prompt: "The formula of calcium nitrate is…",
+              options: ["Ca(NO₃)₂", "CaNO₃", "Ca₂NO₃", "Ca(NO₃)"],
+              correctIndex: 0,
+              explanation: "Ca²⁺ needs two NO₃⁻; the polyatomic ion is bracketed.",
+            },
+            {
+              prompt: "The empirical formula of glucose, C₆H₁₂O₆, is…",
+              options: ["CH₂O", "C₆H₁₂O₆", "C₂H₄O₂", "CHO"],
+              correctIndex: 0,
+              explanation: "Dividing by 6 gives the simplest ratio CH₂O.",
+            },
+            {
+              prompt: "A formula that shows how atoms are joined by bonds is a…",
+              options: ["structural formula", "empirical formula", "molecular formula", "ionic formula"],
+              correctIndex: 0,
+              explanation: "Structural formulae show the bonding arrangement.",
+            },
+            {
+              prompt: "NaCl is named…",
+              options: ["sodium chloride", "sodium chlorine", "sodium chlorate", "sodium chloride(I)"],
+              correctIndex: 0,
+              explanation: "Metal first, non-metal ending -ide: sodium chloride.",
+            },
+            {
+              prompt: "FeCl₃ is correctly named…",
+              options: ["iron(III) chloride", "iron chloride", "iron(II) chloride", "triiron chloride"],
+              correctIndex: 0,
+              explanation: "Three Cl⁻ means Fe is +3, shown as iron(III).",
+            },
+            {
+              prompt: "Which compound needs a Roman numeral in its name?",
+              options: ["CuO", "NaCl", "MgO", "CaCl₂"],
+              correctIndex: 0,
+              explanation: "Copper has more than one possible charge, so CuO = copper(II) oxide.",
+            },
+            {
+              prompt: "The name of CO₂ is…",
+              options: ["carbon dioxide", "carbon oxide", "dicarbon oxide", "carbon(II) oxide"],
+              correctIndex: 0,
+              explanation: "Two oxygens → di-oxide; carbon dioxide.",
+            },
+            {
+              prompt: "The prefix used for five atoms is…",
+              options: ["penta-", "tetra-", "hexa-", "tri-"],
+              correctIndex: 0,
+              explanation: "Penta- = 5.",
+            },
+            {
+              prompt: "N₂O₅ is named…",
+              options: ["dinitrogen pentoxide", "nitrogen oxide", "nitrogen(V) oxide", "dinitrogen oxide"],
+              correctIndex: 0,
+              explanation: "Two nitrogen (di-), five oxygen (penta-): dinitrogen pentoxide.",
+            },
+            {
+              prompt: "Greek prefixes such as di- and tri- are used when naming…",
+              options: ["molecular (non-metal + non-metal) compounds", "ionic compounds", "metals", "acids only"],
+              correctIndex: 0,
+              explanation: "Prefixes apply to covalent/molecular compounds.",
+            },
+            {
+              prompt: "The polyatomic ion CO₃²⁻ is called…",
+              options: ["carbonate", "carbon trioxide", "carbonite", "bicarbon"],
+              correctIndex: 0,
+              explanation: "CO₃²⁻ is the carbonate ion.",
+            },
+            {
+              prompt: "SO₃²⁻ (fewer oxygens than sulfate) is named…",
+              options: ["sulfite", "sulfate", "sulfide", "sulfur trioxide"],
+              correctIndex: 0,
+              explanation: "The -ite ending marks the oxyanion with fewer oxygens.",
+            },
+            {
+              prompt: "HCl(aq) is named…",
+              options: ["hydrochloric acid", "chloric acid", "hydrogen chlorate", "chlorous acid"],
+              correctIndex: 0,
+              explanation: "An -ide anion gives a hydro…ic acid: hydrochloric acid.",
+            },
+            {
+              prompt: "The formula of aluminium oxide (Al³⁺ and O²⁻) is…",
+              options: ["Al₂O₃", "AlO", "Al₃O₂", "AlO₂"],
+              correctIndex: 0,
+              explanation: "Cross-over of charges 3 and 2 gives Al₂O₃.",
+            },
+            {
+              prompt: "A subscript in a formula tells you the…",
+              options: ["number of atoms of the element to its left", "charge on the atom", "mass of the atom", "state of the substance"],
+              correctIndex: 0,
+              explanation: "Subscripts count atoms of the preceding symbol.",
+            },
+            {
+              prompt: "Which is a common (non-systematic) name kept by convention?",
+              options: ["water for H₂O", "sodium chloride for NaCl", "iron(III) oxide for Fe₂O₃", "carbon dioxide for CO₂"],
+              correctIndex: 0,
+              explanation: "H₂O is called water rather than dihydrogen monoxide.",
+            },
+          ],
+          test: [
+            {
+              type: "MULTIPLE_CHOICE",
+              prompt: "Which formula is correct for magnesium hydroxide?",
+              options: ["Mg(OH)₂", "MgOH", "Mg₂OH", "Mg(OH)"],
+              correctIndex: 0,
+              answerKey: "Mg²⁺ balances two OH⁻, and the polyatomic hydroxide is bracketed: Mg(OH)₂.",
+              marks: 1,
+            },
+            {
+              type: "MULTIPLE_CHOICE",
+              prompt: "CuBr₂ is correctly named…",
+              options: ["copper(II) bromide", "copper bromide", "copper(I) bromide", "dicopper bromide"],
+              correctIndex: 0,
+              answerKey: "Two Br⁻ means copper is +2, shown as copper(II) bromide.",
+              marks: 1,
+            },
+            {
+              type: "SHORT_ANSWER",
+              prompt: "State the difference between an empirical formula and a molecular formula, using hydrogen peroxide (molecular formula H₂O₂) as your example.",
+              answerKey: "The molecular formula gives the actual number of atoms in a molecule (H₂O₂ = 2 H and 2 O). The empirical formula gives the simplest whole-number ratio; dividing by 2 gives HO. So H₂O₂ has empirical formula HO. Award marks for both definitions and the correct empirical formula.",
+              marks: 3,
+            },
+            {
+              type: "SHORT_ANSWER",
+              prompt: "Write formulae for: (a) potassium sulfate, (b) aluminium chloride, (c) ammonium nitrate.",
+              answerKey: "(a) K⁺ and SO₄²⁻ → K₂SO₄. (b) Al³⁺ and Cl⁻ → AlCl₃. (c) NH₄⁺ and NO₃⁻ → NH₄NO₃. One mark each.",
+              marks: 3,
+            },
+            {
+              type: "ESSAY",
+              prompt: "Explain the rules used to name (i) ionic compounds and (ii) molecular (covalent) compounds, giving at least two worked examples of each and explaining when a Roman numeral is needed.",
+              answerKey: "A strong answer explains that ionic compounds are named cation (metal) first, then anion with the ending changed to -ide (or the polyatomic ion's own name such as sulfate, nitrate, carbonate). Examples: NaCl sodium chloride, MgO magnesium oxide, CaCO₃ calcium carbonate. A Roman numeral is added when the metal can form more than one ion (most transition metals) to show the charge in that compound — FeCl₂ iron(II) chloride versus FeCl₃ iron(III) chloride, CuO copper(II) oxide. Molecular compounds (non-metal + non-metal) are named with Greek prefixes mono-, di-, tri-, tetra-, penta- giving the number of each atom, with mono- omitted on the first element: CO carbon monoxide, CO₂ carbon dioxide, N₂O₅ dinitrogen pentoxide, SF₄ sulfur tetrafluoride. Award marks for both naming systems, the correct use of Roman numerals, and at least two valid examples of each type.",
+              marks: 10,
+            },
+          ],
+        },
+        {
+          // source: LibreTexts (Intro to CHEM 101 Lab Manual) — Safety, Equipment, and Check-In (https://chem.libretexts.org/Workbench/Intro_to_CHEM_101_-_Lab_Manual/Week_1:_Check-In_and_Safety/Safety,_Equipment,_and_Check-In)
+          slug: "laboratory-apparatus-and-safety",
+          title: "Laboratory Apparatus and Safety Rules",
+          objective:
+            "By the end of the topic, learners should be able to name common laboratory apparatus and state their uses, apply the basic laboratory safety rules, and recognise common hazard symbols. (MoE Grade 10 Period I, Topic I, CONTENTS 4.)",
+          estimatedMinutes: 120,
+          notes: `## Introduction
+
+- The laboratory is where chemistry is tested by experiment — but it holds chemicals, glassware, heat and gases.
+- **This topic:** the common apparatus and what each is for; the basic safety rules; and hazard symbols.
+
+## Common laboratory apparatus
+
+| Apparatus | Main use |
+|---|---|
+| **Beaker** | Holding, mixing and heating liquids (rough volumes) |
+| **Conical (Erlenmeyer) flask** | Mixing and swirling liquids; used in titration |
+| **Measuring (graduated) cylinder** | Measuring the volume of a liquid |
+| **Pipette** | Delivering an accurate fixed volume of liquid |
+| **Burette** | Delivering variable, accurate volumes in titration |
+| **Test tube** | Small-scale reactions and tests |
+| **Test-tube holder / rack** | Holding hot or many test tubes safely |
+| **Bunsen burner** | Producing a hot, controllable flame for heating |
+| **Tripod and gauze** | Supporting apparatus over a flame |
+| **Watch glass / evaporating dish** | Evaporating small amounts of liquid; holding solids |
+| **Funnel + filter paper** | Filtering to separate a solid from a liquid |
+| **Thermometer** | Measuring temperature |
+| **Balance** | Measuring mass |
+
+\`\`\`svg Some common laboratory apparatus
+<svg viewBox="0 0 320 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Outlines of a beaker, conical flask, test tube and measuring cylinder">
+  <g fill="none" stroke="#b45309" stroke-width="2">
+    <path d="M20 30 L20 95 Q20 105 30 105 L60 105 Q70 105 70 95 L70 30"/>
+    <line x1="16" y1="30" x2="74" y2="30"/>
+    <path d="M110 30 L100 100 Q100 108 108 108 L140 108 Q148 108 148 100 L138 30 Z"/>
+    <line x1="118" y1="30" x2="130" y2="30"/>
+    <path d="M190 25 L190 100 Q190 112 202 112 Q214 112 214 100 L214 25"/>
+    <line x1="186" y1="25" x2="218" y2="25"/>
+    <path d="M270 25 L270 105 Q270 112 278 112 L292 112 Q300 112 300 105 L300 25 Z"/>
+    <line x1="285" y1="45" x2="300" y2="45"/>
+    <line x1="285" y1="65" x2="300" y2="65"/>
+    <line x1="285" y1="85" x2="300" y2="85"/>
+  </g>
+  <text x="45" y="125" font-size="9" text-anchor="middle" fill="#92400e">beaker</text>
+  <text x="124" y="125" font-size="9" text-anchor="middle" fill="#92400e">flask</text>
+  <text x="202" y="125" font-size="9" text-anchor="middle" fill="#92400e">test tube</text>
+  <text x="285" y="125" font-size="9" text-anchor="middle" fill="#92400e">cylinder</text>
+</svg>
+\`\`\`
+
+## Basic laboratory safety rules
+
+1. **Wear eye protection** (safety goggles) whenever chemicals or heat are used.
+2. **Never eat, drink or taste** anything in the laboratory.
+3. **Do no unauthorised experiment;** never work in the lab without the teacher present.
+4. **Never inhale fumes directly;** use a fume cupboard for irritating or dangerous gases.
+5. **Handle chemicals carefully** — never return unused chemical to a reagent bottle; read the label twice.
+6. **Treat hot and cold glass as identical** — hot glass looks cold, so use tongs or a holder.
+7. **Tie back long hair** and secure loose clothing near flames.
+8. **Rinse spills off the skin immediately** with plenty of water and tell the teacher.
+9. **Dispose of waste correctly** — broken glass in the special bin, chemicals as directed.
+10. **Report every accident,** however small, to the teacher at once.
+11. **Know the location** of the fire extinguisher, fire blanket, eye-wash and first-aid kit.
+
+## Hazard symbols
+
+- Chemicals carry warning symbols so their dangers are seen at a glance.
+
+| Symbol meaning | Warns that the substance is… |
+|---|---|
+| **Flammable** | Easily catches fire |
+| **Toxic** | Poisonous — can cause death or serious harm |
+| **Corrosive** | Attacks and destroys skin, eyes and metals |
+| **Irritant / harmful** | Causes reddening or blistering of the skin |
+| **Oxidising** | Provides oxygen so other materials burn fiercely |
+| **Explosive** | May explode with heat, shock or a flame |
+
+## Common errors and misconceptions
+
+- **Thinking goggles are optional** — eye injuries are permanent; goggles are worn at all times when chemicals or heat are in use.
+- **Judging heat by looking** — hot glass and metal look exactly like cold; always assume apparatus near a flame is hot.
+- **Guessing volumes in a beaker** — a beaker's graduations are rough; use a measuring cylinder, pipette or burette when accuracy matters.`,
+          workedExample: `**Task.** A learner must measure out exactly 25.0 cm³ of acid, heat it gently, and record its temperature. Name the apparatus for each step and one safety rule that applies.
+
+**Step 1 — Measure exactly 25.0 cm³ of acid.**
+- Apparatus: a **pipette** (for an accurate fixed volume) or a **burette**; a measuring cylinder is less accurate.
+- Safety: **wear goggles** and never pipette by mouth — use a pipette filler; acid is corrosive.
+
+**Step 2 — Heat the acid gently.**
+- Apparatus: a **beaker** on a **gauze** and **tripod** over a **Bunsen burner** (a gentle, blue flame with the air-hole partly open).
+- Safety: **tie back hair,** point the tube/vessel away from people, and treat the glass as hot — use tongs.
+
+**Step 3 — Record the temperature.**
+- Apparatus: a **thermometer.**
+- Safety: do not use the thermometer as a stirrer; read it at eye level to avoid parallax.
+
+**Result.** Pipette → beaker with tripod, gauze and Bunsen burner → thermometer, with goggles worn throughout and the acid treated as corrosive.`,
+          quiz: [
+            {
+              prompt: "Which apparatus delivers an accurate fixed volume of liquid?",
+              options: ["Pipette", "Beaker", "Watch glass", "Test tube"],
+              correctIndex: 0,
+              explanation: "A pipette delivers one accurate fixed volume.",
+            },
+            {
+              prompt: "The apparatus used to measure the volume of a liquid roughly is the…",
+              options: ["measuring cylinder", "balance", "thermometer", "tripod"],
+              correctIndex: 0,
+              explanation: "A graduated (measuring) cylinder measures liquid volume.",
+            },
+            {
+              prompt: "A Bunsen burner is used to…",
+              options: ["produce a hot, controllable flame", "measure mass", "measure temperature", "filter a mixture"],
+              correctIndex: 0,
+              explanation: "The Bunsen burner gives a controllable flame for heating.",
+            },
+            {
+              prompt: "Which is used together with filter paper to separate a solid from a liquid?",
+              options: ["Funnel", "Burette", "Pipette", "Watch glass"],
+              correctIndex: 0,
+              explanation: "A funnel holds the filter paper for filtration.",
+            },
+            {
+              prompt: "In a titration, variable accurate volumes are delivered from a…",
+              options: ["burette", "beaker", "measuring cylinder", "test tube"],
+              correctIndex: 0,
+              explanation: "A burette delivers precise, adjustable volumes.",
+            },
+            {
+              prompt: "Eye protection in the lab should be worn…",
+              options: ["at all times when chemicals or heat are used", "only when told by a friend", "only during explosions", "never"],
+              correctIndex: 0,
+              explanation: "Goggles are worn whenever chemicals or heat are in use.",
+            },
+            {
+              prompt: "Why must you never judge whether glass is hot by looking at it?",
+              options: ["Hot glass looks the same as cold glass", "Glass changes colour when hot", "Hot glass glows blue", "Glass is always cold"],
+              correctIndex: 0,
+              explanation: "Hot glass looks identical to cold glass, so assume it is hot.",
+            },
+            {
+              prompt: "Eating and drinking in the laboratory is…",
+              options: ["never allowed", "allowed at the back bench", "allowed with goggles on", "allowed after washing hands"],
+              correctIndex: 0,
+              explanation: "Food and drink are never permitted in the lab.",
+            },
+            {
+              prompt: "A 'corrosive' hazard symbol warns that a substance…",
+              options: ["attacks and destroys skin, eyes and metals", "catches fire easily", "is radioactive", "is magnetic"],
+              correctIndex: 0,
+              explanation: "Corrosive substances destroy living tissue and metals.",
+            },
+            {
+              prompt: "The 'flammable' hazard symbol warns that a substance…",
+              options: ["catches fire easily", "is poisonous", "is corrosive", "is an oxidiser"],
+              correctIndex: 0,
+              explanation: "Flammable substances ignite readily.",
+            },
+            {
+              prompt: "If a chemical spills on your skin you should first…",
+              options: ["rinse it off with plenty of water and tell the teacher", "wipe it with your shirt", "ignore it if it does not hurt", "put on gloves"],
+              correctIndex: 0,
+              explanation: "Rinse immediately with water and report it.",
+            },
+            {
+              prompt: "Unused chemical taken from a reagent bottle should be…",
+              options: ["disposed of as directed, never returned to the bottle", "poured back into the bottle", "shared with a friend", "kept in your pocket"],
+              correctIndex: 0,
+              explanation: "Returning chemical risks contaminating the whole bottle.",
+            },
+            {
+              prompt: "Temperature is measured with a…",
+              options: ["thermometer", "balance", "burette", "gauze"],
+              correctIndex: 0,
+              explanation: "A thermometer measures temperature.",
+            },
+            {
+              prompt: "Mass is measured with a…",
+              options: ["balance", "measuring cylinder", "pipette", "thermometer"],
+              correctIndex: 0,
+              explanation: "A balance measures mass.",
+            },
+            {
+              prompt: "The tripod and gauze are used to…",
+              options: ["support apparatus over a flame", "measure volume", "filter mixtures", "store chemicals"],
+              correctIndex: 0,
+              explanation: "They support a beaker or flask above the Bunsen burner.",
+            },
+            {
+              prompt: "Long hair in the laboratory should be…",
+              options: ["tied back", "left loose", "covered in oil", "cut short"],
+              correctIndex: 0,
+              explanation: "Tie hair back to keep it away from flames and chemicals.",
+            },
+            {
+              prompt: "The conical (Erlenmeyer) flask is especially useful because…",
+              options: ["it can be swirled without spilling, useful in titration", "it measures exact volumes", "it withstands no heat", "it filters solids"],
+              correctIndex: 0,
+              explanation: "Its narrow neck lets it be swirled during titration.",
+            },
+            {
+              prompt: "An 'oxidising' hazard symbol warns that a substance…",
+              options: ["provides oxygen so other materials burn fiercely", "is flammable itself", "is toxic to breathe", "is corrosive to metal"],
+              correctIndex: 0,
+              explanation: "Oxidisers supply oxygen and intensify fires.",
+            },
+            {
+              prompt: "Before leaving the laboratory you should always…",
+              options: ["wash your hands", "leave taps running", "keep goggles on outside", "eat a snack"],
+              correctIndex: 0,
+              explanation: "Wash hands to remove any chemical traces.",
+            },
+            {
+              prompt: "You should report an accident to the teacher…",
+              options: ["however small it appears", "only if someone is bleeding", "only at the end of the lesson", "never"],
+              correctIndex: 0,
+              explanation: "All accidents are reported at once, no matter how minor.",
+            },
+          ],
+          test: [
+            {
+              type: "MULTIPLE_CHOICE",
+              prompt: "Which apparatus is most suitable for measuring exactly 25.0 cm³ of a solution for a titration?",
+              options: ["Pipette", "Beaker", "Conical flask", "Watch glass"],
+              correctIndex: 0,
+              answerKey: "A pipette delivers an accurate fixed volume; a beaker and flask are only approximate.",
+              marks: 1,
+            },
+            {
+              type: "MULTIPLE_CHOICE",
+              prompt: "A bottle of concentrated acid carries a symbol warning it destroys skin and metals. This hazard is…",
+              options: ["corrosive", "flammable", "oxidising", "radioactive"],
+              correctIndex: 0,
+              answerKey: "Destroying skin and metals is the corrosive hazard.",
+              marks: 1,
+            },
+            {
+              type: "SHORT_ANSWER",
+              prompt: "Name three pieces of apparatus you would use to heat a liquid in a beaker over a flame, and give one safety rule for the operation.",
+              answerKey: "Bunsen burner, tripod and gauze (mat/heatproof mat also acceptable). Safety rule: wear goggles / tie back hair / treat the glass as hot and use tongs / do not leave the flame unattended. Award marks for three correct apparatus and one valid safety rule.",
+              marks: 4,
+            },
+            {
+              type: "SHORT_ANSWER",
+              prompt: "State four basic laboratory safety rules.",
+              answerKey: "Any four of: wear goggles when using chemicals/heat; never eat or drink in the lab; do no unauthorised experiment / never work without the teacher; never inhale fumes directly / use a fume cupboard; treat glass as hot; tie back hair; rinse spills with water and report them; dispose of waste correctly; report all accidents; know where the safety equipment is. One mark each.",
+              marks: 4,
+            },
+            {
+              type: "ESSAY",
+              prompt: "A student is asked to prepare and filter a mixture of sand and salt solution, then measure the temperature of the filtrate. Describe the apparatus needed at each stage and the safety precautions that should be observed throughout.",
+              answerKey: "A strong answer identifies the apparatus stage by stage: to make/hold the mixture a beaker and stirring rod; to filter, a funnel lined with filter paper standing in a conical flask or beaker to collect the filtrate (sand stays on the paper as residue, salt solution passes through); to measure temperature, a thermometer read at eye level. Safety precautions: wear goggles throughout; do not use the thermometer as a stirrer; handle glass carefully and treat apparatus near heat as hot; clean up and dispose of the residue correctly; wash hands before leaving; report any breakage or spill. Award marks for correct apparatus at each of the three stages and for at least three relevant safety precautions.",
+              marks: 10,
+            },
+          ],
+        },
+        {
+          // source: LibreTexts (Chemistry for Changing Times) — Solids, Liquids, and Gases & Phase Changes (https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Chemistry_for_Changing_Times_(Hill_and_McCreary)/06:_Gases_Liquids_Solids_..._and_Intermolecular_Forces/6.01:_Solids_Liquids_and_Gases)
           slug: "states-of-matter-and-their-changes",
           title: "States of Matter and Their Changes",
           objective:
@@ -994,6 +1512,7 @@ export const chemistry: SubjectContent = {
           ],
         },
         {
+          // source: OpenStax Chemistry 2e — 1.3 Physical and Chemical Properties (https://openstax.org/books/chemistry-2e/pages/1-3-physical-and-chemical-properties)
           slug: "properties-and-changes-of-matter",
           title: "Properties and Changes of Matter",
           objective:
@@ -1296,6 +1815,7 @@ Then: (vi) 5.6 g of iron reacts completely with 3.2 g of sulfur in a closed tube
           ],
         },
         {
+          // source: LibreTexts (Introductory Chemistry CK-12) — 2.8 Methods for Separating Mixtures (https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(CK-12)/02:_Matter_and_Change/2.08:_Methods_for_Separating_Mixtures)
           slug: "separation-techniques-for-mixtures",
           title: "Standard Separation Techniques for Mixtures",
           objective:
@@ -1585,6 +2105,7 @@ Then: (vi) 5.6 g of iron reacts completely with 3.2 g of sulfur in a closed tube
           ],
         },
         {
+          // source: LibreTexts (Introductory Chemistry) — 3.4 Classifying Matter According to Its Composition (https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/03%3A_Matter_and_Energy/3.04%3A_Classifying_Matter_According_to_Its_Composition)
           slug: "classification-of-mixtures",
           title: "Classification of Mixtures",
           objective:
