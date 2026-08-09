@@ -24,6 +24,7 @@ export const geography: SubjectContent = {
         "Period I of the MoE Grade 10 Geography syllabus (Unit 1: The Solar System). Learners place the Earth in the solar system, describe its shape and size, use latitude and longitude to locate places and calculate time, and explain the effects of the Earth's rotation and revolution.",
       topics: [
         {
+          // source: OpenStax — Astronomy 2e, 7.2 Composition and Structure of Planets (https://openstax.org/books/astronomy-2e/pages/7-2-composition-and-structure-of-planets)
           slug: "earth-as-a-planet",
           title: "The Earth as a Planet",
           objective:
@@ -93,8 +94,6 @@ Being large does not make a planet suitable for life. Jupiter is a **gas giant**
 *The corrected statement:* Jupiter is the largest planet but the fifth from the Sun; Mercury is the closest; and Earth, the third planet, supports life because of its distance and conditions, not because of any planet's size.
 
 **The lesson:** distance from the Sun and the ability to support life depend on a planet's position and conditions, not on how big it is.`,
-          teachingTip:
-            "Do the solar system to scale outside if you can, even roughly: pace out the planets across the schoolyard with the Sun at one end, and the vast empty gaps between the outer planets become real in a way a textbook diagram never manages. Attack the common error that a bigger planet is closer or better for life — ask why Earth, not giant Jupiter, has life, and let the class reason to distance, water and atmosphere. Keep the order drilled with a mnemonic the class invents themselves, and mention that Pluto was reclassified as a dwarf planet, which learners find genuinely interesting and remember.",
           quiz: [
             { prompt: "How many planets are in the solar system?", options: ["Seven", "Eight", "Nine", "Ten"], correctIndex: 1, explanation: "Eight, from Mercury to Neptune; Pluto is now a dwarf planet." },
             { prompt: "Which planet is closest to the Sun?", options: ["Earth", "Venus", "Mercury", "Mars"], correctIndex: 2, explanation: "Mercury is the innermost planet." },
@@ -126,6 +125,7 @@ Being large does not make a planet suitable for life. Jupiter is a **gas giant**
           ],
         },
         {
+          // source: Geosciences LibreTexts — Physical Geography and Natural Disasters (Dastrup), 3.1 Earth as a Planetary Body (https://geo.libretexts.org/Bookshelves/Geography_(Physical)/Physical_Geography_and_Natural_Disasters_(Dastrup)/03:_Planet_Earth/3.01:_Earth_as_a_Planetary_Body)
           slug: "shape-and-size-of-the-earth",
           title: "The Shape and Size of the Earth",
           objective:
@@ -179,8 +179,6 @@ During a **lunar eclipse** the Earth passes between the Sun and the Moon and cas
 *Only a sphere casts a circular shadow from every angle.* A flat disc would sometimes cast a straight-edged or oval shadow depending on its orientation. Since the Earth's shadow is always circular, the Earth is a sphere.
 
 **Conclusion:** both observations — the hull vanishing before the mast, and the always-circular shadow — are explained by a spherical Earth and would not occur on a flat one. Together they are strong, everyday evidence that the Earth is a sphere.`,
-          teachingTip:
-            "The ship-and-horizon evidence is the one learners can almost see for themselves, so build the lesson around it: draw a curved surface and a flat one on the board and ask, for each, what would happen as a ship sailed away — the class works out that only the curved surface hides the hull first. That reasoning, rather than a bare list of 'proofs', is what an examination rewards. Bring in the lunar-eclipse shadow and the space photographs to reinforce it. Keep the shape precise — an oblate spheroid, flattened at the poles — and connect the flattening to rotation, which ties this topic to the Earth's movements taught later in the same period.",
           quiz: [
             { prompt: "The shape of the Earth is best described as", options: ["a perfect sphere", "an oblate spheroid", "a flat disc", "a cube"], correctIndex: 1, explanation: "It is flattened at the poles and bulges at the equator." },
             { prompt: "The Earth is flattened at the", options: ["equator", "poles", "tropics", "prime meridian"], correctIndex: 1, explanation: "Rotation causes flattening at the poles and bulging at the equator." },
@@ -212,6 +210,7 @@ During a **lunar eclipse** the Earth passes between the Sun and the Moon and cas
           ],
         },
         {
+          // source: Geosciences LibreTexts — Physical Geography (Lenkeit-Meezan), 1.2 Location and Time on Earth (https://geo.libretexts.org/Bookshelves/Geography_(Physical)/Physical_Geography_(Lenkeit-Meezan)/01:_Measuring_Monitoring_and_Describing_the_Earth/1.02:_Location_and_Time_on_Earth)
           slug: "latitude-longitude-and-time",
           title: "Latitude, Longitude and Time",
           objective:
@@ -302,8 +301,6 @@ The town is to the **west** of Greenwich. Places west are **behind** in time, so
 *A quick check on direction:* the Sun rises in the east and moves west, so the Sun reaches Greenwich before it reaches a town 45° further west. The western town's clock must therefore be earlier — 9:00 a.m. when Greenwich is at noon. The reasoning agrees with the calculation.
 
 *The rule to carry away:* **longitude ÷ 15 = hours; east is ahead (add), west is behind (subtract).**`,
-          teachingTip:
-            "Latitude and longitude are confused constantly, so fix them with a physical image: latitude lines are the 'rungs of a ladder' running across, telling you how far up or down (north/south) you are; longitude lines run top to bottom from pole to pole. Say 'latitude = flat, like the equator' to lock the direction. For time, derive the 15°-per-hour rule with the class from 360 ÷ 24 rather than stating it, so they can rebuild it if they forget. Then drill the single sentence 'east is ahead, west is behind' until it is automatic, and always have learners sanity-check with the Sun: it rises in the east, so eastern places are ahead. A wall map with the grid marked, referred to constantly, does most of the teaching.",
           quiz: [
             { prompt: "Lines of latitude run", options: ["north–south", "east–west", "from pole to pole", "diagonally"], correctIndex: 1, explanation: "Parallels of latitude run east–west, parallel to the equator." },
             { prompt: "Lines of longitude run", options: ["east–west", "north–south from pole to pole", "around the equator", "in circles"], correctIndex: 1, explanation: "Meridians of longitude run north–south." },
@@ -335,6 +332,7 @@ The town is to the **west** of Greenwich. Places west are **behind** in time, so
           ],
         },
         {
+          // source: Geosciences LibreTexts — Introduction to Earth Science (GEOL 121), 6.3 The Sun and the Earth-Moon System (https://geo.libretexts.org/Courses/Coalinga_College/Introduction_to_Earth_Science_(C-ID:_GEOL_121)/06:_Climate_and_Climate_Change/6.03:_The_Sun_and_the_Earth-Moon_System)
           slug: "earths-movements",
           title: "The Earth's Movements: Rotation and Revolution",
           objective:
@@ -393,9 +391,28 @@ Because the axis keeps pointing the same way, different hemispheres lean towards
 - Instead of hot and cold seasons: a **wet season (May–October)** and a **dry season (November–April)**.
 - Governed by the movement of the rain-bringing wind belt (the Inter-Tropical Convergence Zone), not by the tilt-driven temperature seasons of higher latitudes.
 
+## Eclipses
+
+An **eclipse** happens when one body passes into the shadow of another, so that the Sun's light is blocked.
+
+- A shadow has two parts: the **umbra** — the inner cone where all the Sun's light is blocked — and the **penumbra** — the outer part where only some light is blocked.
+
+**Solar eclipse (eclipse of the Sun):**
+- Occurs at **new moon**, when the **Moon passes directly between the Sun and the Earth**.
+- The Moon's shadow falls on the Earth; observers in the umbra see the Sun blocked out.
+- Lasts only minutes because the Moon's shadow covers only a small area.
+
+**Lunar eclipse (eclipse of the Moon):**
+- Occurs at **full moon**, when the **Earth passes directly between the Sun and the Moon**.
+- The Earth's shadow falls on the Moon; a total lunar eclipse occurs when the whole Moon lies in the Earth's umbra.
+- Lasts for hours and is visible to anyone who can see the Moon.
+
+Eclipses do not happen every month because the Moon's orbit is slightly tilted, so the Sun, Earth and Moon are only occasionally exactly in line.
+
 ## Common errors and misconceptions
 
 - **Confusing rotation and revolution** — **rotation** is the Earth spinning on its axis once a day (day and night); **revolution** is its orbit round the Sun once a year (the seasons).
+- **Mixing up solar and lunar eclipses** — in a **solar** eclipse the **Moon** is in the middle (new moon); in a **lunar** eclipse the **Earth** is in the middle (full moon).
 - **Thinking the seasons are caused by distance from the Sun** — they are caused by the **tilt** of the Earth's axis, not by how near or far the Earth is; when it is summer in the north it is winter in the south *at the same distance*.
 - **Believing the whole Earth has four temperature seasons** — near the equator (like Liberia) the tilt has little effect, so there are **wet and dry** seasons instead.
 - **Saying the Sun rises in the west** — because the Earth rotates west-to-east, the Sun appears to rise in the **east** and set in the **west**.`,
@@ -413,8 +430,6 @@ Seasons are caused by the **tilt of the Earth's axis (23½°) combined with its 
 Liberia lies close to the equator (about 4°–8° N). Near the equator the Sun is high in the sky all year, so the angle of sunlight and the length of day change very little. Temperature therefore stays roughly constant, and there is no basis for hot and cold seasons. Instead Liberia has a **wet season (May–October)** and a **dry season (November–April)**, set by the seasonal movement of the rain-bearing wind belt rather than by temperature.
 
 **Answer:** distance cannot cause seasons because the hemispheres are opposite and the Earth is nearest the Sun in northern winter; the true cause is the axial tilt with revolution; and Liberia, near the equator, has wet and dry seasons instead of temperature seasons because the Sun stays nearly overhead all year.`,
-          teachingTip:
-            "The 'seasons are caused by distance from the Sun' misconception is stubborn and must be confronted directly. Ask the class when they think the Earth is closest to the Sun, then tell them it is early January — northern midwinter — and let the contradiction do the work. Follow with a demonstration: a lamp as the Sun and a tilted globe carried around it, the axis kept pointing at the same corner of the room throughout. Learners must see that the tilt does not swivel; that constancy is the whole mechanism. Then bring it home by asking why they themselves do not experience four seasons, turning an abstract lesson into an explanation of their own weather — the wet and dry seasons they live by.",
           quiz: [
             { prompt: "The Earth rotates on its axis from", options: ["east to west", "west to east", "north to south", "south to north"], correctIndex: 1, explanation: "West-to-east rotation makes the Sun appear to rise in the east." },
             { prompt: "One rotation of the Earth takes about", options: ["1 hour", "24 hours", "1 month", "1 year"], correctIndex: 1, explanation: "The Earth spins once on its axis in about 24 hours." },
@@ -436,6 +451,10 @@ Liberia lies close to the equator (about 4°–8° N). Near the equator the Sun 
             { prompt: "Liberia's wet season runs roughly from", options: ["November to April", "May to October", "January to March", "all year"], correctIndex: 1, explanation: "The wet season is about May to October; the dry season November to April." },
             { prompt: "The extra quarter-day each year is dealt with by", options: ["ignoring it", "adding a leap day every fourth year", "removing a day each year", "adding an hour daily"], correctIndex: 1, explanation: "Four quarter-days make one extra day every fourth year." },
             { prompt: "Near the equator the Sun is", options: ["never visible", "high in the sky all year", "only visible in winter", "always setting"], correctIndex: 1, explanation: "This is why equatorial regions have little temperature variation." },
+            { prompt: "A solar eclipse occurs when", options: ["the Earth is between the Sun and Moon", "the Moon is between the Sun and Earth", "the Sun is between the Earth and Moon", "the Moon is full"], correctIndex: 1, explanation: "At new moon the Moon passes between the Sun and Earth, blocking the Sun." },
+            { prompt: "A lunar eclipse occurs when", options: ["the Moon is between the Sun and Earth", "the Earth is between the Sun and Moon", "the Sun is between the Earth and Moon", "the Moon is new"], correctIndex: 1, explanation: "At full moon the Earth passes between the Sun and Moon, casting its shadow on the Moon." },
+            { prompt: "The inner, darkest part of a shadow where all light is blocked is the", options: ["penumbra", "umbra", "corona", "eclipse"], correctIndex: 1, explanation: "The umbra is the full-shadow cone; the penumbra is the partial shadow." },
+            { prompt: "A solar eclipse happens at", options: ["full moon", "new moon", "any time", "the equinox"], correctIndex: 1, explanation: "The Moon must be between the Sun and Earth, which is new moon." },
           ],
           test: [
             { type: "SHORT_ANSWER", prompt: "Distinguish between the Earth's rotation and its revolution, and give two effects of each.", answerKey: "Rotation is the spinning of the Earth on its axis, once in about 24 hours; effects include day and night, the apparent east–west movement of the Sun, time differences between meridians, and the deflection of winds and currents. Revolution is the movement of the Earth around the Sun, taking about 365¼ days; effects include the seasons, varying day length, the apparent movement of the overhead Sun between the tropics, and leap years. Award 2 marks for each definition and 1 for each of two effects per movement.", marks: 8 },

@@ -11,6 +11,7 @@ export const geographyG10P2: PeriodContent = {
     "Period II of the MoE Grade 10 Geography syllabus. Learners describe the Earth's external spheres (atmosphere, hydrosphere, biosphere, lithosphere) and its internal layers (crust, mantle, core), then study the three types of rock — igneous, sedimentary and metamorphic — and their characteristics and economic uses.",
   topics: [
     {
+      // source: Geosciences LibreTexts — Introduction to Earth Science (GEOL 121), 1.3 Components of the Earth System (https://geo.libretexts.org/Courses/Coalinga_College/Introduction_to_Earth_Science_(C-ID:_GEOL_121)/01:_Introduction_to_Earth_Science/1.03:_Components_of_the_Earth_System)
       slug: "structure-of-the-earth",
       title: "The External and Internal Structure of the Earth",
       objective:
@@ -86,8 +87,6 @@ Cutting the Earth open reveals three main layers, like a boiled egg:
 3. **Core** — the innermost layer of iron and nickel; a liquid outer core surrounds a solid inner core, and it is the hottest part of the Earth.
 
 **Link:** the spheres and the internal layers connect — the lithosphere (an external sphere) is made of the crust and the very top of the mantle.`,
-      teachingTip:
-        "The boiled-egg analogy (shell = crust, white = mantle, yolk = core) makes the internal structure stick, and the syllabus even suggests bringing an egg to class. For the spheres, have learners point to each one from the classroom window — sky (atmosphere), a puddle or river (hydrosphere), the ground (lithosphere), a tree or person (biosphere) — so the abstract terms map onto things they can see.",
       quiz: [
         {
           prompt: "The envelope of gases surrounding the Earth is the…",
@@ -259,6 +258,7 @@ Cutting the Earth open reveals three main layers, like a boiled egg:
       ],
     },
     {
+      // source: Geosciences LibreTexts — The Physical Environment (Ritter), 14.5.1 Rocks and the Rock Cycle (https://geo.libretexts.org/Bookshelves/Geography_(Physical)/The_Physical_Environment_(Ritter)/14:_Earth_Materials_and_Structure/14.05:_Rocks/14.5.01:_Rocks_and_the_Rock_Cycle)
       slug: "rocks-of-the-earth",
       title: "Rocks of the Earth",
       objective:
@@ -280,18 +280,18 @@ Cutting the Earth open reveals three main layers, like a boiled egg:
 
 Rocks are classified by **how they form**.
 
-### 1. Igneous rocks
+## Igneous rocks
 Formed when hot molten rock (**magma** below ground, **lava** above) **cools and solidifies**. The word comes from the Latin *ignis*, "fire".
 
-- Cooled slowly deep underground → large crystals, e.g. **granite**.
-- Cooled quickly at the surface → small crystals, e.g. **basalt**.
+- Cooled slowly deep underground (**intrusive**) → large crystals, e.g. **granite**.
+- Cooled quickly at the surface (**extrusive**) → small crystals, e.g. **basalt**.
 
-### 2. Sedimentary rocks
+## Sedimentary rocks
 Formed when small particles (**sediments**) — worn from other rocks, or the remains of living things — are **deposited in layers**, then pressed and cemented together over long periods. They often show **layers (strata)** and may contain **fossils**.
 
 - Examples: **sandstone**, **limestone**, **shale**.
 
-### 3. Metamorphic rocks
+## Metamorphic rocks
 Formed when existing rocks are changed by great **heat and/or pressure**, without fully melting. *Metamorphic* means "changed form".
 
 - Limestone → **marble**; shale → **slate**; granite → **gneiss**.
@@ -345,8 +345,6 @@ Rocks and the minerals in them are vital to Liberia's economy and everyday life:
 - **Evidence:** marble forms when **limestone** (a sedimentary rock) is subjected to great heat and pressure and is changed (metamorphosed) without fully melting. Its parent rock and the change it underwent make it metamorphic.
 
 **Conclusion:** the mode of formation — cooling of a melt, deposition of sediments, or alteration by heat and pressure — is the key to classifying any rock.`,
-      teachingTip:
-        "Bring in three real rock samples if you can — a coarse-grained igneous rock, a layered sedimentary rock, and a metamorphic rock — and let learners handle them while naming the clues (crystals, layers, fossils, hardness). If samples are scarce, use photographs. Connect each type to something local (laterite roads, limestone for cement, iron ore for export) so 'economic importance' is not just a list to recite.",
       quiz: [
         {
           prompt: "A naturally occurring solid with a definite chemical composition is a…",
