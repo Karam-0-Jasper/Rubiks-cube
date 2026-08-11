@@ -1,583 +1,381 @@
 import type { PeriodContent } from "@/content/types";
 
-// Aligned to the Liberian MoE National Curriculum for Mathematics, Grade 10,
-// Semester Two, Period IV: Topic 1 Linear Equations and Inequalities;
-// Topic 2 Relations and Functions.
+// Grade 10, Semester Two, Period IV of the MoE Mathematics syllabus:
+// Linear Equations and Inequalities; Relations and Functions. Notes rebuilt
+// from published sources (Siyavula, CK-12).
 export const mathematicsG10P4: PeriodContent = {
   grade: 10,
   number: 4,
-  title: "Linear Equations and Functions",
+  title: "Linear Equations, Inequalities and Functions",
   summary:
-    "Period IV of the MoE Grade 10 Mathematics syllabus. Learners solve linear equations and inequalities in one variable, including word problems and number-line representation, then meet relations and functions — mapping, domain and range, and function notation.",
+    "Period IV of the MoE Grade 10 Mathematics syllabus. Learners solve linear equations and word problems, solve and graph linear inequalities in one variable, work with relations and functions (domain, range, function notation), and use gradient and the distance formula in the coordinate plane.",
   topics: [
-{
-      slug: "linear-equations-and-inequalities",
-      title: "Linear Equations and Inequalities",
+    // source: Siyavula — Solving linear equations, Grade 10 (https://www.siyavula.com/read/za/mathematics/grade-10/equations-and-inequalities/04-equations-and-inequalities-01)
+    {
+      slug: "linear-equations",
+      title: "Solving Linear Equations and Word Problems",
       objective:
-        "By the end of the topic, learners should be able to solve linear equations in one variable, translate and solve word problems, solve linear inequalities, and represent inequality solutions on a number line.",
-      estimatedMinutes: 190,
-      notes: `## Introduction
+        "By the end of the topic, learners should be able to use the balance (equivalence) idea to solve linear equations in one variable, including those with brackets and fractions, and set up equations from word problems.",
+      estimatedMinutes: 120,
+      notes: `## Equality and equivalence
 
-- Core question of much of maths: *what value makes this statement true?*
-- **Equation** — two sides equal. **Inequality** — one side greater/less than the other.
-- **This lesson:** solving linear equations (brackets, fractions, variable on both sides); **word problems** → equations; solving inequalities and showing them on a **number line**.
+- An **equation** states that two expressions are equal.
+- **Equivalent equations** have the same solution. You keep equations equivalent by doing the **same operation to both sides** (add, subtract, multiply or divide).
+- The **solution set** is the value(s) of the variable that make the equation true.
 
-## Equations and equality
+## A linear equation
 
-An **equation** is a mathematical statement that two expressions are **equal**, joined by an "=" sign, e.g. 2x + 3 = 11.
+A **linear equation** has the variable to the power 1 only (no x², no 1/x). Its graph is a straight line and it has exactly one solution.
 
-To **solve** an equation is to find the value of the variable that makes it true — its **solution set**. The golden rule:
+## Steps to solve
 
-> Whatever you do to one side of an equation, you must do to the other, to keep it balanced.
+1. Remove brackets (distribute).
+2. Remove fractions by multiplying every term by the common denominator.
+3. Collect the variable terms on one side, the constants on the other.
+4. Simplify to the form ax = b.
+5. Divide both sides by a.
+6. Check by substituting back.
 
-## Solving linear equations
+## Worked pattern
 
-A **linear equation** has the variable to the power 1 only. Use inverse operations to undo what has been done to the variable.
-
-Solve 2x + 3 = 11:
-- Subtract 3 from both sides: 2x = 8
-- Divide both sides by 2: **x = 4**
-
-**Check:** 2(4) + 3 = 8 + 3 = 11 ✓
-
-### Equations with the variable on both sides
-Solve 5x − 2 = 3x + 8:
-- Subtract 3x from both sides: 2x − 2 = 8
-- Add 2: 2x = 10
-- Divide by 2: **x = 5**
-
-### Equations with brackets
-Expand first, then solve: 3(x − 4) = 9 → 3x − 12 = 9 → 3x = 21 → **x = 7**.
-
-### Equations with fractions
-Clear the fractions first by **multiplying every term** by the lowest common denominator (LCD).
-
-Solve x/2 + x/3 = 5:
-- The LCD of 2 and 3 is 6. Multiply every term by 6: 6(x/2) + 6(x/3) = 6(5) → 3x + 2x = 30.
-- Collect: 5x = 30 → **x = 6**. (Check: 6/2 + 6/3 = 3 + 2 = 5 ✓)
+2x + 5 = 13 → 2x = 8 → x = 4.
 
 ## Word problems
 
-Turn the words into an equation, then solve.
+1. Let a letter stand for the unknown.
+2. Translate the sentence into an equation.
+3. Solve and interpret the answer in context.
 
-*"A number multiplied by 4, then increased by 5, gives 29. Find the number."*
-- Let the number be x: 4x + 5 = 29
-- 4x = 24 → **x = 6**.
+"When 7 is added to a number, the result is 19." → x + 7 = 19 → x = 12.
 
-## Inequalities
+## Common errors
 
-An **inequality** compares two expressions that are not necessarily equal:
+- **Doing an operation to only one side** — always balance both sides.
+- **Sign errors when moving terms** — moving +5 to the other side makes it −5.
+- **Forgetting to multiply every term** when clearing fractions.`,
+      workedExample: `**Question:** Solve 3(x − 2) = 2x + 5.
+
+**Solution**
+
+*Step 1 — remove the bracket.*
+3x − 6 = 2x + 5
+
+*Step 2 — collect variable terms on one side.* Subtract 2x from both sides.
+3x − 2x − 6 = 5
+x − 6 = 5
+
+*Step 3 — collect constants.* Add 6 to both sides.
+x = 11
+
+*Step 4 — check.* Left: 3(11 − 2) = 3(9) = 27. Right: 2(11) + 5 = 22 + 5 = 27. ✔
+
+**Answer: x = 11**`,
+      quiz: [
+        { prompt: "Solve x + 8 = 15.", options: ["7", "23", "8", "−7"], correctIndex: 0, explanation: "Subtract 8: x = 7." },
+        { prompt: "Solve 2x = 18.", options: ["9", "16", "20", "36"], correctIndex: 0, explanation: "Divide by 2: x = 9." },
+        { prompt: "Solve 3x − 4 = 11.", options: ["5", "7", "3", "15"], correctIndex: 0, explanation: "3x = 15, x = 5." },
+        { prompt: "Equivalent equations have the same", options: ["coefficients", "solution", "number of terms", "graph slope only"], correctIndex: 1, explanation: "They share the same solution set." },
+        { prompt: "To keep an equation balanced you must", options: ["change one side", "do the same to both sides", "remove the variable", "add 1 to the left"], correctIndex: 1, explanation: "Whatever you do to one side you do to the other." },
+        { prompt: "Solve x/3 = 5.", options: ["8", "15", "2", "5/3"], correctIndex: 1, explanation: "Multiply both sides by 3: x = 15." },
+        { prompt: "Solve 5x + 2 = 3x + 10.", options: ["2", "4", "6", "3"], correctIndex: 1, explanation: "2x = 8, x = 4." },
+        { prompt: "A linear equation has the variable to the power", options: ["2", "1", "0", "any"], correctIndex: 1, explanation: "Power 1 only." },
+        { prompt: "Solve 2(x + 3) = 14.", options: ["4", "5", "7", "8"], correctIndex: 0, explanation: "2x + 6 = 14, 2x = 8, x = 4." },
+        { prompt: "'5 less than twice a number is 9' gives", options: ["2x − 5 = 9", "5 − 2x = 9", "2x + 5 = 9", "x − 5 = 9"], correctIndex: 0, explanation: "Twice the number less 5: 2x − 5 = 9." },
+        { prompt: "Solve 4x − 7 = 2x + 1.", options: ["2", "3", "4", "8"], correctIndex: 2, explanation: "2x = 8, x = 4." },
+        { prompt: "Solve −3x = 12.", options: ["4", "−4", "9", "−9"], correctIndex: 1, explanation: "Divide by −3: x = −4." },
+        { prompt: "Solve x − 5 = −2.", options: ["3", "−7", "7", "−3"], correctIndex: 0, explanation: "Add 5: x = 3." },
+        { prompt: "To clear the fraction in x/4 + 1 = 3, multiply every term by", options: ["1", "3", "4", "x"], correctIndex: 2, explanation: "The denominator is 4." },
+        { prompt: "Solve 6x = 0.", options: ["0", "6", "1", "no solution"], correctIndex: 0, explanation: "x = 0." },
+        { prompt: "When 7 is added to a number the result is 19. The number is", options: ["12", "26", "133", "7"], correctIndex: 0, explanation: "x + 7 = 19, x = 12." },
+        { prompt: "Solve 3(2x − 1) = 15.", options: ["2", "3", "4", "5"], correctIndex: 1, explanation: "6x − 3 = 15, 6x = 18, x = 3." },
+        { prompt: "The solution of 2x + 5 = 5 is", options: ["0", "5", "−5", "2.5"], correctIndex: 0, explanation: "2x = 0, x = 0." },
+        { prompt: "Moving +4 from the left to the right side of an equation makes it", options: ["+4", "−4", "×4", "÷4"], correctIndex: 1, explanation: "It changes sign to −4." },
+      ],
+      test: [
+        { type: "SHORT_ANSWER", prompt: "Solve 4(x − 1) = 2(x + 3) and check your answer.", answerKey: "4x − 4 = 2x + 6; 2x = 10; x = 5. Check: 4(4) = 16 and 2(8) = 16. Award 2 marks for expanding, 3 for solving, 2 for the check.", marks: 7 },
+        { type: "SHORT_ANSWER", prompt: "Solve x/2 + x/3 = 5.", answerKey: "Multiply by 6: 3x + 2x = 30, so 5x = 30, x = 6. Award 3 marks for clearing fractions, 2 for solving, 1 for the answer.", marks: 6 },
+        { type: "MULTIPLE_CHOICE", prompt: "Solve 5x − 3 = 2x + 9.", options: ["2", "4", "6", "3"], correctIndex: 1, answerKey: "3x = 12, x = 4. Option B.", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "The sum of three consecutive whole numbers is 72. Find the numbers.", answerKey: "Let the numbers be n, n+1, n+2. Then 3n + 3 = 72, 3n = 69, n = 23. Numbers: 23, 24, 25. Award 2 marks for setting up, 2 for solving, 2 for stating all three.", marks: 6 },
+        { type: "ESSAY", prompt: "Musu is three times as old as her brother. In 5 years the sum of their ages will be 46. Form an equation and find their present ages.", answerKey: "Let the brother's age be x, so Musu is 3x. In 5 years: (x + 5) + (3x + 5) = 46, so 4x + 10 = 46, 4x = 36, x = 9. Brother is 9, Musu is 27. Check in 5 years: 14 + 32 = 46. Award 3 marks for defining variables, 4 for the equation and solving, 3 for the ages with check.", marks: 10 },
+      ],
+    },
+    // source: Siyavula — Solving linear inequalities, Grade 10 (https://www.siyavula.com/read/za/mathematics/grade-10/equations-and-inequalities/04-equations-and-inequalities-06)
+    {
+      slug: "linear-inequalities",
+      title: "Linear Inequalities in One Variable",
+      objective:
+        "By the end of the topic, learners should be able to solve linear inequalities in one variable, remember to reverse the sign when multiplying or dividing by a negative, and represent the solution on a number line.",
+      estimatedMinutes: 110,
+      notes: `## Inequality symbols
 
 - **<** less than, **>** greater than
 - **≤** less than or equal to, **≥** greater than or equal to
 
-Solve inequalities exactly like equations, with **one crucial rule**:
+An inequality has a **range** of solutions, not a single value.
 
-> If you **multiply or divide both sides by a negative number, reverse the inequality sign.**
+## Solving inequalities
 
-Solve 2x + 1 < 9:
-- 2x < 8 → **x < 4**
+Solve just like an equation, with one crucial rule:
 
-Solve −3x ≥ 12:
-- Divide by −3 and **flip** the sign: **x ≤ −4**.
+**When you multiply or divide both sides by a negative number, reverse the inequality sign.**
 
-### Compound (double) inequalities
-An inequality can trap the variable between two values. Do the same operation to **all three parts**.
+- 2x − 3 ≤ 7 → 2x ≤ 10 → x ≤ 5
+- −2x < 6 → x > −3 (divided by −2, so the sign flips)
 
-Solve 1 ≤ 2x − 3 < 7:
-- Add 3 throughout: 4 ≤ 2x < 10.
-- Divide throughout by 2: **2 ≤ x < 5** — every value from 2 (included) up to 5 (not included).
+## Representing on a number line
 
-## Showing solutions on a number line
+- An **open circle** (○) marks a value that is **not** included (< or >).
+- A **closed circle** (●) marks a value that **is** included (≤ or ≥).
+- Shade the ray in the direction of the solutions.
 
-The solution of an inequality is a range of values, shown on a number line:
-
-\`\`\`svg Number line showing x < 4
-<svg viewBox="0 0 300 70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Number line with an open circle at 4 and shading to the left">
-  <line x1="20" y1="40" x2="280" y2="40" stroke="#111" stroke-width="2"/>
-  <line x1="20" y1="40" x2="215" y2="40" stroke="#dc2626" stroke-width="5"/>
-  <circle cx="215" cy="40" r="7" fill="#fff" stroke="#dc2626" stroke-width="2.5"/>
-  <g font-size="11" text-anchor="middle" fill="#111">
-    <text x="70" y="60">1</text><text x="118" y="60">2</text><text x="167" y="60">3</text><text x="215" y="60">4</text><text x="263" y="60">5</text>
+\`\`\`svg Number line showing x ≤ 5 with a closed circle at 5, shaded to the left.
+<svg viewBox="0 0 320 80" role="img" aria-label="Number line for x less than or equal to 5">
+  <line x1="15" y1="45" x2="305" y2="45" stroke="currentColor" stroke-width="1.5"/>
+  <polygon points="15,45 23,41 23,49" fill="currentColor"/>
+  <g font-size="10" fill="currentColor" text-anchor="middle">
+    <line x1="90" y1="40" x2="90" y2="50" stroke="currentColor"/><text x="90" y="66">3</text>
+    <line x1="150" y1="40" x2="150" y2="50" stroke="currentColor"/><text x="150" y="66">4</text>
+    <line x1="210" y1="40" x2="210" y2="50" stroke="currentColor"/><text x="210" y="66">5</text>
   </g>
+  <line x1="15" y1="45" x2="210" y2="45" stroke="#6366f1" stroke-width="3"/>
+  <circle cx="210" cy="45" r="5" fill="#6366f1"/>
 </svg>
 \`\`\`
 
-- An **open circle** (○) means the value is **not** included (< or >).
-- A **filled circle** (●) means the value **is** included (≤ or ≥).
+## Word problems
 
-## Common errors to watch for
+Translate "at least" as ≥, "at most" as ≤, "more than" as >, "less than" as <.
 
-- **Forgetting to flip the inequality sign** — when you **multiply or divide both sides by a negative** number, the sign reverses (−3x ≥ 12 gives x ≤ −4, not x ≥ −4).
-- **Doing something to one side only** — whatever you do to one side of an equation you must do to the **other** (and to *all three* parts of a compound inequality).
-- **Not clearing fractions properly** — multiply **every term** by the LCD, including terms without a fraction, before solving.
-- **Forgetting to expand brackets first** — 3(x − 4) must become 3x − 12 before you collect terms.
-- **Mixing up the circles** — an **open** circle excludes the value (< or >); a **filled** circle includes it (≤ or ≥).`,
-      workedExample: `**Problem.** (a) Solve 4(x − 2) = 2x + 6. (b) Solve the inequality 5 − 2x ≤ 11 and show the solution on a number line.
+## Common errors
 
-**Part (a) — linear equation with brackets**
-Expand the bracket first:
-4x − 8 = 2x + 6
-Subtract 2x from both sides:
-2x − 8 = 6
-Add 8:
-2x = 14
-Divide by 2:
-**x = 7**
+- **Forgetting to flip the sign** when dividing by a negative — the most common slip.
+- **Using a closed circle for < or >** — those need an open circle.
+- **Shading the wrong direction.**`,
+      workedExample: `**Question:** Solve −3x + 4 ≥ 13 and show the solution on a number line.
 
-**Check:** 4(7 − 2) = 4 × 5 = 20, and 2(7) + 6 = 14 + 6 = 20. ✓
+**Solution**
 
-**Part (b) — inequality**
-5 − 2x ≤ 11
-Subtract 5 from both sides:
-−2x ≤ 6
-Divide both sides by −2 — and because we divided by a **negative**, **reverse the sign**:
-**x ≥ −3**
+*Step 1 — subtract 4 from both sides.*
+−3x ≥ 9
 
-**On a number line:** put a **filled circle** at −3 (because of "≥", −3 is included) and shade to the **right**, toward larger values.`,
-      teachingTip:
-        "The one rule learners forget again and again is flipping the inequality sign when multiplying or dividing by a negative. Make it a ritual: circle the negative divisor and physically flip the sign as you write the next line. Pair this with the open-vs-filled circle convention on the number line, since exams award marks for the correct circle type as well as the correct direction of shading.",
+*Step 2 — divide both sides by −3, and reverse the sign.*
+x ≤ −3
+
+*Step 3 — number line.* Closed circle at −3 (because of ≥ becoming ≤), shaded to the left toward smaller numbers.
+
+*Check:* try x = −4: −3(−4) + 4 = 12 + 4 = 16 ≥ 13 ✔; try x = 0: 4 ≥ 13 is false, correctly excluded.
+
+**Answer: x ≤ −3**`,
       quiz: [
-        {
-          prompt: "To solve an equation, whatever you do to one side you must also do to the…",
-          options: ["other side", "variable only", "constant only", "answer"],
-          correctIndex: 0,
-          explanation: "Both sides must stay balanced.",
-        },
-        {
-          prompt: "Solve x + 7 = 12.",
-          options: ["x = 5", "x = 19", "x = 7", "x = 12"],
-          correctIndex: 0,
-          explanation: "Subtract 7: x = 5.",
-        },
-        {
-          prompt: "Solve 3x = 21.",
-          options: ["x = 7", "x = 18", "x = 24", "x = 63"],
-          correctIndex: 0,
-          explanation: "Divide by 3: x = 7.",
-        },
-        {
-          prompt: "Solve 2x + 3 = 11.",
-          options: ["x = 4", "x = 7", "x = 5", "x = 8"],
-          correctIndex: 0,
-          explanation: "2x = 8, so x = 4.",
-        },
-        {
-          prompt: "Solve 5x − 2 = 3x + 8.",
-          options: ["x = 5", "x = 3", "x = 10", "x = 2"],
-          correctIndex: 0,
-          explanation: "2x = 10, so x = 5.",
-        },
-        {
-          prompt: "Solve 3(x − 4) = 9.",
-          options: ["x = 7", "x = 3", "x = 1", "x = 12"],
-          correctIndex: 0,
-          explanation: "3x − 12 = 9 → 3x = 21 → x = 7.",
-        },
-        {
-          prompt: "A number times 4 plus 5 equals 29. The number is…",
-          options: ["6", "8", "9", "7"],
-          correctIndex: 0,
-          explanation: "4x + 5 = 29 → 4x = 24 → x = 6.",
-        },
-        {
-          prompt: "The symbol ≥ means…",
-          options: ["greater than or equal to", "less than", "equal to", "not equal to"],
-          correctIndex: 0,
-          explanation: "≥ means greater than or equal to.",
-        },
-        {
-          prompt: "Solve 2x + 1 < 9.",
-          options: ["x < 4", "x > 4", "x < 5", "x > 5"],
-          correctIndex: 0,
-          explanation: "2x < 8 → x < 4.",
-        },
-        {
-          prompt: "When you divide both sides of an inequality by a negative number, you must…",
-          options: ["reverse the inequality sign", "keep the sign", "remove the variable", "add 1"],
-          correctIndex: 0,
-          explanation: "Dividing by a negative flips the inequality.",
-        },
-        {
-          prompt: "Solve −3x ≥ 12.",
-          options: ["x ≤ −4", "x ≥ −4", "x ≤ 4", "x ≥ 4"],
-          correctIndex: 0,
-          explanation: "Divide by −3 and flip: x ≤ −4.",
-        },
-        {
-          prompt: "On a number line, an open circle (○) means the value is…",
-          options: ["not included", "included", "negative", "zero"],
-          correctIndex: 0,
-          explanation: "Open circle = the endpoint is excluded (< or >).",
-        },
-        {
-          prompt: "On a number line, a filled circle (●) means the value is…",
-          options: ["included", "not included", "always zero", "undefined"],
-          correctIndex: 0,
-          explanation: "Filled circle = the endpoint is included (≤ or ≥).",
-        },
-        {
-          prompt: "Solve x − 5 ≥ 2.",
-          options: ["x ≥ 7", "x ≤ 7", "x ≥ −3", "x ≤ 3"],
-          correctIndex: 0,
-          explanation: "Add 5: x ≥ 7.",
-        },
-        {
-          prompt: "Solve 4x − 3 = 13.",
-          options: ["x = 4", "x = 3", "x = 5", "x = 2"],
-          correctIndex: 0,
-          explanation: "4x = 16 → x = 4.",
-        },
-        {
-          prompt: "A linear equation has the variable to the power…",
-          options: ["1", "2", "3", "0"],
-          correctIndex: 0,
-          explanation: "Linear means the highest power of the variable is 1.",
-        },
-        {
-          prompt: "Solve 10 − x = 4.",
-          options: ["x = 6", "x = 14", "x = −6", "x = 4"],
-          correctIndex: 0,
-          explanation: "−x = −6 → x = 6.",
-        },
-        {
-          prompt: "Solve 2x > 6.",
-          options: ["x > 3", "x < 3", "x > 12", "x < 12"],
-          correctIndex: 0,
-          explanation: "Divide by 2: x > 3.",
-        },
-        {
-          prompt: "The solution set of an equation is…",
-          options: [
-            "the value(s) that make it true",
-            "the largest number",
-            "always zero",
-            "the coefficient",
-          ],
-          correctIndex: 0,
-          explanation: "It is the set of values satisfying the equation.",
-        },
-        {
-          prompt: "Solve x/3 = 4.",
-          options: ["x = 12", "x = 7", "x = 1", "x = 4/3"],
-          correctIndex: 0,
-          explanation: "Multiply both sides by 3: x = 12.",
-        },
+        { prompt: "The symbol ≥ means", options: ["less than", "greater than or equal to", "not equal to", "less than or equal to"], correctIndex: 1, explanation: "≥ is 'greater than or equal to'." },
+        { prompt: "Solve x + 3 < 10.", options: ["x < 7", "x > 7", "x < 13", "x > 13"], correctIndex: 0, explanation: "Subtract 3: x < 7." },
+        { prompt: "Solve 2x ≤ 12.", options: ["x ≤ 6", "x ≥ 6", "x ≤ 24", "x ≥ 24"], correctIndex: 0, explanation: "Divide by 2: x ≤ 6." },
+        { prompt: "When dividing an inequality by a negative number you must", options: ["do nothing special", "reverse the inequality sign", "square both sides", "add the number"], correctIndex: 1, explanation: "The sign flips." },
+        { prompt: "Solve −x > 4.", options: ["x > 4", "x < −4", "x > −4", "x < 4"], correctIndex: 1, explanation: "Multiply by −1 and flip: x < −4." },
+        { prompt: "An open circle on a number line means the value is", options: ["included", "not included", "negative", "zero"], correctIndex: 1, explanation: "Open circle = strict inequality, not included." },
+        { prompt: "Solve 3x − 1 ≥ 8.", options: ["x ≥ 3", "x ≤ 3", "x ≥ 9", "x ≤ 9"], correctIndex: 0, explanation: "3x ≥ 9, x ≥ 3." },
+        { prompt: "'At least 5' is written", options: ["x < 5", "x ≤ 5", "x ≥ 5", "x > 5"], correctIndex: 2, explanation: "'At least' means ≥." },
+        { prompt: "Solve −2x ≤ 10.", options: ["x ≤ −5", "x ≥ −5", "x ≤ 5", "x ≥ 5"], correctIndex: 1, explanation: "Divide by −2 and flip: x ≥ −5." },
+        { prompt: "A closed circle is used for", options: ["< and >", "≤ and ≥", "= only", "≠"], correctIndex: 1, explanation: "≤ and ≥ include the endpoint." },
+        { prompt: "Solve x − 4 > −1.", options: ["x > 3", "x < 3", "x > −5", "x < −5"], correctIndex: 0, explanation: "Add 4: x > 3." },
+        { prompt: "'At most 20' means", options: ["x ≥ 20", "x ≤ 20", "x > 20", "x = 20"], correctIndex: 1, explanation: "'At most' means ≤." },
+        { prompt: "Solve 5 − x < 2.", options: ["x > 3", "x < 3", "x > 7", "x < 7"], correctIndex: 0, explanation: "−x < −3, so x > 3 after flipping." },
+        { prompt: "How many integer solutions does 1 ≤ x < 4 have?", options: ["2", "3", "4", "infinite"], correctIndex: 1, explanation: "x = 1, 2, 3." },
+        { prompt: "Solve 4x + 3 ≤ 3.", options: ["x ≤ 0", "x ≥ 0", "x ≤ 1.5", "x ≥ 1.5"], correctIndex: 0, explanation: "4x ≤ 0, x ≤ 0." },
+        { prompt: "The solutions of an inequality form", options: ["one value", "a range of values", "no values ever", "only integers"], correctIndex: 1, explanation: "An inequality has a range of solutions." },
+        { prompt: "Solve −5x > −20.", options: ["x < 4", "x > 4", "x < −4", "x > −4"], correctIndex: 0, explanation: "Divide by −5 and flip: x < 4." },
+        { prompt: "Which value satisfies x ≥ 2?", options: ["1", "1.5", "2", "−3"], correctIndex: 2, explanation: "2 satisfies x ≥ 2 (equal allowed)." },
+        { prompt: "Solve 2(x − 1) < 6.", options: ["x < 4", "x > 4", "x < 3", "x > 3"], correctIndex: 0, explanation: "2x − 2 < 6, 2x < 8, x < 4." },
       ],
       test: [
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Solve the equation 3x + 7 = 2x + 15.",
-          answerKey:
-            "Subtract 2x: x + 7 = 15; subtract 7: x = 8. Check: 3(8)+7 = 31 and 2(8)+15 = 31. Award marks for correct method and the answer x = 8.",
-          marks: 3,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Solve 2(x + 3) = 4x − 2.",
-          answerKey:
-            "Expand: 2x + 6 = 4x − 2; 6 + 2 = 4x − 2x; 8 = 2x; x = 4. Award marks for expansion, rearrangement and the answer x = 4.",
-          marks: 3,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt:
-            "Solve the inequality 7 − 3x < 1 and describe how you would show the solution on a number line.",
-          answerKey:
-            "7 − 3x < 1 → −3x < −6 → divide by −3 and flip: x > 2. On the number line: an open circle at 2 (2 is excluded) with shading to the right. Award marks for the correct solution x > 2, the sign flip, and the open-circle/right-shading description.",
-          marks: 4,
-        },
-        {
-          type: "MULTIPLE_CHOICE",
-          prompt: "Which step is required when dividing an inequality by a negative number?",
-          options: [
-            "reverse the inequality sign",
-            "keep the sign the same",
-            "change the variable",
-            "add the same number to both sides",
-          ],
-          correctIndex: 0,
-          answerKey: "Dividing (or multiplying) by a negative reverses the inequality.",
-          marks: 2,
-        },
-        {
-          type: "ESSAY",
-          prompt:
-            "A father is three times as old as his son. In 5 years, the sum of their ages will be 58. Form an equation and find their present ages.",
-          answerKey:
-            "Let the son's age be x, so the father's is 3x. In 5 years: (x + 5) + (3x + 5) = 58 → 4x + 10 = 58 → 4x = 48 → x = 12. The son is 12 and the father is 36. Award marks for correct variable definition, forming the equation, solving it, and stating both ages (son 12, father 36).",
-          marks: 5,
-        },
+        { type: "SHORT_ANSWER", prompt: "Solve 4x − 5 ≤ 2x + 7 and represent the solution on a number line.", answerKey: "2x ≤ 12, so x ≤ 6. Number line: closed circle at 6, shaded to the left. Award 3 marks for solving, 1 for x ≤ 6, 3 for a correct number line (closed circle, correct direction).", marks: 7 },
+        { type: "SHORT_ANSWER", prompt: "Solve −2x + 1 > 9, stating the sign rule you use.", answerKey: "−2x > 8; dividing by −2 reverses the sign, giving x < −4. Award 2 marks for isolating −2x, 3 for dividing and flipping, 1 for x < −4.", marks: 6 },
+        { type: "MULTIPLE_CHOICE", prompt: "Which inequality has solution x > 3?", options: ["−x < −3", "−x > −3", "x + 1 < 4", "2x < 6"], correctIndex: 0, answerKey: "−x < −3 becomes x > 3 after multiplying by −1 and flipping. Option A.", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "List all the integers that satisfy −2 < x ≤ 3.", answerKey: "x = −1, 0, 1, 2, 3. (−2 excluded, 3 included.) Award 1 mark per correct integer, up to 5.", marks: 5 },
+        { type: "ESSAY", prompt: "A learner needs an average of at least 50 marks over two tests, each out of 100. She scored 42 in the first test. Set up and solve an inequality for the second-test mark she needs, and explain the sign convention 'at least'.", answerKey: "'At least' means ≥. Let the second mark be x. Average condition: (42 + x)/2 ≥ 50, so 42 + x ≥ 100, giving x ≥ 58. She needs at least 58 marks. Award 2 marks for translating 'at least' as ≥, 4 for the inequality and solving, 2 for x ≥ 58, 2 for interpreting the result.", marks: 10 },
       ],
     },
+    // source: CK-12 — Functions and the Vertical Line Test (https://www.ck12.org/algebra/identify-functions-and-the-vertical-line-test/lesson/Functions-and-Non-Functions-ALG-1-CCSS/)
     {
       slug: "relations-and-functions",
       title: "Relations and Functions",
       objective:
-        "By the end of the topic, learners should be able to define a relation and a function, describe a mapping and give its domain and range, use function notation, and find the gradient of a straight line and the distance between two points.",
-      estimatedMinutes: 190,
-      notes: `## Introduction
+        "By the end of the topic, learners should be able to define a relation and a function, find domain and range, use the vertical line test, use function notation, and change the subject of a formula.",
+      estimatedMinutes: 120,
+      notes: `## Relations
 
-- Maths describes **relationships** — a number and its double, a point and its distance from another.
-- **This lesson:** relations and **mappings**; the idea of a **function** (each input → exactly one output); **function notation** f(x); the **gradient** of a line and the **distance** between two points.
+A **relation** is a set of ordered pairs (x, y) linking inputs to outputs. It can be given as a set of pairs, a table, a mapping diagram, an equation or a graph.
 
-## Relations
-
-A **relation** is a rule that links the members of one set (the **domain**) to the members of another set (the **range**). For example, "is the capital of" relates Monrovia to Liberia.
-
-In mathematics a relation is often a set of **ordered pairs** (x, y), such as {(1, 2), (2, 4), (3, 6)}, where the rule is "y is twice x".
-
-## Mapping, domain and range
-
-A **mapping** shows how each input is linked to an output.
-
-- The **domain** is the set of **inputs** (the x-values).
-- The **range** is the set of **outputs** (the y-values).
-
-\`\`\`svg A mapping from domain to range (y = 2x)
-<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapping diagram linking 1,2,3 to 2,4,6">
-  <ellipse cx="60" cy="75" rx="35" ry="60" fill="#e0e7ff" stroke="#3730a3"/>
-  <ellipse cx="200" cy="75" rx="35" ry="60" fill="#e0e7ff" stroke="#3730a3"/>
-  <text x="60" y="25" font-size="10" text-anchor="middle" fill="#3730a3">domain</text>
-  <text x="200" y="25" font-size="10" text-anchor="middle" fill="#3730a3">range</text>
-  <g font-size="12" text-anchor="middle" fill="#111">
-    <text x="60" y="55">1</text><text x="60" y="80">2</text><text x="60" y="105">3</text>
-    <text x="200" y="55">2</text><text x="200" y="80">4</text><text x="200" y="105">6</text>
-  </g>
-  <g stroke="#dc2626" stroke-width="1.5">
-    <line x1="80" y1="52" x2="180" y2="52"/><line x1="80" y1="77" x2="180" y2="77"/><line x1="80" y1="102" x2="180" y2="102"/>
-  </g>
-</svg>
-\`\`\`
-
-## Types of relation (mapping)
-
-- **One-to-one** — each input maps to exactly one output, and no two inputs share an output.
-- **One-to-many** — one input maps to more than one output.
-- **Many-to-one** — several inputs map to the same output.
-- **Many-to-many** — inputs and outputs are linked in several ways.
+- The **domain** is the set of input (x) values.
+- The **range** is the set of output (y) values.
 
 ## Functions
 
-A **function** is a **special relation** in which **each input has exactly one output**. So **one-to-one** and **many-to-one** relations are functions; **one-to-many** relations are **not** functions.
+A **function** is a special relation in which **each input has exactly one output**.
 
-**Function notation:** we write **f(x)** ("f of x") for the output of the function f at input x.
-If f(x) = 2x + 1, then f(3) = 2(3) + 1 = **7**.
+- {(1, 2), (2, 4), (3, 6)} is a function.
+- {(1, 2), (1, 5)} is **not** a function (the input 1 has two outputs).
+
+## The vertical line test
+
+If any **vertical line** cuts the graph more than once, the graph is **not** a function. If every vertical line meets it at most once, it is a function.
+
+## Function notation
+
+f(x) is read "f of x", the output when the input is x.
+
+If f(x) = 2x + 3, then f(4) = 2(4) + 3 = 11.
+
+## Types of relations (mappings)
+
+- **one-to-one** — each input to one output, each output from one input
+- **many-to-one** — several inputs share one output (still a function)
+- **one-to-many** — one input to several outputs (not a function)
 
 ## Change of subject
 
 To **change the subject** of a formula is to rearrange it to make a different variable the subject.
-Make x the subject of y = 3x + 6:
-- y − 6 = 3x
-- x = (y − 6) / 3.
 
-## Gradient of a straight line
+From y = mx + c, make x the subject: x = (y − c)/m.
 
-The **gradient (slope)** of a straight line measures its steepness — the change in y divided by the change in x between two points:
+## Common errors
 
-$$m = \\frac{y_2 - y_1}{x_2 - x_1}$$
+- **Calling a one-to-many relation a function** — an input may not have two outputs.
+- **Swapping domain and range** — domain is inputs (x), range is outputs (y).
+- **Misreading f(3) as f × 3** — it means the output when x = 3.`,
+      workedExample: `**Question:** The relation is {(0, 0), (−6, −6), (−3, −3), (2, 2)}.
+(a) Is it a function?
+(b) State the domain and range.
+(c) If f(x) = 2x − 1, find f(−3).
 
-A positive gradient rises left to right; a negative gradient falls. The equation of a straight line is often written **y = mx + c**, where m is the gradient and c is the y-intercept.
+**Solution**
+
+*Part (a).* Each input value appears once with a single output, so it **is a function**.
+
+*Part (b).* Domain (inputs) = {−6, −3, 0, 2}. Range (outputs) = {−6, −3, 0, 2}.
+
+*Part (c).* f(−3) = 2(−3) − 1 = −6 − 1 = −7.
+
+**Answer:** (a) yes; (b) domain {−6, −3, 0, 2}, range {−6, −3, 0, 2}; (c) f(−3) = −7.`,
+      quiz: [
+        { prompt: "A relation is a set of", options: ["straight lines", "ordered pairs", "angles", "prime numbers"], correctIndex: 1, explanation: "It links inputs to outputs as ordered pairs." },
+        { prompt: "In a function, each input has", options: ["exactly one output", "two outputs", "no output", "many outputs"], correctIndex: 0, explanation: "One input maps to one output." },
+        { prompt: "The domain of a relation is the set of", options: ["outputs", "inputs (x-values)", "gradients", "ranges"], correctIndex: 1, explanation: "Domain = input values." },
+        { prompt: "Which is NOT a function?", options: ["{(1,2),(2,3)}", "{(1,2),(1,5)}", "{(0,0),(1,1)}", "{(2,4),(3,4)}"], correctIndex: 1, explanation: "Input 1 has two outputs." },
+        { prompt: "If f(x) = 3x + 1, then f(2) is", options: ["5", "7", "6", "4"], correctIndex: 1, explanation: "3(2) + 1 = 7." },
+        { prompt: "The vertical line test checks whether a graph is a", options: ["straight line", "function", "circle", "parabola"], correctIndex: 1, explanation: "A vertical line hitting twice means not a function." },
+        { prompt: "The range of {(1,4),(2,5),(3,6)} is", options: ["{1,2,3}", "{4,5,6}", "{1,2,3,4,5,6}", "{4}"], correctIndex: 1, explanation: "Range = output values {4,5,6}." },
+        { prompt: "A many-to-one relation is", options: ["never a function", "a function", "one-to-many", "undefined"], correctIndex: 1, explanation: "Several inputs to one output is still a function." },
+        { prompt: "Making x the subject of y = mx gives", options: ["x = y/m", "x = ym", "x = m/y", "x = y − m"], correctIndex: 0, explanation: "Divide both sides by m." },
+        { prompt: "If f(x) = x², then f(−4) is", options: ["−16", "16", "−8", "8"], correctIndex: 1, explanation: "(−4)² = 16." },
+        { prompt: "A one-to-many relation is", options: ["a function", "not a function", "always linear", "always one-to-one"], correctIndex: 1, explanation: "One input with several outputs fails the function rule." },
+        { prompt: "The domain of {(2,3),(4,5),(6,7)} is", options: ["{3,5,7}", "{2,4,6}", "{2,3,4,5,6,7}", "{5}"], correctIndex: 1, explanation: "Domain = input values {2,4,6}." },
+        { prompt: "f(x) = 5 − 2x. Find f(0).", options: ["0", "5", "−2", "3"], correctIndex: 1, explanation: "5 − 2(0) = 5." },
+        { prompt: "Making x the subject of y = mx + c gives", options: ["x = (y − c)/m", "x = y − c − m", "x = ym + c", "x = (y + c)/m"], correctIndex: 0, explanation: "Subtract c then divide by m." },
+        { prompt: "Which graph is a function by the vertical line test?", options: ["a circle", "a vertical line", "a straight sloping line", "a sideways parabola"], correctIndex: 2, explanation: "A sloping line meets each vertical line once." },
+        { prompt: "The notation f(3) means", options: ["f multiplied by 3", "the output when x = 3", "3 divided by f", "the domain"], correctIndex: 1, explanation: "It is the function value at x = 3." },
+        { prompt: "If g(x) = x + 7, then g(−7) is", options: ["0", "14", "−14", "7"], correctIndex: 0, explanation: "−7 + 7 = 0." },
+        { prompt: "A relation where each input and each output pair uniquely is", options: ["one-to-one", "many-to-one", "one-to-many", "many-to-many"], correctIndex: 0, explanation: "One-to-one pairs inputs and outputs uniquely." },
+        { prompt: "The set of output values of a function is its", options: ["domain", "range", "gradient", "intercept"], correctIndex: 1, explanation: "Outputs form the range." },
+      ],
+      test: [
+        { type: "SHORT_ANSWER", prompt: "State whether {(1,3),(2,3),(4,7)} is a function, and give its domain and range.", answerKey: "It is a function (each input has one output; the repeated output 3 is allowed — many-to-one). Domain = {1, 2, 4}; range = {3, 7}. Award 2 marks for the function decision with reason, 2 for domain, 2 for range.", marks: 6 },
+        { type: "SHORT_ANSWER", prompt: "Given f(x) = 4x − 5, find f(3) and the value of x for which f(x) = 15.", answerKey: "f(3) = 4(3) − 5 = 7. For f(x) = 15: 4x − 5 = 15, 4x = 20, x = 5. Award 2 marks for f(3) = 7, 4 for solving x = 5.", marks: 6 },
+        { type: "MULTIPLE_CHOICE", prompt: "Which relation is NOT a function?", options: ["{(1,1),(2,2)}", "{(3,4),(3,5)}", "{(0,0),(5,0)}", "{(2,7),(8,7)}"], correctIndex: 1, answerKey: "Input 3 has two outputs (4 and 5), so option B is not a function.", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "Make r the subject of the formula A = πr².", answerKey: "Divide by π: r² = A/π. Square-root: r = √(A/π). Award 3 marks for dividing by π, 3 for the square root.", marks: 6 },
+        { type: "ESSAY", prompt: "Explain the difference between a relation and a function, describe the vertical line test, and use it to explain why a circle is not a function but a straight line (not vertical) is.", answerKey: "A relation is any set of ordered pairs; a function is a relation in which each input has exactly one output. The vertical line test says a graph is a function if no vertical line meets it more than once. A circle fails because a vertical line through it can cut it at two points (two outputs for one input), so it is not a function. A non-vertical straight line meets any vertical line at exactly one point, so it is a function. Award 3 marks for the relation/function distinction, 3 for the vertical line test, 4 for the circle vs line reasoning.", marks: 10 },
+      ],
+    },
+    // source: Siyavula — Gradient of a line, Grade 10 analytical geometry (https://www.siyavula.com/read/za/mathematics/grade-10/analytical-geometry/08-analytical-geometry-02)
+    {
+      slug: "gradient-and-distance",
+      title: "Gradient of a Line and Distance Between Two Points",
+      objective:
+        "By the end of the topic, learners should be able to plot points, calculate the gradient of a line through two points, use the distance formula, and recognise the shape of linear and quadratic graphs.",
+      estimatedMinutes: 120,
+      notes: `## The coordinate plane
+
+A point is written (x, y): x is the horizontal position, y is the vertical position. The axes cross at the **origin** (0, 0).
+
+## Gradient (slope) of a line
+
+The **gradient** measures steepness — vertical change divided by horizontal change:
+
+m = (y₂ − y₁)/(x₂ − x₁)
+
+- A positive gradient rises to the right; a negative gradient falls to the right.
+- A horizontal line has gradient 0; a vertical line has an undefined gradient.
+- **Parallel** lines have equal gradients; **perpendicular** lines have gradients whose product is −1.
+
+## Equation of a straight line
+
+y = mx + c, where m is the gradient and c is the y-intercept (where the line crosses the y-axis).
 
 ## Distance between two points
 
-The **distance** between two points (x₁, y₁) and (x₂, y₂) is found with the distance formula (from Pythagoras):
+d = √((x₂ − x₁)² + (y₂ − y₁)²)
 
-$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
+This comes from the Pythagoras theorem applied to the horizontal and vertical gaps.
 
-## Common errors to watch for
+## Linear vs quadratic graphs
 
-- **Thinking every relation is a function** — a relation is a function only if **each input has exactly one output**; a **one-to-many** relation is *not* a function.
-- **Confusing domain and range** — the **domain** is the set of *inputs* (x-values); the **range** is the set of *outputs* (y-values).
-- **Misreading f(x)** — f(x) means "the output of f at x", *not* f multiplied by x; f(3) is found by substituting 3 for x.
-- **Flipping the gradient formula** — gradient is (change in **y**) ÷ (change in **x**); keep the coordinates in the same order in the top and bottom.
-- **Dropping the square in the distance formula** — you must **square** each difference, add, *then* take the square root.`,
-      workedExample: `**Problem.** For the points A(1, 2) and B(4, 6): (a) find the gradient of the line AB; (b) find the distance AB. (c) If f(x) = 3x − 4, find f(5).
+- A **linear function** y = mx + c graphs as a **straight line**.
+- A **quadratic function** y = ax² + bx + c graphs as a **parabola** (a U-shape opening up if a > 0, down if a < 0). Its turning point is the vertex.
 
-**Part (a) — gradient**
-m = (y₂ − y₁) / (x₂ − x₁) = (6 − 2) / (4 − 1) = 4 / 3 = **4/3**.
+\`\`\`svg A straight line rising to the right and a U-shaped parabola.
+<svg viewBox="0 0 320 160" role="img" aria-label="A straight line and a parabola on axes">
+  <line x1="20" y1="140" x2="300" y2="140" stroke="currentColor" stroke-opacity="0.5"/>
+  <line x1="40" y1="20" x2="40" y2="150" stroke="currentColor" stroke-opacity="0.5"/>
+  <line x1="45" y1="135" x2="180" y2="45" stroke="#6366f1" stroke-width="2"/>
+  <path d="M 200 40 Q 250 160 300 40" fill="none" stroke="#10b981" stroke-width="2"/>
+  <text x="150" y="60" font-size="11" fill="currentColor">line</text>
+  <text x="245" y="120" font-size="11" fill="currentColor">parabola</text>
+</svg>
+\`\`\`
 
-**Part (b) — distance**
-d = √[(x₂ − x₁)² + (y₂ − y₁)²]
- = √[(4 − 1)² + (6 − 2)²]
- = √[3² + 4²]
- = √[9 + 16]
- = √25
- = **5 units**.
+## Common errors
 
-(The 3-4-5 triple appears again — the change in x is 3, the change in y is 4, and the distance is 5.)
+- **Subtracting coordinates in a different order** in numerator and denominator — keep (y₂ − y₁) over (x₂ − x₁).
+- **Forgetting to square-root** in the distance formula.
+- **Confusing gradient and y-intercept** in y = mx + c.`,
+      workedExample: `**Question:** Find (a) the gradient of the line through A(1, 2) and B(4, 6), and (b) the distance AB.
 
-**Part (c) — function value**
-f(x) = 3x − 4, so f(5) = 3(5) − 4 = 15 − 4 = **11**.
+**Solution**
 
-**Conclusion:** the line AB has gradient 4/3, the two points are 5 units apart, and the function gives f(5) = 11 — the three core skills of relations and functions in one problem.`,
-      teachingTip:
-        "The key idea learners must grasp is that a function is a relation where every input has exactly ONE output — the 'one-to-many is not a function' rule. Use a mapping diagram and the vertical-line idea to make it visual. For gradient and distance, note that both come from the change in x and change in y between two points, so teaching them together (with the 3-4-5 example) reinforces both at once.",
+*Part (a) — gradient.*
+m = (y₂ − y₁)/(x₂ − x₁) = (6 − 2)/(4 − 1) = 4/3
+
+*Part (b) — distance.*
+d = √((4 − 1)² + (6 − 2)²) = √(3² + 4²) = √(9 + 16) = √25 = 5
+
+**Answer:** (a) gradient = 4/3; (b) distance AB = 5 units.`,
       quiz: [
-        {
-          prompt: "A relation links members of one set (the domain) to members of another set (the…)",
-          options: ["range", "gradient", "function", "origin"],
-          correctIndex: 0,
-          explanation: "Inputs form the domain; outputs form the range.",
-        },
-        {
-          prompt: "In a mapping, the set of inputs is the…",
-          options: ["domain", "range", "gradient", "codomain only"],
-          correctIndex: 0,
-          explanation: "The domain is the set of input (x) values.",
-        },
-        {
-          prompt: "In a mapping, the set of outputs is the…",
-          options: ["range", "domain", "slope", "axis"],
-          correctIndex: 0,
-          explanation: "The range is the set of output (y) values.",
-        },
-        {
-          prompt: "A function is a relation in which each input has exactly…",
-          options: ["one output", "two outputs", "many outputs", "no output"],
-          correctIndex: 0,
-          explanation: "Every input maps to exactly one output in a function.",
-        },
-        {
-          prompt: "Which type of relation is NOT a function?",
-          options: ["one-to-many", "one-to-one", "many-to-one", "a straight line y = 2x"],
-          correctIndex: 0,
-          explanation: "One-to-many fails the 'one output per input' rule.",
-        },
-        {
-          prompt: "If f(x) = 2x + 1, then f(3) =",
-          options: ["7", "6", "5", "9"],
-          correctIndex: 0,
-          explanation: "2(3) + 1 = 7.",
-        },
-        {
-          prompt: "If f(x) = 3x − 4, then f(2) =",
-          options: ["2", "10", "1", "6"],
-          correctIndex: 0,
-          explanation: "3(2) − 4 = 2.",
-        },
-        {
-          prompt: "The set {(1,2),(2,4),(3,6)} follows the rule…",
-          options: ["y = 2x", "y = x + 1", "y = x²", "y = 2 + x"],
-          correctIndex: 0,
-          explanation: "Each y is twice its x.",
-        },
-        {
-          prompt: "Making x the subject of y = 3x + 6 gives…",
-          options: ["x = (y − 6)/3", "x = y − 6", "x = 3y + 6", "x = (y + 6)/3"],
-          correctIndex: 0,
-          explanation: "y − 6 = 3x, so x = (y − 6)/3.",
-        },
-        {
-          prompt: "The gradient of a line through (1,2) and (4,6) is…",
-          options: ["4/3", "3/4", "2", "1"],
-          correctIndex: 0,
-          explanation: "(6 − 2)/(4 − 1) = 4/3.",
-        },
-        {
-          prompt: "In y = mx + c, the letter m represents the…",
-          options: ["gradient", "y-intercept", "x-value", "range"],
-          correctIndex: 0,
-          explanation: "m is the gradient (slope).",
-        },
-        {
-          prompt: "In y = mx + c, the letter c represents the…",
-          options: ["y-intercept", "gradient", "domain", "distance"],
-          correctIndex: 0,
-          explanation: "c is where the line crosses the y-axis.",
-        },
-        {
-          prompt: "A line that falls from left to right has a gradient that is…",
-          options: ["negative", "positive", "zero", "undefined"],
-          correctIndex: 0,
-          explanation: "Falling lines have a negative gradient.",
-        },
-        {
-          prompt: "The distance between (0,0) and (3,4) is…",
-          options: ["5", "7", "12", "25"],
-          correctIndex: 0,
-          explanation: "√(3² + 4²) = √25 = 5.",
-        },
-        {
-          prompt: "The distance formula comes from which theorem?",
-          options: ["Pythagoras", "the gradient rule", "the range rule", "the mapping rule"],
-          correctIndex: 0,
-          explanation: "It is Pythagoras applied to coordinates.",
-        },
-        {
-          prompt: "A relation where several inputs map to the same output is…",
-          options: ["many-to-one", "one-to-many", "one-to-one", "none"],
-          correctIndex: 0,
-          explanation: "Many inputs, one output = many-to-one (still a function).",
-        },
-        {
-          prompt: "f(x) = x² and x = 4 gives f(4) =",
-          options: ["16", "8", "6", "2"],
-          correctIndex: 0,
-          explanation: "4² = 16.",
-        },
-        {
-          prompt: "The gradient of a horizontal line is…",
-          options: ["0", "1", "undefined", "negative"],
-          correctIndex: 0,
-          explanation: "No rise means gradient zero.",
-        },
-        {
-          prompt: "Which is a one-to-one relation?",
-          options: [
-            "each learner has one unique ID number",
-            "many learners share one classroom",
-            "one learner takes many subjects",
-            "many learners take many subjects",
-          ],
-          correctIndex: 0,
-          explanation: "One input to one distinct output is one-to-one.",
-        },
-        {
-          prompt: "The gradient between (2,3) and (5,9) is…",
-          options: ["2", "3", "6", "1/2"],
-          correctIndex: 0,
-          explanation: "(9 − 3)/(5 − 2) = 6/3 = 2.",
-        },
+        { prompt: "The gradient formula is", options: ["(x₂ − x₁)/(y₂ − y₁)", "(y₂ − y₁)/(x₂ − x₁)", "(y₂ + y₁)/(x₂ + x₁)", "y₂ − y₁"], correctIndex: 1, explanation: "Rise over run." },
+        { prompt: "The gradient of the line through (0,0) and (2,6) is", options: ["2", "3", "6", "1/3"], correctIndex: 1, explanation: "(6 − 0)/(2 − 0) = 3." },
+        { prompt: "A horizontal line has gradient", options: ["0", "1", "undefined", "−1"], correctIndex: 0, explanation: "No vertical change, so gradient 0." },
+        { prompt: "In y = mx + c, m is the", options: ["y-intercept", "gradient", "x-intercept", "origin"], correctIndex: 1, explanation: "m is the gradient." },
+        { prompt: "The distance formula uses which theorem?", options: ["angle sum", "Pythagoras", "De Morgan", "distributive"], correctIndex: 1, explanation: "It is Pythagoras on the coordinate differences." },
+        { prompt: "Distance between (0,0) and (3,4) is", options: ["5", "7", "12", "25"], correctIndex: 0, explanation: "√(9 + 16) = 5." },
+        { prompt: "Parallel lines have gradients that are", options: ["equal", "opposite", "reciprocal", "zero"], correctIndex: 0, explanation: "Equal gradients mean parallel." },
+        { prompt: "A quadratic function graphs as a", options: ["straight line", "circle", "parabola", "single point"], correctIndex: 2, explanation: "y = ax² + bx + c is a parabola." },
+        { prompt: "In y = 2x + 5, the y-intercept is", options: ["2", "5", "0", "−5"], correctIndex: 1, explanation: "c = 5 is where it crosses the y-axis." },
+        { prompt: "The gradient of the line through (1,5) and (3,5) is", options: ["0", "1", "5", "undefined"], correctIndex: 0, explanation: "No change in y, gradient 0." },
+        { prompt: "A negative gradient means the line", options: ["rises to the right", "falls to the right", "is horizontal", "is vertical"], correctIndex: 1, explanation: "It slopes downward left to right." },
+        { prompt: "Perpendicular lines have gradients with product", options: ["1", "0", "−1", "2"], correctIndex: 2, explanation: "m₁ × m₂ = −1." },
+        { prompt: "Distance between (1,1) and (4,5) is", options: ["4", "5", "7", "√7"], correctIndex: 1, explanation: "√(9 + 16) = √25 = 5." },
+        { prompt: "The gradient through (2,3) and (6,11) is", options: ["2", "4", "8", "1/2"], correctIndex: 0, explanation: "(11 − 3)/(6 − 2) = 8/4 = 2." },
+        { prompt: "A parabola y = ax² + bx + c opens upward when", options: ["a > 0", "a < 0", "a = 0", "c > 0"], correctIndex: 0, explanation: "Positive a gives a U opening up." },
+        { prompt: "A vertical line has gradient", options: ["0", "1", "undefined", "−1"], correctIndex: 2, explanation: "Division by zero makes it undefined." },
+        { prompt: "The line y = 3x − 2 has gradient", options: ["3", "−2", "2", "1"], correctIndex: 0, explanation: "m = 3." },
+        { prompt: "Distance between (−1,2) and (2,6) is", options: ["3", "4", "5", "6"], correctIndex: 2, explanation: "√(3² + 4²) = √25 = 5." },
+        { prompt: "The point (0, 0) is called the", options: ["vertex", "origin", "intercept", "gradient"], correctIndex: 1, explanation: "The axes cross at the origin." },
       ],
       test: [
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Explain the difference between a relation and a function, and state which type of mapping is not a function.",
-          answerKey:
-            "A relation links inputs (domain) to outputs (range) by some rule; a function is a special relation in which each input has exactly one output. A one-to-many mapping is not a function. Award marks for both definitions and the correct non-function type.",
-          marks: 3,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Given f(x) = 4x − 3, find f(0) and f(5).",
-          answerKey:
-            "f(0) = 4(0) − 3 = −3; f(5) = 4(5) − 3 = 17. Award a mark for each correct value and the correct substitution.",
-          marks: 3,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Find the gradient of the line joining A(2, 1) and B(6, 9), and the distance AB.",
-          answerKey:
-            "Gradient m = (9 − 1)/(6 − 2) = 8/4 = 2. Distance d = √[(6 − 2)² + (9 − 1)²] = √[16 + 64] = √80 ≈ 8.94 units. Award marks for the gradient and for the correct distance-formula working.",
-          marks: 4,
-        },
-        {
-          type: "MULTIPLE_CHOICE",
-          prompt: "Making r the subject of the formula A = 2r + t gives…",
-          options: ["r = (A − t)/2", "r = A − t", "r = 2A − t", "r = (A + t)/2"],
-          correctIndex: 0,
-          answerKey: "A − t = 2r, so r = (A − t)/2.",
-          marks: 2,
-        },
-        {
-          type: "ESSAY",
-          prompt:
-            "Explain, with an example mapping, why a one-to-many relation cannot be a function but a many-to-one relation can.",
-          answerKey:
-            "A strong answer explains that a function requires each input to have exactly one output. In a one-to-many relation, at least one input is linked to more than one output (e.g. 4 → +2 and 4 → −2 for square roots), which breaks the rule, so it is not a function. In a many-to-one relation, several inputs share one output (e.g. −2 → 4 and 2 → 4 for y = x²), but each input still has just one output, so it is a function. Award marks for the correct rule, a valid one-to-many example that fails, and a valid many-to-one example that passes.",
-          marks: 5,
-        },
+        { type: "SHORT_ANSWER", prompt: "Find the gradient of the line through P(−2, 1) and Q(4, 13).", answerKey: "m = (13 − 1)/(4 − (−2)) = 12/6 = 2. Award 2 marks for correct substitution, 2 for the answer 2.", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "Find the distance between A(2, −1) and B(7, 11).", answerKey: "d = √((7 − 2)² + (11 − (−1))²) = √(5² + 12²) = √(25 + 144) = √169 = 13. Award 3 marks for substitution, 2 for simplifying, 1 for the answer 13.", marks: 6 },
+        { type: "MULTIPLE_CHOICE", prompt: "What is the gradient of a line parallel to y = 4x − 7?", options: ["−7", "4", "1/4", "−1/4"], correctIndex: 1, answerKey: "Parallel lines share the gradient 4. Option B.", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "State the y-intercept and gradient of y = −3x + 6, and say whether the line rises or falls to the right.", answerKey: "Gradient = −3, y-intercept = 6. The gradient is negative, so the line falls to the right. Award 2 marks each for the gradient and intercept, 2 for the direction.", marks: 6 },
+        { type: "ESSAY", prompt: "The points A(1, 2), B(4, 6) and C(1, 6) form a triangle. Find the length of AB, show that AC is vertical, and explain how the gradient of a vertical line differs from that of a horizontal line.", answerKey: "AB = √((4−1)² + (6−2)²) = √(9 + 16) = 5. AC joins (1,2) and (1,6): the x-coordinates are equal, so it is vertical; its gradient is undefined (division by zero in x₂ − x₁). A horizontal line (like from (1,6) to (4,6)) has no change in y, so its gradient is 0. Award 3 marks for AB = 5, 3 for showing AC vertical, 4 for contrasting undefined vs zero gradient.", marks: 10 },
       ],
     },
   ],
