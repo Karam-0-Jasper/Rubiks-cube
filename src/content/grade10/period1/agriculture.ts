@@ -5,7 +5,7 @@ export const agriculture: SubjectContent = {
   name: "Agriculture",
   shortName: "Agric",
   description:
-    "The importance of agriculture in Liberia, branches and farming systems, soil science, and farm tools.",
+    "The nature and importance of agriculture, branches and farming systems, soil science, and farm tools.",
   accent: "green",
   sortOrder: 10,
   teacherCode: "AGR-10-2856",
@@ -15,1268 +15,1169 @@ export const agriculture: SubjectContent = {
       number: 1,
       title: "Foundations of Agricultural Science",
       summary:
-        "Learners establish the place of agriculture in the Liberian economy, classify its branches and farming systems, study soil formation and properties, and learn the tools and implements of the farm.",
+        "Learners establish what agriculture is and why it matters, classify its branches and farming systems, study soil formation and properties, and learn the tools and implements of the farm.",
       topics: [
+        // source: GeeksforGeeks — Primary Activities, Class 12 Geography Notes (https://www.geeksforgeeks.org/social-science/chapter-4-primary-activities-class-12-geography-notes/). FLAG: Liberia-specific economic figures and lists of local problems are not from an approved page; the general concepts below are sourced. See report.
         {
           slug: "introduction-to-agriculture",
           title: "Introduction to Agriculture",
           objective:
-            "By the end of the lesson, learners should be able to define agriculture, state its importance to Liberia, and identify the problems facing Liberian agriculture with possible solutions.",
+            "By the end of the lesson, learners should be able to define agriculture, state its importance, and describe the main types of farming.",
           estimatedMinutes: 80,
-          notes: `## Introduction
+          notes: `## What agriculture is
 
-- **Agriculture** = the science and practice of growing crops and rearing animals to feed and support a nation.
-- Central to Liberia's economy: food, jobs, exports, raw materials and government revenue.
-- The sector is held back by problems that have practical solutions.
-- **This topic:** what agriculture is; why it matters to Liberia; the problems facing Liberian agriculture and their solutions.
+**Agriculture** is a fundamental economic activity that supports human survival and development. It is the growing of crops and the rearing of animals to provide food and raw materials.
 
-## Definition
+Agriculture is practised under a wide range of physical and socio-economic conditions, which leads to many different agricultural systems around the world.
 
-**Agriculture** is the science and practice of cultivating the soil, producing crops, and rearing livestock for the benefit of humankind.
+## Importance of agriculture
 
-The word derives from the Latin *ager* (field) and *cultura* (cultivation).
+- **Food** — agriculture provides the food that sustains people and their families
+- **Raw materials** — it supplies materials for industry, such as fibres and crops for processing
+- **Livelihoods and employment** — it provides work and income for millions of farmers
+- **Environmental conservation** — sustainable farming helps conserve soil, water and biodiversity
+- **Development** — it supports the wider economy through the sale of produce
 
-## Importance of agriculture to Liberia
+Promoting sustainable and diverse agricultural practices is important for food security, environmental conservation and livelihood opportunities.
 
-**1. Food supply.** Agriculture provides the staple foods of the population — rice, cassava, plantain, vegetables, fish and meat. Rice in particular is central to the Liberian diet, and the country's food security depends heavily on domestic production.
+## Main types of farming
 
-**2. Employment.** A large majority of Liberians depend on farming, directly or indirectly, for their livelihood. Agriculture is by far the largest employer in the country.
-
-**3. Raw materials for industry.** Rubber for processing, palm kernels for oil milling, cocoa and coffee for processing, timber for sawmilling, hides for leather.
-
-**4. Foreign exchange.** Rubber has long been among Liberia's principal exports. Cocoa, coffee, palm oil and timber also earn foreign currency.
-
-**5. Government revenue.** Through export duties, land rents, licences and taxes on agricultural enterprises.
-
-**6. Rural development.** Agricultural activity supports rural markets, transport, trading and services, keeping rural communities viable.
-
-**7. Source of income and savings.** Farm produce sold in local markets provides household income; livestock function as a form of savings that can be sold when cash is needed.
-
-**8. Environmental management.** Well-managed farming maintains soil cover, protects watersheds and conserves biodiversity. Poorly managed farming does the opposite.
-
-## Problems facing Liberian agriculture
-
-| Problem | Explanation |
+| Type | Main feature |
 | --- | --- |
-| **Traditional methods** | Heavy reliance on hand tools and shifting cultivation limits the area one household can farm and keeps yields low. |
-| **Poor road access** | Produce cannot reach market, especially in the rainy season, so it spoils and farmers lose income. |
-| **Limited capital and credit** | Farmers cannot obtain loans to buy improved seed, fertiliser or equipment. |
-| **Pests and diseases** | Insects, rodents, birds and plant diseases destroy a substantial share of the harvest. |
-| **Land tenure problems** | Insecure or disputed rights to land discourage long-term investment in the soil. |
-| **Inadequate storage and processing** | Post-harvest losses are high where drying and storage facilities are lacking. |
-| **Low prices and weak markets** | Farmers often sell at low prices to middlemen and lack market information. |
-| **Shortage of extension services** | Too few agricultural officers to advise farmers on improved practice. |
-| **Rural-urban migration** | Young people leave farming for the towns, ageing the farm workforce. |
-| **Climate variability** | Irregular rainfall and flooding disrupt planting and harvest. |
+| Subsistence agriculture | Food grown mainly for the farmer's own family |
+| Shifting cultivation | Land cleared and cropped, then abandoned when fertility falls |
+| Intensive subsistence | Small landholdings, heavy labour, often rice |
+| Plantation agriculture | Large estates, much capital, a single crop for sale |
+| Mixed farming | Crop cultivation combined with animal husbandry |
+| Commercial grain farming | Large mechanised farms producing grain for market |
 
-## Possible solutions
+**Subsistence agriculture** primarily supports the local consumption of the farmers and their families.
 
-- Mechanisation appropriate to the scale of the holding, including animal traction and small machines rather than only large tractors
-- Improved rural roads and transport
-- Agricultural credit schemes and cooperatives
-- Strengthened extension services and farmer training
-- Improved seed varieties and planting material
-- Integrated pest management
-- Better storage and processing facilities
-- Reform and clarification of land tenure
-- Market information systems and farmer cooperatives to improve bargaining power
-- Irrigation and water management to reduce dependence on rainfall
+**Commercial agriculture** is developed primarily to produce crops and animals for sale in markets.
 
-## Agriculture and other subjects
+## Key points
 
-Agriculture is an **applied science**, not an isolated one. It draws on:
-
-- **Biology** — crop and animal science
-- **Chemistry** — soils and fertilisers
-- **Physics** — farm machinery and irrigation
-- **Economics** — farm management and marketing
-- **Geography** — climate and land use
-
-## Common errors and misconceptions
-
-- **Thinking bigger yields are the only way to a better harvest** — much of the loss in Liberia is **post-harvest** (poor drying, storage and roads); *reducing loss* is often cheaper and faster than raising output.
-- **Believing agriculture is only "farming rice"** — it also supplies **raw materials, exports, jobs, government revenue and rural development**, and includes livestock, fisheries and forestry.
-- **Treating agriculture as a subject cut off from science** — it is an **applied science**, drawing on biology, chemistry, physics, economics and geography.
-- **Assuming problems have single, instant fixes** — solutions (roads, credit, extension, storage, land reform) must be **prioritised** by cost, speed and the size of the problem they address.`,
-          workedExample: `**Question:** A farmer in Nimba County harvests 40 bags of rice but manages to sell only 25 bags, the rest being lost. Identify the likely causes of the loss and recommend practical solutions, indicating which should be tackled first.
+- Agriculture is the growing of crops and rearing of animals; it is a fundamental economic activity.
+- It provides food, raw materials, livelihoods and support for development.
+- Farming systems range from subsistence to commercial, shaped by local conditions.`,
+          workedExample: `**Question:** A family grows just enough cassava and vegetables to feed themselves, selling only a small surplus. A nearby estate grows a single crop on a large area entirely for sale. Classify each type of farming and explain the difference.
 
 **Solution**
 
-*Step 1 — identify the likely causes.*
+*Step 1 — Classify the family's farming.* The family grows food mainly for their own consumption, selling only a small surplus. This is **subsistence agriculture**, which primarily supports the local consumption of the farmers and their families.
 
-The loss of 15 bags out of 40 — nearly **38 per cent** — is a post-harvest loss rather than a production failure, since the rice was in fact harvested. Four causes are likely:
+*Step 2 — Classify the estate.* The estate grows a single crop on a large area, using much land and capital, entirely for sale. This is **plantation agriculture** — a form of **commercial agriculture**, which is developed primarily to produce crops for sale in markets.
 
-1. **Poor storage.** Rice stored in a damp room or unsealed container absorbs moisture, develops mould, and is attacked by weevils and rodents. This is the single largest cause of post-harvest loss in Liberian smallholdings.
+*Step 3 — State the key difference.* The purpose of production is what separates them. Subsistence farming aims to feed the household; commercial (plantation) farming aims to sell the produce for income. This difference in purpose explains the difference in scale: the subsistence plot is small, while the plantation is large and capital-intensive.
 
-2. **Inadequate drying.** Rice harvested at high moisture content and not dried to a safe level will spoil in storage regardless of the container used.
-
-3. **Poor road access to market.** If the farm is reached only by a track impassable in the rainy season, the rice cannot be moved while it is still in good condition.
-
-4. **Weak market access and low prices.** The farmer may have been unable to find a buyer at an acceptable price and held the rice too long, during which it deteriorated.
-
-*Step 2 — recommend solutions for each.*
-
-| Cause | Solution |
-| --- | --- |
-| Poor storage | Construct an improved crib or store raised on rat guards, well ventilated and rodent-proof; use sealed drums or treated sacks |
-| Inadequate drying | Dry on a raised drying floor or tarpaulin rather than bare ground; dry to the recommended moisture content before storage |
-| Poor road access | Community feeder-road maintenance; group transport arrangements to share costs |
-| Weak markets | Join a farmers' cooperative to sell collectively and obtain better prices; use market information to time sales |
-
-*Step 3 — decide what to tackle first, and justify it.*
-
-The correct order is not the order in which the causes were listed. Rank by **cost, speed and the size of the loss addressed**.
-
-**First: drying and storage.** These are within the farmer's own control, cost relatively little, and address the largest share of the loss. An improved crib with rat guards can be built from local materials, and a raised drying surface costs almost nothing. A farmer acting alone can implement both before the next harvest.
-
-**Second: cooperative membership.** This requires cooperation with others but no capital, and improves both price and bargaining position.
-
-**Third: road access.** This is the most costly and slowest to remedy, since it usually requires community mobilisation or government action. It is genuinely important, but a farmer who waits for the road while continuing to store rice badly will lose another harvest in the meantime.
-
-*Step 4 — quantify the benefit.*
-
-If improved drying and storage alone recovered two-thirds of the loss, the farmer would sell **35 bags instead of 25** — a 40 per cent increase in income from the same harvest, with no additional land, labour or fertiliser.
-
-**Conclusion:** the loss is principally a post-harvest problem. The priority is improved drying and storage, because these are cheap, quick, within the farmer's own control, and address the largest part of the loss. Road access matters but cannot be the first step.`,
-          teachingTip:
-            "Almost every learner in a Liberian classroom has direct experience of farming, and that experience is the best resource in the room. Begin by asking what crops their families grow and what goes wrong — you will get pests, spoilage, bad roads and low prices from the learners themselves, and the list of problems in the syllabus writes itself. This also prevents the subject from being taught as something remote from their lives. Press hard on the distinction between production problems and post-harvest problems, because learners tend to assume that increasing yield is the only route to a better harvest, when reducing loss is often cheaper and faster. The 38 per cent loss in the worked example makes the point vividly. If a school garden or demonstration plot is possible, start one in this period; a subject taught only from a textbook loses most of its value, and learners who have planted and harvested something argue about soil and pests with far more authority.",
+**Answer:** The family practises subsistence agriculture (food for the household); the estate practises plantation, a commercial system (a single crop grown for sale). The distinguishing factor is whether production is for the family's own consumption or for the market.`,
           quiz: [
             {
-              prompt: "Agriculture is best defined as",
+              prompt: "Agriculture is best described as",
               options: [
-                "the sale of food in markets",
-                "the science and practice of cultivating soil, producing crops and rearing livestock",
-                "the study of rural life",
-                "the export of raw materials",
+                "the sale of imported food",
+                "the growing of crops and rearing of animals",
+                "the study of rocks",
+                "the building of roads",
               ],
               correctIndex: 1,
               explanation:
-                "It covers both crop production and animal husbandry as a science and a practice.",
+                "Agriculture is a fundamental economic activity: growing crops and rearing animals.",
             },
             {
-              prompt: "Which crop is the staple food of Liberia?",
-              options: ["Maize", "Rice", "Wheat", "Millet"],
-              correctIndex: 1,
-              explanation:
-                "Rice is central to the Liberian diet and to national food security.",
-            },
-            {
-              prompt: "Which has long been among Liberia's principal agricultural exports?",
-              options: ["Wheat", "Rubber", "Barley", "Tea"],
-              correctIndex: 1,
-              explanation:
-                "Rubber has historically been a leading export earner alongside cocoa and coffee.",
-            },
-            {
-              prompt: "A major cause of post-harvest loss on Liberian farms is",
+              prompt: "Agriculture is described as a fundamental economic activity because it",
               options: [
-                "too much fertiliser",
-                "poor drying and storage",
-                "excessive mechanisation",
-                "too many extension officers",
+                "supports human survival and development",
+                "only earns foreign exchange",
+                "requires no land",
+                "is practised only in cities",
+              ],
+              correctIndex: 0,
+              explanation: "It sustains people and underpins the wider economy.",
+            },
+            {
+              prompt: "Subsistence agriculture is farming mainly for",
+              options: [
+                "export markets",
+                "the farmer's own family consumption",
+                "industrial processing",
+                "government stores",
               ],
               correctIndex: 1,
-              explanation:
-                "Damp storage invites mould, weevils and rodents, destroying a large share of the harvest.",
+              explanation: "Subsistence farming supports the local consumption of the family.",
             },
             {
-              prompt: "Insecure land tenure discourages farmers because",
+              prompt: "Commercial agriculture is developed primarily to",
               options: [
-                "it raises the price of seed",
-                "farmers will not invest long-term in land they may lose",
-                "it reduces rainfall",
-                "it increases pests",
+                "feed only the farmer",
+                "produce crops and animals for sale in markets",
+                "conserve wildlife",
+                "avoid all machinery",
               ],
               correctIndex: 1,
-              explanation:
-                "Investment in soil improvement pays off over years, which requires secure rights.",
+              explanation: "Commercial farming produces for the market.",
             },
             {
-              prompt: "Which is a raw material supplied by agriculture to industry?",
-              options: ["Iron ore", "Palm kernels", "Gold", "Cement"],
-              correctIndex: 1,
-              explanation:
-                "Palm kernels are milled for oil; the others are mineral or manufactured products.",
-            },
-            {
-              prompt: "Extension services are important because they",
+              prompt: "Plantation agriculture is characterised by",
               options: [
-                "buy farmers' produce",
-                "advise farmers on improved practices",
-                "build roads",
-                "set market prices",
+                "small plots and many crops",
+                "large estates, much capital and a single crop",
+                "no sale of produce",
+                "only animal rearing",
               ],
               correctIndex: 1,
-              explanation:
-                "Extension officers transfer improved techniques and information to farmers.",
+              explanation: "Plantations are large, capital-intensive and grow one crop for sale.",
             },
             {
-              prompt: "Rural-urban migration affects agriculture by",
+              prompt: "Mixed farming combines",
               options: [
-                "increasing the farm labour force",
-                "reducing the farm labour force as young people leave",
-                "improving soil fertility",
-                "lowering food prices",
+                "two towns",
+                "crop cultivation with animal husbandry",
+                "farming and mining",
+                "subsistence and export only",
               ],
               correctIndex: 1,
-              explanation:
-                "The departure of young people leaves an ageing workforce on the land.",
+              explanation: "Mixed farming raises crops and animals together.",
             },
             {
-              prompt: "A farmers' cooperative helps members mainly by",
+              prompt: "Which is an importance of agriculture?",
               options: [
-                "providing free land",
-                "improving bargaining power and access to inputs and markets",
-                "eliminating pests",
-                "guaranteeing rainfall",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Selling collectively secures better prices than individual farmers can obtain alone.",
-            },
-            {
-              prompt: "Livestock often serve Liberian households as",
-              options: [
-                "a form of savings that can be sold when cash is needed",
-                "a source of minerals",
-                "a substitute for soil",
-                "a means of transport only",
+                "It provides food and raw materials",
+                "It removes the need for water",
+                "It ends all employment",
+                "It stops development",
               ],
               correctIndex: 0,
               explanation:
-                "Animals store value and can be converted to cash in times of need.",
-            },
-          ],
-          test: [
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Define agriculture and state six ways in which it is important to the Liberian economy.",
-              answerKey:
-                "Agriculture is the science and practice of cultivating the soil, producing crops and rearing livestock for human benefit. Importance: supply of staple food and national food security; employment of the majority of the population; raw materials for industry such as rubber, palm kernels, cocoa and timber; foreign exchange earnings from exports; government revenue through duties and taxes; support for rural development, markets and services; household income and savings, including livestock as stored value; environmental management of soils and watersheds. Award 4 marks for the definition and 2 marks per importance explained.",
-              marks: 16,
+                "Agriculture provides food, raw materials, livelihoods and supports development.",
             },
             {
-              type: "SHORT_ANSWER",
-              prompt:
-                "State five problems facing Liberian agriculture and suggest one practical solution for each.",
-              answerKey:
-                "Accept any five with matched solutions: traditional hand-tool methods — appropriate mechanisation and improved implements; poor road access — feeder road construction and maintenance; limited capital — agricultural credit schemes and cooperatives; pests and diseases — integrated pest management and resistant varieties; insecure land tenure — clarification and reform of land rights; inadequate storage — improved cribs, drying floors and rodent-proofing; low prices — cooperatives and market information; shortage of extension officers — training and deployment of extension staff; rural-urban migration — making farming more profitable and attractive to young people; climate variability — irrigation and water management. Award 2 marks per problem and 2 per workable solution.",
-              marks: 20,
-            },
-            {
-              type: "MULTIPLE_CHOICE",
-              prompt:
-                "A farmer harvests a good crop but loses much of it before sale. The problem is best described as",
+              prompt: "Intensive subsistence farming is marked by",
               options: [
-                "A production problem",
-                "A post-harvest problem",
-                "A land tenure problem",
-                "A climate problem",
+                "large mechanised fields",
+                "small landholdings and heavy labour, often rice",
+                "a single export crop",
+                "no crops at all",
               ],
               correctIndex: 1,
-              answerKey:
-                "The crop was successfully produced and harvested; the loss occurred afterwards, in drying, storage or transport to market. Option B.",
-              marks: 4,
+              explanation: "It uses small plots with much labour, often for rice.",
             },
             {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Explain why agriculture is described as an applied science, referring to at least four other subjects it draws upon.",
-              answerKey:
-                "Agriculture applies knowledge from other sciences to the practical problems of production. Biology supplies crop and animal science, including reproduction, nutrition and disease. Chemistry supplies soil chemistry, fertilisers, pesticides and food processing. Physics supplies farm machinery, irrigation, drainage and post-harvest engineering. Economics supplies farm management, costing, marketing and the analysis of prices. Geography supplies climate, soils and land use. Mathematics supplies measurement, yield calculation and record keeping. Award 2 marks for the explanation of applied science and 2 marks per subject correctly linked to an agricultural application.",
-              marks: 10,
-            },
-            {
-              type: "ESSAY",
-              prompt:
-                "Discuss the contribution of agriculture to national development in Liberia, and examine the principal obstacles preventing the sector from realising its potential. Recommend, with justification, the three measures you would prioritise.",
-              answerKey:
-                "Award marks as follows: contribution to development covering food security, employment, industrial raw materials, foreign exchange, government revenue, rural development and household income, with Liberian specifics, 14 marks; obstacles treated in depth rather than listed, covering at least six from traditional methods, poor infrastructure, lack of capital and credit, pests and diseases, land tenure insecurity, inadequate storage, weak markets, insufficient extension, rural-urban migration and climate variability, 14 marks; three prioritised recommendations, each justified by reference to cost, speed of effect, and the scale of the problem addressed, 12 marks; explicit reasoning about why these three rank above the others, which is the discriminating element of the question, 6 marks; organisation and expression, 4 marks. A learner who lists problems and solutions without prioritising or justifying the ranking should not exceed 28.",
-              marks: 50,
-            },
-          ],
-        },
-        {
-          slug: "branches-and-systems",
-          title: "Branches of Agriculture and Farming Systems",
-          objective:
-            "By the end of the lesson, learners should be able to classify the branches of agriculture, describe the main farming systems practised in Liberia, and evaluate the advantages and disadvantages of each system.",
-          estimatedMinutes: 80,
-          notes: `## Introduction
-
-- Agriculture is many activities — from poultry to rubber to beekeeping.
-- Liberian farmers organise their land in strikingly different ways.
-- Each farming system has advantages and disadvantages; none is best in the abstract.
-- **This topic:** the branches of agriculture (crop production, animal production and supporting sciences); the farming systems practised in Liberia and the advantages and disadvantages of each.
-
-## Branches of agriculture
-
-### Crop production (agronomy)
-
-- **Arable farming** — annual crops: rice, cassava, maize, groundnuts, vegetables
-- **Horticulture** — intensive cultivation of fruits, vegetables and ornamentals
-  - *Olericulture* — vegetables
-  - *Pomology* — fruits
-  - *Floriculture* — flowers and ornamentals
-- **Plantation agriculture** — long-term tree crops grown on a large scale: rubber, oil palm, cocoa, coffee
-
-### Animal production (animal husbandry)
-
-- **Cattle rearing** — beef and dairy
-- **Poultry keeping** — chickens, ducks, guinea fowl
-- **Piggery** — pig rearing
-- **Small ruminants** — sheep and goats
-- **Apiculture** — beekeeping
-- **Aquaculture (fish farming)** — fish rearing in ponds
-- **Sericulture** — silkworm rearing
-
-### Supporting branches
-
-- **Soil science (pedology)** — soil formation, properties and management
-- **Agricultural engineering** — machinery, structures, irrigation and drainage
-- **Agricultural economics** — farm management, costing and marketing
-- **Forestry** — management of forests and timber
-- **Fishery** — capture and management of fish stocks
-- **Agricultural extension** — transfer of knowledge to farmers
-
-## Farming systems in Liberia
-
-### 1. Shifting cultivation
-
-Land is cleared, usually by cutting and burning, cropped for two or three years until fertility declines, then abandoned to bush fallow while the farmer moves to a new plot. The land recovers naturally over several years before being cleared again.
-
-**Advantages:** requires little capital or fertiliser; fallow restores fertility naturally; suits areas with abundant land and low population.
-
-**Disadvantages:** requires a large land area per household; deforestation where the fallow period is shortened; loss of soil and nutrients through burning; low total output; increasingly unsustainable as population rises and fallows shorten.
-
-### 2. Mixed farming
-
-Crops and livestock are raised on the same holding, each supporting the other. Animals supply manure and draught power; crop residues feed the animals.
-
-**Advantages:** better soil fertility from manure; diversified income reducing risk; fuller use of labour through the year; efficient use of by-products.
-
-**Disadvantages:** requires more skill and management; higher capital requirement; risk of disease transfer; competition between crops and livestock for land and labour.
-
-### 3. Mixed cropping (intercropping)
-
-Two or more crops are grown together on the same plot at the same time — for example cassava with maize, or rice with vegetables.
-
-**Advantages:** insurance against total failure of one crop; better ground cover reducing erosion and weeds; efficient use of a small plot; legumes may fix nitrogen for the companion crop.
-
-**Disadvantages:** difficult to mechanise; competition between crops for light, water and nutrients; harvesting is more complicated; pest control is harder.
-
-### 4. Monocropping (sole cropping)
-
-One crop only on a given plot.
-
-**Advantages:** easier to manage, mechanise and harvest; specialised inputs can be applied precisely.
-
-**Disadvantages:** total loss if that crop fails; depletes specific soil nutrients; encourages build-up of pests and diseases specific to the crop.
-
-### 5. Plantation agriculture
-
-Large-scale cultivation of a single perennial cash crop, usually for export — rubber, oil palm, cocoa.
-
-**Advantages:** economies of scale; access to capital, research and processing; foreign exchange earnings; formal employment.
-
-**Disadvantages:** dependence on a single crop and on volatile world prices; large land requirement, sometimes displacing local farmers; profits may leave the country; limited food production.
-
-### 6. Subsistence farming
-
-Production mainly for the household's own consumption, with any small surplus sold.
-
-**Advantages:** direct food security for the household; low capital requirement; independence from market fluctuations.
-
-**Disadvantages:** low output and income; little scope for investment or improvement; vulnerable to a single bad season.
-
-### 7. Commercial farming
-
-Production primarily for sale.
-
-**Advantages:** higher income; incentive to adopt improved methods; supplies urban food markets.
-
-**Disadvantages:** exposure to price fluctuations; requires capital and market access.
-
-## Choosing a system
-
-- No system is best in the abstract.
-- The appropriate system depends on: availability of land; population density; capital and labour available; the market; soil and climate; the farmer's objectives.
-
-## Common errors and misconceptions
-
-- **Confusing mixed farming with mixed cropping** — **mixed farming** combines *crops and livestock* on one holding; **mixed cropping (intercropping)** grows *two or more crops together* on one plot.
-- **Dismissing shifting cultivation as simply "primitive"** — it is a **rational** response to abundant land and scarce capital; what defeats it is **population growth** shortening the fallows.
-- **Assuming one system is best everywhere** — no system is best in the abstract; the right choice depends on land, population, capital, market, soil, climate and the farmer's goals.
-- **Answering "evaluate" questions one-sidedly** — every system has **advantages *and* disadvantages**; marks are awarded for balance, not for arguing only one way.`,
-          workedExample: `**Question:** Two farmers hold five hectares each in the same district. Farmer A practises shifting cultivation of rice. Farmer B practises mixed farming, growing rice and cassava while keeping goats and poultry. Compare the two systems and advise which is better suited to a district where population is rising.
-
-**Solution**
-
-*Step 1 — set out Farmer A's system.*
-
-Shifting cultivation requires that only part of the holding be cropped at any time while the remainder recovers under bush fallow. On five hectares with a fallow period of, say, six years, Farmer A can crop roughly one hectare each year.
-
-*Advantages in his position:* almost no capital required; no fertiliser purchased; fertility restored naturally by the fallow; the ash from burning supplies an immediate flush of nutrients.
-
-*Disadvantages:* output is limited to what one hectare yields; the burning destroys organic matter and exposes soil to erosion; and — decisively — the system depends on having enough land to leave most of it idle.
-
-*Step 2 — set out Farmer B's system.*
-
-Mixed farming allows the whole holding to be used continuously, because fertility is maintained rather than restored by rest.
-
-*Advantages:* goat and poultry manure returns nutrients to the soil, so cropping need not stop; crop residues feed the animals, so feed costs fall; two crops and two kinds of livestock spread risk, so a rice failure does not mean destitution; livestock provide income and savings between harvests; labour is used through the year rather than in seasonal peaks.
-
-*Disadvantages:* more management skill is required; some capital is needed to acquire stock; animals may carry disease; and crops and livestock compete for land and labour.
-
-*Step 3 — apply the decisive criterion: rising population.*
-
-This is the fact that settles the question.
-
-As population rises:
-
-- **Land per household falls.** Shifting cultivation needs a large area per household precisely because most of it must lie fallow. It is viable only where land is abundant relative to people.
-- **Fallow periods shorten.** Under pressure, farmers return to plots after three or four years instead of eight or ten. The soil has not recovered, so yields decline.
-- **A degradation spiral begins.** Lower yields force farmers to clear more land or return sooner, which lowers yields further. Soil fertility, organic matter and structure all deteriorate, and erosion increases.
-
-Mixed farming does not face this constraint, because it **maintains fertility on the land in use** rather than relying on rest. Manure, crop residues and rotation substitute for the fallow. The same hectare can be cropped year after year.
-
-*Step 4 — advise, with the qualification.*
-
-**Farmer B's mixed farming is better suited to a district with rising population.** It sustains continuous production on a smaller area, maintains soil fertility through manure and residues, diversifies income against risk, and does not degrade as land per household falls.
-
-*The honest qualification:* mixed farming demands more capital, more skill and more labour management. Farmer A cannot simply switch overnight. A realistic path is gradual — introduce a few goats or poultry first, begin returning manure to the cropped plot, shorten the fallow deliberately while compensating with manure, and expand the livestock component as skill and capital allow.
-
-**Conclusion:** shifting cultivation is a rational system where land is abundant and capital scarce, and it should not be dismissed as merely backward. But it is defeated by population growth, because it depends on a land surplus that population growth removes. Mixed farming is the more appropriate system under the stated conditions, with the transition managed in stages.`,
-          teachingTip:
-            "Learners often arrive with the view that shifting cultivation is simply primitive and that modern methods are self-evidently better. Correct this, because it is both inaccurate and unhelpful: shifting cultivation is a rational response to abundant land and scarce capital, and it works well under those conditions. What defeats it is population growth, and that is the analysis learners should be able to produce. Ask them to work out how much land a household needs under a ten-year fallow, then under a four-year fallow, and let the arithmetic show why fallows shorten and yields fall. For the systems comparison, have learners survey what is actually practised in their own communities and report back; the class will find mixed cropping almost everywhere and can then explain why farmers do it — risk-spreading and ground cover — before those terms are introduced. Insist that every evaluation question is answered with advantages and disadvantages on both sides, since examiners award marks for balance and learners lose marks by arguing only one way.",
-          quiz: [
-            {
-              prompt: "Horticulture is the branch of agriculture dealing with",
+              prompt: "The many different agricultural systems exist because farming is practised under",
               options: [
-                "cattle rearing",
-                "intensive cultivation of fruits, vegetables and ornamentals",
-                "forest management",
-                "fish farming",
+                "identical conditions everywhere",
+                "a wide range of physical and socio-economic conditions",
+                "no conditions at all",
+                "only desert conditions",
               ],
               correctIndex: 1,
+              explanation: "Varied conditions lead to diverse systems.",
+            },
+            {
+              prompt: "Sustainable agriculture is important for",
+              options: [
+                "food security and environmental conservation",
+                "reducing food supply",
+                "destroying soil",
+                "ending livelihoods",
+              ],
+              correctIndex: 0,
               explanation:
-                "It includes olericulture, pomology and floriculture.",
+                "It supports food security, environmental conservation and livelihoods.",
             },
             {
-              prompt: "Apiculture is the rearing of",
-              options: ["Fish", "Bees", "Silkworms", "Pigs"],
-              correctIndex: 1,
-              explanation: "Apiculture is beekeeping; sericulture is silkworm rearing.",
+              prompt: "Commercial grain farming typically uses",
+              options: [
+                "large mechanised farms producing grain for market",
+                "tiny hand-dug plots",
+                "no land",
+                "only livestock",
+              ],
+              correctIndex: 0,
+              explanation: "Extensive commercial grain farms are large and mechanised.",
             },
             {
               prompt: "In shifting cultivation, land is",
               options: [
-                "cropped continuously with fertiliser",
-                "cropped for a few years then left to fallow",
+                "kept in continuous use with fertiliser",
+                "cleared and cropped, then abandoned when fertility falls",
                 "never cleared",
-                "used only for livestock",
+                "used only for buildings",
               ],
               correctIndex: 1,
-              explanation:
-                "The fallow period allows natural recovery of soil fertility.",
+              explanation: "The plot is abandoned once soil fertility declines.",
             },
             {
-              prompt: "Mixed farming means",
+              prompt: "Agriculture supplies industry with",
+              options: ["Cement", "Raw materials such as crops and fibres", "Electricity", "Iron ore"],
+              correctIndex: 1,
+              explanation: "Farm produce provides raw materials for processing industries.",
+            },
+            {
+              prompt: "A family selling only a small surplus of the food it grows practises",
+              options: ["Commercial farming", "Subsistence agriculture", "Plantation farming", "Grain farming"],
+              correctIndex: 1,
+              explanation: "Most produce is consumed by the family; little is sold.",
+            },
+            {
+              prompt: "The factor that best distinguishes subsistence from commercial farming is",
               options: [
-                "growing two crops together",
-                "raising crops and livestock on the same holding",
-                "farming in two different districts",
-                "using both hand tools and machines",
+                "the colour of the soil",
+                "whether production is for consumption or for sale",
+                "the time of year",
+                "the name of the crop",
               ],
               correctIndex: 1,
-              explanation:
-                "Growing two crops together on one plot is mixed cropping, which is different.",
+              explanation: "Purpose of production is the key difference.",
             },
             {
-              prompt: "A principal advantage of mixed cropping is that it",
+              prompt: "Agriculture provides livelihoods for",
               options: [
-                "is easy to mechanise",
-                "provides insurance against total failure of one crop",
-                "requires no weeding",
-                "always produces higher yields per crop",
+                "no one",
+                "millions of farmers",
+                "only factory workers",
+                "only traders",
               ],
               correctIndex: 1,
-              explanation:
-                "If one crop fails the other may still yield, spreading the farmer's risk.",
+              explanation: "Farming provides work and income for millions.",
             },
             {
-              prompt: "A major disadvantage of monocropping is that it",
+              prompt: "Which is a commercial farming system?",
+              options: ["Subsistence cassava plot", "Plantation agriculture", "Household vegetable garden", "Shifting cultivation for family food"],
+              correctIndex: 1,
+              explanation: "Plantations grow crops for sale, making them commercial.",
+            },
+            {
+              prompt: "Food security means",
               options: [
-                "is difficult to harvest",
-                "encourages build-up of crop-specific pests and diseases",
-                "cannot be mechanised",
-                "requires no inputs",
+                "having reliable access to enough food",
+                "locking away all food",
+                "exporting all crops",
+                "growing no crops",
               ],
-              correctIndex: 1,
-              explanation:
-                "Growing the same crop repeatedly also depletes particular soil nutrients.",
+              correctIndex: 0,
+              explanation: "Sustainable agriculture supports food security.",
             },
             {
-              prompt: "Plantation agriculture in Liberia is best exemplified by",
-              options: ["Rice", "Rubber", "Cassava", "Vegetables"],
+              prompt: "Environmental conservation is served by agriculture when farming is",
+              options: ["Wasteful", "Sustainable", "Abandoned", "Only for export"],
               correctIndex: 1,
-              explanation:
-                "Rubber is a perennial cash crop grown on a large scale primarily for export.",
+              explanation: "Sustainable practices conserve soil, water and biodiversity.",
             },
             {
-              prompt: "Subsistence farming is production mainly for",
+              prompt: "Mixed farming is found where farmers want to",
               options: [
-                "export",
-                "the household's own consumption",
-                "industrial processing",
-                "government stockpiles",
+                "grow only one crop",
+                "combine crops and livestock",
+                "avoid all animals",
+                "stop farming",
               ],
               correctIndex: 1,
-              explanation:
-                "Only a small surplus, if any, reaches the market.",
-            },
-            {
-              prompt: "Shifting cultivation becomes unsustainable as population rises because",
-              options: [
-                "soils become too fertile",
-                "fallow periods shorten and soils cannot recover",
-                "rainfall increases",
-                "crops grow too quickly",
-              ],
-              correctIndex: 1,
-              explanation:
-                "The system depends on a land surplus that population growth removes.",
-            },
-            {
-              prompt: "In mixed farming, livestock benefit the crops chiefly by",
-              options: [
-                "eating weeds only",
-                "supplying manure that returns nutrients to the soil",
-                "providing shade",
-                "increasing rainfall",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Manure and draught power are the main contributions; crop residues feed the animals in return.",
+              explanation: "Mixed farming deliberately combines crops and animals.",
             },
           ],
           test: [
             {
               type: "SHORT_ANSWER",
               prompt:
-                "Classify the branches of agriculture under crop production and animal production, giving three examples under each.",
+                "Define agriculture and state four ways in which it is important.",
               answerKey:
-                "Crop production or agronomy: arable farming of annual crops such as rice and cassava; horticulture, subdivided into olericulture for vegetables, pomology for fruits and floriculture for ornamentals; plantation agriculture of perennial cash crops such as rubber, oil palm and cocoa. Animal production or animal husbandry: cattle rearing for beef and dairy; poultry keeping; piggery; small ruminants such as sheep and goats; apiculture or beekeeping; aquaculture or fish farming; sericulture or silkworm rearing. Award 2 marks per branch correctly classified with an example, up to 6 under each heading.",
+                "Agriculture is the growing of crops and the rearing of animals, a fundamental economic activity supporting human survival and development. Importance: it provides food; it supplies raw materials for industry; it provides livelihoods and employment; it supports environmental conservation through sustainable practices; it supports wider economic development. Award 4 marks for the definition and 2 marks per importance, up to four.",
               marks: 12,
             },
             {
               type: "SHORT_ANSWER",
               prompt:
-                "Distinguish clearly between mixed farming and mixed cropping, giving two advantages of each.",
+                "Distinguish between subsistence agriculture and commercial agriculture.",
               answerKey:
-                "Mixed farming is the raising of crops and livestock together on the same holding, each supporting the other. Mixed cropping or intercropping is the growing of two or more crops together on the same plot at the same time. Advantages of mixed farming: manure maintains soil fertility; income is diversified so risk is spread; crop residues feed livestock; labour is used throughout the year. Advantages of mixed cropping: insurance against total failure of one crop; better ground cover reducing erosion and weed growth; efficient use of a small plot; legumes may fix nitrogen for the companion crop. Award 3 marks per definition and 2 marks per advantage.",
-              marks: 14,
+                "Subsistence agriculture is farming in which food is grown mainly for the local consumption of the farmers and their families, with little or no surplus sold. Commercial agriculture is developed primarily to produce crops and animals for sale in markets. The key difference is the purpose of production — consumption versus sale — which also affects the scale of the farm. Award 3 marks per definition and 2 marks for the distinguishing point.",
+              marks: 8,
             },
             {
               type: "MULTIPLE_CHOICE",
               prompt:
-                "A district has rising population and shrinking landholdings. Which system becomes least viable?",
+                "A large estate grows a single crop on much land, using heavy capital, entirely for sale. This is",
               options: [
-                "Mixed farming",
+                "Subsistence agriculture",
+                "Plantation agriculture",
+                "Intensive subsistence farming",
                 "Shifting cultivation",
-                "Mixed cropping",
-                "Commercial vegetable growing",
               ],
               correctIndex: 1,
               answerKey:
-                "Shifting cultivation requires a large area per household because most of the land must lie fallow. As population rises, fallow periods shorten, soils do not recover and yields decline. Option B.",
+                "Plantation agriculture uses large estates and much capital to grow a single crop for sale. Option B.",
               marks: 4,
             },
             {
               type: "SHORT_ANSWER",
               prompt:
-                "State three advantages and three disadvantages of plantation agriculture in Liberia.",
+                "Name three types of farming and give one feature of each.",
               answerKey:
-                "Advantages: economies of scale in production and processing; access to capital, research and improved planting material; foreign exchange earnings from export; formal employment and associated infrastructure. Disadvantages: dependence on a single crop and exposure to volatile world prices; large land requirements that may displace local farmers or restrict food production; profits may be repatriated rather than retained locally; environmental effects of monoculture over large areas. Award 2 marks each for three advantages and three disadvantages.",
-              marks: 12,
+                "Accept any three: subsistence agriculture — food grown mainly for the family; shifting cultivation — land cleared, cropped, then abandoned when fertility falls; intensive subsistence — small plots, heavy labour, often rice; plantation agriculture — large estates, much capital, a single crop for sale; mixed farming — crops combined with livestock; commercial grain farming — large mechanised farms for market. Award 2 marks per type named with a correct feature.",
+              marks: 6,
             },
             {
               type: "ESSAY",
               prompt:
-                "Compare shifting cultivation and mixed farming as systems for a Liberian smallholder. Explain the conditions under which each is appropriate, and advise which should be promoted in an area of increasing population pressure, justifying your recommendation.",
+                "Explain the importance of agriculture and describe the main types of farming, distinguishing subsistence from commercial systems.",
               answerKey:
-                "Award marks as follows: accurate description of shifting cultivation including clearing, cropping, fallow and natural fertility restoration, 6 marks; accurate description of mixed farming including the reciprocal relationship between crops and livestock, 6 marks; balanced advantages and disadvantages of each system, 12 marks; the conditions favouring shifting cultivation, namely abundant land, low population density and scarce capital, treated as a rational adaptation rather than mere backwardness, 7 marks; analysis of the effect of population growth — shrinking holdings, shortening fallows, incomplete soil recovery, declining yields and a degradation spiral, 9 marks; a clear recommendation of mixed farming with justification grounded in the maintenance rather than restoration of fertility, 7 marks; recognition of the transition problem, namely that mixed farming requires capital, skill and management that a shifting cultivator may lack, with a staged path suggested, 6 marks; organisation and expression, 2 marks. A learner who dismisses shifting cultivation as simply primitive, without analysing the conditions under which it is rational, should not exceed 30.",
-              marks: 55,
+                "Award marks as follows: agriculture defined as a fundamental economic activity growing crops and rearing animals, 6 marks; importance developed across food, raw materials, livelihoods, environmental conservation and development, 14 marks; the main types of farming described — subsistence, shifting cultivation, intensive subsistence, plantation, mixed farming and commercial grain farming, 16 marks; a clear distinction between subsistence (for the family's consumption) and commercial (for sale), with the effect on scale, 10 marks; organisation and expression, 4 marks. A learner who lists types without distinguishing subsistence from commercial should not exceed 28.",
+              marks: 50,
             },
           ],
         },
+        // source: LibreTexts (Human Geography) — 10.2 Agricultural Practices (https://socialsci.libretexts.org/Bookshelves/Geography_(Human)/Introduction_to_Human_Geography_(Dorrell_and_Henderson)/10:_Agriculture_and_Food/10.02:_Agricultural_Practices); GeeksforGeeks — Primary Activities, Class 12 Geography (https://www.geeksforgeeks.org/social-science/chapter-4-primary-activities-class-12-geography-notes/)
+        {
+          slug: "branches-and-systems",
+          title: "Branches of Agriculture and Farming Systems",
+          objective:
+            "By the end of the lesson, learners should be able to describe the main farming practices and systems and compare their features and advantages.",
+          estimatedMinutes: 80,
+          notes: `## Farming systems and practices
+
+Agriculture is carried out through several different practices and systems.
+
+### Shifting cultivation (slash-and-burn)
+
+A form of **subsistence agriculture** that uses a kind of natural rotation system. Vegetation is cleared and the debris burned; the cleared plot is called a **swidden**. A field is actively cultivated for about three years, then abandoned because the soil becomes depleted, and the farmer moves to a new plot.
+
+### Intercropping (mixed cropping)
+
+**Mixing different seeds in the same swidden**, favourable in the warm and humid tropics, where it allows harvesting two or even three times per year. Several crops grow together in one field, giving efficient use of the land.
+
+### Monoculture (monocropping)
+
+Highly specialised farming in which, generally, **one single crop** is grown. Commercial grain farming is an example. This concentrates production on a single crop for market efficiency.
+
+### Subsistence and commercial agriculture
+
+- **Subsistence farming** — growing food only to sustain the farmers themselves and their families, consuming most of what they produce. Farms are small, often 1 to 2 hectares.
+- **Commercial agriculture** — producing crops for sale, for example to food-processing companies. Farms are larger, often over 150 hectares.
+
+### Plantation agriculture
+
+**Large landholdings** in developing regions designed to produce crops for export, specialising in single crops such as coffee, cocoa or sugar for international markets.
+
+### Mixed crop and livestock farming
+
+A system that combines the cultivation of various crops with the keeping of livestock, using **crop rotation**. Cereal crops or orchards are grown alongside cattle, sheep, pigs or poultry.
+
+## Comparing the systems
+
+| System | Purpose | Scale |
+| --- | --- | --- |
+| Shifting cultivation | Subsistence | Small; land abandoned after a few years |
+| Intercropping | Subsistence or mixed | Small; several crops per plot |
+| Monoculture | Commercial | Often large; one crop |
+| Plantation | Export | Large landholdings |
+| Mixed crop and livestock | Mixed | Varies; crops and animals together |
+
+## Key points
+
+- Shifting cultivation clears and burns land, crops it for a few years, then moves on.
+- Intercropping grows several crops together; monoculture grows one crop.
+- Subsistence farms are small and for the family; commercial and plantation farms are large and for sale.
+- Mixed crop and livestock farming combines crops and animals with rotation.`,
+          workedExample: `**Question:** A farmer clears a patch of forest, burns the cut vegetation, and plants crops. After three years the yields fall sharply and he clears a new patch. His neighbour grows maize, beans and squash together in one field and keeps a few goats. Name each system and compare them.
+
+**Solution**
+
+*Step 1 — Name the first farmer's system.* Clearing vegetation, burning the debris, cropping the plot (the swidden) for about three years, then abandoning it when the soil is depleted, is **shifting cultivation** (slash-and-burn), a form of subsistence agriculture.
+
+*Step 2 — Name the neighbour's system.* Growing several crops together in one field is **intercropping (mixed cropping)**, and because he also keeps livestock, he practises a form of **mixed crop and livestock farming** using the crops and animals together.
+
+*Step 3 — Compare them.*
+
+- **Land use over time.** Shifting cultivation must abandon each plot after a few years because fertility falls, so the farmer keeps moving. Mixed cropping with livestock keeps a plot in use, and crop rotation and several crops together make fuller use of the same land.
+- **Risk.** Growing maize, beans and squash together spreads risk: if one crop does poorly, the others may still yield. A single cleared plot offers no such spread.
+- **Purpose and scale.** Both are small-scale and largely for the household, but the intercropping-and-livestock system uses the land more intensively without abandoning it.
+
+**Answer:** The first farmer practises shifting cultivation (slash-and-burn); the neighbour practises intercropping combined with mixed crop and livestock farming. The neighbour's system keeps the land in continuous use and spreads risk across several crops, whereas shifting cultivation must move on once the soil is depleted.`,
+          quiz: [
+            {
+              prompt: "Shifting cultivation is also known as",
+              options: ["Slash-and-burn", "Plantation farming", "Monoculture", "Dairy farming"],
+              correctIndex: 0,
+              explanation: "Shifting cultivation clears and burns vegetation.",
+            },
+            {
+              prompt: "A cleared plot in shifting cultivation is called a",
+              options: ["Ranch", "Swidden", "Terrace", "Paddock"],
+              correctIndex: 1,
+              explanation: "The burned, cleared field is the swidden.",
+            },
+            {
+              prompt: "In shifting cultivation, a field is abandoned because",
+              options: [
+                "the soil becomes depleted",
+                "it rains too much",
+                "the crops are too many",
+                "the market closes",
+              ],
+              correctIndex: 0,
+              explanation: "After about three years the soil is depleted and the farmer moves on.",
+            },
+            {
+              prompt: "Intercropping means",
+              options: [
+                "growing one crop only",
+                "mixing different seeds in the same field",
+                "keeping only livestock",
+                "leaving land bare",
+              ],
+              correctIndex: 1,
+              explanation: "Several crops are grown together in one field.",
+            },
+            {
+              prompt: "Intercropping is favourable in the warm humid tropics because it allows",
+              options: [
+                "no harvest",
+                "harvesting two or three times per year",
+                "only one crop per decade",
+                "less use of land",
+              ],
+              correctIndex: 1,
+              explanation: "Mixing seeds enables multiple harvests per year.",
+            },
+            {
+              prompt: "Monoculture (monocropping) is the growing of",
+              options: ["Several crops together", "One single crop", "Only animals", "No crops"],
+              correctIndex: 1,
+              explanation: "Monoculture concentrates on a single crop.",
+            },
+            {
+              prompt: "Commercial grain farming is an example of",
+              options: ["Intercropping", "Monoculture", "Shifting cultivation", "Subsistence farming"],
+              correctIndex: 1,
+              explanation: "Grain farming is highly specialised, generally one crop.",
+            },
+            {
+              prompt: "Subsistence farms are typically about",
+              options: ["1 to 2 hectares", "over 150 hectares", "500 hectares", "no land"],
+              correctIndex: 0,
+              explanation: "Subsistence farms are small, often 1 to 2 hectares.",
+            },
+            {
+              prompt: "Commercial farms are typically",
+              options: ["Smaller than 1 hectare", "Often over 150 hectares", "Non-existent", "Only gardens"],
+              correctIndex: 1,
+              explanation: "Commercial farms are larger, often over 150 hectares.",
+            },
+            {
+              prompt: "Plantation agriculture produces crops mainly for",
+              options: ["The family only", "Export", "Fallow", "Fodder"],
+              correctIndex: 1,
+              explanation: "Plantations grow single crops for export markets.",
+            },
+            {
+              prompt: "Which crop is typical of plantation agriculture?",
+              options: ["Coffee, cocoa or sugar", "Wild grass", "Weeds", "Moss"],
+              correctIndex: 0,
+              explanation: "Plantations specialise in crops such as coffee, cocoa and sugar.",
+            },
+            {
+              prompt: "Mixed crop and livestock farming uses",
+              options: [
+                "crop rotation, growing crops alongside livestock",
+                "only one crop and no animals",
+                "no rotation",
+                "no crops",
+              ],
+              correctIndex: 0,
+              explanation: "It combines crops and animals with crop rotation.",
+            },
+            {
+              prompt: "Subsistence farmers consume",
+              options: [
+                "none of what they produce",
+                "most of what they produce",
+                "only imported food",
+                "only cash crops",
+              ],
+              correctIndex: 1,
+              explanation: "They eat most of their produce, selling little.",
+            },
+            {
+              prompt: "A key advantage of intercropping is",
+              options: [
+                "efficient use of the land",
+                "no need to plant",
+                "easy machinery use",
+                "a single harvest per decade",
+              ],
+              correctIndex: 0,
+              explanation: "Several crops in one field use land efficiently.",
+            },
+            {
+              prompt: "Shifting cultivation is a form of",
+              options: ["Commercial agriculture", "Subsistence agriculture", "Plantation agriculture", "Dairy farming"],
+              correctIndex: 1,
+              explanation: "It is a subsistence practice using natural rotation.",
+            },
+            {
+              prompt: "Commercial agriculture produces crops mainly for",
+              options: ["Sale, e.g. to food-processing companies", "The family only", "Fallow", "No purpose"],
+              correctIndex: 0,
+              explanation: "Commercial agriculture is for the market.",
+            },
+            {
+              prompt: "In mixed crop and livestock farming, animals kept may include",
+              options: ["Cattle, sheep, pigs or poultry", "Only fish", "No animals", "Only bees"],
+              correctIndex: 0,
+              explanation: "Cattle, sheep, pigs or poultry are kept alongside crops.",
+            },
+            {
+              prompt: "Monoculture is described as farming that is",
+              options: ["Highly specialised on one crop", "Very mixed", "Never for market", "Always subsistence"],
+              correctIndex: 0,
+              explanation: "Monoculture is specialised on a single crop.",
+            },
+            {
+              prompt: "The natural rotation in shifting cultivation refers to",
+              options: [
+                "moving from plot to plot as soils are depleted and recover",
+                "rotating machinery",
+                "changing markets",
+                "rotating workers",
+              ],
+              correctIndex: 0,
+              explanation: "Plots are cropped then left as the farmer moves on.",
+            },
+            {
+              prompt: "The purpose that separates subsistence from commercial farming is",
+              options: [
+                "consumption by the family versus sale",
+                "the colour of the crop",
+                "the weather",
+                "the farmer's age",
+              ],
+              correctIndex: 0,
+              explanation: "Subsistence is for the family; commercial is for sale.",
+            },
+          ],
+          test: [
+            {
+              type: "SHORT_ANSWER",
+              prompt:
+                "Describe shifting cultivation, including how the land is prepared and why the farmer eventually moves on.",
+              answerKey:
+                "Shifting cultivation (slash-and-burn) is a form of subsistence agriculture using a natural rotation system. Vegetation is cleared and the debris burned; the cleared plot is the swidden. The plot is cultivated for about three years, then abandoned because the soil becomes depleted, and the farmer moves to a new plot. Award marks for clearing and burning (3), the swidden/roughly three-year cultivation (3) and abandonment due to soil depletion (4).",
+              marks: 10,
+            },
+            {
+              type: "SHORT_ANSWER",
+              prompt:
+                "Distinguish between intercropping and monoculture.",
+              answerKey:
+                "Intercropping (mixed cropping) is the mixing of different seeds in the same field so that several crops grow together, allowing efficient land use and, in the humid tropics, two or three harvests a year. Monoculture (monocropping) is highly specialised farming in which generally one single crop is grown, as in commercial grain farming. Award 4 marks per definition and 2 marks for the contrast.",
+              marks: 10,
+            },
+            {
+              type: "MULTIPLE_CHOICE",
+              prompt:
+                "Large landholdings in developing regions producing a single crop for export describe",
+              options: ["Shifting cultivation", "Plantation agriculture", "Intercropping", "Subsistence farming"],
+              correctIndex: 1,
+              answerKey:
+                "Plantation agriculture uses large landholdings to produce single crops such as coffee, cocoa or sugar for export. Option B.",
+              marks: 4,
+            },
+            {
+              type: "SHORT_ANSWER",
+              prompt:
+                "State two differences in scale between subsistence and commercial farms, and describe mixed crop and livestock farming.",
+              answerKey:
+                "Subsistence farms are small, often 1 to 2 hectares, and grow food mainly for the family; commercial farms are larger, often over 150 hectares, and produce for sale. Mixed crop and livestock farming combines the cultivation of various crops with the keeping of livestock such as cattle, sheep, pigs or poultry, using crop rotation. Award 2 marks per scale difference and 4 marks for describing mixed crop and livestock farming.",
+              marks: 8,
+            },
+            {
+              type: "ESSAY",
+              prompt:
+                "Compare shifting cultivation, intercropping and mixed crop and livestock farming as systems used by small farmers, describing each and explaining their advantages and limitations.",
+              answerKey:
+                "Award marks as follows: accurate description of shifting cultivation — clearing, burning, the swidden, roughly three years' cropping and abandonment on soil depletion, 10 marks; accurate description of intercropping — several crops in one field, efficient land use, multiple harvests in the humid tropics, 10 marks; accurate description of mixed crop and livestock farming — crops grown with livestock using crop rotation, 10 marks; discussion of advantages and limitations, including risk-spreading in intercropping and continuous land use versus the need to move in shifting cultivation, 14 marks; organisation and expression, 6 marks. A learner who describes the systems without comparing advantages should not exceed 30.",
+              marks: 50,
+            },
+          ],
+        },
+        // source: OpenStax Biology 2e — 31.2 The Soil (https://openstax.org/books/biology-2e/pages/31-2-the-soil); GeeksforGeeks — Soil Formation (https://www.geeksforgeeks.org/biology/soil-formation/) and Soil Profile (https://www.geeksforgeeks.org/biology/soil-profile/)
         {
           slug: "soil",
           title: "Soil: Formation, Types and Properties",
           objective:
-            "By the end of the lesson, learners should be able to define soil, describe its formation and composition, identify the soil profile and the main soil types, and explain the properties that determine agricultural value.",
+            "By the end of the lesson, learners should be able to define soil, state its composition, describe its formation and profile, and identify soil types by texture.",
           estimatedMinutes: 80,
-          notes: `## Introduction
+          notes: `## What soil is
 
-- **Soil** = a living, layered mixture of weathered rock, organic matter, water and air, built up over centuries.
-- It is far more than "dirt"; its properties decide its farming value.
-- In Liberia, protecting the thin, fertile topsoil is the heart of good soil management.
-- **This topic:** what soil is and how it forms; the soil profile; the main soil types by texture; the properties — texture, structure, pH and fertility — that decide farming value.
+**Soil** is the outer loose layer that covers the surface of the Earth. It is the natural medium from which plants obtain inorganic elements needed for growth.
 
-## What soil is
+## Composition of soil
 
-**Soil** is the loose upper layer of the earth's crust in which plants grow, formed from weathered rock mixed with organic matter, water, air and living organisms.
+By volume, an ideal soil is:
 
-## Composition of a good agricultural soil
+- **Inorganic mineral matter** — about 40 to 45 per cent
+- **Organic matter** — about 5 per cent
+- **Water and air together** — about 50 per cent
 
-By volume, an ideal loam contains approximately:
+Ideally soil contains **50 per cent solid material and 50 per cent pore space**, with half the pore space holding water and half holding air. **Humus** (decomposed organic matter) plays a significant role in fertility.
 
-- **Mineral matter** — 45 per cent (weathered rock particles)
-- **Organic matter** — 5 per cent (humus and decaying remains)
-- **Water** — 25 per cent (soil solution)
-- **Air** — 25 per cent (in the pore spaces)
+## How soil forms
 
-Water and air share the pore space, so they vary inversely: a waterlogged soil has too little air, and plant roots suffocate.
+Soil forms by the gradual breaking down of rock through **weathering**. It forms very slowly — roughly 500 years to make 1 cm of soil from hard rock.
 
-## Soil formation
+**Physical weathering** — rock is broken down without chemical change:
 
-Soil forms by the **weathering** of parent rock followed by the addition of organic matter.
+- Freezing and thawing: water expands when frozen and forces particles apart
+- Heating and cooling: expansion and contraction in extreme climates
+- Wetting and drying: rocks shrink and swell
+- Abrasion by wave action and grinding
 
-**Physical (mechanical) weathering** — breakdown without chemical change:
+**Chemical weathering** — the slow chemical alteration of rock by water that seeps through after rains.
 
-- Temperature change causing expansion and contraction
-- Water freezing in cracks (limited in Liberia)
-- Abrasion by wind and water
-- Root action prising rock apart
+**Biological weathering** — organisms churn through soil, mixing and aerating it and adding nutrient-rich matter.
 
-**Chemical weathering** — breakdown with chemical change:
+## Factors of soil formation
 
-- **Solution** — minerals dissolve in water
-- **Hydrolysis** — reaction with water
-- **Oxidation** — reaction with oxygen, giving the red colour of many tropical soils
-- **Carbonation** — reaction with carbonic acid from dissolved carbon dioxide
-
-**Biological weathering** — action of plants, animals and micro-organisms, including burrowing, root penetration and acid secretion.
-
-## Factors affecting soil formation
-
-1. **Parent material** — determines the mineral content
-2. **Climate** — rainfall and temperature govern the rate of weathering; both are high in Liberia, so weathering is rapid and leaching heavy
-3. **Relief (topography)** — steep slopes lose soil to erosion; valley bottoms accumulate it
-4. **Living organisms** — supply organic matter and mix the soil
-5. **Time** — mature soils take hundreds to thousands of years to develop
+1. **Parent material** — the underlying bedrock
+2. **Climate** — heat and moisture; dry, cool climates slow formation
+3. **Topography** — the slope and position of the land
+4. **Biological factors (organisms)** — plants, animals, microorganisms and fungi
+5. **Time** — thousands of years for significant development
 
 ## The soil profile
 
-A vertical section through the soil shows distinct **horizons**:
+A vertical section through the soil shows layers called **horizons**:
 
-- **O horizon** — surface litter of undecomposed organic matter
-- **A horizon (topsoil)** — dark, rich in humus, most biological activity, most plant roots. The agriculturally critical layer.
-- **B horizon (subsoil)** — lighter in colour, where materials leached from above accumulate. Fewer roots.
-- **C horizon** — partly weathered parent rock
-- **R horizon** — unweathered bedrock
-
-**Why this matters:**
-
-- The A horizon is where farming happens.
-- Erosion removes it first, and it is the layer that takes longest to replace.
-- A soil stripped of its topsoil may take a lifetime to recover.
+- **O horizon** — freshly decomposing organic matter (humus) at the surface
+- **A horizon (topsoil)** — a mixture of organic and inorganic weathered material; typically dark; highest biological activity and most roots; vulnerable to erosion
+- **B horizon (subsoil)** — accumulation of fine material moved down from above; richer in clay, retains moisture, less fertile than topsoil
+- **C horizon** — parent material and broken-down rock; lacks true soil characteristics
+- **R horizon** — the bedrock beneath
 
 ## Soil types by texture
 
-Texture is determined by the proportions of sand, silt and clay.
+Soil texture is set by the proportions of sand, silt and clay:
 
-**Sandy soil** — large particles, large pore spaces.
-- Drains rapidly, well aerated, easy to work, warms quickly
-- Retains little water or nutrients, leaches easily, low fertility
+| Particle | Size |
+| --- | --- |
+| Sand | 0.1 to 2 mm |
+| Silt | 0.002 to 0.1 mm |
+| Clay | less than 0.002 mm |
 
-**Clay soil** — very fine particles, small pore spaces.
-- Retains water and nutrients well, often fertile
-- Drains poorly, becomes waterlogged, heavy to work, cracks when dry, poorly aerated
+- **Loam** — a mixture of sand, silt and humus with no dominant particle size; a balanced soil for growing.
 
-**Loam soil** — a balanced mixture of sand, silt and clay.
-- **The best agricultural soil.** Holds sufficient water while draining freely, well aerated, retains nutrients, easy to work
+## Key points
 
-**Silt soil** — intermediate particle size; fertile but prone to compaction and erosion.
-
-## Soil properties
-
-**Texture** — the proportions of sand, silt and clay. Cannot practically be changed.
-
-**Structure** — the arrangement of particles into aggregates or crumbs. **Can** be improved, by adding organic matter and by avoiding compaction. This distinction is important: a farmer cannot change texture but can improve structure.
-
-**Porosity** — the proportion of pore space, governing air and water movement.
-
-**Permeability** — the rate at which water passes through.
-
-**Water-holding capacity** — the amount of water retained after drainage.
-
-**Soil pH** — acidity or alkalinity. Most crops prefer pH 6 to 7. Liberian soils are commonly **acidic** because heavy rainfall leaches away basic ions. Acidity is corrected by **liming**.
-
-**Soil fertility** — the capacity to supply nutrients. The major nutrients are nitrogen, phosphorus and potassium (N, P, K).
-
-**Soil colour** — dark indicates high organic matter; red indicates iron oxides; grey or mottled indicates poor drainage.
-
-## Liberian soils
-
-- Under heavy tropical rainfall, Liberian soils are typically **highly weathered, acidic and heavily leached**.
-- Nutrients are concentrated in a thin surface layer of organic matter.
-- **When the topsoil is lost, fertility goes with it** — the subsoil holds little.
-- Clearing and burning gives only a short flush of fertility that does not last.
-- Maintaining organic matter is the central task of soil management in Liberia.
-
-## Soil conservation
-
-- Contour ploughing and ridging across the slope
-- Terracing on steep land
-- Cover cropping and mulching to protect the surface
-- Crop rotation, including legumes
-- Agroforestry and windbreaks
-- Adding manure and compost to maintain organic matter
-- Avoiding overgrazing and excessive burning
-- Controlled drainage
-
-## Common errors and misconceptions
-
-- **Confusing soil texture with soil structure** — **texture** (the proportion of sand, silt and clay) is essentially *fixed*; **structure** (how particles clump into crumbs) *can* be improved with organic matter and careful tillage.
-- **Thinking the burning "flush" lasts** — clearing and burning gives a *short* boost of nutrients from ash; in Liberia's leached soils it soon washes away, so fertility must be **maintained continuously**.
-- **Believing fertiliser can replace lost topsoil** — the fertile **A horizon** is thin and slow to rebuild; once it erodes, no amount of fertiliser restores it — **erosion control comes first**.
-- **Assuming more water is always better** — water and air *share* the pore space, so a **waterlogged** soil starves roots of air; good soil needs both.`,
-          workedExample: `**Question:** A farmer complains that his upland plot gives good yields in the first year after clearing but poor yields thereafter, while his neighbour's valley plot stays productive. Both grow rice. Explain the difference and recommend a management plan.
+- Soil is the loose surface layer; an ideal soil is about half solids and half pore space.
+- Soil forms very slowly by physical, chemical and biological weathering of rock.
+- The profile runs O, A, B, C to bedrock; the A horizon (topsoil) is richest.
+- Texture depends on the proportions of sand, silt and clay; loam is a balanced mixture.`,
+          workedExample: `**Question:** A farmer digs a pit and sees a dark, crumbly top layer full of roots, then a paler layer with more clay, then broken rock. She also finds the top layer is a mixture of sand, silt and humus. Identify the horizons, name the soil texture of the top layer, and explain why the top layer matters most for crops.
 
 **Solution**
 
-*Step 1 — explain the first-year flush on the upland plot.*
+*Step 1 — Identify the horizons.* The dark top layer full of roots is the **A horizon (topsoil)** — a mixture of organic and inorganic weathered material with the highest biological activity and most roots. Any loose leaf litter above it would be the **O horizon**. The paler layer with more clay is the **B horizon (subsoil)**, where fine material washed down from above accumulates. The broken rock beneath is the **C horizon**, the parent material, above the **R horizon** (bedrock).
 
-When bush is cleared and burned, the ash releases a **concentrated flush of nutrients** — potassium, calcium, magnesium and phosphorus — directly onto the surface. The accumulated organic matter of years of fallow also begins to decompose, releasing nitrogen. The first crop draws on this and yields well.
+*Step 2 — Name the texture of the top layer.* A mixture of sand, silt and humus with no dominant particle size is **loam**, a balanced soil.
 
-*Step 2 — explain why yields then collapse.*
+*Step 3 — Explain why the topsoil matters most.* The A horizon holds the organic matter (humus), which plays a significant role in fertility, together with most of the biological activity and roots. It is the layer plants draw on, and it is the most vulnerable to erosion. The B horizon is richer in clay but less fertile.
 
-Three processes act together, and all are intensified by Liberia's climate.
-
-1. **Leaching.** Heavy rainfall carries soluble nutrients down beyond the reach of roots. Liberian soils are already highly weathered and leached, so the reserve in the subsoil is small. Once the surface flush is washed out, little remains.
-
-2. **Loss of organic matter.** Burning destroys much of the organic matter, and what survives decomposes rapidly under high temperature and moisture. Since nutrients in these soils are held mainly in the **thin surface organic layer**, its loss is the loss of the fertility itself.
-
-3. **Erosion.** On sloping upland with the surface now exposed, rainfall detaches and removes the **A horizon** — precisely the layer that holds the humus, the nutrients and the biological activity. It is removed first and replaced most slowly.
-
-*Step 3 — explain why the valley plot behaves differently.*
-
-The valley bottom is a **receiving site rather than a losing one**. Material eroded from the slopes above is deposited there, so organic matter and nutrients are continually replenished. Water accumulates rather than draining away, and the soil is likely to be finer-textured with better water and nutrient retention.
-
-*The qualification:* valley soils can be **waterlogged**. Since air and water share the pore space, saturation drives out air and roots suffocate. The valley advantage holds only where drainage is adequate — though for rice, which tolerates standing water, this is less of a constraint than for most crops.
-
-*Step 4 — recommend a management plan for the upland plot.*
-
-**Priority 1 — stop the soil leaving.**
-
-- **Contour ridging and ploughing**, working across the slope rather than up and down, so that ridges intercept runoff instead of channelling it
-- **Terracing** if the slope is steep
-- **Cover crops and mulching** to keep the surface protected, since bare soil is the condition in which erosion occurs
-
-**Priority 2 — rebuild organic matter.**
-
-- Apply **manure and compost** regularly
-- **Reduce burning**; incorporate crop residues into the soil rather than destroying them
-- Plant **legumes** in rotation to fix nitrogen and add biomass
-
-**Priority 3 — manage nutrients and acidity.**
-
-- Test soil pH. Liberian upland soils are commonly acidic from leaching; **lime** if pH falls below about 5.5, since most crops prefer pH 6 to 7
-- Apply fertiliser in **split applications** rather than all at once, so less is leached before the crop can take it up
-
-**Priority 4 — restructure the rotation.**
-
-- Adopt **agroforestry**, retaining or planting trees whose roots recover nutrients from depth and whose litter returns them to the surface
-- Where fallow must continue, use **improved fallow** with fast-growing leguminous species rather than natural bush
-
-*Step 5 — state the underlying principle.*
-
-The farmer is treating fertility as something that arrives with clearing. In these soils, fertility must be **maintained continuously**, because the reserve is thin and the climate removes nutrients quickly. Erosion control comes first, because no amount of fertiliser compensates for topsoil that has washed away.
-
-**Answer:** the first-year flush comes from ash and decomposing organic matter; yields collapse through leaching, loss of organic matter and erosion of the A horizon; the valley plot receives what the upland loses; and the management plan must prioritise erosion control, then organic matter, then pH and nutrient management.`,
-          teachingTip:
-            "Soil cannot be taught from a diagram. Dig a pit a metre deep somewhere on the school grounds and let learners see the horizons for themselves — the dark A horizon and the paler B horizon are unmistakable once seen, and no drawing conveys it. Follow with the sedimentation test: put soil in a bottle of water, shake, and leave it overnight; sand settles first, then silt, then clay, and learners can read the texture of their own soil directly. The point to press hardest for Liberian conditions is that fertility sits in a thin surface layer, which makes erosion catastrophic rather than merely unfortunate. Demonstrate it with two trays of soil on a slope, one bare and one covered with mulch, and pour water down both; the difference in runoff colour ends the argument. Keep the texture-versus-structure distinction sharp, since learners routinely confuse them: texture is fixed and cannot be changed by the farmer, while structure can be improved through organic matter and careful cultivation.",
+**Answer:** The layers are O (litter), A (dark topsoil, most roots), B (clay-rich subsoil) and C (broken parent rock) above bedrock (R). The top layer is loam. It matters most because it holds the humus, roots and biological activity that crops depend on, and it is the layer most easily lost to erosion.`,
           quiz: [
             {
-              prompt: "The mineral portion of an ideal agricultural soil is about",
-              options: ["5 per cent", "25 per cent", "45 per cent", "75 per cent"],
-              correctIndex: 2,
-              explanation:
-                "An ideal loam is roughly 45 per cent mineral, 5 per cent organic, 25 per cent water and 25 per cent air.",
+              prompt: "Soil is best defined as",
+              options: [
+                "solid bedrock",
+                "the outer loose layer covering the Earth's surface",
+                "pure water",
+                "only sand",
+              ],
+              correctIndex: 1,
+              explanation: "Soil is the loose surface layer and the medium for plant growth.",
             },
             {
-              prompt: "Which soil horizon is the topsoil richest in humus?",
+              prompt: "In an ideal soil, solid material and pore space are about",
+              options: ["90:10", "50:50", "all solid", "all pore space"],
+              correctIndex: 1,
+              explanation: "About half is solid and half is pore space.",
+            },
+            {
+              prompt: "In an ideal soil, organic matter is about",
+              options: ["5 per cent", "45 per cent", "80 per cent", "0 per cent"],
+              correctIndex: 0,
+              explanation: "Organic matter is roughly 5 per cent; mineral matter 40 to 45 per cent.",
+            },
+            {
+              prompt: "The pore space in soil is shared by",
+              options: ["Water and air", "Rock and metal", "Only water", "Only air"],
+              correctIndex: 0,
+              explanation: "Half the pore space holds water and half holds air.",
+            },
+            {
+              prompt: "Decomposed organic matter that aids fertility is called",
+              options: ["Clay", "Humus", "Sand", "Bedrock"],
+              correctIndex: 1,
+              explanation: "Humus plays a significant role in fertility.",
+            },
+            {
+              prompt: "Soil forms mainly by the",
+              options: ["Weathering of rock", "Freezing of water only", "Planting of seeds", "Building of roads"],
+              correctIndex: 0,
+              explanation: "Soil forms by the gradual breaking down of rock through weathering.",
+            },
+            {
+              prompt: "Roughly how long can it take to form 1 cm of soil from hard rock?",
+              options: ["One year", "About 500 years", "One week", "One day"],
+              correctIndex: 1,
+              explanation: "Soil forms very slowly, about 500 years per centimetre.",
+            },
+            {
+              prompt: "Freezing and thawing cracking rock is an example of",
+              options: ["Chemical weathering", "Physical weathering", "Biological weathering", "Erosion"],
+              correctIndex: 1,
+              explanation: "Physical weathering breaks rock without chemical change.",
+            },
+            {
+              prompt: "The slow chemical alteration of rock by seeping water is",
+              options: ["Physical weathering", "Chemical weathering", "Abrasion", "Freezing"],
+              correctIndex: 1,
+              explanation: "Chemical weathering changes the rock chemically.",
+            },
+            {
+              prompt: "Which is a factor of soil formation?",
+              options: ["Parent material", "The stock market", "The alphabet", "Wind speed only"],
+              correctIndex: 0,
+              explanation:
+                "Factors are parent material, climate, topography, organisms and time.",
+            },
+            {
+              prompt: "The O horizon consists mainly of",
+              options: [
+                "bedrock",
+                "freshly decomposing organic matter at the surface",
+                "clay subsoil",
+                "parent rock",
+              ],
+              correctIndex: 1,
+              explanation: "The O horizon is surface organic matter (humus).",
+            },
+            {
+              prompt: "The topsoil, richest in organic matter and roots, is the",
               options: ["O horizon", "A horizon", "B horizon", "C horizon"],
               correctIndex: 1,
-              explanation:
-                "The A horizon carries most organic matter, biological activity and plant roots.",
+              explanation: "The A horizon is the dark, biologically active topsoil.",
             },
             {
-              prompt: "The best soil for general agriculture is",
-              options: ["Sandy", "Clay", "Loam", "Gravel"],
+              prompt: "Fine material washed down from above accumulates in the",
+              options: ["O horizon", "A horizon", "B horizon", "R horizon"],
               correctIndex: 2,
-              explanation:
-                "Loam balances drainage with water and nutrient retention and is easy to work.",
+              explanation: "The B horizon (subsoil) is richer in clay from illuviation.",
             },
             {
-              prompt: "Sandy soils have low fertility mainly because they",
+              prompt: "The C horizon consists mainly of",
               options: [
-                "contain too much humus",
-                "leach nutrients rapidly",
-                "hold too much water",
-                "are too cold",
+                "humus",
+                "parent material and broken-down rock",
+                "leaf litter",
+                "pure clay",
               ],
               correctIndex: 1,
-              explanation:
-                "Large pore spaces allow water and dissolved nutrients to drain away quickly.",
+              explanation: "The C horizon is parent material lacking true soil characteristics.",
             },
             {
-              prompt: "Clay soils drain poorly because they have",
+              prompt: "Beneath the C horizon lies the",
+              options: ["A horizon", "O horizon", "R horizon (bedrock)", "Topsoil"],
+              correctIndex: 2,
+              explanation: "The R horizon is the bedrock.",
+            },
+            {
+              prompt: "Soil texture is determined by the proportions of",
+              options: ["Sand, silt and clay", "Water and air", "Humus and roots", "Rock and metal"],
+              correctIndex: 0,
+              explanation: "Texture depends on the sand, silt and clay content.",
+            },
+            {
+              prompt: "The largest soil particles are",
+              options: ["Clay", "Silt", "Sand", "Humus"],
+              correctIndex: 2,
+              explanation: "Sand is 0.1 to 2 mm; clay is smallest at under 0.002 mm.",
+            },
+            {
+              prompt: "Clay particles are",
               options: [
-                "large particles",
-                "very fine particles and small pore spaces",
-                "too much organic matter",
-                "high pH",
+                "less than 0.002 mm",
+                "larger than sand",
+                "the same size as gravel",
+                "not part of soil",
+              ],
+              correctIndex: 0,
+              explanation: "Clay is the smallest particle, under 0.002 mm.",
+            },
+            {
+              prompt: "Loam is",
+              options: [
+                "pure clay",
+                "a mixture of sand, silt and humus with no dominant particle size",
+                "only sand",
+                "solid rock",
               ],
               correctIndex: 1,
-              explanation:
-                "Fine particles pack closely, restricting water movement and aeration.",
+              explanation: "Loam is a balanced mixture, good for growing.",
             },
             {
-              prompt: "Liberian soils are commonly acidic because",
-              options: [
-                "farmers add too much lime",
-                "heavy rainfall leaches away basic ions",
-                "the climate is too dry",
-                "there is no organic matter",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Intense leaching under high rainfall removes calcium, magnesium and potassium.",
-            },
-            {
-              prompt: "Soil acidity is corrected by",
-              options: ["Adding sand", "Liming", "Burning", "Deep ploughing"],
-              correctIndex: 1,
-              explanation:
-                "Lime raises pH towards the range of 6 to 7 preferred by most crops.",
-            },
-            {
-              prompt: "Which soil property can a farmer realistically improve?",
-              options: ["Texture", "Structure", "Parent material", "Particle size"],
-              correctIndex: 1,
-              explanation:
-                "Structure improves with organic matter and careful cultivation; texture is essentially fixed.",
-            },
-            {
-              prompt: "The red colour of many tropical soils results from",
-              options: [
-                "high organic matter",
-                "iron oxides formed by oxidation",
-                "waterlogging",
-                "high pH",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Dark soils indicate humus; grey or mottled soils indicate poor drainage.",
-            },
-            {
-              prompt: "Contour ploughing conserves soil by",
-              options: [
-                "adding nutrients",
-                "working across the slope to intercept runoff",
-                "increasing rainfall",
-                "removing weeds",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Ridges across the slope slow water movement instead of channelling it downhill.",
+              prompt: "Which horizon is most vulnerable to erosion?",
+              options: ["A horizon (topsoil)", "C horizon", "R horizon", "B horizon"],
+              correctIndex: 0,
+              explanation: "The nutrient-rich topsoil is most easily eroded.",
             },
           ],
           test: [
             {
               type: "SHORT_ANSWER",
               prompt:
-                "Define soil and state the four components of an ideal agricultural soil with their approximate proportions.",
+                "Define soil and state the approximate composition of an ideal soil.",
               answerKey:
-                "Soil is the loose upper layer of the earth's crust in which plants grow, formed from weathered rock combined with organic matter, water, air and living organisms. Components: mineral matter about 45 per cent; organic matter about 5 per cent; water about 25 per cent; air about 25 per cent. Award 4 marks for the definition and 2 marks per component with its proportion. Credit a learner who notes that water and air share the pore space and therefore vary inversely.",
-              marks: 12,
+                "Soil is the outer loose layer covering the surface of the Earth, the medium from which plants obtain inorganic elements. An ideal soil is about 40 to 45 per cent inorganic mineral matter, about 5 per cent organic matter, and about 50 per cent water and air together — half solid material and half pore space, with the pore space shared by water and air. Award 4 marks for the definition and 2 marks each for mineral, organic and pore-space proportions.",
+              marks: 10,
             },
             {
               type: "SHORT_ANSWER",
               prompt:
-                "Describe the soil profile, naming the horizons in order and stating the agricultural significance of the A horizon.",
+                "Describe the soil profile, naming the horizons in order from the surface down.",
               answerKey:
-                "O horizon — surface litter of undecomposed organic matter. A horizon or topsoil — dark, humus-rich, greatest biological activity, most plant roots. B horizon or subsoil — lighter, accumulating materials leached from above. C horizon — partly weathered parent rock. R horizon — unweathered bedrock. Significance of the A horizon: it holds the organic matter, nutrients and biological activity on which crops depend; it is the layer removed first by erosion and the slowest to replace, so its loss is effectively the loss of the soil's fertility. Award 2 marks per horizon and 4 marks for the significance.",
-              marks: 14,
+                "O horizon — freshly decomposing organic matter (humus) at the surface. A horizon (topsoil) — organic and inorganic weathered material, dark, most roots and biological activity. B horizon (subsoil) — accumulation of fine material washed down, richer in clay, less fertile. C horizon — parent material and broken-down rock. R horizon — bedrock. Award 2 marks per horizon named in order with its feature.",
+              marks: 10,
             },
             {
               type: "MULTIPLE_CHOICE",
               prompt:
-                "A soil retains water well but becomes waterlogged, is heavy to work and cracks when dry. It is",
-              options: ["Sandy", "Clay", "Loam", "Silt"],
-              correctIndex: 1,
+                "Which soil is a balanced mixture of sand, silt and humus with no dominant particle size?",
+              options: ["Sand", "Clay", "Loam", "Gravel"],
+              correctIndex: 2,
               answerKey:
-                "Very fine particles and small pore spaces give high water retention but poor drainage and aeration, with cracking on drying. Option B.",
+                "Loam is a mixture of sand, silt and humus with no dominant particle size. Option C.",
               marks: 4,
             },
             {
               type: "SHORT_ANSWER",
               prompt:
-                "Distinguish between soil texture and soil structure, and explain why the distinction matters to a farmer.",
+                "State the three types of weathering that form soil and give one example of each.",
               answerKey:
-                "Texture is the proportion of sand, silt and clay particles in a soil and is determined by the parent material and weathering; it cannot practically be altered by the farmer. Structure is the arrangement of those particles into aggregates or crumbs and can be improved by adding organic matter, avoiding compaction and careful cultivation, or degraded by heavy machinery and continuous cropping without organic returns. The distinction matters because it tells the farmer where effort is worth spending: improving structure through manure, compost and reduced tillage will improve drainage, aeration and root penetration even on an unfavourable texture. Award 3 marks per definition and 4 marks for the practical significance.",
-              marks: 10,
+                "Physical weathering — breakdown without chemical change, for example freezing and thawing, heating and cooling, or abrasion. Chemical weathering — slow chemical alteration of rock by water seeping through after rains. Biological weathering — organisms churning through soil, mixing and aerating it and adding organic matter. Award 2 marks per type named with a correct example.",
+              marks: 6,
             },
             {
               type: "ESSAY",
               prompt:
-                "Explain how soil is formed and the factors affecting its formation. Discuss the particular characteristics of Liberian soils and recommend a programme of soil conservation and fertility management suitable for a sloping upland farm.",
+                "Explain how soil is formed, the factors that affect its formation, and describe the soil profile and the way texture is classified.",
               answerKey:
-                "Award marks as follows: soil formation through physical, chemical and biological weathering of parent rock with the addition of organic matter, with at least two named processes under each type of weathering, 12 marks; the five factors affecting formation — parent material, climate, relief, living organisms and time — each explained, 10 marks; characteristics of Liberian soils, namely highly weathered, strongly leached and acidic under heavy rainfall, with nutrients concentrated in a thin surface organic layer, and the consequence that loss of topsoil means loss of fertility, 10 marks; explanation of why clearing and burning gives a temporary flush that does not persist, 5 marks; a conservation and fertility programme covering erosion control through contour ploughing, ridging, terracing, cover cropping and mulching, 8 marks; organic matter maintenance through manure, compost, residue incorporation and legume rotation, 8 marks; pH management through liming and nutrient management through split fertiliser applications, 5 marks; prioritisation with justification, recognising that erosion control must precede fertiliser use because nutrients applied to soil that washes away are wasted, 5 marks; organisation and expression, 2 marks. A learner who recommends fertiliser without addressing erosion should not exceed 35.",
-              marks: 65,
+                "Award marks as follows: soil formation by weathering of rock, very slowly (about 500 years per cm), with physical, chemical and biological weathering explained with examples, 15 marks; the five factors — parent material, climate, topography, organisms and time — each explained, 12 marks; the soil profile O, A, B, C and R with the features of each, especially the topsoil, 14 marks; texture classified by the proportions of sand (0.1 to 2 mm), silt (0.002 to 0.1 mm) and clay (under 0.002 mm), with loam as a balanced mixture, 8 marks; organisation and expression, 6 marks. A learner who omits the profile or the weathering types should not exceed 35.",
+              marks: 55,
             },
           ],
         },
+        // source: GeeksforGeeks — Agricultural Implements (https://www.geeksforgeeks.org/biology/agricultural-implements/). FLAG: detailed tool-maintenance and safety guidance is standard practice, not drawn from this page; see report.
         {
           slug: "farm-tools",
           title: "Farm Tools and Implements",
           objective:
-            "By the end of the lesson, learners should be able to identify common farm tools and implements, state their uses, describe their maintenance, and observe safety precautions in their use.",
+            "By the end of the lesson, learners should be able to define agricultural implements and identify the main farm tools and implements and their uses.",
           estimatedMinutes: 80,
-          notes: `## Introduction
+          notes: `## What agricultural implements are
 
-- On a Liberian smallholding, farm tools represent real, hard-won capital.
-- Good maintenance makes tools last longer and prevents injuries.
-- **This topic:** the common farm tools and implements and their uses; maintenance of tools; safety precautions in their use.
+**Agricultural implements** are the tools used to carry out agricultural practices. They simplify farming tasks and increase productivity across the stages of crop production, from preparing the soil to harvesting.
 
-## Classification of farm tools
+## Major implements and their uses
 
-### 1. Cutting tools
+**Plough**
 
-| Tool | Use |
-| --- | --- |
-| **Cutlass (machete)** | Clearing bush, cutting undergrowth, harvesting |
-| **Axe** | Felling trees, splitting logs |
-| **Sickle** | Harvesting rice and other cereals, cutting grass |
-| **Pruning saw / secateurs** | Pruning branches and shrubs |
-| **Budding knife** | Budding and grafting |
+- A traditional implement drawn by bulls or a tractor.
+- Used for tilling, stirring the soil and applying fertilisers.
+- It has a triangular iron strip, the **ploughshare**, attached to a wooden or metal shaft.
 
-### 2. Digging tools
+**Hoe**
 
-| Tool | Use |
-| --- | --- |
-| **Hoe** | Weeding, making ridges and mounds, tilling |
-| **Spade** | Digging, moving soil, edging |
-| **Shovel** | Lifting and moving loose material |
-| **Mattock / pickaxe** | Breaking hard ground, removing roots and stones |
-| **Digger / crowbar** | Making planting holes, breaking rock |
-| **Garden fork** | Loosening soil, lifting root crops, turning compost |
+- A long rod with a broad, bent iron blade.
+- Used to loosen the soil and remove weeds.
 
-### 3. Measuring tools
+**Cultivator**
 
-Measuring tape, ruler, spirit level, ranging pole, soil thermometer, rain gauge, weighing scale.
+- A tractor-mounted implement, a variant of the plough.
+- Agitates the soil around growing crops for weed control and to help growth.
+- Reduces labour and saves time.
 
-### 4. Harvesting and handling tools
+**Harrow**
 
-Harvesting hook, basket, wheelbarrow, head pan, sack, crate.
+- Used after ploughing to prepare the soil.
+- Smooths and levels the field surface and helps remove weeds.
+- Types include disc, spike and drag harrows.
 
-### 5. Nursery and planting tools
+**Seed drill**
 
-Watering can, dibber, hand trowel, seed drill, transplanting fork, hand fork.
+- A mechanical planting device.
+- Ensures seeds are sown evenly and are properly covered with soil.
+- Promotes uniform plant growth and spacing.
 
-### 6. Livestock tools
+**Sickle**
 
-Drenching gun, syringe, castrating instrument, ear notcher, hoof knife, milking pail, feeding and drinking troughs, poultry debeaker.
+- A hand tool with a curved blade.
+- Used for manual harvesting, cutting mature crops.
 
-## Farm implements
+## Grouping the tools
 
-Larger devices, usually drawn by animals or a tractor:
+| Group | Tools | Purpose |
+| --- | --- | --- |
+| Soil preparation | Plough, harrow, cultivator | Tilling, levelling, weeding |
+| Planting | Seed drill | Even, covered sowing |
+| Harvesting | Sickle | Cutting mature crops |
 
-- **Plough** — primary tillage, turning the soil
-- **Harrow** — breaking clods after ploughing, levelling the seedbed
-- **Ridger** — forming ridges for planting
-- **Cultivator** — secondary tillage and weeding between rows
-- **Planter / seed drill** — placing seed at correct spacing and depth
-- **Sprayer** — applying pesticides and herbicides
-- **Trailer** — transporting produce and inputs
-- **Thresher** — separating grain from straw
+## Why implements matter
 
-## Maintenance of farm tools
+- They simplify tasks and increase productivity.
+- Since the invention of such tools, the physical labour of farmers has decreased significantly.
 
-Good maintenance is not optional; a neglected tool is dangerous as well as inefficient.
+## Good practice with tools
 
-1. **Clean after every use.** Remove soil, plant sap and residue. Sap is corrosive and soil holds moisture against the metal.
-2. **Dry before storing.** Water on metal causes rust.
-3. **Oil or grease metal parts**, especially before a long period of storage.
-4. **Sharpen cutting edges regularly.** A blunt tool requires more force and is more likely to slip — blunt tools cause more injuries than sharp ones.
-5. **Repair or replace loose handles.** A head that flies off a handle is a serious hazard.
-6. **Store properly** — in a dry shed, hung or racked, with cutting edges sheltered and pointing away from people.
-7. **Paint wooden handles** or treat them to prevent termite attack and splitting.
-8. **Keep an inventory** and check tools at the start and end of each season.
+- Use the right tool for the job.
+- Clean and store tools after use so they last and remain safe to use.
 
-## Safety precautions
+## Key points
 
-- Use the right tool for the job; improvising causes accidents
-- Carry cutting tools with the blade pointing downwards and away from the body
-- Never leave a cutlass or hoe lying edge-up in a field
-- Wear protective clothing — boots, gloves, and eye protection where appropriate
-- Keep a safe distance from others when swinging a cutlass or axe
-- Do not use tools with damaged or loose handles
-- Follow instructions on chemicals and wear protection when spraying
-- Never allow untrained persons, particularly children, to operate machinery
-- Keep a first aid kit accessible on the farm
-
-## Why maintenance matters economically
-
-- For a smallholder, tools represent a significant share of invested capital.
-- A cutlass that lasts five years instead of two, because it was cleaned, dried and sharpened, is a real saving.
-- Tool maintenance is among the cheapest improvements available to a Liberian farmer — it costs time and discipline, not money.
-
-## Common errors and misconceptions
-
-- **Thinking sharp tools are the dangerous ones** — a **blunt** blade needs more force and is more likely to **slip**; sharpening is a *safety* measure, not just efficiency.
-- **Repairing a cracked handle with tape or wire** — binding hides the fault without restoring strength; a cracked or loose handle must be **replaced** (and a loose head re-wedged) before use.
-- **Storing a sprayer with chemical inside** — residue **corrodes** nozzles and seals and is a **poisoning hazard**; sprayers must be emptied, triple-rinsed and stored dry in a locked store.
-- **Treating maintenance as optional** — cleaning, drying and checking after every use costs *no money*, only minutes, yet it prevents both avoidable injuries and avoidable loss of a farmer's capital.`,
-          workedExample: `**Question:** A school farm has a shed containing a cutlass with a rusted blade and cracked handle, a hoe with a loose head, and a sprayer that was stored with chemical left inside. Assess each item for safety and serviceability, describe the correct remedy, and set out a maintenance routine that would have prevented these problems.
+- Agricultural implements are the tools used to carry out farming practices.
+- The plough tills and stirs soil; the harrow levels it; the cultivator weeds between crops.
+- The seed drill sows seed evenly; the sickle harvests by hand.`,
+          workedExample: `**Question:** A farmer is preparing a field for maize and then harvesting it. In order, name the implements she would use to till the soil, to level and weed it, to sow the seed evenly, and to harvest the mature crop, giving the use of each.
 
 **Solution**
 
-**Item 1 — the cutlass: rusted blade and cracked handle**
+*Step 1 — Till the soil.* She uses a **plough**, drawn by bulls or a tractor, which tills and stirs the soil and can apply fertiliser. Its triangular ploughshare cuts and turns the soil ready for planting.
 
-*Assessment:* **unsafe and unserviceable.** Two separate faults compound each other.
+*Step 2 — Level and weed the prepared soil.* After ploughing she uses a **harrow** to smooth and level the field surface and to help remove weeds. A **cultivator** can also be used to agitate the soil around the crop for weed control.
 
-- The **rust** indicates the tool was stored wet or uncleaned. Rust pits the blade and prevents a clean edge, so the user applies more force, and a blade that requires more force is more likely to slip.
-- The **cracked handle** is the more serious fault. A handle that fails during a swing releases the blade unpredictably. This is one of the commonest causes of serious injury on smallholdings.
+*Step 3 — Sow the seed evenly.* She uses a **seed drill**, a mechanical planting device that ensures seeds are sown evenly and properly covered with soil, giving uniform spacing and growth.
 
-*Remedy:*
+*Step 4 — Harvest the mature crop.* She uses a **sickle**, a hand tool with a curved blade used for manually cutting mature crops.
 
-1. Remove rust with a wire brush, sandpaper or emery cloth, working to bare metal.
-2. **Replace the handle entirely.** A cracked handle must not be repaired with tape, wire or binding — these conceal the fault without restoring strength.
-3. Sharpen the blade with a file, working consistently along the bevel.
-4. Wipe the blade with oil before storage.
-
-**Item 2 — the hoe: loose head**
-
-*Assessment:* **unsafe.** A loose head may fly off during use, endangering both the user and anyone nearby. It also makes the tool ineffective, since force is lost in the play between head and handle.
-
-*Remedy:*
-
-1. Remove the head and inspect the handle for cracks or termite damage; replace the handle if damaged.
-2. Refit the head securely and drive in a wedge to expand the handle within the eye.
-3. Check tightness before each use, and re-wedge whenever play develops. Handles shrink in dry weather, so looseness recurs seasonally.
-
-**Item 3 — the sprayer with chemical left inside**
-
-*Assessment:* **unserviceable, and hazardous on two counts.**
-
-- **Chemical hazard.** Residual pesticide is a poisoning risk to anyone handling the sprayer, and to children with access to the shed. Fumes may accumulate in an enclosed store.
-- **Mechanical damage.** Agricultural chemicals corrode seals, nozzles and the tank. A sprayer stored with chemical inside will have blocked nozzles and perished seals, and may leak onto the operator in use.
-
-*Remedy:*
-
-1. Wearing gloves and eye protection, empty the residue into a **designated disposal point** — never into a stream, well or open ground.
-2. Rinse the tank three times with clean water, spraying rinsate through the nozzles to clear the lines.
-3. Dismantle and clean the nozzles and filters; replace perished seals.
-4. Store empty, dry, with the lid off to allow ventilation, in a **locked** chemical store away from food, feed and living areas.
-
-**The preventive maintenance routine**
-
-*After every use:*
-
-- Clean all soil, sap and residue from tools
-- Dry thoroughly before storing
-- Rinse sprayers three times and clear the nozzles
-- Return every tool to its rack or hook, cutting edges sheltered and pointing away from people
-
-*Weekly during the working season:*
-
-- Check handles for cracks and looseness; wedge or replace as needed
-- Sharpen cutting edges
-- Inspect the store for damp
-
-*At the end of each season:*
-
-- Clean, sharpen and oil all metal parts
-- Treat or paint wooden handles against termites and splitting
-- Repair or replace damaged items rather than storing them faulty
-- Take a full inventory and record what needs replacing before the next season
-
-*Storage conditions:*
-
-- A dry, ventilated, lockable shed
-- Tools racked or hung, never left on the floor
-- Chemicals stored separately, locked, and clearly labelled
-
-**The principle to draw out**
-
-Every fault in this shed traces to a single omission: **the tools were put away without being cleaned, dried and checked.** None of the remedies required money — only a few minutes at the end of each working day. The cracked handle and the corroded sprayer represent avoidable capital loss, and the loose hoe head and slipping cutlass represent avoidable injuries.
-
-**Conclusion:** the cutlass needs de-rusting, a new handle and sharpening; the hoe needs its handle inspected and re-wedged; the sprayer must be safely emptied, triple-rinsed and serviced. A routine of cleaning, drying, checking and proper storage after every use would have prevented all three.`,
-          teachingTip:
-            "Do this lesson in the tool shed, not the classroom. Lay the tools out, have learners handle each one, name it, and state its use — recognition from a picture is not the same skill as recognition in the hand, and it is the latter that matters. Then set a practical task: give groups a blunt cutlass and a file and have them sharpen it, or a loose hoe and a wedge and have them fix it. Learners remember what they have repaired. Attack the assumption that sharp tools are the dangerous ones, because the opposite is true: a blunt blade requires more force, slips more readily, and causes worse injuries. Ask the class which they would rather swing, and use the discussion to establish that sharpening is a safety measure. Make the economic argument explicitly — for a household where a cutlass is a real expense, doubling its working life costs nothing but a few minutes a day. Finish by assigning each learner responsibility for a specific tool for the term, since ownership produces maintenance in a way that instruction does not.",
+**Answer:** Plough (till and stir the soil) → harrow (level and weed) → seed drill (sow evenly and cover) → sickle (harvest by hand). Each implement simplifies its stage of the work and increases productivity.`,
           quiz: [
             {
-              prompt: "Which tool is used mainly for clearing bush?",
-              options: ["Spade", "Cutlass", "Watering can", "Dibber"],
-              correctIndex: 1,
-              explanation:
-                "The cutlass or machete is the principal tool for clearing undergrowth.",
-            },
-            {
-              prompt: "A sickle is used chiefly for",
+              prompt: "Agricultural implements are",
               options: [
-                "Felling trees",
-                "Harvesting rice and cutting grass",
-                "Digging holes",
-                "Spraying pesticide",
+                "types of crops",
+                "the tools used to carry out agricultural practices",
+                "kinds of soil",
+                "farm animals",
               ],
               correctIndex: 1,
-              explanation:
-                "Its curved blade suits cutting cereal stalks and grass close to the ground.",
+              explanation: "Implements are the tools used in farming practices.",
             },
             {
-              prompt: "Which implement is used for primary tillage, turning the soil?",
-              options: ["Harrow", "Plough", "Ridger", "Planter"],
-              correctIndex: 1,
-              explanation:
-                "The harrow follows the plough to break clods and level the seedbed.",
-            },
-            {
-              prompt: "A mattock or pickaxe is used for",
+              prompt: "The plough is used for",
               options: [
-                "Watering seedlings",
-                "Breaking hard ground and removing roots",
-                "Measuring plots",
-                "Milking",
+                "harvesting grain",
+                "tilling and stirring the soil",
+                "spraying pesticide",
+                "milking",
               ],
               correctIndex: 1,
-              explanation:
-                "Its heavy head is designed for hard, compacted or stony ground.",
+              explanation: "The plough tills, stirs the soil and can apply fertiliser.",
             },
             {
-              prompt: "Blunt cutting tools are dangerous because they",
+              prompt: "The triangular iron strip of a plough is called the",
+              options: ["Ploughshare", "Sickle", "Tine", "Blade guard"],
+              correctIndex: 0,
+              explanation: "The ploughshare cuts and turns the soil.",
+            },
+            {
+              prompt: "The hoe is used to",
               options: [
-                "cut too deeply",
-                "require more force and are more likely to slip",
-                "rust more slowly",
-                "are lighter",
+                "fell trees",
+                "loosen the soil and remove weeds",
+                "measure rainfall",
+                "harvest grain",
               ],
               correctIndex: 1,
-              explanation:
-                "Sharpening is a safety measure, not merely a matter of efficiency.",
+              explanation: "The hoe loosens soil and removes weeds.",
             },
             {
-              prompt: "Farm tools should be cleaned and dried after use mainly to",
+              prompt: "A cultivator is",
               options: [
-                "improve their colour",
-                "prevent rust and corrosion",
-                "make them heavier",
-                "reduce their value",
+                "a hand harvesting tool",
+                "a tractor-mounted implement that agitates soil around crops",
+                "a type of seed",
+                "a storage container",
               ],
               correctIndex: 1,
-              explanation:
-                "Soil holds moisture against metal and plant sap is corrosive.",
+              explanation: "The cultivator weeds between crops and reduces labour.",
             },
             {
-              prompt: "A dibber is used for",
+              prompt: "A harrow is used mainly",
               options: [
-                "Making holes for planting seedlings",
-                "Cutting branches",
-                "Weighing produce",
-                "Turning compost",
+                "before ploughing",
+                "after ploughing to smooth and level the field",
+                "to harvest",
+                "to milk cattle",
+              ],
+              correctIndex: 1,
+              explanation: "The harrow prepares soil after ploughing.",
+            },
+            {
+              prompt: "Which are types of harrow?",
+              options: ["Disc, spike and drag", "Inkjet and laser", "Sand and clay", "Beef and dairy"],
+              correctIndex: 0,
+              explanation: "Disc, spike and drag are harrow types.",
+            },
+            {
+              prompt: "A seed drill ensures that seeds are",
+              options: [
+                "left on the surface",
+                "sown evenly and properly covered with soil",
+                "burned",
+                "eaten by birds",
+              ],
+              correctIndex: 1,
+              explanation: "It gives uniform spacing and covering.",
+            },
+            {
+              prompt: "A sickle is used for",
+              options: ["Ploughing", "Manual harvesting of mature crops", "Spraying", "Measuring"],
+              correctIndex: 1,
+              explanation: "The sickle has a curved blade for cutting crops by hand.",
+            },
+            {
+              prompt: "A cultivator benefits the farmer by",
+              options: [
+                "reducing labour and saving time",
+                "increasing weeds",
+                "removing all crops",
+                "raising rainfall",
               ],
               correctIndex: 0,
-              explanation:
-                "It makes a neat hole of the right depth for transplanting.",
+              explanation: "Being tractor-mounted, it saves labour and time.",
             },
             {
-              prompt: "A sprayer should be stored",
-              options: [
-                "full of chemical for convenience",
-                "empty, triple-rinsed and dry in a locked store",
-                "in the open air",
-                "with the nozzle blocked",
-              ],
+              prompt: "Which implement is drawn by bulls or a tractor?",
+              options: ["Sickle", "Plough", "Hand hoe", "Watering can"],
               correctIndex: 1,
-              explanation:
-                "Residual chemical corrodes seals and nozzles and is a poisoning hazard.",
+              explanation: "The plough is drawn by bulls or a tractor.",
             },
             {
-              prompt: "A cracked tool handle should be",
+              prompt: "The main purpose of the harrow is to",
               options: [
-                "bound with tape and used",
-                "replaced entirely",
-                "ignored if the blade is sharp",
-                "soaked in water",
+                "sow seed",
+                "smooth and level the field and help remove weeds",
+                "harvest",
+                "store grain",
               ],
               correctIndex: 1,
-              explanation:
-                "Binding conceals the fault without restoring strength; the handle may still fail in use.",
+              explanation: "Harrowing levels the soil and removes weeds after ploughing.",
             },
             {
-              prompt: "Which is a correct safety practice when carrying a cutlass?",
+              prompt: "Farm implements are important because they",
               options: [
-                "Carry it over the shoulder with the blade up",
-                "Carry it with the blade pointing downwards and away from the body",
-                "Swing it while walking",
-                "Hand it to another person blade first",
+                "simplify tasks and increase productivity",
+                "make farming harder",
+                "remove the need for soil",
+                "stop planting",
+              ],
+              correctIndex: 0,
+              explanation: "Implements simplify tasks and raise productivity.",
+            },
+            {
+              prompt: "Since the invention of agricultural tools, the physical labour of farmers has",
+              options: ["Increased", "Decreased significantly", "Stayed exactly the same", "Ended entirely"],
+              correctIndex: 1,
+              explanation: "Tools have reduced farmers' physical labour significantly.",
+            },
+            {
+              prompt: "Which tool is used at the planting stage?",
+              options: ["Sickle", "Seed drill", "Harrow", "Plough"],
+              correctIndex: 1,
+              explanation: "The seed drill sows and covers seed.",
+            },
+            {
+              prompt: "Which tool is used at the harvesting stage?",
+              options: ["Sickle", "Plough", "Seed drill", "Cultivator"],
+              correctIndex: 0,
+              explanation: "The sickle cuts mature crops at harvest.",
+            },
+            {
+              prompt: "The hoe has a",
+              options: [
+                "curved cutting blade for harvesting",
+                "broad, bent iron blade on a long rod",
+                "spinning disc",
+                "spray nozzle",
               ],
               correctIndex: 1,
-              explanation:
-                "A downward, outward-facing blade minimises the risk of injury if the carrier stumbles.",
+              explanation: "The hoe is a long rod with a broad, bent iron blade.",
+            },
+            {
+              prompt: "Good practice with tools includes",
+              options: [
+                "using any tool for any job",
+                "using the right tool and cleaning and storing it after use",
+                "leaving tools in the rain",
+                "never cleaning them",
+              ],
+              correctIndex: 1,
+              explanation: "Using the correct tool and storing it well keeps tools safe and lasting.",
+            },
+            {
+              prompt: "The plough can also be used to",
+              options: ["Apply fertilisers while tilling", "Harvest maize", "Spray herbicide", "Weigh grain"],
+              correctIndex: 0,
+              explanation: "The plough is used for tilling, stirring soil and applying fertilisers.",
+            },
+            {
+              prompt: "Weed control between growing crop rows is done with a",
+              options: ["Sickle", "Cultivator", "Seed drill", "Harrow only before planting"],
+              correctIndex: 1,
+              explanation: "The cultivator agitates soil around crops to control weeds.",
             },
           ],
           test: [
             {
               type: "SHORT_ANSWER",
               prompt:
-                "Classify farm tools into four groups, naming three tools in each group and stating one use for each.",
+                "Define agricultural implements and state why they are important to farming.",
               answerKey:
-                "Cutting tools — cutlass for clearing bush, axe for felling trees, sickle for harvesting cereals, secateurs for pruning. Digging tools — hoe for weeding and ridging, spade for digging and moving soil, mattock for breaking hard ground, garden fork for loosening soil. Measuring tools — measuring tape for plot dimensions, spirit level for levelling, rain gauge for rainfall records, weighing scale for produce. Nursery and planting tools — watering can for irrigation of seedlings, dibber for making planting holes, hand trowel for transplanting. Accept also harvesting and handling tools and livestock tools. Award 2 marks per group correctly identified and 1 mark per tool with a correct use.",
-              marks: 16,
+                "Agricultural implements are the tools used to carry out agricultural practices. They are important because they simplify farming tasks and increase productivity across the stages of crop production; since their invention, the physical labour of farmers has decreased significantly. Award 4 marks for the definition and 4 marks for the importance.",
+              marks: 8,
             },
             {
               type: "SHORT_ANSWER",
               prompt:
-                "Name five farm implements drawn by animals or a tractor and state the function of each.",
+                "Name four farm implements and state one use of each.",
               answerKey:
-                "Plough — primary tillage, turning and inverting the soil. Harrow — breaking clods after ploughing and levelling the seedbed. Ridger — forming ridges for planting. Cultivator — secondary tillage and weeding between rows. Planter or seed drill — placing seed at the correct spacing and depth. Sprayer — applying pesticides and herbicides. Trailer — transporting produce and inputs. Thresher — separating grain from straw. Award 1 mark per implement and 1 mark per correct function.",
-              marks: 10,
+                "Plough — tilling and stirring the soil (and applying fertiliser). Hoe — loosening the soil and removing weeds. Harrow — smoothing and levelling the field after ploughing and removing weeds. Cultivator — agitating the soil around crops for weed control. Seed drill — sowing seeds evenly and covering them. Sickle — manual harvesting of mature crops. Award 2 marks per implement named with a correct use, up to four.",
+              marks: 8,
             },
             {
               type: "MULTIPLE_CHOICE",
               prompt:
-                "A hoe head becomes loose on its handle during the dry season. The correct action is to",
-              options: [
-                "continue using it carefully",
-                "soak the whole tool in water permanently",
-                "inspect the handle, refit the head and drive in a wedge",
-                "hammer the head further down and continue",
-              ],
-              correctIndex: 2,
+                "Which implement ensures seeds are sown evenly and properly covered with soil?",
+              options: ["Sickle", "Seed drill", "Harrow", "Plough"],
+              correctIndex: 1,
               answerKey:
-                "A loose head may fly off in use and injure the operator or bystanders. The handle should be inspected for cracks or termite damage, the head refitted, and a wedge driven in to expand the handle within the eye. Handles shrink in dry weather, so the check should be repeated. Option C.",
+                "The seed drill is a mechanical planting device that sows seeds evenly and covers them, giving uniform growth. Option B.",
               marks: 4,
             },
             {
               type: "SHORT_ANSWER",
               prompt:
-                "State six ways of maintaining farm tools and explain why maintenance is economically important to a smallholder.",
+                "Group the following into soil preparation, planting and harvesting tools: plough, seed drill, sickle, harrow, cultivator.",
               answerKey:
-                "Maintenance: clean after every use to remove soil, sap and residue; dry thoroughly before storing to prevent rust; oil or grease metal parts, especially before long storage; sharpen cutting edges regularly; repair or replace loose or cracked handles; store in a dry, ventilated shed on racks or hooks; treat or paint wooden handles against termites; keep an inventory and inspect at the start and end of each season. Award 2 marks each for six. Economic importance: tools represent a substantial share of a smallholder's invested capital, and maintenance extends working life at no monetary cost, requiring only time and discipline; it also avoids the loss of working days and the cost of injury caused by faulty tools. Award up to 4 marks.",
-              marks: 16,
+                "Soil preparation: plough, harrow, cultivator (tilling, levelling and weeding). Planting: seed drill (even, covered sowing). Harvesting: sickle (cutting mature crops). Award 1 mark per correct grouping, with 3 bonus marks available for correct stated purposes.",
+              marks: 8,
             },
             {
               type: "ESSAY",
               prompt:
-                "Describe the tools and implements needed to establish and manage a one-hectare vegetable plot, from land clearing through to harvest. Explain the maintenance routine you would institute and the safety precautions you would enforce, justifying your choices.",
+                "Describe the implements a farmer would use to prepare a field, sow seed and harvest a crop, explaining the purpose of each and how implements have changed farming.",
               answerKey:
-                "Award marks as follows: land clearing tools — cutlass, axe, mattock — with justification of each, 8 marks; land preparation — hoe, spade, garden fork, and where available plough, harrow and ridger — with reasoning about scale and whether animal or tractor draught is warranted on one hectare, 10 marks; planting and nursery tools — watering can, dibber, hand trowel, measuring tape and line for spacing — 8 marks; crop management tools — hoe for weeding, sprayer for pest control, protective clothing — 8 marks; harvesting and handling — sickle or harvesting knife, baskets, crates, wheelbarrow, weighing scale — 8 marks; a maintenance routine structured as after each use, weekly and end of season, covering cleaning, drying, oiling, sharpening, handle checks, storage and inventory, 12 marks; safety precautions including correct tool selection, carrying cutting tools blade-down, protective clothing, safe distance when swinging, exclusion of untrained persons from machinery, chemical handling and storage, and first aid provision, 12 marks; explicit justification linking choices to the scale of the plot and to Liberian conditions, 6 marks; organisation and expression, 3 marks. A learner who lists tools without justification or omits either maintenance or safety should not exceed 40.",
-              marks: 75,
+                "Award marks as follows: soil preparation implements — plough (tilling, stirring, applying fertiliser, with its ploughshare), harrow (smoothing and levelling, weed removal, types disc/spike/drag) and cultivator (agitating soil around crops, reducing labour), 18 marks; planting — the seed drill sowing seed evenly and covering it for uniform growth, 8 marks; harvesting — the sickle cutting mature crops by hand, 6 marks; discussion that implements simplify tasks, increase productivity and have significantly decreased farmers' physical labour, 10 marks; organisation and expression, 4 marks. A learner who lists tools without purposes should not exceed 25.",
+              marks: 46,
             },
           ],
         },
