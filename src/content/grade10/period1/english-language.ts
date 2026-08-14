@@ -189,8 +189,6 @@ Take each in turn and ask what kind of noun it is.
 - **education** — an idea or process that cannot be touched, so an **abstract noun**, uncountable.
 
 **The lesson:** a single noun carries several labels at once — *Musu* is proper, concrete and countable all together. Classifying nouns means naming the feature being asked about, not choosing one label for all purposes.`,
-          teachingTip:
-            "Do not begin with the six definitions. Write a short sentence on the board and ask the class to underline every naming word, then sort those words into piles of their own — they will separate names of people from names of things from words like 'freedom' without prompting. Only then attach the terms proper, concrete and abstract to piles they have already made. The error to attack directly is the plural of uncountable nouns: 'informations', 'advices' and 'furnitures' appear in learners' writing constantly, so keep a wall list of common uncountables and drill 'some advice', 'a piece of information' until it is automatic. For proper nouns, mark the missing capital letter strictly from the first lesson, because learners who are allowed to write 'monrovia' for a fortnight never fully unlearn it.",
           quiz: [
             { prompt: "Which word is a proper noun?", options: ["city", "river", "Liberia", "mountain"], correctIndex: 2, explanation: "Liberia names one particular country and takes a capital letter." },
             { prompt: "Which of these is an abstract noun?", options: ["table", "honesty", "market", "rice"], correctIndex: 1, explanation: "Honesty is a quality that cannot be perceived by the senses." },
@@ -439,8 +437,6 @@ The antecedent is *each*, which is **singular**, so the pronoun must be singular
 *Rule broken:* confusion of the possessive **its** with the contraction **it's**.
 
 **The point to carry away:** three different rules, three different fixes. Case is tested by dropping the other person; number agreement is tested by finding the true antecedent; *its* versus *it's* is tested by reading it as *it is*.`,
-          teachingTip:
-            "The its/it's error is worth a whole board's attention, because it survives into adult writing. Teach one test and drill it relentlessly: read the word aloud as 'it is' — if the sentence still makes sense, write it's; if not, write its. Do ten quick examples in chorus. For pronoun case ('Me and him went'), teach the drop-the-other-person test: remove the second person and the ear corrects itself ('me went' is obviously wrong). For antecedent agreement, put a sentence with a plural phrase after a singular pronoun ('Each of the girls brought their…') and have the class hunt for the real antecedent; once they see that 'each', not 'girls', governs the pronoun, the rule holds. Keep insisting on clear reference in their own writing — whenever a 'he' or 'she' could point to two people, stop and ask 'who?'",
           quiz: [
             { prompt: "The noun that a pronoun stands for is called its", options: ["object", "antecedent", "subject", "modifier"], correctIndex: 1, explanation: "The antecedent is the noun the pronoun replaces." },
             { prompt: "Which is a possessive pronoun?", options: ["they", "them", "theirs", "who"], correctIndex: 2, explanation: "'Theirs' shows ownership and needs no apostrophe." },
