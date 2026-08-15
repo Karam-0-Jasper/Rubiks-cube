@@ -28,7 +28,31 @@ material — never invented.**
 
 4. **No "Teaching tip".** The `teachingTip` field is deprecated. Never add it.
 
-5. **Grade 10 only.** Ignore Grades 11–12.
+5. **Grade 10 is complete; Grade 11 is now in scope.** Grade 12 is still deferred.
+
+## Grade 11 file & registration convention
+
+Grade 11 content lives in **`src/content/grade11/period{1..6}/<subject>.ts`**. Unlike
+Grade 10 Period 1 (which is a `SubjectContent` carrying the subject's identity/metadata),
+**every Grade 11 period file exports a plain `PeriodContent`** — the subject identity
+already exists from Grade 10. Naming:
+
+```ts
+import type { PeriodContent } from "@/content/types";
+// source: ...
+export const <subjectCamel>G11P<n>: PeriodContent = {
+  grade: 11,
+  number: <n>,      // 1..6
+  title: "...",     // from the curriculum TOPIC heading
+  summary: "...",
+  topics: [ /* TopicContent[] — one per CONTENTS item, sourced */ ],
+};
+```
+
+e.g. `physicsG11P1`, `biologyG11P2`. Use the subject's existing camelCase base
+(`englishLanguage` → `englishLanguageG11P1`). The coordinator wires each file into the
+`EXTRA_PERIODS` map in `src/content/index.ts`; agents do **not** edit `index.ts`.
+Grade 11 CONTENTS come from the `GRADE: 11` PERIOD blocks in `curriculum/<Subject>.txt`.
 
 ## Approved sources (in priority order)
 
