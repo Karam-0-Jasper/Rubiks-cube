@@ -91,6 +91,7 @@ import { economicsG11P2 } from "@/content/grade11/period2/economics";
 import { biologyG11P6 } from "@/content/grade11/period6/biology";
 import { chemistryG11P6 } from "@/content/grade11/period6/chemistry";
 import { mathematicsG11P5 } from "@/content/grade11/period5/mathematics";
+import { mathematicsG11P6 } from "@/content/grade11/period6/mathematics";
 import { geographyG11P3 } from "@/content/grade11/period3/geography";
 import { historyG11P1 } from "@/content/grade11/period1/history";
 import { englishLanguageG11P1 } from "@/content/grade11/period1/english-language";
@@ -126,6 +127,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     mathematicsG11P3,
     mathematicsG11P4,
     mathematicsG11P5,
+    mathematicsG11P6,
   ],
   "english-language": [
     englishLanguageG10P2,
