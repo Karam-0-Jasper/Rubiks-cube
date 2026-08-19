@@ -87,6 +87,14 @@ import { mathematicsG11P4 } from "@/content/grade11/period4/mathematics";
 import { biologyG11P5 } from "@/content/grade11/period5/biology";
 import { chemistryG11P5 } from "@/content/grade11/period5/chemistry";
 import { economicsG11P1 } from "@/content/grade11/period1/economics";
+import { economicsG11P2 } from "@/content/grade11/period2/economics";
+import { biologyG11P6 } from "@/content/grade11/period6/biology";
+import { chemistryG11P6 } from "@/content/grade11/period6/chemistry";
+import { mathematicsG11P5 } from "@/content/grade11/period5/mathematics";
+import { geographyG11P3 } from "@/content/grade11/period3/geography";
+import { historyG11P1 } from "@/content/grade11/period1/history";
+import { englishLanguageG11P1 } from "@/content/grade11/period1/english-language";
+import { literatureG11P1 } from "@/content/grade11/period1/literature";
 
 // Base subjects carry identity + metadata and Period 1 content.
 const BASE_SUBJECTS: SubjectContent[] = [
@@ -117,6 +125,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     mathematicsG11P2,
     mathematicsG11P3,
     mathematicsG11P4,
+    mathematicsG11P5,
   ],
   "english-language": [
     englishLanguageG10P2,
@@ -124,6 +133,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     englishLanguageG10P4,
     englishLanguageG10P5,
     englishLanguageG10P6,
+    englishLanguageG11P1,
   ],
   biology: [
     biologyG10P2,
@@ -136,6 +146,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     biologyG11P3,
     biologyG11P4,
     biologyG11P5,
+    biologyG11P6,
   ],
   chemistry: [
     chemistryG10P2,
@@ -148,6 +159,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     chemistryG11P3,
     chemistryG11P4,
     chemistryG11P5,
+    chemistryG11P6,
   ],
   physics: [
     physicsG10P2,
@@ -170,6 +182,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     geographyG10P6,
     geographyG11P1,
     geographyG11P2,
+    geographyG11P3,
   ],
   history: [
     historyG10P2,
@@ -177,6 +190,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     historyG10P4,
     historyG10P5,
     historyG10P6,
+    historyG11P1,
   ],
   economics: [
     economicsG10P2,
@@ -185,6 +199,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     economicsG10P5,
     economicsG10P6,
     economicsG11P1,
+    economicsG11P2,
   ],
   literature: [
     literatureG10P2,
@@ -192,6 +207,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     literatureG10P4,
     literatureG10P5,
     literatureG10P6,
+    literatureG11P1,
   ],
 };
 
