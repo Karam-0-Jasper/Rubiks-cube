@@ -79,7 +79,14 @@ import { physicsG11P6 } from "@/content/grade11/period6/physics";
 import { biologyG11P4 } from "@/content/grade11/period4/biology";
 import { chemistryG11P4 } from "@/content/grade11/period4/chemistry";
 import { geographyG11P1 } from "@/content/grade11/period1/geography";
+import { geographyG11P2 } from "@/content/grade11/period2/geography";
 import { mathematicsG11P1 } from "@/content/grade11/period1/mathematics";
+import { mathematicsG11P2 } from "@/content/grade11/period2/mathematics";
+import { mathematicsG11P3 } from "@/content/grade11/period3/mathematics";
+import { mathematicsG11P4 } from "@/content/grade11/period4/mathematics";
+import { biologyG11P5 } from "@/content/grade11/period5/biology";
+import { chemistryG11P5 } from "@/content/grade11/period5/chemistry";
+import { economicsG11P1 } from "@/content/grade11/period1/economics";
 
 // Base subjects carry identity + metadata and Period 1 content.
 const BASE_SUBJECTS: SubjectContent[] = [
@@ -107,6 +114,9 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     mathematicsG10P5,
     mathematicsG10P6,
     mathematicsG11P1,
+    mathematicsG11P2,
+    mathematicsG11P3,
+    mathematicsG11P4,
   ],
   "english-language": [
     englishLanguageG10P2,
@@ -125,6 +135,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     biologyG11P2,
     biologyG11P3,
     biologyG11P4,
+    biologyG11P5,
   ],
   chemistry: [
     chemistryG10P2,
@@ -136,6 +147,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     chemistryG11P2,
     chemistryG11P3,
     chemistryG11P4,
+    chemistryG11P5,
   ],
   physics: [
     physicsG10P2,
@@ -157,6 +169,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     geographyG10P5,
     geographyG10P6,
     geographyG11P1,
+    geographyG11P2,
   ],
   history: [
     historyG10P2,
@@ -171,6 +184,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     economicsG10P4,
     economicsG10P5,
     economicsG10P6,
+    economicsG11P1,
   ],
   literature: [
     literatureG10P2,
