@@ -111,6 +111,7 @@ import { economicsG11P6 } from "@/content/grade11/period6/economics";
 import { historyG11P3 } from "@/content/grade11/period3/history";
 import { englishLanguageG11P4 } from "@/content/grade11/period4/english-language";
 import { englishLanguageG11P5 } from "@/content/grade11/period5/english-language";
+import { englishLanguageG11P6 } from "@/content/grade11/period6/english-language";
 import { literatureG11P4 } from "@/content/grade11/period4/literature";
 
 // Base subjects carry identity + metadata and Period 1 content.
@@ -156,6 +157,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     englishLanguageG11P3,
     englishLanguageG11P4,
     englishLanguageG11P5,
+    englishLanguageG11P6,
   ],
   biology: [
     biologyG10P2,
