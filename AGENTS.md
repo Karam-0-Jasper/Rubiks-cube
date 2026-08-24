@@ -28,20 +28,21 @@ material — never invented.**
 
 4. **No "Teaching tip".** The `teachingTip` field is deprecated. Never add it.
 
-5. **Grade 10 is complete; Grade 11 is now in scope.** Grade 12 is still deferred.
+5. **Grades 10 and 11 are complete; Grade 12 is now in scope.**
 
-## Grade 11 file & registration convention
+## Grade 11 / 12 file & registration convention
 
-Grade 11 content lives in **`src/content/grade11/period{1..6}/<subject>.ts`**. Unlike
-Grade 10 Period 1 (which is a `SubjectContent` carrying the subject's identity/metadata),
-**every Grade 11 period file exports a plain `PeriodContent`** — the subject identity
-already exists from Grade 10. Naming:
+Grade 11 content lives in **`src/content/grade11/period{1..6}/<subject>.ts`** and Grade 12
+in **`src/content/grade12/period{1..6}/<subject>.ts`**. Unlike Grade 10 Period 1 (a
+`SubjectContent` carrying the subject's identity/metadata), **every Grade 11/12 period
+file exports a plain `PeriodContent`** — the subject identity already exists from Grade 10.
+Naming (use `G12P<n>` for Grade 12):
 
 ```ts
 import type { PeriodContent } from "@/content/types";
 // source: ...
-export const <subjectCamel>G11P<n>: PeriodContent = {
-  grade: 11,
+export const <subjectCamel>G12P<n>: PeriodContent = {
+  grade: 12,
   number: <n>,      // 1..6
   title: "...",     // from the curriculum TOPIC heading
   summary: "...",
@@ -49,10 +50,10 @@ export const <subjectCamel>G11P<n>: PeriodContent = {
 };
 ```
 
-e.g. `physicsG11P1`, `biologyG11P2`. Use the subject's existing camelCase base
-(`englishLanguage` → `englishLanguageG11P1`). The coordinator wires each file into the
+e.g. `physicsG12P1`, `biologyG12P2`. Use the subject's existing camelCase base
+(`englishLanguage` → `englishLanguageG12P1`). The coordinator wires each file into the
 `EXTRA_PERIODS` map in `src/content/index.ts`; agents do **not** edit `index.ts`.
-Grade 11 CONTENTS come from the `GRADE: 11` PERIOD blocks in `curriculum/<Subject>.txt`.
+Grade 12 CONTENTS come from the `GRADE: 12` PERIOD blocks in `curriculum/<Subject>.txt`.
 
 ## Approved sources (in priority order)
 
