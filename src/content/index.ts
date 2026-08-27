@@ -133,6 +133,10 @@ import { chemistryG12P4 } from "@/content/grade12/period4/chemistry";
 import { physicsG12P3 } from "@/content/grade12/period3/physics";
 import { physicsG12P4 } from "@/content/grade12/period4/physics";
 import { physicsG12P5 } from "@/content/grade12/period5/physics";
+import { biologyG12P5 } from "@/content/grade12/period5/biology";
+import { chemistryG12P5 } from "@/content/grade12/period5/chemistry";
+import { physicsG12P6 } from "@/content/grade12/period6/physics";
+import { economicsG12P1 } from "@/content/grade12/period1/economics";
 
 // Base subjects carry identity + metadata and Period 1 content.
 const BASE_SUBJECTS: SubjectContent[] = [
@@ -195,6 +199,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     biologyG12P2,
     biologyG12P3,
     biologyG12P4,
+    biologyG12P5,
   ],
   chemistry: [
     chemistryG10P2,
@@ -212,6 +217,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     chemistryG12P2,
     chemistryG12P3,
     chemistryG12P4,
+    chemistryG12P5,
   ],
   physics: [
     physicsG10P2,
@@ -230,6 +236,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     physicsG12P3,
     physicsG12P4,
     physicsG12P5,
+    physicsG12P6,
   ],
   geography: [
     geographyG10P2,
@@ -269,6 +276,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     economicsG11P4,
     economicsG11P5,
     economicsG11P6,
+    economicsG12P1,
   ],
   literature: [
     literatureG10P2,
