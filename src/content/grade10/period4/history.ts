@@ -1,462 +1,292 @@
 import type { PeriodContent } from "@/content/types";
 
 // Aligned to the Liberian MoE National Curriculum for History, Grade 10,
-// Semester Two, Period IV: African Empires — the Ghana Empire (the ancient
-// empire of the western Sudan, not the modern country).
+// Semester Two, Period IV: African Empires. The MoE lists three empires under
+// Period IV — A. Ghana, B. Mali, C. Songhai — each with its own TOPIC heading
+// and CONTENTS list, rebuilt here as one topic per empire (its CONTENTS items
+// become the ## sections). Notes are rebuilt from OpenStax World History.
 export const historyG10P4: PeriodContent = {
   grade: 10,
   number: 4,
-  title: "African Empires: The Ghana Empire",
+  title: "African Empires: Ghana, Mali and Songhai",
   summary:
-    "Period IV of the MoE Grade 10 History syllabus. Learners study the ancient Ghana Empire of the western Sudan — its rise and government, the trans-Saharan gold-and-salt trade that made it wealthy, and the causes of its decline — as the first of the great West African trading empires.",
+    "Period IV of the MoE Grade 10 History syllabus. Learners study the three great trading empires of the western Sudan — Ghana, Mali and Songhai — their founders and government, the trans-Saharan gold-and-salt trade that made them wealthy, the role of Islam, and the causes of their rise and fall.",
   topics: [
     {
-      slug: "rise-and-government-of-ghana",
-      title: "The Rise and Government of the Ghana Empire",
+      // source: OpenStax — World History Volume 1, 15.2 Medieval Sub-Saharan Africa (https://openstax.org/books/world-history-volume-1/pages/15-2-medieval-sub-saharan-africa)
+      slug: "the-ghana-empire",
+      title: "The Ghana Empire",
       objective:
-        "By the end of the topic, learners should be able to locate the ancient Ghana Empire, explain the factors behind its rise, and describe how it was governed.",
-      estimatedMinutes: 150,
-      notes: `## Introduction
+        "By the end of the topic, learners should be able to describe the founders and government of the Ghana Empire, explain how the trans-Saharan trade made it wealthy, and account for its decline.",
+      estimatedMinutes: 140,
+      notes: `## The ancient Ghana Empire
 
-- **Ancient Ghana** = one of the great empires of the western Sudan (8th–11th century CE).
-- Grew rich by controlling the trans-Saharan **gold-and-salt** trade, ruling a well-organised state with an army and taxation.
-- **This lesson:** where the empire was; the factors behind its rise; how it was governed.
+- The **Ghana Empire** was one of the first great trading empires of the **western Sudan** (the savanna south of the Sahara). It is **not** the same place as the modern country of Ghana.
+- It was established around the **fifth century CE** by **Soninke**-speaking people.
 
-## Which Ghana?
+## The founders
 
-- **Not** the same place as the modern country of Ghana.
-- Lay in the **western Sudan** — grassland belt south of the Sahara, in present-day **Mauritania, Mali and southern Senegal**.
-- Own people called it **Wagadu**; "Ghana" was the **king's title** ("war chief"), later used by Arab traders for the whole empire.
-- Flourished from about the **8th to 11th century CE**.
+- According to tradition, **Diabe Cisse** unified the Soninke in response to raids by the **Sanhaja** (a Berber people), creating a loose **federation** for protection and expansion.
+- The Soninke were the **Black African founders** of Ghana.
 
-## Why Ghana rose to power
+## Growth and government
 
-Several factors allowed Ghana to grow into a powerful empire:
+- Ghana sat strategically **between the Sahara** (the source of **salt**) and the **Bambuk goldfields** along the Senegal River.
+- By the **eleventh century** its king "had some **200,000 soldiers** at his command."
+- The king held a **monopoly** on the largest gold: gold **nuggets over one ounce** belonged to the king, while gold dust circulated in trade — a way to keep prices high and the state rich.
 
-- **Position on the trade routes:** Ghana lay **between** the **Sahara** (source of salt from the north) and the **gold-producing lands** to the south. It controlled the meeting point of these two.
-- **Control of trade:** Ghana taxed the goods passing through, becoming very wealthy.
-- **Iron weapons:** the people of Ghana used **iron** tools and weapons, giving them an advantage over neighbours who did not, so they could conquer and defend territory.
-- **Strong, organised leadership:** able kings built a large army and a system of government.
+## Trade and commerce
 
-## Government of Ghana
+- Ghana's power came from controlling the **trans-Saharan trade routes**.
+- **Gold** moved north across the Sahara; **salt** moved south. Salt was so prized that Ghana's king "stored it in the royal treasury alongside gold nuggets."
+- Trade brought **Islamized Berber** merchants across the desert, spreading Islam and Arabic learning into the Sudan through commerce.
 
-Ghana was ruled by a powerful **king** who held great authority:
+## Decline and fall
 
-- The king was the **head of state, chief judge and religious leader**, and controlled the **army** and the **gold**.
-- The king was seen as almost **sacred**; subjects showed great respect (Arab visitors described people kneeling and sprinkling dust on their heads before him).
-- The empire was governed through **provinces**, some ruled directly by the king's officials and some by **local (vassal) rulers** who paid tribute and stayed loyal.
-- The king kept a large **standing army** to protect the trade routes and control the provinces.
-- A key royal rule: **all gold nuggets belonged to the king**, while gold dust could be traded by the people — this kept the price of gold high and the king rich.
+- In the eleventh century the militant **Almoravid** movement threatened Ghana; by **1055** they captured **Awdaghost**, a key trading town, triggering religious strife that weakened trade links.
+- By the end of the twelfth century Ghana lost its dominance as **new goldfields opened at Bure**, beyond its reach, shifting trade routes away from it.
 
-## The capital
+## Ghana in African history
 
-- Capital = **Kumbi Saleh**; Arab writers describe **two towns**: one for the **king and local people** (royal palace, sacred groves), one for the **Muslim traders** (mosques).
-- Shows Ghana as a busy centre where different peoples and religions met through trade.
+- Ghana pioneered the pattern of the great **Sudanic trading empire**, controlling gold-and-salt commerce — a model followed by **Mali** and **Songhai**.
+- Its name was later taken by the modern nation of Ghana at independence, as a symbol of a proud African past.
 
 ## Common errors and misconceptions
 
-- **Confusing ancient Ghana with modern Ghana** — the empire lay in the **western Sudan** (around today's Mauritania, Mali and Senegal), *not* where the modern country of Ghana is; the modern nation took the name later as a tribute.
-- **Thinking "Ghana" was the country's own name** — the people called it **Wagadu**; "Ghana" was the **king's title** ("war chief") that traders applied to the empire.
-- **Believing gold was mined by the king** — the king **controlled and taxed** the gold–salt trade; the gold came from mines to the south (Wangara), whose location was kept secret.
-- **Assuming West Africa had no organised states before Europeans** — Ghana had an army, taxation and a capital city centuries before European contact.`,
-      workedExample: `**Task.** Explain three factors that helped the ancient Ghana Empire rise to power, and describe the position of the king in its government.
+- **Confusing ancient Ghana with the modern country** — the empire lay in the western Sudan (around modern Mali/Mauritania), not on the coast of modern Ghana.
+- **Thinking Ghana produced its own gold and salt** — it **controlled the trade** between the Saharan salt and the southern goldfields; it did not sit on both.
+- **Believing the Almoravids alone destroyed Ghana** — Almoravid pressure plus the **opening of new goldfields at Bure** (which bypassed Ghana) caused the decline.
+- **Assuming the king taxed all gold equally** — the king monopolised **nuggets**, letting only gold **dust** circulate.`,
+      workedExample: `**Question:** Explain how the trans-Saharan trade made the Ghana Empire wealthy, and why Ghana declined.
 
-**Three factors behind Ghana's rise**
+**Solution**
 
-1. **Its position on the trade routes.** Ghana lay between the **Sahara** (the source of salt) and the **goldfields** to the south, controlling the point where these two vital trades met.
-2. **Control and taxation of trade.** By taxing the goods — especially **gold and salt** — passing through its territory, Ghana became **very wealthy**, which funded its army and government.
-3. **Iron weapons and strong leadership.** The people used **iron** tools and weapons, giving them a military advantage over neighbours, and able kings organised a **strong army** to conquer and defend land.
+*Step 1 — the geography of the trade.*
+Ghana lay in the western Sudan, **between the Sahara** (source of **salt**) and the **Bambuk goldfields** to the south. It did not produce gold or salt itself — it **controlled the trade** between them.
 
-**The position of the king**
-The king held **great, almost sacred authority**. He was the **head of state, chief judge, religious leader and commander of the army**, and he controlled the empire's **gold** (all gold nuggets belonged to him). He ruled through **provinces** — some governed by his own officials and some by **local vassal rulers** who paid tribute — and kept a large standing army to guard the trade routes.
+*Step 2 — how wealth was captured.*
+Gold moved north and salt moved south across the Sahara through Ghana. The king taxed this trade and held a **monopoly on gold nuggets over one ounce**, letting only gold dust circulate — keeping gold scarce, prices high and the treasury full. Salt was so valued it was stored beside gold in the royal treasury.
 
-**Conclusion:** Ghana rose because it controlled and taxed the gold-and-salt trade, held a military edge through iron, and was led by strong kings — and at its head stood a powerful, near-sacred king who controlled the gold, the army and the government.`,
-      teachingTip:
-        "The essential clarification is that ancient Ghana is not modern Ghana — it was in the western Sudan (Mauritania/Mali region), and 'Ghana' was the king's title. Fix this first, or learners misplace the empire entirely. Then teach the rise as a single logic: control the meeting point of gold and salt, tax the trade, back it with iron weapons and a strong king. That causal chain is what exam answers reward.",
+*Step 3 — the power it bought.*
+This wealth supported a strong state: by the eleventh century the king commanded some **200,000 soldiers**.
+
+*Step 4 — the decline.*
+Two forces broke Ghana's dominance. The militant **Almoravids** captured **Awdaghost in 1055**, causing religious strife and disrupting trade. Then **new goldfields opened at Bure**, beyond Ghana's control, so trade routes shifted away from it. By the end of the twelfth century Ghana had lost its dominance.
+
+**Conclusion:** Ghana grew rich by controlling and taxing the gold-and-salt trade across the Sahara, but Almoravid pressure and the opening of new goldfields at Bure shifted the trade away and brought the empire down.`,
       quiz: [
-        {
-          prompt: "The ancient Ghana Empire was located in the…",
-          options: ["western Sudan (grassland south of the Sahara)", "same place as modern Ghana", "Horn of Africa", "Nile valley"],
-          correctIndex: 0,
-          explanation: "It lay in the western Sudan, not modern Ghana.",
-        },
-        {
-          prompt: "The word 'Ghana' originally was…",
-          options: ["the title of the king (war chief)", "the name of a river", "a type of gold", "a mosque"],
-          correctIndex: 0,
-          explanation: "'Ghana' was the king's title, later used for the empire.",
-        },
-        {
-          prompt: "The people of the empire called it…",
-          options: ["Wagadu", "Aksum", "Kush", "Mali"],
-          correctIndex: 0,
-          explanation: "Its own name was Wagadu.",
-        },
-        {
-          prompt: "Ghana flourished during roughly which centuries?",
-          options: ["8th to 11th century CE", "18th to 19th century", "1st to 2nd century", "15th to 16th century"],
-          correctIndex: 0,
-          explanation: "Ghana was powerful from about the 8th to 11th centuries.",
-        },
-        {
-          prompt: "Ghana became wealthy mainly by controlling the trade in…",
-          options: ["gold and salt", "cars and oil", "tea and coffee", "cotton and silk"],
-          correctIndex: 0,
-          explanation: "The gold-and-salt trade was the source of its wealth.",
-        },
-        {
-          prompt: "Salt came from the … and gold from the …",
-          options: ["Sahara (north); lands to the south", "south; north", "sea; desert", "forest; ocean"],
-          correctIndex: 0,
-          explanation: "Salt from the northern Sahara, gold from the south.",
-        },
-        {
-          prompt: "One military advantage of the Ghana people was their use of…",
-          options: ["iron weapons", "gunpowder", "horses only", "ships"],
-          correctIndex: 0,
-          explanation: "Iron tools and weapons gave them an edge.",
-        },
-        {
-          prompt: "Ghana taxed goods that…",
-          options: ["passed through its territory", "were made at home only", "belonged to the king", "were given away free"],
-          correctIndex: 0,
-          explanation: "It taxed the trade crossing its land.",
-        },
-        {
-          prompt: "The king of Ghana was the head of state, chief judge and…",
-          options: ["religious leader and army commander", "a foreign trader", "a Muslim scholar only", "a farmer"],
-          correctIndex: 0,
-          explanation: "He held political, judicial, religious and military power.",
-        },
-        {
-          prompt: "A royal rule was that all gold … belonged to the king.",
-          options: ["nuggets", "dust", "mines in the north", "coins"],
-          correctIndex: 0,
-          explanation: "Nuggets were the king's; gold dust could be traded.",
-        },
-        {
-          prompt: "Keeping the gold nuggets for the king helped to…",
-          options: ["keep the price of gold high and the king rich", "give gold to everyone", "end trade", "lower taxes"],
-          correctIndex: 0,
-          explanation: "Limiting nuggets kept gold valuable and the king wealthy.",
-        },
-        {
-          prompt: "Ghana was governed through…",
-          options: ["provinces, some under officials and some under vassal rulers", "one single city only", "a foreign king", "no government"],
-          correctIndex: 0,
-          explanation: "Provinces were run by officials or loyal local rulers.",
-        },
-        {
-          prompt: "Local rulers who stayed loyal to Ghana paid the king…",
-          options: ["tribute", "nothing", "gold mines", "the whole army"],
-          correctIndex: 0,
-          explanation: "Vassal rulers paid tribute and remained loyal.",
-        },
-        {
-          prompt: "The capital of Ghana was…",
-          options: ["Kumbi Saleh", "Timbuktu", "Kumasi", "Cairo"],
-          correctIndex: 0,
-          explanation: "Kumbi Saleh was the capital.",
-        },
-        {
-          prompt: "Arab writers described the capital as having…",
-          options: ["two towns (royal and Muslim traders')", "no people", "only farms", "a single mosque"],
-          correctIndex: 0,
-          explanation: "One town for the king/people, one for Muslim traders.",
-        },
-        {
-          prompt: "To protect the trade routes, the king kept a large…",
-          options: ["standing army", "fishing fleet", "school", "market only"],
-          correctIndex: 0,
-          explanation: "A standing army guarded the routes and provinces.",
-        },
-        {
-          prompt: "The king of Ghana was regarded as almost…",
-          options: ["sacred", "powerless", "foreign", "poor"],
-          correctIndex: 0,
-          explanation: "Subjects showed him near-sacred respect.",
-        },
-        {
-          prompt: "Ghana's key geographic advantage was lying between the sources of…",
-          options: ["salt and gold", "iron and copper", "rivers and mountains", "rain and drought"],
-          correctIndex: 0,
-          explanation: "It sat between the salt of the north and gold of the south.",
-        },
-        {
-          prompt: "The presence of mosques in the capital shows that Ghana…",
-          options: ["was a meeting place of different peoples and religions", "banned all trade", "had no visitors", "was in Europe"],
-          correctIndex: 0,
-          explanation: "Muslim traders and mosques show its cosmopolitan trade.",
-        },
-        {
-          prompt: "Modern Ghana took its name from the ancient empire as a symbol of…",
-          options: ["African greatness and heritage", "the Sahara desert", "European rule", "the gold price"],
-          correctIndex: 0,
-          explanation: "The name honours the ancient African empire's greatness.",
-        },
+        { prompt: "The ancient Ghana Empire was located in", options: ["the western Sudan (savanna south of the Sahara)", "the modern country of Ghana on the coast", "East Africa", "North Africa's Mediterranean coast"], correctIndex: 0, explanation: "It lay in the western Sudan, not modern Ghana." },
+        { prompt: "Ghana was established around the fifth century CE by which people?", options: ["Soninke", "Zulu", "Swahili", "Berbers only"], correctIndex: 0, explanation: "Soninke-speaking people founded Ghana." },
+        { prompt: "According to tradition, who unified the Soninke?", options: ["Diabe Cisse", "Sundiata", "Mansa Musa", "Sunni Ali"], correctIndex: 0, explanation: "Diabe Cisse unified them against Sanhaja raids." },
+        { prompt: "The Soninke united in response to raids by the", options: ["Sanhaja", "Romans", "Portuguese", "Mongols"], correctIndex: 0, explanation: "The Sanhaja Berbers raided them." },
+        { prompt: "Ghana's wealth came from controlling the trade in", options: ["gold and salt", "silk and tea", "coal and oil", "spices and porcelain"], correctIndex: 0, explanation: "It controlled the trans-Saharan gold-and-salt trade." },
+        { prompt: "Salt came from the ___, and gold from the ___.", options: ["Sahara; Bambuk goldfields", "sea; mountains", "forest; desert oasis", "coast; Nile"], correctIndex: 0, explanation: "Salt from the Sahara, gold from Bambuk." },
+        { prompt: "By the eleventh century Ghana's king commanded about", options: ["200,000 soldiers", "2,000 soldiers", "5 million soldiers", "no army"], correctIndex: 0, explanation: "Some 200,000 soldiers at his command." },
+        { prompt: "The king held a monopoly on gold", options: ["nuggets over one ounce", "dust only", "coins from Rome", "of all kinds equally"], correctIndex: 0, explanation: "Nuggets belonged to the king; dust circulated." },
+        { prompt: "Islam entered the Sudan through Ghana mainly by way of", options: ["Islamized Berber merchants and trade", "European missionaries", "sea voyages from India", "Roman soldiers"], correctIndex: 0, explanation: "Berber traders spread Islam through commerce." },
+        { prompt: "Which movement captured Awdaghost in 1055?", options: ["the Almoravids", "the Almohads only", "the Ottomans", "the Portuguese"], correctIndex: 0, explanation: "The Almoravids took Awdaghost." },
+        { prompt: "New goldfields that shifted trade away from Ghana opened at", options: ["Bure", "Sofala", "Kilwa", "Cairo"], correctIndex: 0, explanation: "The Bure goldfields lay beyond Ghana's reach." },
+        { prompt: "Ghana lost its dominance by the end of the", options: ["twelfth century", "fifth century", "nineteenth century", "first century"], correctIndex: 0, explanation: "Decline came by the late 1100s." },
+        { prompt: "Ghana pioneered the model of the", options: ["Sudanic gold-and-salt trading empire", "Indian Ocean city-state", "Roman province", "Nile pyramid kingdom"], correctIndex: 0, explanation: "Mali and Songhai followed its model." },
+        { prompt: "The Soninke created a loose ___ for protection and expansion.", options: ["federation", "monarchy of one city", "republic", "colony"], correctIndex: 0, explanation: "A federation united the Soninke." },
+        { prompt: "The king kept gold nuggets scarce in order to", options: ["keep prices high and the state rich", "give them away", "melt them for tools", "trade them for iron"], correctIndex: 0, explanation: "The monopoly kept gold valuable." },
+        { prompt: "Ghana itself", options: ["controlled the trade rather than producing gold and salt", "mined all its own gold and salt", "had no trade", "was on the Atlantic coast"], correctIndex: 0, explanation: "It sat between the sources and taxed the trade." },
+        { prompt: "The Sanhaja who raided the Soninke were a ___ people.", options: ["Berber", "Bantu", "Swahili", "Roman"], correctIndex: 0, explanation: "The Sanhaja were Berbers of the desert." },
+        { prompt: "The modern country of Ghana took its name from the empire to", options: ["honour a proud African past", "claim the same territory", "join the Sahara trade", "copy Europe"], correctIndex: 0, explanation: "The name symbolised African heritage at independence." },
+        { prompt: "Two forces behind Ghana's decline were", options: ["Almoravid pressure and the opening of Bure goldfields", "drought and the Nile flood", "Roman and Persian invasions", "the slave trade and Christianity"], correctIndex: 0, explanation: "Almoravids plus the shift of goldfields to Bure." },
+        { prompt: "Awdaghost was important as a", options: ["key trans-Saharan trading town", "Nile temple", "Swahili port", "Roman fort"], correctIndex: 0, explanation: "It was a vital trade town captured in 1055." },
       ],
       test: [
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Explain why the ancient Ghana Empire should not be confused with the modern country of Ghana.",
-          answerKey:
-            "The ancient Ghana Empire lay in the western Sudan (the region of modern Mauritania, Mali and southern Senegal), not where modern Ghana is; its own name was Wagadu, and 'Ghana' was the title of its king. Modern Ghana simply adopted the historic name. Award marks for the different location and the origin of the name.",
-          marks: 3,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt: "State three factors that helped the Ghana Empire rise to power.",
-          answerKey:
-            "Any three: its position between the salt (Sahara) and gold (south) trades; control and taxation of the trans-Saharan trade; use of iron weapons giving a military advantage; strong, organised kings and a large army. Award a mark per valid factor.",
-          marks: 3,
-        },
-        {
-          type: "MULTIPLE_CHOICE",
-          prompt: "The wealth of the Ghana Empire came mainly from…",
-          options: [
-            "controlling and taxing the gold-and-salt trade",
-            "farming rice",
-            "fishing in the sea",
-            "mining coal",
-          ],
-          correctIndex: 0,
-          answerKey: "Ghana grew rich by controlling and taxing the gold-and-salt trade.",
-          marks: 2,
-        },
-        {
-          type: "ESSAY",
-          prompt:
-            "Describe how the Ghana Empire was governed, referring to the power of the king, the provinces, and the control of gold.",
-          answerKey:
-            "A strong answer describes the king as the powerful, near-sacred head of state, chief judge, religious leader and army commander who controlled the gold and the army. The empire was governed through provinces — some run directly by the king's officials, others by local vassal rulers who paid tribute and stayed loyal — and a large standing army protected the trade routes. The rule that all gold nuggets belonged to the king (while gold dust could be traded) kept gold valuable and the king wealthy. Award marks for the king's authority, the provincial/tribute system, and the control of gold.",
-          marks: 6,
-        },
+        { type: "SHORT_ANSWER", prompt: "Identify the founders of Ghana and explain how the empire was first organised.", answerKey: "Ghana was founded around the fifth century CE by Soninke-speaking people; according to tradition Diabe Cisse unified the Soninke against Sanhaja (Berber) raids, creating a loose federation for protection and expansion. Award up to 4 marks.", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "Explain how the trans-Saharan trade made Ghana wealthy.", answerKey: "Ghana sat between the Saharan salt and the Bambuk goldfields and controlled the trade between them; gold moved north and salt south; the king taxed this trade and monopolised gold nuggets over one ounce, keeping gold scarce and prices high, filling the treasury. Award up to 5 marks.", marks: 5 },
+        { type: "MULTIPLE_CHOICE", prompt: "By the eleventh century, Ghana's king could command about", options: ["200,000 soldiers", "2,000 soldiers", "no army", "20 million soldiers"], correctIndex: 0, answerKey: "Some 200,000 soldiers. Option A.", marks: 2 },
+        { type: "SHORT_ANSWER", prompt: "Give two reasons for the decline of the Ghana Empire.", answerKey: "The militant Almoravids captured Awdaghost in 1055, causing religious strife and disrupting trade; new goldfields opened at Bure beyond Ghana's reach, shifting trade routes away. Award 3 marks per reason.", marks: 6 },
+        { type: "ESSAY", prompt: "Discuss the rise, wealth and fall of the Ghana Empire, and its place in African history.", answerKey: "Award marks for: founders (Soninke, Diabe Cisse, federation) and location in the western Sudan, 5 marks; control of the gold-and-salt trade and the king's monopoly and army, 8 marks; the role of Islamized Berber merchants, 3 marks; decline (Almoravids at Awdaghost 1055, Bure goldfields), 6 marks; Ghana as the model Sudanic empire followed by Mali and Songhai, 3 marks. Distinguishing ancient Ghana from the modern country earns credit; confusing them caps at 16.", marks: 25 },
       ],
     },
     {
-      slug: "trade-and-decline-of-ghana",
-      title: "Trade, Wealth and the Decline of Ghana",
+      // source: OpenStax — World History Volume 1, 15.2 Medieval Sub-Saharan Africa (https://openstax.org/books/world-history-volume-1/pages/15-2-medieval-sub-saharan-africa)
+      slug: "the-mali-empire",
+      title: "The Mali Empire",
       objective:
-        "By the end of the topic, learners should be able to describe the trans-Saharan trade that enriched Ghana, explain the role of gold and salt, and give the causes of the empire's decline.",
-      estimatedMinutes: 150,
-      notes: `## Introduction
+        "By the end of the topic, learners should be able to describe the founding of Mali by Sundiata Keita, the reign and pilgrimage of Mansa Musa, and the wealth, government and fall of the empire.",
+      estimatedMinutes: 140,
+      notes: `## The founding of Mali: Sundiata Keita
 
-- Ghana's power rested on **trade**, not farming or conquest alone.
-- **Camel caravans** crossed the Sahara — **salt** south, **gold** north — and Ghana taxed the exchange.
-- **This lesson:** the **trans-Saharan trade**; why **gold and salt** mattered; the **"silent trade"** and the spread of **Islam**; the reasons Ghana **declined** and gave way to Mali.
+- The **Mali Empire** rose in the western Sudan after Ghana declined.
+- Prince **Sundiata of the Keita clan** defeated the **Sosso** kingdom in **1235** and captured **Koumbi Saleh** (the old Ghanaian capital) in **1240**.
+- Mali became "the largest and richest that medieval Africa had yet seen."
+- Sundiata made himself sole ruler by persuading the Malinke kings to surrender their title of **"mansa"** to him, so he alone was religious and secular leader.
 
-## The trans-Saharan trade
+## Wealth and economy
 
-Ghana's wealth came from the **trans-Saharan trade** — the exchange of goods carried by **camel caravans** across the **Sahara Desert** between North Africa and the western Sudan.
+- Mali's economy was **diverse**:
+- Access to the **Bure goldfields**.
+- Control of the Sahelian trading towns of **Oualata, Gao, Timbuktu and Djenné**.
+- Agricultural surplus — **sorghum and millet on the savanna, rice in the Gambia valley**.
+- **Copper** trade with heavy custom duties.
+- The capital moved to **Niani**, in the southern savanna near the Bure goldfields.
 
-- **From the north (across the Sahara):** **salt**, cloth, copper, horses, and manufactured goods.
-- **From the south (the forest lands):** **gold**, ivory, kola nuts, and enslaved people.
+## Islam and gold
 
-Ghana sat in the middle and **controlled and taxed** this exchange.
+- Malian rulers were Muslims but were careful: they let **gold-producing areas stay quasi-independent** to avoid disrupting mining, recognising that where Islam spread into a gold town "there the gold begins to decrease."
 
-## Why gold and salt were so important
+## Mansa Musa and his pilgrimage (1324–1325)
 
-- **Gold** was abundant in the lands south of Ghana and was in huge demand in North Africa and Europe. Ghana was so famous for it that it was called "the land of gold."
-- **Salt** was scarce in the south but **essential for life** (to preserve food and for health in a hot climate). It came from mines in the Sahara.
+- The most famous king, **Mansa Musa**, made a pilgrimage to Mecca in **1324–1325**.
+- His caravan, by the accounts, "included sixty thousand soldiers, five hundred captives, and a hundred camel-loads of gold."
+- His lavish spending in **Cairo** was so great that the value of gold there **fell for twelve years**.
+- The Majorcan mapmaker **Abraham Cresques** put him in *The Catalan Atlas* (1375) as "the richest and most noble lord" — spreading Mali's fame to Europe.
 
-Gold and salt were sometimes traded in the **"silent trade" (dumb barter)**: the two groups exchanged goods by leaving them at an agreed place, without meeting or speaking, until both sides were satisfied — allowing trade between people who did not share a language and kept the goldfields secret.
+## Government and administration
 
-## Islam and trade
+- Mali ruled conquered territories **indirectly**, through local "puppet" regimes, which bred resentment among vassal states such as **Takrur** and **Songhai**.
 
-The North African traders were **Muslims**, and through trade **Islam spread** peacefully into the western Sudan. Muslim traders brought **literacy (writing)** and their religion; many lived in Ghana's capital, though the kings and most people kept their traditional beliefs at first.
+## Decline
 
-## The decline of Ghana
-
-Ghana weakened from about the **11th century** for several reasons:
-
-- **The Almoravid pressure:** the **Almoravids**, a Muslim group from the north, attacked and weakened Ghana in the late 11th century, disrupting its trade and control.
-- **Loss of control over trade:** as trade routes shifted, Ghana lost its monopoly, and other states began to control the gold trade.
-- **Rebellion of subject peoples:** vassal states broke away, weakening the empire.
-- **Overuse of resources / drought:** overgrazing and dry conditions damaged farmland around the capital.
-
-As Ghana declined, the empire of **Mali** rose to take its place as the great power of the western Sudan (the subject of later study).
+- From the late fourteenth century, **weak rulers, brief reigns and civil wars** weakened Mali.
+- Opposition from the **Mossi**, **Tuareg** attacks, and **Songhai** uprisings forced Mali to abandon **Gao and Timbuktu in 1438**.
+- The rising **Songhai** Empire, centred on Gao, took over the trans-Saharan trade.
 
 ## Common errors and misconceptions
 
-- **Thinking salt is worth less than gold, so the trade was unfair** — in the hot western Sudan salt was **scarce and essential for life**, so it was sometimes traded weight-for-weight with gold; both sides gained what they lacked.
-- **Believing the Almoravids alone destroyed Ghana** — the Almoravid pressure was one cause, but **internal** problems (rebellious vassal states, drought and overgrazing) and the **shifting of trade routes** mattered just as much.
-- **Confusing the "silent trade" with ordinary bargaining** — in the silent trade the two groups **never met or spoke**; goods were left and adjusted until both were satisfied.
-- **Assuming Islam was forced on Ghana** — it spread **peacefully through trade**; the kings and most people kept their traditional beliefs at first, and Muslim traders also brought **literacy**.`,
-      workedExample: `**Task.** (a) Describe the trans-Saharan trade and the main goods exchanged. (b) Explain the "silent trade". (c) Give two reasons for the decline of Ghana.
+- **Thinking Mali only inherited Ghana's wealth** — Mali had a **diverse** economy: gold, control of trading towns, farming and copper.
+- **Believing the rulers forced Islam on the goldfields** — they deliberately left gold areas quasi-independent to keep the gold flowing.
+- **Assuming Mansa Musa's gold had no effect abroad** — his spending depressed the value of gold in Cairo for years.
+- **Confusing indirect rule with unity** — indirect "puppet" rule bred resentment and later revolts.`,
+      workedExample: `**Question:** Describe the founding of Mali and the reign of Mansa Musa, and explain why Mansa Musa's pilgrimage was significant.
 
-**Part (a) — the trans-Saharan trade**
-The trans-Saharan trade was the exchange of goods carried by **camel caravans** across the **Sahara Desert**. From the **north** came **salt**, cloth, copper and horses; from the **south** came **gold**, ivory and kola nuts. Ghana lay between the two and grew rich by **controlling and taxing** this trade — especially the exchange of **gold and salt**.
+**Solution**
 
-**Part (b) — the silent trade**
-The **silent trade (dumb barter)** was a way of trading **without meeting or speaking**. One group left its goods (e.g. salt) at an agreed place and withdrew; the other group came, laid down gold beside it, and withdrew; this continued until both sides were satisfied with the amounts. It allowed trade between peoples who **did not share a language** and let the gold miners **keep the location of their goldfields secret**.
+*Step 1 — the founding.*
+Prince **Sundiata of the Keita clan** founded Mali by defeating the **Sosso** in **1235** and capturing **Koumbi Saleh** in **1240**. He made himself sole **mansa**, uniting the Malinke under one ruler, and built "the largest and richest" state medieval Africa had yet seen.
 
-**Part (c) — two reasons for Ghana's decline**
-Any two, for example:
-- **Almoravid attacks** from the north in the late 11th century weakened Ghana and disrupted its trade.
-- **Loss of control over the trade routes**, as trade shifted and rivals took over the gold trade.
-- **Rebellion of subject (vassal) peoples** who broke away from the empire.
+*Step 2 — the sources of wealth.*
+Mali controlled the **Bure goldfields** and the trading towns of **Timbuktu, Djenné, Gao and Oualata**, and drew surplus from farming (sorghum, millet, rice) and the copper trade.
 
-**Conclusion:** Ghana's greatness rested on the trans-Saharan gold-and-salt trade, sometimes conducted by silent barter; and it declined through Almoravid pressure, the loss of its trade monopoly, and the breaking away of its subject states — after which Mali rose in its place.`,
-      teachingTip:
-        "The 'silent trade' fascinates learners and is a memorable exam favourite — teach it as a little story and have two students act it out. Keep the gold-north/salt-south geography crystal clear (a quick sketch map helps). For the decline, group the causes into external (Almoravids, shifting routes) and internal (rebellions, drought) — that structure produces a well-organised essay answer.",
+*Step 3 — Mansa Musa's pilgrimage.*
+In **1324–1325** the famous king **Mansa Musa** made the pilgrimage to Mecca with a huge caravan — by the accounts sixty thousand soldiers and a hundred camel-loads of gold.
+
+*Step 4 — why it mattered.*
+His spending in **Cairo** was so lavish that the **value of gold there fell for twelve years**, and his fame spread to Europe: **Abraham Cresques** depicted him in the *Catalan Atlas* (1375) as the richest lord in the world. The pilgrimage advertised Mali's wealth and Islam to the whole Mediterranean world.
+
+**Conclusion:** Sundiata founded Mali on Ghana's ruins and built a diverse, wealthy empire; Mansa Musa's pilgrimage displayed that wealth so dramatically that it shifted gold prices in Cairo and made Mali famous across Europe.`,
       quiz: [
-        {
-          prompt: "Ghana's wealth came from the trade carried across the Sahara, called the…",
-          options: ["trans-Saharan trade", "Atlantic trade", "silk road", "Indian Ocean trade"],
-          correctIndex: 0,
-          explanation: "The trans-Saharan trade crossed the desert by caravan.",
-        },
-        {
-          prompt: "Goods were carried across the Sahara by…",
-          options: ["camel caravans", "ships", "trains", "aeroplanes"],
-          correctIndex: 0,
-          explanation: "Camel caravans crossed the desert.",
-        },
-        {
-          prompt: "From the north came which key good?",
-          options: ["salt", "gold", "kola nuts", "ivory"],
-          correctIndex: 0,
-          explanation: "Salt came from Saharan mines in the north.",
-        },
-        {
-          prompt: "From the south came which key good?",
-          options: ["gold", "salt", "cloth", "horses"],
-          correctIndex: 0,
-          explanation: "Gold came from the forest lands to the south.",
-        },
-        {
-          prompt: "Ghana was so famous for one metal that it was called the land of…",
-          options: ["gold", "iron", "copper", "silver"],
-          correctIndex: 0,
-          explanation: "It was known as the land of gold.",
-        },
-        {
-          prompt: "Why was salt so valuable in the south?",
-          options: ["it was scarce there but essential for life", "it was used as money only", "it was heavy", "it was gold"],
-          correctIndex: 0,
-          explanation: "Salt was rare in the south yet needed for health and preserving food.",
-        },
-        {
-          prompt: "Trading goods by leaving them at an agreed place without meeting is called the…",
-          options: ["silent trade (dumb barter)", "open market", "royal tax", "tribute"],
-          correctIndex: 0,
-          explanation: "The silent trade needed no direct contact.",
-        },
-        {
-          prompt: "One purpose of the silent trade was to…",
-          options: ["keep the goldfields' location secret", "raise taxes", "start wars", "build mosques"],
-          correctIndex: 0,
-          explanation: "Miners could trade without revealing where the gold was.",
-        },
-        {
-          prompt: "The North African traders who came to Ghana were mostly…",
-          options: ["Muslims", "Christians", "Europeans", "Chinese"],
-          correctIndex: 0,
-          explanation: "Muslim traders crossed the Sahara to trade.",
-        },
-        {
-          prompt: "Through trade, which religion spread peacefully into the western Sudan?",
-          options: ["Islam", "Christianity", "Buddhism", "Hinduism"],
-          correctIndex: 0,
-          explanation: "Islam spread along the trade routes.",
-        },
-        {
-          prompt: "Muslim traders also brought which useful skill?",
-          options: ["literacy (writing)", "iron-working", "farming", "camel breeding only"],
-          correctIndex: 0,
-          explanation: "They brought writing and their religion.",
-        },
-        {
-          prompt: "Which group attacked and weakened Ghana in the late 11th century?",
-          options: ["the Almoravids", "the Romans", "the British", "the Swahili"],
-          correctIndex: 0,
-          explanation: "The Almoravids pressured Ghana from the north.",
-        },
-        {
-          prompt: "Ghana declined partly because it lost control over the…",
-          options: ["trade routes", "camels", "silent trade rules", "salt mines it never had"],
-          correctIndex: 0,
-          explanation: "Shifting routes and rivals cost Ghana its trade monopoly.",
-        },
-        {
-          prompt: "An internal cause of Ghana's decline was the…",
-          options: ["rebellion of subject (vassal) peoples", "arrival of Europeans", "loss of gold to the sea", "end of the Sahara"],
-          correctIndex: 0,
-          explanation: "Vassal states broke away, weakening the empire.",
-        },
-        {
-          prompt: "Which environmental problem hurt Ghana near its capital?",
-          options: ["overgrazing and drought", "floods every day", "snow", "earthquakes"],
-          correctIndex: 0,
-          explanation: "Overuse of land and dry conditions damaged farmland.",
-        },
-        {
-          prompt: "As Ghana declined, which empire rose to take its place?",
-          options: ["Mali", "Aksum", "Kush", "Rome"],
-          correctIndex: 0,
-          explanation: "The Mali Empire succeeded Ghana in the western Sudan.",
-        },
-        {
-          prompt: "The two most important goods in Ghana's trade were…",
-          options: ["gold and salt", "cloth and copper", "ivory and kola", "horses and books"],
-          correctIndex: 0,
-          explanation: "Gold and salt were the heart of the trade.",
-        },
-        {
-          prompt: "The kings and most people of Ghana at first kept their…",
-          options: ["traditional beliefs", "Christian faith", "European laws", "Roman gods"],
-          correctIndex: 0,
-          explanation: "Islam spread gradually; the court kept traditional beliefs at first.",
-        },
-        {
-          prompt: "The silent trade allowed trade between peoples who did not share a…",
-          options: ["language", "religion only", "king", "desert"],
-          correctIndex: 0,
-          explanation: "It overcame the language barrier.",
-        },
-        {
-          prompt: "Ghana's decline shows that an empire's power can fade when it loses control of its…",
-          options: ["trade and its subject states", "camels", "salt mines", "writing"],
-          correctIndex: 0,
-          explanation: "Losing the trade monopoly and its vassals broke Ghana's power.",
-        },
+        { prompt: "The Mali Empire was founded by", options: ["Sundiata Keita", "Mansa Musa", "Sunni Ali", "Diabe Cisse"], correctIndex: 0, explanation: "Prince Sundiata of the Keita clan founded Mali." },
+        { prompt: "Sundiata defeated which kingdom in 1235?", options: ["the Sosso", "the Songhai", "Rome", "Aksum"], correctIndex: 0, explanation: "He defeated the Sosso in 1235." },
+        { prompt: "The title Sundiata took as sole ruler was", options: ["mansa", "pharaoh", "caliph", "askia"], correctIndex: 0, explanation: "He made himself the sole mansa." },
+        { prompt: "Mali is described as", options: ["the largest and richest medieval Africa had yet seen", "a small forest village", "a Swahili city-state", "a Roman province"], correctIndex: 0, explanation: "It surpassed Ghana in size and wealth." },
+        { prompt: "Mali's gold came from the", options: ["Bure goldfields", "Nile delta", "Red Sea", "Congo forest"], correctIndex: 0, explanation: "It controlled the Bure goldfields." },
+        { prompt: "Which was a great trading town of Mali?", options: ["Timbuktu", "Kilwa", "Meroe", "Carthage"], correctIndex: 0, explanation: "Timbuktu, Djenné, Gao and Oualata were Malian towns." },
+        { prompt: "Mali's capital moved to", options: ["Niani", "Cairo", "Napata", "Zanzibar"], correctIndex: 0, explanation: "Niani lay near the Bure goldfields." },
+        { prompt: "The famous king who made a pilgrimage to Mecca was", options: ["Mansa Musa", "Sundiata", "Ezana", "Piye"], correctIndex: 0, explanation: "Mansa Musa's pilgrimage was in 1324–1325." },
+        { prompt: "Mansa Musa's pilgrimage took place in", options: ["1324–1325", "1055", "656 BCE", "1847"], correctIndex: 0, explanation: "He journeyed to Mecca in 1324–1325." },
+        { prompt: "In which city did Mansa Musa's spending lower the value of gold for years?", options: ["Cairo", "Rome", "London", "Kilwa"], correctIndex: 0, explanation: "Gold's value in Cairo fell for twelve years." },
+        { prompt: "Mansa Musa appeared in which famous European map?", options: ["The Catalan Atlas (1375)", "the Domesday Book", "a Roman itinerary", "Ptolemy's Geography"], correctIndex: 0, explanation: "Abraham Cresques depicted him in the Catalan Atlas." },
+        { prompt: "Malian rulers left gold-producing areas quasi-independent because", options: ["spreading Islam there could reduce the gold supply", "they had no soldiers", "the areas were empty", "the gold was fake"], correctIndex: 0, explanation: "They feared conversion would stop the mining." },
+        { prompt: "Mali ruled conquered lands", options: ["indirectly, through local puppet regimes", "with no government at all", "directly from Mecca", "as Roman colonies"], correctIndex: 0, explanation: "Indirect rule bred resentment." },
+        { prompt: "Crops of Mali's diverse economy included", options: ["sorghum, millet and rice", "wheat and barley only", "tea and coffee", "maize and potatoes"], correctIndex: 0, explanation: "Sorghum and millet on the savanna, rice in the Gambia valley." },
+        { prompt: "Mali abandoned Gao and Timbuktu in", options: ["1438", "1235", "1055", "1591"], correctIndex: 0, explanation: "It gave up Gao and Timbuktu in 1438." },
+        { prompt: "Which rising empire took over Mali's trans-Saharan trade?", options: ["Songhai", "Ghana", "Aksum", "Kush"], correctIndex: 0, explanation: "Songhai, centred on Gao, rose next." },
+        { prompt: "A cause of Mali's decline was", options: ["weak rulers, civil wars and revolts (Mossi, Tuareg, Songhai)", "a Roman invasion", "loss of the Nile", "a European army"], correctIndex: 0, explanation: "Internal weakness and revolts undid Mali." },
+        { prompt: "Sundiata captured which former Ghanaian capital in 1240?", options: ["Koumbi Saleh", "Gao", "Kano", "Sofala"], correctIndex: 0, explanation: "He captured Koumbi Saleh in 1240." },
+        { prompt: "Mali's economy is best described as", options: ["diverse (gold, trade towns, farming, copper)", "based only on inherited Ghanaian gold", "purely pastoral", "purely coastal"], correctIndex: 0, explanation: "It rested on several sources of wealth." },
+        { prompt: "Mansa Musa's pilgrimage was significant because it", options: ["advertised Mali's wealth and Islam across the Mediterranean and Europe", "had no effect", "conquered Egypt", "ended the gold trade"], correctIndex: 0, explanation: "It spread Mali's fame widely." },
       ],
       test: [
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Describe the trans-Saharan trade and name the main good that came from the north and the main good from the south.",
-          answerKey:
-            "The trans-Saharan trade was the exchange of goods carried by camel caravans across the Sahara between North Africa and the western Sudan. From the north came salt (and cloth, copper, horses); from the south came gold (and ivory, kola nuts). Award marks for the description and the correct salt (north) / gold (south) goods.",
-          marks: 3,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Explain what the 'silent trade' was and one reason it was used.",
-          answerKey:
-            "The silent trade (dumb barter) was trading by leaving goods at an agreed place and withdrawing, without the two groups meeting or speaking, until both were satisfied with the amounts. Reasons (any one): it allowed trade between peoples who did not share a language; it kept the location of the goldfields secret. Award marks for the description and a valid reason.",
-          marks: 3,
-        },
-        {
-          type: "MULTIPLE_CHOICE",
-          prompt: "Which was a cause of the decline of the Ghana Empire?",
-          options: [
-            "Almoravid attacks and loss of control over trade",
-            "the discovery of oil",
-            "the building of railways",
-            "the arrival of European colonists",
-          ],
-          correctIndex: 0,
-          answerKey: "Almoravid pressure and the loss of the trade monopoly weakened Ghana.",
-          marks: 2,
-        },
-        {
-          type: "ESSAY",
-          prompt:
-            "Discuss the causes of the decline of the Ghana Empire, organising them into external and internal factors.",
-          answerKey:
-            "A strong answer organises the causes into external factors — the Almoravid attacks from the north in the late 11th century, and the shifting of trade routes so that rivals took control of the gold trade (loss of Ghana's monopoly) — and internal factors — the rebellion of subject/vassal peoples who broke away, and environmental problems such as overgrazing and drought that damaged farmland. It should conclude that these combined to weaken Ghana, after which Mali rose to power. Award marks for at least one external and one internal cause, clearly explained.",
-          marks: 6,
-        },
+        { type: "SHORT_ANSWER", prompt: "Describe how Sundiata Keita founded the Mali Empire.", answerKey: "Prince Sundiata of the Keita clan defeated the Sosso in 1235 and captured Koumbi Saleh in 1240; he made himself sole mansa by having the Malinke kings surrender their title to him, building the largest and richest state medieval Africa had yet seen. Award up to 4 marks.", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "Explain the sources of Mali's wealth.", answerKey: "Access to the Bure goldfields; control of trading towns (Oualata, Gao, Timbuktu, Djenné); agricultural surplus (sorghum, millet, rice); and the copper trade with heavy custom duties. Award up to 5 marks.", marks: 5 },
+        { type: "MULTIPLE_CHOICE", prompt: "Mansa Musa's pilgrimage to Mecca took place in", options: ["1324–1325", "1055", "1438", "1591"], correctIndex: 0, answerKey: "1324–1325. Option A.", marks: 2 },
+        { type: "SHORT_ANSWER", prompt: "Why was Mansa Musa's pilgrimage historically significant?", answerKey: "It displayed Mali's enormous wealth — a huge caravan with a hundred camel-loads of gold — and his spending in Cairo lowered the value of gold there for twelve years; his fame reached Europe (the Catalan Atlas, 1375), advertising Mali's wealth and Islam. Award up to 4 marks.", marks: 4 },
+        { type: "ESSAY", prompt: "Discuss the founding, greatness and fall of the Mali Empire, referring to Sundiata Keita and Mansa Musa.", answerKey: "Award marks for: Sundiata's founding (Sosso 1235, Koumbi Saleh 1240, sole mansa), 6 marks; the diverse economy and control of trade towns, 5 marks; Mansa Musa's reign and pilgrimage and its impact, 6 marks; indirect rule and resentment among vassals, 3 marks; decline (weak rulers, civil war, Mossi/Tuareg/Songhai revolts, abandoning Gao and Timbuktu in 1438), 5 marks. A response omitting either Sundiata or Mansa Musa should not exceed 18.", marks: 25 },
+      ],
+    },
+    {
+      // source: OpenStax — World History Volume 2, 3.2 The Songhai Empire (https://openstax.org/books/world-history-volume-2/pages/3-2-the-songhai-empire)
+      slug: "the-songhai-empire",
+      title: "The Songhai Empire",
+      objective:
+        "By the end of the topic, learners should be able to trace the origins of Songhai at Gao, describe the reigns of Sunni Ali and Askia Muhammad, and explain the empire's government, trade and fall.",
+      estimatedMinutes: 140,
+      notes: `## Origins of the Songhai people
+
+- The Songhai state began at **Kukiya** (about 80 miles south-east of **Gao**) under the **Za dynasty** in the eleventh and twelfth centuries — "the earliest dynasty of kings of the Songhai state was the Za."
+- Its centre later shifted to **Gao**, a prosperous trading hub. **Mali annexed Gao around 1325**, holding it until internal strife led Mali to withdraw in the **1430s**.
+
+## Sunni Ali (late fifteenth century)
+
+- **Sunni Ali** led the Songhai rebels against Mali and became the **first king of the new Songhai Empire**.
+- He expanded the state with a **massive cavalry and a fleet of war canoes** on the Niger River.
+- **1468** — he **sacked Timbuktu**, driving out its governor, killing or exiling many scholars; Islamic scholarship there declined for a time.
+- **1473** — after a seven-month siege he captured **Djenné**, but there he **accommodated the Muslim scholars**, so learning flourished at Djenné.
+
+## Askia Muhammad the Great (r. 1493–1528)
+
+- **Muhammad Ture**, a general and governor, defeated Sunni Ali's successor in **1493** and founded the **Askia dynasty**, becoming **Askia the Great**.
+- Under him the empire "stretched from **Kano in Hausaland** in the south-east to **Taghaza** with its salt mines in the north, and modern **Senegal** on the Atlantic coast." By **1512 even the mansa of Mali was paying tribute** to Askia — Songhai became the largest empire in West Africa's history.
+- **Administration:** he replaced traditional rulers with **royal family members or trusted servants** as provincial governors, dependent on him — a centralised system that prevented breakaway states.
+- **Islam:** not ethnically Songhai, he legitimised his rule through Islam, went on **pilgrimage to Mecca**, and was recognised as "caliph of the whole of Sudan," but he **did not force his subjects to convert**.
+- **Trade:** he introduced **standardised weights and measures** and posted **trade inspectors** at major centres. Salt was the currency for external trade; cowrie shells for internal trade.
+
+## Timbuktu as a centre of learning
+
+- Under Askia, **Timbuktu revived** as a centre of scholarship. **Leo Africanus** noted "great numbers of religious teachers, judges, scholars," maintained at the king's expense.
+- Public libraries were established, and scribes copied books; the Great Mosque at Djenné hosted thousands of teachers and students of **Islamic law, astronomy, mathematics and philosophy**.
+
+## The fall of Songhai
+
+- After Askia's later years, his sons **revolted and deposed him in 1528**; civil wars followed.
+- **1591** — the Sultan of Morocco, **Ahmad al-Mansur**, invaded with **guns, cannon and ammunition** (supplied by Queen Elizabeth I of England). At the **Battle of Tondibi**, the Moroccan army under **Judar Pasha** defeated the larger Songhai force; **Askia Ishaq II was killed**.
+- The Moroccans sacked **Djenné, Gao and Timbuktu**; within a decade the empire was shattered into smaller kingdoms.
+
+## Common errors and misconceptions
+
+- **Confusing Sunni Ali and Askia Muhammad** — Sunni Ali founded the empire by conquest; Askia Muhammad (a different dynasty) organised and Islamised it.
+- **Thinking Sunni Ali favoured all scholars** — he sacked Timbuktu's scholars (1468) but accommodated those of Djenné (1473).
+- **Believing Songhai fell to internal revolt alone** — civil war weakened it, but the decisive blow was the **1591 Moroccan invasion with firearms** at Tondibi.
+- **Assuming firearms did not matter** — Moroccan guns and cannon beat Songhai's larger cavalry force.`,
+      workedExample: `**Question:** Compare the reigns of Sunni Ali and Askia Muhammad, and explain how Songhai fell.
+
+**Solution**
+
+*Step 1 — Sunni Ali, the conqueror.*
+**Sunni Ali** founded the Songhai Empire after Mali withdrew from Gao. Using a **massive cavalry and war canoes**, he sacked **Timbuktu in 1468** and took **Djenné in 1473**. He was a ruthless conqueror — harsh to Timbuktu's scholars but accommodating to Djenné's.
+
+*Step 2 — Askia Muhammad, the organiser.*
+**Askia Muhammad the Great** (r. 1493–1528) founded a new dynasty and turned conquest into a lasting state. He centralised government by appointing **loyal governors** dependent on him, standardised **weights and measures**, posted **trade inspectors**, and used **Islam** to legitimise his rule (pilgrimage to Mecca; "caliph of the Sudan") without forcing conversion. Under him Songhai became the **largest empire in West African history**, with even Mali paying tribute by 1512.
+
+*Step 3 — the fall.*
+After Askia's later years his sons **deposed him in 1528**, and civil wars weakened the empire. In **1591** Morocco's Sultan **al-Mansur** invaded with **firearms and cannon**; at the **Battle of Tondibi**, **Judar Pasha** defeated Songhai's larger army and killed **Askia Ishaq II**. The Moroccans sacked Djenné, Gao and Timbuktu, and the empire broke apart.
+
+**Conclusion:** Sunni Ali built Songhai by conquest and Askia Muhammad organised it into West Africa's greatest empire, but internal civil war and the firearms of the 1591 Moroccan invasion at Tondibi brought it down.`,
+      quiz: [
+        { prompt: "The earliest dynasty of Songhai kings was the", options: ["Za", "Keita", "Askia", "Almoravid"], correctIndex: 0, explanation: "The Za dynasty ruled the early Songhai state." },
+        { prompt: "The main trading centre of Songhai was", options: ["Gao", "Kilwa", "Cairo", "Meroe"], correctIndex: 0, explanation: "Gao became the prosperous Songhai hub." },
+        { prompt: "Mali annexed Gao around", options: ["1325", "1591", "1055", "656 BCE"], correctIndex: 0, explanation: "Mali held Gao from about 1325 to the 1430s." },
+        { prompt: "The founder of the new Songhai Empire was", options: ["Sunni Ali", "Askia Muhammad", "Sundiata", "Mansa Musa"], correctIndex: 0, explanation: "Sunni Ali led the rebellion against Mali." },
+        { prompt: "Sunni Ali expanded Songhai using cavalry and", options: ["a fleet of war canoes", "steamships", "elephants", "firearms"], correctIndex: 0, explanation: "War canoes on the Niger aided his conquests." },
+        { prompt: "In 1468 Sunni Ali", options: ["sacked Timbuktu", "built Timbuktu's libraries", "converted to Christianity", "invaded Morocco"], correctIndex: 0, explanation: "He sacked Timbuktu and drove out its scholars." },
+        { prompt: "At Djenné (1473), Sunni Ali", options: ["accommodated the Muslim scholars", "burned the city entirely", "was defeated", "gave up his throne"], correctIndex: 0, explanation: "He accommodated Djenné's scholars, so learning flourished." },
+        { prompt: "Askia Muhammad the Great reigned from", options: ["1493 to 1528", "1055 to 1100", "1591 to 1600", "1235 to 1255"], correctIndex: 0, explanation: "He founded the Askia dynasty in 1493." },
+        { prompt: "By 1512, who was paying tribute to Askia?", options: ["the mansa of Mali", "the Pope", "the Roman emperor", "the king of Portugal"], correctIndex: 0, explanation: "Even Mali paid tribute to Songhai." },
+        { prompt: "Askia appointed provincial governors who were", options: ["royal family or trusted servants dependent on him", "elected by the people", "foreign kings", "chosen by Morocco"], correctIndex: 0, explanation: "This centralised system prevented breakaways." },
+        { prompt: "Askia used which religion to legitimise his rule?", options: ["Islam", "Christianity", "Buddhism", "traditional religion only"], correctIndex: 0, explanation: "He went on pilgrimage and was called caliph of the Sudan." },
+        { prompt: "Did Askia force his subjects to convert?", options: ["No", "Yes, all of them", "Only merchants", "Only farmers"], correctIndex: 0, explanation: "He did not force conversion." },
+        { prompt: "Askia improved trade by introducing", options: ["standardised weights and measures and trade inspectors", "paper money", "a stock exchange", "steam engines"], correctIndex: 0, explanation: "He standardised measures and posted inspectors." },
+        { prompt: "Under Askia, Timbuktu revived as a centre of", options: ["scholarship and learning", "shipbuilding", "gold mining", "iron smelting"], correctIndex: 0, explanation: "Leo Africanus noted its many scholars." },
+        { prompt: "Subjects taught at Djenné's Great Mosque included", options: ["Islamic law, astronomy, mathematics and philosophy", "European history only", "navigation only", "no subjects"], correctIndex: 0, explanation: "A wide range of learning flourished there." },
+        { prompt: "Askia was deposed in 1528 by", options: ["his own sons", "Morocco", "Mali", "the Portuguese"], correctIndex: 0, explanation: "His sons revolted and deposed him." },
+        { prompt: "Songhai was invaded in 1591 by", options: ["Morocco", "Rome", "Britain directly", "Mali"], correctIndex: 0, explanation: "Sultan al-Mansur of Morocco invaded." },
+        { prompt: "The decisive battle where Songhai was defeated was", options: ["Tondibi", "Adwa", "Awdaghost", "Syene"], correctIndex: 0, explanation: "The Battle of Tondibi in 1591." },
+        { prompt: "Morocco's decisive advantage at Tondibi was", options: ["guns and cannon", "more cavalry", "war elephants", "a larger army"], correctIndex: 0, explanation: "Firearms beat Songhai's larger cavalry force." },
+        { prompt: "The Moroccan commander at Tondibi was", options: ["Judar Pasha", "Sunni Ali", "Mansa Musa", "Ezana"], correctIndex: 0, explanation: "Judar Pasha led the Moroccan army." },
+      ],
+      test: [
+        { type: "SHORT_ANSWER", prompt: "Describe the origins of the Songhai state and its early relationship with Mali.", answerKey: "The Songhai state began at Kukiya near Gao under the Za dynasty in the 11th–12th centuries; its centre shifted to Gao, a trading hub, which Mali annexed around 1325 and held until internal strife led Mali to withdraw in the 1430s, allowing Songhai's rise. Award up to 4 marks.", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "Contrast the reigns of Sunni Ali and Askia Muhammad.", answerKey: "Sunni Ali was the conqueror who founded the empire, using cavalry and war canoes, sacking Timbuktu (1468) and taking Djenné (1473). Askia Muhammad (r. 1493–1528, Askia dynasty) organised and Islamised the state, centralising government with loyal governors, standardising weights and measures, and legitimising rule through Islam without forcing conversion. Award up to 5 marks.", marks: 5 },
+        { type: "MULTIPLE_CHOICE", prompt: "Songhai was decisively defeated in 1591 at the Battle of", options: ["Tondibi", "Adwa", "Awdaghost", "Koumbi Saleh"], correctIndex: 0, answerKey: "The Battle of Tondibi, by Morocco's firearms. Option A.", marks: 2 },
+        { type: "SHORT_ANSWER", prompt: "Explain how Askia Muhammad strengthened the government and economy of Songhai.", answerKey: "He replaced traditional rulers with royal family or trusted servants dependent on him (centralisation preventing breakaways); introduced standardised weights and measures and trade inspectors at major centres; and used Islam to legitimise his rule. Award up to 4 marks.", marks: 4 },
+        { type: "ESSAY", prompt: "Discuss the rise, greatness and fall of the Songhai Empire.", answerKey: "Award marks for: origins at Gao/Kukiya and the Za dynasty, and Mali's withdrawal, 4 marks; Sunni Ali's conquests (Timbuktu 1468, Djenné 1473), 5 marks; Askia Muhammad's administration, Islam, trade reforms and the empire's greatest extent (Mali paying tribute by 1512), 8 marks; Timbuktu's scholarship, 3 marks; the fall — the 1528 revolt, civil war, and the 1591 Moroccan invasion with firearms at Tondibi, 5 marks. Confusing Sunni Ali and Askia caps at 16.", marks: 25 },
       ],
     },
   ],

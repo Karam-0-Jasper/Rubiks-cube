@@ -1,503 +1,738 @@
 import type { PeriodContent } from "@/content/types";
 
 // Aligned to the Liberian MoE National Curriculum for English, Grade 10,
-// Semester Two, Period IV: Grammar — Adjectives and Adverbs.
+// Semester Two, Period IV: Grammar — Adjectives and Adverbs. CONTENTS:
+// (a) Adjectives — (i) proper adjectives, (ii) compound adjectives;
+// (b) Adverbs — (i) conjunctive adverbs. Taught here as three topics.
 export const englishLanguageG10P4: PeriodContent = {
   grade: 10,
   number: 4,
   title: "Adjectives and Adverbs",
   summary:
-    "Period IV of the MoE Grade 10 English syllabus. Learners identify adjectives and the nouns they describe, form the degrees of comparison, recognise adverbs and the words they modify, and use adjectives and adverbs correctly to make writing vivid and precise.",
+    "Period IV of the MoE Grade 10 English syllabus. Learners distinguish adjectives from other parts of speech and use proper and compound adjectives, recognise adverbs and the four questions they answer, and use conjunctive adverbs to link ideas — making writing vivid and precise.",
   topics: [
     {
+      // source: LibreTexts — College of the Sequoias, Reading and Composition, 17.2 Adjectives and Adverbs (https://human.libretexts.org/Courses/College_of_the_Sequoias/Reading_and_Composition/17:_Grammar/17.02:_Adjectives_and_Adverbs)
       slug: "adjectives",
-      title: "Adjectives and Their Degrees of Comparison",
+      title: "Adjectives: Proper and Compound",
       objective:
-        "By the end of the topic, learners should be able to identify adjectives and the nouns or pronouns they describe, name the kinds of adjective, and form and use the comparative and superlative degrees correctly.",
-      estimatedMinutes: 160,
-      notes: `## What an adjective does
+        "By the end of the topic, learners should be able to identify adjectives and the nouns or pronouns they modify, answer the adjective questions (what kind, which one, how many, how much), and use proper and compound adjectives with correct capitalisation and hyphenation.",
+      estimatedMinutes: 150,
+      notes: `## What an adjective is
 
-An **adjective** is a word that **describes or modifies a noun or a pronoun**. It adds information, answering one of these questions about the noun: *what kind? which one? how many? whose?*
+**Adjective** — a word that **modifies a noun or a pronoun**, giving description or added meaning.
 
-- *a **tall** boy* — what kind?
-- ***this** book* — which one?
-- ***three** oranges* — how many?
-- ***her** bag* — whose?
+- *young, small, loud, short, fat, pretty, red, three, Liberian.*
+- *The **loud** market; a **red** dress; **three** goats.*
 
-An adjective can stand in two positions. When it comes **directly before** the noun it is called **attributive**: *a **red** car, a **kind** teacher*. When it comes **after a linking verb** (is, seems, became, looks…) and describes the subject, it is called **predicative**: *the car is **red**; the teacher seems **kind***.
+Adjectives answer four questions about the noun:
 
-## The kinds of adjective
-
-1. **Descriptive (quality) adjectives** tell what kind: *kind, brave, wooden, dirty, enormous*.
-2. **Proper adjectives** are formed from proper nouns and take a capital letter: *Liberian rice, African history, Islamic art*.
-3. **Quantitative adjectives** tell how much or how many: *some, little, much, enough, several*.
-4. **Numeral adjectives** give a number or order: *three mangoes (cardinal), the first prize (ordinal)*.
-5. **Demonstrative adjectives** point out which: *this, that, these, those* — ***this** house, **those** girls*.
-6. **Possessive adjectives** show ownership: *my, your, his, her, its, our, their*.
-7. **Interrogative adjectives** ask a question before a noun: *which, what, whose* — ***Which** book?*
-8. **Articles** — *a, an, the* — are the commonest adjectives of all. *A / an* (the **indefinite** articles) point to any one member of a class (*a book, an egg*); *the* (the **definite** article) points to a particular one (*the book on my desk*). Use *an* before a vowel **sound** (*an hour, an honest man*) and *a* before a consonant sound (*a university, a European*).
-
-## The order of adjectives
-
-When two or more adjectives describe the same noun, English follows a natural order: **opinion → size → age → shape → colour → origin → material → purpose**. We say *a **beautiful large old round brown wooden** table*, not *a wooden brown round old large beautiful table*. Learners rarely need the full list, but they should feel that *a nice new shirt* sounds right while *a new nice shirt* does not.
-
-## The degrees of comparison
-
-Adjectives change form to **compare**. There are three degrees:
-
-- **Positive** — the plain form, describing one thing: *tall*.
-- **Comparative** — compares **two** things: *taller*.
-- **Superlative** — compares **three or more**: *tallest*.
-
-### Forming the degrees
-
-| Rule | Positive | Comparative | Superlative |
-| --- | --- | --- | --- |
-| short words: add -er / -est | tall | taller | tallest |
-| ending in -e: add -r / -st | large | larger | largest |
-| consonant + y → i | happy | happier | happiest |
-| short vowel + consonant: double it | big | bigger | biggest |
-| long words: use more / most | beautiful | more beautiful | most beautiful |
-
-Note that the superlative usually takes **the** before it: *the tallest boy, the most careful driver*.
-
-### Comparing things that are equal
-
-To show two things are the **same**, use **as … as**: *Kou is **as tall as** Musu.* To show they are not, use **not as … as**: *This road is **not as busy as** that one.*
-
-### Irregular comparisons
-
-A few very common adjectives do not follow the rules and must be learned:
-
-| Positive | Comparative | Superlative |
+| Question | Example adjective | In a phrase |
 | --- | --- | --- |
-| good | better | best |
-| bad | worse | worst |
-| little | less | least |
-| many / much | more | most |
-| far | farther / further | farthest / furthest |
+| What kind? | red, wooden, brave | a **brave** soldier |
+| Which one? | this, that, first | **that** book |
+| How many? | three, several, many | **several** pupils |
+| How much? | some, enough, little | **enough** water |
 
-## Common errors
+Many adjectives have recognisable endings: **-able, -al, -ful, -ic, -ive, -ish, -less, -ous** (*comfortable, national, careful, heroic, active, childish, careless, famous*).
 
-- **Double comparison** — never use *-er/-est* and *more/most* together: ✗ *more taller*, ✗ *most cleverest* → ✓ *taller*, *cleverest*.
-- **Wrong degree for the number compared** — use the **comparative** for two, the **superlative** for three or more: *the taller **of the two***, *the tallest **in the class***.
-- **Wrong article** — ✗ *a apple, a hour* → ✓ *an apple, an hour* (go by the sound, not the spelling).`,
-      workedExample: `**Task.** For each sentence, name the adjective and the noun it describes, and give its degree of comparison; then correct any error.
+**Placement.** An adjective usually comes **directly before** the noun (*a **tall** tree*), or **after a linking verb** as a predicate adjective (*The tree is **tall***).
 
-1. *Musu is the **cleverest** girl in the class.*
-2. *This mango is **sweeter** than that one.*
-3. *He is the **more tallest** boy in the team.*
+## Proper adjectives
+
+**Proper adjective** — an adjective **formed from a proper noun**, and, like the proper noun, it is **capitalised**.
+
+| Proper noun | Proper adjective | Example |
+| --- | --- | --- |
+| Liberia | Liberian | **Liberian** culture |
+| Africa | African | **African** music |
+| Shakespeare | Shakespearean | a **Shakespearean** play |
+| China | Chinese | **Chinese** tea |
+
+Exception: when such a word takes a **non-literal** meaning it becomes lower case (*french fries, swiss cheese* — not really from France or Switzerland).
+
+## Compound adjectives
+
+**Compound adjective** — an adjective made of **two or more words** working together to modify one noun. When they come **before** the noun they are usually **hyphenated**.
+
+- *a **well-known** singer; a **ten-year-old** boy; a **part-time** job; a **long-term** plan.*
+
+The hyphen is dropped when the same words come **after** the noun:
+
+- *We were in a **long-term** relationship.* (before the noun → hyphen)
+- *That relationship was **long term**.* (after the noun → no hyphen)
+
+## Summary
+
+- An adjective modifies a **noun or pronoun** and answers *what kind? which one? how many? how much?*
+- A **proper adjective** comes from a proper noun and is **capitalised** (Liberian, African).
+- A **compound adjective** joins two or more words and is **hyphenated before the noun** (well-known, ten-year-old).`,
+      workedExample: `**Task.** Underline each adjective, name the noun it modifies, and label any proper or compound adjective.
+
+1. *The **brave Liberian** soldiers marched past.*
+2. *She bought a **beautiful hand-woven** basket.*
+3. *A **ten-year-old** girl won the **first** prize.*
 
 **Answers**
 
-1. **cleverest** describes the noun **girl**. It is the **superlative** degree (comparing her with all the others in the class — three or more). Correct as written.
+1. *brave* (what kind?) and *Liberian* — both modify **soldiers**; *Liberian* is a **proper adjective** (from the proper noun *Liberia*, so it is capitalised).
+2. *beautiful* (what kind?) and *hand-woven* — both modify **basket**; *hand-woven* is a **compound adjective** (two words, hyphenated before the noun).
+3. *ten-year-old* — a **compound adjective** modifying **girl** (hyphenated before the noun); *first* (which one?) modifies **prize**.
 
-2. **sweeter** describes the noun **mango**. It is the **comparative** degree (comparing two mangoes, signalled by "than"). Correct as written.
-
-3. **more tallest** describes the noun **boy**, but it is **wrong**: it doubles the comparison (*more* + *-est*). The superlative of "tall" is simply **tallest**. → *He is the **tallest** boy in the team.*
-
-**Key idea:** an adjective always describes a noun (or pronoun); use the **comparative** (-er / more) for two things and the **superlative** (-est / most) for three or more — and never combine the two methods.`,
-      teachingTip:
-        "The double-comparison error ('more taller', 'most cleverest') is extremely common. Teach the single rule: pick EITHER -er/-est OR more/most, never both. Also drill the two-vs-more distinction with a quick oral game — 'of the two' forces the comparative, 'in the class' forces the superlative — so learners choose the degree by counting what is being compared.",
+**Rule applied:** each adjective is tied to a noun; proper adjectives are capitalised and compound adjectives before a noun are hyphenated.`,
       quiz: [
         {
-          prompt: "An adjective describes or modifies a…",
-          options: ["noun or pronoun", "verb", "adverb", "preposition"],
+          prompt: "An adjective modifies a…",
+          options: ["noun or pronoun", "verb", "conjunction", "preposition"],
           correctIndex: 0,
-          explanation: "Adjectives modify nouns and pronouns.",
+          explanation: "Adjectives describe nouns and pronouns.",
         },
         {
-          prompt: "In 'a brave soldier', the adjective is…",
-          options: ["brave", "soldier", "a", "brave soldier"],
+          prompt: "Which word is the adjective in 'a loud market'?",
+          options: ["loud", "market", "a", "in"],
           correctIndex: 0,
-          explanation: "'brave' describes the noun 'soldier'.",
+          explanation: "'Loud' describes the noun 'market'.",
         },
         {
-          prompt: "Which word is a demonstrative adjective?",
-          options: ["this", "quickly", "run", "very"],
+          prompt: "Which question does an adjective NOT answer?",
+          options: ["How? (in what way)", "What kind?", "Which one?", "How many?"],
           correctIndex: 0,
-          explanation: "'this' points out which noun.",
+          explanation: "'How / in what way' is answered by adverbs, not adjectives.",
         },
         {
-          prompt: "In 'my book', the word 'my' is a … adjective.",
-          options: ["possessive", "descriptive", "interrogative", "quantitative"],
+          prompt: "In 'three goats', the adjective 'three' answers…",
+          options: ["how many?", "what kind?", "which one?", "how much?"],
           correctIndex: 0,
-          explanation: "'my' shows ownership.",
+          explanation: "'Three' tells how many.",
         },
         {
-          prompt: "Which is a quantitative adjective?",
-          options: ["few", "beautiful", "this", "whose"],
+          prompt: "A proper adjective is formed from a…",
+          options: ["proper noun", "verb", "common noun", "pronoun"],
           correctIndex: 0,
-          explanation: "'few' tells how many.",
+          explanation: "Proper adjectives come from proper nouns, e.g. Liberia → Liberian.",
         },
         {
-          prompt: "The comparative of 'tall' is…",
-          options: ["taller", "tallest", "more tall", "most tall"],
+          prompt: "Which is a proper adjective?",
+          options: ["African", "beautiful", "tall", "quick"],
           correctIndex: 0,
-          explanation: "Short word adds -er: taller.",
+          explanation: "'African' comes from the proper noun 'Africa' and is capitalised.",
         },
         {
-          prompt: "The superlative of 'happy' is…",
-          options: ["happiest", "happier", "most happy", "more happy"],
+          prompt: "How should a proper adjective be written?",
+          options: ["with a capital letter", "in lower case", "in italics", "hyphenated"],
           correctIndex: 0,
-          explanation: "Consonant + y → i, add -est: happiest.",
+          explanation: "Proper adjectives keep the capital letter of the proper noun.",
         },
         {
-          prompt: "The comparative of 'beautiful' is…",
-          options: ["more beautiful", "beautifuller", "most beautiful", "beautifulest"],
+          prompt: "Which is the proper adjective from 'China'?",
+          options: ["Chinese", "Chinish", "Chinan", "Chinly"],
           correctIndex: 0,
-          explanation: "Long words use 'more': more beautiful.",
+          explanation: "China → Chinese.",
         },
         {
-          prompt: "The comparative of 'good' is…",
-          options: ["better", "gooder", "best", "more good"],
+          prompt: "A compound adjective is made of…",
+          options: ["two or more words", "a verb and a noun only", "one word", "a preposition"],
           correctIndex: 0,
-          explanation: "'good' is irregular: good, better, best.",
+          explanation: "A compound adjective joins two or more words to modify one noun.",
         },
         {
-          prompt: "The superlative of 'bad' is…",
-          options: ["worst", "baddest", "worse", "most bad"],
+          prompt: "Which is a compound adjective?",
+          options: ["well-known", "famous", "quiet", "red"],
           correctIndex: 0,
-          explanation: "'bad' is irregular: bad, worse, worst.",
+          explanation: "'well-known' is two words joined with a hyphen.",
         },
         {
-          prompt: "Use the comparative degree when comparing…",
-          options: ["two things", "three things", "one thing", "many things"],
+          prompt: "Choose the correct form: 'a ___ boy'",
+          options: ["ten-year-old", "ten year old", "tenyearold", "ten,year,old"],
           correctIndex: 0,
-          explanation: "The comparative compares exactly two.",
+          explanation: "Before the noun, the compound adjective is hyphenated: ten-year-old.",
         },
         {
-          prompt: "Use the superlative degree when comparing…",
-          options: ["three or more things", "two things", "one thing", "no things"],
+          prompt: "When is a compound adjective NOT hyphenated?",
+          options: ["when it comes after the noun", "when it comes before the noun", "never", "when capitalised"],
           correctIndex: 0,
-          explanation: "The superlative compares three or more.",
+          explanation: "'That plan was long term' — after the noun, no hyphen.",
         },
         {
-          prompt: "Which sentence is correct?",
-          options: [
-            "She is the taller of the two sisters.",
-            "She is the tallest of the two sisters.",
-            "She is more taller than her sister.",
-            "She is most tall of the two.",
-          ],
+          prompt: "Which sentence uses the hyphen correctly?",
+          options: ["She has a part-time job.", "She has a part time-job.", "She works part-time is her job.", "Her job is part-time. is hyphenated wrongly"],
           correctIndex: 0,
-          explanation: "Two things → comparative 'taller'.",
+          explanation: "'part-time' before 'job' takes a hyphen.",
         },
         {
-          prompt: "Which is WRONG?",
-          options: ["more cleverer", "cleverer", "cleverest", "more clever"],
+          prompt: "In 'The tree is tall', 'tall' is a…",
+          options: ["predicate adjective", "proper adjective", "compound adjective", "adverb"],
           correctIndex: 0,
-          explanation: "'more cleverer' doubles the comparison.",
+          explanation: "After the linking verb 'is', 'tall' is a predicate adjective describing 'tree'.",
         },
         {
-          prompt: "The plain form of an adjective (e.g. 'tall') is the … degree.",
-          options: ["positive", "comparative", "superlative", "irregular"],
+          prompt: "Which ending is common on adjectives?",
+          options: ["-ful", "-ly (on adverbs)", "-ed only", "-tion"],
           correctIndex: 0,
-          explanation: "The base form is the positive degree.",
+          explanation: "Endings like -ful, -ous, -ive, -al mark many adjectives (careful, famous).",
         },
         {
-          prompt: "In 'Which book do you want?', 'which' is a … adjective.",
-          options: ["interrogative", "possessive", "demonstrative", "descriptive"],
+          prompt: "Which is the proper adjective from 'Shakespeare'?",
+          options: ["Shakespearean", "Shakespeareful", "Shakespeareish", "Shakespearely"],
           correctIndex: 0,
-          explanation: "'which' asks a question about the noun.",
+          explanation: "Shakespeare → Shakespearean.",
         },
         {
-          prompt: "The comparative of 'large' is…",
-          options: ["larger", "largest", "more large", "largeer"],
+          prompt: "In 'that book', the adjective 'that' answers…",
+          options: ["which one?", "how many?", "what kind?", "how much?"],
           correctIndex: 0,
-          explanation: "Ends in -e, add -r: larger.",
+          explanation: "'That' points out which one.",
         },
         {
-          prompt: "An adjective can come after which kind of verb?",
-          options: ["a linking verb", "no verb ever", "only action verbs", "only modal verbs"],
+          prompt: "Why is 'french' lower case in 'french fries'?",
+          options: ["it has a non-literal meaning", "it is a spelling error", "adjectives are never capitalised", "it is a compound adjective"],
           correctIndex: 0,
-          explanation: "e.g. 'the soup is hot' — adjective after a linking verb.",
+          explanation: "The fries are not literally from France, so the word is lower case.",
         },
         {
-          prompt: "The superlative of 'many' is…",
-          options: ["most", "manyest", "more", "manier"],
+          prompt: "Which phrase has a compound adjective before the noun?",
+          options: ["a well-behaved class", "a class that behaves", "the class is well behaved", "behaving very well"],
           correctIndex: 0,
-          explanation: "'many' is irregular: many, more, most.",
+          explanation: "'well-behaved' is hyphenated before the noun 'class'.",
         },
         {
-          prompt: "Adjectives make writing more…",
-          options: ["vivid and precise", "confusing", "shorter only", "grammatically wrong"],
+          prompt: "Adjectives usually come directly…",
+          options: ["before the noun they modify", "before a verb", "at the end of a sentence", "before a conjunction"],
           correctIndex: 0,
-          explanation: "Good adjectives add clear, vivid detail.",
+          explanation: "An adjective typically sits just before its noun, or after a linking verb.",
         },
       ],
       test: [
         {
           type: "SHORT_ANSWER",
-          prompt: "Give the comparative and superlative of: (a) small, (b) happy, (c) good.",
+          prompt:
+            "Write one sentence containing a proper adjective and one containing a compound adjective. Underline each and circle the noun it modifies.",
           answerKey:
-            "(a) smaller, smallest; (b) happier, happiest; (c) better, best. Award a mark per correct pair; note (c) is irregular.",
-          marks: 3,
+            "Proper adjective sentence, e.g. 'We enjoyed Liberian food.' (Liberian → food). Compound adjective sentence, e.g. 'A well-known writer visited.' (well-known → writer). Award 2 marks per correct, clearly-labelled sentence; deduct for a missing capital or hyphen.",
+          marks: 4,
         },
         {
           type: "MULTIPLE_CHOICE",
-          prompt: "Which sentence uses the correct degree of comparison?",
+          prompt: "Which sentence is punctuated correctly?",
           options: [
-            "This is the best of all the essays.",
-            "This is the better of all the essays.",
-            "This is the most best essay.",
-            "This is the goodest essay.",
+            "She adopted a three-legged dog.",
+            "She adopted a three legged-dog.",
+            "She adopted a threelegged dog.",
+            "She adopted a three legged dog.",
           ],
           correctIndex: 0,
-          answerKey: "Superlative 'best' for three or more; no doubling.",
+          answerKey: "The compound adjective 'three-legged' is hyphenated before the noun 'dog'.",
           marks: 2,
         },
         {
           type: "SHORT_ANSWER",
-          prompt: "Identify the adjective and the noun it describes: 'The diligent students passed the difficult exam.'",
+          prompt:
+            "Form the proper adjective from each proper noun and use it in a phrase: (a) Nigeria (b) Europe.",
           answerKey:
-            "'diligent' describes 'students'; 'difficult' describes 'exam'. Award a mark for each adjective correctly matched to its noun.",
+            "(a) Nigerian, e.g. 'Nigerian film'; (b) European, e.g. 'European history'. Award a mark per correct, capitalised proper adjective used in a phrase.",
+          marks: 2,
+        },
+        {
+          type: "SHORT_ANSWER",
+          prompt:
+            "Explain the hyphen rule for compound adjectives, using 'long-term' before and after a noun.",
+          answerKey:
+            "A compound adjective is hyphenated before the noun ('a long-term plan') but not after the noun ('the plan is long term'). Award marks for stating the rule and both correct examples.",
           marks: 2,
         },
         {
           type: "ESSAY",
           prompt:
-            "Explain the three degrees of comparison of adjectives, giving an example of each and stating a common error learners should avoid.",
+            "Explain what an adjective is and the four questions it answers. Then describe proper and compound adjectives, giving two examples of each and the capitalisation/hyphen rule for each.",
           answerKey:
-            "A strong answer defines the positive (plain form, e.g. tall), comparative (comparing two, e.g. taller / more beautiful) and superlative (comparing three or more, e.g. tallest / most beautiful) degrees, with valid examples. It states the common error of doubling the comparison (e.g. 'more taller', 'most cleverest') and/or using the superlative for only two things, and how to avoid it. Award marks for the three degrees with examples and a correctly identified error.",
+            "A strong answer defines an adjective (modifies a noun/pronoun) and lists the four questions (what kind? which one? how many? how much?). It defines proper adjectives (from proper nouns, capitalised) with two examples, and compound adjectives (two+ words, hyphenated before the noun) with two examples and the after-the-noun exception. Award marks for the definition, the four questions, and both adjective types with rules and examples.",
           marks: 5,
         },
       ],
     },
     {
+      // source: LibreTexts — Coalinga College, College Writing and Beyond, 3.1.4 Adverbs (https://human.libretexts.org/Courses/Coalinga_College/College_Writing_and_Beyond/03:_Part_III-_Grammar_and_Mechanics/3.01:_Parts_of_Speech/3.1.04:_Adverbs)
       slug: "adverbs",
       title: "Adverbs and Their Uses",
       objective:
-        "By the end of the topic, learners should be able to identify adverbs and the words they modify, name the main kinds of adverb, form adverbs from adjectives, and use adverbs correctly and distinctly from adjectives.",
-      estimatedMinutes: 160,
-      notes: `## What an adverb does
+        "By the end of the topic, learners should be able to identify adverbs, name what each modifies (verb, adjective or another adverb), answer the four adverb questions, and form adverbs from adjectives with -ly.",
+      estimatedMinutes: 150,
+      notes: `## What an adverb is
 
-If the adjective is the friend of the noun, the **adverb** is the friend of the **verb**. An **adverb** is a word that **modifies a verb, an adjective, or another adverb**, adding information that answers *how? when? where? how often?* or *to what extent?*
+**Adverb** — a modifier that brings detail to a sentence by describing a **verb**, an **adjective**, or **another adverb** (and sometimes a whole clause).
 
-- modifying a **verb**: *She sings **beautifully**.* (how she sings)
-- modifying an **adjective**: *It is **very** hot.* (how hot)
-- modifying **another adverb**: *He ran **quite** quickly.* (how quickly)
+- Modifies a **verb:** *She sang **beautifully**.* (sang how?)
+- Modifies an **adjective:** *The soup is **very** hot.* (how hot?)
+- Modifies another **adverb:** *He ran **quite** quickly.* (how quickly?)
 
-## The kinds of adverb
+## The four questions adverbs answer
 
-| Kind | Question it answers | Examples |
+| Question | Example | Adverb |
 | --- | --- | --- |
-| Manner | how? | quickly, well, carefully, badly, loudly |
-| Time | when? | now, yesterday, soon, already, tomorrow |
-| Place | where? | here, there, outside, everywhere, above |
-| Frequency | how often? | always, often, never, sometimes, daily |
-| Degree | to what extent? | very, too, quite, almost, so, enough |
-| Affirmation / negation | is it so? | certainly, surely, yes, not, never |
+| When? | Tomorrow, the storm will quit. | **Tomorrow** |
+| Where? | The class is held **here** today. | **here** |
+| How? (in what way) | She works **carefully**. | **carefully** |
+| To what extent? / How often? | Students change majors **frequently**. | **frequently** |
 
 ## Forming adverbs from adjectives
 
-Many adverbs of manner are made by adding **-ly** to an adjective, with a few spelling changes:
+Many adverbs are formed by adding **-ly** to an adjective: *beautiful → beautifully, strange → strangely, clever → cleverly, respectful → respectfully.*
 
-- quick → quick**ly**, careful → careful**ly** (most just add -ly);
-- happy → happi**ly** (consonant + *y* changes to *i*);
-- gentle → gent**ly** (words ending in *-le* drop the *e*);
-- true → tru**ly** (a few drop a final *e*).
+**Warning — the -ly test is not reliable both ways:**
 
-Two warnings: **not every -ly word is an adverb** — *friendly, lovely, silly, ugly* are **adjectives**; and some adverbs have **no -ly** at all — *fast, hard, late, well, straight* keep the same form as the adjective (*a fast car → he drives fast*).
+- Some **adjectives** also end in -ly: *friendly, lovely, lonely* (these describe nouns, so they are adjectives, not adverbs).
+- Many common adverbs do **not** end in -ly: *always, never, very, well, again, almost, here, there, now, often, seldom.* The most common adverb of all is **not**.
 
-## Comparison of adverbs
+## Placement
 
-Like adjectives, adverbs have three degrees. Short adverbs add **-er / -est** (*fast → faster → fastest*), while -ly adverbs use **more / most** (*carefully → more carefully → most carefully*). A few are irregular: *well → better → best; badly → worse → worst.*
+Adverbs are flexible; their position can shift emphasis without changing the basic meaning:
 
-## The position of adverbs
+- *Originally, the series had three films.*
+- *The series originally had three films.*
 
-- **Adverbs of manner** usually come after the verb or its object: *She read the letter **slowly**.*
-- **Adverbs of frequency** usually come **before** the main verb but **after** *be*: *He **always** arrives early; She **is always** early.*
-- **Degree adverbs** (*very, too, quite, so*) come **before** the word they modify: ***very** tired*, not *tired very*.
+## Adjective or adverb? A decision rule
 
-## Adjective or adverb? — the key distinction
+Decide which word is being modified, then choose the form:
 
-This is the most heavily tested point in the topic:
+- Modifying a **noun** → use the **adjective**: *a **quick** runner.*
+- Modifying a **verb/adjective/adverb** → use the **adverb**: *runs **quickly**.*
 
-- an **adjective** describes a **noun or pronoun**: *She is a **careful** driver.* (careful → driver)
-- an **adverb** describes a **verb, adjective or adverb**: *She drives **carefully**.* (carefully → drives)
+A frequent error is using an adjective where an adverb is needed: ✗ *She sings **beautiful*** → ✓ *She sings **beautifully**.*
 
-**good vs well.** *Good* is the adjective (*a good student, the food is good*); *well* is the adverb (*she writes well*). ✗ *She writes good* → ✓ *She writes **well***. (Note: *well* is an adjective only when it means "healthy": *I feel well*.)
+## Summary
 
-## Common errors
+- An adverb modifies a **verb, adjective, or another adverb**.
+- It answers **when? where? how? to what extent?**
+- Many adverbs come from adjectives + **-ly**, but not all -ly words are adverbs and not all adverbs end in -ly.`,
+      workedExample: `**Task.** Underline each adverb, state what it modifies, and say which question it answers.
 
-- Using an adjective where an adverb is needed: ✗ *He ran quick* → ✓ *He ran **quickly**; ✗ speak clear* → ✓ *speak **clearly***.
-- *very* vs *too*: *very* simply intensifies (*very hot*), while *too* means "more than is good" (*too hot to drink*). They are not interchangeable.
-- Double negatives: ✗ *I didn't see nobody* → ✓ *I didn't see **anybody***.`,
-      workedExample: `**Task.** For each sentence, find the adverb, say what word it modifies and what kind of adverb it is; then correct any error.
-
-1. *The children played **happily** in the yard.*
-2. *She sang **very** sweetly.*
-3. *He writes **good**.*
+1. *The soldiers marched **proudly**.*
+2. *The tea is **too** sweet.*
+3. *She **almost** always arrives **early**.*
 
 **Answers**
 
-1. **happily** modifies the verb **played** — it tells *how* they played. It is an adverb of **manner** (formed from the adjective *happy*, y → i, + ly). Correct.
+1. *proudly* — modifies the verb **marched**; answers **how?** (in what way). Formed from the adjective *proud* + -ly.
+2. *too* — modifies the adjective **sweet**; answers **to what extent?**
+3. *almost* — modifies the adverb **always** (to what extent); *always* modifies the verb **arrives** (how often); *early* modifies **arrives** (when?).
 
-2. **very** modifies the adverb **sweetly** — it tells *to what extent* she sang sweetly. It is an adverb of **degree**. (And *sweetly* is an adverb of manner modifying *sang*.) Correct.
-
-3. **good** is meant to describe *how* he writes, so it should be an **adverb**, but *good* is an **adjective**. The adverb is **well**. → *He writes **well**.*
-
-**Key idea:** an adverb modifies a verb, an adjective or another adverb — never a noun. When a word tells *how* something is done, use the adverb (usually -ly, but *well* is the adverb of *good*), not the adjective.`,
-      teachingTip:
-        "The single most examined error is adjective-for-adverb ('he runs quick', 'she writes good'). Give learners a one-question test: does the word describe a NOUN (adjective) or tell how a VERB is done (adverb)? Drill 'good/well' as the classic pair — 'a good singer' (adjective + noun) versus 'sings well' (adverb + verb) — until the correction is automatic.",
+**Rule applied:** each adverb is tied to the verb, adjective, or adverb it describes, and answers when/where/how/to what extent.`,
       quiz: [
         {
-          prompt: "An adverb can modify a verb, an adjective, or another…",
-          options: ["adverb", "noun", "pronoun", "conjunction"],
-          correctIndex: 0,
-          explanation: "Adverbs modify verbs, adjectives and other adverbs.",
-        },
-        {
-          prompt: "In 'She runs quickly', the adverb is…",
-          options: ["quickly", "runs", "she", "run"],
-          correctIndex: 0,
-          explanation: "'quickly' tells how she runs.",
-        },
-        {
-          prompt: "An adverb of manner answers the question…",
-          options: ["how?", "when?", "where?", "whose?"],
-          correctIndex: 0,
-          explanation: "Manner adverbs tell how an action is done.",
-        },
-        {
-          prompt: "Which is an adverb of time?",
-          options: ["yesterday", "quickly", "here", "very"],
-          correctIndex: 0,
-          explanation: "'yesterday' tells when.",
-        },
-        {
-          prompt: "Which is an adverb of place?",
-          options: ["outside", "soon", "carefully", "always"],
-          correctIndex: 0,
-          explanation: "'outside' tells where.",
-        },
-        {
-          prompt: "Which is an adverb of frequency?",
-          options: ["always", "loudly", "there", "very"],
-          correctIndex: 0,
-          explanation: "'always' tells how often.",
-        },
-        {
-          prompt: "Which is an adverb of degree?",
-          options: ["very", "yesterday", "outside", "slowly"],
-          correctIndex: 0,
-          explanation: "'very' tells to what extent.",
-        },
-        {
-          prompt: "The adverb formed from 'careful' is…",
-          options: ["carefully", "carefuly", "carefull", "careful"],
-          correctIndex: 0,
-          explanation: "Add -ly: carefully.",
-        },
-        {
-          prompt: "The adverb formed from 'happy' is…",
-          options: ["happily", "happyly", "happy", "happiness"],
-          correctIndex: 0,
-          explanation: "y → i, add -ly: happily.",
-        },
-        {
-          prompt: "Which sentence is correct?",
-          options: ["He ran quickly.", "He ran quick.", "He ran quicker way.", "He ran quickness."],
-          correctIndex: 0,
-          explanation: "The verb 'ran' needs the adverb 'quickly'.",
-        },
-        {
-          prompt: "Which sentence is correct?",
-          options: ["She writes well.", "She writes good.", "She writes goodly.", "She writes well-ly."],
-          correctIndex: 0,
-          explanation: "'well' is the adverb of 'good'.",
-        },
-        {
-          prompt: "In 'a careful driver', 'careful' is an…",
-          options: ["adjective (describes 'driver')", "adverb", "verb", "noun"],
-          correctIndex: 0,
-          explanation: "It describes the noun 'driver', so it is an adjective.",
-        },
-        {
-          prompt: "In 'drives carefully', 'carefully' is an…",
-          options: ["adverb (modifies 'drives')", "adjective", "noun", "pronoun"],
-          correctIndex: 0,
-          explanation: "It modifies the verb 'drives', so it is an adverb.",
-        },
-        {
-          prompt: "Which -ly word is actually an ADJECTIVE, not an adverb?",
-          options: ["friendly", "quickly", "slowly", "loudly"],
-          correctIndex: 0,
-          explanation: "'friendly' describes a noun (a friendly person).",
-        },
-        {
-          prompt: "Which adverb has no -ly ending?",
-          options: ["fast", "quickly", "happily", "gently"],
-          correctIndex: 0,
-          explanation: "'fast' is an adverb without -ly (run fast).",
-        },
-        {
-          prompt: "In 'very tired', the adverb 'very' modifies the adjective…",
-          options: ["tired", "very", "is", "a"],
-          correctIndex: 0,
-          explanation: "'very' tells how tired — it modifies 'tired'.",
-        },
-        {
-          prompt: "An adverb never modifies a…",
+          prompt: "An adverb can modify all of these EXCEPT a…",
           options: ["noun", "verb", "adjective", "another adverb"],
           correctIndex: 0,
-          explanation: "Nouns are modified by adjectives, not adverbs.",
+          explanation: "Nouns are modified by adjectives; adverbs modify verbs, adjectives and adverbs.",
         },
         {
-          prompt: "Correct this: 'She speaks English good.'",
-          options: ["She speaks English well.", "She speaks English gooder.", "She speaks good English good.", "She speaks Englishly."],
+          prompt: "In 'She sang beautifully', the adverb modifies…",
+          options: ["the verb sang", "the noun she", "an adjective", "a preposition"],
           correctIndex: 0,
-          explanation: "The verb 'speaks' needs the adverb 'well'.",
+          explanation: "'beautifully' tells how she sang.",
         },
         {
-          prompt: "The adverb from 'gentle' is…",
-          options: ["gently", "gentlely", "gentley", "gentle"],
+          prompt: "In 'very hot', the adverb 'very' modifies…",
+          options: ["the adjective hot", "a verb", "a noun", "another adverb"],
           correctIndex: 0,
-          explanation: "Drop -e after -le and add -ly: gently.",
+          explanation: "'very' describes the adjective 'hot' (to what extent).",
         },
         {
-          prompt: "'He arrived early' — 'early' here is an adverb of…",
-          options: ["time", "place", "degree", "manner"],
+          prompt: "Which question do adverbs answer?",
+          options: ["When?", "What kind?", "Which one?", "How many?"],
           correctIndex: 0,
-          explanation: "'early' tells when he arrived.",
+          explanation: "Adverbs answer when, where, how, and to what extent.",
+        },
+        {
+          prompt: "In 'The class is held here', 'here' answers…",
+          options: ["where?", "when?", "how?", "how many?"],
+          correctIndex: 0,
+          explanation: "'here' tells where.",
+        },
+        {
+          prompt: "Many adverbs are formed by adding ___ to an adjective.",
+          options: ["-ly", "-ed", "-ing", "-est"],
+          correctIndex: 0,
+          explanation: "clever → cleverly, strange → strangely.",
+        },
+        {
+          prompt: "Which word is an adjective even though it ends in -ly?",
+          options: ["friendly", "quickly", "slowly", "loudly"],
+          correctIndex: 0,
+          explanation: "'friendly' describes a noun ('a friendly dog'), so it is an adjective.",
+        },
+        {
+          prompt: "Which adverb does NOT end in -ly?",
+          options: ["never", "quickly", "loudly", "strangely"],
+          correctIndex: 0,
+          explanation: "'never' is a common adverb without -ly.",
+        },
+        {
+          prompt: "The most common adverb in English is…",
+          options: ["not", "very", "well", "here"],
+          correctIndex: 0,
+          explanation: "'not' is the most commonly used adverb.",
+        },
+        {
+          prompt: "Which sentence is correct?",
+          options: ["She sings beautifully.", "She sings beautiful.", "She sing beautifully.", "She beautifully sing."],
+          correctIndex: 0,
+          explanation: "The verb 'sings' needs the adverb 'beautifully', not the adjective.",
+        },
+        {
+          prompt: "In 'He ran quite quickly', 'quite' modifies…",
+          options: ["the adverb quickly", "the verb ran", "a noun", "an adjective"],
+          correctIndex: 0,
+          explanation: "'quite' modifies the adverb 'quickly' (to what extent).",
+        },
+        {
+          prompt: "In 'Students change majors frequently', 'frequently' answers…",
+          options: ["how often?", "where?", "what kind?", "which one?"],
+          correctIndex: 0,
+          explanation: "'frequently' tells how often (to what extent).",
+        },
+        {
+          prompt: "Which is the adverb form of 'careful'?",
+          options: ["carefully", "carefuller", "carefulness", "careful"],
+          correctIndex: 0,
+          explanation: "careful + -ly = carefully.",
+        },
+        {
+          prompt: "Choose the correct word: 'Drive ___ on wet roads.'",
+          options: ["carefully", "careful", "carefulness", "carefuller"],
+          correctIndex: 0,
+          explanation: "The verb 'drive' needs the adverb 'carefully'.",
+        },
+        {
+          prompt: "Which sentence uses an adverb to modify an adjective?",
+          options: ["The film was extremely long.", "She runs fast.", "They arrived late.", "He spoke softly."],
+          correctIndex: 0,
+          explanation: "'extremely' modifies the adjective 'long'.",
+        },
+        {
+          prompt: "Adverb placement mainly affects…",
+          options: ["emphasis", "the subject", "the tense", "spelling"],
+          correctIndex: 0,
+          explanation: "Moving an adverb shifts emphasis without changing the basic meaning.",
+        },
+        {
+          prompt: "To decide between adjective and adverb, first find…",
+          options: ["the word being modified", "the subject", "the object", "the tense"],
+          correctIndex: 0,
+          explanation: "If it modifies a noun use an adjective; a verb/adjective/adverb needs an adverb.",
+        },
+        {
+          prompt: "Which sentence has an adjective where an adverb is needed?",
+          options: ["He drives careless.", "He drives carelessly.", "He is careless.", "He is a careless driver."],
+          correctIndex: 0,
+          explanation: "The verb 'drives' needs the adverb 'carelessly', not 'careless'.",
+        },
+        {
+          prompt: "In 'Tomorrow the storm will quit', 'Tomorrow' answers…",
+          options: ["when?", "where?", "how?", "how much?"],
+          correctIndex: 0,
+          explanation: "'Tomorrow' tells when.",
+        },
+        {
+          prompt: "Which word is an adverb here: 'He almost finished.'?",
+          options: ["almost", "he", "finished", "none"],
+          correctIndex: 0,
+          explanation: "'almost' modifies the verb 'finished' (to what extent).",
         },
       ],
       test: [
         {
           type: "SHORT_ANSWER",
-          prompt: "Form adverbs from these adjectives: (a) quick, (b) happy, (c) gentle.",
+          prompt:
+            "Write three sentences: one with an adverb modifying a verb, one modifying an adjective, and one modifying another adverb. Underline the adverb in each.",
           answerKey:
-            "(a) quickly; (b) happily; (c) gently. Award a mark for each correctly formed adverb, noting the spelling changes for happy (y→i) and gentle (drop -e).",
-          marks: 3,
+            "Verb: e.g. 'She walks slowly.' Adjective: e.g. 'It is very cold.' Adverb: e.g. 'He works too slowly.' Award a mark per correct, clearly-labelled sentence, plus a mark for all three adverbs correctly underlined.",
+          marks: 4,
         },
         {
           type: "MULTIPLE_CHOICE",
           prompt: "Which sentence uses the adverb correctly?",
           options: [
-            "The team played badly in the final.",
-            "The team played bad in the final.",
-            "The team played baddest in the final.",
-            "The team played badness in the final.",
+            "The team played well.",
+            "The team played good.",
+            "The team play well.",
+            "The team well played.",
           ],
           correctIndex: 0,
-          answerKey: "'badly' (adverb) modifies the verb 'played'.",
+          answerKey: "'well' is the adverb modifying 'played'; 'good' is an adjective.",
           marks: 2,
         },
         {
           type: "SHORT_ANSWER",
           prompt:
-            "Explain the difference between 'good' and 'well', giving a correct sentence for each.",
+            "Form adverbs from these adjectives: (a) quick (b) happy (c) careful.",
           answerKey:
-            "'good' is an adjective describing a noun (e.g. 'She is a good singer'); 'well' is the adverb describing how an action is done (e.g. 'She sings well'). Award marks for the adjective/adverb distinction and a correct sentence for each.",
+            "(a) quickly; (b) happily (y to i, add -ly); (c) carefully. Award a mark for each correct adverb.",
+          marks: 3,
+        },
+        {
+          type: "SHORT_ANSWER",
+          prompt:
+            "Explain why the -ly test cannot always identify an adverb, with one example of each exception.",
+          answerKey:
+            "Some -ly words are adjectives (e.g. 'friendly', 'lovely' — they describe nouns), and many adverbs have no -ly (e.g. 'never', 'very', 'well'). Award marks for stating both exceptions with a correct example each.",
+          marks: 2,
+        },
+        {
+          type: "ESSAY",
+          prompt:
+            "Explain what an adverb does and the four questions it answers. Describe how adverbs are formed from adjectives and give a rule for choosing between an adjective and an adverb, with examples.",
+          answerKey:
+            "A strong answer states that an adverb modifies a verb, adjective or another adverb and answers when? where? how? to what extent?; explains -ly formation with the two caveats (not all -ly words are adverbs; not all adverbs end in -ly); and gives the rule (noun → adjective; verb/adjective/adverb → adverb) with a correct example such as 'She sings beautifully' vs 'beautiful'. Award marks for the definition, four questions, formation, and the decision rule.",
+          marks: 5,
+        },
+      ],
+    },
+    {
+      // source: LibreTexts — Nashville State Community College, Academic Writing for ESL Students, 3.13 Coordinating Conjunctions and Conjunctive Adverbs (https://human.libretexts.org/Courses/Nashville_State_Community_College/Academic_Writing_for_ESL_Students/03:_The_Logical_Order_Essay/3.13:_Coordinating_Conjunctions_and_Conjunctive_Adverbs)
+      slug: "conjunctive-adverbs",
+      title: "Conjunctive Adverbs",
+      objective:
+        "By the end of the topic, learners should be able to identify conjunctive adverbs, use them to join two independent clauses with a semicolon and a following comma, and choose the right one for the relationship between ideas.",
+      estimatedMinutes: 130,
+      notes: `## What a conjunctive adverb is
+
+**Conjunctive adverb** — an adverb used to show a **relationship between two independent clauses** (two complete sentences). It signals how the second idea connects to the first: addition, contrast, result, and so on.
+
+Common conjunctive adverbs: **however, therefore, moreover, furthermore, accordingly, consequently, nevertheless, otherwise, meanwhile, besides, thus, instead, similarly, indeed.**
+
+## Punctuation — the key rule
+
+When a conjunctive adverb joins two independent clauses, put a **semicolon (;) before** it and a **comma (,) after** it.
+
+**Clause 1 ; conjunctive adverb , Clause 2.**
+
+- *I always brush my teeth**; therefore,** I have no cavities.*
+- *The rain fell heavily**; however,** the match continued.*
+- *She studied hard**; consequently,** she passed.*
+
+Using only a comma here creates a **comma splice** (an error): ✗ *It was late, however, we kept working.*
+
+## Choosing the right one
+
+| Relationship | Conjunctive adverbs |
+| --- | --- |
+| Addition | moreover, furthermore, besides, also |
+| Contrast | however, nevertheless, instead, on the other hand |
+| Result / cause | therefore, consequently, accordingly, thus |
+| Time | meanwhile, then, afterward |
+| Similarity | similarly, likewise |
+
+## Conjunctive adverb vs coordinating conjunction
+
+- A **coordinating conjunction** (and, but, so, or…) joins two clauses with a **comma before** it: *It was late**, but** we kept working.*
+- A **conjunctive adverb** joins them with a **semicolon before** and a **comma after**: *It was late**; however,** we kept working.*
+
+A conjunctive adverb can also sit inside one clause, set off by commas: *We kept working, **however**, until midnight.*
+
+## Summary
+
+- A conjunctive adverb links **two independent clauses** and shows their relationship.
+- Punctuate it: **; before, , after.**
+- Choose it by meaning — *however* (contrast), *therefore* (result), *moreover* (addition).`,
+      workedExample: `**Task.** Join each pair of independent clauses with a suitable conjunctive adverb, punctuated correctly.
+
+1. *The road was flooded. We found another route.*
+2. *He trained every day. He won the race.*
+3. *The book is long. It is worth reading.*
+
+**Answers**
+
+1. *The road was flooded**; therefore,** we found another route.* — result (*therefore*).
+2. *He trained every day**; consequently,** he won the race.* — result (*consequently*).
+3. *The book is long**; however,** it is worth reading.* — contrast (*however*).
+
+**Rule applied:** each conjunctive adverb joins two complete sentences with a **semicolon before** and a **comma after**, and its meaning fits the relationship between the ideas.`,
+      quiz: [
+        {
+          prompt: "A conjunctive adverb shows a relationship between two…",
+          options: ["independent clauses", "nouns", "adjectives", "prepositions"],
+          correctIndex: 0,
+          explanation: "It links two complete sentences and signals how they relate.",
+        },
+        {
+          prompt: "Which is a conjunctive adverb?",
+          options: ["however", "and", "but", "or"],
+          correctIndex: 0,
+          explanation: "'however' is a conjunctive adverb; the others are coordinating conjunctions.",
+        },
+        {
+          prompt: "Before a conjunctive adverb joining two clauses, use a…",
+          options: ["semicolon", "comma", "full stop", "colon"],
+          correctIndex: 0,
+          explanation: "The rule is semicolon before, comma after.",
+        },
+        {
+          prompt: "After a conjunctive adverb joining two clauses, use a…",
+          options: ["comma", "semicolon", "full stop", "dash"],
+          correctIndex: 0,
+          explanation: "A comma follows the conjunctive adverb.",
+        },
+        {
+          prompt: "Which sentence is punctuated correctly?",
+          options: [
+            "I studied hard; therefore, I passed.",
+            "I studied hard, therefore, I passed.",
+            "I studied hard therefore I passed.",
+            "I studied hard: therefore I passed.",
+          ],
+          correctIndex: 0,
+          explanation: "Semicolon before 'therefore', comma after.",
+        },
+        {
+          prompt: "Using only a comma before a conjunctive adverb joining two clauses creates a…",
+          options: ["comma splice", "fragment", "run-on modal", "gerund"],
+          correctIndex: 0,
+          explanation: "A comma alone between two independent clauses is a comma splice.",
+        },
+        {
+          prompt: "Which conjunctive adverb shows contrast?",
+          options: ["however", "therefore", "moreover", "consequently"],
+          correctIndex: 0,
+          explanation: "'however' signals contrast.",
+        },
+        {
+          prompt: "Which conjunctive adverb shows result?",
+          options: ["therefore", "however", "nevertheless", "instead"],
+          correctIndex: 0,
+          explanation: "'therefore' signals a result.",
+        },
+        {
+          prompt: "Which conjunctive adverb shows addition?",
+          options: ["moreover", "however", "instead", "otherwise"],
+          correctIndex: 0,
+          explanation: "'moreover' adds a further point.",
+        },
+        {
+          prompt: "How does a coordinating conjunction differ in punctuation from a conjunctive adverb?",
+          options: [
+            "comma before it, no semicolon",
+            "semicolon before it",
+            "no punctuation at all",
+            "colon before it",
+          ],
+          correctIndex: 0,
+          explanation: "A coordinating conjunction (but, so) takes a comma before it, not a semicolon.",
+        },
+        {
+          prompt: "Choose the best conjunctive adverb: 'It was raining; ___, the game continued.'",
+          options: ["however", "therefore", "moreover", "consequently"],
+          correctIndex: 0,
+          explanation: "Contrast between rain and continuing calls for 'however'.",
+        },
+        {
+          prompt: "Choose the best conjunctive adverb: 'She missed the bus; ___, she was late.'",
+          options: ["consequently", "however", "moreover", "similarly"],
+          correctIndex: 0,
+          explanation: "A result calls for 'consequently'.",
+        },
+        {
+          prompt: "Which sentence has a punctuation error?",
+          options: [
+            "He was tired, however, he kept going.",
+            "He was tired; however, he kept going.",
+            "He was tired. However, he kept going.",
+            "He was tired; nevertheless, he kept going.",
+          ],
+          correctIndex: 0,
+          explanation: "A comma before 'however' joining two clauses is a comma splice.",
+        },
+        {
+          prompt: "'nevertheless' signals…",
+          options: ["contrast", "addition", "time", "similarity"],
+          correctIndex: 0,
+          explanation: "'nevertheless' expresses contrast (in spite of).",
+        },
+        {
+          prompt: "'meanwhile' signals a relationship of…",
+          options: ["time", "result", "addition", "contrast"],
+          correctIndex: 0,
+          explanation: "'meanwhile' relates events in time.",
+        },
+        {
+          prompt: "A conjunctive adverb set inside one clause is…",
+          options: ["set off by commas", "never punctuated", "always capitalised", "hyphenated"],
+          correctIndex: 0,
+          explanation: "e.g. 'We kept working, however, until midnight.'",
+        },
+        {
+          prompt: "Which is NOT a conjunctive adverb?",
+          options: ["because", "therefore", "however", "moreover"],
+          correctIndex: 0,
+          explanation: "'because' is a subordinating conjunction, not a conjunctive adverb.",
+        },
+        {
+          prompt: "Choose the best conjunctive adverb: 'The plan is costly; ___, it is risky.'",
+          options: ["moreover", "however", "therefore", "instead"],
+          correctIndex: 0,
+          explanation: "Adding a second drawback calls for 'moreover'.",
+        },
+        {
+          prompt: "'similarly' signals…",
+          options: ["a likeness between ideas", "a contrast", "a result", "a time order"],
+          correctIndex: 0,
+          explanation: "'similarly' shows the ideas are alike.",
+        },
+        {
+          prompt: "Which correctly joins two clauses with a conjunctive adverb?",
+          options: [
+            "We saved money; consequently, we bought the land.",
+            "We saved money consequently we bought the land.",
+            "We saved money, consequently we bought the land.",
+            "We saved money consequently, we bought the land.",
+          ],
+          correctIndex: 0,
+          explanation: "Semicolon before 'consequently', comma after.",
+        },
+      ],
+      test: [
+        {
+          type: "SHORT_ANSWER",
+          prompt:
+            "Join these two sentences with a conjunctive adverb, punctuated correctly: 'The shop was closed. We went home.'",
+          answerKey:
+            "Expected form: 'The shop was closed; therefore, we went home.' (or 'consequently'). Full marks for a suitable conjunctive adverb with a semicolon before and a comma after.",
+          marks: 3,
+        },
+        {
+          type: "MULTIPLE_CHOICE",
+          prompt: "Which sentence is punctuated correctly?",
+          options: [
+            "The test was hard; nevertheless, she passed.",
+            "The test was hard, nevertheless she passed.",
+            "The test was hard nevertheless, she passed.",
+            "The test was hard: nevertheless she passed.",
+          ],
+          correctIndex: 0,
+          answerKey: "Semicolon before 'nevertheless', comma after.",
+          marks: 2,
+        },
+        {
+          type: "SHORT_ANSWER",
+          prompt:
+            "Correct the comma splice: 'It was late, however, we kept working.'",
+          answerKey:
+            "Expected: 'It was late; however, we kept working.' Change the first comma to a semicolon. Full marks for the semicolon-before, comma-after pattern.",
+          marks: 2,
+        },
+        {
+          type: "SHORT_ANSWER",
+          prompt:
+            "Give one conjunctive adverb for each relationship and use it in a sentence: (a) contrast (b) result.",
+          answerKey:
+            "(a) contrast, e.g. 'It rained; however, we went out.' (b) result, e.g. 'He trained hard; therefore, he won.' Award a mark per correct adverb used with correct punctuation.",
           marks: 3,
         },
         {
           type: "ESSAY",
           prompt:
-            "Explain the difference between an adjective and an adverb, and describe a simple test a student can use to decide which to use. Give two examples.",
+            "Explain what a conjunctive adverb is and how it is punctuated when joining two independent clauses. Contrast it with a coordinating conjunction, and give two example sentences of your own.",
           answerKey:
-            "A strong answer explains that an adjective describes a noun or pronoun, while an adverb modifies a verb, an adjective or another adverb (telling how, when, where or to what extent). The test: ask whether the word describes a NOUN (use the adjective) or tells how a VERB is done (use the adverb) — e.g. 'a careful driver' (adjective) versus 'drives carefully' (adverb); 'a good student' versus 'writes well'. Award marks for the definitions, the test, and two valid contrasting examples.",
+            "A strong answer defines a conjunctive adverb (links two independent clauses, shows their relationship), states the punctuation (semicolon before, comma after), contrasts it with a coordinating conjunction (comma before, e.g. 'but'), and gives two correctly punctuated examples. Award marks for the definition, punctuation rule, the contrast, and two valid examples.",
           marks: 5,
         },
       ],

@@ -5,7 +5,7 @@ export const civics: SubjectContent = {
   name: "Civics",
   shortName: "Civics",
   description:
-    "Citizenship, the Liberian Constitution, the branches of government, and the duties of the citizen.",
+    "Government and civic engagement, citizenship, constitutions, and the branches of government.",
   accent: "violet",
   sortOrder: 8,
   teacherCode: "CIV-10-7714",
@@ -15,1182 +15,1162 @@ export const civics: SubjectContent = {
       number: 1,
       title: "Citizenship and Government",
       summary:
-        "Learners examine what civics studies, how Liberian citizenship is acquired and lost, the structure and supremacy of the Constitution, and the powers of the three branches of government.",
+        "Learners examine what civics and government are, how citizenship is acquired and lost, what a constitution is and does, and how the three branches of government share and check power.",
       topics: [
+        // source: OpenStax American Government 3e — 1.1 What Is Government? (https://openstax.org/books/american-government-3e/pages/1-1-what-is-government). General civic concepts of government, civic engagement, rights and duties. FLAG: a specific Liberian list of citizens' legal duties is not on an approved page — the general concept is taught. See report.
         {
           slug: "introduction-to-civics",
           title: "Introduction to Civics",
           objective:
-            "By the end of the lesson, learners should be able to define civics, explain why it is studied, and distinguish between rights, duties, obligations and privileges.",
+            "By the end of the lesson, learners should be able to define government and civic engagement, and explain rights, duties and minority rights.",
           estimatedMinutes: 80,
-          notes: `## Introduction
+          notes: `## What government is
 
-- **Civics** = the study of the rights and duties of citizens and of government.
-- A citizen is more than a resident: citizenship carries rights held and duties owed.
-- A right cannot be taken away lightly; a privilege can be withdrawn.
-- **This topic:** what civics is and why it is studied; the distinctions between a right, a duty, an obligation and a privilege.
+**Government** is the means by which a society organises itself and allocates authority in order to accomplish collective goals.
 
-## What civics is
+Civics is the study of government and of the rights and duties of citizens.
 
-**Civics** is the study of the rights and duties of citizens and of the structure and functioning of government.
+## Civic engagement
 
-The word comes from the Latin *civis*, meaning citizen.
+**Civic engagement** is the participation that connects citizens to government.
 
-## Why civics is studied
+Forms of civic engagement include:
 
-- To produce citizens who understand their rights and can defend them
-- To make citizens aware of their duties to the state and to one another
-- To promote national unity and patriotism
-- To prepare learners for participation in government and public life
-- To reduce ignorance that allows abuse of power to go unchallenged
-- To promote peace, tolerance and respect for the rule of law
+- Reading about politics and listening to the news
+- Discussing politics and attending debates
+- Voting in elections
+- Donating to or volunteering for campaigns
+- Joining protests
+- Writing to representatives
 
-## Four terms that must be distinguished
+In a representative democracy, citizens elect representatives to make decisions on their behalf. Making your opinions known and voting for those who make decisions that affect everyone are critical and influential forms of civic engagement.
 
-**Right** — a claim a citizen may lawfully make, which the state must respect and protect. *Freedom of speech, the right to education, the right to a fair trial.*
+## Direct and representative participation
 
-**Duty** — something a citizen is expected to do, enforceable by law. *Paying taxes, obeying the law, serving on a jury when summoned.*
+- **Representative democracy** — citizens elect representatives to decide on their behalf.
+- **Direct democracy** — citizens decide directly, through mechanisms such as referendums and town meetings where residents debate decisions affecting the town.
 
-**Obligation** — a binding commitment, often moral as well as legal, arising from membership of a community. *Caring for one's family, respecting the rights of others.*
+## Rights and minority rights
 
-**Privilege** — a benefit granted by the state that may be withdrawn, and which is not owed to every citizen as of right. *A driving licence, a passport, public office.*
+Government protects rights. A key idea is **minority rights** — protections ensuring that people cannot be deprived of certain rights even if an overwhelming number of people think they should be.
 
-The distinction that matters most: a **right** cannot lawfully be taken away without due process; a **privilege** can be withdrawn by the authority that granted it.
+This means some rights are protected even against the will of the majority.
 
-## Rights carry corresponding duties
+## Why civic engagement matters
 
-- Every right implies a duty on others.
-- Right to life → all others have a duty not to take it.
-- Right to property → others have a duty not to steal.
-- A society in which people claim rights but reject duties cannot function.
+- It connects citizens to the decisions that affect them.
+- It allows citizens to make their opinions known and to influence government.
+- Voting and other participation shape who makes decisions for everyone.
 
-## Types of rights
+## Key points
 
-**Fundamental (constitutional) rights** — guaranteed by the Constitution and enforceable in court. Freedom of expression, religion, assembly, movement; the right to life, liberty and property; equality before the law.
-
-**Legal rights** — created by ordinary statute and alterable by the legislature.
-
-**Human rights** — held by virtue of being human, independent of any state's recognition.
-
-## Limits on rights
-
-No right is absolute. Rights may lawfully be restricted where their exercise:
-
-- Injures the rights of others
-- Threatens public order, health or safety
-- Endangers national security
-
-Freedom of speech does not extend to defamation or incitement to violence. Freedom of assembly does not extend to a riot. The test is whether the restriction is prescribed by law and reasonably necessary.
-
-## Duties of the Liberian citizen
-
-- Obey the Constitution and the laws
-- Pay lawful taxes and duties
-- Defend the nation when lawfully called upon
-- Respect the rights and dignity of others
-- Vote in elections when qualified
-- Protect public property and the environment
-- Report crime and assist in the administration of justice
-- Render national service where required
-
-## Common errors and misconceptions
-
-- **Confusing a right with a privilege** — a **right** (e.g. a fair trial) cannot lawfully be removed without due process; a **privilege** (e.g. a driving licence) can be withdrawn by the authority that granted it.
-- **Thinking rights are absolute** — *no* right is unlimited; rights may lawfully be restricted where they injure others or threaten public order, health, safety or national security.
-- **Claiming rights while rejecting duties** — every right implies a corresponding **duty** on others; a society that claims rights but shirks duties cannot function.
-- **Treating "duty" and "obligation" as identical to a wish** — both are **binding** (legally or morally), not optional preferences; failing them has consequences.`,
-          workedExample: `**Question:** A student union announces a protest march through Monrovia against a rise in school fees. The city authority refuses permission on the ground that the route would block the main hospital access road, and offers an alternative route. The union claims its constitutional rights have been violated.
-
-Analyse the situation using the concepts of rights, duties and limitations.
+- Government organises society and allocates authority to accomplish collective goals.
+- Civic engagement is the participation that connects citizens to government.
+- Minority rights protect certain rights even against a large majority.`,
+          workedExample: `**Question:** A town must decide whether to build a new market. Some residents attend a town meeting to debate it; others vote in an election for councillors who will decide; a small group who would lose their stalls fear the majority will simply overrule them. Using the ideas of government, civic engagement and minority rights, explain what is happening.
 
 **Solution**
 
-*Step 1 — identify the right claimed.*
+*Step 1 — Identify the role of government.* The decision about the market is a **collective goal**. Government is the means by which the society organises itself and allocates authority to accomplish such goals, so it is the body that will make and carry out the decision.
 
-The union relies on **freedom of assembly** and **freedom of expression**, both guaranteed by the Constitution. These are genuine fundamental rights, and the desire to protest a government decision is exactly the kind of activity they exist to protect.
+*Step 2 — Identify the forms of civic engagement.* Residents who attend the **town meeting** to debate the decision are taking part in **direct** participation. Residents who **vote** for councillors are taking part in **representative** democracy, electing representatives to decide on their behalf. Both are forms of **civic engagement** — participation that connects citizens to government.
 
-*Step 2 — ask whether the right is absolute.*
+*Step 3 — Apply minority rights.* The small group fears being overruled by the majority. The idea of **minority rights** is that people cannot be deprived of certain rights even if an overwhelming number of people think they should be. So if the group has a protected right at stake, the majority cannot simply remove it by a vote; some rights are protected even against the majority.
 
-It is not. No constitutional right is absolute. Rights may be restricted where their exercise threatens **public order, health or safety**, or injures the rights of others.
-
-*Step 3 — identify the competing interest.*
-
-Blocking access to a hospital threatens the **right to life and health** of people needing emergency treatment. This is not a trivial administrative preference; it is a competing right of the highest order.
-
-*Step 4 — apply the test for a lawful restriction.*
-
-Two questions decide the matter:
-
-1. **Is the restriction prescribed by law?** If the authority is acting under a statute or regulation governing public assemblies, yes.
-2. **Is it reasonably necessary and proportionate?** Here the crucial fact is that the authority did **not ban the protest**. It refused one route and offered another.
-
-*Step 5 — reach a conclusion.*
-
-The union's claim **fails**. Its right has been regulated, not denied. The protest may still take place, the message may still be expressed, and only the route has been altered — for a reason directly connected to the safety of others.
-
-Had the authority **banned the protest altogether**, or offered an alternative so remote as to make the protest pointless, the analysis would be different. A restriction that destroys the substance of a right is not regulation but denial.
-
-*Step 6 — note the duty side.*
-
-The union also has **duties**: to respect the rights of others and to obey lawful regulation. Exercising a right in a manner that endangers others is not a proper exercise of the right at all.
-
-**Conclusion:** freedom of assembly is engaged but lawfully limited. The restriction is prescribed by law, pursues the legitimate aim of protecting life and health, and is proportionate because it preserves the protest while altering only its route. If the union believes otherwise, its remedy is to challenge the decision in court — which is itself a right, and the proper way to resolve the dispute.`,
-          teachingTip:
-            "Civics fails when it becomes a list to memorise. Anchor every concept in a real dispute the class can argue about — a school rule they think unfair, a case in the newspaper, a decision by a local authority. Divide the class and have them argue both sides, then ask which right is engaged and what limits apply. The rights-versus-duties balance is where most learners are weakest: they arrive fluent in claiming rights and vague about duties. Press the reciprocity point hard by asking, for any right a learner names, who bears the corresponding duty and what happens if nobody does. On the rights-and-privileges distinction, use the driving licence example every time, because learners immediately grasp that a licence can be taken away for bad driving while a right to a fair trial cannot.",
+**Answer:** Government will make the collective decision; residents take part through civic engagement, both directly (the town meeting) and representatively (voting for councillors); and minority rights mean the small group cannot be stripped of a protected right merely because most people wish it.`,
           quiz: [
             {
-              prompt: "The word 'civics' comes from a Latin word meaning",
-              options: ["Law", "Citizen", "City", "Government"],
-              correctIndex: 1,
-              explanation: "From civis, meaning citizen.",
-            },
-            {
-              prompt: "Which of the following is a duty rather than a right?",
+              prompt: "Government is best defined as",
               options: [
-                "Freedom of speech",
-                "Paying taxes",
-                "The right to a fair trial",
-                "Freedom of religion",
+                "a single ruler",
+                "the means by which a society organises itself and allocates authority to accomplish collective goals",
+                "a political party",
+                "a court building",
               ],
               correctIndex: 1,
               explanation:
-                "Payment of lawful taxes is an obligation enforceable by law, not a claim against the state.",
+                "Government organises society and allocates authority for collective goals.",
             },
             {
-              prompt: "A privilege differs from a right in that a privilege",
+              prompt: "Civic engagement is",
               options: [
-                "is guaranteed by the Constitution",
-                "may be withdrawn by the authority that granted it",
-                "cannot be limited",
-                "belongs to everyone equally",
+                "avoiding politics entirely",
+                "the participation that connects citizens to government",
+                "paying for goods",
+                "moving abroad",
               ],
               correctIndex: 1,
-              explanation:
-                "A driving licence may be revoked; a fundamental right cannot be removed without due process.",
+              explanation: "Civic engagement links citizens to government.",
             },
             {
-              prompt: "Fundamental rights are those",
-              options: [
-                "created by ordinary statute",
-                "guaranteed by the Constitution and enforceable in court",
-                "granted by an employer",
-                "available only to public officials",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Constitutional rights bind the state and may be enforced through the courts.",
-            },
-            {
-              prompt: "Rights may lawfully be limited when their exercise",
-              options: [
-                "is unpopular with the government",
-                "threatens public order, health or safety",
-                "is expensive",
-                "criticises a public official",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Restrictions must be prescribed by law and reasonably necessary to a legitimate aim.",
-            },
-            {
-              prompt: "Every right implies",
-              options: [
-                "a corresponding duty on others",
-                "a payment to the state",
-                "a court case",
-                "a privilege",
-              ],
+              prompt: "Which is a form of civic engagement?",
+              options: ["Voting in elections", "Sleeping", "Ignoring the news", "Refusing to discuss issues"],
               correctIndex: 0,
               explanation:
-                "A right to property, for instance, imposes on others the duty not to steal.",
+                "Voting, discussing issues and contacting representatives are civic engagement.",
             },
             {
-              prompt: "Which is a principal reason for studying civics?",
+              prompt: "In a representative democracy, citizens",
               options: [
-                "To learn foreign languages",
-                "To prepare citizens for informed participation in public life",
-                "To increase national exports",
-                "To train soldiers",
+                "make every decision directly",
+                "elect representatives to make decisions on their behalf",
+                "have no vote",
+                "are ruled without elections",
               ],
               correctIndex: 1,
-              explanation:
-                "Informed citizens can defend their rights and hold government accountable.",
+              explanation: "Representatives are elected to decide for the citizens.",
             },
             {
-              prompt: "Human rights are best described as rights held",
+              prompt: "Direct democracy includes mechanisms such as",
+              options: ["Referendums and town meetings", "Only royal decrees", "Court trials", "Military orders"],
+              correctIndex: 0,
+              explanation: "Referendums and town meetings let citizens decide directly.",
+            },
+            {
+              prompt: "Minority rights mean that",
               options: [
-                "only by citizens of a state",
-                "by virtue of being human, independent of state recognition",
-                "only by adults",
-                "only during peacetime",
+                "the majority always wins on every right",
+                "people cannot be deprived of certain rights even if most people want them removed",
+                "minorities have no rights",
+                "rights are decided by lottery",
               ],
               correctIndex: 1,
-              explanation:
-                "They are not conferred by any government and do not depend on nationality.",
+              explanation: "Some rights are protected even against a large majority.",
             },
             {
-              prompt: "Freedom of speech does NOT protect",
+              prompt: "Civics is the study of",
               options: [
-                "criticism of the government",
-                "unpopular opinions",
-                "incitement to violence",
-                "religious preaching",
-              ],
-              correctIndex: 2,
-              explanation:
-                "Speech that incites violence injures the rights of others and falls outside the protection.",
-            },
-            {
-              prompt: "Which of these is a duty of the Liberian citizen?",
-              options: [
-                "Owning property",
-                "Defending the nation when lawfully called upon",
-                "Travelling abroad",
-                "Joining a political party",
+                "rocks and minerals",
+                "government and the rights and duties of citizens",
+                "farming methods",
+                "computer hardware",
               ],
               correctIndex: 1,
-              explanation:
-                "Defence of the nation is a civic duty; the others are rights or free choices.",
+              explanation: "Civics concerns government and citizens' rights and duties.",
+            },
+            {
+              prompt: "Writing to a representative is an example of",
+              options: ["Civic engagement", "A criminal offence", "Direct rule", "Taxation"],
+              correctIndex: 0,
+              explanation: "Contacting representatives is a form of civic engagement.",
+            },
+            {
+              prompt: "Voting is important because it",
+              options: [
+                "has no effect",
+                "shapes who makes decisions that affect everyone",
+                "is only for officials",
+                "replaces government",
+              ],
+              correctIndex: 1,
+              explanation: "Voting influences who makes decisions for all.",
+            },
+            {
+              prompt: "A town meeting where residents debate a local decision is an example of",
+              options: ["Representative democracy", "Direct democracy", "Monarchy", "No participation"],
+              correctIndex: 1,
+              explanation: "Residents deciding directly is direct democracy.",
+            },
+            {
+              prompt: "Electing councillors to decide on a market is an example of",
+              options: ["Direct democracy", "Representative democracy", "Dictatorship", "Anarchy"],
+              correctIndex: 1,
+              explanation: "Choosing representatives to decide is representative democracy.",
+            },
+            {
+              prompt: "Collective goals are goals that",
+              options: [
+                "belong to one person",
+                "a society seeks to accomplish together",
+                "no one wants",
+                "only affect other countries",
+              ],
+              correctIndex: 1,
+              explanation: "Government helps a society accomplish shared goals.",
+            },
+            {
+              prompt: "Which best shows civic engagement connecting a citizen to government?",
+              options: [
+                "Watching entertainment only",
+                "Attending a debate and then voting",
+                "Never following the news",
+                "Refusing to participate",
+              ],
+              correctIndex: 1,
+              explanation: "Attending debates and voting connect citizens to government.",
+            },
+            {
+              prompt: "Government allocates",
+              options: ["Rainfall", "Authority", "Soil", "Weather"],
+              correctIndex: 1,
+              explanation: "Government allocates authority to accomplish collective goals.",
+            },
+            {
+              prompt: "Minority rights protect people",
+              options: [
+                "only if the majority agrees",
+                "even when the majority disagrees",
+                "never",
+                "only during elections",
+              ],
+              correctIndex: 1,
+              explanation: "Certain rights hold even against majority opinion.",
+            },
+            {
+              prompt: "Donating to or volunteering for a campaign is",
+              options: ["Illegal", "A form of civic engagement", "A tax", "A privilege of officials only"],
+              correctIndex: 1,
+              explanation: "Campaign participation is civic engagement.",
+            },
+            {
+              prompt: "In a representative democracy, the people's main tool for choosing decision-makers is",
+              options: ["The vote", "The army", "The weather", "The market"],
+              correctIndex: 0,
+              explanation: "Citizens vote to elect their representatives.",
+            },
+            {
+              prompt: "Reading about politics and listening to the news are",
+              options: [
+                "not related to government",
+                "forms of civic engagement",
+                "forms of taxation",
+                "criminal acts",
+              ],
+              correctIndex: 1,
+              explanation: "Staying informed is part of civic engagement.",
+            },
+            {
+              prompt: "The purpose of civic engagement is to",
+              options: [
+                "separate citizens from government",
+                "connect citizens to government and let them influence it",
+                "end all voting",
+                "remove all rights",
+              ],
+              correctIndex: 1,
+              explanation: "Engagement connects citizens to government and gives them influence.",
+            },
+            {
+              prompt: "A society organises itself and allocates authority through its",
+              options: ["Government", "Weather", "Geography", "Soil"],
+              correctIndex: 0,
+              explanation: "Government is the means of organising society.",
             },
           ],
           test: [
             {
               type: "SHORT_ANSWER",
               prompt:
-                "Define civics and state four reasons why it is studied in schools.",
+                "Define government and civic engagement.",
               answerKey:
-                "Civics is the study of the rights and duties of citizens and of the structure and functioning of government. Reasons: to enable citizens to understand and defend their rights; to make them aware of their duties to the state and one another; to promote national unity and patriotism; to prepare learners for participation in government and public affairs; to reduce the ignorance that permits abuse of power; to promote peace, tolerance and the rule of law. Award 4 marks for the definition and 2 marks for each of four reasons.",
-              marks: 12,
+                "Government is the means by which a society organises itself and allocates authority in order to accomplish collective goals. Civic engagement is the participation that connects citizens to government, such as reading about politics, discussing issues, voting, volunteering, protesting and writing to representatives. Award 4 marks per definition.",
+              marks: 8,
             },
             {
               type: "SHORT_ANSWER",
               prompt:
-                "Distinguish between a right and a privilege, giving two examples of each.",
+                "State four forms of civic engagement.",
               answerKey:
-                "A right is a lawful claim the state must respect and protect, which cannot be removed without due process — for example freedom of expression, the right to a fair trial, the right to life. A privilege is a benefit conferred by the state which may be withdrawn by the granting authority and is not owed to every citizen as of right — for example a driving licence, a passport, appointment to public office. Award 3 marks for each definition and 1 mark per appropriate example.",
-              marks: 10,
-            },
-            {
-              type: "MULTIPLE_CHOICE",
-              prompt:
-                "A government bans a newspaper for publishing an article criticising a minister. This is best described as",
-              options: [
-                "a lawful limitation of freedom of the press",
-                "an unlawful restriction, since criticism of officials is protected expression",
-                "a withdrawal of a privilege",
-                "a civic duty of the government",
-              ],
-              correctIndex: 1,
-              answerKey:
-                "Criticism of public officials lies at the core of protected expression. The restriction pursues no legitimate aim such as public order or the rights of others, and is therefore not a lawful limitation. Option B.",
-              marks: 4,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "State five duties of a Liberian citizen and explain why the performance of duties is necessary if rights are to be enjoyed.",
-              answerKey:
-                "Duties: obey the Constitution and laws; pay lawful taxes; defend the nation when lawfully called; respect the rights and dignity of others; vote when qualified; protect public property and the environment; assist in the administration of justice. Award 1 mark each up to 5. Explanation: rights are meaningful only where others accept the corresponding duties — a right to property requires others not to steal, a right to a fair trial requires citizens to serve as jurors and witnesses, and public services securing rights require tax revenue. Award up to 5 marks for a developed explanation of reciprocity.",
-              marks: 10,
-            },
-            {
-              type: "ESSAY",
-              prompt:
-                "'Rights without duties are impossible.' Discuss this statement, explaining the relationship between rights and duties and the circumstances in which rights may lawfully be limited. Illustrate with examples relevant to Liberia.",
-              answerKey:
-                "Award marks as follows: clear definitions of rights and duties with the distinction from privileges, 6 marks; development of the reciprocity argument that every right imposes a corresponding duty on others, illustrated with at least two worked pairs, 9 marks; treatment of the practical necessity of duties such as taxation and jury service for the machinery that secures rights, 6 marks; the circumstances in which rights may be limited — injury to the rights of others, public order, health, safety, national security — with the requirements that a restriction be prescribed by law and be proportionate, 9 marks; at least two developed Liberian examples, 6 marks; a conclusion taking a reasoned position on the statement, including any qualification the learner wishes to enter, 4 marks; organisation and expression, 3 marks. A learner who lists rights and duties separately without addressing the relationship between them should not exceed 15.",
-              marks: 40,
-            },
-          ],
-        },
-        {
-          slug: "citizenship",
-          title: "Citizenship in Liberia",
-          objective:
-            "By the end of the lesson, learners should be able to define citizenship, describe the ways in which Liberian citizenship is acquired and lost, and explain the rights and responsibilities attaching to it.",
-          estimatedMinutes: 80,
-          notes: `## Introduction
-
-- **Citizenship** = full legal membership of a state, carrying political rights, duties and the state's protection.
-- Presence in a country is not the same as belonging to it.
-- Liberian law includes the debated Negro-descent requirement of Article 27(b) and a shifting position on dual citizenship.
-- **This topic:** what citizenship is; how it is acquired (birth, descent, naturalisation and more) and lost; how Liberia's law works.
-
-## What citizenship is
-
-**Citizenship** is full legal membership of a state, carrying rights, duties and the protection of that state.
-
-A **citizen** differs from an **alien**, who is present in the state but owes allegiance elsewhere and does not hold full political rights.
-
-## Ways of acquiring citizenship generally
-
-**1. By birth**
-
-Two principles operate worldwide:
-
-- **Jus soli** — right of soil. Citizenship follows from being born within the territory.
-- **Jus sanguinis** — right of blood. Citizenship follows from the nationality of one's parents.
-
-**2. By descent** — born abroad to citizen parents.
-
-**3. By naturalisation** — a foreigner who satisfies statutory conditions is granted citizenship. Conditions typically include a period of lawful residence, good character, knowledge of the country, an oath of allegiance, and renunciation of former nationality.
-
-**4. By registration** — a simplified route, often for a spouse of a citizen or a person of a particular descent.
-
-**5. By marriage** — where the law provides for it.
-
-**6. By adoption** — where a child is adopted by citizens.
-
-## Liberian citizenship
-
-The Constitution of 1986 and the Aliens and Nationality Law govern the matter.
-
-**The negro descent requirement.** Liberia restricts citizenship to persons of **Negro descent**. Article 27(b) of the Constitution provides that only persons who are Negroes or of Negro descent shall qualify by birth or by naturalisation.
-
-The historical justification advanced for this provision was the protection of the settlement from acquisition and domination by non-African settlers. It remains in force and is the subject of continuing public debate: supporters argue it protects national identity and landholding, while critics argue it is discriminatory, deters investment, and excludes people born and raised in Liberia who know no other home.
-
-**Acquisition by birth.** A person born in Liberia to a citizen parent, or a person of Negro descent born within the Republic, acquires citizenship by birth. Liberian law also recognises descent, so children born abroad to Liberian citizens may claim citizenship.
-
-**Naturalisation.** An applicant must be of Negro descent, be of full age, have resided in Liberia for the period the law prescribes, be of good moral character, renounce any former allegiance, and take the oath of allegiance before a court.
-
-## Loss of citizenship
-
-- **Renunciation** — a voluntary declaration of giving up citizenship
-- **Deprivation** — where citizenship was obtained by fraud or misrepresentation
-- **Acquiring another nationality**, where the law does not permit dual citizenship
-- **Serving in the armed forces of a foreign state** without authorisation
-- **Taking an oath of allegiance to a foreign state**
-
-**Dual citizenship.** Liberia historically prohibited dual nationality, and many Liberians abroad lost citizenship on naturalising elsewhere. This has been the subject of sustained reform pressure, and legislative amendments have moved to permit dual citizenship in defined circumstances. Learners should be aware that this is an area of active legal change and should check the current position.
-
-## Rights of a Liberian citizen
-
-- To vote and to stand for elective office
-- To hold a Liberian passport and receive the protection of the state abroad
-- To own real property, which non-citizens may not do
-- To enter, remain in and leave the country freely
-- To hold public office
-- To enjoy all the fundamental rights guaranteed by Chapter III of the Constitution
-
-## Responsibilities of a Liberian citizen
-
-- Allegiance to the Republic and its Constitution
-- Obedience to the law
-- Payment of lawful taxes
-- Defence of the nation when lawfully called upon
-- Participation in elections
-- Respect for the rights of others
-- Protection of public property and the environment
-- Service to the community
-
-## Common errors and misconceptions
-
-- **Confusing *jus soli* with *jus sanguinis*** — *jus soli* is citizenship by **birth in the territory**; *jus sanguinis* is citizenship by the **nationality of one's parents** (descent).
-- **Thinking long residence alone confers citizenship** — residence is a *requirement* for naturalisation, not the source of citizenship; under Article 27(b), a non-Negro person cannot naturalise however long they have lived in Liberia.
-- **Assuming a citizen and an alien have the same rights** — an **alien** may reside and trade but cannot vote, hold public office or **own real property** (only lease it).
-- **Believing the dual-citizenship rule is fixed** — Liberian law here has been **changing**; learners should check the current position rather than assume the historic prohibition.`,
-          workedExample: `**Question:** Consider three people.
-
-*Kou* was born in Ganta to two Liberian parents.
-*Sekou* was born in Guinea to Liberian parents and has lived in Monrovia since he was two.
-*Mr. Chen* was born in China, has lived and traded lawfully in Liberia for twenty-five years, speaks Liberian English fluently, and has raised his children there.
-
-Determine the citizenship position of each and explain the reasoning.
-
-**Solution**
-
-**Kou — a citizen by birth.**
-
-She satisfies both principles at once. She was born within the territory of Liberia (*jus soli*) and both her parents are Liberian citizens (*jus sanguinis*). Assuming she is of Negro descent as the Constitution requires, her claim is unambiguous. She holds full political rights on reaching the qualifying age: she may vote, stand for office, hold a passport and own real property.
-
-**Sekou — a citizen by descent.**
-
-He was not born in Liberia, so *jus soli* does not assist him. However, Liberian law recognises **citizenship by descent**: a child born abroad to Liberian citizen parents may claim citizenship through them.
-
-His long residence since infancy is not itself the source of his claim — residence alone does not confer citizenship. His entitlement rests on his **parentage**.
-
-*Practical point:* he would ordinarily need to establish the claim by documentation — his parents' citizenship records and his own birth registration. A person entitled to citizenship who cannot prove it faces real difficulty, which is why registration matters.
-
-**Mr. Chen — not eligible for citizenship, and this is the significant case.**
-
-Consider what he satisfies. Twenty-five years of lawful residence far exceeds any statutory residence period. He is by all indications of good character, integrated, and economically established. On the ordinary requirements for naturalisation in most states, he would qualify comfortably.
-
-He nonetheless **cannot become a Liberian citizen**, because Article 27(b) of the Constitution restricts citizenship, by birth and by naturalisation alike, to persons who are **Negroes or of Negro descent**. This is a constitutional bar, not a discretionary refusal, and no period of residence or degree of integration can overcome it.
-
-*Consequences for him:*
-
-- He cannot vote or stand for public office.
-- He **cannot own real property** in Liberia; he may only lease it.
-- He remains an alien, subject to immigration law, however long he stays.
-
-*His children:* if born in Liberia but not of Negro descent, they face the same bar, notwithstanding that Liberia may be the only country they have known.
-
-**The wider issue.** This case illustrates why Article 27(b) is debated. Its defenders argue that it protects Liberian identity and prevents the concentration of land in foreign hands, an argument rooted in the founding history of the Republic. Its critics argue that it discriminates on racial grounds, deters long-term investment, and produces the situation of Mr. Chen's children — people with no other home who can never belong.
-
-**Answer:** Kou is a citizen by birth; Sekou is a citizen by descent, subject to proof; Mr. Chen is barred from citizenship by Article 27(b) regardless of residence or integration.`,
-          teachingTip:
-            "Article 27(b) is the part of this topic that generates genuine discussion, and it should not be taught as a bare fact to be recited. Give the class the historical reasoning behind it — the fear that the settlement could be bought up and dominated by non-African settlers — and then give them a case like Mr. Chen's, and let them argue. Learners will divide, and both sides have real arguments. What matters is that they can state the provision accurately and give the case for and against it, which is precisely what an examination question demands. Handle the dual citizenship question carefully: the law here has been changing, and many learners will have relatives directly affected. Tell them plainly that this is an area of active reform and that the current legislation must be checked rather than assumed. A citizenship lesson that acknowledges the law is contested teaches more than one that pretends it is settled.",
-          quiz: [
-            {
-              prompt: "Citizenship is best defined as",
-              options: [
-                "residence in a country",
-                "full legal membership of a state with rights and duties",
-                "holding a passport only",
-                "being born in a hospital",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Citizenship confers political rights and the protection of the state, unlike mere residence.",
-            },
-            {
-              prompt: "Jus soli means citizenship acquired by",
-              options: [
-                "descent from citizen parents",
-                "birth within the territory",
-                "marriage",
-                "naturalisation",
-              ],
-              correctIndex: 1,
-              explanation: "Jus soli is the right of soil — birth within the country's territory.",
-            },
-            {
-              prompt: "Jus sanguinis means citizenship acquired by",
-              options: [
-                "birth within the territory",
-                "the nationality of one's parents",
-                "long residence",
-                "military service",
-              ],
-              correctIndex: 1,
-              explanation: "Jus sanguinis is the right of blood, following parentage.",
-            },
-            {
-              prompt: "Under the Liberian Constitution, citizenship is restricted to persons",
-              options: [
-                "born in Monrovia",
-                "who are Negroes or of Negro descent",
-                "who own property",
-                "who speak English",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Article 27(b) restricts citizenship by birth and naturalisation to persons of Negro descent.",
-            },
-            {
-              prompt: "Which is a requirement for naturalisation?",
-              options: [
-                "Owning a business",
-                "Residence for the period prescribed by law and good moral character",
-                "Being under twenty-one",
-                "Holding a university degree",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Applicants must also renounce former allegiance and take the oath of allegiance.",
-            },
-            {
-              prompt: "A non-citizen in Liberia may NOT",
-              options: [
-                "lease property",
-                "own real property",
-                "operate a business",
-                "reside lawfully",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Ownership of real property is reserved to citizens; aliens may lease only.",
-            },
-            {
-              prompt: "Citizenship may be lost through",
-              options: [
-                "travelling abroad",
-                "voluntary renunciation",
-                "changing employment",
-                "moving to another county",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Loss may also follow deprivation for fraud or acquisition of another nationality where prohibited.",
-            },
-            {
-              prompt: "A person born abroad to Liberian citizen parents may claim citizenship by",
-              options: ["Jus soli", "Descent", "Naturalisation", "Marriage only"],
-              correctIndex: 1,
-              explanation:
-                "Citizenship by descent follows the parents' nationality rather than the place of birth.",
-            },
-            {
-              prompt: "An alien differs from a citizen in that an alien",
-              options: [
-                "cannot enter the country",
-                "owes allegiance elsewhere and lacks full political rights",
-                "pays no taxes",
-                "has no human rights",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Aliens retain human rights and tax obligations but do not hold the franchise or public office.",
-            },
-            {
-              prompt: "Which is a responsibility rather than a right of a Liberian citizen?",
-              options: [
-                "Voting in elections",
-                "Owning real property",
-                "Allegiance to the Republic",
-                "Holding a passport",
-              ],
-              correctIndex: 2,
-              explanation:
-                "Allegiance is owed by the citizen to the state; the others are entitlements.",
-            },
-          ],
-          test: [
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Explain the difference between jus soli and jus sanguinis, and state which principles Liberian law applies.",
-              answerKey:
-                "Jus soli, the right of soil, confers citizenship by reason of birth within the territory of the state. Jus sanguinis, the right of blood, confers citizenship by reason of the nationality of one's parents regardless of place of birth. Liberian law applies both, subject to the overriding requirement of Article 27(b) that the person be a Negro or of Negro descent: a person of Negro descent born in Liberia acquires citizenship by birth, and a child born abroad to Liberian citizen parents may claim by descent. Award 3 marks per principle defined, 4 marks for the correct account of Liberian practice including the Article 27(b) qualification.",
-              marks: 10,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "State four ways in which citizenship may be lost.",
-              answerKey:
-                "Voluntary renunciation by declaration; deprivation where citizenship was obtained by fraud or misrepresentation; acquisition of another nationality where the law does not permit dual citizenship; serving in the armed forces of a foreign state without authorisation; taking an oath of allegiance to a foreign state. Award 2 marks each, requiring brief explanation rather than a bare phrase.",
+                "Any four: reading about politics or listening to the news; discussing politics or attending debates; voting in elections; donating to or volunteering for campaigns; joining protests; writing to representatives. Award 2 marks each.",
               marks: 8,
             },
             {
               type: "MULTIPLE_CHOICE",
               prompt:
-                "A man of Lebanese origin has lived lawfully in Liberia for thirty years and speaks fluent Liberian English. Under the Constitution as it stands, he",
+                "The idea that people cannot be deprived of certain rights even if most people want them removed is called",
               options: [
-                "automatically becomes a citizen after twenty years",
-                "may naturalise on proof of good character",
-                "cannot acquire citizenship because of the Negro descent requirement",
-                "becomes a citizen if he marries a Liberian",
+                "majority rule",
+                "minority rights",
+                "civic engagement",
+                "direct democracy",
               ],
-              correctIndex: 2,
+              correctIndex: 1,
               answerKey:
-                "Article 27(b) restricts citizenship by birth and by naturalisation to persons who are Negroes or of Negro descent. This is a constitutional bar that no period of residence, marriage or integration can overcome. Option C.",
+                "Minority rights protect certain rights even against an overwhelming majority. Option B.",
               marks: 4,
             },
             {
               type: "SHORT_ANSWER",
               prompt:
-                "State five rights and five responsibilities of a Liberian citizen.",
+                "Distinguish between representative democracy and direct democracy, giving an example of each.",
               answerKey:
-                "Rights: to vote and stand for elective office; to hold a Liberian passport and receive state protection abroad; to own real property; to enter, remain in and leave the country; to hold public office; to enjoy the fundamental rights in Chapter III of the Constitution. Responsibilities: allegiance to the Republic and Constitution; obedience to the law; payment of lawful taxes; defence of the nation when lawfully called; participation in elections; respect for the rights of others; protection of public property and the environment. Award 1 mark each.",
-              marks: 10,
+                "In a representative democracy citizens elect representatives to make decisions on their behalf (example: voting for councillors or legislators). In a direct democracy citizens decide themselves through mechanisms such as referendums and town meetings where residents debate decisions. Award 3 marks per form defined and 1 mark per example.",
+              marks: 8,
             },
             {
               type: "ESSAY",
               prompt:
-                "Discuss the requirement that Liberian citizenship be limited to persons of Negro descent. Explain the historical reasons advanced for the provision and the arguments made for and against its retention, and state a reasoned conclusion of your own.",
+                "Explain what government is and why civic engagement matters in a democracy, referring to both representative and direct participation and to the protection of minority rights.",
               answerKey:
-                "Award marks as follows: accurate statement of the provision and its constitutional source in Article 27(b), covering both birth and naturalisation, 6 marks; the historical justification, rooted in the founding of the Republic and the fear that the settlement might be acquired and dominated by non-African settlers, with reference to landholding, 8 marks; arguments for retention — protection of national identity, prevention of concentration of land in foreign hands, the small size of the country relative to potential external interest, 8 marks; arguments against — racial discrimination contrary to international human rights standards, deterrence of long-term investment, the position of people born and raised in Liberia who have no other home and can never belong, the exclusion of long-resident families across generations, 8 marks; a reasoned personal conclusion that engages both sides rather than merely asserting a preference, 6 marks; organisation, accurate use of legal terminology and expression, 4 marks. A learner who states the provision without addressing the debate should not exceed 12; a learner who argues one side without acknowledging the other should not exceed 22.",
-              marks: 40,
+                "Award marks as follows: government defined as the means by which a society organises itself and allocates authority to accomplish collective goals, 8 marks; civic engagement defined and illustrated with several forms, 12 marks; representative democracy (electing representatives) and direct democracy (referendums, town meetings) distinguished with examples, 12 marks; minority rights explained as protections that hold even against a majority, with why this matters, 12 marks; organisation and expression, 6 marks. A learner who does not address minority rights should not exceed 35.",
+              marks: 50,
             },
           ],
         },
+        // source: general concepts of citizenship — jus soli (birth in territory) and jus sanguinis (by descent), naturalisation and loss of citizenship, per OpenStax and standard civics references. FLAG: Liberia-specific citizenship law (Article 27(b) Negro-descent requirement, the 1986 Constitution, the Aliens and Nationality Law, dual-citizenship reform) could NOT be verified from an approved published education page and needs a Liberian primary source. General concepts are taught here. See report.
+        {
+          slug: "citizenship",
+          title: "Citizenship",
+          objective:
+            "By the end of the lesson, learners should be able to define citizenship and describe how it is acquired and lost and the rights and duties it carries.",
+          estimatedMinutes: 80,
+          notes: `## What citizenship is
+
+**Citizenship** is full legal membership of a state. A citizen holds rights and owes duties, and receives the protection of the state.
+
+A **citizen** differs from an **alien** (a non-citizen), who is present in the state but belongs to another and does not hold full political rights.
+
+## Acquiring citizenship by birth
+
+Two principles are used around the world:
+
+- **Jus soli (right of soil)** — a child has the nationality of the territory in which it is born, even if the parents hold a different nationality.
+- **Jus sanguinis (right of blood)** — a child has the same nationality as its parents, whatever the place of birth.
+
+Many states use one principle, the other, or a combination of both.
+
+## Acquiring citizenship by naturalisation
+
+**Naturalisation** is the granting of citizenship to a foreigner who meets legal conditions. Citizenship can be obtained through:
+
+- A required length of lawful **residence**
+- **Marriage** to a citizen
+- **Historical ties** to the country
+- A large **investment** in the country
+
+Applicants typically must also satisfy conditions such as good character and an oath of allegiance.
+
+## Loss of citizenship
+
+Citizenship can be lost in several ways, including:
+
+- **Renunciation** — a voluntary declaration giving up citizenship
+- **Deprivation** — where citizenship was obtained by fraud or misrepresentation
+- Acquiring another nationality, where the law does not allow dual citizenship
+- Taking an oath of allegiance to a foreign state
+
+## Rights and duties of a citizen
+
+A citizen generally holds political rights and owes duties in return.
+
+| Rights (examples) | Duties (examples) |
+| --- | --- |
+| To vote and stand for office | Allegiance to the state |
+| The protection of the state | Obedience to the law |
+| To hold a passport | Payment of lawful taxes |
+| To enter and leave the country | Respect for the rights of others |
+
+## Key points
+
+- Citizenship is full legal membership of a state, with rights, duties and protection.
+- Jus soli is citizenship by birth in the territory; jus sanguinis is by descent from citizen parents.
+- Naturalisation grants citizenship to a foreigner meeting legal conditions such as residence.
+- Citizenship can be lost by renunciation, deprivation for fraud, or taking a foreign allegiance.`,
+          workedExample: `**Question:** Ama was born in a country to two of its citizens. Kofi was born abroad while his citizen parents were travelling. Mrs. Rossi is a foreigner who has lived lawfully in the country for many years and now wishes to become a citizen. Explain how each could hold or gain citizenship.
+
+**Solution**
+
+*Step 1 — Ama.* Ama was born within the territory of the state, so she qualifies under **jus soli** (right of soil). She is also the child of citizen parents, so she qualifies under **jus sanguinis** (right of blood) as well. Either principle makes her a citizen by birth.
+
+*Step 2 — Kofi.* Kofi was born abroad, so **jus soli** of his parents' country does not help him — he was not born in its territory. But under **jus sanguinis** he takes the same nationality as his citizen parents regardless of where he was born. So he is a citizen by descent.
+
+*Step 3 — Mrs. Rossi.* Mrs. Rossi was not born in the country and is not the child of its citizens, so neither birth principle applies. Her route is **naturalisation** — the granting of citizenship to a foreigner who meets legal conditions. Having lived there lawfully for many years, she may qualify through the required length of residence, and would typically also need to meet conditions such as good character and an oath of allegiance.
+
+**Answer:** Ama is a citizen by birth under both jus soli and jus sanguinis; Kofi is a citizen by descent under jus sanguinis; Mrs. Rossi may become a citizen by naturalisation on the basis of long lawful residence and meeting the legal conditions.`,
+          quiz: [
+            {
+              prompt: "Citizenship is best defined as",
+              options: [
+                "a tourist visa",
+                "full legal membership of a state with rights and duties",
+                "owning a house",
+                "having a job",
+              ],
+              correctIndex: 1,
+              explanation: "Citizenship is full legal membership, with rights, duties and protection.",
+            },
+            {
+              prompt: "Jus soli confers citizenship by",
+              options: [
+                "descent from parents",
+                "birth within the territory",
+                "marriage only",
+                "investment only",
+              ],
+              correctIndex: 1,
+              explanation: "Jus soli is the right of soil — birth in the territory.",
+            },
+            {
+              prompt: "Jus sanguinis confers citizenship by",
+              options: [
+                "the nationality of one's parents",
+                "place of birth alone",
+                "length of a holiday",
+                "buying land",
+              ],
+              correctIndex: 0,
+              explanation: "Jus sanguinis is the right of blood, following the parents.",
+            },
+            {
+              prompt: "A child born abroad to citizen parents may be a citizen by",
+              options: ["Jus soli", "Jus sanguinis (descent)", "A tourist visa", "Nothing"],
+              correctIndex: 1,
+              explanation: "Descent follows the parents' nationality regardless of birthplace.",
+            },
+            {
+              prompt: "Naturalisation is the process by which",
+              options: [
+                "a citizen loses nationality",
+                "a foreigner is granted citizenship after meeting legal conditions",
+                "a baby is born",
+                "an alien is deported",
+              ],
+              correctIndex: 1,
+              explanation: "Naturalisation grants citizenship to a qualifying foreigner.",
+            },
+            {
+              prompt: "Which is a common route to naturalisation?",
+              options: [
+                "A required length of lawful residence",
+                "Owning a phone",
+                "Visiting for one day",
+                "Watching the news",
+              ],
+              correctIndex: 0,
+              explanation: "Residence, marriage, ties or investment can lead to naturalisation.",
+            },
+            {
+              prompt: "An alien is",
+              options: [
+                "a citizen with full rights",
+                "a non-citizen present in the state who belongs to another",
+                "an elected official",
+                "a type of passport",
+              ],
+              correctIndex: 1,
+              explanation: "An alien is a non-citizen without full political rights.",
+            },
+            {
+              prompt: "Renunciation of citizenship is",
+              options: [
+                "involuntary removal by the state",
+                "a voluntary declaration giving up citizenship",
+                "a tax on citizens",
+                "a type of naturalisation",
+              ],
+              correctIndex: 1,
+              explanation: "Renunciation is the citizen's own voluntary act.",
+            },
+            {
+              prompt: "Deprivation of citizenship may occur where citizenship was obtained by",
+              options: ["Birth", "Fraud or misrepresentation", "Descent", "Voting"],
+              correctIndex: 1,
+              explanation: "Fraud in acquiring citizenship can justify its removal.",
+            },
+            {
+              prompt: "Marriage to a citizen may be a route to",
+              options: ["Losing rights", "Naturalisation", "Deportation", "Taxation"],
+              correctIndex: 1,
+              explanation: "Marriage is one recognised route to naturalisation.",
+            },
+            {
+              prompt: "A citizen receives from the state",
+              options: ["No protection", "The protection of the state", "Only taxes", "Only duties"],
+              correctIndex: 1,
+              explanation: "Citizens receive the protection of the state.",
+            },
+            {
+              prompt: "Which is a duty of a citizen?",
+              options: ["Holding a passport", "Obedience to the law", "Owning property", "Travelling abroad"],
+              correctIndex: 1,
+              explanation: "Obedience to the law and allegiance are citizen duties.",
+            },
+            {
+              prompt: "Which is a right of a citizen?",
+              options: ["To vote and stand for office", "To break the law", "To avoid all taxes", "To ignore others' rights"],
+              correctIndex: 0,
+              explanation: "Voting and standing for office are political rights of citizens.",
+            },
+            {
+              prompt: "A state that gives citizenship both by birth in its territory and by descent uses",
+              options: [
+                "neither principle",
+                "a combination of jus soli and jus sanguinis",
+                "only marriage",
+                "only investment",
+              ],
+              correctIndex: 1,
+              explanation: "Many states combine both birth principles.",
+            },
+            {
+              prompt: "Taking an oath of allegiance to a foreign state may lead to",
+              options: ["A promotion", "Loss of citizenship", "A new passport", "A tax refund"],
+              correctIndex: 1,
+              explanation: "Foreign allegiance is a recognised ground for losing citizenship.",
+            },
+            {
+              prompt: "A large investment in a country may be a route to",
+              options: ["Naturalisation", "Deportation", "Renunciation", "Losing rights"],
+              correctIndex: 0,
+              explanation: "Investment is one recognised route to naturalisation.",
+            },
+            {
+              prompt: "Citizenship differs from mere residence because it carries",
+              options: [
+                "no duties",
+                "political rights and the protection of the state",
+                "only a lower tax rate",
+                "the right to travel only",
+              ],
+              correctIndex: 1,
+              explanation: "Citizenship is full membership with political rights and protection.",
+            },
+            {
+              prompt: "Historical ties to a country may support a claim to",
+              options: ["Naturalisation", "Deportation", "Losing the vote", "Renunciation"],
+              correctIndex: 0,
+              explanation: "Historical ties are among the bases for naturalisation.",
+            },
+            {
+              prompt: "Which pair is correct?",
+              options: [
+                "Jus soli — by parents; jus sanguinis — by birthplace",
+                "Jus soli — by birthplace; jus sanguinis — by parents",
+                "Both mean the same",
+                "Neither concerns citizenship",
+              ],
+              correctIndex: 1,
+              explanation: "Jus soli is birthplace; jus sanguinis is parentage.",
+            },
+            {
+              prompt: "Allegiance to the state is best described as a",
+              options: ["Right", "Duty of the citizen", "Privilege of officials", "Foreign obligation"],
+              correctIndex: 1,
+              explanation: "Allegiance is owed by the citizen to the state.",
+            },
+          ],
+          test: [
+            {
+              type: "SHORT_ANSWER",
+              prompt:
+                "Define citizenship and explain the difference between jus soli and jus sanguinis.",
+              answerKey:
+                "Citizenship is full legal membership of a state, carrying rights and duties and the protection of the state. Jus soli (right of soil) confers citizenship by birth within the territory, even if the parents hold another nationality. Jus sanguinis (right of blood) confers citizenship by the nationality of one's parents, whatever the place of birth. Award 4 marks for the definition and 3 marks per principle.",
+              marks: 10,
+            },
+            {
+              type: "SHORT_ANSWER",
+              prompt:
+                "State three routes to naturalisation.",
+              answerKey:
+                "Any three: a required length of lawful residence; marriage to a citizen; historical ties to the country; a large investment in the country. Award 2 marks each.",
+              marks: 6,
+            },
+            {
+              type: "MULTIPLE_CHOICE",
+              prompt:
+                "A person born abroad to citizen parents claims citizenship. The principle that supports the claim is",
+              options: ["Jus soli", "Jus sanguinis", "Naturalisation", "Renunciation"],
+              correctIndex: 1,
+              answerKey:
+                "Jus sanguinis confers citizenship by descent from citizen parents regardless of birthplace. Option B.",
+              marks: 4,
+            },
+            {
+              type: "SHORT_ANSWER",
+              prompt:
+                "State three ways in which citizenship may be lost.",
+              answerKey:
+                "Renunciation — a voluntary declaration giving up citizenship. Deprivation — where citizenship was obtained by fraud or misrepresentation. Acquiring another nationality where dual citizenship is not permitted. Taking an oath of allegiance to a foreign state. Award 2 marks each, up to three.",
+              marks: 6,
+            },
+            {
+              type: "ESSAY",
+              prompt:
+                "Explain how citizenship may be acquired by birth and by naturalisation, and how it may be lost. Distinguish a citizen from an alien throughout.",
+              answerKey:
+                "Award marks as follows: citizenship defined as full legal membership with rights, duties and state protection, and a citizen distinguished from an alien, 8 marks; acquisition by birth through jus soli (territory) and jus sanguinis (descent), with the point that states may use one or both, 14 marks; acquisition by naturalisation, with routes such as residence, marriage, historical ties and investment, and conditions such as good character and an oath, 12 marks; loss of citizenship through renunciation, deprivation for fraud, or taking a foreign allegiance, 10 marks; organisation and expression, 6 marks. A learner who does not treat both birth and naturalisation should not exceed 30.",
+              marks: 50,
+            },
+          ],
+        },
+        // source: OpenStax Introduction to Political Science — 4.2 Constitutions and Individual Liberties (https://openstax.org/books/introduction-political-science/pages/4-2-constitutions-and-individual-liberties); GeeksforGeeks — Difference between Written and Unwritten Constitution (https://www.geeksforgeeks.org/difference-between-written-and-unwritten-constitution/). FLAG: Liberia-specific facts (1847/1986 constitutions, a named supremacy article, chapter structure, the exact amendment procedure) could NOT be sourced from an approved page and need a Liberian primary source. General concepts are taught here. See report.
         {
           slug: "constitution",
-          title: "The Constitution of Liberia",
+          title: "The Constitution",
           objective:
-            "By the end of the lesson, learners should be able to define a constitution, distinguish its types, outline the structure of the 1986 Constitution, and explain constitutional supremacy and the amendment process.",
+            "By the end of the lesson, learners should be able to explain what a constitution is and does, distinguish its types, and describe how constitutions protect liberties.",
           estimatedMinutes: 80,
-          notes: `## Introduction
+          notes: `## What a constitution is and does
 
-- **Constitution** = a state's supreme rulebook: how power is held, how it is limited, and what government may never do to its people.
-- Two ideas give it teeth: constitutional supremacy (Article 2) and a difficult amendment process.
-- **This topic:** what a constitution is and its types (written/unwritten, rigid/flexible); Liberia's constitutional history from 1847 to the 1986 Constitution; the structure of that document; constitutional supremacy and the amendment process.
+A **constitution** describes the underlying principles of the people and government, the structure of the branches of government and their duties. It **limits government**, listing the freedoms or rights reserved for the people.
 
-## What a constitution is
+A constitution must be **more difficult to amend or change than ordinary laws**.
 
-A **constitution** is the body of fundamental rules by which a state is governed. It establishes the organs of government, defines and limits their powers, and sets out the relationship between the state and the citizen.
+## Written and unwritten constitutions
 
-## Types of constitution
+- **Codified (written) constitution** — a single formal document that organises the structure of government and individual protections.
+- **Uncodified (unwritten) constitution** — the constitution is not in one document; countries such as Britain, New Zealand and Israel use uncollected writings that establish the form of government and set out the principles of liberty.
 
-**Written** — contained in a single formal document. *Liberia, the United States, Ghana.*
-**Unwritten** — drawn from statutes, judicial decisions, conventions and authoritative works rather than one document. *The United Kingdom.*
+An unwritten constitution still exists; it is simply drawn from several sources rather than one document.
 
-**Rigid** — amendable only by a special and difficult procedure. *Liberia.*
-**Flexible** — amendable by the ordinary legislative process.
+## Rigid and flexible constitutions
 
-Liberia's Constitution is **written and rigid**.
+- **Rigid** — needs a special, difficult process to change it.
+- **Flexible** — can be changed like ordinary laws.
 
-## Constitutional history of Liberia
+Because a constitution must be harder to change than ordinary law, this difficulty is called **entrenchment**, and it establishes constitutional supremacy — the constitution is the supreme legal framework governing all other law.
 
-- **1847 Constitution** — adopted at independence, drafted with the assistance of Simon Greenleaf and modelled on the United States Constitution. It remained in force for 133 years.
-- **1980** — the Constitution was suspended following the coup of 12 April 1980.
-- **1984** — a new Constitution was drafted by a Constitutional Commission and approved by national referendum.
-- **6 January 1986** — the present Constitution came into force.
+## How constitutions protect liberties
 
-## Structure of the 1986 Constitution
+Constitutions safeguard freedoms in two ways:
 
-The Constitution is divided into chapters. Learners should know the following:
+- **Negative rights** — limitations on government, telling government what it may not do (for example, "government shall make no law...").
+- **Positive rights** — an obligation on government to guarantee the people's rights (for example, a right that "shall be guaranteed").
 
-- **Chapter I** — Structure of the State. Liberia is a unitary sovereign state.
-- **Chapter II** — General Principles of National Policy.
-- **Chapter III** — **Fundamental Rights**. The core guarantees: life, liberty, security of person, equality before the law, freedom of expression, religion, assembly, association and movement, due process, and the presumption of innocence.
-- **Chapter IV** — Citizenship, including the Negro descent requirement in Article 27(b).
-- **Chapter V** — The Legislature.
-- **Chapter VI** — The Executive.
-- **Chapter VII** — The Judiciary.
-- **Chapter VIII** — Political Parties and Elections.
-- **Chapter IX** — Emergency Powers.
-- **Chapter X** — Autonomous Public Commissions.
-- **Chapter XI** — Miscellaneous.
-- **Chapter XII** — Amendments.
-- **Chapter XIII** — Transitional Provisions.
-
-## Supremacy of the Constitution
-
-**Article 2** declares the Constitution to be the **supreme law of the Republic**. Any law, treaty, statute, decree or regulation inconsistent with it is, to the extent of the inconsistency, **void and of no legal effect**.
-
-The Supreme Court is the final authority on whether a law conforms to the Constitution. This power, **judicial review**, is what gives supremacy practical force. A constitution that could not be enforced against the legislature would be advice rather than law.
-
-## Amendment
-
-A rigid constitution is amended by a special procedure. Under Chapter XII:
-
-1. A proposal is introduced in the Legislature.
-2. It must be approved by a **two-thirds majority of both Houses**.
-3. It must then be submitted to the people in a **national referendum**.
-4. It must be ratified by **two-thirds of the votes cast** in that referendum.
-
-The requirement of a referendum places the final decision with the people rather than with the legislature alone, which is the essential protection a rigid constitution provides.
+Many modern democracies use positive-rights constitutions, reflecting a commitment that government actively protects individual freedoms.
 
 ## Functions of a constitution
 
-- Establishes the organs of government and allocates power among them
-- **Limits** the power of government, which is its most important protective function
-- Guarantees the rights of citizens
-- Provides the procedure for changing the government peacefully
-- Defines the relationship between citizen and state
-- Serves as the standard against which all other law is measured
-- Provides for its own amendment
+| Function | Meaning |
+| --- | --- |
+| Sets out principles | States the underlying principles of people and government |
+| Structures government | Establishes the branches and their duties |
+| Limits government | Restrains what government may do |
+| Protects rights | Lists freedoms reserved for the people |
+| Is entrenched | Harder to change than ordinary law |
 
-## Common errors and misconceptions
+## Key points
 
-- **Thinking a properly passed law must be valid** — under **Article 2**, any law inconsistent with the Constitution is **void**, no matter that both Houses passed it and the President signed it.
-- **Confusing "unwritten" with "non-existent"** — an **unwritten** constitution (e.g. the UK's) still exists; it is simply drawn from statutes, cases and conventions rather than one document.
-- **Mixing up rigid and flexible** — Liberia's Constitution is **rigid** (a special, hard amendment procedure); a **flexible** one changes by ordinary legislation.
-- **Believing the legislature can amend the Constitution alone** — amendment needs **two-thirds of both Houses *and* a two-thirds referendum**, putting the final say with the people.`,
-          workedExample: `**Question:** The Legislature passes an Act requiring every newspaper to obtain a licence from the Ministry of Information before publishing, with the Ministry given complete discretion to refuse. A publisher challenges the Act.
-
-Explain how the constitutional system responds, and set out the correct procedure if the government genuinely wishes to achieve this result lawfully.
+- A constitution sets out the principles and structure of government, limits it and lists rights.
+- It must be harder to amend than ordinary law (entrenchment).
+- Written constitutions are in one document; unwritten ones are drawn from many sources.
+- Rigid constitutions need a special process to change; flexible ones change like ordinary law.`,
+          workedExample: `**Question:** Country A has all its rules of government in a single document that can only be changed by a special two-stage procedure. Country B has no single document; its rules come from many statutes and long-standing practices, and can be changed by ordinary law. Compare the two constitutions using the correct terms, and explain how each might protect a citizen's freedom of speech.
 
 **Solution**
 
-*Step 1 — identify the constitutional provision engaged.*
+*Step 1 — Classify Country A.* Its rules are in a single formal document, so it has a **codified (written) constitution**. Because it can only be changed by a special, difficult procedure, it is also **rigid**. The difficulty of changing it is **entrenchment**, which supports constitutional supremacy.
 
-**Chapter III** guarantees **freedom of expression and of the press**. A licensing scheme under which a ministry may refuse permission to publish at its complete discretion operates as **prior restraint** — it prevents publication before anything has been published, and it does so on grounds the Ministry need not justify.
+*Step 2 — Classify Country B.* Its rules are drawn from many statutes and practices rather than one document, so it has an **uncodified (unwritten) constitution**, like Britain. Because it can be changed by ordinary law, it is **flexible**. The constitution still exists; it is simply not in one place.
 
-*Step 2 — apply the supremacy clause.*
+*Step 3 — How each protects freedom of speech.* A constitution limits government and lists freedoms reserved for the people. Country A might protect speech as a **negative right** — stating that government shall make no law restricting it — which, being entrenched, cannot be removed by ordinary legislation. Country B protects speech too, but because its constitution is flexible, the protection could be altered by an ordinary law, so it depends more on established practice and the courts.
 
-**Article 2** provides that the Constitution is the supreme law, and that any law inconsistent with it is **void to the extent of the inconsistency**.
-
-Note carefully what this means. The Act is not merely unwise or unpopular. If it conflicts with Chapter III, it is **void** — it has no legal force at all, notwithstanding that it was properly passed by both Houses and signed.
-
-*Step 3 — identify who decides.*
-
-The Legislature does not decide whether its own Act is constitutional, and neither does the Executive. The **Supreme Court** is the final authority, exercising the power of **judicial review**.
-
-The publisher's remedy is therefore to bring proceedings challenging the Act's constitutionality.
-
-*Step 4 — how the Court would approach it.*
-
-The Court would ask whether the restriction is:
-
-1. **Prescribed by law** — it is, in form.
-2. **Directed at a legitimate aim** — the Act states none beyond licensing itself.
-3. **Proportionate** — this is where the Act fails. Complete ministerial discretion, with no stated criteria, no obligation to give reasons and no right of appeal, is not a regulation of the press but a power to suppress it. It destroys the substance of the right rather than regulating its exercise.
-
-The likely outcome is that the Act is struck down as **unconstitutional and void**.
-
-*Step 5 — the correct procedure if the government genuinely wants this power.*
-
-This is the part learners most often miss. The government cannot obtain by ordinary legislation what the Constitution forbids. It must **amend the Constitution**, following Chapter XII:
-
-1. Introduce the proposed amendment in the Legislature.
-2. Secure a **two-thirds majority in both Houses**.
-3. Submit it to the people in a **national referendum**.
-4. Obtain ratification by **two-thirds of the votes cast**.
-
-*Why this matters.* The difficulty of the procedure is deliberate. A rigid constitution exists precisely so that fundamental rights cannot be removed by a temporary legislative majority. The referendum requirement means that a government wishing to curtail press freedom must persuade **the people**, in a public vote, to give up that freedom. This is a far higher barrier than persuading a legislature, and it is the central protection a rigid constitution supplies.
-
-**Conclusion:** the Act is void under Article 2 for inconsistency with Chapter III; the Supreme Court declares it so on judicial review; and the only lawful route to such a power is constitutional amendment under Chapter XII, requiring two-thirds of both Houses and two-thirds of a national referendum.`,
-          teachingTip:
-            "Constitutional supremacy is an abstraction until learners see it defeat a real government decision. Take a hypothetical statute that plainly violates a Chapter III right and walk the class through the consequence: the Act is void, and it is void even though it passed both Houses and was signed. Learners are often genuinely surprised that a properly enacted law can be worth nothing, and that surprise is the lesson. Follow immediately with the amendment procedure, and ask why the framers made it so difficult — the answer, that a temporary majority should not be able to strip fundamental rights, is the whole justification for a rigid constitution. Get a copy of the Constitution into the room; even a photocopy of Chapter III is enough. Learners who have turned to Article 2 and read it themselves argue about it quite differently from learners who have only been told what it says.",
+**Answer:** Country A has a codified, rigid, entrenched constitution; Country B has an uncodified, flexible one. Both can protect free speech by limiting government and reserving the right to the people, but the entrenched constitution makes that protection harder to remove.`,
           quiz: [
             {
-              prompt: "A constitution is best defined as",
+              prompt: "A constitution describes",
               options: [
-                "a collection of court judgments",
-                "the body of fundamental rules by which a state is governed",
-                "a list of government officials",
-                "an agreement between political parties",
+                "the weather",
+                "the principles of the people and government and the structure and duties of its branches",
+                "a shopping list",
+                "a single election result",
               ],
               correctIndex: 1,
-              explanation:
-                "It establishes the organs of government, limits their powers and defines citizens' rights.",
+              explanation: "A constitution sets out principles, structure and duties of government.",
             },
             {
-              prompt: "Liberia's Constitution is best described as",
+              prompt: "A key feature of a constitution is that it",
               options: [
-                "Unwritten and flexible",
-                "Written and rigid",
-                "Written and flexible",
-                "Unwritten and rigid",
+                "is easier to change than ordinary law",
+                "must be harder to change than ordinary law",
+                "cannot be written down",
+                "applies only to visitors",
               ],
               correctIndex: 1,
-              explanation:
-                "It exists as a single document and requires a special procedure to amend.",
+              explanation: "A constitution must be more difficult to amend than ordinary laws.",
             },
             {
-              prompt: "The present Constitution of Liberia came into force in",
-              options: ["1847", "1980", "1984", "1986"],
-              correctIndex: 3,
-              explanation:
-                "It was approved by referendum in 1984 and came into force on 6 January 1986.",
-            },
-            {
-              prompt: "Fundamental rights are contained in which chapter of the 1986 Constitution?",
-              options: ["Chapter I", "Chapter III", "Chapter V", "Chapter VII"],
-              correctIndex: 1,
-              explanation:
-                "Chapter III guarantees rights including expression, religion, assembly and due process.",
-            },
-            {
-              prompt: "The supremacy of the Constitution means that",
+              prompt: "A constitution limits government by",
               options: [
-                "the President may change it at will",
-                "any law inconsistent with it is void to the extent of the inconsistency",
-                "it applies only to citizens",
-                "courts cannot interpret it",
+                "giving it unlimited power",
+                "listing freedoms or rights reserved for the people",
+                "removing all elections",
+                "abolishing courts",
               ],
               correctIndex: 1,
-              explanation:
-                "Article 2 renders inconsistent legislation of no legal effect.",
+              explanation: "It restrains government and reserves rights for the people.",
             },
             {
-              prompt: "Which body determines whether a law conforms to the Constitution?",
+              prompt: "A codified (written) constitution is",
               options: [
-                "The Legislature",
-                "The President",
-                "The Supreme Court",
-                "The Ministry of Justice",
-              ],
-              correctIndex: 2,
-              explanation:
-                "This power of judicial review makes constitutional supremacy enforceable.",
-            },
-            {
-              prompt: "An amendment to the Liberian Constitution requires approval by",
-              options: [
-                "a simple majority of the Legislature",
-                "two-thirds of both Houses and a two-thirds referendum vote",
-                "the President alone",
-                "the Supreme Court",
+                "not written anywhere",
+                "contained in a single formal document",
+                "only spoken",
+                "the same as no constitution",
               ],
               correctIndex: 1,
-              explanation:
-                "The referendum requirement places the final decision with the people.",
+              explanation: "A codified constitution is one formal document.",
             },
             {
-              prompt: "The Constitution of 1847 remained in force until",
-              options: ["1930", "1980", "1984", "1986"],
-              correctIndex: 1,
-              explanation:
-                "It was suspended following the coup of 12 April 1980, after 133 years.",
-            },
-            {
-              prompt: "The most important protective function of a constitution is to",
-              options: [
-                "name the capital city",
-                "limit the power of government",
-                "list the counties",
-                "set the national anthem",
-              ],
-              correctIndex: 1,
-              explanation:
-                "Limiting power is what prevents government from acting arbitrarily against citizens.",
-            },
-            {
-              prompt: "An unwritten constitution is one that",
+              prompt: "An uncodified (unwritten) constitution",
               options: [
                 "does not exist",
-                "is drawn from statutes, judicial decisions and conventions rather than one document",
-                "cannot be amended",
-                "applies only in wartime",
+                "is drawn from several sources rather than one document",
+                "cannot protect rights",
+                "applies only in war",
               ],
               correctIndex: 1,
-              explanation:
-                "The United Kingdom is the standard example of such a constitution.",
-            },
-          ],
-          test: [
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Define a constitution and state five of its functions.",
-              answerKey:
-                "A constitution is the body of fundamental rules by which a state is governed, establishing the organs of government, defining and limiting their powers, and setting out the relationship between state and citizen. Functions: establishes the organs of government and allocates power; limits the power of government; guarantees the rights of citizens; provides for peaceful change of government; defines the citizen-state relationship; serves as the standard against which all other law is measured; provides for its own amendment. Award 3 marks for the definition and 2 marks per function.",
-              marks: 13,
+              explanation: "It is drawn from many writings, as in Britain.",
             },
             {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Distinguish between written and unwritten constitutions, and between rigid and flexible constitutions, giving an example of each.",
-              answerKey:
-                "Written: contained in a single formal document — Liberia, the United States, Ghana. Unwritten: derived from statutes, judicial decisions, conventions and authoritative writings rather than one document — the United Kingdom. Rigid: amendable only by a special and difficult procedure — Liberia. Flexible: amendable by the ordinary legislative process — the United Kingdom. Award 2 marks per definition and 1 mark per correct example.",
-              marks: 12,
-            },
-            {
-              type: "MULTIPLE_CHOICE",
-              prompt:
-                "The Legislature passes an Act that conflicts with a guarantee in Chapter III. The Act is",
-              options: [
-                "valid because the Legislature is supreme",
-                "void to the extent of the inconsistency",
-                "valid until the next election",
-                "valid if the President signs it",
-              ],
-              correctIndex: 1,
-              answerKey:
-                "Article 2 establishes constitutional supremacy: any law inconsistent with the Constitution is void to the extent of the inconsistency, regardless of proper enactment or presidential assent. Option B.",
-              marks: 4,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "Describe the procedure for amending the Constitution of Liberia and explain why the framers made it difficult.",
-              answerKey:
-                "Procedure: a proposal is introduced in the Legislature; it must be approved by a two-thirds majority of both Houses; it is then submitted to the people in a national referendum; and it must be ratified by two-thirds of the votes cast. Reason for difficulty: a rigid procedure prevents a temporary legislative majority from removing fundamental rights or restructuring the state for short-term advantage, and the referendum requirement places the final decision with the people rather than with politicians. Award 2 marks per procedural step and 4 marks for a developed explanation of the rationale.",
-              marks: 12,
-            },
-            {
-              type: "ESSAY",
-              prompt:
-                "Explain the doctrine of constitutional supremacy and discuss how it is enforced in Liberia. Illustrate your answer by showing what would happen if the Legislature enacted a law violating a fundamental right.",
-              answerKey:
-                "Award marks as follows: statement of the doctrine with reference to Article 2, including that inconsistent law is void to the extent of the inconsistency, 7 marks; explanation that supremacy binds the Legislature and Executive alike and is not displaced by proper enactment or presidential assent, 6 marks; the role of the Supreme Court and the power of judicial review, with recognition that supremacy would be unenforceable without it, 8 marks; a worked illustration tracing a specific violating statute through challenge, judicial determination and invalidation, 9 marks; the amendment route under Chapter XII as the only lawful means of achieving what the Constitution forbids, with the two-thirds legislative and two-thirds referendum requirements, 8 marks; discussion of why the difficulty of amendment protects rights against transient majorities, 5 marks; organisation and expression, 4 marks. A learner who states the doctrine without addressing enforcement through judicial review should not exceed 18.",
-              marks: 45,
-            },
-          ],
-        },
-        {
-          slug: "branches-of-government",
-          title: "The Three Branches of Government",
-          objective:
-            "By the end of the lesson, learners should be able to describe the composition and functions of the legislature, executive and judiciary in Liberia, and explain the separation of powers and the system of checks and balances.",
-          estimatedMinutes: 80,
-          notes: `## Introduction
-
-- Power, once concentrated, is dangerous — so no single person or office runs the whole state.
-- Government is divided into three branches: the **Legislature**, the **Executive** and the **Judiciary**.
-- The arrangement is deliberately inefficient; that inefficiency is what protects citizens from tyranny.
-- **This topic:** the separation of powers; the composition and functions of each branch in Liberia; the system of checks and balances by which each branch restrains the others.
-
-## The separation of powers
-
-The doctrine, associated with the French writer **Montesquieu**, that governmental power should be divided among three separate organs, each with its own personnel and functions, so that no single body can control the state.
-
-The purpose is not efficiency. A single authority would be far more efficient. The purpose is the **prevention of tyranny**: power divided is power that can be checked.
-
-## The Legislature — Chapter V
-
-**Composition.** A bicameral body, the **National Legislature**:
-
-- **The Senate** — 30 members, two from each of the 15 counties, elected for **nine-year** terms.
-- **The House of Representatives** — members elected from constituencies for **six-year** terms.
-
-The **Vice President** serves as President of the Senate. The House elects its own **Speaker**.
-
-**Functions:**
-
-- Make, amend and repeal laws
-- Approve the national budget and authorise expenditure
-- Levy taxes
-- Ratify treaties and international agreements
-- Confirm presidential appointments, including cabinet ministers, ambassadors and judges
-- Declare war
-- **Impeach** the President, Vice President and judges for treason, bribery and other felonies
-- Oversee the conduct of the executive through investigation and inquiry
-
-## The Executive — Chapter VI
-
-**Composition.** Headed by the **President**, who is both **Head of State and Head of Government**, with the Vice President, cabinet ministers, and the civil service.
-
-The President is elected for a term of **six years**, and may serve a maximum of **two terms**.
-
-**Functions:**
-
-- Execute and enforce the laws
-- Conduct foreign relations and appoint ambassadors
-- Serve as **Commander-in-Chief** of the Armed Forces
-- Appoint ministers, ambassadors and judges, subject to Senate confirmation
-- Prepare and present the national budget
-- Sign or **veto** legislation
-- Grant pardons and reprieves
-- Declare a state of emergency, subject to legislative approval
-
-## The Judiciary — Chapter VII
-
-**Composition.**
-
-- **The Supreme Court** — the Chief Justice and four Associate Justices. It is the final court of appeal.
-- Subordinate courts: circuit courts, specialised courts, and magistrate courts.
-
-Justices are appointed by the President with the consent of the Senate, and hold office during good behaviour until retirement.
-
-**Functions:**
-
-- Interpret the Constitution and the laws
-- Adjudicate disputes between persons, and between persons and the state
-- Exercise **judicial review**, determining whether legislation and executive acts conform to the Constitution
-- Protect the fundamental rights guaranteed in Chapter III
-- Punish offenders and provide remedies
-
-**Judicial independence** is essential. Judges must be free from executive or legislative pressure, which is why security of tenure and protected salaries matter.
-
-## Checks and balances
-
-Separation alone is insufficient; each branch must be able to restrain the others.
-
-**Executive checks the Legislature:**
-
-- The President may **veto** a bill
-
-**Legislature checks the Executive:**
-
-- **Overrides** a veto by a two-thirds vote of both Houses
-- **Confirms or rejects** appointments
-- Controls the budget — the executive cannot spend money the legislature has not appropriated
-- **Impeaches** the President for defined offences
-- Ratifies treaties
-
-**Judiciary checks both:**
-
-- Declares legislation **unconstitutional**
-- Declares executive action unlawful
-
-**The others check the Judiciary:**
-
-- The President appoints judges
-- The Senate confirms them
-- The Legislature may impeach judges for misconduct
-- The Legislature may amend the law, or initiate constitutional amendment
-
-## Why the budget check matters most
-
-- Of all the checks, legislative control of money is in practice the most powerful.
-- An executive may hold every formal power, but it cannot act without funds.
-- The appropriation process is where genuine accountability is exercised.
-
-## Common errors and misconceptions
-
-- **Thinking the separation of powers exists for efficiency** — it exists to **prevent tyranny**; a single authority would be *more* efficient, but nothing could check its abuse.
-- **Confusing the Liberian figures with American ones** — Liberia has **30 senators** (nine-year terms), representatives on **six-year** terms, a **six-year** presidential term (two-term limit) and **five** Supreme Court justices.
-- **Believing the President's signature makes a treaty binding** — treaties require **legislative ratification**; the President negotiates but cannot bring a treaty into force alone.
-- **Overlooking judicial review as a check** — the courts can declare an Act **unconstitutional and void** *even when both political branches support it*, which is precisely why the power exists.`,
-          workedExample: `**Question:** The President signs a treaty with a foreign state granting it a fifty-year lease over a large area of forest land. The Legislature objects, and a citizens' group argues the treaty violates constitutional protections. Trace how each branch may act, identifying the checks involved.
-
-**Solution**
-
-*Step 1 — the Executive's power and its limit.*
-
-Conducting foreign relations and negotiating treaties falls squarely within the President's powers under Chapter VI. So far the President has acted within authority.
-
-But the power to **negotiate** a treaty is not the power to **bring it into force**. This is the first check.
-
-*Step 2 — the legislative check: ratification.*
-
-Under Chapter V, treaties require **ratification by the Legislature**. The President's signature alone does not bind the Republic.
-
-If the Legislature declines to ratify, the treaty simply does not take effect. This is a complete check, exercised without any need for the courts.
-
-*Step 3 — the second legislative check: the budget.*
-
-Suppose the treaty requires expenditure — infrastructure, compensation, administration. The Legislature controls **appropriation**. An executive cannot spend money the Legislature has not voted.
-
-In practice this is often the more decisive check, because it operates continuously rather than at a single moment.
-
-*Step 4 — the citizens' route: judicial review.*
-
-The citizens' group cannot vote in the Legislature, but it may go to court.
-
-If the treaty or its implementing legislation conflicts with the Constitution — for instance by purporting to transfer land in a manner inconsistent with constitutional protections of property or citizenship — the **Supreme Court** may declare it **unconstitutional and void** under Article 2.
-
-Note that this check is available even if **both** other branches support the treaty. This is precisely why judicial review exists: it protects constitutional limits against a united political majority.
-
-*Step 5 — if the Executive proceeds regardless.*
-
-Should the President attempt to implement an unratified treaty, or defy a court order, further checks engage:
-
-- The Legislature may **investigate** through its oversight power.
-- It may **withhold funds**.
-- In a serious case it may **impeach** the President for the offences the Constitution specifies.
-
-*Step 6 — the checks that run the other way.*
-
-The system is not one-directional. If the Legislature refuses ratification, the President may **veto** related legislation, and the Legislature needs **two-thirds of both Houses** to override. If the Court obstructs, the political branches control judicial **appointment and confirmation**, may **impeach** a judge for misconduct, and may initiate **constitutional amendment**.
-
-**Conclusion**
-
-No branch can accomplish this alone. The Executive negotiates but cannot ratify; the Legislature ratifies and funds but cannot negotiate or adjudicate; the Judiciary can invalidate but cannot initiate. Each is checked by the others, and the citizen retains an independent route to the courts.
-
-**The principle illustrated:** separation of powers is not merely an arrangement of offices on a chart. It is a working system in which every significant act of state requires the concurrence of more than one branch — which is exactly what makes arbitrary government difficult.`,
-          teachingTip:
-            "Run this topic as a simulation rather than a lecture. Divide the class into three branches, give them a bill — one drawn from something they actually care about, such as school fees or examination rules — and require it to pass through the whole process: drafted and voted in the legislature, signed or vetoed by the executive, then challenged in the court on constitutional grounds. Learners who have had a bill vetoed and then organised a two-thirds override understand checks and balances in a way that no diagram achieves. The point to draw out afterwards is the one learners consistently miss: the separation of powers is deliberately inefficient, and that inefficiency is the protection, not a defect. Ask them whether government would work better if one person decided everything, let them agree that it would be faster, and then ask what would stop that person. Finish by drilling the specific Liberian figures — 30 senators, nine-year Senate terms, six-year House terms, a six-year presidential term with a two-term limit, five Supreme Court justices — since these are frequently examined and easily confused with American equivalents.",
-          quiz: [
-            {
-              prompt: "The doctrine of separation of powers is chiefly associated with",
-              options: ["Montesquieu", "Aristotle", "Simon Greenleaf", "Hilary Teage"],
+              prompt: "Which country is a standard example of an uncodified constitution?",
+              options: ["Britain", "The United States", "Ghana", "France"],
               correctIndex: 0,
-              explanation:
-                "Montesquieu argued for dividing governmental power among three separate organs.",
+              explanation: "Britain, New Zealand and Israel use uncodified constitutions.",
             },
             {
-              prompt: "The Liberian Senate consists of",
-              options: ["15 members", "30 members", "45 members", "64 members"],
-              correctIndex: 1,
-              explanation: "Two senators are elected from each of the fifteen counties.",
-            },
-            {
-              prompt: "Who serves as President of the Liberian Senate?",
+              prompt: "A rigid constitution",
               options: [
-                "The Speaker",
-                "The Chief Justice",
-                "The Vice President",
-                "The oldest senator",
-              ],
-              correctIndex: 2,
-              explanation:
-                "The Vice President presides over the Senate, while the House elects its own Speaker.",
-            },
-            {
-              prompt: "The President of Liberia is elected for a term of",
-              options: ["Four years", "Five years", "Six years", "Nine years"],
-              correctIndex: 2,
-              explanation: "A six-year term, with a maximum of two terms.",
-            },
-            {
-              prompt: "The Supreme Court of Liberia is composed of",
-              options: [
-                "The Chief Justice and two Associate Justices",
-                "The Chief Justice and four Associate Justices",
-                "Nine justices",
-                "Fifteen justices",
+                "changes like ordinary law",
+                "needs a special, difficult process to change",
+                "cannot be changed at all ever",
+                "has no rules",
               ],
               correctIndex: 1,
-              explanation: "A Chief Justice and four Associate Justices sit on the Supreme Court.",
+              explanation: "Rigid constitutions require a special amendment process.",
             },
             {
-              prompt: "Judicial review is the power of the courts to",
+              prompt: "A flexible constitution",
               options: [
-                "make new laws",
-                "determine whether legislation and executive acts conform to the Constitution",
-                "appoint ministers",
-                "levy taxes",
+                "needs a special process to change",
+                "can be changed like ordinary laws",
+                "is always unwritten",
+                "cannot protect rights",
               ],
               correctIndex: 1,
-              explanation:
-                "It is the mechanism that makes constitutional supremacy enforceable.",
+              explanation: "Flexible constitutions change by ordinary legislation.",
             },
             {
-              prompt: "A presidential veto may be overridden by",
+              prompt: "Making a constitution harder to change than ordinary law is called",
+              options: ["Entrenchment", "Election", "Taxation", "Renunciation"],
+              correctIndex: 0,
+              explanation: "Entrenchment prevents easy modification and supports supremacy.",
+            },
+            {
+              prompt: "Constitutional supremacy means the constitution is",
               options: [
-                "a simple majority of the House",
-                "a two-thirds vote of both Houses",
-                "the Supreme Court",
-                "a national referendum",
+                "below ordinary law",
+                "the supreme legal framework governing all other law",
+                "optional",
+                "only advisory",
               ],
               correctIndex: 1,
-              explanation:
-                "The two-thirds requirement in both chambers is a legislative check on the executive.",
+              explanation: "The constitution governs all other legislation and government action.",
             },
             {
-              prompt: "Which branch has the power to impeach the President?",
+              prompt: "A negative right is",
               options: [
-                "The Judiciary",
-                "The Legislature",
-                "The Executive",
-                "The Elections Commission",
+                "an obligation on government to provide something",
+                "a limitation on government, saying what it may not do",
+                "a right that harms others",
+                "a tax",
               ],
               correctIndex: 1,
-              explanation:
-                "The Legislature may impeach for treason, bribery and other felonies specified in the Constitution.",
+              explanation: "Negative rights limit government action.",
             },
             {
-              prompt: "The purpose of the separation of powers is principally to",
+              prompt: "A positive right is",
               options: [
-                "make government faster",
-                "prevent the concentration of power and hence tyranny",
-                "reduce the cost of government",
-                "increase the number of officials",
+                "a limitation on government only",
+                "an obligation on government to guarantee a right",
+                "a right that can never exist",
+                "a foreign law",
               ],
               correctIndex: 1,
-              explanation:
-                "Efficiency is deliberately sacrificed so that no single body can control the state.",
+              explanation: "Positive rights oblige government to guarantee freedoms.",
             },
             {
-              prompt: "Senate terms in Liberia run for",
-              options: ["Four years", "Six years", "Nine years", "Twelve years"],
-              correctIndex: 2,
-              explanation:
-                "Senators serve nine-year terms; representatives serve six-year terms.",
+              prompt: "\"Government shall make no law...\" is an example of a",
+              options: ["Positive right", "Negative right", "Tax rule", "Duty"],
+              correctIndex: 1,
+              explanation: "It limits government, so it is a negative right.",
+            },
+            {
+              prompt: "An unwritten constitution",
+              options: [
+                "means there are no rules of government",
+                "still exists but is drawn from many sources",
+                "is always rigid",
+                "cannot be changed",
+              ],
+              correctIndex: 1,
+              explanation: "It exists; it is just not in one document.",
+            },
+            {
+              prompt: "A function of a constitution is to",
+              options: [
+                "structure the branches of government and their duties",
+                "set the price of food",
+                "control the weather",
+                "run private businesses",
+              ],
+              correctIndex: 0,
+              explanation: "It establishes the structure and duties of government.",
+            },
+            {
+              prompt: "The United States is an example of a country with a",
+              options: ["Written constitution", "No constitution", "Purely spoken constitution", "Secret constitution"],
+              correctIndex: 0,
+              explanation: "The US has a written, codified constitution.",
+            },
+            {
+              prompt: "Many modern democracies use constitutions based on",
+              options: ["Negative rights only", "Positive rights", "No rights", "Only duties"],
+              correctIndex: 1,
+              explanation: "Positive-rights constitutions oblige government to protect freedoms.",
+            },
+            {
+              prompt: "The main reason a constitution is entrenched is to",
+              options: [
+                "make it easy for one majority to change it",
+                "protect its principles from being altered by ordinary law",
+                "hide it from citizens",
+                "remove all rights",
+              ],
+              correctIndex: 1,
+              explanation: "Entrenchment protects the constitution from easy change.",
+            },
+            {
+              prompt: "A constitution reserves certain freedoms",
+              options: ["for the government", "for the people", "for foreigners only", "for no one"],
+              correctIndex: 1,
+              explanation: "It lists freedoms reserved for the people.",
+            },
+            {
+              prompt: "Which describes a rigid, written constitution?",
+              options: [
+                "One document, changed by a special difficult process",
+                "No document, changed by ordinary law",
+                "Spoken only, never changed",
+                "A private company rule",
+              ],
+              correctIndex: 0,
+              explanation: "Written = one document; rigid = special amendment process.",
             },
           ],
           test: [
             {
               type: "SHORT_ANSWER",
               prompt:
-                "Describe the composition of the National Legislature of Liberia and state five of its functions.",
+                "State what a constitution does, and explain why it must be harder to change than ordinary law.",
               answerKey:
-                "Composition: a bicameral body comprising the Senate of 30 members, two elected from each of the fifteen counties for nine-year terms and presided over by the Vice President; and the House of Representatives, elected from constituencies for six-year terms and presided over by a Speaker elected by the House. Functions: making, amending and repealing laws; approving the national budget and authorising expenditure; levying taxes; ratifying treaties; confirming presidential appointments; declaring war; impeaching the President, Vice President and judges; oversight of the executive. Award 5 marks for the composition and 2 marks per function up to 10.",
-              marks: 15,
-            },
-            {
-              type: "SHORT_ANSWER",
-              prompt:
-                "State five functions of the Executive branch and five functions of the Judiciary.",
-              answerKey:
-                "Executive: execute and enforce the laws; conduct foreign relations and appoint ambassadors; serve as Commander-in-Chief; appoint ministers and judges subject to Senate confirmation; prepare and present the budget; sign or veto legislation; grant pardons; declare a state of emergency subject to legislative approval. Judiciary: interpret the Constitution and laws; adjudicate disputes between persons and between persons and the state; exercise judicial review; protect fundamental rights; punish offenders and provide remedies. Award 1 mark per correct function.",
+                "A constitution describes the underlying principles of the people and government, structures the branches and their duties, limits government, and lists the freedoms or rights reserved for the people. It must be harder to amend than ordinary law (entrenchment) so that its principles and protected rights cannot be removed by an ordinary majority; this supports constitutional supremacy. Award 6 marks for what it does and 4 marks for the entrenchment point.",
               marks: 10,
             },
             {
+              type: "SHORT_ANSWER",
+              prompt:
+                "Distinguish between written and unwritten constitutions, giving an example of each.",
+              answerKey:
+                "A written (codified) constitution is contained in a single formal document — for example the United States. An unwritten (uncodified) constitution is drawn from several sources rather than one document — for example Britain, New Zealand or Israel. An unwritten constitution still exists; it is just not in one place. Award 3 marks per definition and 1 mark per example, plus 2 for the point that an unwritten constitution still exists.",
+              marks: 8,
+            },
+            {
               type: "MULTIPLE_CHOICE",
               prompt:
-                "The Legislature passes a bill, the President vetoes it, and the Legislature then musters 70 per cent support in both Houses. The result is that",
-              options: [
-                "the bill fails permanently",
-                "the bill becomes law, the veto having been overridden",
-                "the Supreme Court must approve it",
-                "the bill goes to a referendum",
-              ],
+                "A constitution that can only be changed by a special, difficult procedure is",
+              options: ["Flexible", "Rigid", "Unwritten", "Ordinary"],
               correctIndex: 1,
               answerKey:
-                "A veto is overridden by a two-thirds vote of both Houses. Seventy per cent exceeds two-thirds, so the bill becomes law without presidential assent. Option B.",
+                "A rigid constitution needs a special, difficult process to change; a flexible one changes like ordinary law. Option B.",
               marks: 4,
             },
             {
               type: "SHORT_ANSWER",
               prompt:
-                "Explain four checks that the Legislature exercises over the Executive, and two that the Judiciary exercises over both other branches.",
+                "Explain the difference between negative rights and positive rights in a constitution.",
               answerKey:
-                "Legislative checks on the Executive: overriding a veto by two-thirds of both Houses; confirming or rejecting presidential appointments; controlling appropriation, so that the executive cannot spend unappropriated funds; impeaching the President for specified offences; ratifying treaties; conducting oversight investigations. Award 2 marks each for four. Judicial checks: declaring legislation unconstitutional and void; declaring executive action unlawful. Award 3 marks each. Credit a learner who notes that legislative control of the budget is in practice the most powerful check because no branch can act without funds.",
-              marks: 14,
+                "Negative rights are limitations on government, stating what government may not do (for example, government shall make no law restricting a freedom). Positive rights are obligations on government to guarantee the people's rights (for example, a right that shall be guaranteed). Award 4 marks per type explained.",
+              marks: 8,
             },
             {
               type: "ESSAY",
               prompt:
-                "Explain the doctrine of separation of powers and discuss how the system of checks and balances operates in Liberia. Assess whether the deliberate inefficiency of this arrangement is justified.",
+                "Explain what a constitution is and does, distinguish written from unwritten and rigid from flexible constitutions, and describe how constitutions protect individual liberties.",
               answerKey:
-                "Award marks as follows: statement of the doctrine and its association with Montesquieu, including the division of personnel as well as function, 6 marks; accurate account of the three branches with composition, principal officers and functions, referring to the relevant chapters of the Constitution, 12 marks; checks exercised by each branch over the others, treated in both directions and covering at least six distinct checks, 12 marks; recognition that legislative control of appropriation is in practice the most effective check, 4 marks; assessment of the efficiency question, developing the argument that concentration of power would be faster but would remove the means of restraining abuse, with a reasoned conclusion, 8 marks; use of specific Liberian detail — 30 senators, nine-year and six-year terms, six-year presidential term with two-term limit, five Supreme Court justices — 4 marks; organisation and expression, 4 marks. A learner who describes the three branches but does not address checks and balances should not exceed 20.",
+                "Award marks as follows: a constitution defined as setting out the principles of the people and government, structuring the branches and their duties, limiting government and listing reserved freedoms, 12 marks; written (codified, one document) versus unwritten (uncodified, many sources, still existing), with examples, 10 marks; rigid (special process) versus flexible (ordinary law), with entrenchment and constitutional supremacy explained, 12 marks; protection of liberties through negative rights (limits on government) and positive rights (obligations to guarantee), 10 marks; organisation and expression, 6 marks. A learner who does not address both the types and the protection of liberties should not exceed 30.",
+              marks: 50,
+            },
+          ],
+        },
+        // source: GeeksforGeeks — Working of the Government (https://www.geeksforgeeks.org/social-science/working-of-the-government-in-india/) for the general doctrine that the legislature makes laws, the executive implements them and the judiciary interprets them, plus separation of powers and checks and balances. FLAG: Liberia-specific figures (numbers of senators/representatives, term lengths, number of Supreme Court justices, chapter references) could NOT be sourced from an approved page and need a Liberian primary source. General doctrine is taught here. See report.
+        {
+          slug: "branches-of-government",
+          title: "The Branches of Government",
+          objective:
+            "By the end of the lesson, learners should be able to describe the three branches of government, explain the separation of powers, and explain checks and balances.",
+          estimatedMinutes: 80,
+          notes: `## The separation of powers
+
+The **separation of powers** divides the responsibilities of government among three branches, so that no single body controls the whole state. The arrangement supports a system of **checks and balances**.
+
+The idea is associated with the writer **Montesquieu**, who argued for dividing governmental power. Classical thinkers who supported it, such as Montesquieu and others, stressed protection against the tyranny of the majority.
+
+## The three branches and their functions
+
+| Branch | Main function |
+| --- | --- |
+| Legislature | Creates (makes) laws |
+| Executive | Implements and enforces laws |
+| Judiciary | Interprets laws and administers justice |
+
+- **Legislature** — the law-making body. It enacts laws, debates important issues and oversees the working of the government.
+- **Executive** — responsible for implementing and enforcing laws and regulations; it handles everyday governance, administration and decision-making.
+- **Judiciary** — responsible for the interpretation of laws and the administration of justice. It ensures laws are upheld, resolves disputes, and protects the rights and liberties of individuals.
+
+## How the branches work together
+
+- The legislature enacts laws and carries out oversight.
+- The executive formulates policies and executes the laws.
+- The judiciary interprets the laws and settles legal disputes.
+
+## Checks and balances
+
+Separating the branches is not enough on its own; each branch must be able to restrain the others. This system of **checks and balances** helps maintain limits on power and ensures a functioning democratic government.
+
+Checks and balances control deviations by officials, such as corruption, and complement the accountability provided by elections. They protect against the tyranny of the majority by making sure power is not concentrated in one branch.
+
+## Why divide power
+
+- To prevent the concentration of power in one body.
+- To protect against the tyranny of the majority.
+- To keep officials accountable between elections.
+
+## Key points
+
+- Government power is separated into three branches: legislature, executive and judiciary.
+- The legislature makes laws, the executive implements them, the judiciary interprets them.
+- Checks and balances let each branch restrain the others and prevent concentration of power.
+- The doctrine is associated with Montesquieu and aims to prevent tyranny.`,
+          workedExample: `**Question:** A new law is needed to manage a public forest. Explain the role each branch of government would play in making, carrying out and interpreting this law, and show how the separation of powers and checks and balances apply.
+
+**Solution**
+
+*Step 1 — The legislature makes the law.* The legislature is the law-making body. It would debate the issue, enact the forest law, and later oversee how it is working. This is its function: creating laws.
+
+*Step 2 — The executive implements the law.* The executive is responsible for implementing and enforcing laws. It would carry out the forest law day to day — issuing permits, employing rangers, administering the rules. This is everyday governance and administration.
+
+*Step 3 — The judiciary interprets the law.* If a dispute arises — say a company is accused of breaking the forest law — the judiciary interprets the law and administers justice. It resolves the dispute, ensures the law is upheld, and protects the rights and liberties of those involved.
+
+*Step 4 — Separation of powers.* Each task is handled by a different branch, so no single body makes, enforces and judges the law by itself. Power is divided.
+
+*Step 5 — Checks and balances.* Because the branches are separate, each can restrain the others: the legislature oversees how the executive enforces the law, and the judiciary can decide whether actions under the law are lawful. This helps maintain limits on power, guards against abuses such as corruption, and protects against the tyranny of the majority.
+
+**Answer:** The legislature makes the forest law, the executive implements it, and the judiciary interprets it in disputes. Separation of powers divides these roles among three branches, and checks and balances let each branch restrain the others so that power is not concentrated.`,
+          quiz: [
+            {
+              prompt: "The separation of powers divides government among",
+              options: ["Two branches", "Three branches", "Five branches", "One branch"],
+              correctIndex: 1,
+              explanation: "Power is divided among the legislature, executive and judiciary.",
+            },
+            {
+              prompt: "The doctrine of separation of powers is chiefly associated with",
+              options: ["Montesquieu", "A football coach", "A scientist", "A poet"],
+              correctIndex: 0,
+              explanation: "Montesquieu argued for dividing governmental power.",
+            },
+            {
+              prompt: "The legislature is responsible for",
+              options: ["Making laws", "Enforcing laws", "Interpreting laws", "Growing crops"],
+              correctIndex: 0,
+              explanation: "The legislature is the law-making body.",
+            },
+            {
+              prompt: "The executive is responsible for",
+              options: [
+                "making laws",
+                "implementing and enforcing laws",
+                "interpreting laws",
+                "electing judges only",
+              ],
+              correctIndex: 1,
+              explanation: "The executive implements and enforces the laws.",
+            },
+            {
+              prompt: "The judiciary is responsible for",
+              options: [
+                "making laws",
+                "enforcing laws",
+                "interpreting laws and administering justice",
+                "collecting taxes",
+              ],
+              correctIndex: 2,
+              explanation: "The judiciary interprets laws and administers justice.",
+            },
+            {
+              prompt: "The main purpose of separating powers is to",
+              options: [
+                "make government faster",
+                "prevent the concentration of power in one body",
+                "increase the number of officials",
+                "reduce elections",
+              ],
+              correctIndex: 1,
+              explanation: "Division prevents any single body from controlling the state.",
+            },
+            {
+              prompt: "Checks and balances allow each branch to",
+              options: ["Ignore the others", "Restrain the others", "Abolish the others", "Rule alone"],
+              correctIndex: 1,
+              explanation: "Each branch can restrain the others.",
+            },
+            {
+              prompt: "The judiciary protects",
+              options: [
+                "only the government",
+                "the rights and liberties of individuals",
+                "only officials",
+                "no one",
+              ],
+              correctIndex: 1,
+              explanation: "It ensures laws are upheld and protects individuals' rights.",
+            },
+            {
+              prompt: "Which branch resolves legal disputes?",
+              options: ["Legislature", "Executive", "Judiciary", "The press"],
+              correctIndex: 2,
+              explanation: "The judiciary settles disputes and administers justice.",
+            },
+            {
+              prompt: "Everyday governance and administration are handled by the",
+              options: ["Legislature", "Executive", "Judiciary", "Voters"],
+              correctIndex: 1,
+              explanation: "The executive handles day-to-day governance.",
+            },
+            {
+              prompt: "Oversight of how the government is working is carried out by the",
+              options: ["Legislature", "Judiciary alone", "No branch", "Foreign states"],
+              correctIndex: 0,
+              explanation: "The legislature oversees the functioning of government.",
+            },
+            {
+              prompt: "Checks and balances complement the accountability provided by",
+              options: ["Elections", "Rainfall", "Taxes only", "Nothing"],
+              correctIndex: 0,
+              explanation: "They add to the accountability that elections provide.",
+            },
+            {
+              prompt: "Classical thinkers stressed that separation of powers protects against",
+              options: [
+                "the tyranny of the majority",
+                "good harvests",
+                "free elections",
+                "public debate",
+              ],
+              correctIndex: 0,
+              explanation: "It guards against the tyranny of the majority.",
+            },
+            {
+              prompt: "Which sequence matches branch to function?",
+              options: [
+                "Legislature interprets, executive makes, judiciary enforces",
+                "Legislature makes, executive implements, judiciary interprets",
+                "Legislature enforces, executive interprets, judiciary makes",
+                "All three make laws",
+              ],
+              correctIndex: 1,
+              explanation: "Make, implement, interpret — legislature, executive, judiciary.",
+            },
+            {
+              prompt: "Checks and balances help control",
+              options: [
+                "deviations by officials such as corruption",
+                "the weather",
+                "crop yields",
+                "school timetables",
+              ],
+              correctIndex: 0,
+              explanation: "They control abuses such as corruption.",
+            },
+            {
+              prompt: "A functioning democratic government is helped by",
+              options: [
+                "concentrating power in one branch",
+                "separation of powers with checks and balances",
+                "removing all branches",
+                "ending elections",
+              ],
+              correctIndex: 1,
+              explanation: "Separation with checks and balances maintains limits on power.",
+            },
+            {
+              prompt: "The legislature also",
+              options: [
+                "debates important issues",
+                "delivers court verdicts",
+                "commands the army only",
+                "prints money privately",
+              ],
+              correctIndex: 0,
+              explanation: "It enacts laws and debates important issues.",
+            },
+            {
+              prompt: "Interpreting a disputed law is the role of the",
+              options: ["Executive", "Judiciary", "Legislature", "Electorate"],
+              correctIndex: 1,
+              explanation: "The judiciary interprets laws.",
+            },
+            {
+              prompt: "The three branches together ensure that",
+              options: [
+                "one person controls the state",
+                "power is shared and each branch checks the others",
+                "no laws are ever made",
+                "courts make all laws",
+              ],
+              correctIndex: 1,
+              explanation: "Sharing power and mutual checks prevent concentration.",
+            },
+            {
+              prompt: "Enforcing the laws made by the legislature is the job of the",
+              options: ["Judiciary", "Executive", "Press", "Voters"],
+              correctIndex: 1,
+              explanation: "The executive implements and enforces laws.",
+            },
+          ],
+          test: [
+            {
+              type: "SHORT_ANSWER",
+              prompt:
+                "Name the three branches of government and state the main function of each.",
+              answerKey:
+                "Legislature — makes (creates) laws, debates important issues and oversees government. Executive — implements and enforces laws, handling everyday governance and administration. Judiciary — interprets laws and administers justice, resolving disputes and protecting rights. Award 2 marks per branch named with its function; award up to 3 further marks for accurate detail.",
+              marks: 9,
+            },
+            {
+              type: "SHORT_ANSWER",
+              prompt:
+                "Explain the separation of powers and why it is used.",
+              answerKey:
+                "The separation of powers divides the responsibilities of government among three branches so that no single body controls the whole state, supporting a system of checks and balances. It is associated with Montesquieu. It is used to prevent the concentration of power, to protect against the tyranny of the majority, and to keep officials accountable. Award 5 marks for the explanation and 3 marks for the reasons.",
+              marks: 8,
+            },
+            {
+              type: "MULTIPLE_CHOICE",
+              prompt:
+                "Which branch interprets laws and administers justice?",
+              options: ["Legislature", "Executive", "Judiciary", "The electorate"],
+              correctIndex: 2,
+              answerKey:
+                "The judiciary interprets laws, resolves disputes and protects rights. Option C.",
+              marks: 4,
+            },
+            {
+              type: "SHORT_ANSWER",
+              prompt:
+                "Explain what checks and balances are and give one reason they matter.",
+              answerKey:
+                "Checks and balances are the arrangement by which each branch of government can restrain the others, so that no branch dominates. They matter because they maintain limits on power, control deviations by officials such as corruption, complement the accountability provided by elections, and protect against the tyranny of the majority. Award 4 marks for the explanation and 4 marks for a developed reason.",
+              marks: 8,
+            },
+            {
+              type: "ESSAY",
+              prompt:
+                "Describe the three branches of government and their functions, explain the separation of powers and the system of checks and balances, and discuss why dividing power is important.",
+              answerKey:
+                "Award marks as follows: the three branches described with functions — legislature (makes laws, debates, oversees), executive (implements and enforces, everyday governance), judiciary (interprets laws, administers justice, protects rights), 15 marks; the separation of powers explained, dividing responsibilities so no single body controls the state, associated with Montesquieu, 10 marks; checks and balances explained as each branch restraining the others to maintain limits on power, 12 marks; discussion of why dividing power matters — preventing concentration of power, protecting against the tyranny of the majority, keeping officials accountable, 8 marks; organisation and expression, 5 marks. A learner who describes the branches but does not address checks and balances should not exceed 30.",
               marks: 50,
             },
           ],

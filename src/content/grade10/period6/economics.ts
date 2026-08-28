@@ -1,485 +1,463 @@
 import type { PeriodContent } from "@/content/types";
 
 // Aligned to the Liberian MoE National Curriculum for Economics, Grade 10,
-// Semester Two, Period VI: Types of Business Organizations.
+// Semester Two, Period VI: Types of Business Organizations. CONTENTS:
+// (1) Definition of sole-proprietorship, partnership, corporation, joint-stock
+// companies, cooperatives, statutory corporation and joint-ventures;
+// (2) Main features of the same; (3) Advantages & disadvantages of the same;
+// (4) Sources of funding of the same; (5) Business enterprise policy on
+// privatization, commercialization, indigenization and nationalization.
+// CONTENTS items 1-4 are cross-cutting aspects of the SAME set of organization
+// types, so they are taught organized BY organization type (each topic covers
+// that form's definition, features, advantages/disadvantages and funding),
+// which keeps each topic coherent while still covering every aspect; item 5 is
+// its own policy topic. Five sourced topics result.
 export const economicsG10P6: PeriodContent = {
   grade: 10,
   number: 6,
   title: "Types of Business Organizations",
   summary:
-    "Period VI of the MoE Grade 10 Economics syllabus. Learners study the main forms of business organization — the sole proprietorship, the partnership, companies (private and public limited), cooperatives and public (state) enterprises — comparing their ownership, control, liability and advantages.",
+    "Period VI of the MoE Grade 10 Economics syllabus. Learners study the main forms of business organization — the sole proprietorship, the partnership, the company/joint-stock corporation, cooperatives, statutory (public) corporations and joint ventures — comparing their definition, features, advantages, disadvantages and sources of funding, and examine business enterprise policies of privatization, commercialization, indigenization and nationalization.",
   topics: [
+    // source: OpenStax — Introduction to Business, 4.1 Going It Alone: Sole Proprietorships (https://openstax.org/books/introduction-business/pages/4-1-going-it-alone-sole-proprietorships)
     {
-      slug: "sole-proprietorship-and-partnership",
-      title: "The Sole Proprietorship and the Partnership",
+      slug: "sole-proprietorship",
+      title: "The Sole Proprietorship",
       objective:
-        "By the end of the topic, learners should be able to describe the sole proprietorship and the partnership, and state the advantages and disadvantages of each.",
-      estimatedMinutes: 150,
-      notes: `## Introduction
+        "By the end of the topic, learners should be able to define a sole proprietorship, state its features, list its advantages and disadvantages, and describe how it is financed.",
+      estimatedMinutes: 110,
+      notes: `## Definition
 
-- A roadside seller, two friends with a shop, and a large company are all "businesses" — but differ in who owns them, who decides, and who bears the debts.
-- **This topic:** the two simplest forms — **sole proprietorship** and **partnership** — their advantages and disadvantages, and the key idea of **liability**.
+**Sole proprietorship** — a business that is **established, owned, operated and often financed by one person**.
+- It is the simplest and most common form of business.
 
-## What is a business organization?
+## Main features
 
-A **business organization** is a firm set up to produce goods or services, usually to make a **profit**. Businesses differ in **who owns them, who controls them, how they raise money**, and how far the owners are responsible for the firm's debts (their **liability**). We begin with the two simplest forms.
+- **One owner** who makes all the decisions.
+- The owner and the business are **legally the same** (not a separate legal person).
+- **Unlimited liability** — the owner is personally responsible for all the business's debts.
+- Profits are taxed as the owner's **personal income**.
+- Minimal legal formality to start or close.
 
-## The sole proprietorship
+## Advantages
 
-A **sole proprietorship (one-man business)** is a business owned and run by **one person**. It is the commonest and simplest kind of business — the market trader, tailor, shopkeeper or small farmer.
-
-**Advantages:**
-- **Easy and cheap to set up** — few legal requirements.
+- **Easy and inexpensive** to establish.
 - The owner **keeps all the profits**.
-- The owner has **full control** and makes quick decisions.
-- Close, personal relationship with customers.
+- **Complete control** over decisions.
+- **Freedom** from most government regulation.
+- No special business taxes; simple to dissolve or sell.
 
-**Disadvantages:**
-- **Unlimited liability** — the owner is **personally responsible for all the debts**; if the business fails, the owner may have to sell personal property to pay them.
-- **Limited capital** — one person can raise only so much money, so the business stays small.
-- **The owner bears all the risk** and workload.
-- The business often **ends** if the owner dies or stops (no continuity).
+## Disadvantages
 
-## The partnership
+- **Unlimited personal liability** for debts — personal assets are at risk.
+- **Difficulty raising capital** (seen as high-risk by lenders).
+- **Limited managerial expertise** — one person must handle everything.
+- Hard to attract qualified employees.
+- **Unstable business life** — the business may end if the owner dies or leaves.
+- The owner bears **all losses**.
 
-A **partnership** is a business owned by **two to twenty people (partners)** who share the capital, the work, the profits and the losses, usually under a **partnership agreement (deed)**.
+## Sources of funding
 
-**Advantages:**
-- **More capital** than a sole proprietorship — several people contribute.
-- **Shared work and shared risk**.
-- Partners can bring **different skills** (e.g. one good at selling, one at accounts).
-- More minds for **better decisions**.
+- Mostly **personal funds**: the owner's savings and start-up capital.
+- Personal credit cards, a loan against the home, or selling personal investments.
+- Heavy reliance on personal financing because lenders see the form as higher risk (unlimited liability).
 
-**Disadvantages:**
-- **Unlimited liability** — like the sole proprietor, partners are usually personally liable for the business's debts.
-- **Disagreements** between partners can harm the business.
-- Profits must be **shared**.
-- A partner's actions **bind the others**, and the partnership may end if a partner leaves or dies.
+## Common errors
 
-## Comparing the two
+- **Thinking the owner's liability is limited.** It is **unlimited** — personal assets can be taken for business debts.
+- **Assuming it is a separate legal person.** Owner and business are legally one.
+- **Confusing "keeps all profit" with "no risk".** The owner also bears all the losses.`,
+      workedExample: `**Question:** Musu opens a small tailoring shop alone, using her savings, and runs it herself. The shop later owes 5,000 dollars it cannot pay from business takings. (a) What form of business is this? (b) State two features. (c) Explain what happens about the 5,000-dollar debt.
 
-| Feature | Sole proprietorship | Partnership |
-|---|---|---|
-| Owners | 1 | 2–20 |
-| Capital | small | more (shared) |
-| Liability | unlimited | unlimited |
-| Profits | all to owner | shared |
-| Decisions | one person | shared |
+**Solution**
 
-Both are simple to form and both have **unlimited liability** — the key weakness that companies overcome (the next topic).
+(a) A business established, owned, operated and financed by **one person** is a **sole proprietorship**.
 
-## Common errors and misconceptions
+(b) Features: Musu is the **only owner and decision-maker**; the business and Musu are **legally the same**, so she has **unlimited liability**; profits are her personal income; she started it with minimal formality.
 
-- **Thinking a partnership has limited liability** — like the sole proprietor, partners usually have **unlimited liability** and can lose personal property to pay the firm's debts; limited liability belongs to *companies*.
-- **Believing the sole proprietor has no responsibility for debts** — with **unlimited liability**, the owner is *personally* responsible for **all** the business's debts.
-- **Assuming a partnership can have unlimited partners** — a partnership has **2 to 20** partners; a single owner is a sole proprietorship, and larger numbers of owners point to a company.
-- **Forgetting that a partner's actions bind the others** — one partner's business decisions legally commit *all* the partners, which is a real risk of the form.`,
-      workedExample: `**Task.** A tailor runs her shop alone. She is thinking of taking a partner. (a) What form of business does she run now? (b) Give two advantages and one disadvantage of her current form. (c) How would taking a partner help, and what new risk appears?
+(c) Because of **unlimited liability**, Musu is **personally responsible** for the 5,000-dollar debt. If the business cannot pay from its takings, her **personal assets** (savings, property) can be used to settle it — the debt is not limited to what she put into the shop.
 
-**Part (a) — her current form**
-She runs a **sole proprietorship** (a one-man/one-woman business) — owned and run by one person.
-
-**Part (b) — advantages and a disadvantage of the sole proprietorship**
-- **Advantages** (any two): it was **easy and cheap to set up**; she **keeps all the profits**; she has **full control** and can decide quickly; a close relationship with her customers.
-- **Disadvantage** (any one): **unlimited liability** — she is personally responsible for all the business's debts; or **limited capital**, so the business stays small; or she bears all the risk and workload.
-
-**Part (c) — taking a partner**
-Forming a **partnership** would help because the partner brings **more capital** (so the business can grow), **shares the work and the risk**, and may add **different skills** and better decisions.
-
-But a **new risk** appears: in a partnership the partners still have **unlimited liability**, and **each partner's actions bind the others** — so she could be held responsible for debts caused by her partner's decisions, and disagreements could harm the business. Profits must also now be **shared**.
-
-**Conclusion:** she currently runs a sole proprietorship (easy to set up, full profit and control, but unlimited liability and limited capital); a partnership would add capital, shared work and skills, but keeps unlimited liability and adds the risk that a partner's actions bind her.`,
-      teachingTip:
-        "The one concept that carries the whole unit is **liability** — teach 'unlimited liability' (owner personally responsible for debts) explicitly, because it is the weakness that makes learners understand why companies exist. Use local examples (the market trader = sole proprietor; two friends running a shop = partnership) so the forms feel real. A two-column advantage/disadvantage table is exactly what exam 'compare' questions reward.",
+**Answer:** It is a sole proprietorship; Musu is sole owner with unlimited liability; she must pay the 5,000-dollar debt personally, from her own assets if necessary.`,
       quiz: [
-        {
-          prompt: "A business organization is usually set up to produce goods or services and make a…",
-          options: ["profit", "loss", "law", "map"],
-          correctIndex: 0,
-          explanation: "Most businesses aim to make a profit.",
-        },
-        {
-          prompt: "A sole proprietorship is owned by…",
-          options: ["one person", "two to twenty people", "the government", "shareholders"],
-          correctIndex: 0,
-          explanation: "A sole proprietorship has a single owner.",
-        },
-        {
-          prompt: "An advantage of a sole proprietorship is that the owner…",
-          options: ["keeps all the profits", "shares profits with many", "has limited liability", "needs much capital"],
-          correctIndex: 0,
-          explanation: "The single owner keeps all the profit.",
-        },
-        {
-          prompt: "'Unlimited liability' means the owner is…",
-          options: ["personally responsible for all the business's debts", "not responsible for debts", "paid a fixed salary", "protected by the government"],
-          correctIndex: 0,
-          explanation: "The owner's personal property can be used to pay debts.",
-        },
-        {
-          prompt: "A disadvantage of a sole proprietorship is…",
-          options: ["limited capital", "too many owners", "sharing profits", "government control"],
-          correctIndex: 0,
-          explanation: "One person can raise only limited capital.",
-        },
-        {
-          prompt: "A partnership is owned by…",
-          options: ["two to twenty people", "one person", "the state", "shareholders in millions"],
-          correctIndex: 0,
-          explanation: "Partnerships have 2–20 partners.",
-        },
-        {
-          prompt: "The document setting out how a partnership is run is the…",
-          options: ["partnership agreement (deed)", "share certificate", "invoice", "budget"],
-          correctIndex: 0,
-          explanation: "A partnership deed governs the partnership.",
-        },
-        {
-          prompt: "An advantage of a partnership over a sole proprietorship is…",
-          options: ["more capital", "no owners", "less work shared", "government funding"],
-          correctIndex: 0,
-          explanation: "Several partners contribute more capital.",
-        },
-        {
-          prompt: "Partners can bring different…",
-          options: ["skills", "countries", "governments", "currencies only"],
-          correctIndex: 0,
-          explanation: "Different skills strengthen the business.",
-        },
-        {
-          prompt: "A disadvantage of a partnership is…",
-          options: ["disagreements between partners", "keeping all the profit alone", "having only one owner", "no capital at all"],
-          correctIndex: 0,
-          explanation: "Partners may disagree, harming the business.",
-        },
-        {
-          prompt: "In a partnership, profits must be…",
-          options: ["shared", "kept by one partner", "given to the state", "destroyed"],
-          correctIndex: 0,
-          explanation: "Partners share the profits.",
-        },
-        {
-          prompt: "Both the sole proprietorship and the partnership have…",
-          options: ["unlimited liability", "limited liability", "millions of owners", "no owners"],
-          correctIndex: 0,
-          explanation: "Both forms have unlimited liability.",
-        },
-        {
-          prompt: "In a sole proprietorship, decisions are made by…",
-          options: ["one person", "a board of directors", "shareholders", "the government"],
-          correctIndex: 0,
-          explanation: "The single owner decides.",
-        },
-        {
-          prompt: "A market trader running her own stall is an example of a…",
-          options: ["sole proprietorship", "partnership", "public company", "cooperative"],
-          correctIndex: 0,
-          explanation: "A one-person business is a sole proprietorship.",
-        },
-        {
-          prompt: "If the owner of a sole proprietorship dies, the business often…",
-          options: ["ends (no continuity)", "continues forever automatically", "becomes a company", "is taken by the state"],
-          correctIndex: 0,
-          explanation: "It usually lacks continuity.",
-        },
-        {
-          prompt: "In a partnership, one partner's actions can…",
-          options: ["bind the other partners", "never affect others", "be ignored", "end all liability"],
-          correctIndex: 0,
-          explanation: "Partners are bound by each other's actions.",
-        },
-        {
-          prompt: "Which form is the easiest and cheapest to set up?",
-          options: ["sole proprietorship", "public limited company", "cooperative", "state enterprise"],
-          correctIndex: 0,
-          explanation: "The sole proprietorship has the fewest requirements.",
-        },
-        {
-          prompt: "Why does a sole proprietorship usually stay small?",
-          options: ["limited capital from one owner", "too many owners", "government limits", "unlimited capital"],
-          correctIndex: 0,
-          explanation: "One person can raise only limited funds.",
-        },
-        {
-          prompt: "A partnership shares the work and the…",
-          options: ["risk", "government", "country", "currency"],
-          correctIndex: 0,
-          explanation: "Partners share the work and the risk.",
-        },
-        {
-          prompt: "The key weakness that both these forms share, which companies overcome, is…",
-          options: ["unlimited liability", "having profits", "having owners", "making goods"],
-          correctIndex: 0,
-          explanation: "Companies introduce limited liability.",
-        },
+        { prompt: "A sole proprietorship is owned by", options: ["two people", "one person", "shareholders", "the state"], correctIndex: 1, explanation: "It is owned and run by one person." },
+        { prompt: "In a sole proprietorship, the owner and the business are", options: ["separate legal persons", "legally the same", "always a company", "owned by a board"], correctIndex: 1, explanation: "There is no separate legal identity." },
+        { prompt: "The liability of a sole proprietor is", options: ["limited", "unlimited", "zero", "shared"], correctIndex: 1, explanation: "The owner is personally liable for all debts." },
+        { prompt: "An advantage of a sole proprietorship is", options: ["unlimited liability", "the owner keeps all the profits", "double taxation", "complex formation"], correctIndex: 1, explanation: "The single owner keeps all profit." },
+        { prompt: "A disadvantage of a sole proprietorship is", options: ["easy formation", "complete control", "difficulty raising capital", "keeping all profit"], correctIndex: 2, explanation: "Raising capital is hard for a sole trader." },
+        { prompt: "Profits of a sole proprietorship are taxed as", options: ["corporate profit", "the owner's personal income", "not taxed", "sales tax only"], correctIndex: 1, explanation: "They are personal income." },
+        { prompt: "Sole proprietorships are financed mainly by", options: ["selling shares to the public", "the owner's personal funds", "government grants only", "bonds"], correctIndex: 1, explanation: "Personal funds are the main source." },
+        { prompt: "'Unstable business life' means the business", options: ["never ends", "may end if the owner dies or leaves", "is a company", "has many owners"], correctIndex: 1, explanation: "It depends on the single owner." },
+        { prompt: "Who makes the decisions in a sole proprietorship?", options: ["A board of directors", "The single owner", "Shareholders", "The government"], correctIndex: 1, explanation: "The owner has complete control." },
+        { prompt: "The simplest and most common form of business is the", options: ["corporation", "partnership", "sole proprietorship", "cooperative"], correctIndex: 2, explanation: "Sole proprietorships are simplest and most common." },
+        { prompt: "Unlimited liability means the owner's ... are at risk for business debts.", options: ["shares", "personal assets", "employees", "customers"], correctIndex: 1, explanation: "Personal assets can be taken to pay debts." },
+        { prompt: "A sole proprietorship is relatively free from", options: ["all costs", "most government regulation", "any risk", "the market"], correctIndex: 1, explanation: "It faces minimal regulation." },
+        { prompt: "Lenders view sole proprietorships as", options: ["low risk", "higher risk", "risk-free", "state-backed"], correctIndex: 1, explanation: "Unlimited liability makes them higher risk to lenders." },
+        { prompt: "Which is TRUE of a sole proprietorship?", options: ["It has limited liability", "The owner bears all losses", "It sells shares publicly", "It has a board"], correctIndex: 1, explanation: "The owner bears all losses as well as all profit." },
+        { prompt: "A drawback of one person running everything is", options: ["more capital", "limited managerial expertise", "double taxation", "public reporting"], correctIndex: 1, explanation: "One person cannot be expert in all areas." },
+        { prompt: "Dissolving a sole proprietorship is", options: ["very difficult", "relatively simple", "impossible", "decided by shareholders"], correctIndex: 1, explanation: "It is simple to close." },
+        { prompt: "The owner of a sole proprietorship keeps", options: ["half the profit", "all the profit", "no profit", "a fixed salary only"], correctIndex: 1, explanation: "All profit goes to the sole owner." },
+        { prompt: "A common source of start-up funds for a sole trader is", options: ["public share issue", "personal savings", "corporate bonds", "a stock exchange listing"], correctIndex: 1, explanation: "Personal savings are typical." },
+        { prompt: "Which pairs a feature with the sole proprietorship correctly?", options: ["Separate legal person", "Board of directors", "Unlimited liability", "Public shareholders"], correctIndex: 2, explanation: "Unlimited liability is a key feature." },
+        { prompt: "The main reason it is hard to expand a sole proprietorship is", options: ["too much regulation", "limited access to capital", "double taxation", "too many owners"], correctIndex: 1, explanation: "Limited capital constrains growth." },
       ],
       test: [
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Define a sole proprietorship and give two of its advantages.",
-          answerKey:
-            "A sole proprietorship is a business owned and run by one person. Advantages (any two): easy/cheap to set up; the owner keeps all the profits; full control and quick decisions; close relationship with customers. Award marks for the definition and two valid advantages.",
-          marks: 3,
-        },
-        {
-          type: "MULTIPLE_CHOICE",
-          prompt: "Which feature is shared by both a sole proprietorship and a partnership?",
-          options: ["unlimited liability", "millions of shareholders", "government ownership", "limited liability"],
-          correctIndex: 0,
-          answerKey: "Both have unlimited liability.",
-          marks: 2,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt: "State two advantages a partnership has over a sole proprietorship.",
-          answerKey:
-            "Any two: more capital (several partners contribute); shared work and shared risk; partners bring different skills; more minds for better decisions. Award a mark per valid advantage.",
-          marks: 2,
-        },
-        {
-          type: "ESSAY",
-          prompt:
-            "Compare the sole proprietorship and the partnership, referring to ownership, capital, liability and profits, and state one disadvantage they share.",
-          answerKey:
-            "A strong answer compares: ownership — sole proprietorship one owner, partnership 2–20 partners; capital — the partnership can raise more (shared) than a single owner; liability — both have unlimited liability (owners personally responsible for debts); profits — the sole proprietor keeps all profits while partners share them. A shared disadvantage: unlimited liability (or lack of continuity). Award marks for the comparison across the features and the shared disadvantage.",
-          marks: 5,
-        },
+        { type: "SHORT_ANSWER", prompt: "Define a sole proprietorship and state two of its features.", answerKey: "A sole proprietorship is a business established, owned, operated and often financed by one person. Features (any two): one owner who makes all decisions; the owner and business are legally the same; unlimited liability; profits taxed as personal income; minimal legal formality. Award 4 for the definition, 2 per feature.", marks: 8 },
+        { type: "SHORT_ANSWER", prompt: "State two advantages and two disadvantages of a sole proprietorship.", answerKey: "Advantages (any two): easy and cheap to set up; owner keeps all profit; complete control; freedom from regulation. Disadvantages (any two): unlimited liability; difficulty raising capital; limited managerial expertise; unstable business life; owner bears all losses. Award 2 per correct point.", marks: 8 },
+        { type: "MULTIPLE_CHOICE", prompt: "Unlimited liability in a sole proprietorship means", options: ["the owner can never lose money", "the owner's personal assets can be used to pay business debts", "liability is shared with the state", "only the business's assets are at risk"], correctIndex: 1, answerKey: "The owner is personally liable, so personal assets can be taken for business debts. Option B.", marks: 3 },
+        { type: "SHORT_ANSWER", prompt: "Explain why a sole proprietorship often struggles to raise capital.", answerKey: "It cannot sell shares to the public and relies mainly on the owner's personal funds. Lenders see it as higher risk because of unlimited liability and unstable business life, so they are reluctant to lend, limiting the capital available for expansion. Award marks for reliance on personal funds and the lender-risk point.", marks: 6 },
+        { type: "ESSAY", prompt: "Discuss the sole proprietorship as a form of business, covering its definition, features, advantages, disadvantages and sources of funding.", answerKey: "Award marks for: definition (owned/run/financed by one person), 5; features (single owner, no separate legal identity, unlimited liability, personal-income tax), 6; advantages (easy setup, all profit, control, little regulation), 6; disadvantages (unlimited liability, limited capital, limited expertise, unstable life), 6; sources of funding (personal savings, credit, home loan), 5; terminology, 2. A script omitting funding or liability loses proportionally.", marks: 30 },
       ],
     },
+    // source: OpenStax — Introduction to Business, 4.2 Partnerships: Sharing the Load (https://openstax.org/books/introduction-business/pages/4-2-partnerships-sharing-the-load)
     {
-      slug: "companies-cooperatives-public-enterprises",
-      title: "Companies, Cooperatives and Public Enterprises",
+      slug: "partnership",
+      title: "The Partnership",
       objective:
-        "By the end of the topic, learners should be able to describe limited liability companies (private and public), cooperatives and public (state) enterprises, and explain the meaning and importance of limited liability.",
-      estimatedMinutes: 150,
-      notes: `## Introduction
+        "By the end of the topic, learners should be able to define a partnership, distinguish general from limited partners, state its features, advantages and disadvantages, and describe its funding.",
+      estimatedMinutes: 110,
+      notes: `## Definition
 
-- Sole proprietorships and partnerships are limited by **unlimited liability** and small capital.
-- The **limited liability company** lets many people invest without risking everything they own.
-- **This topic:** companies (private & public); **limited liability**; **cooperatives**; public (state) enterprises.
+**Partnership** — an association of **two or more individuals** who agree to operate a business together for **profit**.
+- The agreement may be oral or written, but a **written partnership agreement** (deed) is strongly advised.
 
-## Beyond the simple firms
+## Types of partner
 
-The sole proprietorship and partnership are limited by **unlimited liability** and **small capital**. Larger businesses use forms that offer **limited liability** and can raise much more money.
+- **General partnership** — all partners share management, profits and co-own the assets, and each has **unlimited liability** for the firm's debts.
+- **Limited partnership** — has at least one **general partner** (unlimited liability) plus **limited partners** whose liability is limited to the amount they invested; limited partners provide capital but do not manage day-to-day.
 
-## Limited liability companies
+## Main features
 
-A **company (corporation)** is a business owned by **shareholders** — people who buy **shares** (parts of the ownership) and so provide the **capital**. Its most important feature is **limited liability**.
+- **Two or more owners** sharing ownership and profits.
+- General partners have **unlimited liability** (a single partner can be liable for all the firm's debts).
+- The partners **pool capital and skills**.
+- No separate business income tax — profits are taxed as the **partners' personal income**.
 
-> **Limited liability** means a shareholder can only lose the **amount of money they invested** (the value of their shares) if the company fails — their **personal property is safe**. This is the key advantage over the sole proprietorship and partnership.
+## Advantages
 
-A company is a **separate legal person** from its owners, run by a **board of directors** elected by the shareholders. There are two kinds:
+- **Easy to form** and little regulation.
+- **More capital** available than for a sole trader (several contributors).
+- **Diverse skills and expertise** among partners.
+- Ability to respond flexibly and share the workload.
 
-- **Private limited company:** shares are sold **privately** (to family, friends, invited people), not to the general public. It is smaller and its ownership is restricted.
-- **Public limited company:** shares are sold to the **general public** (on a stock exchange), so it can raise **very large amounts of capital** and become a big business.
+## Disadvantages
 
-**Advantages of companies:** limited liability; large capital; continuity (the company continues even if owners change or die); can employ specialists.
-**Disadvantages:** more complex and costly to set up; must obey many legal rules; must publish accounts; owners (shareholders) may have little day-to-day control.
+- **Unlimited liability** for general partners.
+- **Disagreements** over strategy and direction are possible.
+- **Profit must be shared**.
+- Difficulty **dissolving** the partnership or transferring an interest.
 
-## Cooperatives
+## Sources of funding
 
-A **cooperative** is a business **owned and run by its members for their mutual benefit**, rather than mainly for outside profit. Members share the work and the benefits, and usually each member has an **equal vote** (one member, one vote), regardless of how much they put in.
+- **Partners' pooled capital** (each contributes funds).
+- Their combined strength makes it **easier to borrow** than a sole trader.
+- Limited partners can be admitted specifically to provide extra finance.
 
-- Examples: **farmers' cooperatives** (to buy seed cheaply and sell crops together), **consumer cooperatives** (to buy goods in bulk), and **savings/credit cooperatives (credit unions)**.
-- **Advantages:** members help one another, share profits/benefits, and gain strength by working together.
+## Common errors
 
-## Public (state) enterprises
+- **Thinking all partners have limited liability.** General partners have **unlimited** liability; only limited partners are protected.
+- **Believing a partnership pays a separate business tax.** Profits are taxed as the partners' personal income.
+- **Assuming one partner cannot bind the others.** In a general partnership, one partner's actions can make all partners liable.`,
+      workedExample: `**Question:** Two friends, Kofi and Ama, run a shop together as general partners; a third person, Bea, invests money but takes no part in running it and her liability is limited to her investment. The firm runs up a large debt. (a) Name this form of business. (b) Classify each person. (c) Explain each person's liability for the debt.
 
-A **public (state) enterprise** is a business **owned and run by the government** (the state), not by private individuals — for example a national electricity, water or port company.
+**Solution**
 
-- **Aim:** to provide **essential services** to the public, sometimes where private firms would not, rather than only to make profit.
-- **Advantages:** can provide vital services and are answerable to the public.
-- **Disadvantages:** may be less efficient, and may need government subsidy.
+(a) An association of two or more people running a business for profit is a **partnership** (here a **limited partnership**, since it has both general and limited partners).
 
-## Summary of ownership
+(b) **Kofi and Ama** are **general partners** (they manage the business); **Bea** is a **limited partner** (she invests but does not manage).
 
-| Business | Owned by | Liability |
-|---|---|---|
-| Sole proprietorship | one person | unlimited |
-| Partnership | 2–20 partners | unlimited |
-| Company | shareholders | **limited** |
-| Cooperative | its members | limited (usually) |
-| Public enterprise | the government | (state-owned) |
+(c) Kofi and Ama have **unlimited liability** — they are personally responsible for the whole debt, and each can be held liable for all of it. Bea, as a **limited partner**, is liable only up to the **amount she invested**; her other personal assets are protected.
 
-## Common errors and misconceptions
-
-- **Thinking limited liability means the company pays no debts** — the *company* still owes its debts; limited liability protects the **shareholder**, who can lose only what they *invested*, not their personal property.
-- **Confusing a private with a public limited company** — a **private** company sells shares *privately* (to invited people); a **public** company sells shares to the **general public** (on a stock exchange) and can raise far more capital.
-- **Treating a cooperative like an ordinary company** — a cooperative runs for its **members' mutual benefit** with **one member, one vote**; a company runs for **shareholder profit**, with votes weighted by shares owned.
-- **Assuming a public (state) enterprise exists only to make profit** — its main aim is to **provide essential services** (electricity, water, ports), sometimes where private firms would not.`,
-      workedExample: `**Task.** (a) Explain what limited liability means and why it is important. (b) Distinguish a private limited company from a public limited company. (c) How does a cooperative differ from an ordinary company?
-
-**Part (a) — limited liability and its importance**
-**Limited liability** means that if the company fails, a shareholder can only lose the **money they invested** (the value of their shares) — their **personal property is protected**. It is important because it **encourages people to invest**: knowing they cannot lose more than they put in, many people are willing to buy shares, so the company can **raise large amounts of capital** and grow. This overcomes the unlimited-liability weakness of sole proprietorships and partnerships.
-
-**Part (b) — private vs public limited company**
-- A **private limited company** sells its shares **privately** — to family, friends and invited people, not the general public — so it is smaller and its ownership is restricted.
-- A **public limited company** sells its shares to the **general public** (on a stock exchange), so it can raise **very large amounts of capital** and become a big business.
-
-**Part (c) — cooperative vs ordinary company**
-A **cooperative** is owned and run by its **members for their mutual benefit** (e.g. farmers buying seed cheaply and selling crops together), usually with **one member, one vote** regardless of how much each contributed. An **ordinary company** is owned by **shareholders** mainly to make **profit**, and voting power depends on the **number of shares** owned. So a cooperative is about mutual member benefit and equal say; a company is about profit for shareholders, with control by shareholding.
-
-**Conclusion:** limited liability protects investors (encouraging investment and growth); a private company sells shares privately while a public company sells to the public for large capital; and a cooperative serves its members mutually with equal votes, unlike a profit-seeking, shareholding company.`,
-      teachingTip:
-        "Limited liability is the pivotal idea — spell it out: a shareholder can lose only what they invested, never their house. Contrast it directly with the unlimited liability of the previous topic so learners see why companies can grow big. Keep the private-vs-public company distinction crisp (shares sold privately vs to the public). For cooperatives, the memorable rule is 'one member, one vote' and 'for members' benefit, not outside profit' — a reliable exam discriminator.",
+**Answer:** It is a (limited) partnership; Kofi and Ama are general partners with unlimited liability for the full debt; Bea is a limited partner liable only to the extent of her investment.`,
       quiz: [
-        {
-          prompt: "A company is owned by…",
-          options: ["shareholders", "one person only", "the workers only", "no one"],
-          correctIndex: 0,
-          explanation: "Shareholders own the company.",
-        },
-        {
-          prompt: "Shareholders provide the company's…",
-          options: ["capital", "government", "borders", "weather"],
-          correctIndex: 0,
-          explanation: "Buying shares provides capital.",
-        },
-        {
-          prompt: "Limited liability means a shareholder can lose only…",
-          options: ["the amount they invested", "all their personal property", "nothing at all", "their house always"],
-          correctIndex: 0,
-          explanation: "Loss is limited to the investment.",
-        },
-        {
-          prompt: "Limited liability is important because it…",
-          options: ["encourages people to invest", "stops all business", "raises taxes", "removes owners"],
-          correctIndex: 0,
-          explanation: "Protection encourages investment and growth.",
-        },
-        {
-          prompt: "A company is run by a…",
-          options: ["board of directors", "single owner only", "government minister always", "customer"],
-          correctIndex: 0,
-          explanation: "Directors, elected by shareholders, run it.",
-        },
-        {
-          prompt: "A private limited company sells its shares…",
-          options: ["privately (to invited people)", "to the general public", "to the government only", "for free"],
-          correctIndex: 0,
-          explanation: "Private company shares are sold privately.",
-        },
-        {
-          prompt: "A public limited company sells its shares to…",
-          options: ["the general public", "family only", "no one", "the government only"],
-          correctIndex: 0,
-          explanation: "Public company shares are sold to the public.",
-        },
-        {
-          prompt: "Which can raise the LARGEST amount of capital?",
-          options: ["a public limited company", "a sole proprietorship", "a partnership", "a one-man business"],
-          correctIndex: 0,
-          explanation: "Selling shares to the public raises the most.",
-        },
-        {
-          prompt: "An advantage of a company is continuity, meaning it…",
-          options: ["continues even if owners change or die", "ends when an owner leaves", "has no capital", "cannot employ staff"],
-          correctIndex: 0,
-          explanation: "A company is a separate legal person with continuity.",
-        },
-        {
-          prompt: "A cooperative is owned and run by its…",
-          options: ["members for their mutual benefit", "government only", "shareholders for profit only", "customers abroad"],
-          correctIndex: 0,
-          explanation: "Cooperatives serve their members.",
-        },
-        {
-          prompt: "In a cooperative, voting is usually…",
-          options: ["one member, one vote", "one share, one vote", "by the government", "not allowed"],
-          correctIndex: 0,
-          explanation: "Members typically have equal votes.",
-        },
-        {
-          prompt: "Which is an example of a cooperative?",
-          options: ["a farmers' cooperative", "a national army", "a private company", "a market trader"],
-          correctIndex: 0,
-          explanation: "Farmers' and credit cooperatives are examples.",
-        },
-        {
-          prompt: "A public (state) enterprise is owned by…",
-          options: ["the government", "one person", "foreign shareholders", "a cooperative"],
-          correctIndex: 0,
-          explanation: "The state owns public enterprises.",
-        },
-        {
-          prompt: "The main aim of a public enterprise is often to…",
-          options: ["provide essential services to the public", "make maximum private profit", "avoid all services", "sell shares abroad"],
-          correctIndex: 0,
-          explanation: "State enterprises provide vital services.",
-        },
-        {
-          prompt: "Which is an example of a public enterprise?",
-          options: ["a national electricity or water company", "a market stall", "a two-person shop", "a family firm"],
-          correctIndex: 0,
-          explanation: "State-owned utilities are public enterprises.",
-        },
-        {
-          prompt: "A disadvantage of a company is that it…",
-          options: ["is more complex and costly to set up", "has unlimited liability", "cannot raise capital", "has no owners"],
-          correctIndex: 0,
-          explanation: "Companies face more rules and costs.",
-        },
-        {
-          prompt: "In a company, voting power usually depends on…",
-          options: ["the number of shares owned", "one member one vote", "the government", "age"],
-          correctIndex: 0,
-          explanation: "More shares means more votes (unlike a cooperative).",
-        },
-        {
-          prompt: "Which forms have LIMITED liability?",
-          options: ["companies (and usually cooperatives)", "sole proprietorships", "partnerships", "market traders"],
-          correctIndex: 0,
-          explanation: "Companies offer limited liability.",
-        },
-        {
-          prompt: "A disadvantage of a public enterprise can be that it…",
-          options: ["may be less efficient and need subsidy", "always makes huge profits", "has unlimited liability", "has no aim"],
-          correctIndex: 0,
-          explanation: "State firms can be less efficient.",
-        },
-        {
-          prompt: "The key advantage of a company over a partnership is…",
-          options: ["limited liability and larger capital", "unlimited liability", "fewer owners", "no continuity"],
-          correctIndex: 0,
-          explanation: "Limited liability and large capital are the advantages.",
-        },
+        { prompt: "A partnership is an association of", options: ["one person", "two or more individuals running a business for profit", "shareholders only", "the government"], correctIndex: 1, explanation: "Two or more people operate it for profit." },
+        { prompt: "A written partnership agreement is", options: ["illegal", "strongly advised", "never used", "issued by the state"], correctIndex: 1, explanation: "A written deed is recommended." },
+        { prompt: "In a general partnership, partners' liability is", options: ["limited", "unlimited", "zero", "the state's"], correctIndex: 1, explanation: "General partners have unlimited liability." },
+        { prompt: "A limited partner's liability is limited to", options: ["nothing", "the amount they invested", "all firm debts", "their salary"], correctIndex: 1, explanation: "It is capped at their investment." },
+        { prompt: "A limited partner usually", options: ["manages day-to-day", "provides capital but does not manage", "owns no share", "controls the firm"], correctIndex: 1, explanation: "Limited partners finance but do not run the business." },
+        { prompt: "An advantage of a partnership over a sole trader is", options: ["less capital", "more capital and diverse skills", "unlimited liability", "double taxation"], correctIndex: 1, explanation: "Several partners bring more capital and skills." },
+        { prompt: "A disadvantage of a partnership is", options: ["easy formation", "more capital", "possible disagreements among partners", "shared skills"], correctIndex: 2, explanation: "Partners may disagree over direction." },
+        { prompt: "Partnership profits are taxed as", options: ["corporate profit", "the partners' personal income", "not taxed", "sales tax"], correctIndex: 1, explanation: "There is no separate partnership income tax." },
+        { prompt: "Partnerships are funded mainly by", options: ["public share issues", "the partners' pooled capital", "government only", "bonds only"], correctIndex: 1, explanation: "Partners pool their capital." },
+        { prompt: "In a general partnership, one partner's actions can", options: ["never affect the others", "make all partners liable", "only bind that partner", "be ignored"], correctIndex: 1, explanation: "Each partner can bind the firm." },
+        { prompt: "The minimum number of people in a partnership is", options: ["one", "two", "seven", "twenty"], correctIndex: 1, explanation: "At least two people are needed." },
+        { prompt: "Which partner has unlimited liability?", options: ["Limited partner", "General partner", "Silent investor only", "None"], correctIndex: 1, explanation: "General partners have unlimited liability." },
+        { prompt: "A benefit of pooling partners' skills is", options: ["less expertise", "diverse managerial expertise", "unlimited liability", "double taxation"], correctIndex: 1, explanation: "Partners bring varied expertise." },
+        { prompt: "Dissolving a partnership or transferring an interest is often", options: ["very easy", "difficult", "automatic", "done by shareholders"], correctIndex: 1, explanation: "It can be difficult." },
+        { prompt: "Compared with a sole trader, a partnership finds borrowing", options: ["harder", "easier due to combined strength", "impossible", "unnecessary"], correctIndex: 1, explanation: "Combined resources ease borrowing." },
+        { prompt: "A key drawback shared by sole traders and general partners is", options: ["limited liability", "unlimited liability", "no profit", "public reporting"], correctIndex: 1, explanation: "Both have unlimited liability." },
+        { prompt: "Profit in a partnership must be", options: ["kept by one partner", "shared among the partners", "given to the state", "reinvested only"], correctIndex: 1, explanation: "Profit is shared." },
+        { prompt: "Which is TRUE of a limited partnership?", options: ["All partners manage equally", "It has both general and limited partners", "No one has liability", "It is state-owned"], correctIndex: 1, explanation: "It mixes general and limited partners." },
+        { prompt: "Extra finance can be raised by admitting", options: ["a new limited partner", "the government", "the public via shares", "a board of directors"], correctIndex: 0, explanation: "A limited partner can supply extra capital." },
+        { prompt: "The partnership form is best described as", options: ["one owner, limited liability", "several owners sharing profits, often unlimited liability", "public company", "state enterprise"], correctIndex: 1, explanation: "Several owners share profits; general partners have unlimited liability." },
       ],
       test: [
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Explain what 'limited liability' means and why it encourages people to invest in a company.",
-          answerKey:
-            "Limited liability means that if the company fails, a shareholder can only lose the amount they invested (the value of their shares); their personal property is safe. It encourages investment because people know their loss is capped, so more are willing to buy shares, allowing the company to raise large capital. Award marks for the definition and the link to encouraging investment.",
-          marks: 3,
-        },
-        {
-          type: "MULTIPLE_CHOICE",
-          prompt: "A public limited company differs from a private limited company because it…",
-          options: [
-            "sells its shares to the general public",
-            "has only one owner",
-            "has unlimited liability",
-            "cannot raise capital",
-          ],
-          correctIndex: 0,
-          answerKey: "A public limited company sells shares to the general public.",
-          marks: 2,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Explain how a cooperative differs from an ordinary company.",
-          answerKey:
-            "A cooperative is owned and run by its members for their mutual benefit, usually with one member, one vote regardless of contribution; an ordinary company is owned by shareholders mainly for profit, with voting power based on the number of shares owned. Award marks for the mutual-benefit/one-member-one-vote nature of the cooperative versus the profit/shareholding nature of the company.",
-          marks: 3,
-        },
-        {
-          type: "ESSAY",
-          prompt:
-            "Describe the main types of business organization and explain why limited liability companies can grow larger than sole proprietorships and partnerships.",
-          answerKey:
-            "A strong answer describes the sole proprietorship (one owner, unlimited liability), the partnership (2–20 partners, unlimited liability), the company (owned by shareholders, limited liability; private sells shares privately, public sells to the general public), the cooperative (owned by members for mutual benefit, one member one vote), and the public/state enterprise (government-owned, providing essential services). It explains that limited liability companies can grow larger because limited liability protects investors (they can lose only what they invested), which encourages many people to buy shares and provides large capital, and because companies have continuity and can employ specialists — advantages the unlimited-liability, small-capital sole proprietorship and partnership lack. Award marks for describing the types and explaining the growth advantage of limited liability companies.",
-          marks: 6,
-        },
+        { type: "SHORT_ANSWER", prompt: "Define a partnership and distinguish a general partner from a limited partner.", answerKey: "A partnership is an association of two or more individuals who agree to operate a business together for profit. A general partner shares management and profits and has unlimited liability for the firm's debts; a limited partner contributes capital, does not manage day-to-day, and has liability limited to the amount invested. Award 4 for the definition, 3 per partner type.", marks: 10 },
+        { type: "SHORT_ANSWER", prompt: "State two advantages and two disadvantages of a partnership.", answerKey: "Advantages (any two): easy formation; more capital than a sole trader; diverse skills/expertise; shared workload; little regulation. Disadvantages (any two): unlimited liability for general partners; disagreements; profit must be shared; difficulty dissolving/transferring interest. Award 2 per correct point.", marks: 8 },
+        { type: "MULTIPLE_CHOICE", prompt: "In a general partnership, if one partner incurs a large business debt", options: ["only that partner is liable", "all partners can be held liable", "no one is liable", "only limited partners are liable"], correctIndex: 1, answerKey: "General partners have unlimited liability and can each be liable for all debts. Option B.", marks: 3 },
+        { type: "SHORT_ANSWER", prompt: "Explain how a partnership raises more capital than a sole proprietorship.", answerKey: "Several partners pool their personal capital, and their combined financial strength makes lenders more willing to advance funds; a limited partner can also be admitted to provide additional finance. This gives access to more capital than a single owner could raise. Award marks for pooled capital and easier borrowing/limited partner.", marks: 6 },
+        { type: "ESSAY", prompt: "Discuss the partnership as a form of business, covering its definition, types of partner, features, advantages, disadvantages and funding.", answerKey: "Award marks for: definition (two or more for profit, agreement/deed), 5; general vs limited partners and their liability, 6; features (shared ownership/profit, personal-income tax), 5; advantages (more capital, diverse skills, easy formation), 5; disadvantages (unlimited liability, disagreements, shared profit, hard to dissolve), 6; funding (pooled capital, easier borrowing), 3. A script omitting the general/limited distinction should not exceed 18.", marks: 30 },
+      ],
+    },
+    // source: OpenStax — Introduction to Business, 4.3 Corporations: Limiting Your Liability (https://openstax.org/books/introduction-business/pages/4-3-corporations-limiting-your-liability)
+    {
+      slug: "companies-and-joint-stock-corporations",
+      title: "Companies and Joint-Stock Corporations",
+      objective:
+        "By the end of the topic, learners should be able to define a corporation (joint-stock company), state its features, list its advantages and disadvantages, and explain how it raises capital.",
+      estimatedMinutes: 120,
+      notes: `## Definition
+
+**Corporation (joint-stock company)** — a **legal entity, separate from its owners**, created by state charter, with the right to operate as a business.
+- Ownership is divided into **shares of stock**; the shareholders are the owners.
+- A **joint-stock company** is a company whose capital is jointly held by many owners through shares — the older name for what is today the limited company/corporation.
+
+## Main features
+
+- **Separate legal entity** — the company can own property, make contracts and sue or be sued in its own name, apart from its owners.
+- **Shareholders and stock** — owners hold shares that carry voting rights and a claim on dividends, and can transfer (sell) their shares.
+- **Board of directors** — elected by shareholders to set goals, appoint officers and oversee the company.
+- **Limited liability** — a shareholder's liability is **limited to the amount of stock they own**; personal assets are protected.
+
+## Advantages
+
+- **Limited liability** for owners.
+- **Easy transfer of ownership** by selling shares.
+- **Unlimited (perpetual) life** — the company continues even if owners change.
+- **Superior ability to raise capital** through issuing shares and borrowing.
+- Tax-deductible operating expenses.
+
+## Disadvantages
+
+- **Double taxation** — company profits are taxed, and shareholders' dividends are taxed again.
+- **Expensive and complex** to set up.
+- Heavy **government regulation and reporting** requirements.
+- **Reduced privacy** — public companies must disclose financial information.
+
+## Sources of funding
+
+- **Issuing (selling) new shares of stock** to investors — the defining method.
+- **Borrowing** from banks, and (for large companies) issuing **bonds**.
+- Retained profits reinvested in the business.
+
+## Private and public companies
+
+- A **private limited company** cannot sell shares to the general public; shares are held by a small group.
+- A **public limited company** can sell shares to the public, often on a stock exchange, raising large amounts of capital.
+
+## Common errors
+
+- **Thinking shareholders run the company day-to-day.** They elect a **board of directors**, which appoints managers.
+- **Confusing limited with unlimited liability.** A shareholder can lose only what they invested in shares.
+- **Forgetting double taxation.** Corporate profit and dividends are both taxed.`,
+      workedExample: `**Question:** A company issues 10,000 shares to the public and is run by a board elected by shareholders. It later collapses owing large debts. Zoe owns 100 shares she paid 500 dollars for. (a) What form of business is this? (b) State two features. (c) How much can Zoe lose?
+
+**Solution**
+
+(a) A separate legal entity owned through shares of stock is a **corporation (joint-stock / public limited company)**.
+
+(b) Features: it is a **separate legal person** (owns property and contracts in its own name); ownership is in **shares** that can be transferred; it is run by a **board of directors** elected by shareholders; shareholders have **limited liability**.
+
+(c) Because of **limited liability**, Zoe can lose only the amount she put into her shares — the **500 dollars** she paid. Her other personal assets are **protected**; she is not personally responsible for the company's debts beyond her shareholding.
+
+**Answer:** It is a corporation/public limited company; features include separate legal identity, transferable shares, a board of directors and limited liability; Zoe can lose at most her 500-dollar investment.`,
+      quiz: [
+        { prompt: "A corporation is", options: ["the same as its owners", "a legal entity separate from its owners", "owned by one person", "always state-owned"], correctIndex: 1, explanation: "It is a separate legal entity." },
+        { prompt: "Ownership of a corporation is divided into", options: ["partners", "shares of stock", "sole owners", "board seats only"], correctIndex: 1, explanation: "Shareholders own shares of stock." },
+        { prompt: "Shareholders' liability is", options: ["unlimited", "limited to the amount of stock they own", "zero", "the board's"], correctIndex: 1, explanation: "Limited liability caps loss at the investment." },
+        { prompt: "A corporation is run day-to-day under a", options: ["single owner", "board of directors elected by shareholders", "government minister", "limited partner"], correctIndex: 1, explanation: "Shareholders elect a board." },
+        { prompt: "An advantage of a corporation is", options: ["unlimited liability", "unlimited (perpetual) life", "no ability to raise capital", "simple formation"], correctIndex: 1, explanation: "The company continues beyond its owners." },
+        { prompt: "A disadvantage of a corporation is", options: ["limited liability", "double taxation", "easy transfer of shares", "perpetual life"], correctIndex: 1, explanation: "Profit and dividends are both taxed." },
+        { prompt: "Corporations raise capital mainly by", options: ["one owner's savings", "selling shares of stock", "partners' pooled funds only", "no external finance"], correctIndex: 1, explanation: "Issuing shares is the defining method." },
+        { prompt: "A joint-stock company is one whose capital is", options: ["held by one person", "jointly held by many owners through shares", "provided by the state", "borrowed only"], correctIndex: 1, explanation: "Many owners hold shares jointly." },
+        { prompt: "A public limited company can", options: ["never sell shares", "sell shares to the general public", "have only one owner", "avoid all regulation"], correctIndex: 1, explanation: "Public companies sell shares to the public." },
+        { prompt: "A private limited company", options: ["sells shares to the public", "cannot sell shares to the general public", "has no shares", "is state-owned"], correctIndex: 1, explanation: "Private companies restrict share ownership." },
+        { prompt: "'Separate legal entity' means the company can", options: ["not own property", "own property and make contracts in its own name", "never be sued", "avoid tax"], correctIndex: 1, explanation: "It acts in its own name, apart from owners." },
+        { prompt: "Double taxation refers to tax on", options: ["shares only", "company profit and again on dividends", "wages twice", "imports"], correctIndex: 1, explanation: "Both corporate profit and dividends are taxed." },
+        { prompt: "Shareholders can change without ending the company because it has", options: ["unlimited liability", "perpetual life", "one owner", "no board"], correctIndex: 1, explanation: "Perpetual life means continuity." },
+        { prompt: "Setting up a corporation is", options: ["simple and cheap", "expensive and complex", "impossible", "free"], correctIndex: 1, explanation: "Formation is complex and costly." },
+        { prompt: "Which body do shareholders elect?", options: ["The workforce", "The board of directors", "The government", "Limited partners"], correctIndex: 1, explanation: "Shareholders elect the board." },
+        { prompt: "A shareholder who paid 500 dollars for shares can lose at most", options: ["nothing", "500 dollars", "all their assets", "the company's debts"], correctIndex: 1, explanation: "Limited liability caps loss at the investment." },
+        { prompt: "Large corporations may also raise finance by issuing", options: ["partnership deeds", "bonds", "sole-trader loans", "cooperative shares"], correctIndex: 1, explanation: "Bonds are a corporate borrowing tool." },
+        { prompt: "Public companies must", options: ["keep all finances secret", "disclose financial information", "avoid regulation", "have one owner"], correctIndex: 1, explanation: "Reduced privacy is a disadvantage." },
+        { prompt: "Which is an advantage over a sole proprietorship?", options: ["Unlimited liability", "Superior ability to raise capital", "One owner only", "No regulation"], correctIndex: 1, explanation: "Corporations raise capital more easily." },
+        { prompt: "Transferring ownership of a corporation is done by", options: ["dissolving it", "selling shares", "changing the name", "electing partners"], correctIndex: 1, explanation: "Ownership transfers by selling shares." },
+      ],
+      test: [
+        { type: "SHORT_ANSWER", prompt: "Define a corporation (joint-stock company) and state two of its features.", answerKey: "A corporation is a legal entity separate from its owners, created by state charter, with ownership divided into shares of stock (a joint-stock company has its capital jointly held through shares). Features (any two): separate legal entity; shareholders own transferable shares; a board of directors runs it; limited liability. Award 4 for the definition, 2 per feature.", marks: 8 },
+        { type: "SHORT_ANSWER", prompt: "State two advantages and two disadvantages of a corporation.", answerKey: "Advantages (any two): limited liability; easy transfer of shares; perpetual life; superior ability to raise capital. Disadvantages (any two): double taxation; expensive/complex formation; heavy regulation and reporting; reduced privacy. Award 2 per correct point.", marks: 8 },
+        { type: "MULTIPLE_CHOICE", prompt: "Limited liability means a shareholder can lose at most", options: ["all their personal assets", "the amount they invested in shares", "nothing at all", "the company's total debt"], correctIndex: 1, answerKey: "A shareholder's loss is limited to their investment in the shares. Option B.", marks: 3 },
+        { type: "SHORT_ANSWER", prompt: "Explain how a corporation raises capital and why this ability exceeds that of a sole proprietorship.", answerKey: "A corporation issues (sells) shares of stock to many investors, and can borrow from banks or issue bonds. Because ownership is split into affordable shares with limited liability, and the company is a stable, perpetual legal entity, it can attract far more capital than a single owner relying on personal funds. Award marks for share issue, borrowing/bonds, and the comparison with a sole trader.", marks: 6 },
+        { type: "ESSAY", prompt: "Discuss the corporation (joint-stock company) as a form of business, covering its definition, features, advantages, disadvantages and sources of funding, and distinguish private from public companies.", answerKey: "Award marks for: definition (separate legal entity owned through shares), 5; features (separate legal person, shares, board, limited liability), 6; advantages (limited liability, transferable shares, perpetual life, capital-raising), 6; disadvantages (double taxation, complex/costly formation, regulation, reduced privacy), 6; funding (issuing shares, borrowing/bonds), 4; private vs public company, 3. A script omitting funding or the private/public split loses proportionally.", marks: 30 },
+      ],
+    },
+    // source: OpenStax — Introduction to Business 2e, 4.4 Specialized Forms of Business Organization (cooperatives, joint ventures) (https://openstax.org/books/introduction-business-2e/pages/4-4-specialized-forms-of-business-organization) and OpenStax — Principles of Economics 3e, 1.4 economic systems: government/public ownership (https://openstax.org/books/principles-economics-3e/pages/1-4-how-to-organize-economies-an-overview-of-economic-systems)
+    {
+      slug: "cooperatives-statutory-corporations-and-joint-ventures",
+      title: "Cooperatives, Statutory Corporations and Joint Ventures",
+      objective:
+        "By the end of the topic, learners should be able to define a cooperative, a statutory (public) corporation and a joint venture, and state the main features and purpose of each.",
+      estimatedMinutes: 120,
+      notes: `## Cooperative (co-op)
+
+**Cooperative** — a business **owned and democratically controlled by its members** — the people who buy its goods or use its services — not by outside investors.
+- **Purpose:** to meet the needs of the member-owners, not to make profit for investors.
+- **Features:** limited liability, an unlimited life span, an elected board of directors and administrative staff; members pay fees and **share profits in proportion to their contribution** (patronage). Because it does not retain profits, it is often not taxed.
+- **One member, one vote** — control is democratic, not by size of shareholding.
+
+**Types of cooperative:**
+- **Buyer (consumer) cooperative** — members pool their **purchasing power** to buy in bulk at lower prices.
+- **Seller (producer) cooperative** — producers combine to market their goods and compete with larger firms (e.g. farmers selling together).
+
+**Cooperative principles** (in brief): voluntary open membership; democratic member control; members' economic participation; autonomy; education and training; cooperation among cooperatives; concern for community.
+
+## Statutory (public) corporation
+
+**Statutory corporation (public corporation)** — a business **owned by the government (the state)** and set up by a law (statute) to provide a public service or run a key industry.
+- Under state ownership, key industries are **nationalised and directly controlled by the government**.
+- **Purpose:** to provide essential services (water, electricity, ports, broadcasting) rather than only to make profit.
+- **Features:** owned by the state on behalf of the public; run by a board appointed by government; financed largely from **public funds** and its own revenue; accountable to the government/public.
+
+## Joint venture
+
+**Joint venture** — an alliance in which **two or more companies join together to pursue a specific project**, usually for a **set period of time**.
+- **Purpose:** to share the cost, risk and expertise of a large or new project.
+- By sharing management, technology and finance, firms **reduce the risk** of a new enterprise and gain access to markets, products or technology neither could reach alone.
+
+## Common errors
+
+- **Thinking a cooperative aims to profit outside investors.** It exists to serve its **member-owners**.
+- **Confusing a statutory corporation with a private company.** A statutory corporation is **state-owned**, created by law for public service.
+- **Thinking a joint venture is a permanent merger.** It is usually for a **specific project and a limited time**; the firms stay separate.`,
+      workedExample: `**Question:** Match each situation to a form of business and give one feature: (a) local farmers combine to sell rice together and share the proceeds by how much each supplied; (b) the government sets up, by law, a body to run the national electricity supply; (c) two car firms team up for four years to develop one new vehicle.
+
+**Solution**
+
+(a) Farmers combining to market their produce and sharing proceeds by contribution is a **(seller/producer) cooperative**. Feature: owned and democratically controlled by its members (one member, one vote), sharing profit in proportion to contribution.
+
+(b) A body created **by law** and **owned by the government** to run electricity is a **statutory (public) corporation**. Feature: state-owned, run by a government-appointed board to provide a public service.
+
+(c) Two firms joining for a set period on one project is a **joint venture**. Feature: the firms share cost, risk and expertise for a specific project and limited time, then remain separate.
+
+**Answer:** (a) cooperative, (b) statutory (public) corporation, (c) joint venture — each defined by who owns it and why it is formed.`,
+      quiz: [
+        { prompt: "A cooperative is owned and controlled by its", options: ["outside investors", "members", "the government", "a single owner"], correctIndex: 1, explanation: "Members own and control a cooperative." },
+        { prompt: "The purpose of a cooperative is to", options: ["profit outside investors", "meet the needs of its member-owners", "serve the government", "avoid all members"], correctIndex: 1, explanation: "It serves its members, not investors." },
+        { prompt: "Cooperatives usually operate on the principle of", options: ["one share, one vote", "one member, one vote", "the state votes", "no voting"], correctIndex: 1, explanation: "Control is democratic — one member, one vote." },
+        { prompt: "A buyer (consumer) cooperative pools members'", options: ["votes only", "purchasing power to buy in bulk", "farms", "shares on an exchange"], correctIndex: 1, explanation: "Members combine buying power for lower prices." },
+        { prompt: "A seller (producer) cooperative helps producers", options: ["compete with larger firms by marketing together", "avoid selling", "pay more tax", "give up ownership"], correctIndex: 0, explanation: "Producers combine to market and compete." },
+        { prompt: "Cooperative profits are shared", options: ["equally regardless of use", "in proportion to each member's contribution", "with investors", "with the state"], correctIndex: 1, explanation: "Profits are shared by patronage/contribution." },
+        { prompt: "A statutory (public) corporation is owned by", options: ["shareholders", "the government (the state)", "one person", "a cooperative"], correctIndex: 1, explanation: "It is state-owned." },
+        { prompt: "A statutory corporation is set up by", options: ["a partnership deed", "a law (statute)", "a stock issue", "member fees"], correctIndex: 1, explanation: "It is created by statute." },
+        { prompt: "The main purpose of a statutory corporation is to", options: ["maximise private profit", "provide an essential public service", "sell shares publicly", "serve one owner"], correctIndex: 1, explanation: "It provides public services." },
+        { prompt: "A joint venture is formed when", options: ["one firm buys another forever", "two or more firms ally for a specific project and time", "a sole trader expands", "the state nationalises a firm"], correctIndex: 1, explanation: "It is a temporary alliance for a project." },
+        { prompt: "The purpose of a joint venture is to", options: ["increase risk", "share cost, risk and expertise on a project", "avoid all partners", "end both firms"], correctIndex: 1, explanation: "Firms share cost, risk and expertise." },
+        { prompt: "After a joint venture ends, the firms", options: ["merge permanently", "remain separate companies", "become cooperatives", "become state-owned"], correctIndex: 1, explanation: "They stay separate; the venture is temporary." },
+        { prompt: "Which is TRUE of a cooperative?", options: ["It has no liability limit", "It has limited liability and an unlimited life span", "It is owned by the state", "It sells shares on an exchange"], correctIndex: 1, explanation: "Cooperatives have limited liability and unlimited life." },
+        { prompt: "Water and electricity supply are often run by", options: ["sole traders", "statutory (public) corporations", "joint ventures only", "buyer cooperatives"], correctIndex: 1, explanation: "Public utilities are often statutory corporations." },
+        { prompt: "A cooperative that does not retain profits is often", options: ["heavily taxed", "not subject to tax", "state-owned", "a corporation"], correctIndex: 1, explanation: "Distributing all profit means it is often untaxed." },
+        { prompt: "A statutory corporation is run by", options: ["one owner", "a board appointed by government", "member votes only", "shareholders"], correctIndex: 1, explanation: "A government-appointed board runs it." },
+        { prompt: "Two firms sharing technology and finance for one new product form a", options: ["cooperative", "joint venture", "sole proprietorship", "statutory corporation"], correctIndex: 1, explanation: "That is a joint venture." },
+        { prompt: "Cooperative principles include", options: ["closed membership", "voluntary and open membership", "state control", "single ownership"], correctIndex: 1, explanation: "Voluntary, open membership is a core principle." },
+        { prompt: "A statutory corporation is financed largely from", options: ["public funds and its own revenue", "member fees only", "a single owner", "joint-venture partners"], correctIndex: 0, explanation: "It uses public funds and its revenue." },
+        { prompt: "Which correctly pairs form and owner?", options: ["Cooperative then the state", "Statutory corporation then members", "Joint venture then allied companies", "Cooperative then one person"], correctIndex: 2, explanation: "A joint venture is owned by the allied companies." },
+      ],
+      test: [
+        { type: "SHORT_ANSWER", prompt: "Define a cooperative and state two of its features.", answerKey: "A cooperative is a business owned and democratically controlled by its members (who use its goods or services), formed to meet members' needs rather than to profit outside investors. Features (any two): one member, one vote; limited liability; unlimited life span; elected board; profits shared in proportion to contribution; often untaxed. Award 4 for the definition, 2 per feature.", marks: 8 },
+        { type: "SHORT_ANSWER", prompt: "Define a statutory (public) corporation and state its main purpose.", answerKey: "A statutory corporation is a business owned by the government (state) and created by law (statute), run by a government-appointed board. Its main purpose is to provide an essential public service or run a key industry (water, electricity, ports) rather than only to make profit. Award 4 for the definition, 2 for the purpose.", marks: 6 },
+        { type: "MULTIPLE_CHOICE", prompt: "A joint venture is best described as", options: ["a permanent merger of two firms", "an alliance of two or more firms for a specific project and limited time", "a state-owned enterprise", "a one-owner business"], correctIndex: 1, answerKey: "A joint venture is a temporary alliance for a specific project; the firms remain separate. Option B.", marks: 3 },
+        { type: "SHORT_ANSWER", prompt: "Distinguish a buyer cooperative from a seller cooperative.", answerKey: "A buyer (consumer) cooperative pools members' purchasing power to buy in bulk at lower prices. A seller (producer) cooperative is formed by producers who combine to market their goods and compete with larger firms. Award 3 per type with the contrast.", marks: 6 },
+        { type: "ESSAY", prompt: "Compare the cooperative, the statutory (public) corporation and the joint venture, explaining who owns each, why it is formed, and its main features.", answerKey: "Award marks for: cooperative — member-owned, democratic control, serves members, profit by contribution, limited liability, 8; statutory corporation — state-owned, created by law, provides public services, government board, public funds, 8; joint venture — alliance of firms for a specific project and limited time to share cost/risk/expertise, 8; a clear comparison of ownership and purpose, 4; terminology, 2. A script covering fewer than three forms loses proportionally.", marks: 30 },
+      ],
+    },
+    // source: LibreTexts Social Sci — 16.1 Economic Systems: nationalization / public ownership vs private enterprise (https://socialsci.libretexts.org/Courses/Solano_Community_College/SOC_002:_Social_Issues_and_Problems/16:_Economy/16.01:_Economic_Systems) and OpenStax — Principles of Economics 3e, 1.4 How To Organize Economies: private enterprise, regulation, mixed economy (https://openstax.org/books/principles-economics-3e/pages/1-4-how-to-organize-economies-an-overview-of-economic-systems)
+    {
+      slug: "business-enterprise-policy",
+      title: "Business Enterprise Policy: Privatization, Commercialization, Indigenization and Nationalization",
+      objective:
+        "By the end of the topic, learners should be able to define and distinguish privatization, commercialization, indigenization and nationalization as government policies toward business ownership.",
+      estimatedMinutes: 120,
+      notes: `## Government and business ownership
+
+- A government can change **who owns and controls** businesses. The four main policy moves are privatization, commercialization, indigenization and nationalization.
+- These sit on the line between **private enterprise** (private individuals own the means of production) and **public (state) ownership** (the government owns key industries).
+
+## Nationalization
+
+**Nationalization** — the government **takes a privately owned business or industry into state ownership** and control.
+- Under state ownership, "key industries are nationalised and directly controlled by the government".
+- *Aims:* to control strategic or essential industries, secure public services, or capture their revenue for the state.
+
+## Privatization
+
+**Privatization** — the reverse of nationalization: **transferring a state-owned business into private ownership**, usually by selling it (often through a share sale) to private individuals or firms.
+- *Aims:* to raise efficiency and competition, attract private capital and management, and reduce the burden on the state.
+- *Concerns:* possible loss of public control, reduced accountability, and services shaped by profit rather than need.
+
+## Commercialization
+
+**Commercialization** — a state-owned enterprise is **required to run on business (commercial) lines** — covering its costs and aiming to make a profit — **while remaining owned by the government**.
+- It stops short of full privatization: ownership stays public, but the enterprise must behave like a private business and rely less on government subsidy.
+
+## Indigenization
+
+**Indigenization** — a policy requiring that **ownership and control of businesses be transferred to, or reserved for, citizens (indigenes)** of the country rather than foreigners.
+- *Aim:* to increase local (national) participation and control in the economy and reduce foreign dominance.
+
+## Comparison
+
+| Policy | What changes | Ownership after |
+| --- | --- | --- |
+| Nationalization | Private business taken over by state | Government (public) |
+| Privatization | State business sold to private owners | Private |
+| Commercialization | State firm made to run for profit | Government (public) |
+| Indigenization | Ownership shifted to citizens | Citizens/nationals |
+
+## Common errors
+
+- **Confusing privatization with nationalization.** Privatization = state to private; nationalization = private to state (opposites).
+- **Thinking commercialization means selling the firm.** Ownership stays with the state; only its way of operating changes.
+- **Reading indigenization as nationalization.** Indigenization moves ownership to **citizens**, not necessarily to the **state**.`,
+      workedExample: `**Question:** For each government action, name the policy: (a) the state sells the national telephone company to private investors; (b) the state takes over all private oil companies; (c) a state-owned railway is told it must now cover its own costs and make a profit while staying state-owned; (d) a law requires that retail shops be owned by citizens of the country.
+
+**Solution**
+
+(a) Selling a **state-owned** firm to **private** investors is **privatization** (state to private).
+
+(b) The state **taking over private** oil companies into public ownership is **nationalization** (private to state).
+
+(c) Making a **state-owned** railway run on business lines for profit **while it stays state-owned** is **commercialization** (operation changes, ownership stays public).
+
+(d) Requiring businesses to be **owned by citizens** rather than foreigners is **indigenization** (ownership moved to nationals).
+
+**Answer:** (a) privatization, (b) nationalization, (c) commercialization, (d) indigenization — distinguished by the direction of the change in ownership or control.`,
+      quiz: [
+        { prompt: "Nationalization means the government", options: ["sells a firm to private owners", "takes a private business into state ownership", "makes a firm run for profit", "gives firms to citizens"], correctIndex: 1, explanation: "Private to state ownership." },
+        { prompt: "Privatization means", options: ["state takeover of a firm", "transferring a state firm into private ownership", "making a firm citizen-owned", "closing a firm"], correctIndex: 1, explanation: "State to private ownership." },
+        { prompt: "Privatization and nationalization are", options: ["the same thing", "opposite policies", "both state takeovers", "both citizen policies"], correctIndex: 1, explanation: "They move ownership in opposite directions." },
+        { prompt: "Commercialization requires a state-owned firm to", options: ["be sold off", "run on business lines and aim for profit while staying state-owned", "be given to citizens", "close down"], correctIndex: 1, explanation: "Ownership stays public; operation becomes commercial." },
+        { prompt: "Indigenization transfers ownership to", options: ["the state", "foreign firms", "citizens (nationals)", "cooperatives only"], correctIndex: 2, explanation: "It reserves ownership for citizens." },
+        { prompt: "A common aim of privatization is to", options: ["reduce competition", "raise efficiency and attract private capital", "increase state control", "ban private firms"], correctIndex: 1, explanation: "Privatization aims at efficiency and private investment." },
+        { prompt: "Under commercialization, ownership of the enterprise", options: ["moves to private owners", "stays with the government", "moves to foreigners", "is dissolved"], correctIndex: 1, explanation: "Only the way it operates changes." },
+        { prompt: "A government selling shares of a state firm to the public is carrying out", options: ["nationalization", "privatization", "indigenization", "commercialization"], correctIndex: 1, explanation: "Selling to private owners is privatization." },
+        { prompt: "Taking key strategic industries under direct state control is", options: ["privatization", "nationalization", "commercialization", "indigenization"], correctIndex: 1, explanation: "That is nationalization." },
+        { prompt: "The aim of indigenization is to", options: ["increase foreign ownership", "increase local (national) participation and control", "reduce citizen ownership", "sell to the state"], correctIndex: 1, explanation: "It boosts local ownership." },
+        { prompt: "A concern about privatization is", options: ["more state control", "possible loss of public control and accountability", "no private capital", "guaranteed low prices"], correctIndex: 1, explanation: "Public control and accountability may fall." },
+        { prompt: "Which policy keeps state ownership but demands profitability?", options: ["Privatization", "Nationalization", "Commercialization", "Indigenization"], correctIndex: 2, explanation: "Commercialization keeps ownership public." },
+        { prompt: "After nationalization, a business is owned by", options: ["private investors", "the government", "citizens only", "a joint venture"], correctIndex: 1, explanation: "Nationalization gives the state ownership." },
+        { prompt: "After privatization, a business is owned by", options: ["the state", "private individuals or firms", "no one", "the workers only"], correctIndex: 1, explanation: "Ownership becomes private." },
+        { prompt: "Indigenization differs from nationalization because it moves ownership to", options: ["the state", "citizens rather than necessarily the state", "foreigners", "cooperatives"], correctIndex: 1, explanation: "Indigenization targets citizens, not the state." },
+        { prompt: "A private enterprise economy is one where", options: ["the state owns all firms", "private individuals own the means of production", "no one owns firms", "only cooperatives exist"], correctIndex: 1, explanation: "Private enterprise means private ownership." },
+        { prompt: "Which pair are opposites?", options: ["Commercialization and indigenization", "Privatization and nationalization", "Nationalization and indigenization", "Privatization and commercialization"], correctIndex: 1, explanation: "Privatization and nationalization are opposites." },
+        { prompt: "Selling a loss-making state airline to a private company is", options: ["nationalization", "privatization", "commercialization", "indigenization"], correctIndex: 1, explanation: "State to private ownership is privatization." },
+        { prompt: "Requiring a state water utility to charge fees and cover its costs while staying public is", options: ["privatization", "commercialization", "nationalization", "indigenization"], correctIndex: 1, explanation: "That is commercialization." },
+        { prompt: "The four policies all concern", options: ["prices only", "who owns and controls businesses", "taxes only", "exports only"], correctIndex: 1, explanation: "They change business ownership and control." },
+      ],
+      test: [
+        { type: "SHORT_ANSWER", prompt: "Define privatization and nationalization and state how they differ.", answerKey: "Privatization is transferring a state-owned business into private ownership (usually by sale). Nationalization is the government taking a privately owned business or industry into state ownership and control. They are opposites: privatization moves ownership from state to private; nationalization from private to state. Award 4 per definition, 2 for the contrast.", marks: 10 },
+        { type: "SHORT_ANSWER", prompt: "Explain what commercialization means and how it differs from privatization.", answerKey: "Commercialization requires a state-owned enterprise to run on commercial lines — covering its costs and aiming for profit — while remaining owned by the government. It differs from privatization because ownership stays with the state; only the way the enterprise operates changes, whereas privatization actually transfers ownership to private hands. Award 4 for commercialization, 4 for the contrast with privatization.", marks: 8 },
+        { type: "MULTIPLE_CHOICE", prompt: "A law reserving business ownership for citizens rather than foreigners is", options: ["privatization", "nationalization", "commercialization", "indigenization"], correctIndex: 3, answerKey: "Indigenization moves ownership to citizens/nationals. Option D.", marks: 3 },
+        { type: "SHORT_ANSWER", prompt: "State one aim and one concern of privatization.", answerKey: "Aim (any one): raise efficiency and competition; attract private capital and management; reduce the burden on the state. Concern (any one): loss of public control; reduced accountability; services driven by profit rather than need. Award 3 for a valid aim, 3 for a valid concern.", marks: 6 },
+        { type: "ESSAY", prompt: "Discuss the four business enterprise policies — privatization, commercialization, indigenization and nationalization — explaining what each changes and evaluating the case for and against government involvement in business.", answerKey: "Award marks for: nationalization (private to state) with its aims, 6; privatization (state to private) with aims and concerns, 6; commercialization (state firm run for profit, ownership stays public), 6; indigenization (ownership to citizens), 5; a balanced evaluation of state versus private ownership (efficiency and capital under private ownership vs public control and essential services under state ownership), 5; terminology, 2. A script that confuses privatization and nationalization should not exceed 15.", marks: 30 },
       ],
     },
   ],

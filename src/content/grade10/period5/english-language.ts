@@ -1,476 +1,727 @@
 import type { PeriodContent } from "@/content/types";
 
 // Aligned to the Liberian MoE National Curriculum for English, Grade 10,
-// Semester Two, Period V: Grammar — Prepositions, Conjunctions and
-// Interjections.
+// Semester Two, Period V: Grammar — Prepositions, Conjunctions, and
+// Interjections. CONTENTS: (A) Prepositions — prepositions and the prepositional
+// phrase; telling prepositions and adverbs apart; (B) Conjunctions —
+// coordinating, correlative, subordinating; conjunctive adverbs; (C)
+// Interjections (persuasion: advertisement). Taught here as three topics.
 export const englishLanguageG10P5: PeriodContent = {
   grade: 10,
   number: 5,
   title: "Prepositions, Conjunctions and Interjections",
   summary:
-    "Period V of the MoE Grade 10 English syllabus. Learners identify and use prepositions and the phrases they begin, join ideas correctly with coordinating and subordinating conjunctions, and recognise interjections — completing their study of the parts of speech.",
+    "Period V of the MoE Grade 10 English syllabus. Learners use prepositions and prepositional phrases correctly and tell them from adverbs, identify coordinating, correlative and subordinating conjunctions, and recognise interjections that express feeling — applied in persuasive advertisement writing.",
   topics: [
     {
+      // source: LibreTexts — Grammar Anatomy (Brehe), 1.07 Among the Prepositions (https://human.libretexts.org/Bookshelves/Composition/Grammar/Grammar_Anatomy_(Brehe)/01:_Chapters/1.07:_Among_the_Prepositions)
       slug: "prepositions",
       title: "Prepositions and Prepositional Phrases",
       objective:
-        "By the end of the topic, learners should be able to identify prepositions, name their common types, form prepositional phrases, and use prepositions correctly in sentences.",
+        "By the end of the topic, learners should be able to identify prepositions and their objects, recognise the prepositional phrase, name the relationship a preposition shows, and tell a preposition from an adverb.",
       estimatedMinutes: 150,
-      notes: `## What a preposition does
+      notes: `## What a preposition is
 
-A **preposition** is a small but powerful word that shows the **relationship** between a noun (or pronoun) and another word in the sentence — most often a relationship of **position, direction, time** or manner. Think of two things — a cat and a table — and the preposition is the word that tells you how they stand to each other: the cat is *on*, *under*, *beside*, *near* or *behind* the table.
+**Preposition** — a small word that connects a noun or pronoun — the **object of the preposition** — to another word in the sentence, showing a relationship such as **location, direction, time, cause, or possession**.
 
-- **Position:** *The book is **on** the table.*
-- **Direction:** *She walked **to** the market.*
-- **Time:** *We met **after** lunch.*
+- *The book is **on** the table.* (location)
+- *She walked **to** the market.* (direction)
+- *We rested **after** the journey.* (time)
+- *The gift is **for** you.* (possession/relationship)
 
-The noun or pronoun that comes after the preposition is called its **object**. Because it is an object, a pronoun after a preposition must be in the **object form**: *between you and **me*** (not *I*), *for **him** and **her***.
+Common prepositions: *in, on, at, by, of, to, up, for, from, with, about, above, below, behind, between, under, over, through, during, after, before, near, against, toward.*
 
-## Common prepositions, grouped
+## The prepositional phrase
 
-| Relationship | Prepositions |
-| --- | --- |
-| Place / position | in, on, under, over, above, below, between, beside, near, behind, in front of |
-| Direction / movement | to, into, onto, from, towards, across, through, along, up, down |
-| Time | at, on, in, before, after, during, until, since, by, for |
-| Others | of, for, with, without, by, about, against, like |
+**Prepositional phrase** — a **preposition + its object** (plus any words modifying the object). The preposition and its object always travel together.
 
-Some prepositions are made of more than one word — **compound prepositions**: *in front of, according to, because of, instead of, in spite of, next to*.
+- *under the **table*** = under (preposition) + the table (object).
+- *to our **house*** ; *for your **birthday*** ; *among the **debris**.*
 
-## Prepositional phrases
+Structure: **preposition + (article/adjective) + noun/pronoun (object).** A preposition **must** be followed by an object; that is its defining feature.
 
-A **prepositional phrase** begins with a preposition and ends with its object, together with any words that describe that object:
+\`\`\`svg A prepositional phrase and its parts
+<svg viewBox="0 0 440 120" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <text x="220" y="30" text-anchor="middle" font-size="15">The cat slept under the wooden table.</text>
+  <rect x="150" y="48" width="220" height="30" rx="6" fill="#efe2cd" stroke="#c9a86e"/>
+  <text x="260" y="68" text-anchor="middle" font-size="12.5">prepositional phrase</text>
+  <g font-size="11.5" text-anchor="middle">
+    <text x="172" y="100">under</text><text x="172" y="113" fill="#6a5a48">prep.</text>
+    <text x="330" y="100">table</text><text x="330" y="113" fill="#6a5a48">object</text>
+  </g>
+</svg>
+\`\`\`
 
-> **preposition + (describing words) + object**
-> *under the old wooden table* · *after the long meeting* · *because of the heavy rain*
+## Telling prepositions from adverbs
 
-A prepositional phrase does one of two jobs in the sentence:
+Many words (up, down, in, out, on, off, over, by) can be **either** a preposition **or** an adverb. The test is simple: **a preposition has an object; the same word with no object is an adverb.**
 
-- as an **adjective phrase**, describing a noun: *the girl **in the blue dress*** (which girl?);
-- as an **adverb phrase**, describing a verb: *She waited **at the gate*** (waited where?).
+| Sentence | Word | Object? | Part of speech |
+| --- | --- | --- | --- |
+| I drove **into** the garage. | into | yes (the garage) | preposition |
+| I looked **up**. | up | no | adverb |
+| He climbed **up** the hill. | up | yes (the hill) | preposition |
+| The plane took **off**. | off | no | adverb |
 
-## Using prepositions correctly
+If a noun or pronoun follows and completes the meaning, the word is a **preposition** heading a phrase; if nothing follows and the word simply modifies the verb, it is an **adverb**.
 
-Prepositions are the hardest words in English to use, because their choice is often fixed by custom rather than logic.
+## Summary
 
-- **at / on / in for TIME** (smallest to largest): **at** a clock time (*at 6 o'clock*), **on** a day or date (*on Monday, on 26 July*), **in** a longer period (*in June, in 2026, in the morning*).
-- **at / on / in for PLACE:** **at** a point (*at the door*), **on** a surface (*on the wall*), **in** an enclosed space (*in the room*).
-- **between / among:** use **between** for **two** and **among** for **more than two** — *share it **between** the two of you; **among** the whole class*.
-- **Verbs with fixed prepositions:** many verbs demand a particular preposition — *depend **on**, listen **to**, arrive **at/in**, agree **with** a person / **to** a plan, good **at**, afraid **of**, interested **in**.* These must be learned as pairs.
-- **Avoid unnecessary prepositions:** ✗ *Where are you **at**?* → ✓ *Where are you?*
+- A preposition links its **object** to the rest of the sentence and shows a relationship.
+- Preposition + object = a **prepositional phrase**.
+- A word with an object is a **preposition**; the same word with no object is an **adverb**.`,
+      workedExample: `**Task.** In each sentence find the prepositional phrase, name the preposition and its object; then in items 3–4 say whether the underlined word is a preposition or an adverb.
 
-## A note on ending sentences
-
-You may have been told that a sentence should never end with a preposition. In natural English it often does — *What are you looking **for**? Who did you go **with**?* — and there is nothing wrong with it. What matters is that the preposition is the **right** one, not where it sits.`,
-      workedExample: `**Task.** In each sentence, identify the preposition and its object, and name what relationship it shows (place, direction or time).
-
-1. *The cat slept **under** the bed.*
-2. *They travelled **to** Ganta.*
-3. *The class ends **at** noon.*
+1. *The children played in the yard.*
+2. *She sat between her two friends.*
+3. *He ran **down** the street.*
+4. *The engine broke **down**.*
 
 **Answers**
 
-1. **under** — object: **the bed**. It shows **position/place** (where the cat slept). The prepositional phrase is *under the bed*.
+1. Prepositional phrase: *in the yard*; preposition = **in**, object = **the yard** (shows location).
+2. Prepositional phrase: *between her two friends*; preposition = **between**, object = **friends** (shows position).
+3. **down** = **preposition** — it has an object (*the street*), forming the phrase *down the street*.
+4. **down** = **adverb** — there is no object; it simply modifies the verb *broke*.
 
-2. **to** — object: **Ganta**. It shows **direction/movement** (where they travelled). The prepositional phrase is *to Ganta*.
-
-3. **at** — object: **noon**. It shows **time** (when the class ends). The prepositional phrase is *at noon*.
-
-**Key idea:** a preposition links its object to the rest of the sentence and shows a relationship — most often place, direction or time. The preposition together with its object (and any describing words) makes a **prepositional phrase**.`,
-      teachingTip:
-        "Prepositions of time (in/on/at) are the biggest source of error for learners. Teach the ladder: at (a precise time — at 5 o'clock), on (a day/date — on Friday), in (a longer period — in July, in 2026). Drill the between/among rule (two vs more than two). The 'never end a sentence with a preposition' myth confuses good writers — reassure learners that correct use matters more than position.",
+**Rule applied:** an object after the word makes it a preposition; no object makes it an adverb.`,
       quiz: [
         {
-          prompt: "A preposition shows the relationship between a noun/pronoun and…",
-          options: ["another word in the sentence", "nothing", "the writer", "the title"],
+          prompt: "A preposition shows a relationship and connects its object to…",
+          options: ["another word in the sentence", "nothing", "only the verb", "only an adjective"],
           correctIndex: 0,
-          explanation: "It links its object to the rest of the sentence.",
+          explanation: "A preposition links its object to another word, showing a relationship.",
         },
         {
-          prompt: "In 'The book is on the table', the preposition is…",
+          prompt: "The noun or pronoun after a preposition is called the…",
+          options: ["object of the preposition", "subject", "complement", "modifier"],
+          correctIndex: 0,
+          explanation: "That noun/pronoun is the object of the preposition.",
+        },
+        {
+          prompt: "A prepositional phrase is made of a preposition plus its…",
+          options: ["object", "verb", "subject", "conjunction"],
+          correctIndex: 0,
+          explanation: "Preposition + object (and any modifiers) = prepositional phrase.",
+        },
+        {
+          prompt: "Which is the preposition in 'The book is on the table'?",
           options: ["on", "book", "table", "is"],
           correctIndex: 0,
-          explanation: "'on' shows the book's position.",
+          explanation: "'on' shows the location relationship and takes the object 'table'.",
         },
         {
-          prompt: "The noun or pronoun after a preposition is its…",
-          options: ["object", "subject", "verb", "adjective"],
+          prompt: "Which relationship does 'after' show in 'after the journey'?",
+          options: ["time", "location", "possession", "direction"],
           correctIndex: 0,
-          explanation: "It is the object of the preposition.",
+          explanation: "'after' shows a relationship in time.",
         },
         {
-          prompt: "Which is a preposition of time?",
-          options: ["after", "under", "beside", "towards"],
+          prompt: "Identify the prepositional phrase in 'She walked to the market.'",
+          options: ["to the market", "She walked", "walked to", "the market"],
           correctIndex: 0,
-          explanation: "'after' relates to time.",
+          explanation: "'to the market' = preposition 'to' + object 'the market'.",
         },
         {
-          prompt: "Which is a preposition of direction/movement?",
-          options: ["towards", "on", "during", "beside"],
+          prompt: "What defining feature must a preposition have?",
+          options: ["an object", "a subject", "a tense", "a hyphen"],
           correctIndex: 0,
-          explanation: "'towards' shows movement.",
+          explanation: "A preposition is always followed by an object.",
         },
         {
-          prompt: "A group of words beginning with a preposition and ending with its object is a…",
-          options: ["prepositional phrase", "clause", "sentence", "conjunction"],
+          prompt: "In 'I looked up', the word 'up' is a…",
+          options: ["adverb", "preposition", "conjunction", "noun"],
           correctIndex: 0,
-          explanation: "That is a prepositional phrase.",
+          explanation: "There is no object after 'up', so it is an adverb modifying 'looked'.",
         },
         {
-          prompt: "Which preposition is correct: 'We will meet ___ Monday.'?",
-          options: ["on", "in", "at", "since"],
+          prompt: "In 'He climbed up the hill', 'up' is a…",
+          options: ["preposition", "adverb", "conjunction", "adjective"],
           correctIndex: 0,
-          explanation: "Days take 'on': on Monday.",
+          explanation: "'up' has the object 'the hill', so it is a preposition.",
         },
         {
-          prompt: "Which preposition is correct: 'The class starts ___ 8 o'clock.'?",
-          options: ["at", "on", "in", "by"],
+          prompt: "The test for preposition vs adverb is whether the word has…",
+          options: ["an object", "a capital letter", "a hyphen", "a suffix"],
           correctIndex: 0,
-          explanation: "A precise time takes 'at'.",
+          explanation: "Object present → preposition; no object → adverb.",
         },
         {
-          prompt: "Which preposition is correct: 'She was born ___ June.'?",
-          options: ["in", "on", "at", "since"],
+          prompt: "In 'The plane took off', 'off' is a…",
+          options: ["adverb", "preposition", "noun", "conjunction"],
           correctIndex: 0,
-          explanation: "Months take 'in': in June.",
+          explanation: "No object follows 'off', so it is an adverb.",
         },
         {
-          prompt: "Use 'between' when referring to…",
-          options: ["two things", "more than two", "one thing", "time only"],
+          prompt: "Which of these is a preposition?",
+          options: ["between", "quickly", "and", "wow"],
           correctIndex: 0,
-          explanation: "'between' is for two.",
+          explanation: "'between' is a preposition; the others are an adverb, conjunction and interjection.",
         },
         {
-          prompt: "Use 'among' when referring to…",
-          options: ["more than two", "two", "one", "a single person"],
+          prompt: "Identify the object of the preposition: 'She sat under the tree.'",
+          options: ["the tree", "she", "sat", "under"],
           correctIndex: 0,
-          explanation: "'among' is for more than two.",
+          explanation: "'the tree' is the object of 'under'.",
         },
         {
-          prompt: "In 'She walked into the room', the prepositional phrase is…",
-          options: ["into the room", "she walked", "walked into", "the room only"],
+          prompt: "Which sentence contains a prepositional phrase of direction?",
+          options: ["He ran into the house.", "He ran quickly.", "He is tall.", "He and I left."],
           correctIndex: 0,
-          explanation: "Preposition 'into' + object 'the room'.",
+          explanation: "'into the house' shows direction with the object 'the house'.",
         },
         {
-          prompt: "Which sentence is correct?",
-          options: ["Where are you going?", "Where are you going at?", "Where at you going?", "You going where at?"],
+          prompt: "How many prepositional phrases are in 'The cat under the chair slept on the mat'?",
+          options: ["two", "one", "three", "none"],
           correctIndex: 0,
-          explanation: "Avoid the unnecessary preposition 'at'.",
+          explanation: "'under the chair' and 'on the mat' are two prepositional phrases.",
         },
         {
-          prompt: "Which is a preposition of place?",
-          options: ["beside", "after", "during", "since"],
+          prompt: "Which word can be a preposition OR an adverb depending on the sentence?",
+          options: ["over", "beautiful", "because", "run"],
           correctIndex: 0,
-          explanation: "'beside' shows position.",
+          explanation: "'over' can be a preposition (over the wall) or an adverb (fall over).",
         },
         {
-          prompt: "In 'The gift is for you', the object of the preposition is…",
-          options: ["you", "gift", "is", "for"],
+          prompt: "In 'We rested during the storm', the preposition is…",
+          options: ["during", "rested", "storm", "we"],
           correctIndex: 0,
-          explanation: "'you' is the object of 'for'.",
+          explanation: "'during' takes the object 'the storm' and shows time.",
         },
         {
-          prompt: "Which preposition fits: 'They hid ___ the tree.' (position)",
-          options: ["behind", "since", "until", "of"],
+          prompt: "A prepositional phrase never contains a…",
+          options: ["main subject and verb of the sentence", "preposition", "object", "noun"],
           correctIndex: 0,
-          explanation: "'behind' shows position.",
+          explanation: "A prepositional phrase has no subject-verb pair; it is a phrase, not a clause.",
         },
         {
-          prompt: "A prepositional phrase usually tells where, when or…",
-          options: ["how", "who wrote it", "the price", "the title"],
+          prompt: "Which sentence uses 'by' as a preposition?",
+          options: ["She sat by the window.", "Time passed by.", "Drop by later.", "He walked by."],
           correctIndex: 0,
-          explanation: "It adds where/when/how information.",
+          explanation: "'by the window' has the object 'the window', so 'by' is a preposition here.",
         },
         {
-          prompt: "Which preposition of time means 'from a point in the past until now'?",
-          options: ["since", "at", "on", "into"],
+          prompt: "The relationship shown by 'for' in 'a gift for you' is…",
+          options: ["possession / benefit", "time", "location", "cause"],
           correctIndex: 0,
-          explanation: "'since' marks a starting point continuing to now.",
-        },
-        {
-          prompt: "Choose the correct preposition: 'Divide the money ___ the two boys.'",
-          options: ["between", "among", "into", "beside"],
-          correctIndex: 0,
-          explanation: "Two boys → 'between'.",
-        },
-        {
-          prompt: "Which word is NOT a preposition?",
-          options: ["quickly", "under", "between", "through"],
-          correctIndex: 0,
-          explanation: "'quickly' is an adverb, not a preposition.",
+          explanation: "'for you' shows who benefits — a relationship of possession/benefit.",
         },
       ],
       test: [
         {
           type: "SHORT_ANSWER",
-          prompt: "Underline the prepositional phrase and circle the preposition: 'The children played in the sandy yard.'",
+          prompt:
+            "Underline the prepositional phrase and name the preposition and its object: 'The keys are inside the drawer.'",
           answerKey:
-            "Prepositional phrase: 'in the sandy yard'; preposition: 'in' (object: yard). Award marks for identifying the phrase and the preposition.",
-          marks: 2,
+            "Prepositional phrase: 'inside the drawer'; preposition = 'inside', object = 'the drawer'. Award a mark for the phrase, a mark for the preposition, a mark for the object.",
+          marks: 3,
         },
         {
           type: "MULTIPLE_CHOICE",
-          prompt: "Which sentence uses the correct preposition of time?",
+          prompt: "In which sentence is 'in' an adverb (not a preposition)?",
           options: [
-            "The meeting is on Friday at 10 o'clock in the morning.",
-            "The meeting is in Friday on 10 o'clock at the morning.",
-            "The meeting is at Friday in 10 o'clock on the morning.",
-            "The meeting is on Friday in 10 o'clock at the morning.",
+            "Please come in.",
+            "She is in the room.",
+            "Put it in the box.",
+            "They live in Monrovia.",
           ],
           correctIndex: 0,
-          answerKey: "on (day) + at (clock time) + in (part of day) is correct.",
+          answerKey: "'come in' has no object after 'in', so 'in' is an adverb; the others have objects.",
           marks: 2,
         },
         {
           type: "SHORT_ANSWER",
-          prompt: "Explain the difference between 'between' and 'among', giving an example of each.",
+          prompt:
+            "Write two sentences using the word 'over' — one where it is a preposition and one where it is an adverb. Underline 'over' in each.",
           answerKey:
-            "'between' is used for two things/people (e.g. 'share it between the two of them'); 'among' is used for more than two (e.g. 'share it among the whole class'). Award marks for the rule and a valid example of each.",
-          marks: 3,
+            "Preposition: e.g. 'The ball flew over the fence.' (object 'the fence'). Adverb: e.g. 'The vase fell over.' (no object). Award 2 marks per correct, clearly-labelled sentence.",
+          marks: 4,
+        },
+        {
+          type: "SHORT_ANSWER",
+          prompt:
+            "List two prepositions of time and two of location.",
+          answerKey:
+            "Time: e.g. after, before, during, until. Location: e.g. on, under, between, near, above. Award a mark for each correct pair (2 marks total possible per category as guided).",
+          marks: 2,
         },
         {
           type: "ESSAY",
           prompt:
-            "Write four sentences, each using a preposition to show a different relationship (place, direction, time and one other), and underline the preposition in each.",
+            "Explain what a preposition and a prepositional phrase are, and describe a reliable test for telling a preposition from an adverb. Give two example sentences that use the same word both ways.",
           answerKey:
-            "Award marks for four correct sentences each using a preposition that clearly shows the stated relationship — place (e.g. 'on the table'), direction (e.g. 'to the market'), time (e.g. 'after lunch'), and one other such as manner/possession (e.g. 'with a pen', 'of gold') — with the preposition underlined. Mark for correctness and variety of relationships shown.",
-          marks: 4,
+            "A strong answer defines a preposition (links its object to another word, shows a relationship) and a prepositional phrase (preposition + object + modifiers), then gives the object test (object present = preposition; none = adverb) with one word shown both ways (e.g. 'up the hill' vs 'looked up'). Award marks for both definitions, the test, and the paired examples.",
+          marks: 5,
         },
       ],
     },
     {
-      slug: "conjunctions-and-interjections",
-      title: "Conjunctions and Interjections",
+      // source: LibreTexts — Coalinga College, College Writing and Beyond, 3.1.5 Conjunctions (https://human.libretexts.org/Courses/Coalinga_College/College_Writing_and_Beyond/03:_Part_III-_Grammar_and_Mechanics/3.01:_Parts_of_Speech/3.1.05:_Conjunctions)
+      slug: "conjunctions",
+      title: "Conjunctions: Coordinating, Correlative and Subordinating",
       objective:
-        "By the end of the topic, learners should be able to identify and use coordinating and subordinating conjunctions to join ideas, and recognise interjections and punctuate them correctly.",
+        "By the end of the topic, learners should be able to identify coordinating, correlative and subordinating conjunctions, use each to join words or clauses of the right kind, and punctuate the joins correctly.",
       estimatedMinutes: 150,
-      notes: `## Conjunctions — joining words
+      notes: `## What a conjunction is
 
-A **conjunction** is a word that **joins** words, phrases or clauses together. There are two main kinds.
+**Conjunction** — a word that **joins** words, phrases, or clauses within a sentence. There are three main kinds: **coordinating, correlative,** and **subordinating.**
 
-### 1. Coordinating conjunctions
-These join words or clauses of **equal importance**. The seven are remembered by **FANBOYS**:
+## Coordinating conjunctions (FANBOYS)
 
-**F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o.
+**Coordinating conjunctions** join **two or more equal** items (words, phrases, or whole sentences). The seven are remembered by **FANBOYS**: **for, and, nor, but, or, yet, so.**
 
-- *I bought rice **and** beans.* (joins two nouns)
-- *She was tired, **but** she kept working.* (joins two clauses)
+Each shows a relationship:
 
-When a coordinating conjunction joins two complete clauses, put a **comma before it**.
+| Conjunction | Relationship |
+| --- | --- |
+| for | reason / cause |
+| and | addition |
+| nor | joins two negatives |
+| but | contrast |
+| or | choice |
+| yet | contrast |
+| so | result / effect |
 
-### 2. Subordinating conjunctions
-These join a **subordinate (dependent) clause** to a **main clause**, showing a relationship such as time, reason, condition or contrast.
-
-Common ones: **because, although, since, when, while, if, unless, after, before, as, so that, even though**.
-
-- *We stayed inside **because** it was raining.* (reason)
-- ***Although** he was tired, he finished the work.* (contrast)
-- ***If** you study, you will pass.* (condition)
-
-A subordinate clause cannot stand alone as a sentence; it depends on the main clause.
+**Punctuation:** use a **comma before** a coordinating conjunction when it joins two complete sentences: *Each conflict is unique**, and** each requires its own assessment.* Use no comma when it joins two similar items: *rice **and** beans.*
 
 ## Correlative conjunctions
 
-Some conjunctions work in **pairs**: *either…or, neither…nor, both…and, not only…but also.*
+**Correlative conjunctions** work in **pairs** to join two elements of **equal weight**.
 
-- ***Either** you come now **or** you stay behind.*
-- *She is **not only** clever **but also** kind.*
+- *either… or* — *I will have **either** pasta **or** pizza.*
+- *neither… nor* — *She likes **neither** tea **nor** coffee.*
+- *not only… but (also)* — ***Not only** did he win, **but** he also broke the record.*
+- *both… and* ; *whether… or* ; *just as… so.*
 
-## Interjections — words of feeling
+Keep the two joined parts **parallel** (same grammatical form): ✗ *She is not only clever but also works hard* → ✓ *She is **not only clever but also hard-working**.*
 
-An **interjection** is a word or short phrase that expresses **sudden emotion or feeling** — surprise, joy, pain, agreement, and so on. It is grammatically separate from the rest of the sentence.
+## Subordinating conjunctions
 
-- **Oh! Wow! Ouch! Alas! Hurray! Well, … Oops!**
+**Subordinating conjunctions** join a **dependent (subordinate) clause** to an **independent clause**, showing how they relate. Common ones: **after, although, as, as if, because, before, even though, if, once, in order that, rather than, since, so that, unless, until, when, while.**
 
-Punctuation:
-- A strong interjection is followed by an **exclamation mark**: *Wow! That is wonderful!*
-- A milder one is followed by a **comma**: *Well, I suppose so.*
+- ***Although** I would rather party tonight, I will go to the library instead.*
+- *We stayed inside **because** it was raining.*
 
-## The parts of speech complete
+**Punctuation:** put a **comma** when the dependent clause comes **first** (*Because it rained, we stayed in*); usually **no comma** when the independent clause comes first (*We stayed in because it rained*).
 
-With conjunctions and interjections, learners have now met all **eight parts of speech**: noun, pronoun, verb, adjective, adverb, preposition, conjunction and interjection.`,
-      workedExample: `**Task.** (a) Join each pair of ideas with a suitable conjunction and say whether it is coordinating or subordinating. (b) Add a suitable interjection to a sentence and punctuate it.
+## Summary
 
-**Part (a) — joining ideas**
+| Kind | Joins | Examples |
+| --- | --- | --- |
+| Coordinating | equal items | for, and, nor, but, or, yet, so |
+| Correlative | equal items, in pairs | either…or, neither…nor, not only…but also |
+| Subordinating | dependent to independent clause | because, although, if, when, since, unless |`,
+      workedExample: `**Task.** Name the kind of conjunction in bold and, where two clauses are joined, check the punctuation.
 
-1. *It was late. We went home.*
-   → *It was late, **so** we went home.* — **so** is a **coordinating** conjunction (FANBOYS), joining two equal clauses; note the comma before it.
+1. *The market was crowded**, so** we left early.*
+2. ***Because** the road flooded, the bus was late.*
+3. *You may have **either** rice **or** fufu.*
 
-2. *He passed the exam. He had studied hard.*
-   → *He passed the exam **because** he had studied hard.* — **because** is a **subordinating** conjunction, joining a subordinate clause (of reason) to the main clause.
+**Answers**
 
-3. *She is clever. She is kind.*
-   → *She is **not only** clever **but also** kind.* — **not only…but also** is a **correlative** (paired) conjunction.
+1. **so** — a **coordinating** conjunction (FANBOYS) showing result. It joins two complete sentences, so the **comma before** it is correct.
+2. **Because** — a **subordinating** conjunction. Its dependent clause comes first, so a **comma** follows it before the independent clause — correct.
+3. **either… or** — a **correlative** conjunction (a pair) joining two equal nouns, *rice* and *fufu*. The joined parts are parallel — correct.
 
-**Part (b) — interjection**
-
-Sudden joy: ***Hurray!** We won the match!* — the strong interjection **Hurray!** expresses excitement and is followed by an **exclamation mark**, standing apart from the rest of the sentence. A milder version: ***Well,** we did our best.* (comma after a mild interjection).
-
-**Key idea:** coordinating conjunctions (FANBOYS) join equals; subordinating conjunctions attach a dependent clause to a main clause and show a relationship; interjections express feeling and take an exclamation mark (strong) or a comma (mild).`,
-      teachingTip:
-        "FANBOYS is the fastest way to fix the seven coordinating conjunctions, and the comma-before-FANBOYS rule (when joining two clauses) is a reliable marks-winner. Contrast them with subordinating conjunctions by testing whether the clause can stand alone — 'because it was raining' cannot, so 'because' is subordinating. Keep interjections light and fun; the punctuation rule (! for strong, , for mild) is the examinable part.",
+**Rule applied:** coordinating joins equals (comma before when linking sentences); correlative uses matched pairs kept parallel; subordinating attaches a dependent clause (comma when it comes first).`,
       quiz: [
         {
           prompt: "A conjunction is a word that…",
-          options: ["joins words, phrases or clauses", "describes a noun", "shows sudden feeling", "replaces a noun"],
+          options: ["joins words, phrases or clauses", "names a person", "shows action", "expresses emotion"],
           correctIndex: 0,
-          explanation: "Conjunctions join parts of a sentence.",
+          explanation: "Conjunctions join sentence elements.",
         },
         {
-          prompt: "The seven coordinating conjunctions are remembered by…",
-          options: ["FANBOYS", "PEMDAS", "ROYGBIV", "FOIL"],
+          prompt: "The acronym FANBOYS lists the…",
+          options: ["coordinating conjunctions", "correlative conjunctions", "subordinating conjunctions", "prepositions"],
           correctIndex: 0,
-          explanation: "For, And, Nor, But, Or, Yet, So.",
-        },
-        {
-          prompt: "Coordinating conjunctions join ideas of…",
-          options: ["equal importance", "unequal importance", "no importance", "different tenses"],
-          correctIndex: 0,
-          explanation: "They join equal words or clauses.",
+          explanation: "For, And, Nor, But, Or, Yet, So — the coordinating conjunctions.",
         },
         {
           prompt: "Which is a coordinating conjunction?",
-          options: ["but", "because", "although", "when"],
+          options: ["but", "because", "although", "either…or"],
           correctIndex: 0,
-          explanation: "'but' is in FANBOYS.",
+          explanation: "'but' is one of the FANBOYS coordinating conjunctions.",
+        },
+        {
+          prompt: "Coordinating conjunctions join items that are…",
+          options: ["equal", "unequal", "always nouns", "always clauses"],
+          correctIndex: 0,
+          explanation: "They coordinate two or more equal (equivalent) items.",
+        },
+        {
+          prompt: "The coordinating conjunction 'so' shows…",
+          options: ["result", "contrast", "choice", "addition"],
+          correctIndex: 0,
+          explanation: "'so' signals an effect or result.",
+        },
+        {
+          prompt: "When a coordinating conjunction joins two complete sentences, put a…",
+          options: ["comma before it", "semicolon after it", "colon before it", "no punctuation"],
+          correctIndex: 0,
+          explanation: "Use a comma before FANBOYS joining two independent clauses.",
+        },
+        {
+          prompt: "Correlative conjunctions always come in…",
+          options: ["pairs", "threes", "single words", "clauses"],
+          correctIndex: 0,
+          explanation: "e.g. either…or, neither…nor, not only…but also.",
+        },
+        {
+          prompt: "Which is a correlative conjunction pair?",
+          options: ["neither…nor", "because", "and", "although"],
+          correctIndex: 0,
+          explanation: "'neither…nor' is a correlative pair.",
+        },
+        {
+          prompt: "Complete the pair: 'not only… ___'",
+          options: ["but also", "and then", "or else", "nor yet"],
+          correctIndex: 0,
+          explanation: "The pair is 'not only… but (also)'.",
+        },
+        {
+          prompt: "Correlative conjunctions should join parts that are…",
+          options: ["parallel in form", "different in form", "always plural", "always past tense"],
+          correctIndex: 0,
+          explanation: "The two joined elements should be grammatically parallel.",
+        },
+        {
+          prompt: "A subordinating conjunction joins a dependent clause to an…",
+          options: ["independent clause", "object", "adverb", "interjection"],
+          correctIndex: 0,
+          explanation: "It attaches a subordinate clause to a main clause.",
         },
         {
           prompt: "Which is a subordinating conjunction?",
-          options: ["because", "and", "or", "so"],
+          options: ["because", "and", "but", "either…or"],
           correctIndex: 0,
-          explanation: "'because' introduces a subordinate clause.",
+          explanation: "'because' introduces a dependent clause.",
         },
         {
-          prompt: "A subordinating conjunction joins a subordinate clause to a…",
-          options: ["main clause", "preposition", "noun only", "interjection"],
+          prompt: "Which sentence uses a subordinating conjunction?",
+          options: ["We stayed in because it rained.", "Rice and beans are cheap.", "He is tall but shy.", "Either you or I must go."],
           correctIndex: 0,
-          explanation: "It links the dependent clause to the main clause.",
+          explanation: "'because it rained' is a dependent clause joined by a subordinating conjunction.",
         },
         {
-          prompt: "When a coordinating conjunction joins two complete clauses, put a … before it.",
-          options: ["comma", "full stop", "question mark", "colon only"],
+          prompt: "When a dependent clause comes first, it is usually followed by a…",
+          options: ["comma", "semicolon", "colon", "dash"],
           correctIndex: 0,
-          explanation: "Use a comma before FANBOYS joining two clauses.",
+          explanation: "'Because it rained, we stayed in' — comma after the fronted dependent clause.",
         },
         {
-          prompt: "'Although he was tired, he finished' uses a conjunction showing…",
-          options: ["contrast", "reason", "time", "place"],
-          correctIndex: 0,
-          explanation: "'although' signals contrast.",
-        },
-        {
-          prompt: "'We stayed inside because it was raining' uses a conjunction showing…",
-          options: ["reason", "contrast", "condition", "place"],
-          correctIndex: 0,
-          explanation: "'because' gives the reason.",
-        },
-        {
-          prompt: "'If you study, you will pass' uses a conjunction showing…",
-          options: ["condition", "reason", "time", "contrast"],
-          correctIndex: 0,
-          explanation: "'if' introduces a condition.",
-        },
-        {
-          prompt: "Which is a correlative (paired) conjunction?",
-          options: ["either…or", "and only", "but so", "because when"],
-          correctIndex: 0,
-          explanation: "either…or is a matching pair.",
-        },
-        {
-          prompt: "An interjection expresses…",
-          options: ["sudden emotion or feeling", "the time of an action", "a comparison", "ownership"],
-          correctIndex: 0,
-          explanation: "Interjections show feeling.",
-        },
-        {
-          prompt: "Which is an interjection?",
-          options: ["Wow!", "quickly", "under", "because"],
-          correctIndex: 0,
-          explanation: "'Wow!' expresses surprise/excitement.",
-        },
-        {
-          prompt: "A strong interjection is usually followed by a…",
-          options: ["exclamation mark", "full stop", "comma always", "question mark"],
-          correctIndex: 0,
-          explanation: "Strong interjections take '!'.",
-        },
-        {
-          prompt: "A mild interjection is usually followed by a…",
-          options: ["comma", "exclamation mark", "colon", "semicolon"],
-          correctIndex: 0,
-          explanation: "e.g. 'Well, I suppose so.'",
-        },
-        {
-          prompt: "A subordinate clause…",
-          options: ["cannot stand alone as a sentence", "is always the main idea", "needs no main clause", "is an interjection"],
-          correctIndex: 0,
-          explanation: "It depends on a main clause.",
-        },
-        {
-          prompt: "Which sentence correctly joins two clauses?",
+          prompt: "Which sentence needs a comma before the conjunction?",
           options: [
-            "She was tired, but she kept working.",
-            "She was tired but, she kept working.",
-            "She was tired but she, kept working.",
-            "She was, tired but she kept working.",
+            "The task was hard but we finished it.",
+            "She likes rice and beans.",
+            "We bought bread and milk.",
+            "He is tired or hungry.",
           ],
           correctIndex: 0,
-          explanation: "Comma before 'but' joining two clauses.",
+          explanation: "'but' joins two complete sentences, so a comma is needed before it.",
         },
         {
-          prompt: "'Neither the teacher nor the students knew' uses which pair?",
-          options: ["neither…nor", "either…or", "both…and", "not only…but also"],
+          prompt: "'although' is which kind of conjunction?",
+          options: ["subordinating", "coordinating", "correlative", "conjunctive adverb"],
           correctIndex: 0,
-          explanation: "neither…nor is the correlative pair used.",
+          explanation: "'although' introduces a dependent clause, so it is subordinating.",
         },
         {
-          prompt: "How many parts of speech are there in total?",
-          options: ["eight", "five", "ten", "six"],
+          prompt: "The coordinating conjunction 'nor' is used to join two…",
+          options: ["negative ideas", "positive ideas", "questions", "commands"],
           correctIndex: 0,
-          explanation: "Noun, pronoun, verb, adjective, adverb, preposition, conjunction, interjection.",
+          explanation: "'nor' links two negatives.",
         },
         {
-          prompt: "'Ouch! That hurt!' — 'Ouch' is a(n)…",
-          options: ["interjection", "conjunction", "preposition", "adverb"],
+          prompt: "Which pair is NOT correlative?",
+          options: ["and…but", "both…and", "whether…or", "either…or"],
           correctIndex: 0,
-          explanation: "It expresses sudden pain — an interjection.",
+          explanation: "'and…but' is not a correlative pair; the others are.",
+        },
+        {
+          prompt: "Which sentence uses a coordinating conjunction to show contrast?",
+          options: ["She studied hard, yet she failed.", "She studied hard, so she passed.", "She studied hard and passed.", "She studied because of the exam."],
+          correctIndex: 0,
+          explanation: "'yet' shows contrast between studying hard and failing.",
+        },
+        {
+          prompt: "A subordinating conjunction shows the relationship between the two clauses, such as…",
+          options: ["cause, time or condition", "spelling", "capitalisation", "number"],
+          correctIndex: 0,
+          explanation: "e.g. because (cause), when (time), unless (condition).",
         },
       ],
       test: [
         {
           type: "SHORT_ANSWER",
-          prompt: "List the seven coordinating conjunctions (FANBOYS).",
+          prompt:
+            "Write three sentences, one using a coordinating conjunction, one a correlative pair, and one a subordinating conjunction. Underline the conjunction(s) in each.",
           answerKey:
-            "For, And, Nor, But, Or, Yet, So. Award full marks for all seven; deduct for each missing or wrong one.",
-          marks: 3,
+            "Coordinating e.g. 'It was late, so we left.' Correlative e.g. 'Either you or I must go.' Subordinating e.g. 'We waited until the rain stopped.' Award a mark per correct, clearly-labelled sentence, plus a mark for correct punctuation across the three.",
+          marks: 4,
         },
         {
           type: "MULTIPLE_CHOICE",
-          prompt: "Which sentence uses a subordinating conjunction?",
+          prompt: "Which sentence is punctuated correctly?",
           options: [
-            "Although it rained, the match continued.",
-            "It rained, and the match continued.",
-            "It rained, so the match stopped.",
-            "It rained, but the match continued.",
+            "Although it was late, we kept working.",
+            "Although it was late we kept working,",
+            "Although, it was late we kept working.",
+            "Although it was late; we kept working.",
           ],
           correctIndex: 0,
-          answerKey: "'Although' is subordinating; the others (and, so, but) are coordinating.",
+          answerKey: "The fronted dependent clause 'Although it was late' takes a comma after it.",
           marks: 2,
         },
         {
           type: "SHORT_ANSWER",
-          prompt: "Join these two sentences with a suitable subordinating conjunction: 'The bell rang. The students left the class.'",
+          prompt:
+            "Name the seven coordinating conjunctions (FANBOYS).",
           answerKey:
-            "Accept any correct subordinating conjunction that makes sense, e.g. 'When the bell rang, the students left the class.' or 'The students left the class after the bell rang.' Award marks for a correct subordinating conjunction and a grammatical sentence.",
+            "for, and, nor, but, or, yet, so. Award full marks for all seven correct; deduct proportionally for omissions.",
+          marks: 2,
+        },
+        {
+          type: "SHORT_ANSWER",
+          prompt:
+            "Fix the parallelism in this correlative sentence: 'She is not only clever but also works hard.'",
+          answerKey:
+            "Expected: 'She is not only clever but also hard-working.' (both parts adjectives) or 'She not only is clever but also works hard.' The two parts joined by 'not only…but also' must be parallel. Award marks for restoring parallel form.",
           marks: 2,
         },
         {
           type: "ESSAY",
           prompt:
-            "Explain the difference between coordinating and subordinating conjunctions, giving an example sentence of each, and describe how an interjection is punctuated.",
+            "Explain the three kinds of conjunctions with examples, and describe how each is punctuated when it joins clauses. State what makes coordinating and correlative conjunctions different from subordinating ones.",
           answerKey:
-            "A strong answer explains that coordinating conjunctions (FANBOYS) join words or clauses of equal importance (e.g. 'I was tired, but I kept going') with a comma before the conjunction when joining two clauses, while subordinating conjunctions (because, although, if, when…) attach a subordinate clause that cannot stand alone to a main clause and show a relationship such as reason, contrast, time or condition (e.g. 'Because it was late, we went home'). On interjections: a strong interjection is followed by an exclamation mark (Wow!), a mild one by a comma (Well, …). Award marks for the definitions, valid examples of each conjunction type, and the interjection punctuation rule.",
+            "A strong answer defines coordinating (FANBOYS, join equals, comma before when linking sentences), correlative (pairs, keep parallel), and subordinating (attach a dependent clause, comma when fronted), each with a correct example. It notes that coordinating and correlative join equal elements while subordinating creates an unequal (main + dependent) relationship. Award marks for the three kinds, examples, and punctuation.",
+          marks: 5,
+        },
+      ],
+    },
+    {
+      // source: LibreTexts — Coalinga College, College Writing and Beyond, 3.1.7 Interjections (https://human.libretexts.org/Courses/Coalinga_College/College_Writing_and_Beyond/03:_Part_III-_Grammar_and_Mechanics/3.01:_Parts_of_Speech/3.1.07:_Interjections)
+      slug: "interjections",
+      title: "Interjections",
+      objective:
+        "By the end of the topic, learners should be able to identify interjections, explain that they express feeling and function independently of a sentence, punctuate them correctly, and use them for effect in persuasive advertisement writing.",
+      estimatedMinutes: 120,
+      notes: `## What an interjection is
+
+**Interjection** — a word or short group of words that expresses **feeling or emotion**. The name comes from Latin *inter* ("between") + *iacere* ("throw") — a word "thrown in between."
+
+- An interjection can **stand alone**: *Ouch! Wow! Hurray!*
+- Even inside a sentence, it is **grammatically independent** — it does not connect to the grammar of the rest of the sentence.
+
+Common interjections: **oh, wow, hey, ow, ouch, ugh, oops, hurray, alas, well, yes, no, ah, oh no, shhh.** Some serve social functions: greetings (*hello, goodbye*), politeness (*please, thanks*), or agreement (*yes, sure, maybe*).
+
+## Punctuation
+
+The punctuation depends on the **strength of the emotion**:
+
+- **Strong feeling → an exclamation mark:** *Hey! That barn is on fire!*
+- **Milder feeling → a comma:** *Hey, I broke a nail.* / *Well, I suppose so.*
+
+The interjection usually comes at the **start** of the sentence, set off from the rest.
+
+## Register: where interjections belong
+
+Interjections are common in **speech, dialogue, and informal writing**, but are usually **avoided in formal or academic writing**. They add a natural, emotional voice — useful in stories and, especially, in **advertisements**.
+
+## Interjections in advertisement (persuasion)
+
+Advertising uses interjections to grab attention and stir feeling:
+
+- ***Wow!*** *Prices you won't believe!*
+- ***Hurry!*** *Offer ends Friday.*
+- ***Yes!*** *Now with double the flavour.*
+
+Used sparingly, an interjection makes an advert lively and persuasive; overused, it feels like empty shouting.
+
+## Summary
+
+- An interjection expresses **emotion** and is **grammatically independent**.
+- Punctuate with an **exclamation mark** (strong) or a **comma** (mild).
+- Keep interjections out of **formal writing**, but use them for impact in **stories and adverts**.`,
+      workedExample: `**Task.** Underline the interjection, state the feeling it expresses, and add the correct punctuation.
+
+1. *Ouch that really hurt*
+2. *Well I suppose we can wait*
+3. *Hurray we won the match*
+
+**Answers**
+
+1. ***Ouch!*** *That really hurt.* — expresses **sudden pain**; strong feeling, so an **exclamation mark** after the interjection.
+2. ***Well,*** *I suppose we can wait.* — expresses **mild hesitation**; a soft feeling, so a **comma** after the interjection.
+3. ***Hurray!*** *We won the match.* — expresses **joy/celebration**; strong feeling, so an **exclamation mark**.
+
+**Rule applied:** the interjection stands apart from the sentence grammar; strong emotion takes an exclamation mark, mild emotion a comma.`,
+      quiz: [
+        {
+          prompt: "An interjection expresses…",
+          options: ["feeling or emotion", "an action", "a place", "a comparison"],
+          correctIndex: 0,
+          explanation: "Interjections express emotion such as surprise, pain or joy.",
+        },
+        {
+          prompt: "Grammatically, an interjection is…",
+          options: ["independent of the sentence", "the subject", "the main verb", "an object"],
+          correctIndex: 0,
+          explanation: "It does not connect to the grammar of the rest of the sentence.",
+        },
+        {
+          prompt: "Which word is an interjection?",
+          options: ["Wow", "quickly", "because", "table"],
+          correctIndex: 0,
+          explanation: "'Wow' expresses emotion and stands alone.",
+        },
+        {
+          prompt: "The word 'interjection' comes from Latin meaning…",
+          options: ["thrown in between", "joined together", "placed before", "named after"],
+          correctIndex: 0,
+          explanation: "inter (between) + iacere (throw) = thrown in between.",
+        },
+        {
+          prompt: "Strong emotion after an interjection is shown with…",
+          options: ["an exclamation mark", "a comma", "a full stop", "a colon"],
+          correctIndex: 0,
+          explanation: "Strong feeling → exclamation mark: 'Hey! Fire!'",
+        },
+        {
+          prompt: "Mild emotion after an interjection is shown with…",
+          options: ["a comma", "an exclamation mark", "a semicolon", "a dash"],
+          correctIndex: 0,
+          explanation: "Milder feeling → comma: 'Well, I suppose so.'",
+        },
+        {
+          prompt: "Where does an interjection usually appear?",
+          options: ["at the start of a sentence", "always at the end", "in the middle of the verb", "inside a noun phrase"],
+          correctIndex: 0,
+          explanation: "It commonly opens the sentence, set off from the rest.",
+        },
+        {
+          prompt: "Interjections are usually AVOIDED in…",
+          options: ["formal or academic writing", "advertisements", "dialogue", "stories"],
+          correctIndex: 0,
+          explanation: "They suit informal writing and speech, not formal essays.",
+        },
+        {
+          prompt: "Which sentence uses an interjection correctly for strong feeling?",
+          options: ["Ouch! That hurt.", "Ouch. that hurt", "ouch that hurt", "Ouch that; hurt"],
+          correctIndex: 0,
+          explanation: "'Ouch!' with an exclamation mark shows the sudden pain.",
+        },
+        {
+          prompt: "Which is NOT an interjection?",
+          options: ["run", "wow", "oops", "alas"],
+          correctIndex: 0,
+          explanation: "'run' is a verb; the others express emotion.",
+        },
+        {
+          prompt: "In 'Oh no! We missed the bus.', the interjection is…",
+          options: ["Oh no", "We", "missed", "bus"],
+          correctIndex: 0,
+          explanation: "'Oh no' expresses dismay and stands apart from the sentence.",
+        },
+        {
+          prompt: "Which feeling does 'Hurray!' express?",
+          options: ["joy / celebration", "pain", "disgust", "boredom"],
+          correctIndex: 0,
+          explanation: "'Hurray!' celebrates or shows joy.",
+        },
+        {
+          prompt: "Which feeling does 'Ugh!' express?",
+          options: ["disgust", "delight", "surprise", "agreement"],
+          correctIndex: 0,
+          explanation: "'Ugh!' expresses disgust or dislike.",
+        },
+        {
+          prompt: "Why are interjections useful in advertisements?",
+          options: ["they grab attention and stir feeling", "they add facts", "they make text formal", "they list prices"],
+          correctIndex: 0,
+          explanation: "Adverts use interjections like 'Wow!' or 'Hurry!' to attract and persuade.",
+        },
+        {
+          prompt: "Which advert line uses an interjection?",
+          options: ["Wow! Half price today!", "Prices reduced today.", "Open until nine.", "Made in Liberia."],
+          correctIndex: 0,
+          explanation: "'Wow!' is an attention-grabbing interjection.",
+        },
+        {
+          prompt: "An interjection that shows agreement is…",
+          options: ["Yes!", "Ouch!", "Alas!", "Ugh!"],
+          correctIndex: 0,
+          explanation: "'Yes' can serve as an interjection of agreement.",
+        },
+        {
+          prompt: "In 'Well, I am not sure.', the comma after 'Well' shows the feeling is…",
+          options: ["mild", "very strong", "angry", "joyful"],
+          correctIndex: 0,
+          explanation: "A comma marks mild emotion or hesitation.",
+        },
+        {
+          prompt: "Overusing interjections in an advert makes it feel…",
+          options: ["like empty shouting", "more formal", "more factual", "longer"],
+          correctIndex: 0,
+          explanation: "Too many interjections lose their impact and feel like shouting.",
+        },
+        {
+          prompt: "Which social-function word can act as an interjection?",
+          options: ["Hello", "under", "and", "because"],
+          correctIndex: 0,
+          explanation: "Greetings like 'Hello' can function as interjections.",
+        },
+        {
+          prompt: "An interjection followed by an exclamation mark is punctuated to show…",
+          options: ["strong emotion", "a question", "a pause only", "a list"],
+          correctIndex: 0,
+          explanation: "The exclamation mark signals strong feeling.",
+        },
+      ],
+      test: [
+        {
+          type: "SHORT_ANSWER",
+          prompt:
+            "Write two sentences that begin with an interjection — one showing strong emotion and one showing mild emotion — and punctuate each correctly.",
+          answerKey:
+            "Strong: e.g. 'Wow! We won!' (exclamation mark). Mild: e.g. 'Well, I can wait.' (comma). Award 2 marks per correct, correctly-punctuated sentence.",
+          marks: 4,
+        },
+        {
+          type: "MULTIPLE_CHOICE",
+          prompt: "Which statement about interjections is true?",
+          options: [
+            "They are grammatically independent of the sentence.",
+            "They are the main verb of the sentence.",
+            "They must be capitalised in the middle of a sentence.",
+            "They are required in academic essays.",
+          ],
+          correctIndex: 0,
+          answerKey: "Interjections do not connect to the grammar of the rest of the sentence.",
+          marks: 2,
+        },
+        {
+          type: "SHORT_ANSWER",
+          prompt:
+            "Add the correct punctuation and explain your choice: 'Ouch that pin is sharp.'",
+          answerKey:
+            "Expected: 'Ouch! That pin is sharp.' The exclamation mark shows strong, sudden feeling (pain). Award a mark for the punctuation and a mark for the explanation.",
+          marks: 2,
+        },
+        {
+          type: "SHORT_ANSWER",
+          prompt:
+            "Explain why interjections are used in advertisements but avoided in formal essays.",
+          answerKey:
+            "Adverts use interjections (Wow!, Hurry!) to grab attention and stir feeling, making the message lively and persuasive; formal/academic writing needs an objective tone, so emotional interjections are out of place. Award marks for both points.",
+          marks: 2,
+        },
+        {
+          type: "ESSAY",
+          prompt:
+            "Write a short advertisement (3–5 lines) for a product of your choice, using at least two interjections correctly punctuated. Then explain how each interjection helps persuade the reader.",
+          answerKey:
+            "Award marks for: at least two correctly-punctuated interjections (exclamation marks for strong feeling); a clear product and persuasive message; an explanation of how each interjection grabs attention or stirs feeling; and appropriate, not excessive, use. A strong answer shows the interjections working with, not overwhelming, the advert.",
           marks: 5,
         },
       ],

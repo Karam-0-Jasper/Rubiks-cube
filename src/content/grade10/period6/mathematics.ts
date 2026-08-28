@@ -1,618 +1,393 @@
 import type { PeriodContent } from "@/content/types";
 
-// Aligned to the Liberian MoE National Curriculum for Mathematics, Grade 10,
-// Semester Two, Period VI, Unit I: Rigid Motion (transformations).
+// Grade 10, Semester Two, Period VI of the MoE Mathematics syllabus:
+// Unit I Rigid Motion; Unit II A. Statistics, B. Ratio and Rates,
+// C. Percentages. Notes rebuilt from published sources (CK-12, Siyavula).
 export const mathematicsG10P6: PeriodContent = {
   grade: 10,
   number: 6,
-  title: "Rigid Motion (Transformations)",
+  title: "Rigid Motion, Statistics, Ratio and Percentages",
   summary:
-    "Period VI of the MoE Grade 10 Mathematics syllabus. Learners study rigid motions — transformations that move a shape without changing its size or shape: translation (sliding), reflection (flipping in a mirror line), and rotation (turning about a point) — and describe the image of a figure under each.",
+    "Period VI of the MoE Grade 10 Mathematics syllabus. Learners study rigid motions (translation, reflection and symmetry), organise and summarise data with frequency tables, averages and displays, work with ratio, rates and scale drawing, and solve percentage problems.",
   topics: [
+    // source: CK-12 — Rigid Transformations / Reflections (https://www.ck12.org/book/ck-12-geometry-concepts-honors/section/2.0/)
     {
-      slug: "translation-and-reflection",
-      title: "Translation and Reflection",
+      slug: "rigid-motion",
+      title: "Rigid Motion: Translation, Reflection and Symmetry",
       objective:
-        "By the end of the topic, learners should be able to explain what a rigid motion is, perform and describe translations using a vector, and reflect a figure in a given mirror line.",
-      estimatedMinutes: 160,
-      notes: `## Introduction
+        "By the end of the topic, learners should be able to explain what a rigid motion is, translate and reflect points and shapes using coordinate rules, and identify lines of symmetry.",
+      estimatedMinutes: 120,
+      notes: `## Rigid motion
 
-- **Transformation geometry** = moving a shape about the plane: slide, flip, turn.
-- These moves keep the shape's **size and angles** unchanged — the image is a perfect copy (**congruence**).
-- **This lesson:** **translation** (sliding) and **reflection** (flipping). Rotation follows next.
+A **rigid motion** (rigid transformation) moves a figure **without changing its size or shape**. The image is **congruent** to the original. The three rigid motions are **translation**, **reflection** and **rotation**.
 
-## What is a rigid motion?
+- The original figure is the **object**; the moved figure is the **image**.
 
-A **transformation** moves or changes a figure. A **rigid motion** (or isometry) is a transformation that moves a figure **without changing its size or shape** — the image is **congruent** (identical) to the original, only its **position** (and possibly orientation) changes.
+## Translation (sliding)
 
-The three rigid motions are **translation, reflection** and **rotation**. The original figure is the **object**; the new figure is the **image**.
+A **translation** moves every point the same distance in the same direction. Using a column shift (a across, b up):
+(x, y) → (x + a, y + b)
 
-## Translation — sliding
+Example: translate (3, 2) by 4 right and 1 down: (3 + 4, 2 − 1) = (7, 1).
 
-A **translation** slides every point of a figure the **same distance in the same direction**. It is described by a **vector** (a movement, so many units across and so many up/down).
+## Reflection (flipping)
 
-A translation vector is written as a column: **( 3 )** means 3 units right; **( −2 )** means 2 units down.
-                                          **( 2 )**                        **(  −2 )**
+A **reflection** flips a figure over a **mirror line**, producing a mirror image. Each point and its image are the same distance from the mirror line. Coordinate rules:
 
-To translate a point, **add the vector to its coordinates**:
+| Mirror line | Rule (x, y) → |
+| --- | --- |
+| x-axis | (x, −y) |
+| y-axis | (−x, y) |
+| line y = x | (y, x) |
+| line y = −x | (−y, −x) |
 
-- Point A(1, 2) translated by ( 3, 2 ) → A′(1 + 3, 2 + 2) = **(4, 4)**.
-
-\`\`\`svg A triangle translated to the right and up
-<svg viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A triangle and its translated image">
-  <polygon points="30,120 70,120 30,80" fill="#c7d2fe" stroke="#3730a3"/>
-  <polygon points="120,80 160,80 120,40" fill="#a7f3d0" stroke="#065f46"/>
-  <line x1="50" y1="100" x2="140" y2="60" stroke="#dc2626" stroke-dasharray="4 3" marker-end="url(#ar)"/>
-  <text x="35" y="140" font-size="9" fill="#3730a3">object</text>
-  <text x="120" y="30" font-size="9" fill="#065f46">image</text>
-  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#dc2626"/></marker></defs>
+\`\`\`svg A triangle and its reflection in the y-axis.
+<svg viewBox="0 0 260 160" role="img" aria-label="A triangle reflected in the vertical y-axis">
+  <line x1="130" y1="10" x2="130" y2="150" stroke="currentColor" stroke-dasharray="4 3" stroke-opacity="0.7"/>
+  <polygon points="150,140 200,140 150,60" fill="#6366f1" fill-opacity="0.2" stroke="#6366f1"/>
+  <polygon points="110,140 60,140 110,60" fill="#10b981" fill-opacity="0.2" stroke="#10b981"/>
+  <text x="120" y="24" font-size="10" fill="currentColor">mirror</text>
 </svg>
 \`\`\`
 
-Under a translation, the image is the **same size, shape and orientation** — the figure simply slides.
+## Symmetry
 
-## Reflection — flipping
+- A figure has **line (reflection) symmetry** if a mirror line divides it into two matching halves. A square has 4 lines of symmetry; an equilateral triangle has 3; a rectangle has 2; a circle has infinitely many.
+- **Rotational symmetry** means the figure looks the same after turning less than a full turn about its centre.
 
-A **reflection** flips a figure over a straight line called the **mirror line (line of reflection)**. Each point of the image is the **same distance** from the mirror line as the object, but on the **opposite side**. A reflection produces a **mirror image** (the orientation is reversed, like your reflection in a mirror).
+## Key idea
 
-Common mirror lines and their rules on coordinates:
+Under any rigid motion, lengths and angles are preserved — only position (and, for reflection, orientation) changes.
 
-- Reflection in the **x-axis:** (x, y) → **(x, −y)** (the y-coordinate changes sign).
-- Reflection in the **y-axis:** (x, y) → **(−x, y)** (the x-coordinate changes sign).
-- Reflection in the line **y = x:** (x, y) → **(y, x)** (the coordinates swap).
-- Reflection in the line **y = −x:** (x, y) → **(−y, −x)**.
+## Common errors
 
-*Example:* reflecting P(3, 2) in the x-axis gives P′(3, −2); reflecting it in y = x gives (2, 3).
+- **Changing the size** — rigid motions never resize; that would be an enlargement.
+- **Mixing up the axis rules** — reflection in the x-axis negates y, not x.
+- **Miscounting lines of symmetry.**`,
+      workedExample: `**Question:** The point A is (3, 2).
+(a) Find its image after a translation of 2 left and 4 up.
+(b) Find its image after reflection in the x-axis.
 
-Points **on** the mirror line do not move. The mirror line is the **perpendicular bisector** of the line joining each point to its image.
+**Solution**
 
-## Congruence under rigid motion
+*Part (a) — translation (x, y) → (x − 2, y + 4).*
+A(3, 2) → (3 − 2, 2 + 4) = (1, 6)
 
-Because translation and reflection do not change size or shape, the object and image are always **congruent**. This is the key property of every rigid motion — distances and angles are preserved.
+*Part (b) — reflection in the x-axis (x, y) → (x, −y).*
+A(3, 2) → (3, −2)
 
-## Common errors to watch for
-
-- **Mixing up the axis rules:** reflecting in the **x-axis** changes the sign of **y** (not x); reflecting in the **y-axis** changes the sign of **x**.
-- **Translating by subtracting instead of adding** the vector — to move right and up you *add* positive numbers.
-- **Reading a column vector wrong way round** — the top number is the horizontal move (across), the bottom is the vertical move (up/down).
-- **Thinking a reflection changes size** — it never does; only the orientation flips.`,
-      workedExample: `**Task.** A triangle has vertices A(1, 1), B(4, 1) and C(1, 3).
-(a) Translate the triangle by the vector ( 2, 3 ) and give the new coordinates.
-(b) Reflect the original triangle in the x-axis and give the new coordinates.
-
-**Part (a) — translation by ( 2, 3 )**
-Add the vector ( 2, 3 ) to each vertex (2 right, 3 up):
-- A(1, 1) → A′(1 + 2, 1 + 3) = **(3, 4)**
-- B(4, 1) → B′(4 + 2, 1 + 3) = **(6, 4)**
-- C(1, 3) → C′(1 + 2, 3 + 3) = **(3, 6)**
-
-The image triangle A′B′C′ is the same size and shape as ABC — it has simply slid 2 right and 3 up.
-
-**Part (b) — reflection in the x-axis**
-For reflection in the x-axis, (x, y) → (x, −y): keep x, change the sign of y.
-- A(1, 1) → A′(1, −1)
-- B(4, 1) → B′(4, −1)
-- C(1, 3) → C′(1, −3)
-
-The image is a mirror image below the x-axis, the same size and shape as the original.
-
-**Conclusion:** a translation adds the vector to every point (sliding the figure), and a reflection in the x-axis keeps x but negates y (flipping it). In both cases the image is **congruent** to the object.`,
-      teachingTip:
-        "Squared/graph paper is essential here — learners must plot the object and image to see the motion, not just apply rules. For translation, drill 'add the vector to the coordinates'. For reflection, teach the two axis rules as sign changes (x-axis flips y; y-axis flips x) and reinforce that points ON the mirror line stay put. Always end by checking that object and image are congruent — the defining property of rigid motion.",
+**Answer:** (a) (1, 6); (b) (3, −2).`,
       quiz: [
-        {
-          prompt: "A rigid motion moves a figure without changing its…",
-          options: ["size or shape", "colour only", "name", "number of sides only"],
-          correctIndex: 0,
-          explanation: "Rigid motions preserve size and shape.",
-        },
-        {
-          prompt: "Under a rigid motion, the object and image are…",
-          options: ["congruent", "different sizes", "different shapes", "unrelated"],
-          correctIndex: 0,
-          explanation: "They are identical (congruent).",
-        },
-        {
-          prompt: "The three rigid motions are translation, reflection and…",
-          options: ["rotation", "enlargement", "stretching", "shrinking"],
-          correctIndex: 0,
-          explanation: "Rotation is the third rigid motion.",
-        },
-        {
-          prompt: "A translation slides every point the same…",
-          options: ["distance in the same direction", "distance in any direction", "angle", "size"],
-          correctIndex: 0,
-          explanation: "All points move equally in one direction.",
-        },
-        {
-          prompt: "A translation is described by a…",
-          options: ["vector", "mirror line", "centre point", "angle"],
-          correctIndex: 0,
-          explanation: "A vector gives the direction and distance.",
-        },
-        {
-          prompt: "The point A(2, 3) translated by ( 1, 4 ) becomes…",
-          options: ["(3, 7)", "(1, 4)", "(2, 12)", "(3, 4)"],
-          correctIndex: 0,
-          explanation: "Add: (2+1, 3+4) = (3, 7).",
-        },
-        {
-          prompt: "Under a translation, the orientation of the figure is…",
-          options: ["unchanged", "reversed", "turned 90°", "reduced"],
-          correctIndex: 0,
-          explanation: "A translation only slides the figure.",
-        },
-        {
-          prompt: "A reflection flips a figure over a…",
-          options: ["mirror line", "centre point", "vector", "vertex"],
-          correctIndex: 0,
-          explanation: "The line of reflection is the mirror line.",
-        },
-        {
-          prompt: "Under a reflection, the image is on the … side of the mirror line.",
-          options: ["opposite", "same", "top", "left"],
-          correctIndex: 0,
-          explanation: "Each point moves to the opposite side.",
-        },
-        {
-          prompt: "Reflection in the x-axis changes (x, y) to…",
-          options: ["(x, −y)", "(−x, y)", "(y, x)", "(−x, −y)"],
-          correctIndex: 0,
-          explanation: "Keep x, negate y.",
-        },
-        {
-          prompt: "Reflection in the y-axis changes (x, y) to…",
-          options: ["(−x, y)", "(x, −y)", "(y, x)", "(−x, −y)"],
-          correctIndex: 0,
-          explanation: "Keep y, negate x.",
-        },
-        {
-          prompt: "Reflecting P(3, 2) in the x-axis gives…",
-          options: ["(3, −2)", "(−3, 2)", "(2, 3)", "(−3, −2)"],
-          correctIndex: 0,
-          explanation: "x stays, y changes sign.",
-        },
-        {
-          prompt: "Reflecting P(3, 2) in the y-axis gives…",
-          options: ["(−3, 2)", "(3, −2)", "(2, 3)", "(−3, −2)"],
-          correctIndex: 0,
-          explanation: "y stays, x changes sign.",
-        },
-        {
-          prompt: "A point that lies ON the mirror line…",
-          options: ["does not move", "moves furthest", "disappears", "doubles"],
-          correctIndex: 0,
-          explanation: "Points on the line map to themselves.",
-        },
-        {
-          prompt: "A reflection produces a … image.",
-          options: ["mirror", "larger", "smaller", "rotated"],
-          correctIndex: 0,
-          explanation: "Reflection reverses orientation (mirror image).",
-        },
-        {
-          prompt: "The object is the original figure; the new figure is the…",
-          options: ["image", "vector", "axis", "centre"],
-          correctIndex: 0,
-          explanation: "The transformed figure is the image.",
-        },
-        {
-          prompt: "A translation vector ( −2, 3 ) means…",
-          options: ["2 left and 3 up", "2 right and 3 down", "3 left and 2 up", "2 up and 3 right"],
-          correctIndex: 0,
-          explanation: "−2 is 2 left; +3 is 3 up.",
-        },
-        {
-          prompt: "Rigid motions preserve distances and…",
-          options: ["angles", "colours", "names", "areas only, not angles"],
-          correctIndex: 0,
-          explanation: "Both distances and angles are preserved.",
-        },
-        {
-          prompt: "The mirror line is the perpendicular bisector of the line joining…",
-          options: ["each point to its image", "two vertices", "the axes", "the vectors"],
-          correctIndex: 0,
-          explanation: "It bisects the object–image segment at right angles.",
-        },
-        {
-          prompt: "B(0, 5) translated by ( 4, −5 ) becomes…",
-          options: ["(4, 0)", "(0, 0)", "(4, 10)", "(−4, 0)"],
-          correctIndex: 0,
-          explanation: "(0+4, 5−5) = (4, 0).",
-        },
+        { prompt: "A rigid motion changes a figure's", options: ["size", "shape", "position only", "angles"], correctIndex: 2, explanation: "Size and shape are preserved; only position (and orientation) changes." },
+        { prompt: "Which is NOT a rigid motion?", options: ["translation", "reflection", "rotation", "enlargement"], correctIndex: 3, explanation: "Enlargement changes size." },
+        { prompt: "Translating (x, y) by 3 right and 2 up gives", options: ["(x + 3, y + 2)", "(x − 3, y − 2)", "(x + 2, y + 3)", "(3x, 2y)"], correctIndex: 0, explanation: "Add the shift to each coordinate." },
+        { prompt: "Reflecting (5, 3) in the x-axis gives", options: ["(5, −3)", "(−5, 3)", "(−5, −3)", "(3, 5)"], correctIndex: 0, explanation: "x-axis rule: (x, −y)." },
+        { prompt: "Reflecting (5, 3) in the y-axis gives", options: ["(5, −3)", "(−5, 3)", "(−5, −3)", "(3, 5)"], correctIndex: 1, explanation: "y-axis rule: (−x, y)." },
+        { prompt: "The image and object under a rigid motion are", options: ["similar only", "congruent", "different sizes", "unrelated"], correctIndex: 1, explanation: "They are congruent (same size and shape)." },
+        { prompt: "A square has how many lines of symmetry?", options: ["1", "2", "4", "8"], correctIndex: 2, explanation: "Two diagonals and two through the sides." },
+        { prompt: "Translating (2, 5) by 1 right and 3 down gives", options: ["(3, 2)", "(1, 8)", "(3, 8)", "(1, 2)"], correctIndex: 0, explanation: "(2 + 1, 5 − 3) = (3, 2)." },
+        { prompt: "Reflecting (4, 1) in the line y = x gives", options: ["(1, 4)", "(−4, 1)", "(4, −1)", "(−1, −4)"], correctIndex: 0, explanation: "y = x rule swaps coordinates: (y, x)." },
+        { prompt: "An equilateral triangle has how many lines of symmetry?", options: ["1", "2", "3", "6"], correctIndex: 2, explanation: "One through each vertex." },
+        { prompt: "A translation moves every point", options: ["a different distance", "the same distance and direction", "toward the origin", "in a circle"], correctIndex: 1, explanation: "Same distance, same direction." },
+        { prompt: "A rectangle (not a square) has how many lines of symmetry?", options: ["1", "2", "4", "0"], correctIndex: 1, explanation: "Two, through the midpoints of opposite sides." },
+        { prompt: "A reflection produces a", options: ["larger image", "mirror image", "rotated image", "smaller image"], correctIndex: 1, explanation: "It flips the figure over the mirror line." },
+        { prompt: "Reflecting (−2, 6) in the x-axis gives", options: ["(−2, −6)", "(2, 6)", "(2, −6)", "(6, −2)"], correctIndex: 0, explanation: "(x, −y) = (−2, −6)." },
+        { prompt: "A circle has how many lines of symmetry?", options: ["1", "4", "infinitely many", "0"], correctIndex: 2, explanation: "Every diameter is a line of symmetry." },
+        { prompt: "Under a rigid motion, the angles of a figure", options: ["increase", "decrease", "stay the same", "become right angles"], correctIndex: 2, explanation: "Angles are preserved." },
+        { prompt: "Translating a point by (0, 0) gives", options: ["the origin", "the same point", "its reflection", "a larger point"], correctIndex: 1, explanation: "No movement leaves the point unchanged." },
+        { prompt: "A figure that looks the same after a part-turn about its centre has", options: ["no symmetry", "rotational symmetry", "translation only", "enlargement"], correctIndex: 1, explanation: "That is rotational symmetry." },
+        { prompt: "Reflecting (7, −3) in the y-axis gives", options: ["(−7, −3)", "(7, 3)", "(−7, 3)", "(−3, 7)"], correctIndex: 0, explanation: "(−x, y) = (−7, −3)." },
       ],
       test: [
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Translate the point A(2, 5) by the vector ( 3, −2 ) and give the coordinates of the image.",
-          answerKey:
-            "A′ = (2 + 3, 5 − 2) = (5, 3). Award marks for adding the vector correctly and the image (5, 3).",
-          marks: 2,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Reflect the triangle with vertices P(1, 2), Q(4, 2), R(1, 5) in the y-axis and give the new coordinates.",
-          answerKey:
-            "Reflection in y-axis: (x, y) → (−x, y). P′(−1, 2), Q′(−4, 2), R′(−1, 5). Award marks for the correct rule and all three image points.",
-          marks: 3,
-        },
-        {
-          type: "MULTIPLE_CHOICE",
-          prompt: "Which statement about a rigid motion is TRUE?",
-          options: [
-            "the image is congruent to the object",
-            "the image is larger than the object",
-            "the image is a different shape",
-            "the object disappears",
-          ],
-          correctIndex: 0,
-          answerKey: "Rigid motions preserve size and shape, so the image is congruent.",
-          marks: 2,
-        },
-        {
-          type: "ESSAY",
-          prompt:
-            "Explain the difference between a translation and a reflection, and describe how you would perform each on a shape drawn on graph paper.",
-          answerKey:
-            "A strong answer explains that a translation slides every point the same distance in the same direction (described by a vector) and keeps the figure's orientation, performed by adding the vector to each vertex's coordinates; while a reflection flips the figure over a mirror line to produce a mirror image (orientation reversed), performed by plotting each point the same distance on the opposite side of the mirror line (or using the rules (x,y)→(x,−y) for the x-axis and (x,y)→(−x,y) for the y-axis). Both keep the figure congruent. Award marks for the correct distinction and a correct method for each.",
-          marks: 5,
-        },
+        { type: "SHORT_ANSWER", prompt: "The point P(4, −2) is translated by 3 left and 5 up. Find its image, and then reflect the image in the x-axis.", answerKey: "Translation: (4 − 3, −2 + 5) = (1, 3). Reflection in x-axis: (1, −3). Award 3 marks for the translation, 3 for the reflection.", marks: 6 },
+        { type: "SHORT_ANSWER", prompt: "State the coordinate rule for reflection in (a) the x-axis, (b) the y-axis, and (c) the line y = x.", answerKey: "(a) (x, y) → (x, −y); (b) (x, y) → (−x, y); (c) (x, y) → (y, x). Award 2 marks each.", marks: 6 },
+        { type: "MULTIPLE_CHOICE", prompt: "Which transformation is NOT rigid?", options: ["translation", "reflection", "rotation", "enlargement"], correctIndex: 3, answerKey: "Enlargement changes size, so it is not rigid. Option D.", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "State the number of lines of symmetry of a square, a rectangle and an equilateral triangle.", answerKey: "Square 4, rectangle 2, equilateral triangle 3. Award 2 marks each.", marks: 6 },
+        { type: "ESSAY", prompt: "Explain what is meant by a rigid motion, describe translation and reflection with their coordinate rules, and explain why the image is always congruent to the object.", answerKey: "A rigid motion moves a figure without changing its size or shape. Translation slides every point the same distance and direction, (x, y) → (x + a, y + b). Reflection flips a figure over a mirror line so each point maps to a point the same distance on the other side, e.g. in the x-axis (x, y) → (x, −y). Because lengths and angles are unchanged by these motions, the image has the same side lengths and angles as the object, so it is congruent. Award 3 marks for defining rigid motion, 3 for translation, 2 for reflection, 2 for the congruence reasoning.", marks: 10 },
       ],
     },
+    // source: Siyavula — Measures of central tendency, Grade 10 Statistics (https://www.siyavula.com/read/za/mathematics/grade-10/statistics/10-statistics-01)
     {
-      slug: "rotation",
-      title: "Rotation and the Properties of Rigid Motions",
+      slug: "statistics",
+      title: "Statistics: Data, Central Tendency and Displays",
       objective:
-        "By the end of the topic, learners should be able to rotate a figure about a centre through a given angle and direction, and state the properties common to all rigid motions.",
-      estimatedMinutes: 150,
-      notes: `## Introduction
+        "By the end of the topic, learners should be able to define basic statistical terms, build a frequency table, calculate the mean, median and mode, and read stem-and-leaf, histogram and box-and-whisker displays.",
+      estimatedMinutes: 130,
+      notes: `## Statistical concepts
 
-- Done: sliding (translation) and flipping (reflection).
-- Third rigid motion = **rotation** — a turn about a fixed point, like clock hands about the centre.
-- **This lesson:** rotation, and the **properties all rigid motions share** (a favourite exam question).
+- **Data** — collected facts or numbers.
+- **Population** — the whole group being studied; a **sample** is a part of it.
+- **Frequency** — how many times a value occurs.
 
-## Rotation — turning
+## Frequency table
 
-A **rotation** turns a figure about a fixed point called the **centre of rotation**, through a given **angle** and in a given **direction** (clockwise or anticlockwise).
+A **frequency table** records each value (or class) against its frequency.
 
-To describe a rotation fully you must give **three** things:
+| Score | Frequency |
+| --- | --- |
+| 4 | 2 |
+| 7 | 1 |
+| 8 | 2 |
+| 9 | 1 |
+| 12 | 1 |
 
-1. the **centre** of rotation,
-2. the **angle** of turn (e.g. 90°, 180°, 270°),
-3. the **direction** (clockwise or anticlockwise).
+## Measures of central tendency (averages)
 
-\`\`\`svg A shape rotated 90° about the origin
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A flag shape and its image after a 90 degree rotation about a centre point">
-  <line x1="20" y1="100" x2="180" y2="100" stroke="#94a3b8"/>
-  <line x1="100" y1="20" x2="100" y2="180" stroke="#94a3b8"/>
-  <circle cx="100" cy="100" r="4" fill="#111"/>
-  <polygon points="120,100 150,100 150,120 120,120" fill="#c7d2fe" stroke="#3730a3"/>
-  <polygon points="100,80 100,50 80,50 80,80" fill="#a7f3d0" stroke="#065f46"/>
-  <path d="M135,90 A35,35 0 0,0 105,60" fill="none" stroke="#dc2626" stroke-dasharray="3 2" marker-end="url(#a2)"/>
-  <text x="112" y="98" font-size="8" fill="#111">centre</text>
-  <defs><marker id="a2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#dc2626"/></marker></defs>
+- **Mean** — add all the values and divide by how many there are: mean = (sum of values) ÷ (number of values).
+- **Median** — the middle value when the data is arranged in order. With an even number of values, average the two middle ones.
+- **Mode** — the value that occurs most often (there may be none or more than one).
+
+## Range
+
+**Range** = highest value − lowest value. It measures spread.
+
+## Displays
+
+- **Histogram** — a bar graph for grouped data; bars touch, and bar height shows frequency.
+- **Stem-and-leaf plot** — splits each value into a stem (leading digits) and a leaf (last digit), keeping the actual data while showing its shape.
+- **Box-and-whisker plot** — shows the minimum, lower quartile, median, upper quartile and maximum (the five-number summary).
+
+\`\`\`svg A simple box-and-whisker plot marking minimum, quartiles, median and maximum.
+<svg viewBox="0 0 320 90" role="img" aria-label="Box and whisker plot">
+  <line x1="20" y1="50" x2="300" y2="50" stroke="currentColor" stroke-opacity="0.4"/>
+  <line x1="40" y1="42" x2="40" y2="58" stroke="currentColor"/>
+  <line x1="40" y1="50" x2="110" y2="50" stroke="currentColor"/>
+  <rect x="110" y="34" width="120" height="32" fill="#6366f1" fill-opacity="0.18" stroke="#6366f1"/>
+  <line x1="165" y1="34" x2="165" y2="66" stroke="#6366f1" stroke-width="2"/>
+  <line x1="230" y1="50" x2="280" y2="50" stroke="currentColor"/>
+  <line x1="280" y1="42" x2="280" y2="58" stroke="currentColor"/>
+  <text x="30" y="80" font-size="9" fill="currentColor">min</text>
+  <text x="150" y="28" font-size="9" fill="currentColor">median</text>
+  <text x="268" y="80" font-size="9" fill="currentColor">max</text>
 </svg>
 \`\`\`
 
-### Rotations about the origin (common cases)
-For a rotation about the **origin (0, 0)**:
+## Common errors
 
-- **90° anticlockwise:** (x, y) → **(−y, x)**.
-- **180°** (either direction): (x, y) → **(−x, −y)**.
-- **90° clockwise** (= 270° anticlockwise): (x, y) → **(y, −x)**.
+- **Forgetting to order the data before finding the median.**
+- **Confusing mean and median** — the mean uses every value; the median is the middle position.
+- **Dividing by the wrong count** for the mean.`,
+      workedExample: `**Question:** For the data 4, 7, 8, 8, 9, 12, 15, find the mean, median, mode and range.
 
-*Example:* rotating P(2, 1) by 180° about the origin gives P′(−2, −1).
+**Solution**
 
-The **centre of rotation does not move**; every other point turns around it, staying the **same distance** from the centre.
+*Step 1 — mean.* Sum = 4 + 7 + 8 + 8 + 9 + 12 + 15 = 63. There are 7 values.
+Mean = 63 ÷ 7 = 9
 
-## Properties common to all rigid motions
+*Step 2 — median.* The data is already in order; with 7 values the middle is the 4th value.
+Median = 8
 
-Translation, reflection and rotation all share these properties (they are **isometries**):
+*Step 3 — mode.* The most frequent value is 8 (it appears twice).
+Mode = 8
 
-- The image is **congruent** to the object (same size and shape).
-- **Lengths** (distances) are preserved.
-- **Angles** are preserved.
-- Straight lines stay straight; parallel lines stay parallel.
+*Step 4 — range.* 15 − 4 = 11.
 
-What can change is the figure's **position** (all three) and its **orientation** (reflection reverses it; rotation turns it; translation keeps it).
-
-## Summary of the three rigid motions
-
-| Motion | Described by | Orientation |
-|---|---|---|
-| **Translation** | a vector | unchanged |
-| **Reflection** | a mirror line | reversed (mirror image) |
-| **Rotation** | centre, angle, direction | turned |
-
-## Common errors to watch for
-
-- **Forgetting the direction** — a rotation is only fully described with centre, angle **and** direction (clockwise vs anticlockwise); 90° clockwise and 90° anticlockwise give different images.
-- **Confusing the 90° rules** — 90° anticlockwise about the origin is (x, y) → (−y, x); 90° clockwise is (x, y) → (y, −x). Check with a quick sketch.
-- **Rotating about the wrong point** — unless told otherwise, use the given centre; the centre itself never moves.
-- **Thinking rotation changes size** — like all rigid motions, it preserves lengths and angles.`,
-      workedExample: `**Task.** A point P has coordinates (3, 1).
-(a) Rotate P by 180° about the origin.
-(b) Rotate P by 90° anticlockwise about the origin.
-(c) State two properties that stay the same for any rigid motion.
-
-**Part (a) — 180° about the origin**
-The rule is (x, y) → (−x, −y):
-P(3, 1) → **(−3, −1)**.
-
-**Part (b) — 90° anticlockwise about the origin**
-The rule is (x, y) → (−y, x):
-P(3, 1) → (−(1), 3) = **(−1, 3)**.
-
-**Part (c) — two properties preserved by any rigid motion**
-Any two of:
-- The image is **congruent** to the object (same size and shape).
-- **Lengths (distances)** are preserved.
-- **Angles** are preserved.
-- Straight lines stay straight; parallel lines stay parallel.
-
-**Conclusion:** to rotate about the origin, apply the correct rule — 180° gives (−x, −y), so (3, 1) → (−3, −1); 90° anticlockwise gives (−y, x), so (3, 1) → (−1, 3). And whatever the rigid motion, the image stays congruent, with lengths and angles unchanged.`,
-      teachingTip:
-        "Rotation needs three things every time — centre, angle, direction — and learners lose marks by omitting one; make them state all three. Tracing paper is the best classroom tool: pin it at the centre and physically turn it to see the image. Reinforce that a full description of any transformation (translation by a vector; reflection in a named line; rotation with centre, angle and direction) is what exams ask for, and end the unit by comparing the three motions in one table.",
+**Answer:** mean 9, median 8, mode 8, range 11.`,
       quiz: [
-        {
-          prompt: "A rotation turns a figure about a fixed point called the…",
-          options: ["centre of rotation", "mirror line", "vector", "origin only"],
-          correctIndex: 0,
-          explanation: "Rotation is about a centre.",
-        },
-        {
-          prompt: "To describe a rotation fully you need the centre, the angle and the…",
-          options: ["direction", "colour", "size", "vector"],
-          correctIndex: 0,
-          explanation: "Centre, angle and direction are all required.",
-        },
-        {
-          prompt: "The direction of a rotation is either clockwise or…",
-          options: ["anticlockwise", "upward", "sideways", "diagonal"],
-          correctIndex: 0,
-          explanation: "Clockwise or anticlockwise.",
-        },
-        {
-          prompt: "A rotation of 180° about the origin sends (x, y) to…",
-          options: ["(−x, −y)", "(−y, x)", "(x, −y)", "(y, x)"],
-          correctIndex: 0,
-          explanation: "180° reverses both signs.",
-        },
-        {
-          prompt: "A 90° anticlockwise rotation about the origin sends (x, y) to…",
-          options: ["(−y, x)", "(y, −x)", "(−x, −y)", "(x, y)"],
-          correctIndex: 0,
-          explanation: "The rule is (x, y) → (−y, x).",
-        },
-        {
-          prompt: "Rotating P(2, 1) by 180° about the origin gives…",
-          options: ["(−2, −1)", "(2, −1)", "(−1, 2)", "(1, 2)"],
-          correctIndex: 0,
-          explanation: "(−x, −y) = (−2, −1).",
-        },
-        {
-          prompt: "The centre of rotation…",
-          options: ["does not move", "moves furthest", "disappears", "doubles"],
-          correctIndex: 0,
-          explanation: "Every point turns around the fixed centre.",
-        },
-        {
-          prompt: "During a rotation, each point stays the same … from the centre.",
-          options: ["distance", "colour", "angle to the axis", "size"],
-          correctIndex: 0,
-          explanation: "Points keep their distance from the centre.",
-        },
-        {
-          prompt: "Which motion keeps the orientation unchanged?",
-          options: ["translation", "reflection", "rotation", "none"],
-          correctIndex: 0,
-          explanation: "Translation only slides the figure.",
-        },
-        {
-          prompt: "Which motion reverses the orientation (mirror image)?",
-          options: ["reflection", "translation", "rotation", "enlargement"],
-          correctIndex: 0,
-          explanation: "Reflection produces a mirror image.",
-        },
-        {
-          prompt: "Translation, reflection and rotation are all…",
-          options: ["rigid motions (isometries)", "enlargements", "stretches", "shrinks"],
-          correctIndex: 0,
-          explanation: "All three are rigid motions.",
-        },
-        {
-          prompt: "Under any rigid motion, lengths are…",
-          options: ["preserved", "halved", "doubled", "removed"],
-          correctIndex: 0,
-          explanation: "Distances stay the same.",
-        },
-        {
-          prompt: "Under any rigid motion, angles are…",
-          options: ["preserved", "increased", "reduced", "reversed in size"],
-          correctIndex: 0,
-          explanation: "Angles are unchanged.",
-        },
-        {
-          prompt: "A 90° clockwise rotation is the same as a … anticlockwise rotation.",
-          options: ["270°", "90°", "180°", "45°"],
-          correctIndex: 0,
-          explanation: "Clockwise 90° = anticlockwise 270°.",
-        },
-        {
-          prompt: "A translation is described by a vector; a reflection by a mirror line; a rotation by…",
-          options: ["a centre, angle and direction", "a vector only", "a length only", "a colour"],
-          correctIndex: 0,
-          explanation: "Rotation needs centre, angle and direction.",
-        },
-        {
-          prompt: "Rotating P(1, 0) by 90° anticlockwise about the origin gives…",
-          options: ["(0, 1)", "(0, −1)", "(−1, 0)", "(1, 0)"],
-          correctIndex: 0,
-          explanation: "(−y, x) = (−0, 1) = (0, 1).",
-        },
-        {
-          prompt: "Which stays the same for all three rigid motions?",
-          options: ["the size and shape (congruence)", "the position", "the orientation", "the colour"],
-          correctIndex: 0,
-          explanation: "Congruence is common to all rigid motions.",
-        },
-        {
-          prompt: "Straight lines under a rigid motion stay…",
-          options: ["straight", "curved", "broken", "shorter"],
-          correctIndex: 0,
-          explanation: "Rigid motions map straight lines to straight lines.",
-        },
-        {
-          prompt: "A useful classroom tool for performing rotations is…",
-          options: ["tracing paper", "a calculator only", "a dictionary", "a ruler only"],
-          correctIndex: 0,
-          explanation: "Tracing paper pinned at the centre shows the turn.",
-        },
-        {
-          prompt: "The image after a rigid motion may differ from the object in…",
-          options: ["position (and sometimes orientation)", "size", "shape", "angles"],
-          correctIndex: 0,
-          explanation: "Only position/orientation may change, not size/shape.",
-        },
+        { prompt: "The mean of 2, 4, 6 is", options: ["3", "4", "6", "12"], correctIndex: 1, explanation: "(2 + 4 + 6) ÷ 3 = 12 ÷ 3 = 4." },
+        { prompt: "The median of 3, 5, 9 is", options: ["3", "5", "9", "6"], correctIndex: 1, explanation: "The middle value is 5." },
+        { prompt: "The mode of 2, 3, 3, 4, 5 is", options: ["2", "3", "4", "5"], correctIndex: 1, explanation: "3 occurs most often." },
+        { prompt: "The range of 4, 10, 7, 2 is", options: ["6", "8", "10", "2"], correctIndex: 1, explanation: "10 − 2 = 8." },
+        { prompt: "To find the median you must first", options: ["add the values", "order the data", "square the values", "count the mode"], correctIndex: 1, explanation: "Arrange in order, then find the middle." },
+        { prompt: "The mean of 5, 5, 5, 5 is", options: ["4", "5", "20", "0"], correctIndex: 1, explanation: "All equal, so the mean is 5." },
+        { prompt: "Frequency means", options: ["the largest value", "how often a value occurs", "the average", "the middle value"], correctIndex: 1, explanation: "It counts occurrences." },
+        { prompt: "The median of 2, 4, 6, 8 is", options: ["4", "5", "6", "4.5"], correctIndex: 1, explanation: "Average the two middle values: (4 + 6) ÷ 2 = 5." },
+        { prompt: "A box-and-whisker plot shows the", options: ["mean only", "five-number summary", "mode only", "frequency"], correctIndex: 1, explanation: "Min, quartiles, median and max." },
+        { prompt: "A histogram displays", options: ["grouped data as bars", "one number", "a pie", "coordinates"], correctIndex: 0, explanation: "Bars show class frequencies." },
+        { prompt: "A stem-and-leaf plot keeps the", options: ["actual data values", "mean only", "range only", "mode only"], correctIndex: 0, explanation: "It retains each value split into stem and leaf." },
+        { prompt: "The mean of 10, 20, 30, 40 is", options: ["20", "25", "30", "100"], correctIndex: 1, explanation: "100 ÷ 4 = 25." },
+        { prompt: "Which average uses every data value?", options: ["mode", "median", "mean", "range"], correctIndex: 2, explanation: "The mean sums all values." },
+        { prompt: "A part of a population selected for study is a", options: ["sample", "census", "mode", "range"], correctIndex: 0, explanation: "A sample is a subset of the population." },
+        { prompt: "The mode of 1, 2, 2, 3, 3, 3, 4 is", options: ["2", "3", "4", "no mode"], correctIndex: 1, explanation: "3 occurs three times." },
+        { prompt: "The median of 7, 3, 9, 1, 5 is", options: ["3", "5", "7", "9"], correctIndex: 1, explanation: "Ordered: 1,3,5,7,9; middle is 5." },
+        { prompt: "If a data set has 6 values, the median is", options: ["the 3rd value", "the 6th value", "the average of the 3rd and 4th", "the mode"], correctIndex: 2, explanation: "For an even count, average the two middle values." },
+        { prompt: "The range measures", options: ["the average", "the spread", "the most common value", "the total"], correctIndex: 1, explanation: "Highest minus lowest gives the spread." },
+        { prompt: "The mean of 3, 7, 8 is", options: ["6", "9", "18", "7"], correctIndex: 0, explanation: "18 ÷ 3 = 6." },
       ],
       test: [
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Rotate the point A(4, 2) by 180° about the origin, and give the image coordinates.",
-          answerKey:
-            "180° about the origin: (x, y) → (−x, −y), so A′ = (−4, −2). Award marks for the rule and the image (−4, −2).",
-          marks: 2,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt: "State the three pieces of information needed to describe a rotation fully.",
-          answerKey:
-            "The centre of rotation, the angle of turn, and the direction (clockwise or anticlockwise). Award a mark for each.",
-          marks: 3,
-        },
-        {
-          type: "MULTIPLE_CHOICE",
-          prompt: "Which property is NOT preserved by a rigid motion?",
-          options: ["the position of the figure", "lengths", "angles", "size and shape"],
-          correctIndex: 0,
-          answerKey: "Position can change; size, shape, lengths and angles are all preserved.",
-          marks: 2,
-        },
-        {
-          type: "ESSAY",
-          prompt:
-            "Compare the three rigid motions — translation, reflection and rotation — stating how each is described and what happens to the figure's orientation, and give one property common to all three.",
-          answerKey:
-            "A strong answer states: a translation is described by a vector and keeps the orientation unchanged (slides the figure); a reflection is described by a mirror line and reverses the orientation (produces a mirror image); a rotation is described by a centre, angle and direction and turns the figure. A property common to all three: the image is congruent to the object (same size and shape); lengths and angles are preserved. Award marks for correctly describing each motion and its effect on orientation, and a valid common property.",
-          marks: 5,
-        },
+        { type: "SHORT_ANSWER", prompt: "For the data 5, 8, 8, 10, 14, find the mean, median, mode and range.", answerKey: "Mean = (5 + 8 + 8 + 10 + 14) ÷ 5 = 45 ÷ 5 = 9. Median = middle (3rd) = 8. Mode = 8. Range = 14 − 5 = 9. Award 2 marks for the mean, 2 for the median, 1 for the mode, 1 for the range.", marks: 6 },
+        { type: "SHORT_ANSWER", prompt: "The marks of six learners are 12, 15, 15, 18, 20, 22. Find the mean and the median.", answerKey: "Mean = (12 + 15 + 15 + 18 + 20 + 22) ÷ 6 = 102 ÷ 6 = 17. Median = average of 3rd and 4th = (15 + 18) ÷ 2 = 16.5. Award 3 marks for the mean, 3 for the median.", marks: 6 },
+        { type: "MULTIPLE_CHOICE", prompt: "Which display shows the minimum, quartiles, median and maximum?", options: ["histogram", "stem-and-leaf plot", "box-and-whisker plot", "pie chart"], correctIndex: 2, answerKey: "The box-and-whisker plot shows the five-number summary. Option C.", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "A frequency table shows scores 2 (×3), 3 (×2), 5 (×5). Find the total number of scores and the mean.", answerKey: "Total = 3 + 2 + 5 = 10 scores. Sum = 2×3 + 3×2 + 5×5 = 6 + 6 + 25 = 37. Mean = 37 ÷ 10 = 3.7. Award 2 marks for the total, 3 for the weighted sum, 1 for the mean.", marks: 6 },
+        { type: "ESSAY", prompt: "Explain the difference between the mean, median and mode, and describe a situation where the median is a better summary than the mean.", answerKey: "The mean is the sum of all values divided by the count and uses every value. The median is the middle value of ordered data. The mode is the most frequent value. When a data set has an extreme outlier (e.g. incomes where one person earns very much more), the mean is pulled toward the outlier and misrepresents a 'typical' value, whereas the median stays near the centre and is a better summary. Award 2 marks per average defined (6), 4 for the median-vs-mean situation with reasoning.", marks: 10 },
       ],
     },
+    // source: Siyavula — Ratio, rate and proportion (https://www.siyavula.com/read/za/mathematical-literacy/grade-10/numbers-and-calculations-with-numbers/01-numbers-and-calculations-with-numbers-06)
     {
-      slug: "statistics-averages",
-      title: "Statistics: Frequency Tables and Averages",
+      slug: "ratio-rates-and-scale",
+      title: "Ratio, Rates and Scale Drawing",
       objective:
-        "By the end of the topic, learners should be able to organise data in a frequency table, calculate the mean, median, mode and range of a set of data, and read and interpret bar charts and pie charts. (MoE Grade 10 Mathematics — Statistics: frequency tables and averages.)",
-      estimatedMinutes: 160,
-      notes: `## Introduction
+        "By the end of the topic, learners should be able to simplify ratios and share a quantity in a given ratio, work with rates and unit rates, and use scales in drawings and maps.",
+      estimatedMinutes: 120,
+      notes: `## Ratio
 
-- **Statistics** — collecting, organising, presenting and interpreting **data** (information, usually numbers).
-- **This topic:** frequency tables; the three **averages** (mean, median, mode); the **range**; reading bar and pie charts.
+A **ratio** compares two or more quantities of the **same kind and unit**, written a : b.
 
-## Data and frequency tables
+- **Simplify** by dividing by the highest common factor: 12 : 18 = 2 : 3.
+- **Equivalent ratios** are equal: 2 : 3 = 4 : 6 = 6 : 9.
 
-- **Data** — the values collected (e.g. the test scores of a class).
-- A **frequency table** records how many times each value occurs (its **frequency**). Use **tally marks** while counting, then write the frequency.
+## Sharing in a ratio
 
-| Score | Tally | Frequency |
-|---|---|---|
-| 4 | / | 1 |
-| 6 | // | 2 |
-| 8 | / | 1 |
-| 9 | / | 1 |
-| 10 | / | 1 |
-| 13 | / | 1 |
+1. Add the ratio parts to get the total number of parts.
+2. Find the value of one part.
+3. Multiply for each share.
 
-## The three averages
+Share 40 in the ratio 3 : 5: total parts = 8, one part = 40 ÷ 8 = 5, so shares are 15 and 25.
 
-An **average** is a single value that represents a whole set of data. There are three kinds.
+## Rate
 
-### Mean
-- **Mean** = (sum of all values) ÷ (number of values).
-- For 4, 6, 6, 8, 9, 10, 13: sum = 56, count = 7 → mean = 56 ÷ 7 = **8**.
-- **From a frequency table:** mean = Σ(value × frequency) ÷ Σ(frequency).
+A **rate** compares two quantities of **different** units, such as km per hour or dollars per kg.
 
-### Median
-- **Median** = the **middle value** once the data is put **in order**.
-- For 4, 6, 6, 8, 9, 10, 13 (7 values), the middle (4th) value is **8**.
-- With an **even** number of values, the median is the **mean of the two middle values**.
+A **unit rate** has a denominator of 1: 240 km in 4 hours = 60 km/h.
 
-### Mode
-- **Mode** = the value that occurs **most often**.
-- For 4, 6, 6, 8, 9, 10, 13, the value 6 appears twice → mode = **6**.
-- A set can have **no mode**, one mode, or **more than one** mode.
+## Using rates
 
-## The range
+Multiply the rate by the quantity: at 60 km/h for 3 hours, distance = 60 × 3 = 180 km.
 
-- **Range** = **largest value − smallest value**; it measures the **spread** of the data.
-- For 4, 6, 6, 8, 9, 10, 13: range = 13 − 4 = **9**.
+## Travel and conversion graphs
 
-## Reading bar charts and pie charts
+- A **travel graph** (distance–time graph) plots distance against time; its gradient is the speed. A horizontal section means at rest.
+- A **conversion graph** is a straight line used to change one unit to another (e.g. dollars to Liberian dollars).
 
-- **Bar chart** — bars whose **heights** show the frequency of each category; good for **comparing categories**.
-- **Pie chart** — a circle split into slices; each slice's angle = **(frequency ÷ total) × 360°**, showing each category's **share of the whole**.
-- Always read the **title, labels and scale** first.
+## Scale drawing
 
-## Common errors to watch for
+A **scale** is a ratio comparing a length in a drawing to the real length, e.g. 1 : 100 means 1 cm on the drawing is 100 cm in reality.
 
-- **Not ordering the data before finding the median** — the median needs the values in order first.
-- **Confusing mode and median** — **mode** = most frequent value; **median** = middle value.
-- **Wrong divisor for the mean from a frequency table** — divide by the **total frequency (Σf)**, not by the number of different values.
-- **Writing the range as a range of values** — the range is a **single number** (largest − smallest), e.g. 9, not "4 to 13".`,
-      workedExample: `**Problem.** The marks of 7 learners are 4, 6, 6, 8, 9, 10, 13. Find the mean, median, mode and range. Then find the mean of the frequency table below.
+- Real length = drawing length × scale factor.
+- Drawing length = real length ÷ scale factor.
 
-**Mean.** Sum = 4 + 6 + 6 + 8 + 9 + 10 + 13 = 56; count = 7 → mean = 56 ÷ 7 = **8**.
+## Common errors
 
-**Median.** The data is already in order; with 7 values the middle is the 4th value → **8**.
+- **Comparing different units in a ratio** — convert to the same unit first (e.g. 50 cm : 1 m = 50 : 100 = 1 : 2).
+- **Forgetting to add all the parts** before sharing.
+- **Mixing up which way to multiply/divide** with a scale.`,
+      workedExample: `**Question:** Share 120 Liberian dollars between two learners in the ratio 2 : 3.
 
-**Mode.** 6 occurs twice (every other value once) → **6**.
+**Solution**
 
-**Range.** 13 − 4 = **9**.
+*Step 1 — total number of parts.*
+2 + 3 = 5 parts
 
-*(All four verified with Wolfram: mean 8, median 8, mode 6, range 9.)*
+*Step 2 — value of one part.*
+120 ÷ 5 = 24
 
-**Mean from a frequency table.** Scores 5 (×2), 7 (×3), 9 (×1):
-mean = Σ(value × frequency) ÷ Σ(frequency) = (5×2 + 7×3 + 9×1) ÷ (2 + 3 + 1) = (10 + 21 + 9) ÷ 6 = 40 ÷ 6 = **6.67 (2 d.p.)**.
+*Step 3 — each share.*
+First learner: 2 × 24 = 48
+Second learner: 3 × 24 = 72
 
-**Conclusion:** order the data for the median, count frequencies for the mode, add-and-divide for the mean, and subtract smallest from largest for the range.`,
+*Step 4 — check.* 48 + 72 = 120 ✔
+
+**Answer: 48 and 72 Liberian dollars.**`,
       quiz: [
-        { prompt: "Statistics is the study of collecting, organising and interpreting…", options: ["data", "shapes", "equations", "angles"], correctIndex: 0, explanation: "Statistics deals with data." },
-        { prompt: "A table showing how often each value occurs is a…", options: ["frequency table", "multiplication table", "truth table", "times table"], correctIndex: 0, explanation: "Frequency = how many times a value occurs." },
-        { prompt: "The mean is found by…", options: ["adding the values and dividing by how many there are", "taking the middle value", "taking the most common value", "subtracting smallest from largest"], correctIndex: 0, explanation: "Mean = sum ÷ count." },
-        { prompt: "The mean of 2, 4, 6 is…", options: ["4", "6", "12", "3"], correctIndex: 0, explanation: "(2+4+6) ÷ 3 = 12 ÷ 3 = 4." },
-        { prompt: "The mean of 10, 20, 30, 40 is…", options: ["25", "30", "100", "20"], correctIndex: 0, explanation: "100 ÷ 4 = 25." },
-        { prompt: "The median is…", options: ["the middle value when data is in order", "the sum of the values", "the most common value", "the largest value"], correctIndex: 0, explanation: "Median = middle value of ordered data." },
-        { prompt: "Before finding the median you must…", options: ["arrange the data in order", "add the data", "square the data", "double the data"], correctIndex: 0, explanation: "The middle value only makes sense in order." },
-        { prompt: "The median of 3, 5, 7, 9, 11 is…", options: ["7", "5", "9", "35"], correctIndex: 0, explanation: "7 is the middle of five values." },
-        { prompt: "For an even number of values, the median is…", options: ["the mean of the two middle values", "the larger middle value", "always the mode", "the range"], correctIndex: 0, explanation: "Average the two middle values." },
-        { prompt: "The mode is…", options: ["the value that occurs most often", "the middle value", "the average", "the spread"], correctIndex: 0, explanation: "Mode = most frequent value." },
-        { prompt: "The mode of 2, 3, 3, 5, 7 is…", options: ["3", "5", "2", "7"], correctIndex: 0, explanation: "3 appears most often." },
-        { prompt: "The range is…", options: ["largest value − smallest value", "sum ÷ count", "the middle value", "the most common value"], correctIndex: 0, explanation: "Range measures spread." },
-        { prompt: "The range of 4, 6, 6, 8, 9, 10, 13 is…", options: ["9", "13", "4", "6"], correctIndex: 0, explanation: "13 − 4 = 9." },
-        { prompt: "For 4, 6, 6, 8, 9, 10, 13, the mean is…", options: ["8", "6", "9", "7"], correctIndex: 0, explanation: "56 ÷ 7 = 8." },
-        { prompt: "For 4, 6, 6, 8, 9, 10, 13, the mode is…", options: ["6", "8", "13", "4"], correctIndex: 0, explanation: "6 occurs twice." },
-        { prompt: "To find the mean from a frequency table, divide Σ(value × frequency) by…", options: ["the total frequency (Σf)", "the number of different values", "the largest value", "360"], correctIndex: 0, explanation: "Divide by the total number of items, Σf." },
-        { prompt: "On a bar chart, the height of each bar shows the…", options: ["frequency of the category", "range", "median", "angle"], correctIndex: 0, explanation: "Taller bar = greater frequency." },
-        { prompt: "In a pie chart, a category with 25% of the total takes an angle of…", options: ["90°", "25°", "180°", "360°"], correctIndex: 0, explanation: "25% × 360° = 90°." },
-        { prompt: "In a pie chart, a category with 10% of the total takes an angle of…", options: ["36°", "10°", "100°", "72°"], correctIndex: 0, explanation: "10% × 360° = 36°." },
-        { prompt: "A set of data can have…", options: ["no mode, one mode, or more than one mode", "only one mode always", "no median ever", "no mean ever"], correctIndex: 0, explanation: "Mode depends on how values repeat." },
+        { prompt: "Simplify the ratio 10 : 15.", options: ["2 : 3", "5 : 3", "1 : 5", "3 : 2"], correctIndex: 0, explanation: "Divide both by 5." },
+        { prompt: "A ratio compares quantities of the", options: ["same kind and unit", "different units", "opposite signs", "same colour"], correctIndex: 0, explanation: "Ratios need the same unit." },
+        { prompt: "Share 30 in the ratio 1 : 2. The larger share is", options: ["10", "15", "20", "25"], correctIndex: 2, explanation: "3 parts, one part = 10, larger = 2 × 10 = 20." },
+        { prompt: "240 km in 4 hours is a rate of", options: ["40 km/h", "60 km/h", "80 km/h", "960 km/h"], correctIndex: 1, explanation: "240 ÷ 4 = 60 km/h." },
+        { prompt: "A rate compares quantities with", options: ["the same unit", "different units", "no units", "equal values"], correctIndex: 1, explanation: "Rates use different units, e.g. km/h." },
+        { prompt: "On a scale 1 : 100, 3 cm on the map represents", options: ["30 cm", "300 cm", "3000 cm", "100 cm"], correctIndex: 1, explanation: "3 × 100 = 300 cm." },
+        { prompt: "Equivalent to 2 : 5 is", options: ["4 : 10", "5 : 2", "2 : 10", "3 : 5"], correctIndex: 0, explanation: "Multiply both by 2." },
+        { prompt: "A unit rate has a denominator of", options: ["0", "1", "10", "100"], correctIndex: 1, explanation: "A unit rate is 'per 1'." },
+        { prompt: "The gradient of a distance–time graph gives", options: ["distance", "time", "speed", "acceleration"], correctIndex: 2, explanation: "Rise/run = distance/time = speed." },
+        { prompt: "Share 100 in the ratio 3 : 2. The shares are", options: ["50, 50", "60, 40", "70, 30", "40, 60"], correctIndex: 1, explanation: "5 parts, one part = 20, so 60 and 40." },
+        { prompt: "50 cm : 1 m simplifies to", options: ["50 : 1", "1 : 2", "1 : 50", "2 : 1"], correctIndex: 1, explanation: "1 m = 100 cm, so 50 : 100 = 1 : 2." },
+        { prompt: "At 5 dollars per kg, 4 kg costs", options: ["9 dollars", "20 dollars", "1.25 dollars", "45 dollars"], correctIndex: 1, explanation: "5 × 4 = 20." },
+        { prompt: "A horizontal line on a travel graph means the object is", options: ["speeding up", "at rest", "moving fast", "reversing"], correctIndex: 1, explanation: "No change in distance over time." },
+        { prompt: "On a scale 1 : 50, a real length of 500 cm is drawn as", options: ["10 cm", "50 cm", "100 cm", "25 cm"], correctIndex: 0, explanation: "500 ÷ 50 = 10 cm." },
+        { prompt: "The ratio 6 : 9 : 12 simplifies to", options: ["2 : 3 : 4", "1 : 2 : 3", "3 : 4 : 5", "2 : 3 : 5"], correctIndex: 0, explanation: "Divide all by 3." },
+        { prompt: "A car travels 150 km in 2.5 hours. Its speed is", options: ["50 km/h", "60 km/h", "75 km/h", "375 km/h"], correctIndex: 1, explanation: "150 ÷ 2.5 = 60 km/h." },
+        { prompt: "A conversion graph is used to", options: ["measure angles", "change one unit to another", "find the mode", "reflect shapes"], correctIndex: 1, explanation: "It converts between units." },
+        { prompt: "Share 45 in the ratio 4 : 5. The smaller share is", options: ["20", "25", "9", "5"], correctIndex: 0, explanation: "9 parts, one part = 5, smaller = 4 × 5 = 20." },
+        { prompt: "The ratio of 20 minutes to 1 hour is", options: ["20 : 1", "1 : 3", "1 : 20", "3 : 1"], correctIndex: 1, explanation: "1 hour = 60 min, so 20 : 60 = 1 : 3." },
       ],
       test: [
-        { type: "SHORT_ANSWER", prompt: "For the data 5, 8, 8, 11, 13, find the mean, median, mode and range.", answerKey: "Mean = (5+8+8+11+13) ÷ 5 = 45 ÷ 5 = 9. Median = middle value = 8. Mode = 8 (occurs twice). Range = 13 − 5 = 8. Award 1 mark each for mean, median, mode, range (method + answer).", marks: 4 },
-        { type: "MULTIPLE_CHOICE", prompt: "The middle value of an ordered set of data is the…", options: ["median", "mean", "mode", "range"], correctIndex: 0, answerKey: "The middle value is the median.", marks: 2 },
-        { type: "SHORT_ANSWER", prompt: "A frequency table shows: value 3 (frequency 4), value 5 (frequency 3), value 8 (frequency 3). Calculate the mean.", answerKey: "Mean = Σ(value × frequency) ÷ Σ(frequency) = (3×4 + 5×3 + 8×3) ÷ (4+3+3) = (12+15+24) ÷ 10 = 51 ÷ 10 = 5.1. Award marks for the correct method (Σfx ÷ Σf) and the answer 5.1.", marks: 3 },
-        { type: "SHORT_ANSWER", prompt: "Explain the difference between the mode and the median, and state one situation where the median is more useful than the mean.", answerKey: "The mode is the value that occurs most often; the median is the middle value when the data is arranged in order. The median is more useful than the mean when there are a few very large or very small values (outliers) that would distort the mean — the median gives a better 'typical' value. Award marks for both definitions and a valid situation.", marks: 5 },
-        { type: "ESSAY", prompt: "The daily sales (in Liberian dollars) of a shop over 8 days were: 200, 250, 250, 300, 350, 400, 400, 650. Calculate the mean, median, mode and range, and discuss which average best represents the 'typical' daily sales, giving a reason.", answerKey: "Mean = (200+250+250+300+350+400+400+650) ÷ 8 = 2800 ÷ 8 = 350. Median = mean of the 4th and 5th values (300 and 350) = 325. Mode = 250 and 400 (both appear twice) — bimodal. Range = 650 − 200 = 450. Discussion: the single high value of 650 pulls the mean up, so the median (325) may better represent a typical day; award credit for a reasoned choice referring to the outlier. Award marks for correct mean, median, mode, range, and a justified discussion of the best average.", marks: 6 },
+        { type: "SHORT_ANSWER", prompt: "Share 600 Liberian dollars among three people in the ratio 1 : 2 : 3. How much does each receive?", answerKey: "Total parts = 1 + 2 + 3 = 6. One part = 600 ÷ 6 = 100. Shares: 100, 200, 300. Check 100 + 200 + 300 = 600. Award 2 marks for the total parts, 2 for one part, 2 for the three shares.", marks: 6 },
+        { type: "SHORT_ANSWER", prompt: "A car travels 180 km in 3 hours. Find its average speed, and the distance it would cover in 5 hours at the same speed.", answerKey: "Speed = 180 ÷ 3 = 60 km/h. Distance in 5 h = 60 × 5 = 300 km. Award 3 marks for the speed, 3 for the distance.", marks: 6 },
+        { type: "MULTIPLE_CHOICE", prompt: "On a map with scale 1 : 200, a distance of 4 cm represents a real distance of", options: ["8 m", "80 m", "800 cm", "50 cm"], correctIndex: 0, answerKey: "4 × 200 = 800 cm = 8 m. Option A.", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "Simplify the ratio 45 minutes : 1.5 hours.", answerKey: "1.5 hours = 90 minutes. Ratio = 45 : 90 = 1 : 2. Award 2 marks for converting to the same unit, 2 for simplifying.", marks: 4 },
+        { type: "ESSAY", prompt: "Explain the difference between a ratio and a rate with examples, describe how to share a quantity in a given ratio, and how a scale of 1 : 500 is used to find a real length from a drawing.", answerKey: "A ratio compares quantities of the same unit (e.g. 2 : 3 sharing of money); a rate compares different units (e.g. 60 km/h). To share in a ratio: add the parts, divide the amount by the total parts to get one part, then multiply by each ratio number. With scale 1 : 500, real length = drawing length × 500, so a 3 cm drawing represents 1500 cm = 15 m. Award 3 marks for ratio vs rate with examples, 4 for the sharing method, 3 for the scale calculation.", marks: 10 },
+      ],
+    },
+    // source: CK-12 — Percentage (https://flexbooks.ck12.org/cbook/ck-12-cbse-maths-class-7/section/8.2/primary/lesson/percentage-12566584/)
+    {
+      slug: "percentages",
+      title: "Percentages",
+      objective:
+        "By the end of the topic, learners should be able to convert between fractions, decimals and percentages, find a percentage of a quantity, and calculate percentage increase, decrease, profit and loss.",
+      estimatedMinutes: 110,
+      notes: `## What percentage means
+
+**Percent** means "out of a hundred". A percentage is a fraction with denominator 100: 45% = 45/100.
+
+## Converting
+
+- **Percentage → fraction:** put over 100 and simplify — 40% = 40/100 = 2/5.
+- **Percentage → decimal:** divide by 100 — 40% = 0.40.
+- **Fraction/decimal → percentage:** multiply by 100 — 3/4 = 0.75 = 75%.
+
+## Percentage of a quantity
+
+x% of a quantity = (x/100) × quantity.
+
+25% of 80 = (25/100) × 80 = 20.
+
+## Percentage increase and decrease
+
+percentage change = (change ÷ original amount) × 100
+
+- New price 42, old price 30: change = 12, percentage increase = (12/30) × 100 = 40%.
+- To **increase** 200 by 15%: 200 × (1 + 0.15) = 200 × 1.15 = 230.
+- To **decrease** 200 by 15%: 200 × (1 − 0.15) = 200 × 0.85 = 170.
+
+## Profit and loss
+
+- Profit = selling price − cost price; Loss = cost price − selling price.
+- Profit % = (profit ÷ cost price) × 100; Loss % = (loss ÷ cost price) × 100.
+
+Cost 20, sold 25: profit = 5, profit % = (5/20) × 100 = 25%.
+
+## Common errors
+
+- **Dividing by the new amount** instead of the original for percentage change.
+- **Forgetting to multiply by 100** when converting to a percentage.
+- **Using selling price instead of cost price** as the base for profit/loss percentage.`,
+      workedExample: `**Question:** A trader buys a bag of rice for 30 dollars and sells it for 42 dollars. Find (a) the profit and (b) the profit as a percentage of the cost price.
+
+**Solution**
+
+*Part (a) — profit.*
+Profit = selling price − cost price = 42 − 30 = 12 dollars
+
+*Part (b) — profit percentage (base = cost price).*
+Profit % = (profit ÷ cost price) × 100 = (12 ÷ 30) × 100 = 0.4 × 100 = 40%
+
+**Answer:** (a) 12 dollars profit; (b) 40% profit.`,
+      quiz: [
+        { prompt: "45% as a fraction is", options: ["45/10", "45/100", "45/1000", "4.5/100"], correctIndex: 1, explanation: "Percent means out of 100." },
+        { prompt: "40% as a decimal is", options: ["4.0", "0.4", "0.04", "40"], correctIndex: 1, explanation: "Divide by 100." },
+        { prompt: "3/4 as a percentage is", options: ["34%", "43%", "75%", "0.75%"], correctIndex: 2, explanation: "0.75 × 100 = 75%." },
+        { prompt: "25% of 80 is", options: ["16", "20", "25", "40"], correctIndex: 1, explanation: "(25/100) × 80 = 20." },
+        { prompt: "10% of 250 is", options: ["10", "25", "50", "2.5"], correctIndex: 1, explanation: "(10/100) × 250 = 25." },
+        { prompt: "The base for percentage increase is the", options: ["new amount", "original amount", "difference", "total of both"], correctIndex: 1, explanation: "Divide the change by the original." },
+        { prompt: "Increasing 200 by 15% gives", options: ["215", "230", "170", "300"], correctIndex: 1, explanation: "200 × 1.15 = 230." },
+        { prompt: "Decreasing 200 by 15% gives", options: ["185", "170", "230", "185.5"], correctIndex: 1, explanation: "200 × 0.85 = 170." },
+        { prompt: "Cost 20, sold 25. The profit percentage is", options: ["20%", "25%", "5%", "80%"], correctIndex: 1, explanation: "(5/20) × 100 = 25%." },
+        { prompt: "Price rises from 30 to 42. The percentage increase is", options: ["12%", "40%", "28%", "70%"], correctIndex: 1, explanation: "(12/30) × 100 = 40%." },
+        { prompt: "50% of a number is 30. The number is", options: ["15", "30", "60", "150"], correctIndex: 2, explanation: "If half is 30, the whole is 60." },
+        { prompt: "0.6 as a percentage is", options: ["6%", "60%", "0.6%", "600%"], correctIndex: 1, explanation: "0.6 × 100 = 60%." },
+        { prompt: "Profit equals", options: ["cost − selling", "selling − cost", "selling + cost", "cost ÷ selling"], correctIndex: 1, explanation: "Profit = selling price − cost price." },
+        { prompt: "20% of 45 is", options: ["9", "15", "25", "90"], correctIndex: 0, explanation: "(20/100) × 45 = 9." },
+        { prompt: "A loss percentage uses the base of", options: ["selling price", "cost price", "profit", "the loss itself"], correctIndex: 1, explanation: "Loss % = (loss ÷ cost price) × 100." },
+        { prompt: "Footfall drops from 160 to 100. The percentage decrease is", options: ["37.5%", "60%", "40%", "62.5%"], correctIndex: 0, explanation: "(60/160) × 100 = 37.5%." },
+        { prompt: "1/5 as a percentage is", options: ["15%", "20%", "25%", "5%"], correctIndex: 1, explanation: "1/5 = 0.2 = 20%." },
+        { prompt: "Cost 50, sold 40. The loss percentage is", options: ["10%", "20%", "25%", "80%"], correctIndex: 1, explanation: "Loss = 10; (10/50) × 100 = 20%." },
+        { prompt: "35% of 200 is", options: ["35", "70", "700", "7"], correctIndex: 1, explanation: "(35/100) × 200 = 70." },
+      ],
+      test: [
+        { type: "SHORT_ANSWER", prompt: "Convert (a) 3/8 to a percentage, (b) 0.24 to a percentage, and (c) 65% to a fraction in lowest terms.", answerKey: "(a) 3/8 = 0.375 = 37.5%. (b) 0.24 × 100 = 24%. (c) 65/100 = 13/20. Award 2 marks each.", marks: 6 },
+        { type: "SHORT_ANSWER", prompt: "A shirt costing 250 dollars is increased in price by 12%. Find the new price.", answerKey: "Increase = 12% of 250 = (12/100) × 250 = 30. New price = 250 + 30 = 280 dollars (or 250 × 1.12 = 280). Award 3 marks for the increase, 3 for the new price.", marks: 6 },
+        { type: "MULTIPLE_CHOICE", prompt: "A trader buys goods for 80 dollars and sells them for 100 dollars. The profit percentage is", options: ["20%", "25%", "80%", "125%"], correctIndex: 1, answerKey: "Profit = 20; (20/80) × 100 = 25%. Option B.", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "A population of 4,000 decreases by 5%. Find the new population.", answerKey: "Decrease = 5% of 4000 = 200. New population = 4000 − 200 = 3800 (or 4000 × 0.95 = 3800). Award 3 marks for the decrease, 3 for the answer.", marks: 6 },
+        { type: "ESSAY", prompt: "Explain how to calculate a percentage increase and a percentage decrease, why the original amount is used as the base, and use HIV-awareness data where reported cases fall from 500 to 400 in a district to find the percentage decrease.", answerKey: "Percentage change = (change ÷ original amount) × 100. For an increase the change is positive; for a decrease the reported value has fallen. The original amount is the base because the change is being measured relative to where the quantity started. From 500 to 400: change = 100, percentage decrease = (100/500) × 100 = 20%. Award 3 marks for the increase/decrease formula, 3 for the original-as-base reasoning, 4 for the 20% calculation.", marks: 10 },
       ],
     },
   ],

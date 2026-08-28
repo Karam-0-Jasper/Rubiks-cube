@@ -10,6 +10,7 @@ export const geographyG10P4: PeriodContent = {
     "Period IV of the MoE Grade 10 Geography syllabus. Learners study practical geography — the parts of a map, direction and bearings, scale and measuring distance, grid references, and conventional map symbols — and use these skills to read and interpret maps.",
   topics: [
     {
+      // source: Geosciences LibreTexts — Essentials of Geographic Information Systems (Campbell and Shin), 2.2 Map Scale, Coordinate Systems, and Map Projections (https://geo.libretexts.org/Bookshelves/Geography_(Physical)/Essentials_of_Geographic_Information_Systems_(Campbell_and_Shin)/02:_Map_Anatomy/2.02:_Map_Scale_Coordinate_Systems_and_Map_Projections)
       slug: "elements-of-a-map",
       title: "Maps, Direction and Scale",
       objective:
@@ -96,8 +97,6 @@ The scale 1 : 50 000 means 1 cm on the map = 50 000 cm on the ground.
 - Bearing: East is measured **090°** clockwise from north (written in three figures).
 
 **Conclusion:** the towns are **3 km** apart, and town B lies **due East** of A on a bearing of **090°**. Always convert centimetres to kilometres (÷100 000) and give bearings in three figures measured clockwise from north.`,
-      teachingTip:
-        "Two skills earn most of the marks: converting map distance using the scale, and giving bearings in three figures clockwise from north. For scale, drill the centimetre-to-kilometre conversion (÷100 000) since that unit slip is the commonest error. For bearings, practise reading them with a protractor from a fixed north line — and insist on three figures (090°, not 90°), which examiners require.",
       quiz: [
         {
           prompt: "A map is a drawing of the Earth's surface as seen from…",
@@ -260,6 +259,7 @@ The scale 1 : 50 000 means 1 cm on the map = 50 000 cm on the ground.
       ],
     },
     {
+      // source: Geosciences LibreTexts — Laboratory Manual For Introductory Geology (Deline, Harris and Tefend), 3.2 Map Orientation and Scale (https://geo.libretexts.org/Learning_Objects/Laboratory/Book:_Laboratory_Manual_For_Introductory_Geology_(Deline_Harris_and_Tefend)/03:_Topographic_Maps/3.2:_Map_Orientation_and_Scale)
       slug: "grid-references-and-symbols",
       title: "Grid References and Map Symbols",
       objective:
@@ -342,8 +342,6 @@ Always read the **easting first, then the northing** ("along the corridor, then 
 - **Six-figure reference:** easting 56 + 3 tenths = 563; northing 32 + 5 tenths = 325 → **563325**.
 
 **Conclusion:** the four-figure reference 5632 names the square; the six-figure reference 563325 pinpoints the exact spot within it. The golden rule is easting before northing.`,
-      teachingTip:
-        "Two mnemonics prevent almost every grid-reference error: 'along the corridor, then up the stairs' (easting before northing) and reading the bottom-left corner of a square for a four-figure reference. Practise six-figure references by drawing one square, dividing it into tenths, and having learners read a marked point. For symbols, hand out a real topographic sheet and play 'find the symbol' against the key.",
       quiz: [
         {
           prompt: "The network of numbered lines on a map is the…",

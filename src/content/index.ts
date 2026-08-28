@@ -63,6 +63,104 @@ import { historyG10P3 } from "@/content/grade10/period3/history";
 import { economicsG10P3 } from "@/content/grade10/period3/economics";
 import { literatureG10P3 } from "@/content/grade10/period3/literature";
 
+// --- Grade 11 (PeriodContent only; merged onto the base subject by slug) ---
+import { biologyG11P1 } from "@/content/grade11/period1/biology";
+import { biologyG11P2 } from "@/content/grade11/period2/biology";
+import { biologyG11P3 } from "@/content/grade11/period3/biology";
+import { chemistryG11P1 } from "@/content/grade11/period1/chemistry";
+import { chemistryG11P2 } from "@/content/grade11/period2/chemistry";
+import { chemistryG11P3 } from "@/content/grade11/period3/chemistry";
+import { physicsG11P1 } from "@/content/grade11/period1/physics";
+import { physicsG11P2 } from "@/content/grade11/period2/physics";
+import { physicsG11P3 } from "@/content/grade11/period3/physics";
+import { physicsG11P4 } from "@/content/grade11/period4/physics";
+import { physicsG11P5 } from "@/content/grade11/period5/physics";
+import { physicsG11P6 } from "@/content/grade11/period6/physics";
+import { biologyG11P4 } from "@/content/grade11/period4/biology";
+import { chemistryG11P4 } from "@/content/grade11/period4/chemistry";
+import { geographyG11P1 } from "@/content/grade11/period1/geography";
+import { geographyG11P2 } from "@/content/grade11/period2/geography";
+import { mathematicsG11P1 } from "@/content/grade11/period1/mathematics";
+import { mathematicsG11P2 } from "@/content/grade11/period2/mathematics";
+import { mathematicsG11P3 } from "@/content/grade11/period3/mathematics";
+import { mathematicsG11P4 } from "@/content/grade11/period4/mathematics";
+import { biologyG11P5 } from "@/content/grade11/period5/biology";
+import { chemistryG11P5 } from "@/content/grade11/period5/chemistry";
+import { economicsG11P1 } from "@/content/grade11/period1/economics";
+import { economicsG11P2 } from "@/content/grade11/period2/economics";
+import { biologyG11P6 } from "@/content/grade11/period6/biology";
+import { chemistryG11P6 } from "@/content/grade11/period6/chemistry";
+import { mathematicsG11P5 } from "@/content/grade11/period5/mathematics";
+import { mathematicsG11P6 } from "@/content/grade11/period6/mathematics";
+import { geographyG11P3 } from "@/content/grade11/period3/geography";
+import { historyG11P1 } from "@/content/grade11/period1/history";
+import { englishLanguageG11P1 } from "@/content/grade11/period1/english-language";
+import { literatureG11P1 } from "@/content/grade11/period1/literature";
+import { literatureG11P2 } from "@/content/grade11/period2/literature";
+import { literatureG11P3 } from "@/content/grade11/period3/literature";
+import { englishLanguageG11P2 } from "@/content/grade11/period2/english-language";
+import { englishLanguageG11P3 } from "@/content/grade11/period3/english-language";
+import { historyG11P2 } from "@/content/grade11/period2/history";
+import { economicsG11P3 } from "@/content/grade11/period3/economics";
+import { economicsG11P4 } from "@/content/grade11/period4/economics";
+import { economicsG11P5 } from "@/content/grade11/period5/economics";
+import { geographyG11P4 } from "@/content/grade11/period4/geography";
+import { geographyG11P5 } from "@/content/grade11/period5/geography";
+import { geographyG11P6 } from "@/content/grade11/period6/geography";
+import { economicsG11P6 } from "@/content/grade11/period6/economics";
+import { historyG11P3 } from "@/content/grade11/period3/history";
+import { englishLanguageG11P4 } from "@/content/grade11/period4/english-language";
+import { englishLanguageG11P5 } from "@/content/grade11/period5/english-language";
+import { englishLanguageG11P6 } from "@/content/grade11/period6/english-language";
+import { englishLanguageG12P1 } from "@/content/grade12/period1/english-language";
+import { englishLanguageG12P2 } from "@/content/grade12/period2/english-language";
+import { englishLanguageG12P3 } from "@/content/grade12/period3/english-language";
+import { literatureG11P4 } from "@/content/grade11/period4/literature";
+import { literatureG11P5 } from "@/content/grade11/period5/literature";
+import { literatureG11P6 } from "@/content/grade11/period6/literature";
+import { literatureG12P1 } from "@/content/grade12/period1/literature";
+import { literatureG12P2 } from "@/content/grade12/period2/literature";
+import { literatureG12P3 } from "@/content/grade12/period3/literature";
+import { literatureG12P4 } from "@/content/grade12/period4/literature";
+import { historyG11P4 } from "@/content/grade11/period4/history";
+import { historyG11P5 } from "@/content/grade11/period5/history";
+import { historyG11P6 } from "@/content/grade11/period6/history";
+import { historyG12P1 } from "@/content/grade12/period1/history";
+import { historyG12P2 } from "@/content/grade12/period2/history";
+import { historyG12P3 } from "@/content/grade12/period3/history";
+
+// --- Grade 12 (PeriodContent only; merged onto the base subject by slug) ---
+import { biologyG12P1 } from "@/content/grade12/period1/biology";
+import { biologyG12P2 } from "@/content/grade12/period2/biology";
+import { chemistryG12P1 } from "@/content/grade12/period1/chemistry";
+import { chemistryG12P2 } from "@/content/grade12/period2/chemistry";
+import { chemistryG12P3 } from "@/content/grade12/period3/chemistry";
+import { physicsG12P1 } from "@/content/grade12/period1/physics";
+import { physicsG12P2 } from "@/content/grade12/period2/physics";
+import { biologyG12P3 } from "@/content/grade12/period3/biology";
+import { biologyG12P4 } from "@/content/grade12/period4/biology";
+import { chemistryG12P4 } from "@/content/grade12/period4/chemistry";
+import { physicsG12P3 } from "@/content/grade12/period3/physics";
+import { physicsG12P4 } from "@/content/grade12/period4/physics";
+import { physicsG12P5 } from "@/content/grade12/period5/physics";
+import { biologyG12P5 } from "@/content/grade12/period5/biology";
+import { biologyG12P6 } from "@/content/grade12/period6/biology";
+import { chemistryG12P5 } from "@/content/grade12/period5/chemistry";
+import { chemistryG12P6 } from "@/content/grade12/period6/chemistry";
+import { geographyG12P1 } from "@/content/grade12/period1/geography";
+import { geographyG12P2 } from "@/content/grade12/period2/geography";
+import { geographyG12P3 } from "@/content/grade12/period3/geography";
+import { geographyG12P4 } from "@/content/grade12/period4/geography";
+import { mathematicsG12P1 } from "@/content/grade12/period1/mathematics";
+import { mathematicsG12P2 } from "@/content/grade12/period2/mathematics";
+import { mathematicsG12P3 } from "@/content/grade12/period3/mathematics";
+import { mathematicsG12P4 } from "@/content/grade12/period4/mathematics";
+import { physicsG12P6 } from "@/content/grade12/period6/physics";
+import { economicsG12P1 } from "@/content/grade12/period1/economics";
+import { economicsG12P2 } from "@/content/grade12/period2/economics";
+import { economicsG12P3 } from "@/content/grade12/period3/economics";
+import { economicsG12P4 } from "@/content/grade12/period4/economics";
+
 // Base subjects carry identity + metadata and Period 1 content.
 const BASE_SUBJECTS: SubjectContent[] = [
   englishLanguage,
@@ -88,6 +186,16 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     mathematicsG10P4,
     mathematicsG10P5,
     mathematicsG10P6,
+    mathematicsG11P1,
+    mathematicsG11P2,
+    mathematicsG11P3,
+    mathematicsG11P4,
+    mathematicsG11P5,
+    mathematicsG11P6,
+    mathematicsG12P1,
+    mathematicsG12P2,
+    mathematicsG12P3,
+    mathematicsG12P4,
   ],
   "english-language": [
     englishLanguageG10P2,
@@ -95,6 +203,15 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     englishLanguageG10P4,
     englishLanguageG10P5,
     englishLanguageG10P6,
+    englishLanguageG11P1,
+    englishLanguageG11P2,
+    englishLanguageG11P3,
+    englishLanguageG11P4,
+    englishLanguageG11P5,
+    englishLanguageG11P6,
+    englishLanguageG12P1,
+    englishLanguageG12P2,
+    englishLanguageG12P3,
   ],
   biology: [
     biologyG10P2,
@@ -102,6 +219,18 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     biologyG10P4,
     biologyG10P5,
     biologyG10P6,
+    biologyG11P1,
+    biologyG11P2,
+    biologyG11P3,
+    biologyG11P4,
+    biologyG11P5,
+    biologyG11P6,
+    biologyG12P1,
+    biologyG12P2,
+    biologyG12P3,
+    biologyG12P4,
+    biologyG12P5,
+    biologyG12P6,
   ],
   chemistry: [
     chemistryG10P2,
@@ -109,6 +238,18 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     chemistryG10P4,
     chemistryG10P5,
     chemistryG10P6,
+    chemistryG11P1,
+    chemistryG11P2,
+    chemistryG11P3,
+    chemistryG11P4,
+    chemistryG11P5,
+    chemistryG11P6,
+    chemistryG12P1,
+    chemistryG12P2,
+    chemistryG12P3,
+    chemistryG12P4,
+    chemistryG12P5,
+    chemistryG12P6,
   ],
   physics: [
     physicsG10P2,
@@ -116,6 +257,18 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     physicsG10P4,
     physicsG10P5,
     physicsG10P6,
+    physicsG11P1,
+    physicsG11P2,
+    physicsG11P3,
+    physicsG11P4,
+    physicsG11P5,
+    physicsG11P6,
+    physicsG12P1,
+    physicsG12P2,
+    physicsG12P3,
+    physicsG12P4,
+    physicsG12P5,
+    physicsG12P6,
   ],
   geography: [
     geographyG10P2,
@@ -123,6 +276,16 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     geographyG10P4,
     geographyG10P5,
     geographyG10P6,
+    geographyG11P1,
+    geographyG11P2,
+    geographyG11P3,
+    geographyG11P4,
+    geographyG11P5,
+    geographyG11P6,
+    geographyG12P1,
+    geographyG12P2,
+    geographyG12P3,
+    geographyG12P4,
   ],
   history: [
     historyG10P2,
@@ -130,6 +293,15 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     historyG10P4,
     historyG10P5,
     historyG10P6,
+    historyG11P1,
+    historyG11P2,
+    historyG11P3,
+    historyG11P4,
+    historyG11P5,
+    historyG11P6,
+    historyG12P1,
+    historyG12P2,
+    historyG12P3,
   ],
   economics: [
     economicsG10P2,
@@ -137,6 +309,16 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     economicsG10P4,
     economicsG10P5,
     economicsG10P6,
+    economicsG11P1,
+    economicsG11P2,
+    economicsG11P3,
+    economicsG11P4,
+    economicsG11P5,
+    economicsG11P6,
+    economicsG12P1,
+    economicsG12P2,
+    economicsG12P3,
+    economicsG12P4,
   ],
   literature: [
     literatureG10P2,
@@ -144,6 +326,16 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     literatureG10P4,
     literatureG10P5,
     literatureG10P6,
+    literatureG11P1,
+    literatureG11P2,
+    literatureG11P3,
+    literatureG11P4,
+    literatureG11P5,
+    literatureG11P6,
+    literatureG12P1,
+    literatureG12P2,
+    literatureG12P3,
+    literatureG12P4,
   ],
 };
 

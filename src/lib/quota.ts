@@ -4,7 +4,7 @@ import type { Plan } from "@prisma/client";
 
 import { prisma } from "@/lib/db";
 import { PLANS } from "@/lib/plans";
-import { ensureSubscription, type SessionUser } from "@/lib/auth";
+import { DEMO_USER_ID, ensureSubscription, type SessionUser } from "@/lib/auth";
 
 export type QuotaState = {
   plan: Plan;
@@ -21,6 +21,21 @@ export type QuotaState = {
 /// forward. This is the single place that reconciles the subscription with the
 /// clock, so it stays correct even if a provider callback never arrives.
 export async function getQuota(user: SessionUser): Promise<QuotaState> {
+  // The built-in demo teacher has no database row; report a full free window
+  // without touching the database so notes render even when login is disabled.
+  if (user.id === DEMO_USER_ID) {
+    const now = new Date();
+    const config = PLANS.FREE;
+    return {
+      plan: "FREE",
+      used: 0,
+      limit: config.messageAllowance,
+      remaining: config.messageAllowance,
+      windowStart: now,
+      windowEnd: new Date(now.getTime() + config.windowDays * 86_400_000),
+    };
+  }
+
   const subscription =
     user.subscription ?? (await ensureSubscription(user.id));
   const now = new Date();
