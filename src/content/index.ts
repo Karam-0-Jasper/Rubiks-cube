@@ -113,14 +113,21 @@ import { englishLanguageG11P4 } from "@/content/grade11/period4/english-language
 import { englishLanguageG11P5 } from "@/content/grade11/period5/english-language";
 import { englishLanguageG11P6 } from "@/content/grade11/period6/english-language";
 import { englishLanguageG12P1 } from "@/content/grade12/period1/english-language";
+import { englishLanguageG12P2 } from "@/content/grade12/period2/english-language";
+import { englishLanguageG12P3 } from "@/content/grade12/period3/english-language";
 import { literatureG11P4 } from "@/content/grade11/period4/literature";
 import { literatureG11P5 } from "@/content/grade11/period5/literature";
 import { literatureG11P6 } from "@/content/grade11/period6/literature";
 import { literatureG12P1 } from "@/content/grade12/period1/literature";
+import { literatureG12P2 } from "@/content/grade12/period2/literature";
+import { literatureG12P3 } from "@/content/grade12/period3/literature";
+import { literatureG12P4 } from "@/content/grade12/period4/literature";
 import { historyG11P4 } from "@/content/grade11/period4/history";
 import { historyG11P5 } from "@/content/grade11/period5/history";
 import { historyG11P6 } from "@/content/grade11/period6/history";
 import { historyG12P1 } from "@/content/grade12/period1/history";
+import { historyG12P2 } from "@/content/grade12/period2/history";
+import { historyG12P3 } from "@/content/grade12/period3/history";
 
 // --- Grade 12 (PeriodContent only; merged onto the base subject by slug) ---
 import { biologyG12P1 } from "@/content/grade12/period1/biology";
@@ -142,11 +149,17 @@ import { chemistryG12P5 } from "@/content/grade12/period5/chemistry";
 import { chemistryG12P6 } from "@/content/grade12/period6/chemistry";
 import { geographyG12P1 } from "@/content/grade12/period1/geography";
 import { geographyG12P2 } from "@/content/grade12/period2/geography";
+import { geographyG12P3 } from "@/content/grade12/period3/geography";
+import { geographyG12P4 } from "@/content/grade12/period4/geography";
 import { mathematicsG12P1 } from "@/content/grade12/period1/mathematics";
 import { mathematicsG12P2 } from "@/content/grade12/period2/mathematics";
+import { mathematicsG12P3 } from "@/content/grade12/period3/mathematics";
+import { mathematicsG12P4 } from "@/content/grade12/period4/mathematics";
 import { physicsG12P6 } from "@/content/grade12/period6/physics";
 import { economicsG12P1 } from "@/content/grade12/period1/economics";
 import { economicsG12P2 } from "@/content/grade12/period2/economics";
+import { economicsG12P3 } from "@/content/grade12/period3/economics";
+import { economicsG12P4 } from "@/content/grade12/period4/economics";
 
 // Base subjects carry identity + metadata and Period 1 content.
 const BASE_SUBJECTS: SubjectContent[] = [
@@ -181,6 +194,8 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     mathematicsG11P6,
     mathematicsG12P1,
     mathematicsG12P2,
+    mathematicsG12P3,
+    mathematicsG12P4,
   ],
   "english-language": [
     englishLanguageG10P2,
@@ -195,6 +210,8 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     englishLanguageG11P5,
     englishLanguageG11P6,
     englishLanguageG12P1,
+    englishLanguageG12P2,
+    englishLanguageG12P3,
   ],
   biology: [
     biologyG10P2,
@@ -267,6 +284,8 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     geographyG11P6,
     geographyG12P1,
     geographyG12P2,
+    geographyG12P3,
+    geographyG12P4,
   ],
   history: [
     historyG10P2,
@@ -281,6 +300,8 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     historyG11P5,
     historyG11P6,
     historyG12P1,
+    historyG12P2,
+    historyG12P3,
   ],
   economics: [
     economicsG10P2,
@@ -296,6 +317,8 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     economicsG11P6,
     economicsG12P1,
     economicsG12P2,
+    economicsG12P3,
+    economicsG12P4,
   ],
   literature: [
     literatureG10P2,
@@ -310,6 +333,9 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     literatureG11P5,
     literatureG11P6,
     literatureG12P1,
+    literatureG12P2,
+    literatureG12P3,
+    literatureG12P4,
   ],
 };
 
