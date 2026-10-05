@@ -19,490 +19,317 @@ export const englishLanguageG12P1: PeriodContent = {
       slug: "three-cases-of-pronouns",
       title: "The Three Cases of Pronouns: Nominative, Objective and Possessive",
       objective:
-        "By the end of the topic, learners should be able to name the three pronoun cases, list the pronouns in each, and choose the correct case for subjects, objects and possession, including who/whom and compound constructions.",
-      estimatedMinutes: 150,
-      notes: `## What case means
+        "By the end of the topic, learners should be able to name the three pronoun cases, identify the pronouns in each, and choose the correct case for subjects, objects and possession, including compound constructions, who/whom, we/us and comparisons with than or as.",
+      estimatedMinutes: 120,
+      notes: `Most English nouns look the same whether they are doing an action or receiving it: *the teacher* praised the class, and the class praised *the teacher*. Personal pronouns are different. They change their form according to the work they do in a sentence, so that *she* praises the class but the class praises *her*. Choosing the wrong form is one of the most noticeable errors in formal writing and speech, and nearly every such error can be avoided by asking one question: what is this pronoun doing in the sentence?
 
-**Case** is the form a pronoun takes to show its **job** in the sentence. English pronouns have three cases: **nominative (subjective)**, **objective** and **possessive**.
+## What case means
 
-## The three cases at a glance
+**Case** — the form a pronoun takes to show its function in a sentence. English pronouns have three cases:
 
-| Person | Nominative (subject) | Objective (object) | Possessive (ownership) |
+- the **nominative** (also called **subjective**) case, used for subjects;
+- the **objective** case, used for objects;
+- the **possessive** case, used to show ownership.
+
+## The pronouns in each case
+
+| Person and number | Nominative (subject) | Objective (object) | Possessive (ownership) |
 | --- | --- | --- | --- |
-| 1st singular | I | me | my / mine |
-| 2nd | you | you | your / yours |
-| 3rd singular | he / she / it | him / her / it | his / her, hers / its |
-| 1st plural | we | us | our / ours |
-| 3rd plural | they | them | their / theirs |
-| question / relative | who / whoever | whom / whomever | whose |
+| First person singular | I | me | my, mine |
+| Second person | you | you | your, yours |
+| Third person singular | he, she, it | him, her, it | his, her, hers, its |
+| First person plural | we | us | our, ours |
+| Third person plural | they | them | their, theirs |
+| Question and relative | who, whoever | whom, whomever | whose |
 
-## Nominative (subjective) case
+Only *you* and *it* keep the same form in the nominative and objective cases. Every other personal pronoun changes.
 
-Use the nominative case when the pronoun is the **subject** of a verb or a **subject complement** (after a linking verb).
+## The nominative (subjective) case
 
-- **Subject:** *He and I share a room.* (*He and I* do the sharing)
-- **Subject complement:** *The winner was she.* (formal; *she* renames the subject *winner*)
+Pronouns in the nominative case act as **subjects** — they name who or what performs the action of the verb, or who or what the sentence is about.
 
-## Objective case
+- *She* is the person who is best qualified for the job.
+- *We* reached the village before dark.
+- *They* have finished the report.
 
-Use the objective case when the pronoun is the **object** of a verb or of a **preposition**, or the object of an infinitive.
+## The objective case
 
-- **Object of a verb:** *The manager gave us a tour.*
-- **Object of a preposition:** *between you and me*, *to him*, *for them*.
-- **With an infinitive:** *She asked Antonio and me to write.*
+Pronouns in the objective case act as **objects**. They are used in three main positions:
 
-## Possessive case
+1. As the object of a verb: *The principal invited us to the ceremony.*
+2. As the object of a preposition such as *to, for, with, between, among*: *The letter was addressed to her.*
+3. Before and after an infinitive (the *to* form of a verb): *The agent asked Antonio and me to write a review.*
 
-Use the possessive case to show **ownership**. *My, your, his, her, its, our, their* come **before a noun**; *mine, yours, hers, ours, theirs* stand **alone**. Use the possessive **before a gerund** (an -ing noun): *They were tired of **their** partying.*
+## The possessive case
 
-- ✗ *That book is her's.* → ✓ *That book is **hers**.* (no apostrophe)
-- Do not confuse **its** (possessive) with **it's** (= it is); **your** with **you're**; **their** with **they're**.
+Pronouns in the possessive case show **ownership**. There are two sets of forms. *My, your, his, her, its, our* and *their* stand before a noun (*their house*), while *mine, yours, his, hers, ours* and *theirs* stand alone (*the house is theirs*).
 
-## Compound subjects and objects
+Possessive pronouns never take an apostrophe. *Its* is the possessive form (*the dog wagged its tail*); *it's* is a contraction of *it is*. In the same way, *hers*, *ours* and *theirs* are written without apostrophes.
 
-A pronoun keeps the same case whether it stands alone or is joined to another word. Test it by **dropping the other word**.
+**Before a gerund.** A gerund is the *-ing* form of a verb used as a noun. A pronoun placed before a gerund is generally put in the possessive case, because the gerund is being treated as a thing that "belongs" to the person: *He grew tired of their partying late into the night.* (Not *of them partying*.)
 
-- **Subject:** ✓ *Antonio and **I** share an apartment.* (drop *Antonio*: *I share*, not *me share*)
-- **Object:** ✓ *between Antonio and **me*** (drop *Antonio*: *between me*, not *between I*)
+## Compound subjects and compound objects
 
-## Who vs. whom
+When a pronoun is joined to a noun or to another pronoun by *and* or *or*, it keeps the case it would have if it stood alone. Compound subjects take subjective pronouns; compound objects take objective pronouns.
 
-- **who / whoever** = nominative → use for a **subject**: *Who wrote this?* / *He is the man **who** called.*
-- **whom / whomever** = objective → use for an **object**, especially after a **preposition**: *With **whom** did you speak?* / *the man **whom** we met.*
-- **Trick:** if you could answer with *he/she/they*, use **who**; if *him/her/them*, use **whom**.
+- Subject: *Antonio and I have occasional disagreements about the dishes.*
+- Object: *Disagreements about the dishes come up between Antonio and me.*
 
-## Comparisons with 'than' and 'as'
+A reliable test is to remove the other part of the compound and listen to the pronoun alone. *I have disagreements* is correct, *me have disagreements* is not; *between me* is correct, *between I* is not. The phrase *between you and I*, though often heard, is incorrect, because *between* is a preposition and needs objects: *between you and me*.
 
-The case shows the missing words. Finish the sentence in your head:
+## Who and whom; whoever and whomever
 
-- *Antonio cares more than **I** [do].* (nominative — *I* is the subject of the dropped *do*)
-- *This surprised no one more than [it surprised] **me**.* (objective)
+*Who* and *whoever* are nominative; *whom* and *whomever* are objective.
+
+- *Who is going to the concert?* (*who* is the subject of *is going*)
+- *She is the person who is best qualified for the job.* (*who* is the subject of *is*)
+- *I don't know whom to ask.* (*whom* is the object of *ask*)
+- *To whom should I give the extra concert tickets?* (*whom* is the object of the preposition *to*)
+
+A practical check is to answer the question, or rearrange the clause, using *he* or *him*. If *he* fits, use *who*; if *him* fits, use *whom*. *Whom should I ask?* — *I should ask him* — so *whom* is correct.
+
+## We or us before a noun
+
+When *we* or *us* comes directly before a noun, choose the case by the job of the whole phrase. Use *we* in a subject and *us* in an object.
+
+- *We citizens must vote in order to make our voices heard.* (subject)
+- *Legislators need to hear from us citizens.* (object of the preposition *from*)
+
+Again, removing the noun gives the answer: *we must vote*; *hear from us*.
+
+## Comparisons with than and as
+
+Comparisons with *than* or *as* often leave words out. The case of the pronoun shows which words have been omitted, and so it can change the meaning of the sentence.
+
+- *Antonio cares more about having a clean kitchen than I [do].* — Antonio cares more than I care.
+- *Sometimes I think Antonio cares more about a clean kitchen than [he cares about] me.* — Antonio cares more about the kitchen than about me.
+
+To choose the case, complete the comparison in your mind and see whether the pronoun is a subject or an object.
 
 ## Summary
 
-- Three cases: **nominative** (subjects), **objective** (objects), **possessive** (ownership).
-- In compounds, drop the other word to hear the right case.
-- **who** = subject, **whom** = object; use the possessive (no apostrophe) and before a gerund.`,
-      workedExample: `**Task.** Choose the correct pronoun and name the case, giving the reason.
+- Case is the form of a pronoun that shows its function: nominative for subjects, objective for objects, possessive for ownership.
+- Objective pronouns follow verbs, prepositions and infinitives.
+- Possessive pronouns never take apostrophes; use the possessive before a gerund.
+- In compound subjects and objects, test the pronoun on its own.
+- *Who/whoever* are subjects; *whom/whomever* are objects. *We* goes with subjects and *us* with objects.
+- In comparisons with *than* or *as*, supply the missing words to find the correct case.`,
+      workedExample: `**Task.** Choose the correct pronoun in each sentence. Name its case and explain the choice.
 
-1. *The prizes were shared between Kollie and (I / me).*
-2. *(Who / Whom) did the committee choose?*
-3. *No one enjoyed the trip more than (they / them).*
+1. *The headmaster gave the prizes to Musu and (I / me).*
+2. *(We / Us) students of Grade 12 organised the debate.*
+3. *(Who / Whom) did the committee appoint as chairperson?*
+4. *My parents were proud of (me / my) winning the essay competition.*
+5. *Kollie runs faster than (she / her).*
 
 **Answers**
 
-1. **me** — objective case. The pronoun is the object of the preposition *between*. Drop *Kollie and*: *between me*, not *between I*.
-2. **Whom** — objective case. It is the object of the verb *choose* (*the committee chose whom?*). You could answer *them*, so use **whom**.
-3. **they** — nominative case. Finish the comparison: *more than they [enjoyed it]*; *they* is the subject of the dropped verb *enjoyed*.
+1. **me** — objective case. *Musu and me* is the object of the preposition *to*. Removing *Musu and* leaves *gave the prizes to me*, not *to I*.
 
-**Rule applied:** identify the pronoun's job — subject (nominative), object (objective) or owner (possessive) — and, in compounds and comparisons, supply the missing words to hear the correct case.`,
+2. **We** — nominative case. *We students* is the subject of *organised*. Removing *students* leaves *We organised the debate*.
+
+3. **Whom** — objective case. Rearranged, the question reads *The committee did appoint whom*; *whom* is the object of *appoint*. The answer would be *The committee appointed him*, and *him* signals *whom*.
+
+4. **my** — possessive case. *Winning* is a gerund (an *-ing* word used as a noun), so the pronoun before it takes the possessive form.
+
+5. **she** — nominative case. Completing the comparison gives *Kollie runs faster than she [runs]*; *she* is the subject of the omitted verb *runs*.
+
+**Method used.** In each sentence, decide what job the pronoun does — subject, object or owner — and, where words are missing or a second word is joined to the pronoun, supply or remove words until the job is clear.`,
       quiz: [
-        {
-          prompt: "How many cases do English pronouns have?",
-          options: ["three", "two", "four", "five"],
-          correctIndex: 0,
-          explanation: "Nominative (subjective), objective and possessive.",
-        },
-        {
-          prompt: "The nominative (subjective) case is used when the pronoun is the…",
-          options: ["subject of a verb", "object of a verb", "object of a preposition", "owner of a noun"],
-          correctIndex: 0,
-          explanation: "Nominative pronouns act as subjects (and subject complements).",
-        },
-        {
-          prompt: "Which list is entirely nominative case?",
-          options: ["I, he, she, we, they", "me, him, her, us, them", "my, his, her, our, their", "mine, his, hers, ours"],
-          correctIndex: 0,
-          explanation: "I, he, she, we, they are subject pronouns.",
-        },
-        {
-          prompt: "Which list is entirely objective case?",
-          options: ["me, him, her, us, them", "I, he, she, we, they", "my, your, his, our", "mine, yours, hers"],
-          correctIndex: 0,
-          explanation: "me, him, her, us, them are object pronouns.",
-        },
-        {
-          prompt: "The possessive case shows…",
-          options: ["ownership", "the subject", "the object", "an action"],
-          correctIndex: 0,
-          explanation: "Possessive pronouns show ownership: my, mine, his, hers, etc.",
-        },
-        {
-          prompt: "Choose the correct sentence.",
-          options: ["He and I share a room.", "Him and me share a room.", "Him and I share a room.", "He and me share a room."],
-          correctIndex: 0,
-          explanation: "Both are subjects, so use the nominative: He and I.",
-        },
-        {
-          prompt: "Choose the correct sentence.",
-          options: ["The gift is for you and me.", "The gift is for you and I.", "The gift is for we.", "The gift is for she and I."],
-          correctIndex: 0,
-          explanation: "Object of the preposition 'for' → objective: you and me.",
-        },
-        {
-          prompt: "To test a compound like 'Antonio and (I/me) share a room', you should…",
-          options: ["drop the other word and listen", "always use 'I'", "always use 'me'", "add a comma"],
-          correctIndex: 0,
-          explanation: "Drop 'Antonio and': 'I share', so 'Antonio and I share'.",
-        },
-        {
-          prompt: "Which word is the nominative form used for subjects?",
-          options: ["who", "whom", "whose", "whomever"],
-          correctIndex: 0,
-          explanation: "'who' is the subject form; 'whom' is the object form.",
-        },
-        {
-          prompt: "Which is correct?",
-          options: ["With whom did you speak?", "With who did you speak?", "With whose did you speak?", "With whomever spoke?"],
-          correctIndex: 0,
-          explanation: "After the preposition 'with', use the objective 'whom'.",
-        },
-        {
-          prompt: "The trick for who/whom: if you could answer with 'him' or 'them', use…",
-          options: ["whom", "who", "whose", "which"],
-          correctIndex: 0,
-          explanation: "him/them (objects) signal 'whom'; he/they signal 'who'.",
-        },
-        {
-          prompt: "Which possessive pronoun is written WITHOUT an apostrophe?",
-          options: ["hers", "her's", "it's", "who's"],
-          correctIndex: 0,
-          explanation: "Possessives like hers, its, theirs take no apostrophe.",
-        },
-        {
-          prompt: "'It's' with an apostrophe means…",
-          options: ["it is", "belonging to it", "its own", "it has ownership"],
-          correctIndex: 0,
-          explanation: "'It's' = 'it is'; the possessive is 'its' (no apostrophe).",
-        },
-        {
-          prompt: "Before a gerund (an -ing noun), which case is used?",
-          options: ["possessive", "nominative", "objective", "none"],
-          correctIndex: 0,
-          explanation: "e.g. 'their partying', 'my leaving early'.",
-        },
-        {
-          prompt: "Complete correctly: 'She asked Antonio and ___ to write.'",
-          options: ["me", "I", "mine", "myself"],
-          correctIndex: 0,
-          explanation: "Object of the verb 'asked'/infinitive → objective 'me'.",
-        },
-        {
-          prompt: "In 'Antonio cares more than I', the case of 'I' is nominative because…",
-          options: ["it is the subject of the dropped verb 'do'", "it follows 'than'", "it is possessive", "it is an object"],
-          correctIndex: 0,
-          explanation: "Finish it: 'more than I do' — 'I' is a subject.",
-        },
-        {
-          prompt: "Choose the correct sentence.",
-          options: ["The manager gave us a tour.", "The manager gave we a tour.", "The manager gave our a tour.", "The manager gave ours a tour."],
-          correctIndex: 0,
-          explanation: "Indirect object → objective 'us'.",
-        },
-        {
-          prompt: "Which sentence uses a subject complement correctly (formal)?",
-          options: ["The winner was she.", "The winner was her.", "The winner was hers.", "The winner was herself."],
-          correctIndex: 0,
-          explanation: "After a linking verb, formal usage takes the nominative 'she'.",
-        },
-        {
-          prompt: "Which is the possessive form of 'who'?",
-          options: ["whose", "who's", "whom", "whoever"],
-          correctIndex: 0,
-          explanation: "'whose' shows ownership; 'who's' = who is.",
-        },
-        {
-          prompt: "Choose the correct sentence.",
-          options: ["Give the books to them.", "Give the books to they.", "Give the books to their.", "Give the books to theirs."],
-          correctIndex: 0,
-          explanation: "Object of the preposition 'to' → objective 'them'.",
-        },
+        { prompt: "What does the 'case' of a pronoun show?", options: ["Whether it is singular or plural", "The function it performs in the sentence", "Whether it refers to a person or a thing", "The tense of the verb"], correctIndex: 1, explanation: "Case is the form a pronoun takes to show its function — subject, object or owner." },
+        { prompt: "Which group contains only objective-case pronouns?", options: ["I, she, we, they", "my, her, our, their", "me, her, us, them", "mine, hers, ours, theirs"], correctIndex: 2, explanation: "Me, her, us and them are the objective forms." },
+        { prompt: "Which two personal pronouns have the same form in the nominative and objective cases?", options: ["he and him", "you and it", "we and us", "she and her"], correctIndex: 1, explanation: "You and it do not change between the subject and object positions." },
+        { prompt: "Choose the correct sentence.", options: ["Him and me collected the books.", "He and me collected the books.", "Him and I collected the books.", "He and I collected the books."], correctIndex: 3, explanation: "The compound is the subject, so both pronouns must be nominative: He and I." },
+        { prompt: "Choose the correct sentence.", options: ["Keep this secret between you and I.", "Keep this secret between you and me.", "Keep this secret between yourself and I.", "Keep this secret between we."], correctIndex: 1, explanation: "Between is a preposition, so it takes objective pronouns: between you and me." },
+        { prompt: "In 'The coach asked Fatu and ___ to lead the warm-up', which pronoun is correct?", options: ["I", "me", "my", "mine"], correctIndex: 1, explanation: "The objective case is used before an infinitive (to lead); test: asked me to lead." },
+        { prompt: "Which sentence uses the possessive correctly?", options: ["The bag is her's.", "The bag is hers'.", "The bag is hers.", "The bag is she's."], correctIndex: 2, explanation: "Possessive pronouns never take an apostrophe." },
+        { prompt: "Which is correct?", options: ["The school changed it's timetable.", "The school changed its timetable.", "The school changed its' timetable.", "The school changed it timetable."], correctIndex: 1, explanation: "Its is the possessive; it's means it is." },
+        { prompt: "Choose the correct form before the gerund: 'We were surprised by ___ leaving early.'", options: ["him", "he", "his", "himself"], correctIndex: 2, explanation: "A pronoun before a gerund generally takes the possessive case: his leaving." },
+        { prompt: "'___ wrote this letter?' Which word is correct?", options: ["Whom", "Who", "Whose", "Whomever"], correctIndex: 1, explanation: "The word is the subject of wrote, so the nominative who is needed." },
+        { prompt: "'To ___ should I send the invitation?' Which word is correct?", options: ["who", "whom", "whoever", "whose"], correctIndex: 1, explanation: "After the preposition to, the objective whom is required." },
+        { prompt: "'She is the candidate ___ we interviewed yesterday.' Which word is correct?", options: ["who", "whom", "whose", "which"], correctIndex: 1, explanation: "Rearranged: we interviewed her/him — an object — so whom." },
+        { prompt: "'The prize will go to ___ finishes first.' Which word is correct?", options: ["whomever", "whoever", "whom", "who's"], correctIndex: 1, explanation: "Whoever is the subject of finishes; the whole clause is the object of to." },
+        { prompt: "Choose the correct sentence.", options: ["Us farmers need better roads.", "We farmers need better roads.", "Our farmers need better roads to us.", "Us farmer's need better roads."], correctIndex: 1, explanation: "The phrase is the subject, so we is used: we need better roads." },
+        { prompt: "Choose the correct sentence.", options: ["The minister spoke to we students.", "The minister spoke to us students.", "The minister spoke to our's students.", "The minister spoke to students we."], correctIndex: 1, explanation: "After the preposition to, the objective us is needed." },
+        { prompt: "'My brother is taller than ___.' Which completion is correct in formal English?", options: ["me", "I", "myself", "mine"], correctIndex: 1, explanation: "Completed: taller than I [am]. I is the subject of the omitted verb." },
+        { prompt: "What is the difference between 'She likes Musa more than I' and 'She likes Musa more than me'?", options: ["There is no difference", "The first compares how much she and I like Musa; the second compares how much she likes Musa and me", "The first is always wrong", "The second compares two people's height"], correctIndex: 1, explanation: "The case shows the omitted words: than I [like Musa] versus than [she likes] me." },
+        { prompt: "Which test helps you choose between 'who' and 'whom'?", options: ["Count the syllables", "Replace it with he or him and see which fits", "Use who at the start of every sentence", "Use whom after every verb"], correctIndex: 1, explanation: "If he fits, use who; if him fits, use whom." },
+        { prompt: "In 'The house on the hill is ours', the word 'ours' is", options: ["nominative", "objective", "possessive, standing alone", "possessive, standing before a noun"], correctIndex: 2, explanation: "Ours shows ownership and is not followed by a noun." },
+        { prompt: "Identify the error: 'Mother gave Sando and I some money for the trip.'", options: ["Mother should be mother", "I should be me", "gave should be given", "There is no error"], correctIndex: 1, explanation: "Sando and I is an indirect object of gave, so the objective me is needed: gave me some money." },
       ],
       test: [
-        {
-          type: "MULTIPLE_CHOICE",
-          prompt: "Which sentence is correct?",
-          options: [
-            "The teacher praised Musu and me.",
-            "The teacher praised Musu and I.",
-            "The teacher praised Musu and myself.",
-            "The teacher praised Musu and mine.",
-          ],
-          correctIndex: 0,
-          answerKey: "Object of the verb 'praised' → objective 'me' (drop 'Musu and': 'praised me').",
-          marks: 2,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Name the three cases of pronouns and give one pronoun example of each.",
-          answerKey:
-            "Nominative/subjective (e.g. I, he, they), objective (e.g. me, him, them), possessive (e.g. my/mine, his, their/theirs). Award a mark per case correctly named with a valid example.",
-          marks: 3,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Choose who or whom and explain: '____ did you invite to the ceremony?'",
-          answerKey:
-            "'Whom' — it is the object of the verb 'invite' (you invited whom? → them). Award a mark for 'whom' and a mark for a correct reason (object case).",
-          marks: 2,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Correct the pronoun errors: 'Her and me is going to town, and the money is your's.'",
-          answerKey:
-            "'She and I are going to town, and the money is yours.' Subjects take the nominative (She and I); the verb becomes 'are'; the possessive 'yours' has no apostrophe. Award marks for the required corrections.",
-          marks: 3,
-        },
-        {
-          type: "ESSAY",
-          prompt:
-            "Explain the three cases of pronouns and when each is used. Give at least one correct example sentence for each case, and explain how to choose the right pronoun in a compound subject or object and in the who/whom choice.",
-          answerKey:
-            "A strong answer defines nominative (subjects/subject complements), objective (objects of verbs and prepositions) and possessive (ownership); gives a correct example of each; explains the 'drop the other word' test for compounds; and explains who (subject) vs whom (object) with the he/him substitution test. Award marks for definitions, examples, the compound test and the who/whom rule.",
-          marks: 5,
-        },
+        { type: "MULTIPLE_CHOICE", prompt: "Choose the sentence in which every pronoun is in the correct case.", options: ["Her and I prepared the report for the teacher and he.", "She and I prepared the report for the teacher and him.", "She and me prepared the report for the teacher and him.", "Her and me prepared the report for the teacher and he."], correctIndex: 1, answerKey: "B. She and I is the subject (nominative); the teacher and him is the object of the preposition for (objective).", marks: 2 },
+        { type: "SHORT_ANSWER", prompt: "Correct the two pronoun errors in this sentence and explain each correction: 'Between you and I, the elders did not like us helping with the harvest.'", answerKey: "between you and me — the pronoun is the object of the preposition between, so the objective case is needed (2 marks); our helping — a pronoun before the gerund helping takes the possessive case (2 marks).", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "Fill each blank with who or whom and give the reason: (a) ___ is responsible for the library? (b) The man to ___ I spoke was polite. (c) We need a leader ___ the people trust.", answerKey: "(a) Who — subject of is (1 mark). (b) whom — object of the preposition to (1 mark). (c) whom — object of trust (the people trust him) (1 mark). One mark for each correct reason (3 marks).", marks: 6 },
+        { type: "SHORT_ANSWER", prompt: "Explain, with an example, how the choice between 'I' and 'me' after 'than' can change the meaning of a sentence.", answerKey: "The case shows the omitted words (1 mark). Example: 'He trusts Lucy more than I' = more than I trust Lucy; 'He trusts Lucy more than me' = more than he trusts me (3 marks).", marks: 4 },
+        { type: "ESSAY", prompt: "Write a short explanation, suitable for a younger student, of the three cases of English pronouns. Give the pronouns in each case, show where each case is used, and explain how to avoid common errors with compound pronouns, who/whom and possessive forms.", answerKey: "Definition of case (1). Nominative, objective and possessive pronouns listed correctly (3). Uses: subjects; objects of verbs, prepositions and infinitives; ownership and before gerunds (2). Compound test of removing the other word (1). who/whom with he/him test (1). No apostrophes in possessive pronouns; its/it's (1). Clear, accurate examples (1).", marks: 10 },
       ],
     },
     {
-      // source: LibreTexts — Writing for Success (McLean), 5.5 Verb Tenses (https://human.libretexts.org/Bookshelves/Composition/Introductory_Composition/Book:_Writing_for_Success_(McLean)/5:_Help_for_English_Language_Learners/5.5:_Verb_Tenses)
+      // source: LibreTexts — Writing for Success (McLean), 5.5 Verb Tenses (https://human.libretexts.org/Bookshelves/Composition/Introductory_Composition/Book:_Writing_for_Success_(McLean)/5:_Help_for_English_Language_Learners/5.5:_Verb_Tenses); LibreTexts — Guide to Writing (Lumen), 4.27 Advanced Verb Tenses (https://chem.libretexts.org/Courses/Lumen_Learning/Book:_Guide_to_Writing_(Lumen)/04:_Module_1:_Grammar/04.27:_Advanced_Verb_Tenses); LibreTexts — ESOL Advanced Grammar (San Jacinto College), Ch. 2 Perfect Tenses, 2.1–2.7 (https://human.libretexts.org/Courses/San_Jacinto_College/ESOL_Advanced_Grammar/02:_Perfect_Tenses)
       slug: "perfect-and-perfect-progressive-tenses",
       title: "Verb Usage: The Perfect and Perfect Progressive Tenses",
       objective:
-        "By the end of the topic, learners should be able to form and use the present, past and future perfect tenses and their progressive forms, and choose the right one to show when and how an action relates to another time.",
+        "By the end of the topic, learners should be able to form the present perfect, past perfect and future perfect tenses and their progressive forms, explain what each expresses about time, and choose the correct tense in speech and writing.",
       estimatedMinutes: 150,
-      notes: `## Perfect vs progressive
+      notes: `A verb does more than say that something happened. It can also show how one event stands in time against another: whether an action is finished or still going on, whether it happened before something else, and whether it will be complete by some future moment. The six tenses in this topic exist to express exactly these relationships. They are built from a small number of parts, and once the parts are understood the whole set falls into a clear pattern.
 
-- The **perfect** tenses show an action **completed** in relation to another time. They use a form of **have** + the **past participle**.
-- The **progressive** forms stress that an action is **ongoing / continuing**. The perfect progressive uses **have + been + the -ing form**.
+## Perfect and progressive: what the names mean
 
-## The three perfect tenses
+**Perfect tenses** — tenses that express a sense of completion. The action has been, had been, or will have been completed by a certain time. They are formed with a form of the helping verb *have* and the past participle of the main verb.
 
-| Tense | Pattern | Use | Example |
-| --- | --- | --- | --- |
-| Present perfect | has/have + past participle | Links past to present; action done at an unstated time, or begun in the past and still relevant | I **have helped** many students. |
-| Past perfect | had + past participle | An action completed **before** another past action | The bus **had left** before we arrived. |
-| Future perfect | will have + past participle | An action that will be completed **before** a future time | You **will have forgotten** me after you move. |
+**Progressive (continuous) tenses** — tenses that express a sense of continuity. The subject is, was or will be doing something over a period of time. They use a form of *be* with the *-ing* form (present participle) of the main verb.
 
-## The three perfect progressive tenses
+**Perfect progressive tenses** combine the two ideas: an action continuing over a period up to a certain time. They are formed with a form of *have*, then *been*, then the *-ing* form.
 
-| Tense | Pattern | Use | Example |
-| --- | --- | --- | --- |
-| Present perfect progressive | has/have been + -ing | Action begun in the past, still going on, stressing duration | She **has been talking** for an hour. |
-| Past perfect progressive | had been + -ing | Ongoing past action that stopped before another past moment | The staff **had been talking** until the boss arrived. |
-| Future perfect progressive | will have been + -ing | Ongoing action continuing up to a future moment | By noon I **will have been driving** for six hours. |
+**Past participle** — the form of a verb used in all the perfect tenses. For regular verbs it ends in *-d* or *-ed* and is identical to the simple past (*work → worked*, *help → helped*). Irregular verbs have their own forms (*write → written*, *fly → flown*, *take → taken*), which must be learnt.
 
-\`\`\`svg Perfect tenses on a timeline
-<svg viewBox="0 0 320 150" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
-  <line x1="20" y1="80" x2="300" y2="80" stroke="#8a5833" stroke-width="2"/>
-  <text x="60" y="100" text-anchor="middle" font-size="10">PAST</text>
-  <text x="160" y="100" text-anchor="middle" font-size="10">NOW</text>
-  <text x="260" y="100" text-anchor="middle" font-size="10">FUTURE</text>
-  <circle cx="160" cy="80" r="4" fill="#8a5833"/>
-  <circle cx="70" cy="80" r="4" fill="#b98a5a"/>
-  <text x="70" y="60" text-anchor="middle" font-size="9">had left</text>
-  <text x="70" y="48" text-anchor="middle" font-size="8">(past perfect)</text>
-  <circle cx="120" cy="80" r="4" fill="#b98a5a"/>
-  <text x="120" y="72" text-anchor="middle" font-size="8">then arrived</text>
-  <circle cx="260" cy="80" r="4" fill="#b98a5a"/>
-  <text x="260" y="60" text-anchor="middle" font-size="9">will have gone</text>
-  <text x="260" y="48" text-anchor="middle" font-size="8">(future perfect)</text>
+## The six tenses at a glance
+
+| Tense | Form | Example with *work* |
+| --- | --- | --- |
+| Present perfect | has / have + past participle | She has worked. |
+| Present perfect progressive | has / have + been + -ing | She has been working. |
+| Past perfect | had + past participle | She had worked. |
+| Past perfect progressive | had + been + -ing | She had been working. |
+| Future perfect | will have + past participle | She will have worked. |
+| Future perfect progressive | will have + been + -ing | She will have been working. |
+
+The only difference between the present, past and future versions is the form of *have*: *has/have*, *had* or *will have*.
+
+## The present perfect
+
+**Form.** Subject + *has* or *have* + past participle: *I have finished the report.* The negative adds *not* (*We haven't eaten lunch yet*), and questions place *has* or *have* before the subject (*Have you done your homework?*).
+
+**Use.** The present perfect connects the past with the present. It is used for:
+
+1. An action at an unspecified time in the past: *I have seen that film before.*
+2. Life experiences: *They have never been to Australia.*
+3. An action that began in the past and continues now: *She has lived here for five years.*
+4. An action completed very recently: *I have just finished my homework.*
+5. A past action whose result is still felt now: *He has broken his leg.*
+
+**Time expressions.** Certain words are commonly used with the present perfect. *For* gives a length of time (*for five years*); *since* gives the point at which the action began (*since I graduated*). *Just* refers to the very recent past; *already* means "before now"; *yet* means "up to now" and is used in questions and negatives; *ever* means "at any time" and is used mostly in questions; *never* means "not at any time".
+
+**Present perfect or simple past?** The simple past describes an event that began and ended in the past, often with a finished time expression such as *yesterday*, *last year* or *in 2017*. The present perfect is used when the past event is connected with, or has an effect on, the present. Compare *I locked myself out of the house yesterday* (the problem is over) with *I've locked myself out of the house* (the problem still exists).
+
+## The present perfect progressive
+
+**Form.** Subject + *has* or *have* + *been* + *-ing* form: *She has been talking for the last hour.*
+
+**Use.** Like the present perfect, it describes an action that began in the past and continues into the present, but it is chosen when the speaker wants to stress that the action is ongoing. *I have been feeling tired lately* emphasises the continuing tiredness. Compare *Zachi has read all the latest articles* (the reading is complete) with *Zachi has been reading all the latest articles* (the reading is in progress).
+
+## The past perfect
+
+**Form.** Subject + *had* + past participle: *The bus had left.* The contraction is *'d* (*They'd gone*) and the negative *hadn't*.
+
+**Use.** The past perfect shows that one action in the past happened **before another action in the past**. In *The bus had left by the time Theo arrived at the station*, both actions are past, but the bus left first (past perfect) and Theo arrived later (simple past).
+
+\`\`\`svg The past perfect places one past event before another past event
+<svg viewBox="0 0 300 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline showing bus had left, then Theo arrived, then now">
+  <line x1="15" y1="55" x2="285" y2="55" stroke="#334155" stroke-width="2"/>
+  <polygon points="290,55 280,50 280,60" fill="#334155"/>
+  <circle cx="80" cy="55" r="6" fill="#2563eb"/>
+  <circle cx="170" cy="55" r="6" fill="#dc2626"/>
+  <line x1="255" y1="42" x2="255" y2="68" stroke="#334155" stroke-width="2"/>
+  <text x="44" y="35" font-size="11" fill="#2563eb">the bus had left</text>
+  <text x="58" y="85" font-size="10" fill="#2563eb">past perfect</text>
+  <text x="140" y="35" font-size="11" fill="#dc2626">Theo arrived</text>
+  <text x="146" y="85" font-size="10" fill="#dc2626">simple past</text>
+  <text x="243" y="85" font-size="11" fill="#334155">now</text>
 </svg>
 \`\`\`
 
-## Building the past participle
+**By the time and by.** In a sentence with *by the time*, the time clause takes the simple past and the main clause the past perfect: *By the time we got to the airport, the flight had already taken off.* *By* followed by a time also marks completion before a past moment: *By 5 p.m., I had completed the project.*
 
-- **Regular verbs:** add **-ed** — walk → walked, help → helped.
-- **Irregular verbs** have their own participles — go → **gone**, write → **written**, speak → **spoken**, break → **broken**, eat → **eaten**, see → **seen**.
+The past perfect should be used only when it is needed to make clear which past action happened first. When the order is already obvious, the simple past is enough.
 
-## Common errors
+## The past perfect progressive
 
-- **Wrong participle:** ✗ *I have went.* → ✓ *I have **gone**.*
-- **Missing 'have/had':** ✗ *She been waiting.* → ✓ *She **has** been waiting.*
-- **Confusing simple past with present perfect:** use the present perfect for a time still connected to now (*I have lived here since 2010*), the simple past for a finished time (*I lived there in 2010*).
+**Form.** Subject + *had been* + *-ing* form: *I had been working all day.*
+
+**Use.** It describes an action that began in the past and continued until another time in the past: *The employees had been talking until their boss arrived.*
+
+**Past perfect or past perfect progressive?** The past perfect focuses on the **completion** of the action; the past perfect progressive focuses on its **continuity or duration**. Compare *He had worked at the company for 10 years before he left* with *He had been working at the company for 10 years before he left*. With verbs such as *work* and *live*, either form can be used with little difference in meaning.
+
+## The future perfect
+
+**Form.** Subject + *will have* + past participle: *As a pilot, Sara will have flown many cross-country flights.*
+
+**Use.** The future perfect looks back from a point in the future at an action that will be complete by then. It is used when a speaker expects an event to be finished at some future time, although it is not finished yet. In *You will have forgotten me after you move to London*, both actions lie in the future, but the forgetting will be complete after the move.
+
+## The future perfect progressive
+
+**Form.** Subject + *will have been* + *-ing* form.
+
+**Use.** This tense is rarely used. It describes an action that will continue over a period until another time in the future: *By the end of the meeting, I will have been hearing about mortgages and taxes for eight hours.*
 
 ## Summary
 
-- **Perfect = have + past participle**; **perfect progressive = have + been + -ing**.
-- Present perfect links past to now; past perfect goes "past before the past"; future perfect finishes before a future point.
-- The progressive forms add the sense of a **continuing** action up to that moment.`,
-      workedExample: `**Task.** Put the verb in brackets into the correct perfect (or perfect progressive) tense.
+| Tense | Main idea | Example |
+| --- | --- | --- |
+| Present perfect | Past action connected with the present | I have finished my homework. |
+| Present perfect progressive | Action from the past still going on, stressing duration | She has been talking for an hour. |
+| Past perfect | Earlier of two past actions | The bus had left when Theo arrived. |
+| Past perfect progressive | Continuing action up to a past moment | I had been working all day. |
+| Future perfect | Action complete before a future moment | Sara will have flown many routes. |
+| Future perfect progressive | Continuing action up to a future moment | I will have been listening for eight hours. |
 
-1. By the time the teacher arrived, the class (finish) the test.
-2. She (study) for three hours and is still going.
-3. By next June, I (complete) my final examinations.
+- Perfect = *have* + past participle (completion); perfect progressive = *have* + *been* + *-ing* (continuity).
+- Use *for* with a length of time and *since* with a starting point.
+- Use the past perfect only when the order of two past events must be made clear.`,
+      workedExample: `**Task.** Put each verb in brackets into the correct perfect or perfect progressive tense, and justify the choice.
+
+1. *Kebeh (live) in Gbarnga since 2019.*
+2. *By the time the ambulance arrived, the patient (stop) breathing.*
+3. *They (wait) for the bus for two hours when it finally came.*
+4. *By next June, I (complete) my WASSCE examinations.*
+5. *Look at the floor! Someone (spill) palm oil.*
+6. *By December, Mr. Dolo (teach) at this school for twenty years.*
 
 **Answers**
 
-1. **had finished** — past perfect. One past action (finishing) came **before** another past action (the teacher arriving): *had* + past participle *finished*.
-2. **has been studying** — present perfect progressive. The action began in the past and is **still ongoing**, so *has been* + *studying* stresses the duration.
-3. **will have completed** — future perfect. The action will be finished **before** the future point *next June*: *will have* + past participle *completed*.
+1. **has lived** (or **has been living**) — present perfect. The action began in the past (*since 2019*) and continues now. *Since* gives the starting point. With *live*, the progressive form gives almost the same meaning.
 
-**Rule applied:** perfect = have/has/had/will have + past participle; add **been + -ing** when you want to stress that the action keeps going up to that time.`,
+2. **had stopped** — past perfect. Two past actions: the stopping happened before the arrival. The *by the time* clause takes the simple past (*arrived*), the main clause the past perfect.
+
+3. **had been waiting** — past perfect progressive. The waiting continued for a period (*for two hours*) up to another past moment (*when it finally came*), and the sentence stresses its duration.
+
+4. **will have completed** — future perfect. The examinations will be finished before a point in the future (*by next June*).
+
+5. **has spilt** (or **has spilled**) — present perfect. A past action whose result is visible now (the oil on the floor).
+
+6. **will have been teaching** — future perfect progressive. The teaching continues over a period (*for twenty years*) up to a future moment (*by December*).
+
+**Method.** For each sentence, identify the reference time (now, a past moment or a future moment), then decide whether the action is complete by then (perfect) or continuing up to then (perfect progressive).`,
       quiz: [
-        {
-          prompt: "The perfect tenses are formed with a form of 'have' plus the…",
-          options: ["past participle", "base form", "-ing form", "past simple"],
-          correctIndex: 0,
-          explanation: "Perfect = have/has/had + past participle.",
-        },
-        {
-          prompt: "The present perfect is formed with…",
-          options: ["has/have + past participle", "had + past participle", "will have + past participle", "is/are + -ing"],
-          correctIndex: 0,
-          explanation: "e.g. 'I have helped', 'she has gone'.",
-        },
-        {
-          prompt: "Which sentence is in the present perfect?",
-          options: ["I have finished the work.", "I finished the work.", "I had finished the work.", "I will finish the work."],
-          correctIndex: 0,
-          explanation: "'have finished' = present perfect.",
-        },
-        {
-          prompt: "The past perfect ('had gone') describes an action that…",
-          options: ["was completed before another past action", "is happening now", "will happen tomorrow", "never happened"],
-          correctIndex: 0,
-          explanation: "Past perfect is 'the past before the past'.",
-        },
-        {
-          prompt: "'The bus had left before we arrived' uses the past perfect for…",
-          options: ["the earlier of two past actions (leaving)", "arriving", "a present action", "a future action"],
-          correctIndex: 0,
-          explanation: "Leaving happened first, so 'had left' is past perfect.",
-        },
-        {
-          prompt: "The future perfect is formed with…",
-          options: ["will have + past participle", "will + base form", "has + past participle", "had + -ing"],
-          correctIndex: 0,
-          explanation: "e.g. 'will have forgotten', 'will have completed'.",
-        },
-        {
-          prompt: "'By 2030 the town will have doubled in size' is in the…",
-          options: ["future perfect", "present perfect", "past perfect", "simple future"],
-          correctIndex: 0,
-          explanation: "will have + past participle = future perfect.",
-        },
-        {
-          prompt: "The perfect progressive forms use…",
-          options: ["have + been + -ing", "have + past participle", "be + past participle", "will + -ing"],
-          correctIndex: 0,
-          explanation: "e.g. 'has been talking', 'had been waiting'.",
-        },
-        {
-          prompt: "'She has been talking for an hour' is in the…",
-          options: ["present perfect progressive", "past perfect progressive", "present perfect", "future perfect"],
-          correctIndex: 0,
-          explanation: "has been + -ing = present perfect progressive.",
-        },
-        {
-          prompt: "The present perfect progressive stresses that an action…",
-          options: ["began in the past and is still ongoing", "finished long ago", "will start later", "never began"],
-          correctIndex: 0,
-          explanation: "It emphasises the ongoing duration up to now.",
-        },
-        {
-          prompt: "'The staff had been talking until the boss arrived' is in the…",
-          options: ["past perfect progressive", "present perfect progressive", "future perfect", "past perfect"],
-          correctIndex: 0,
-          explanation: "had been + -ing = past perfect progressive.",
-        },
-        {
-          prompt: "The future perfect progressive is formed with…",
-          options: ["will have been + -ing", "will have + past participle", "have been + -ing", "will be + -ing"],
-          correctIndex: 0,
-          explanation: "e.g. 'will have been driving'.",
-        },
-        {
-          prompt: "What is the past participle of 'go'?",
-          options: ["gone", "went", "going", "goed"],
-          correctIndex: 0,
-          explanation: "go → went → gone; the perfect needs 'gone'.",
-        },
-        {
-          prompt: "Correct the error: 'I have went to the market.'",
-          options: ["I have gone to the market.", "I have go to the market.", "I have going to the market.", "I has went to the market."],
-          correctIndex: 0,
-          explanation: "Use the past participle 'gone', not the past 'went'.",
-        },
-        {
-          prompt: "What is missing: 'She ___ been waiting since morning.'",
-          options: ["has", "having", "being", "were"],
-          correctIndex: 0,
-          explanation: "Present perfect progressive needs 'has been' + -ing.",
-        },
-        {
-          prompt: "Which sentence best fits 'a time still connected to now'?",
-          options: ["I have lived here since 2010.", "I lived here in 2010.", "I had lived here.", "I will live here."],
-          correctIndex: 0,
-          explanation: "The present perfect with 'since' links the past to now.",
-        },
-        {
-          prompt: "The past participle of 'write' is…",
-          options: ["written", "wrote", "writing", "writed"],
-          correctIndex: 0,
-          explanation: "write → wrote → written.",
-        },
-        {
-          prompt: "Choose the past perfect: 'When I called, she ___ already ___.'",
-          options: ["had / left", "has / left", "will have / left", "have / leave"],
-          correctIndex: 0,
-          explanation: "Past perfect = had + past participle 'left'.",
-        },
-        {
-          prompt: "'By the end of the meeting, I will have been listening for two hours' is the…",
-          options: ["future perfect progressive", "future perfect", "present perfect progressive", "past perfect progressive"],
-          correctIndex: 0,
-          explanation: "will have been + -ing = future perfect progressive.",
-        },
-        {
-          prompt: "For a regular verb, the past participle is formed by adding…",
-          options: ["-ed", "-ing", "-s", "-en"],
-          correctIndex: 0,
-          explanation: "help → helped, walk → walked.",
-        },
+        { prompt: "What do all perfect tenses have in common?", options: ["They use the -ing form of the verb", "They use a form of 'have' with the past participle", "They describe only past events", "They use 'will'"], correctIndex: 1, explanation: "Every perfect tense is built from a form of have plus the past participle." },
+        { prompt: "Which tense is 'They have been studying'?", options: ["Present perfect", "Past perfect progressive", "Present perfect progressive", "Future perfect"], correctIndex: 2, explanation: "has/have + been + -ing is the present perfect progressive." },
+        { prompt: "Which tense is 'The rain had stopped'?", options: ["Simple past", "Past perfect", "Present perfect", "Past progressive"], correctIndex: 1, explanation: "had + past participle is the past perfect." },
+        { prompt: "Choose the correct sentence.", options: ["I have seen him yesterday.", "I saw him yesterday.", "I had see him yesterday.", "I have saw him yesterday."], correctIndex: 1, explanation: "Yesterday is a finished time, so the simple past is used, not the present perfect." },
+        { prompt: "'She ___ in Monrovia for ten years and still lives there.'", options: ["lived", "has lived", "had lived", "will live"], correctIndex: 1, explanation: "An action that began in the past and continues now takes the present perfect." },
+        { prompt: "Which word completes 'We have known each other ___ 2015'?", options: ["for", "since", "ago", "during"], correctIndex: 1, explanation: "Since introduces the point in time at which the action began." },
+        { prompt: "Which word completes 'We have known each other ___ ten years'?", options: ["since", "ago", "for", "from"], correctIndex: 2, explanation: "For introduces a length of time." },
+        { prompt: "'When we reached the stadium, the match ___.'", options: ["already started", "has already started", "had already started", "will have started"], correctIndex: 2, explanation: "The match started before we reached the stadium: the earlier past action takes the past perfect." },
+        { prompt: "'By the time the police came, the thieves ___.'", options: ["escape", "have escaped", "had escaped", "will have escaped"], correctIndex: 2, explanation: "By the time + simple past (came) is followed by the past perfect in the main clause." },
+        { prompt: "What does the past perfect progressive emphasise?", options: ["The completion of a past action", "The duration of an action continuing up to a past moment", "A future plan", "A habit in the present"], correctIndex: 1, explanation: "It focuses on continuity or duration up to another time in the past." },
+        { prompt: "'By 2030, the company ___ two hundred houses.'", options: ["will build", "has built", "will have built", "had built"], correctIndex: 2, explanation: "Completion before a future time is expressed by the future perfect." },
+        { prompt: "Which tense is described as 'rarely used'?", options: ["Present perfect", "Past perfect", "Future perfect progressive", "Simple future"], correctIndex: 2, explanation: "The future perfect progressive is the least common of the six." },
+        { prompt: "Choose the correct past participle: 'The pilot has ___ to Accra twice.'", options: ["flew", "flown", "flied", "flying"], correctIndex: 1, explanation: "Fly is irregular: fly, flew, flown. The perfect tenses use the past participle flown." },
+        { prompt: "What is the difference between 'I've lost my key' and 'I lost my key'?", options: ["No difference", "The first suggests the key is still lost; the second simply reports a finished past event", "The first is future", "The second is ungrammatical"], correctIndex: 1, explanation: "The present perfect connects the past event with the present situation." },
+        { prompt: "'I am tired because I ___ all morning.'", options: ["have been digging", "had been digging", "will have been digging", "have dug yesterday"], correctIndex: 0, explanation: "An action continuing up to now and causing a present result, with stress on duration: present perfect progressive." },
+        { prompt: "Which sentence uses the past perfect unnecessarily?", options: ["After she had eaten, she went to bed.", "I had woken up at six this morning.", "By noon, we had finished the work.", "He had left before I arrived."], correctIndex: 1, explanation: "There is no second past event to compare with, so the simple past (I woke up at six) is enough." },
+        { prompt: "'Have you finished your assignment ___?' Which word fits?", options: ["already", "yet", "since", "for"], correctIndex: 1, explanation: "Yet means 'up to now' and usually comes at the end of a question or negative." },
+        { prompt: "Which sentence is in the future perfect?", options: ["I will finish the essay.", "I will be finishing the essay.", "I will have finished the essay by Friday.", "I have finished the essay."], correctIndex: 2, explanation: "will have + past participle is the future perfect." },
+        { prompt: "'He had worked there for ten years' and 'He had been working there for ten years' differ mainly in that", options: ["the first stresses completion, the second stresses duration", "the first is present and the second past", "the second is ungrammatical", "the first describes the future"], correctIndex: 0, explanation: "Past perfect focuses on completion; past perfect progressive on continuity. With work, the difference is small." },
+        { prompt: "Identify the error: 'She has went to the market.'", options: ["has should be have", "went should be gone", "the should be a", "There is no error"], correctIndex: 1, explanation: "The present perfect needs the past participle gone, not the simple past went." },
       ],
       test: [
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Put the verb into the past perfect: 'The film ___ (start) before we found our seats.'",
-          answerKey:
-            "'had started' — past perfect (had + past participle). The starting happened before the past action of finding seats. Award a mark for 'had' and a mark for the correct participle 'started'.",
-          marks: 2,
-        },
-        {
-          type: "MULTIPLE_CHOICE",
-          prompt: "Which sentence is in the present perfect progressive?",
-          options: [
-            "They have been building the road for months.",
-            "They have built the road.",
-            "They had built the road.",
-            "They will build the road.",
-          ],
-          correctIndex: 0,
-          answerKey: "'have been building' = have + been + -ing = present perfect progressive.",
-          marks: 2,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Explain the difference between the present perfect ('I have eaten') and the past perfect ('I had eaten').",
-          answerKey:
-            "Present perfect (has/have + participle) links a past action to the present or an unstated time; past perfect (had + participle) shows an action completed before another past action. Award a mark for each correctly explained.",
-          marks: 2,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Rewrite in the future perfect: 'I finish the project by Friday.'",
-          answerKey:
-            "'I will have finished the project by Friday.' Future perfect = will have + past participle (finished), showing completion before a future point. Award marks for 'will have' and the correct participle.",
-          marks: 2,
-        },
-        {
-          type: "ESSAY",
-          prompt:
-            "Describe the three perfect tenses and their progressive forms. For each, give the pattern (auxiliaries + participle) and one example sentence, and explain what time relationship it shows.",
-          answerKey:
-            "A strong answer covers present perfect (has/have + participle), past perfect (had + participle), future perfect (will have + participle), and their progressives (has/have/had/will have + been + -ing); gives correct patterns and examples; and explains the time each shows (present perfect links past to now; past perfect = before another past action; future perfect = before a future point; progressives stress ongoing duration). Award marks for patterns, examples and the time explanations.",
-          marks: 6,
-        },
+        { type: "MULTIPLE_CHOICE", prompt: "Choose the sentence that correctly uses the past perfect.", options: ["I had finished my homework now.", "When I had arrived, they leave.", "They had already eaten when we arrived.", "She had been go home."], correctIndex: 2, answerKey: "C. The eating happened before the arrival; the earlier past action takes had + past participle, the later one the simple past.", marks: 2 },
+        { type: "SHORT_ANSWER", prompt: "Write the six perfect and perfect progressive forms of the verb 'write' with the subject 'he'.", answerKey: "has written; has been writing; had written; had been writing; will have written; will have been writing (1 mark each).", marks: 6 },
+        { type: "SHORT_ANSWER", prompt: "Explain the difference in meaning between 'Musa lived in Kakata for six years' and 'Musa has lived in Kakata for six years'.", answerKey: "The simple past means the six years are finished — Musa no longer lives there (2 marks). The present perfect connects the past to the present — he began living there six years ago and still lives there (2 marks).", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "Complete each sentence with the correct tense of the verb in brackets: (a) By the time the guests arrived, we (cook) the rice. (b) By the end of this term, she (study) French for three years. (c) I (try) to call you all afternoon, but your phone is off.", answerKey: "(a) had cooked — past perfect, earlier of two past actions (2 marks). (b) will have been studying (or will have studied) — up to a future moment, stressing duration (2 marks). (c) have been trying — action continuing up to the present (2 marks).", marks: 6 },
+        { type: "ESSAY", prompt: "Write a paragraph of 10–12 sentences about a memorable day in your school life, using at least one example of each of the six perfect and perfect progressive tenses. Underline each example and name its tense.", answerKey: "Award 1 mark for each tense used correctly and labelled (6). Coherent paragraph on the topic (2). Accurate past participles and correct use of time expressions such as for, since, by the time (2).", marks: 10 },
       ],
     },
     {
