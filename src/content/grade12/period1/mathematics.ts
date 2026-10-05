@@ -1,291 +1,275 @@
 import type { PeriodContent } from "@/content/types";
 
-// Grade 12, Semester One, Period I of the MoE Mathematics syllabus:
-// Sequence and Series, Bearings, and Constructions. Notes rebuilt from
-// published sources (Teachoo, GeeksforGeeks).
+// Grade 12, Semester One, Period I of the MoE Mathematics syllabus. The period
+// has three units — Sequence and Series (CONTENTS 1–6), Bearings (CONTENTS 1–2)
+// and Constructions (CONTENTS 1–5) — and each CONTENTS item is one topic below.
+// Notes are written from Siyavula, LibreTexts, CK-12 and GeeksforGeeks pages.
 export const mathematicsG12P1: PeriodContent = {
   grade: 12,
   number: 1,
   title: "Sequence and Series, Bearings and Constructions",
   summary:
-    "Period I of the MoE Grade 12 Mathematics syllabus. Learners work with arithmetic and geometric sequences and series and their sum formulae, interpret and calculate bearings as directions between points, and use compass-and-ruler methods to construct angles, triangles, quadrilaterals and loci.",
+    "Period I of the MoE Grade 12 Mathematics syllabus. Unit I develops arithmetic and geometric sequences, their general terms and the sums of the corresponding series; Unit II interprets bearings as directions and solves distance–bearing problems with trigonometry; Unit III covers compass-and-straightedge constructions of lines, angles, triangles and quadrilaterals, and the idea of a locus with the special loci.",
   topics: [
-    // source: Teachoo — Sequences and Series, Class 11 (https://www.teachoo.com/subjects/cbse-maths/class-11th/ch9-11th-sequences-and-series/)
+    // source: Siyavula — Everything Maths Grade 12, 1.2 Arithmetic sequences (https://www.siyavula.com/read/za/mathematics/grade-12/sequences-and-series/01-sequences-and-series-01)
     {
-      slug: "sequence-and-series",
-      title: "Sequence and Series",
+      slug: "arithmetic-sequences",
+      title: "Definition of Arithmetic Sequence (Progression)",
       objective:
-        "By the end of the topic, learners should be able to identify arithmetic and geometric sequences, use the nth-term formulae, and find the sum of arithmetic and geometric series.",
-      estimatedMinutes: 120,
-      notes: `## Sequence and series
+        "By the end of the topic, learners should be able to define an arithmetic sequence, find its common difference, test whether a given sequence is arithmetic, and find the arithmetic mean of two numbers.",
+      estimatedMinutes: 45,
+      notes: `Many number patterns are produced by repeating one simple step. If the step is "add the same amount each time", the pattern is called an arithmetic sequence. It is the simplest kind of sequence, and it is the foundation for the formulae and series studied in the rest of this unit.
 
-- A **sequence** is an ordered list of numbers (called **terms**): T₁, T₂, T₃, …
-- A **series** is the sum of the terms of a sequence: T₁ + T₂ + T₃ + …
-- **Tₙ** is the nth term (general term); **Sₙ** is the sum of the first n terms.
+## Sequences and terms
 
-## Arithmetic sequence (arithmetic progression, AP)
+A **sequence** is an ordered list of numbers. Each number in the list is called a **term**, and the order matters: the first term is written T₁, the second T₂, the third T₃, and the term in position n is written Tₙ. Tₙ is called the **general term** because it stands for any term of the sequence.
 
-- Each term is found by **adding a fixed common difference d** to the previous term.
-- **d = Tₙ − Tₙ₋₁** (the difference between any term and the one before it).
-- Example: 3, 7, 11, 15, … has a = 3 and d = 4.
-- **nth term: Tₙ = a + (n − 1)d**, where a is the first term.
+Terms are usually separated by semicolons (or commas), and three dots show that the pattern continues: 3; 7; 11; 15; …
 
-## Sum of an arithmetic series
+## The arithmetic sequence
 
-- **Sₙ = n/2 [2a + (n − 1)d]**
-- Equivalently **Sₙ = n/2 (a + l)**, where l = Tₙ is the last term.
+**Arithmetic sequence** — a sequence in which every term after the first is found by adding a constant value (positive or negative) to the previous term. It is also called an **arithmetic progression (AP)**, or a **linear sequence**.
 
-## Geometric sequence (geometric progression, GP)
+**Common difference (d)** — the constant value that is added to each term to obtain the next one.
 
-- Each term is found by **multiplying by a fixed common ratio r**.
-- **r = Tₙ ÷ Tₙ₋₁** (the ratio of any term to the one before it).
-- Example: 2, 6, 18, 54, … has a = 2 and r = 3.
-- **nth term: Tₙ = a·r⁽ⁿ⁻¹⁾**
+Because the same amount is added every time, the difference between any term and the term before it is always d:
 
-## Sum of a geometric series
+d = T₂ − T₁ = T₃ − T₂ = … = Tₙ − Tₙ₋₁
 
-- **Sₙ = a(rⁿ − 1)/(r − 1)** for r > 1 (or a(1 − rⁿ)/(1 − r) for r < 1), r ≠ 1.
-- For an infinite GP with −1 < r < 1: **S∞ = a/(1 − r)**.
+The first term of the sequence is usually called a. Once a and d are known, the whole sequence is fixed: the terms are a; a + d; a + 2d; a + 3d; …
 
-| Feature | Arithmetic | Geometric |
-| --- | --- | --- |
-| Step | add d | multiply by r |
-| nth term | a + (n − 1)d | a·r⁽ⁿ⁻¹⁾ |
-| Sum of n terms | n/2[2a + (n − 1)d] | a(rⁿ − 1)/(r − 1) |
+## Testing whether a sequence is arithmetic
 
-## Common errors
+To decide whether a sequence is arithmetic, subtract each term from the term that follows it. If every one of these differences is the same, the sequence is arithmetic and that difference is d. If even one difference is different, the sequence is not arithmetic.
 
-- **Using n instead of (n − 1)** in the nth-term formulae.
-- **Confusing d and r** — arithmetic adds, geometric multiplies.
-- **Applying S∞** when |r| ≥ 1 (the sum then has no finite value).`,
-      workedExample: `**Question:** For the sequence 3, 7, 11, 15, … find (a) the 10th term and (b) the sum of the first 10 terms.
+| Sequence | Consecutive differences | Arithmetic? | d |
+| --- | --- | --- | --- |
+| 3; 7; 11; 15; … | 4, 4, 4 | Yes | 4 |
+| 20; 14; 8; 2; … | −6, −6, −6 | Yes | −6 |
+| −15; −11; −7; … | 4, 4 | Yes | 4 |
+| 1; 4; 9; 16; … | 3, 5, 7 | No | — |
+| 2; 4; 8; 16; … | 2, 4, 8 | No | — |
 
-**Solution**
+Two points deserve care. First, the difference is always taken as *later term minus earlier term*; reversing the order gives the wrong sign. Second, it is not enough to check only the first two terms — a sequence such as 2; 4; 8 has T₂ − T₁ = 2 but T₃ − T₂ = 4.
 
-*Step 1 — identify a and d.* a = 3 and d = 7 − 3 = 4.
+## Increasing and decreasing sequences
 
-*Step 2 — 10th term with Tₙ = a + (n − 1)d.*
-T₁₀ = 3 + (10 − 1)(4) = 3 + 36 = 39
+The sign of d tells us how the sequence behaves. When d is positive each term is larger than the one before, and the sequence increases. When d is negative each term is smaller, and the sequence decreases. In the table above, 3; 7; 11; … increases (d = 4) while 20; 14; 8; … decreases (d = −6).
 
-*Step 3 — sum with Sₙ = n/2[2a + (n − 1)d].*
-S₁₀ = 10/2 [2(3) + (10 − 1)(4)] = 5[6 + 36] = 5 × 42 = 210
+## The graph of an arithmetic sequence
 
-*Check with Sₙ = n/2(a + l):* S₁₀ = 10/2 (3 + 39) = 5 × 42 = 210. ✓
+If the terms of an arithmetic sequence are plotted against their positions (n on the horizontal axis, Tₙ on the vertical axis), the points lie on a straight line. This is why arithmetic sequences are also called linear sequences. The common difference d is the **gradient** of that line: moving one position to the right always raises (or lowers) the term by d.
 
-**Answer: (a) 39 (b) 210**`,
-      quiz: [
-        { prompt: "A sequence is", options: ["a sum of terms", "an ordered list of numbers", "a single number", "always infinite"], correctIndex: 1, explanation: "A sequence is an ordered list of terms; a series is their sum." },
-        { prompt: "In an arithmetic sequence, consecutive terms differ by", options: ["a common ratio", "a common difference", "a square", "zero always"], correctIndex: 1, explanation: "AP adds a fixed common difference d." },
-        { prompt: "The nth term of an AP is", options: ["a·r^(n−1)", "a + (n − 1)d", "n/2(a + l)", "a + nd"], correctIndex: 1, explanation: "Tₙ = a + (n − 1)d." },
-        { prompt: "For 5, 9, 13, … the common difference is", options: ["4", "5", "9", "14"], correctIndex: 0, explanation: "9 − 5 = 4." },
-        { prompt: "For 5, 9, 13, … the 6th term is", options: ["25", "29", "23", "30"], correctIndex: 0, explanation: "T₆ = 5 + 5(4) = 25." },
-        { prompt: "In a geometric sequence, consecutive terms have a fixed", options: ["difference", "ratio", "sum", "product"], correctIndex: 1, explanation: "GP multiplies by a fixed common ratio r." },
-        { prompt: "The nth term of a GP is", options: ["a + (n − 1)d", "a·r^(n−1)", "a·r·n", "n/2(a + l)"], correctIndex: 1, explanation: "Tₙ = a·r^(n−1)." },
-        { prompt: "For 2, 6, 18, … the common ratio is", options: ["2", "3", "4", "6"], correctIndex: 1, explanation: "6 ÷ 2 = 3." },
-        { prompt: "For 2, 6, 18, … the 4th term is", options: ["54", "36", "24", "72"], correctIndex: 0, explanation: "T₄ = 2 × 3³ = 2 × 27 = 54." },
-        { prompt: "The sum of the first n terms of an AP is", options: ["n/2[2a + (n − 1)d]", "a·r^(n−1)", "a/(1 − r)", "a + (n − 1)d"], correctIndex: 0, explanation: "Sₙ = n/2[2a + (n − 1)d]." },
-        { prompt: "For 3, 7, 11, … the sum of the first 5 terms is", options: ["55", "35", "45", "50"], correctIndex: 0, explanation: "S₅ = 5/2[6 + 16] = 5/2 × 22 = 55." },
-        { prompt: "The sum of a GP (r ≠ 1) is", options: ["n/2(a + l)", "a(rⁿ − 1)/(r − 1)", "a + (n − 1)d", "a·rⁿ"], correctIndex: 1, explanation: "Sₙ = a(rⁿ − 1)/(r − 1)." },
-        { prompt: "For 2, 6, 18, … the sum of the first 4 terms is", options: ["80", "78", "80.5", "108"], correctIndex: 0, explanation: "S₄ = 2(3⁴ − 1)/(3 − 1) = 2(80)/2 = 80." },
-        { prompt: "The sum to infinity of a GP exists only when", options: ["r > 1", "|r| < 1", "r = 1", "a = 0"], correctIndex: 1, explanation: "S∞ = a/(1 − r) needs −1 < r < 1." },
-        { prompt: "The sum to infinity of 8 + 4 + 2 + … is", options: ["16", "12", "8", "∞"], correctIndex: 0, explanation: "a = 8, r = 1/2; S∞ = 8/(1 − 1/2) = 16." },
-        { prompt: "An alternative AP sum formula is", options: ["n/2(a + l)", "a/(1 − r)", "a·r^(n−1)", "(a + l)/2"], correctIndex: 0, explanation: "Sₙ = n/2(a + l) where l is the last term." },
-        { prompt: "The 20th term of 1, 4, 7, … is", options: ["58", "61", "55", "60"], correctIndex: 0, explanation: "T₂₀ = 1 + 19(3) = 1 + 57 = 58." },
-        { prompt: "A series is", options: ["a list of numbers", "the sum of the terms of a sequence", "a common ratio", "the nth term"], correctIndex: 1, explanation: "A series is the sum of terms." },
-        { prompt: "In 100, 50, 25, … the common ratio is", options: ["1/2", "2", "−50", "50"], correctIndex: 0, explanation: "50 ÷ 100 = 1/2." },
-        { prompt: "The main difference between AP and GP is that AP", options: ["multiplies terms", "adds a fixed amount", "has no formula", "cannot be summed"], correctIndex: 1, explanation: "AP adds d; GP multiplies by r." },
-      ],
-      test: [
-        { type: "SHORT_ANSWER", prompt: "The 3rd term of an AP is 11 and the 7th term is 27. Find a and d.", answerKey: "T₃ = a + 2d = 11 and T₇ = a + 6d = 27. Subtract: 4d = 16, so d = 4; then a = 11 − 8 = 3. Award 3 marks for setting up the equations, 3 for a = 3, d = 4.", marks: 6 },
-        { type: "SHORT_ANSWER", prompt: "Find the sum of the first 8 terms of the AP 2, 5, 8, 11, …", answerKey: "a = 2, d = 3. S₈ = 8/2[2(2) + 7(3)] = 4[4 + 21] = 4 × 25 = 100. Award 2 for substitution, 2 for 25, 2 for 100.", marks: 6 },
-        { type: "MULTIPLE_CHOICE", prompt: "The 5th term of the GP 3, 6, 12, … is", options: ["48", "24", "36", "96"], correctIndex: 0, answerKey: "a = 3, r = 2; T₅ = 3 × 2⁴ = 3 × 16 = 48. Option A.", marks: 4 },
-        { type: "SHORT_ANSWER", prompt: "Find the sum to infinity of the GP 12 + 6 + 3 + …", answerKey: "a = 12, r = 1/2 (|r| < 1). S∞ = a/(1 − r) = 12/(1 − 1/2) = 12/(1/2) = 24. Award 2 for r, 2 for the formula, 2 for 24.", marks: 6 },
-        { type: "ESSAY", prompt: "Explain the difference between an arithmetic and a geometric sequence. For the sequence 4, 12, 36, … state which type it is, give the common difference or ratio, and find the 5th term and the sum of the first 4 terms.", answerKey: "Arithmetic sequences add a fixed common difference; geometric sequences multiply by a fixed common ratio. 4, 12, 36 is geometric with r = 3. T₅ = 4 × 3⁴ = 4 × 81 = 324. S₄ = 4(3⁴ − 1)/(3 − 1) = 4(80)/2 = 160. Award 3 for the explanation, 2 for identifying GP with r = 3, 2 for T₅ = 324, 3 for S₄ = 160.", marks: 10 },
-      ],
-    },
-    // source: GeeksforGeeks — Bearings in Maths (https://www.geeksforgeeks.org/maths/bearings-in-maths/)
-    {
-      slug: "bearings",
-      title: "Bearings",
-      objective:
-        "By the end of the topic, learners should be able to interpret and measure three-figure bearings, find the back bearing of a point, and solve simple distance-and-bearing problems.",
-      estimatedMinutes: 100,
-      notes: `## What a bearing is
-
-- A **bearing** describes the direction of one point from another as an angle.
-- It is **always measured from North, in a clockwise direction**.
-- It is written as a **three-figure bearing** (three digits): e.g. 60° is written as **060°**, and due east is **090°**.
-- A whole-circle bearing runs from **000° to 360°**.
-
-## Key directions
-
-| Direction | Bearing |
-| --- | --- |
-| North | 000° |
-| East | 090° |
-| South | 180° |
-| West | 270° |
-
-## Back bearing (reverse bearing)
-
-- The bearing of A from B is the **back bearing** of the bearing of B from A.
-- Rule: if the bearing is **less than 180°, add 180°**; if it is **180° or more, subtract 180°**.
-- Example: if the bearing of B from A is 094°, then the bearing of A from B is 094° + 180° = **274°**.
-
-## Solving bearing problems
-
-- Draw a **North line at each point** and mark the clockwise angle.
-- Use a **scale drawing** (e.g. 1 cm : 1 km) or trigonometry (sine rule, cosine rule) to find distances and angles.
-- Sine rule: **a/sin A = b/sin B = c/sin C**.
-
-\`\`\`svg Bearing measured clockwise from North
-<svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
-  <line x1="60" y1="20" x2="60" y2="140" stroke="#888" stroke-width="1"/>
-  <text x="50" y="16" font-size="11">N</text>
-  <circle cx="60" cy="90" r="3" fill="#333"/>
-  <text x="46" y="104" font-size="11">A</text>
-  <line x1="60" y1="90" x2="150" y2="55" stroke="#1565c0" stroke-width="2"/>
-  <circle cx="150" cy="55" r="3" fill="#1565c0"/>
-  <text x="156" y="52" font-size="11">B</text>
-  <path d="M60 60 A 30 30 0 0 1 84 72" fill="none" stroke="#c62828" stroke-width="1.5"/>
-  <text x="86" y="60" font-size="10" fill="#c62828">bearing</text>
+\`\`\`svg Terms of 3; 7; 11; 15; 19 plotted against their positions lie on a straight line of gradient 4
+<svg viewBox="0 0 240 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Five points of an arithmetic sequence lying on a straight line">
+  <line x1="30" y1="150" x2="230" y2="150" stroke="#334155" stroke-width="1.5"/>
+  <line x1="30" y1="150" x2="30" y2="10" stroke="#334155" stroke-width="1.5"/>
+  <line x1="50" y1="138" x2="210" y2="26" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+  <circle cx="50" cy="138" r="4" fill="#2563eb"/>
+  <circle cx="90" cy="110" r="4" fill="#2563eb"/>
+  <circle cx="130" cy="82" r="4" fill="#2563eb"/>
+  <circle cx="170" cy="54" r="4" fill="#2563eb"/>
+  <circle cx="210" cy="26" r="4" fill="#2563eb"/>
+  <text x="46" y="164" font-size="10" fill="#334155">1</text>
+  <text x="86" y="164" font-size="10" fill="#334155">2</text>
+  <text x="126" y="164" font-size="10" fill="#334155">3</text>
+  <text x="166" y="164" font-size="10" fill="#334155">4</text>
+  <text x="206" y="164" font-size="10" fill="#334155">5</text>
+  <text x="218" y="146" font-size="10" fill="#334155">n</text>
+  <text x="8" y="18" font-size="10" fill="#334155">Tₙ</text>
+  <text x="58" y="134" font-size="9" fill="#2563eb">3</text>
+  <text x="98" y="106" font-size="9" fill="#2563eb">7</text>
+  <text x="138" y="78" font-size="9" fill="#2563eb">11</text>
+  <text x="178" y="50" font-size="9" fill="#2563eb">15</text>
+  <text x="186" y="22" font-size="9" fill="#2563eb">19</text>
 </svg>
 \`\`\`
 
-## Common errors
+## The arithmetic mean
 
-- **Writing a bearing with fewer than three digits** — always use 060°, not 60°.
-- **Measuring anticlockwise or from another direction** — bearings go clockwise from North.
-- **Forgetting the ±180° rule** for a back bearing.`,
-      workedExample: `**Question:** The bearing of town Q from town P is 048°. Find the bearing of P from Q.
+**Arithmetic mean** — the number half-way between two numbers; in other words, their average. The arithmetic mean of a and b is (a + b) ÷ 2.
 
-**Solution**
+If m is the arithmetic mean of a and b, then a; m; b is an arithmetic sequence, because m − a = b − m. The same idea gives a useful test for any three consecutive terms: T₁, T₂ and T₃ form an arithmetic sequence exactly when T₂ − T₁ = T₃ − T₂, which can be rearranged as 2T₂ = T₁ + T₃.
 
-*Step 1 — recall the back-bearing rule.* The bearing of P from Q is the back bearing of 048°.
+**Example.** The arithmetic mean of 7 and 19 is (7 + 19) ÷ 2 = 13, and 7; 13; 19 is arithmetic with d = 6.
 
-*Step 2 — the given bearing is less than 180°, so add 180°.*
-048° + 180° = 228°
+## Summary
 
-*Step 3 — check it is a three-figure bearing between 000° and 360°.* 228° is valid.
+- A sequence is an ordered list of terms T₁, T₂, T₃, …; Tₙ is the general term.
+- An arithmetic sequence (arithmetic progression) adds the same constant, the common difference d, to each term.
+- d = Tₙ − Tₙ₋₁; test a sequence by checking that all consecutive differences are equal.
+- d > 0 gives an increasing sequence; d < 0 gives a decreasing one.
+- Plotted against position, the terms lie on a straight line whose gradient is d.
+- The arithmetic mean of a and b is (a + b) ÷ 2; three terms are arithmetic when 2T₂ = T₁ + T₃.`,
+      workedExample: `**Problem.** (a) Show that −15; −11; −7; … is an arithmetic sequence, state its common difference and write down the next two terms. (b) The expressions 2x + 1, 3x + 2 and 5x − 1 are three consecutive terms of an arithmetic sequence. Find x, the three terms and the common difference.
 
-**Answer: The bearing of P from Q is 228°.**`,
+**Solution to (a)**
+
+*Step 1 — Find the consecutive differences.* T₂ − T₁ = −11 − (−15) = 4 and T₃ − T₂ = −7 − (−11) = 4.
+
+*Step 2 — Draw the conclusion.* The differences are equal, so the sequence is arithmetic with d = 4.
+
+*Step 3 — Continue the pattern.* T₄ = −7 + 4 = −3 and T₅ = −3 + 4 = 1.
+
+**Solution to (b)**
+
+*Step 1 — Use the condition for three consecutive terms.* In an arithmetic sequence the difference between consecutive terms is constant, so T₂ − T₁ = T₃ − T₂.
+
+*Step 2 — Substitute the expressions.* (3x + 2) − (2x + 1) = (5x − 1) − (3x + 2), which simplifies to x + 1 = 2x − 3.
+
+*Step 3 — Solve.* x = 4.
+
+*Step 4 — Find the terms.* 2(4) + 1 = 9, 3(4) + 2 = 14 and 5(4) − 1 = 19.
+
+*Step 5 — Check.* 14 − 9 = 5 and 19 − 14 = 5, so the terms are arithmetic.
+
+**Answer.** (a) d = 4; the next two terms are −3 and 1. (b) x = 4; the terms are 9; 14; 19 and the common difference is 5.`,
       quiz: [
-        { prompt: "A bearing is always measured from", options: ["East, clockwise", "North, clockwise", "South, anticlockwise", "West, clockwise"], correctIndex: 1, explanation: "Bearings are measured clockwise from North." },
-        { prompt: "The bearing for due East is", options: ["000°", "090°", "180°", "270°"], correctIndex: 1, explanation: "East is a quarter turn clockwise from North." },
-        { prompt: "A bearing of 60° should be written as", options: ["60°", "060°", "600°", "6°"], correctIndex: 1, explanation: "Bearings use three figures: 060°." },
-        { prompt: "Due South has the bearing", options: ["090°", "180°", "270°", "360°"], correctIndex: 1, explanation: "South is half a turn from North." },
-        { prompt: "Due West has the bearing", options: ["090°", "180°", "270°", "000°"], correctIndex: 2, explanation: "West is three-quarters of a turn clockwise." },
-        { prompt: "Bearings run from", options: ["0° to 90°", "0° to 180°", "000° to 360°", "1° to 100°"], correctIndex: 2, explanation: "A whole-circle bearing covers 000°–360°." },
-        { prompt: "To find a back bearing under 180°, you", options: ["subtract 180°", "add 180°", "add 360°", "double it"], correctIndex: 1, explanation: "If the bearing < 180°, add 180°." },
-        { prompt: "If the bearing of B from A is 070°, the bearing of A from B is", options: ["250°", "110°", "070°", "290°"], correctIndex: 0, explanation: "070° < 180°, so 070° + 180° = 250°." },
-        { prompt: "If the bearing of Y from X is 200°, the bearing of X from Y is", options: ["380°", "020°", "020° = 020°", "020°"], correctIndex: 3, explanation: "200° ≥ 180°, so 200° − 180° = 020°." },
-        { prompt: "The bearing of North-East is", options: ["030°", "045°", "060°", "090°"], correctIndex: 1, explanation: "NE is halfway between N (000°) and E (090°)." },
-        { prompt: "The angle between North and a bearing of 090° is", options: ["45°", "90°", "180°", "270°"], correctIndex: 1, explanation: "090° is a right angle from North." },
-        { prompt: "Which is a valid three-figure bearing?", options: ["45°", "360.5°", "135°", "400°"], correctIndex: 2, explanation: "135° is between 000° and 360° and has three figures." },
-        { prompt: "A back bearing differs from the original bearing by", options: ["90°", "180°", "360°", "45°"], correctIndex: 1, explanation: "The reverse direction is 180° away." },
-        { prompt: "To solve a bearing problem you usually first", options: ["guess the answer", "draw a North line and mark the clockwise angle", "measure anticlockwise", "ignore the scale"], correctIndex: 1, explanation: "A clear diagram with North lines is the first step." },
-        { prompt: "The bearing of a point due South-West is", options: ["135°", "225°", "315°", "045°"], correctIndex: 1, explanation: "SW is halfway between S (180°) and W (270°) = 225°." },
-        { prompt: "On a map with scale 1 cm : 1 km, a 5 km distance is drawn as", options: ["1 cm", "5 cm", "0.5 cm", "50 cm"], correctIndex: 1, explanation: "1 cm represents 1 km, so 5 km is 5 cm." },
-        { prompt: "The rule used with triangles in bearing problems includes the", options: ["quadratic formula", "sine rule a/sin A = b/sin B", "area of a circle", "compound interest formula"], correctIndex: 1, explanation: "The sine rule relates sides and opposite angles." },
-        { prompt: "If the bearing of B from A is 180°, the bearing of A from B is", options: ["360°", "000°", "090°", "180°"], correctIndex: 1, explanation: "180° − 180° = 000° (due North)." },
-        { prompt: "A bearing of 315° points towards the", options: ["North-East", "South-East", "North-West", "South-West"], correctIndex: 2, explanation: "315° is halfway between W (270°) and N (360°) = NW." },
+        { prompt: "Which statement defines an arithmetic sequence?", options: ["Each term is the previous term multiplied by a constant", "Each term is the previous term plus a constant", "Each term is the square of its position", "The terms add up to a constant"], correctIndex: 1, explanation: "An arithmetic sequence is formed by adding a constant value, the common difference, to each term." },
+        { prompt: "What is the common difference of 12; 9; 6; 3; …?", options: ["3", "−3", "−9", "12"], correctIndex: 1, explanation: "d = T₂ − T₁ = 9 − 12 = −3. The sequence decreases, so d is negative." },
+        { prompt: "Which of these sequences is arithmetic?", options: ["1; 2; 4; 8; …", "1; 4; 9; 16; …", "−2; 1; 4; 7; …", "1; 1; 2; 3; 5; …"], correctIndex: 2, explanation: "−2; 1; 4; 7 has consecutive differences 3, 3, 3. The others do not have a constant difference." },
+        { prompt: "A learner says 2; 4; 8; … is arithmetic because 4 − 2 = 2. What is wrong with this reasoning?", options: ["Nothing; the sequence is arithmetic", "The difference must be taken as 2 − 4", "Only one difference was checked; 8 − 4 = 4, which is not 2", "Arithmetic sequences cannot start with 2"], correctIndex: 2, explanation: "Every consecutive difference must be equal. 4 − 2 = 2 but 8 − 4 = 4, so the sequence is not arithmetic." },
+        { prompt: "The symbol Tₙ stands for", options: ["the total of n terms", "the term in position n", "the common difference", "the number of terms"], correctIndex: 1, explanation: "Tₙ is the general term — the term in position n." },
+        { prompt: "An arithmetic sequence has first term 5 and common difference 7. What is T₃?", options: ["12", "19", "35", "21"], correctIndex: 1, explanation: "T₂ = 5 + 7 = 12 and T₃ = 12 + 7 = 19." },
+        { prompt: "If d is negative, an arithmetic sequence is", options: ["increasing", "decreasing", "constant", "alternating in sign"], correctIndex: 1, explanation: "Adding a negative number each time makes every term smaller than the one before." },
+        { prompt: "When the terms of an arithmetic sequence are plotted against their positions, the points", options: ["lie on a parabola", "lie on a straight line", "lie on a circle", "show no pattern"], correctIndex: 1, explanation: "Arithmetic sequences are linear sequences; the points lie on a straight line." },
+        { prompt: "On the graph of an arithmetic sequence, the gradient of the line equals", options: ["the first term", "the common difference", "the number of terms", "the last term"], correctIndex: 1, explanation: "Moving one position to the right changes the term by d, so d is the gradient." },
+        { prompt: "What is the arithmetic mean of −4 and 10?", options: ["3", "7", "6", "−7"], correctIndex: 0, explanation: "(−4 + 10) ÷ 2 = 6 ÷ 2 = 3." },
+        { prompt: "Find the missing term so that 8; ___; 20 is arithmetic.", options: ["12", "14", "16", "28"], correctIndex: 1, explanation: "The middle term is the arithmetic mean: (8 + 20) ÷ 2 = 14." },
+        { prompt: "Three terms T₁, T₂, T₃ are consecutive terms of an arithmetic sequence when", options: ["T₂² = T₁T₃", "2T₂ = T₁ + T₃", "T₁ + T₂ = T₃", "T₂ = T₁ × T₃"], correctIndex: 1, explanation: "T₂ − T₁ = T₃ − T₂ rearranges to 2T₂ = T₁ + T₃." },
+        { prompt: "The first term of an arithmetic sequence is 4 and the second is 1. What is the fourth term?", options: ["−2", "−5", "−8", "7"], correctIndex: 1, explanation: "d = 1 − 4 = −3, so T₃ = −2 and T₄ = −5." },
+        { prompt: "Another name for an arithmetic sequence is", options: ["a geometric progression", "an arithmetic progression", "a quadratic sequence", "a harmonic series"], correctIndex: 1, explanation: "Arithmetic sequences are also called arithmetic progressions (AP) or linear sequences." },
+        { prompt: "x; 11; 17 are consecutive terms of an arithmetic sequence. What is x?", options: ["5", "6", "8", "4"], correctIndex: 0, explanation: "d = 17 − 11 = 6, so x = 11 − 6 = 5." },
+        { prompt: "Which sequence has common difference 0.5?", options: ["0.5; 1; 2; …", "3; 3.5; 4; 4.5; …", "1; 0.5; 0; …", "2; 2.25; 2.5; …"], correctIndex: 1, explanation: "3.5 − 3 = 0.5, 4 − 3.5 = 0.5 and 4.5 − 4 = 0.5." },
+        { prompt: "For the sequence a; a + d; a + 2d; …, what is the fifth term?", options: ["a + 5d", "a + 4d", "5a + d", "5ad"], correctIndex: 1, explanation: "The term in position n has (n − 1) lots of d added, so T₅ = a + 4d." },
+        { prompt: "k + 1; 2k; 2k + 3 are consecutive terms of an arithmetic sequence. What is k?", options: ["2", "4", "−2", "1"], correctIndex: 1, explanation: "2(2k) = (k + 1) + (2k + 3) gives 4k = 3k + 4, so k = 4. The terms are 5; 8; 11." },
+        { prompt: "Which value of d produces terms that get smaller by 2.5 each time?", options: ["2.5", "−2.5", "0.4", "−0.4"], correctIndex: 1, explanation: "Decreasing by 2.5 each time means adding −2.5." },
+        { prompt: "How is the common difference correctly calculated?", options: ["Earlier term minus later term", "Later term minus earlier term", "Later term divided by earlier term", "Sum of two consecutive terms"], correctIndex: 1, explanation: "d = Tₙ − Tₙ₋₁, a later term minus the term before it." },
       ],
       test: [
-        { type: "SHORT_ANSWER", prompt: "The bearing of B from A is 125°. Find the bearing of A from B.", answerKey: "125° < 180°, so add 180°: 125° + 180° = 305°. Award 2 for choosing to add, 2 for the arithmetic, 2 for stating 305°.", marks: 6 },
-        { type: "SHORT_ANSWER", prompt: "The bearing of Q from P is 250°. Find the bearing of P from Q.", answerKey: "250° ≥ 180°, so subtract 180°: 250° − 180° = 070°. Award 3 for the correct rule, 3 for 070°.", marks: 6 },
-        { type: "MULTIPLE_CHOICE", prompt: "Which of these is the bearing of due West?", options: ["090°", "180°", "270°", "360°"], correctIndex: 2, answerKey: "West is 270° (three-quarter turn clockwise from North). Option C.", marks: 4 },
-        { type: "SHORT_ANSWER", prompt: "Write the bearings of North, East, South and West.", answerKey: "North = 000°, East = 090°, South = 180°, West = 270°. Award 1 mark each and 2 marks for using three-figure form throughout.", marks: 6 },
-        { type: "ESSAY", prompt: "Explain how a three-figure bearing is measured, why bearings use three digits, and how to find a back bearing. Illustrate with the bearing of B from A being 035°.", answerKey: "A bearing is the clockwise angle from the North line to the line joining the points, written with three digits (035°, not 35°) so directions are unambiguous and always between 000° and 360°. The back bearing (bearing of A from B) reverses the direction and differs by 180°: since 035° < 180°, add 180° to get 215°. Award 4 marks for the measuring explanation, 3 for the three-digit reasoning, 3 for the back bearing 215°.", marks: 10 },
+        { type: "MULTIPLE_CHOICE", prompt: "Which of the following is NOT an arithmetic sequence?", options: ["10; 7; 4; 1; …", "−3; −1; 1; 3; …", "1; 3; 6; 10; …", "0.2; 0.5; 0.8; 1.1; …"], correctIndex: 2, answerKey: "C. The differences of 1; 3; 6; 10 are 2, 3, 4, which are not constant. A has d = −3, B has d = 2 and D has d = 0.3.", marks: 2 },
+        { type: "SHORT_ANSWER", prompt: "Show that 4; 9; 14; 19; … is arithmetic, state d, and write down the next three terms.", answerKey: "Differences 9 − 4 = 5, 14 − 9 = 5, 19 − 14 = 5 are equal (1 mark), so arithmetic with d = 5 (1 mark). Next terms 24; 29; 34 (2 marks).", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "Find the arithmetic mean of 2.5 and 11.5 and write down the resulting three-term arithmetic sequence.", answerKey: "(2.5 + 11.5) ÷ 2 = 14 ÷ 2 = 7 (2 marks). Sequence 2.5; 7; 11.5 with d = 4.5 (2 marks).", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "The numbers 3p − 2, 2p + 4 and 4p are consecutive terms of an arithmetic sequence. Find p and the three terms.", answerKey: "Use 2T₂ = T₁ + T₃: 2(2p + 4) = (3p − 2) + 4p (2 marks), so 4p + 8 = 7p − 2, giving 3p = 10 and p = 10/3 (2 marks). Terms: 3(10/3) − 2 = 8, 2(10/3) + 4 = 32/3, 4(10/3) = 40/3; check: 32/3 − 8 = 8/3 and 40/3 − 32/3 = 8/3 (2 marks).", marks: 6 },
+        { type: "ESSAY", prompt: "Explain what is meant by an arithmetic sequence. Describe how to test whether a given sequence is arithmetic, how the sign of the common difference affects the sequence, and what the graph of an arithmetic sequence looks like. Use your own examples.", answerKey: "Definition: each term after the first is found by adding a constant d to the previous term (2). Test: compute all consecutive differences Tₙ − Tₙ₋₁; arithmetic only if all are equal, with an example and a non-example (3). d > 0 increasing, d < 0 decreasing, with examples (2). Graph of Tₙ against n is a set of points on a straight line with gradient d (2). Clear presentation (1).", marks: 10 },
       ],
     },
-    // source: GeeksforGeeks — Basic Constructions: Angle Bisector, Perpendicular Bisector, Angle of 60° (https://www.geeksforgeeks.org/maths/basic-constructions-angle-bisector-perpendicular-bisector-angle-of-60/)
+    // source: Siyavula — Everything Maths Grade 12, 1.2 Arithmetic sequences: general formula (https://www.siyavula.com/read/za/mathematics/grade-12/sequences-and-series/01-sequences-and-series-01)
     {
-      slug: "constructions",
-      title: "Constructions",
+      slug: "general-term-of-an-arithmetic-sequence",
+      title: "Formula for the Arithmetic Sequence and Its Use",
       objective:
-        "By the end of the topic, learners should be able to construct angles, triangles and quadrilaterals with compass and ruler, and describe loci and some special loci.",
-      estimatedMinutes: 110,
-      notes: `## Construction without measurement
+        "By the end of the topic, learners should be able to state the general term Tₙ = a + (n − 1)d of an arithmetic sequence and use it to find terms, the number of terms, and the first term and common difference.",
+      estimatedMinutes: 50,
+      notes: `Writing out terms one at a time is practical for the first few terms of a sequence, but not for the 50th or the 500th. A formula for the general term lets any term be found directly from its position. For an arithmetic sequence this formula follows from the definition itself.
 
-- A **construction** uses only a **ruler (straight edge) and a pair of compasses** — no protractor and no measuring of angles.
-- Arcs drawn with the compasses locate points that are an exact distance apart.
+## Deriving the general term
 
-## Constructing angles
+Let the first term be a and the common difference d. Each new term is the previous one with d added, so:
 
-- **60°:** draw a base line; with the compass point on one end, draw an arc; keep the same radius and draw a second arc cutting the first; join the vertex to the crossing point.
-- **30°:** construct 60° and then **bisect** it.
-- **90°:** construct the perpendicular at a point on a line (or a perpendicular bisector).
-- **45°:** construct 90° and then bisect it.
-- **120°:** two 60° arcs in succession.
+| Position n | Term Tₙ | Number of d's added |
+| --- | --- | --- |
+| 1 | a | 0 |
+| 2 | a + d | 1 |
+| 3 | a + 2d | 2 |
+| 4 | a + 3d | 3 |
+| n | a + (n − 1)d | n − 1 |
 
-## Bisecting
+The number of times d has been added is always one less than the position, because the first term has no d added to it.
 
-- **Angle bisector:** with the compass on the vertex, draw an arc cutting both arms; from those two points draw equal arcs that cross; the line from the vertex through the crossing point **bisects the angle** (splits it into two equal parts).
-- **Perpendicular bisector:** open the compass to more than half a segment; draw arcs from each end above and below; the line through the two crossings is perpendicular to the segment and cuts it in half.
+## The formula
 
-## Constructing triangles
+**General term of an arithmetic sequence:** Tₙ = a + (n − 1)d
 
-Construct a triangle when given:
-- **SSS** — three sides (draw one side, then arcs of the other two lengths from each end).
-- **SAS** — two sides and the included angle.
-- **ASA** — two angles and the included side.
+where Tₙ is the nth term, n is the position of the term, a is the first term and d is the common difference.
 
-## Locus and special loci
+The formula can usually be simplified to the form Tₙ = dn + c. For 3; 7; 11; …, Tₙ = 3 + (n − 1)(4) = 4n − 1. In this simplified form the coefficient of n is always d, which matches the fact that the graph of the sequence is a straight line with gradient d.
 
-- A **locus** is the set of all points that satisfy a given condition (path traced by a point that moves under a rule).
+## Using the formula
 
-| Condition | The locus is |
-| --- | --- |
-| Fixed distance r from a point O | a circle of radius r, centre O |
-| Equidistant from two points A, B | the perpendicular bisector of AB (the mediator) |
-| Equidistant from two lines | the bisector of the angle between them |
-| Fixed distance d from a line | a pair of lines parallel to it, distance d away |
+The formula connects four quantities: Tₙ, a, n and d. If any three are known, the fourth can be found. The common problem types are:
+
+1. **Finding a particular term.** Substitute a, d and n. For 3; 7; 11; …, T₂₀ = 3 + 19(4) = 79.
+2. **Finding the general term.** Substitute a and d only, then simplify to obtain Tₙ in terms of n.
+3. **Finding the position of a term, or the number of terms.** Set Tₙ equal to the given term (often the last term) and solve for n.
+4. **Finding a and d from two given terms.** Write each given term using the formula, giving two simultaneous equations in a and d.
+5. **Deciding whether a number belongs to the sequence.** Set Tₙ equal to the number and solve. The number is a term only if n is a positive whole number.
+
+## Finding a and d from two terms
+
+**Example.** The 3rd term of an arithmetic sequence is 11 and the 7th term is 27. Find a and d.
+
+T₃ = a + 2d = 11 … (1)
+
+T₇ = a + 6d = 27 … (2)
+
+Subtracting (1) from (2): 4d = 16, so d = 4. Substituting into (1): a + 8 = 11, so a = 3. The sequence is 3; 7; 11; 15; …
+
+Notice that between T₃ and T₇ there are four steps of d, which is why the subtraction leaves 4d.
+
+## Is a given number a term?
+
+**Example.** Is 100 a term of 3; 7; 11; …?
+
+The general term is Tₙ = 4n − 1. Setting 4n − 1 = 100 gives 4n = 101 and n = 25.25. Since a position must be a whole number, 100 is not a term of this sequence. (T₂₅ = 99 and T₂₆ = 103.)
 
 ## Common errors
 
-- **Changing the compass radius** midway through a construction.
-- **Rubbing out the arcs** — construction arcs must be left to show the method.
-- **Using a protractor** where a pure construction is required.`,
-      workedExample: `**Question:** Construct an angle of 30° using ruler and compasses only.
+- **Using n instead of n − 1.** T₁₀ = a + 9d, not a + 10d.
+- **Getting the sign of d wrong** in a decreasing sequence, for example writing d = 3 for 12; 9; 6; …
+- **Accepting a fractional or negative n** as the position of a term.
+- **Forgetting the brackets**, writing a + n − 1d instead of a + (n − 1)d.
+
+## Summary
+
+- Tₙ = a + (n − 1)d gives any term of an arithmetic sequence from its position.
+- The formula simplifies to Tₙ = dn + c, a linear expression whose coefficient of n is d.
+- Given any three of Tₙ, a, n and d, the fourth can be found.
+- Two given terms give two simultaneous equations for a and d.
+- A number belongs to the sequence only if solving Tₙ = number gives a positive whole number n.`,
+      workedExample: `**Problem.** The sequence −15; −11; −7; … ; 173 is arithmetic. (a) Find a formula for the general term. (b) Find the number of terms in the sequence. (c) Find the 30th term.
 
 **Solution**
 
-*Step 1 — draw a base line* and mark a vertex point O on it.
+*Step 1 — Confirm the sequence is arithmetic and find d.* T₂ − T₁ = −11 − (−15) = 4 and T₃ − T₂ = −7 − (−11) = 4. The differences are equal, so d = 4, and a = −15.
 
-*Step 2 — construct 60°.* Place the compass point at O and draw an arc that cuts the base line at A. Without changing the radius, place the compass point at A and draw a second arc cutting the first at B. Draw the line OB. Angle AOB = 60°.
+*Step 2 — Write down the general term.* Tₙ = a + (n − 1)d = −15 + (n − 1)(4) = −15 + 4n − 4. Therefore Tₙ = 4n − 19.
 
-*Step 3 — bisect the 60° angle.* Place the compass at A and at B in turn and draw two equal arcs that cross at C. Draw OC.
+*Step 3 — Find the number of terms.* The last term is 173, so set Tₙ = 173: 4n − 19 = 173, which gives 4n = 192 and n = 48. Since n is a whole number, 173 is indeed the 48th term.
 
-*Step 4 — result.* OC bisects the 60° angle, so angle AOC = 30°.
+*Step 4 — Find the 30th term.* T₃₀ = 4(30) − 19 = 120 − 19 = 101.
 
-**Answer: Angle AOC = 30°, constructed with compass and ruler only.**`,
+*Step 5 — Check.* T₁ = 4(1) − 19 = −15, which agrees with the first term.
+
+**Answer.** (a) Tₙ = 4n − 19 (b) There are 48 terms. (c) T₃₀ = 101.`,
       quiz: [
-        { prompt: "A construction uses", options: ["a protractor only", "ruler and compasses only", "a calculator", "a set square only"], correctIndex: 1, explanation: "Only a straight edge and compasses are allowed." },
-        { prompt: "The first angle usually built with compasses is", options: ["45°", "60°", "50°", "80°"], correctIndex: 1, explanation: "60° comes directly from equal arcs." },
-        { prompt: "To construct 30° you", options: ["build 60° then bisect it", "build 90° then bisect", "measure with a protractor", "build 45° then double"], correctIndex: 0, explanation: "Bisecting 60° gives 30°." },
-        { prompt: "To construct 45° you", options: ["bisect 60°", "bisect 90°", "bisect 120°", "add 30° and 30°"], correctIndex: 1, explanation: "Half of a right angle is 45°." },
-        { prompt: "An angle bisector divides an angle into", options: ["three equal parts", "two equal parts", "two unequal parts", "a right angle"], correctIndex: 1, explanation: "A bisector splits an angle in half." },
-        { prompt: "The perpendicular bisector of a segment", options: ["passes through one end", "cuts it in half at right angles", "is parallel to it", "is shorter than it"], correctIndex: 1, explanation: "It is perpendicular and halves the segment." },
-        { prompt: "To construct a triangle from three sides you use", options: ["ASA", "SAS", "SSS", "AAA"], correctIndex: 2, explanation: "Three sides given is the SSS case." },
-        { prompt: "SAS stands for", options: ["side-angle-side", "angle-side-angle", "side-side-side", "angle-angle-side"], correctIndex: 0, explanation: "Two sides and the included angle." },
-        { prompt: "A locus is", options: ["a single fixed point", "the set of points satisfying a condition", "a type of triangle", "a measured angle"], correctIndex: 1, explanation: "It is the path of points meeting a rule." },
-        { prompt: "The locus of points a fixed distance r from a point O is", options: ["a line", "a circle radius r centre O", "a parabola", "two points"], correctIndex: 1, explanation: "All points at distance r form a circle." },
-        { prompt: "The locus of points equidistant from two points A and B is", options: ["a circle", "the perpendicular bisector of AB", "the line AB", "the midpoint only"], correctIndex: 1, explanation: "The mediator of AB is that locus." },
-        { prompt: "The locus of points equidistant from two lines is", options: ["a circle", "the angle bisector", "a perpendicular", "a parallel line"], correctIndex: 1, explanation: "The bisector of the angle between them." },
-        { prompt: "The locus a fixed distance d from a straight line is", options: ["a circle", "two parallel lines at distance d", "a single point", "the line itself"], correctIndex: 1, explanation: "Two lines parallel to it, one each side." },
-        { prompt: "During a construction the compass radius should be", options: ["changed each step", "kept fixed where the method requires", "ignored", "as large as possible"], correctIndex: 1, explanation: "Equal arcs need the same radius." },
-        { prompt: "Construction arcs should be", options: ["rubbed out at the end", "left visible to show the method", "drawn in ink only", "hidden"], correctIndex: 1, explanation: "The arcs are evidence of the construction." },
-        { prompt: "Constructing 120° uses", options: ["one 60° arc", "two successive 60° arcs", "a bisected 90°", "a protractor"], correctIndex: 1, explanation: "Two 60° steps give 120°." },
-        { prompt: "The 'mediator' of a segment is another name for its", options: ["midpoint", "perpendicular bisector", "angle bisector", "length"], correctIndex: 1, explanation: "Mediator = perpendicular bisector." },
-        { prompt: "ASA construction is used when you know", options: ["three sides", "two angles and the included side", "three angles", "two sides only"], correctIndex: 1, explanation: "Angle-side-angle." },
-        { prompt: "To construct 90° at a point you build a", options: ["60° angle", "perpendicular to the line", "30° angle", "parallel line"], correctIndex: 1, explanation: "A perpendicular gives a right angle." },
+        { prompt: "The general term of an arithmetic sequence is", options: ["Tₙ = a + nd", "Tₙ = a + (n − 1)d", "Tₙ = ar^(n − 1)", "Tₙ = n(a + d)"], correctIndex: 1, explanation: "The first term has no d added, so the nth term has (n − 1) d's added: Tₙ = a + (n − 1)d." },
+        { prompt: "Why is (n − 1) rather than n used in the formula?", options: ["Because the last term is not counted", "Because the first term has no common difference added to it", "Because d is always negative", "Because n starts at 0"], correctIndex: 1, explanation: "T₁ = a has zero d's, T₂ has one, so Tₙ has n − 1." },
+        { prompt: "Find T₁₅ for 2; 5; 8; …", options: ["44", "47", "45", "42"], correctIndex: 0, explanation: "a = 2, d = 3: T₁₅ = 2 + 14(3) = 44." },
+        { prompt: "Simplify the general term of 7; 12; 17; …", options: ["Tₙ = 5n + 2", "Tₙ = 7n + 5", "Tₙ = 5n + 7", "Tₙ = 12n − 5"], correctIndex: 0, explanation: "Tₙ = 7 + (n − 1)(5) = 5n + 2. Check: T₁ = 7." },
+        { prompt: "Find T₂₀ for 50; 46; 42; …", options: ["−26", "−30", "126", "−34"], correctIndex: 0, explanation: "a = 50, d = −4: T₂₀ = 50 + 19(−4) = 50 − 76 = −26." },
+        { prompt: "In the simplified form Tₙ = 6n − 4, what is the common difference?", options: ["−4", "2", "6", "10"], correctIndex: 2, explanation: "The coefficient of n is the common difference." },
+        { prompt: "In the simplified form Tₙ = 6n − 4, what is the first term?", options: ["6", "−4", "2", "10"], correctIndex: 2, explanation: "T₁ = 6(1) − 4 = 2." },
+        { prompt: "How many terms are in 5; 8; 11; …; 62?", options: ["19", "20", "21", "57"], correctIndex: 1, explanation: "Tₙ = 3n + 2 = 62 gives 3n = 60, n = 20." },
+        { prompt: "T₄ = 19 and T₉ = 44 in an arithmetic sequence. What is d?", options: ["5", "25", "4", "6"], correctIndex: 0, explanation: "There are 5 steps from T₄ to T₉: 5d = 44 − 19 = 25, so d = 5." },
+        { prompt: "T₄ = 19 and T₉ = 44. What is the first term?", options: ["4", "14", "−1", "9"], correctIndex: 0, explanation: "a + 3d = 19 with d = 5 gives a = 4." },
+        { prompt: "Is 75 a term of 4; 7; 10; …?", options: ["Yes, it is T₂₄", "Yes, it is T₂₅", "No, because n would not be a whole number", "No, because 75 is odd"], correctIndex: 2, explanation: "Tₙ = 3n + 1 = 75 gives n = 74/3, not a whole number." },
+        { prompt: "Which term of 4; 7; 10; … equals 100?", options: ["32nd", "33rd", "34th", "96th"], correctIndex: 1, explanation: "3n + 1 = 100 gives n = 33." },
+        { prompt: "A learner writes T₁₀ = a + 10d. What has gone wrong?", options: ["Nothing", "It should be a + 9d", "It should be 10a + d", "It should be a × 10d"], correctIndex: 1, explanation: "The 10th term has nine common differences added to the first term." },
+        { prompt: "The 1st term of an arithmetic sequence is 8 and the 11th term is 38. Find d.", options: ["3", "30", "3.8", "2.7"], correctIndex: 0, explanation: "a + 10d = 38 gives 10d = 30, so d = 3." },
+        { prompt: "Which formula gives the sequence −1; −4; −7; …?", options: ["Tₙ = −3n + 2", "Tₙ = 3n − 4", "Tₙ = −3n − 1", "Tₙ = −n − 3"], correctIndex: 0, explanation: "Tₙ = −1 + (n − 1)(−3) = −3n + 2. Check: T₁ = −1." },
+        { prompt: "Rows of seats in a hall have 20, 23, 26, … seats. How many seats are in row 12?", options: ["53", "56", "50", "59"], correctIndex: 0, explanation: "T₁₂ = 20 + 11(3) = 53." },
+        { prompt: "Which four quantities does Tₙ = a + (n − 1)d connect?", options: ["Tₙ, a, n and d", "Sₙ, a, l and n", "a, r, n and Tₙ", "d, r, a and l"], correctIndex: 0, explanation: "Given any three of Tₙ, a, n and d, the fourth can be found." },
+        { prompt: "Solving Tₙ = k gives n = −3 for a sequence. What can you conclude?", options: ["k is the 3rd term", "k is not a term of the sequence", "d must be −3", "The sequence has 3 terms"], correctIndex: 1, explanation: "Positions are positive whole numbers, so a negative n means k is not a term." },
+        { prompt: "An arithmetic sequence has a = 6 and T₅ = 26. What is T₁₀?", options: ["46", "51", "56", "60"], correctIndex: 1, explanation: "6 + 4d = 26 gives d = 5, so T₁₀ = 6 + 9(5) = 51." },
+        { prompt: "Which is the first term of 9; 5; 1; … that is less than −30?", options: ["10th", "11th", "12th", "9th"], correctIndex: 1, explanation: "Tₙ = 13 − 4n. T₁₀ = −27 is not below −30, but T₁₁ = 13 − 44 = −31 is." },
       ],
       test: [
-        { type: "SHORT_ANSWER", prompt: "Describe how to construct a 60° angle with compass and ruler.", answerKey: "Draw a base line and mark vertex O. With the compass on O, draw an arc cutting the line at A. Keeping the same radius, put the compass on A and draw an arc cutting the first at B. Join OB; angle AOB = 60°. Award 2 marks for the first arc, 2 for the equal second arc, 2 for joining to give 60°.", marks: 6 },
-        { type: "SHORT_ANSWER", prompt: "State the locus of (a) points 3 cm from a point O and (b) points equidistant from two points A and B.", answerKey: "(a) A circle of radius 3 cm centred on O. (b) The perpendicular bisector of AB. Award 3 marks each.", marks: 6 },
-        { type: "MULTIPLE_CHOICE", prompt: "Bisecting a 60° angle produces", options: ["120°", "30°", "45°", "90°"], correctIndex: 1, answerKey: "Half of 60° is 30°. Option B.", marks: 4 },
-        { type: "SHORT_ANSWER", prompt: "Which construction case (SSS, SAS or ASA) is used to build a triangle given two angles and the side between them? Explain briefly.", answerKey: "ASA (angle-side-angle): the two known angles are drawn at the ends of the given included side, and the arms meet at the third vertex. Award 3 marks for ASA, 3 for the explanation.", marks: 6 },
-        { type: "ESSAY", prompt: "Explain what a locus is and describe the four special loci: fixed distance from a point, equidistant from two points, equidistant from two lines, and fixed distance from a line.", answerKey: "A locus is the set of all points that satisfy a given condition. Fixed distance r from a point O gives a circle radius r centre O; equidistant from two points A and B gives the perpendicular bisector of AB; equidistant from two lines gives the bisector of the angle between them; fixed distance d from a line gives two lines parallel to it at distance d. Award 2 marks for the definition and 2 marks for each of the four special loci.", marks: 10 },
+        { type: "MULTIPLE_CHOICE", prompt: "The general term of 11; 8; 5; … is", options: ["Tₙ = 3n + 8", "Tₙ = −3n + 14", "Tₙ = −3n + 11", "Tₙ = 11n − 3"], correctIndex: 1, answerKey: "B. a = 11, d = −3: Tₙ = 11 + (n − 1)(−3) = −3n + 14. Check T₁ = 11.", marks: 2 },
+        { type: "SHORT_ANSWER", prompt: "Find the number of terms in the arithmetic sequence 13; 19; 25; …; 205.", answerKey: "d = 6, a = 13; Tₙ = 6n + 7 (2 marks). 6n + 7 = 205 gives 6n = 198, n = 33 (2 marks).", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "The 5th term of an arithmetic sequence is 23 and the 12th term is 58. Find the first term, the common difference and the 20th term.", answerKey: "a + 4d = 23 and a + 11d = 58 (2 marks). Subtract: 7d = 35, d = 5; a = 3 (2 marks). T₂₀ = 3 + 19(5) = 98 (2 marks).", marks: 6 },
+        { type: "SHORT_ANSWER", prompt: "Determine whether 150 is a term of the sequence 2; 9; 16; … Show your working.", answerKey: "Tₙ = 7n − 5 (2 marks). 7n − 5 = 150 gives 7n = 155, n = 22.14… (1 mark). n is not a whole number, so 150 is not a term (1 mark).", marks: 4 },
+        { type: "ESSAY", prompt: "Derive the formula Tₙ = a + (n − 1)d for the general term of an arithmetic sequence. Then explain, with one example each, how the formula is used to (i) find the number of terms in a finite sequence and (ii) find a and d when two terms are given.", answerKey: "Derivation using T₁ = a, T₂ = a + d, T₃ = a + 2d … showing the pattern of n − 1 differences (4). (i) Correct example setting Tₙ equal to the last term and solving for a whole-number n (3). (ii) Correct example forming and solving two simultaneous equations (3).", marks: 10 },
       ],
     },
   ],

@@ -391,12 +391,12 @@ The amount of each nutrient needed depends on:
         { type: "ESSAY", prompt: "Discuss the causes, effects and prevention of malnutrition in a developing community.", answerKey: "Causes: poverty/poor food access, poor diet, illness (up to 4). Effects: protein-energy malnutrition (kwashiorkor, marasmus), stunting/wasting, micronutrient deficiencies (anaemia, goitre, night blindness, scurvy, rickets), weakened immunity; also overnutrition/obesity (up to 6). Prevention: balanced diet, food fortification (iodised salt), improved food supply/sanitation/education, early treatment (up to 5).", marks: 15 },
       ],
     },
-    // source: LibreTexts — Anatomy and Physiology of Animals (Lawson), 11.7 Teeth; CK-12 — dental formula (https://med.libretexts.org/Bookshelves/Veterinary_Medicine/Anatomy_and_Physiology_of_Animals_(Lawson)/11:_The_Gut_and_Digestion/11.07:_Teeth)
+    // source: LibreTexts — Anatomy and Physiology of Animals (Lawson), 11.7 Teeth (https://med.libretexts.org/Bookshelves/Veterinary_Medicine/Anatomy_and_Physiology_of_Animals_(Lawson)/11:_The_Gut_and_Digestion/11.07:_Teeth); OpenStax — Anatomy and Physiology 2e, 23.3 The Mouth, Pharynx, and Esophagus (https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus)
     {
       slug: "teeth-and-dental-formulae",
-      title: "Teeth, Dental Formulae and Dental Care",
+      title: "Teeth and Dental Formulae",
       objective:
-        "By the end of the topic, learners should be able to name and describe the types of mammalian teeth, work out a dental formula, and explain how to care for the teeth.",
+        "By the end of the topic, learners should be able to name and describe the types of mammalian teeth and their structure, work out a dental formula, and relate dentition to diet.",
       estimatedMinutes: 110,
       notes: `## Types of teeth (heterodont dentition)
 
@@ -443,29 +443,36 @@ Mammals are **heterodont** — they have different kinds of teeth for different 
 - **Herbivores** (e.g. cow, rabbit) — broad **molars** and gaps for grinding plant material; reduced or no canines.
 - **Omnivores** (e.g. humans) — a mix of all four tooth types.
 
-## Structure of a tooth (brief)
+- **Carnassial teeth** — in carnivores, enlarged cheek teeth that slice against each other like scissors to shear flesh.
+- **Diastema** — a gap where the canines would be, seen in herbivores such as sheep and rodents.
+- In the sheep the upper incisors and canines are absent and replaced by a **horny (dental) pad**: formula I 0/3, C 0/1, PM 3/3, M 3/3.
 
-- **Enamel** — hard outer covering (the hardest substance in the body).
-- **Dentine** — bony layer under the enamel.
-- **Pulp cavity** — contains blood vessels and nerves.
+## Two sets of teeth
 
-## Dental care
+- Mammals have two sets of teeth: **milk (deciduous) teeth** are later replaced by **permanent teeth**.
+- Humans: **20 deciduous teeth** appear from about 6 months; between about ages 6 and 12 they are replaced by **32 permanent teeth** — 8 incisors, 4 canines, 8 premolars and 12 molars.
+- The third molars (**wisdom teeth**) usually erupt in early adulthood.
 
-To keep teeth healthy:
+## Structure of a tooth
 
-1. **Brush** twice a day with fluoride toothpaste; clean between teeth.
-2. **Limit sugary foods and drinks** — bacteria turn sugar into acid that decays teeth.
-3. **Eat calcium- and vitamin-rich foods** for strong teeth.
-4. **Visit a dentist** regularly.
-5. **Avoid** using teeth as tools and avoid tobacco.
+| Part | Description |
+| --- | --- |
+| **Crown** | the part projecting above the gum line |
+| **Root** | the part embedded in the jaw bone |
+| **Enamel** | covers the crown; the hardest substance in the body |
+| **Dentine** | bone-like, tough, shock-resistant layer beneath the enamel |
+| **Pulp cavity** | centre of the tooth, with nerves and blood vessels |
+| **Cementum** | covers the root and fixes it in the socket |
+| **Periodontal ligament** | holds the tooth in its socket |
+| **Gum (gingiva)** | soft tissue around the neck of the tooth |
 
-- **Tooth decay (dental caries)** happens when bacteria + sugar form **acid** that dissolves enamel.
+- **Open-rooted teeth** (e.g. rodent incisors) keep growing throughout life; most teeth have narrow, closed root tips.
 
 ## Common errors and misconceptions
 
 - **"The dental formula counts the whole mouth"** — it counts **half** the upper over half the lower jaw.
 - **"Canines are for grinding"** — canines **tear/pierce**; molars and premolars grind.
-- **"Sugar directly rots teeth"** — bacteria change sugar into **acid**, which decays the enamel.
+- **"Milk teeth and permanent teeth are the same set"** — milk teeth are shed and replaced by the permanent set.
 - **"Herbivores have big canines"** — herbivores usually have **reduced** canines and large molars.`,
       workedExample: `**Task.** A dog has the dental formula I 3/3, C 1/1, PM 4/4, M 2/3. (a) How many teeth are in one half of the upper jaw? (b) Work out the total number of teeth. (c) Which teeth are enlarged in the dog and why?
 
@@ -494,22 +501,22 @@ To keep teeth healthy:
         { prompt: "Herbivores usually have large", options: ["molars for grinding plants", "canines", "no teeth", "incisors only"], correctIndex: 0, explanation: "Broad molars grind tough plants." },
         { prompt: "The hardest outer covering of a tooth is", options: ["enamel", "dentine", "pulp", "gum"], correctIndex: 0, explanation: "Enamel is the hardest body substance." },
         { prompt: "The part of a tooth with nerves and blood vessels is the", options: ["pulp cavity", "enamel", "dentine", "root only"], correctIndex: 0, explanation: "The pulp holds nerves and vessels." },
-        { prompt: "Tooth decay is caused by", options: ["bacteria turning sugar into acid", "eating vegetables", "brushing teeth", "drinking water"], correctIndex: 0, explanation: "Acid from bacteria dissolves enamel." },
-        { prompt: "To care for teeth you should", options: ["brush twice a day and limit sugar", "eat more sweets", "never see a dentist", "use teeth as tools"], correctIndex: 0, explanation: "Brushing and low sugar protect teeth." },
-        { prompt: "Fluoride toothpaste helps by", options: ["strengthening enamel against decay", "adding sugar", "removing all teeth", "cooling the mouth"], correctIndex: 0, explanation: "Fluoride hardens enamel." },
+        { prompt: "How many deciduous (milk) teeth does a human child have?", options: ["20", "32", "28", "42"], correctIndex: 0, explanation: "20 deciduous teeth are replaced by 32 permanent teeth." },
+        { prompt: "The part of a tooth above the gum line is the", options: ["crown", "root", "cementum", "periodontal ligament"], correctIndex: 0, explanation: "The crown projects above the gum." },
+        { prompt: "Cheek teeth of carnivores that slice like scissors are", options: ["carnassial teeth", "incisors", "milk teeth", "wisdom teeth"], correctIndex: 0, explanation: "Carnassials shear flesh." },
         { prompt: "Humans are omnivores, so they have", options: ["all four tooth types", "only canines", "only molars", "no incisors"], correctIndex: 0, explanation: "A mixed diet needs all tooth types." },
         { prompt: "In the formula I 2/2 C 1/1 PM 2/2 M 3/3, how many teeth are in one half jaw (upper)?", options: ["8", "16", "32", "4"], correctIndex: 0, explanation: "2+1+2+3 = 8." },
-        { prompt: "Dental caries means", options: ["tooth decay", "strong teeth", "extra teeth", "a type of gum"], correctIndex: 0, explanation: "Caries is decay of the tooth." },
-        { prompt: "Which food is best for strong teeth?", options: ["calcium-rich food like milk", "sweets", "soft drinks", "sugar"], correctIndex: 0, explanation: "Calcium builds bones and teeth." },
+        { prompt: "A gap in the jaw where canines would be, seen in sheep and rodents, is the", options: ["diastema", "pulp cavity", "crown", "carnassial"], correctIndex: 0, explanation: "Herbivores have a diastema." },
+        { prompt: "The root of a tooth is covered by", options: ["cementum", "enamel", "pulp", "plaque"], correctIndex: 0, explanation: "Cementum covers the root and fixes it in the socket." },
         { prompt: "The layer beneath the enamel is", options: ["dentine", "pulp", "gum", "cement only"], correctIndex: 0, explanation: "Dentine lies under enamel." },
-        { prompt: "Limiting sugary drinks protects teeth because", options: ["less acid is produced by bacteria", "sugar strengthens enamel", "acid is good for teeth", "it adds fluoride"], correctIndex: 0, explanation: "Less sugar means less acid attack." },
+        { prompt: "In place of upper incisors, a sheep has a", options: ["horny dental pad", "row of canines", "set of carnassials", "second set of molars"], correctIndex: 0, explanation: "The sheep's upper formula has 0 incisors and 0 canines." },
       ],
       test: [
         { type: "SHORT_ANSWER", prompt: "Name the four types of teeth and give the function of each.", answerKey: "Incisors – biting/cutting; canines – tearing/piercing; premolars – crushing/grinding; molars – chewing/grinding. 1 mark per tooth+function (max 4).", marks: 4 },
         { type: "MULTIPLE_CHOICE", prompt: "A dental formula counts the teeth in", options: ["half the upper jaw over half the lower jaw", "the whole mouth at once", "the tongue", "one tooth"], correctIndex: 0, answerKey: "Half-jaw over half-jaw. Option A.", marks: 3 },
         { type: "SHORT_ANSWER", prompt: "The dental formula of an animal is I 3/3 C 1/1 PM 3/3 M 3/3. Work out the total number of teeth.", answerKey: "Half upper = 3+1+3+3 = 10; half lower = 10; one side = 20; ×2 = 40 teeth. Award for correct method and answer (40).", marks: 4 },
-        { type: "SHORT_ANSWER", prompt: "Explain how tooth decay happens and state two ways to prevent it.", answerKey: "Bacteria in the mouth turn sugar into acid that dissolves the enamel, causing decay. Prevention (any two): brush with fluoride toothpaste, limit sugary foods/drinks, visit the dentist, eat calcium-rich foods. 2 for cause + 1 each prevention.", marks: 4 },
-        { type: "ESSAY", prompt: "Explain how the teeth of a carnivore and a herbivore are adapted to their diets, and describe how to keep human teeth healthy.", answerKey: "Carnivore: large canines to stab/tear flesh, shearing carnassials (up to 4). Herbivore: reduced canines, broad ridged molars/diastema to grind plants (up to 4). Dental care: brush twice daily with fluoride, limit sugar, calcium-rich diet, regular dentist visits, avoid tobacco (up to 7).", marks: 15 },
+        { type: "SHORT_ANSWER", prompt: "Draw and label a section through a tooth showing crown, root, enamel, dentine, pulp cavity and cementum.", answerKey: "Labelled section: crown above gum, root in jaw; enamel over crown; dentine beneath; pulp cavity with nerves/blood vessels in centre; cementum over root. 1 mark per correct label (max 4).", marks: 4 },
+        { type: "ESSAY", prompt: "Explain how the teeth of a carnivore (dog) and a herbivore (sheep) are adapted to their diets, using their dental formulae.", answerKey: "Dog I 3/3 C 1/1 PM 4/4 M 2/3 = 42: large canines to hold/kill prey, carnassials to shear flesh (up to 7). Sheep I 0/3 C 0/1 PM 3/3 M 3/3 = 32: horny pad instead of upper incisors, diastema, broad ridged cheek teeth for grinding plants (up to 7). Correct use of formulae (1).", marks: 15 },
       ],
     },
     // source: LibreTexts — Microbiology (Boundless), 17.5C Food Preservation; OpenStax Biology 2e 22.4 (foodborne diseases) (https://bio.libretexts.org/Bookshelves/Microbiology/Microbiology_(Boundless)/17:_Industrial_Microbiology/17.05:_Food_Preservation/17.5C:_Food_Preservation)
