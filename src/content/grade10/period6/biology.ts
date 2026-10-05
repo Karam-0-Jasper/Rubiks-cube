@@ -278,7 +278,7 @@ A **floral formula** is a short way to record a flower's structure using symbols
         { prompt: "Which symbol represents the corolla?", options: ["C", "K", "A", "G"], correctIndex: 0, explanation: "C = corolla (petals)." },
       ],
       test: [
-        { type: "SHORT_ANSWER", prompt: "Name the four whorls of a flower from outside to inside and state one function of each.", answerKey: "Calyx (sepals) – protect bud; corolla (petals) – attract pollinators; androecium (stamens) – produce pollen; gynoecium (carpel) – produce ovules/seeds. 1 mark each whorl, 1 each function (max 8, capped).", marks: 6 },
+        { type: "SHORT_ANSWER", prompt: "Name the four whorls of a flower from outside to inside and state one function of each.", answerKey: "Calyx (sepals) – protect bud; corolla (petals) – attract pollinators; androecium (stamens) – produce pollen; gynoecium (carpel) – produce ovules/seeds. 2 marks each: 1 for the whorl, 1 for its function.", marks: 8 },
         { type: "MULTIPLE_CHOICE", prompt: "In a floral formula, G represents the", options: ["calyx", "corolla", "androecium", "gynoecium"], correctIndex: 3, answerKey: "Gynoecium. Option D.", marks: 4 },
         { type: "SHORT_ANSWER", prompt: "Write and explain the floral formula K5 C5 A10 G1.", answerKey: "5 sepals (K5), 5 petals (C5), 10 stamens (A10), 1 carpel (G1). 1 mark per correctly explained symbol.", marks: 4 },
         { type: "SHORT_ANSWER", prompt: "Distinguish between the androecium and the gynoecium.", answerKey: "Androecium = the male whorl (stamens = anther + filament, produce pollen); gynoecium = the female whorl (carpel = stigma, style, ovary, produce ovules). 2 marks each.", marks: 4 },
@@ -319,9 +319,9 @@ From the tip upward:
   <rect x="55" y="70" width="30" height="45" fill="none" stroke="currentColor"/>
   <rect x="55" y="115" width="30" height="45" fill="none" stroke="currentColor"/>
   <path d="M55 160 q 15 30 30 0 Z" fill="none" stroke="currentColor"/>
-  <g stroke="currentColor"><line x1="55" y1="90" x2="40" y2="90"/><line x1="85" y1="90" x2="100" y2="90"/></g>
+  <g stroke="currentColor"><line x1="55" y1="45" x2="40" y2="42"/><line x1="85" y1="45" x2="100" y2="42"/><line x1="55" y1="58" x2="42" y2="56"/><line x1="85" y1="58" x2="98" y2="56"/></g>
   <g font-size="8" fill="currentColor">
-    <text x="90" y="35">maturation (root hairs)</text>
+    <text x="104" y="35">maturation (root hairs)</text>
     <text x="90" y="95">elongation</text>
     <text x="90" y="140">cell division</text>
     <text x="90" y="180">root cap</text>
