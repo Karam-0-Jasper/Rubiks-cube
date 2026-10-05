@@ -1,8 +1,9 @@
 import type { PeriodContent } from "@/content/types";
 
 // Grade 12, Semester One, Period I of the MoE Mathematics syllabus. The period
-// has three units — Sequence and Series (CONTENTS 1–6), Bearings (CONTENTS 1–2)
-// and Constructions (CONTENTS 1–5) — and each CONTENTS item is one topic below.
+// has three units — Sequence and Series (CONTENTS 1–6, one topic each),
+// Bearings (CONTENTS 1–2 as sections of one topic) and Constructions
+// (CONTENTS 1–5 as sections of one topic, per the coordinator's slug decision).
 // Notes are written from Siyavula, LibreTexts, CK-12 and GeeksforGeeks pages.
 export const mathematicsG12P1: PeriodContent = {
   grade: 12,
@@ -819,189 +820,417 @@ S₅ = 10(1 − (1/2)⁵) ÷ (1 − 1/2) = 10(1 − 1/32) ÷ (1/2) = 10 × 31/32
         { type: "ESSAY", prompt: "Derive the formula for the sum of the first n terms of a geometric series. Then explain what it means for an infinite geometric series to converge, state the condition on r, derive S∞ = a ÷ (1 − r), and use it to write 0.333… as a fraction.", answerKey: "Derivation: write Sₙ and rSₙ, subtract, factorise to Sₙ = a(1 − rⁿ) ÷ (1 − r), r ≠ 1 (4). Convergence: partial sums approach a fixed value; condition −1 < r < 1 (2). As n grows rⁿ approaches 0, giving S∞ = a ÷ (1 − r) (2). 0.333… = 3/10 + 3/100 + …, a = 3/10, r = 1/10, S∞ = 1/3 (2).", marks: 10 },
       ],
     },
-    // source: GeeksforGeeks — Bearings in Maths (https://www.geeksforgeeks.org/maths/bearings-in-maths/)
+    // source: GeeksforGeeks — Bearings in Maths (https://www.geeksforgeeks.org/maths/bearings-in-maths/); LibreTexts K12 — Trigonometry 2.2.3 Right Triangles and Bearings (https://k12.libretexts.org/Bookshelves/Mathematics/Trigonometry/02:_Trigonometric_Ratios/2.02:_Right_Triangles_and_Bearings); LibreTexts — Elementary Trigonometry (Beveridge) 4.4 Applications (https://math.libretexts.org/Bookshelves/Precalculus/Elementary_Trigonometry_(Beveridge)/04:_The_Law_of_Sines_and_The_Law_of_Cosines/4.04:_Applications); GeeksforGeeks — Real-Life Applications of Polar Coordinates (https://www.geeksforgeeks.org/maths/real-life-applications-of-polar-coordinates/)
     {
       slug: "bearings",
       title: "Bearings",
       objective:
-        "By the end of the topic, learners should be able to interpret and measure three-figure bearings, find the back bearing of a point, and solve simple distance-and-bearing problems.",
+        "By the end of the topic, learners should be able to interpret a bearing as the direction of one point from another, write and convert three-figure and compass bearings, describe a position as (r, θ), find back bearings, and solve distance–bearing problems by trigonometry.",
       estimatedMinutes: 100,
-      notes: `## What a bearing is
+      notes: `Navigators, surveyors and pilots need a precise way of saying in which direction one place lies from another. Words such as "north-east" are too rough for this purpose. A bearing gives the direction as an angle measured in an agreed way, so that two people reading it will draw exactly the same line. Combined with a distance, a bearing fixes the position of one point relative to another.
 
-- A **bearing** describes the direction of one point from another as an angle.
-- It is **always measured from North, in a clockwise direction**.
-- It is written as a **three-figure bearing** (three digits): e.g. 60° is written as **060°**, and due east is **090°**.
-- A whole-circle bearing runs from **000° to 360°**.
+## The points of the compass
 
-## Key directions
+Directions are referred to the four cardinal points of the compass. North is taken as the starting direction, 0°, and angles increase in the clockwise direction:
 
-| Direction | Bearing |
-| --- | --- |
-| North | 000° |
-| East | 090° |
-| South | 180° |
-| West | 270° |
+| Direction | Angle clockwise from north | Three-figure bearing |
+| --- | --- | --- |
+| North (N) | 0° | 000° |
+| East (E) | 90° | 090° |
+| South (S) | 180° | 180° |
+| West (W) | 270° | 270° |
 
-## Back bearing (reverse bearing)
+When a graph sheet is used for bearing work, it is convenient to label the positive y-axis N, the positive x-axis E, the negative y-axis S and the negative x-axis W.
 
-- The bearing of A from B is the **back bearing** of the bearing of B from A.
-- Rule: if the bearing is **less than 180°, add 180°**; if it is **180° or more, subtract 180°**.
-- Example: if the bearing of B from A is 094°, then the bearing of A from B is 094° + 180° = **274°**.
+## Definition of a bearing
 
-## Solving bearing problems
+**Bearing** — the direction of one object (or point) from another, given as an angle. Bearings obey three rules:
 
-- Draw a **North line at each point** and mark the clockwise angle.
-- Use a **scale drawing** (e.g. 1 cm : 1 km) or trigonometry (sine rule, cosine rule) to find distances and angles.
-- Sine rule: **a/sin A = b/sin B = c/sin C**.
+1. Bearings are always measured from the north line; the 0° line is always north.
+2. Bearings are always measured in a clockwise direction.
+3. Bearings are written as three-figure angles, so 60° is written 060° and 5° is written 005°.
 
-\`\`\`svg Bearing measured clockwise from North
-<svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
-  <line x1="60" y1="20" x2="60" y2="140" stroke="#888" stroke-width="1"/>
-  <text x="50" y="16" font-size="11">N</text>
-  <circle cx="60" cy="90" r="3" fill="#333"/>
-  <text x="46" y="104" font-size="11">A</text>
-  <line x1="60" y1="90" x2="150" y2="55" stroke="#1565c0" stroke-width="2"/>
-  <circle cx="150" cy="55" r="3" fill="#1565c0"/>
-  <text x="156" y="52" font-size="11">B</text>
-  <path d="M60 60 A 30 30 0 0 1 84 72" fill="none" stroke="#c62828" stroke-width="1.5"/>
-  <text x="86" y="60" font-size="10" fill="#c62828">bearing</text>
+The phrase "the bearing of B from A" means that the observer stands at A. A north line is drawn at A, and the angle is measured clockwise from that north line round to the line AB. The point written after "from" is always the point where the angle is measured.
+
+\`\`\`svg The bearing of B from A is 060°: the angle is measured clockwise from the north line at A to the line AB
+<svg viewBox="0 0 220 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="North line at A with B at a clockwise angle of 60 degrees">
+  <line x1="70" y1="150" x2="70" y2="20" stroke="#334155" stroke-width="1.5"/>
+  <polygon points="70,12 65,24 75,24" fill="#334155"/>
+  <text x="64" y="10" font-size="11" fill="#334155">N</text>
+  <line x1="70" y1="150" x2="174" y2="90" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="70" cy="150" r="3.5" fill="#334155"/>
+  <circle cx="174" cy="90" r="3.5" fill="#2563eb"/>
+  <text x="54" y="160" font-size="11" fill="#334155">A</text>
+  <text x="180" y="88" font-size="11" fill="#2563eb">B</text>
+  <path d="M70,110 A40,40 0 0,1 104.6,130" fill="none" stroke="#dc2626" stroke-width="1.8"/>
+  <polygon points="104.6,130 96,131 101,123" fill="#dc2626"/>
+  <text x="90" y="112" font-size="11" fill="#dc2626">060°</text>
 </svg>
 \`\`\`
 
-## Common errors
+## Compass (quadrant) bearings
 
-- **Writing a bearing with fewer than three digits** — always use 060°, not 60°.
-- **Measuring anticlockwise or from another direction** — bearings go clockwise from North.
-- **Forgetting the ±180° rule** for a back bearing.`,
-      workedExample: `**Question:** The bearing of town Q from town P is 048°. Find the bearing of P from Q.
+Bearings are sometimes written using the compass letters instead of three figures. In this form, **N70°E** means an angle of 70° measured from due north towards the east, and **N70°W** means 70° from due north towards the west. Likewise **S30°E** is 30° from due south towards the east, and **S30°W** is 30° from due south towards the west. The first letter is always N or S, and the angle is never more than 90°.
+
+Because a three-figure bearing is measured clockwise from north, each compass bearing can be converted:
+
+| Compass bearing | Where the direction lies | Three-figure bearing |
+| --- | --- | --- |
+| N θ E | between north and east | θ |
+| S θ E | between east and south | 180° − θ |
+| S θ W | between south and west | 180° + θ |
+| N θ W | between west and north | 360° − θ |
+
+**Examples.** N50°E = 050°; S30°E = 180° − 30° = 150°; S30°W = 180° + 30° = 210°; N70°W = 360° − 70° = 290°.
+
+## Writing a position as (r, θ)
+
+A bearing gives only a direction. To fix the position of a point B relative to a point A, the distance r from A to B is also needed. The position can then be written as the pair **(r, θ)**, where r is the distance and θ is the bearing of B from A. For example, if a boat B is 5 km from a harbour A on a bearing of 060°, its position from A is (5 km, 060°).
+
+This is similar to the polar coordinates of a point, which also describe a position by a distance and an angle. There is one difference to keep in mind: in polar coordinates the angle is measured anticlockwise from the positive x-axis, whereas a bearing is measured clockwise from north.
+
+If the position of B from A is (r, θ), the distance travelled east and the distance travelled north are
+
+- distance east = r sin θ
+- distance north = r cos θ
+
+A negative answer means west or south respectively. For B at (5 km, 060°), B is 5 sin 60° ≈ 4.33 km east and 5 cos 60° = 2.5 km north of A.
+
+## Back bearings
+
+**Back bearing (reverse bearing)** — if the bearing of B from A is known, the bearing of A from B is called the back bearing.
+
+The north lines at A and B are parallel, and the line AB crosses both. The two directions along AB differ by a straight angle, so the back bearing differs from the original bearing by 180°:
+
+- If the bearing is less than 180°, add 180°.
+- If the bearing is 180° or more, subtract 180°.
+
+**Example.** If the bearing of B from A is 094°, the bearing of A from B is 094° + 180° = 274°. If the bearing of Q from P is 230°, the bearing of P from Q is 230° − 180° = 050°.
+
+## Solving distance–bearing problems
+
+A typical problem describes a journey in stages, each with a distance and a bearing, and asks for the direct distance or the bearing between two of the points. The method is as follows:
+
+1. Draw a clear sketch. Draw a north line at every point where a bearing is used.
+2. Mark each given distance and each bearing, measured clockwise from the north line at the correct point.
+3. Find the angles inside the triangle. Use the facts that the north lines are parallel (so co-interior angles add up to 180° and alternate angles are equal), that angles on a straight line add up to 180°, and that angles round a point add up to 360°.
+4. Solve the triangle. If it is right-angled, use Pythagoras' theorem and the trigonometric ratios. Otherwise, use the cosine rule when two sides and the included angle are known, and the sine rule to find an angle once three sides are known.
+5. Turn the angle found back into a bearing by relating it to the north line at the point "from" which the bearing is required.
+
+The two rules for a triangle with sides a, b, c opposite angles A, B, C are:
+
+- **Cosine rule:** a² = b² + c² − 2bc cos A
+- **Sine rule:** a ÷ sin A = b ÷ sin B = c ÷ sin C
+
+## A right-angled case
+
+**Example.** A ship sails 8 km from A to B on a bearing of 060°, then 6 km from B to C on a bearing of 150°. Find the distance AC and the bearing of C from A.
+
+At B, the back bearing of A is 060° + 180° = 240°. The ship leaves B on 150°, so the angle ABC between the two directions is 240° − 150° = 90°. The triangle is right-angled at B.
+
+By Pythagoras, AC = √(8² + 6²) = √100 = 10 km.
+
+In triangle ABC, tan(∠BAC) = 6 ÷ 8 = 0.75, so ∠BAC ≈ 36.9°. The ship turned clockwise at B, so C lies clockwise from the line AB as seen from A. The bearing of C from A is 060° + 36.9° = 096.9°, about 097°.
+
+## Summary
+
+- A bearing is the direction of one point from another, measured clockwise from north and written with three figures.
+- N θ E = θ, S θ E = 180° − θ, S θ W = 180° + θ and N θ W = 360° − θ.
+- A position relative to a point can be written (r, θ): distance and bearing. It lies r sin θ east and r cos θ north of the point.
+- The back bearing differs from the bearing by 180°.
+- For problems, draw a north line at every point, use parallel-line angle facts to find angles in the triangle, then apply Pythagoras, trigonometric ratios, or the sine and cosine rules.`,
+      workedExample: `**Problem.** A ship leaves port A and sails 70 km on a bearing of 105° to B. It then changes course and sails 35 km on a bearing of 065° to C. Find (a) the distance AC and (b) the bearing of C from A.
 
 **Solution**
 
-*Step 1 — recall the back-bearing rule.* The bearing of P from Q is the back bearing of 048°.
+*Step 1 — Sketch.* Draw north lines at A and B. From A, draw AB on 105°; from B, draw BC on 065°.
 
-*Step 2 — the given bearing is less than 180°, so add 180°.*
-048° + 180° = 228°
+*Step 2 — Find the angle ABC.* At B, the direction back to A is the back bearing 105° + 180° = 285°. The direction to C is 065°. Measuring clockwise from BA (285°) round through north to BC (065°) gives 360° − 285° + 65° = 140°. So ∠ABC = 140°.
 
-*Step 3 — check it is a three-figure bearing between 000° and 360°.* 228° is valid.
+*Step 3 — Use the cosine rule for AC.* Two sides and the included angle are known:
+AC² = 70² + 35² − 2(70)(35) cos 140°
+AC² = 4 900 + 1 225 − 4 900 × (−0.7660)
+AC² = 6 125 + 3 753.6 = 9 878.6
+AC ≈ 99.4 km
 
-**Answer: The bearing of P from Q is 228°.**`,
+*Step 4 — Use the sine rule for angle BAC.*
+sin(∠BAC) ÷ 35 = sin 140° ÷ 99.4
+sin(∠BAC) = 35 × 0.6428 ÷ 99.4 ≈ 0.2263
+∠BAC ≈ 13.1°
+
+*Step 5 — Convert to a bearing.* The ship turned anticlockwise at B (from 105° to 065°), so C lies anticlockwise from the line AB as seen from A. The bearing of C from A is 105° − 13.1° = 091.9°.
+
+*Step 6 — Check with components.* East of A: 70 sin 105° + 35 sin 65° ≈ 67.6 + 31.7 = 99.3 km. North of A: 70 cos 105° + 35 cos 65° ≈ −18.1 + 14.8 = −3.3 km (that is, 3.3 km south). Then AC = √(99.3² + 3.3²) ≈ 99.4 km, and C is slightly south of due east, consistent with a bearing just over 090°.
+
+**Answer.** (a) AC ≈ 99.4 km (b) The bearing of C from A is approximately 092°.`,
       quiz: [
-        { prompt: "A bearing is always measured from", options: ["East, clockwise", "North, clockwise", "South, anticlockwise", "West, clockwise"], correctIndex: 1, explanation: "Bearings are measured clockwise from North." },
-        { prompt: "The bearing for due East is", options: ["000°", "090°", "180°", "270°"], correctIndex: 1, explanation: "East is a quarter turn clockwise from North." },
-        { prompt: "A bearing of 60° should be written as", options: ["60°", "060°", "600°", "6°"], correctIndex: 1, explanation: "Bearings use three figures: 060°." },
-        { prompt: "Due South has the bearing", options: ["090°", "180°", "270°", "360°"], correctIndex: 1, explanation: "South is half a turn from North." },
-        { prompt: "Due West has the bearing", options: ["090°", "180°", "270°", "000°"], correctIndex: 2, explanation: "West is three-quarters of a turn clockwise." },
-        { prompt: "Bearings run from", options: ["0° to 90°", "0° to 180°", "000° to 360°", "1° to 100°"], correctIndex: 2, explanation: "A whole-circle bearing covers 000°–360°." },
-        { prompt: "To find a back bearing under 180°, you", options: ["subtract 180°", "add 180°", "add 360°", "double it"], correctIndex: 1, explanation: "If the bearing < 180°, add 180°." },
-        { prompt: "If the bearing of B from A is 070°, the bearing of A from B is", options: ["250°", "110°", "070°", "290°"], correctIndex: 0, explanation: "070° < 180°, so 070° + 180° = 250°." },
-        { prompt: "If the bearing of Y from X is 200°, the bearing of X from Y is", options: ["380°", "020°", "020° = 020°", "020°"], correctIndex: 3, explanation: "200° ≥ 180°, so 200° − 180° = 020°." },
-        { prompt: "The bearing of North-East is", options: ["030°", "045°", "060°", "090°"], correctIndex: 1, explanation: "NE is halfway between N (000°) and E (090°)." },
-        { prompt: "The angle between North and a bearing of 090° is", options: ["45°", "90°", "180°", "270°"], correctIndex: 1, explanation: "090° is a right angle from North." },
-        { prompt: "Which is a valid three-figure bearing?", options: ["45°", "360.5°", "135°", "400°"], correctIndex: 2, explanation: "135° is between 000° and 360° and has three figures." },
-        { prompt: "A back bearing differs from the original bearing by", options: ["90°", "180°", "360°", "45°"], correctIndex: 1, explanation: "The reverse direction is 180° away." },
-        { prompt: "To solve a bearing problem you usually first", options: ["guess the answer", "draw a North line and mark the clockwise angle", "measure anticlockwise", "ignore the scale"], correctIndex: 1, explanation: "A clear diagram with North lines is the first step." },
-        { prompt: "The bearing of a point due South-West is", options: ["135°", "225°", "315°", "045°"], correctIndex: 1, explanation: "SW is halfway between S (180°) and W (270°) = 225°." },
-        { prompt: "On a map with scale 1 cm : 1 km, a 5 km distance is drawn as", options: ["1 cm", "5 cm", "0.5 cm", "50 cm"], correctIndex: 1, explanation: "1 cm represents 1 km, so 5 km is 5 cm." },
-        { prompt: "The rule used with triangles in bearing problems includes the", options: ["quadratic formula", "sine rule a/sin A = b/sin B", "area of a circle", "compound interest formula"], correctIndex: 1, explanation: "The sine rule relates sides and opposite angles." },
-        { prompt: "If the bearing of B from A is 180°, the bearing of A from B is", options: ["360°", "000°", "090°", "180°"], correctIndex: 1, explanation: "180° − 180° = 000° (due North)." },
-        { prompt: "A bearing of 315° points towards the", options: ["North-East", "South-East", "North-West", "South-West"], correctIndex: 2, explanation: "315° is halfway between W (270°) and N (360°) = NW." },
+        { prompt: "From which direction is every bearing measured?", options: ["East", "North", "South", "The x-axis"], correctIndex: 1, explanation: "The 0° line for bearings is always the north line." },
+        { prompt: "In which direction is a bearing measured?", options: ["Anticlockwise", "Clockwise", "Either direction", "Towards the nearest axis"], correctIndex: 1, explanation: "Bearings are always measured clockwise from north." },
+        { prompt: "How is a bearing of 7° written as a three-figure bearing?", options: ["7°", "070°", "007°", "700°"], correctIndex: 2, explanation: "Three figures are always used, so 7° is written 007°." },
+        { prompt: "What is the three-figure bearing of due west?", options: ["090°", "180°", "270°", "360°"], correctIndex: 2, explanation: "West is three right angles clockwise from north: 270°." },
+        { prompt: "In 'the bearing of B from A', the angle is measured at", options: ["A", "B", "the midpoint of AB", "the north pole"], correctIndex: 0, explanation: "The point after 'from' is where the north line is drawn and the angle measured." },
+        { prompt: "Convert N40°E to a three-figure bearing.", options: ["040°", "140°", "320°", "220°"], correctIndex: 0, explanation: "N θ E is simply θ: 040°." },
+        { prompt: "Convert S30°W to a three-figure bearing.", options: ["150°", "210°", "240°", "330°"], correctIndex: 1, explanation: "S θ W = 180° + θ = 210°." },
+        { prompt: "Convert N70°W to a three-figure bearing.", options: ["070°", "250°", "290°", "340°"], correctIndex: 2, explanation: "N θ W = 360° − θ = 290°." },
+        { prompt: "Convert 135° to a compass bearing.", options: ["N45°E", "S45°E", "S45°W", "N45°W"], correctIndex: 1, explanation: "135° lies between east and south; 180° − 135° = 45°, so S45°E." },
+        { prompt: "The bearing of B from A is 064°. What is the bearing of A from B?", options: ["116°", "244°", "296°", "064°"], correctIndex: 1, explanation: "Less than 180°, so add 180°: 244°." },
+        { prompt: "The bearing of Q from P is 310°. What is the bearing of P from Q?", options: ["130°", "050°", "490°", "230°"], correctIndex: 0, explanation: "180° or more, so subtract 180°: 130°." },
+        { prompt: "Why do a bearing and its back bearing differ by 180°?", options: ["Because north lines at the two points are parallel and the two directions along AB form a straight angle", "Because all bearings are less than 180°", "Because the distance is the same", "Because of the sine rule"], correctIndex: 0, explanation: "Parallel north lines and opposite directions along the same line give a difference of 180°." },
+        { prompt: "A boat is at (10 km, 090°) from a harbour. Where is it?", options: ["10 km due north", "10 km due east", "10 km due south", "90 km due east"], correctIndex: 1, explanation: "r = 10 km, θ = 090° (east)." },
+        { prompt: "A point is at (r, θ) from A. Its distance east of A is", options: ["r cos θ", "r sin θ", "r tan θ", "r ÷ sin θ"], correctIndex: 1, explanation: "East component = r sin θ, north component = r cos θ, with θ measured from north." },
+        { prompt: "A hiker walks 6 km on a bearing of 030°. How far north of the start is she?", options: ["3 km", "5.2 km", "6 km", "3.5 km"], correctIndex: 1, explanation: "North = 6 cos 30° ≈ 6 × 0.866 = 5.2 km." },
+        { prompt: "How does a bearing differ from the angle in polar coordinates?", options: ["There is no difference", "A bearing is measured clockwise from north; a polar angle anticlockwise from the positive x-axis", "A bearing uses radians", "A polar angle is always less than 90°"], correctIndex: 1, explanation: "Both pair a distance with an angle, but the reference direction and sense of rotation differ." },
+        { prompt: "A ship sails on 060° and then turns onto 150°. What is the angle at the turning point between the two legs?", options: ["90°", "210°", "30°", "60°"], correctIndex: 0, explanation: "Back bearing 240°; 240° − 150° = 90°." },
+        { prompt: "Which rule finds the third side when two sides and the included angle of a non-right-angled triangle are known?", options: ["Sine rule", "Cosine rule", "Pythagoras' theorem", "Back-bearing rule"], correctIndex: 1, explanation: "The cosine rule a² = b² + c² − 2bc cos A uses two sides and the included angle." },
+        { prompt: "A plane flies 300 km due east and then 400 km due north. How far is it from its start?", options: ["500 km", "700 km", "350 km", "100 km"], correctIndex: 0, explanation: "The legs are at right angles: √(300² + 400²) = 500 km." },
+        { prompt: "In the previous question, what is the bearing of the start from the plane's final position?", options: ["037°", "143°", "217°", "323°"], correctIndex: 2, explanation: "From the start, the plane is on bearing 90° − tan⁻¹(400/300) ≈ 90° − 53.1° = 036.9°. The back bearing is 036.9° + 180° ≈ 217°." },
       ],
       test: [
-        { type: "SHORT_ANSWER", prompt: "The bearing of B from A is 125°. Find the bearing of A from B.", answerKey: "125° < 180°, so add 180°: 125° + 180° = 305°. Award 2 for choosing to add, 2 for the arithmetic, 2 for stating 305°.", marks: 6 },
-        { type: "SHORT_ANSWER", prompt: "The bearing of Q from P is 250°. Find the bearing of P from Q.", answerKey: "250° ≥ 180°, so subtract 180°: 250° − 180° = 070°. Award 3 for the correct rule, 3 for 070°.", marks: 6 },
-        { type: "MULTIPLE_CHOICE", prompt: "Which of these is the bearing of due West?", options: ["090°", "180°", "270°", "360°"], correctIndex: 2, answerKey: "West is 270° (three-quarter turn clockwise from North). Option C.", marks: 4 },
-        { type: "SHORT_ANSWER", prompt: "Write the bearings of North, East, South and West.", answerKey: "North = 000°, East = 090°, South = 180°, West = 270°. Award 1 mark each and 2 marks for using three-figure form throughout.", marks: 6 },
-        { type: "ESSAY", prompt: "Explain how a three-figure bearing is measured, why bearings use three digits, and how to find a back bearing. Illustrate with the bearing of B from A being 035°.", answerKey: "A bearing is the clockwise angle from the North line to the line joining the points, written with three digits (035°, not 35°) so directions are unambiguous and always between 000° and 360°. The back bearing (bearing of A from B) reverses the direction and differs by 180°: since 035° < 180°, add 180° to get 215°. Award 4 marks for the measuring explanation, 3 for the three-digit reasoning, 3 for the back bearing 215°.", marks: 10 },
+        { type: "MULTIPLE_CHOICE", prompt: "The compass bearing S25°E is the same as the three-figure bearing", options: ["025°", "155°", "205°", "335°"], correctIndex: 1, answerKey: "B. S θ E = 180° − θ = 180° − 25° = 155°.", marks: 2 },
+        { type: "SHORT_ANSWER", prompt: "The bearing of a lighthouse L from a boat B is 218°. (a) What is the bearing of B from L? (b) Write 218° as a compass bearing.", answerKey: "(a) 218° − 180° = 038° (2 marks). (b) 218° lies between south and west; 218° − 180° = 38°, so S38°W (2 marks).", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "A town T is at (12 km, 140°) from a village V. How far east and how far south of V is T?", answerKey: "East = 12 sin 140° ≈ 12 × 0.643 = 7.7 km (2 marks). North = 12 cos 140° ≈ 12 × (−0.766) = −9.2 km, so 9.2 km south (2 marks).", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "A man walks 5 km from P to Q on a bearing of 040°, then 12 km from Q to R on a bearing of 130°. Show that angle PQR = 90°, then find PR and the bearing of R from P.", answerKey: "Back bearing of P from Q = 220°; 220° − 130° = 90° (2 marks). PR = √(5² + 12²) = 13 km (2 marks). tan(∠QPR) = 12/5, ∠QPR ≈ 67.4°; R is clockwise from PQ, so bearing = 040° + 67.4° ≈ 107° (3 marks).", marks: 7 },
+        { type: "ESSAY", prompt: "Explain what a bearing is and the rules for writing bearings. Describe the difference between three-figure and compass bearings, how back bearings are found and why the rule works, and outline a step-by-step method for solving a two-stage distance–bearing problem, naming the trigonometric tools used.", answerKey: "Definition and three rules (north line, clockwise, three figures) (2). Compass bearings and conversion with an example (2). Back bearing ± 180° with explanation from parallel north lines (2). Method: sketch with north lines, mark bearings, parallel-line angle facts to find the included angle, Pythagoras/trig ratios or cosine and sine rules, convert back to a bearing (4).", marks: 10 },
       ],
     },
-    // source: GeeksforGeeks — Basic Constructions: Angle Bisector, Perpendicular Bisector, Angle of 60° (https://www.geeksforgeeks.org/maths/basic-constructions-angle-bisector-perpendicular-bisector-angle-of-60/)
+    // source: Siyavula — Everything Maths Grade 8, Ch. 10 Construction of geometric figures: 10.3 Perpendicular lines, 10.4 Bisecting angles, 10.5 Special angles, 10.6 Triangles, 10.7 Quadrilaterals (https://www.siyavula.com/read/za/mathematics/grade-8/construction-of-geometric-figures/10-construction-of-geometric-figures-03); LibreTexts K12 — Geometry 3.11 Line Construction (https://k12.libretexts.org/Bookshelves/Mathematics/Geometry/03:_Lines/3.11:_Line_Construction); GeeksforGeeks — RD Sharma Class 10 Ch. 11 Constructions, Ex 11.1 (https://www.geeksforgeeks.org/maths/class-10-rd-sharma-solutions-chapter-11-constructions-exercise-11-1/); LibreTexts — The Essence of Mathematics (Borovik & Gardiner) 5.11 Loci and conic sections (https://math.libretexts.org/Bookshelves/Applied_Mathematics/The_Essence_of_Mathematics_Through_Elementary_Problems_(Borovik_and_Gardiner)/05:_Geometry/5.11:_Loci_and_conic_sections); CK-12 — What is a locus? (https://www.ck12.org/flexi/cbse-math/ordered-pairs-in-four-quadrants/what-is-a-locus/)
     {
       slug: "constructions",
       title: "Constructions",
       objective:
-        "By the end of the topic, learners should be able to construct angles, triangles and quadrilaterals with compass and ruler, and describe loci and some special loci.",
-      estimatedMinutes: 110,
-      notes: `## Construction without measurement
+        "By the end of the topic, learners should be able to carry out constructions without measurement, construct angles of 90°, 60°, 45°, 30° and their combinations, construct triangles and quadrilaterals from given data, and describe and construct a locus, including the special loci.",
+      estimatedMinutes: 120,
+      notes: `A construction is a step-by-step process for producing an accurate geometric figure. The aim is not merely to draw something that looks right, but to draw it by a method that is guaranteed to be right, because every step rests on a known geometric fact. This unit develops the basic constructions with a pair of compasses and a straightedge, uses them to build angles, triangles and quadrilaterals, and then introduces the idea of a locus — the set of all points that satisfy a given condition.
 
-- A **construction** uses only a **ruler (straight edge) and a pair of compasses** — no protractor and no measuring of angles.
-- Arcs drawn with the compasses locate points that are an exact distance apart.
+## Instruments and the rules of construction
 
-## Constructing angles
+**Construction** — a step-by-step process used to create an accurate geometric figure.
 
-- **60°:** draw a base line; with the compass point on one end, draw an arc; keep the same radius and draw a second arc cutting the first; join the vertex to the crossing point.
-- **30°:** construct 60° and then **bisect** it.
-- **90°:** construct the perpendicular at a point on a line (or a perpendicular bisector).
-- **45°:** construct 90° and then bisect it.
-- **120°:** two 60° arcs in succession.
+**Pair of compasses** — an instrument for drawing a circle or an arc with a given radius. It can also be used to copy a distance from one place to another.
 
-## Bisecting
+**Straightedge** — anything that allows a straight line to be drawn. In a strict construction the straightedge is not used to measure distances.
 
-- **Angle bisector:** with the compass on the vertex, draw an arc cutting both arms; from those two points draw equal arcs that cross; the line from the vertex through the crossing point **bisects the angle** (splits it into two equal parts).
-- **Perpendicular bisector:** open the compass to more than half a segment; draw arcs from each end above and below; the line through the two crossings is perpendicular to the segment and cuts it in half.
+A ruler marked in centimetres and a protractor are used when a figure must have particular lengths or angles. A construction *without measurement* uses only the compasses and the straightedge. In every construction the construction arcs are left visible, since they show how the figure was obtained.
 
-## Constructing triangles
+## 1. Construction without measurement
 
-Construct a triangle when given:
-- **SSS** — three sides (draw one side, then arcs of the other two lengths from each end).
-- **SAS** — two sides and the included angle.
-- **ASA** — two angles and the included side.
+**Bisecting a line segment.** The **perpendicular bisector** of a segment AB is the line that cuts AB into two equal parts at right angles.
 
-## Locus and special loci
+1. Open the compasses to more than half the length of AB.
+2. With the point on A, draw arcs above and below AB.
+3. Without changing the compass width, put the point on B and draw arcs that cut the first two, at C (above) and D (below).
+4. Join C and D. The line CD is the perpendicular bisector of AB, and it meets AB at its midpoint M.
 
-- A **locus** is the set of all points that satisfy a given condition (path traced by a point that moves under a rule).
+The method works because C and D were each drawn at the same distance from A as from B. Every point that is equally far from A and B lies on the perpendicular bisector of AB, so the line through C and D is that bisector.
 
-| Condition | The locus is |
+\`\`\`svg Constructing the perpendicular bisector of AB: equal arcs from A and B meet at C and D
+<svg viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Line segment AB with intersecting arcs above and below and the perpendicular bisector through them">
+  <line x1="40" y1="100" x2="200" y2="100" stroke="#334155" stroke-width="2"/>
+  <circle cx="40" cy="100" r="3" fill="#334155"/>
+  <circle cx="200" cy="100" r="3" fill="#334155"/>
+  <text x="26" y="104" font-size="11" fill="#334155">A</text>
+  <text x="206" y="104" font-size="11" fill="#334155">B</text>
+  <path d="M109.5,28.1 A100,100 0 0,1 128.3,53" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <path d="M128.3,147 A100,100 0 0,1 109.5,171.9" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <path d="M111.7,53 A100,100 0 0,1 130.5,28.1" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <path d="M130.5,171.9 A100,100 0 0,1 111.7,147" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <line x1="120" y1="18" x2="120" y2="182" stroke="#2563eb" stroke-width="2"/>
+  <text x="126" y="38" font-size="11" fill="#2563eb">C</text>
+  <text x="126" y="172" font-size="11" fill="#2563eb">D</text>
+  <text x="124" y="114" font-size="11" fill="#334155">M</text>
+  <rect x="120" y="90" width="10" height="10" fill="none" stroke="#334155" stroke-width="1"/>
+</svg>
+\`\`\`
+
+**Perpendicular at a point P on a line.**
+
+1. With the point on P, draw an arc that cuts the line on each side of P, at A and B.
+2. Open the compasses wider than AP. From A and then from B, draw arcs above the line that cross at Q.
+3. Join P and Q. PQ is perpendicular to the line at P.
+
+**Perpendicular from a point P not on the line.**
+
+1. With the point on P, draw an arc that cuts the line at two points, A and B.
+2. Without changing the width, draw arcs from A and B on the other side of the line, crossing at Q.
+3. Join P and Q. PQ is perpendicular to the line. (In effect, this constructs the perpendicular bisector of AB, which passes through P.)
+
+**A line through a point P parallel to a given line.**
+
+1. Draw any line through P that crosses the given line at Q. This line is a transversal.
+2. With the point on Q, draw an arc that cuts the given line and the transversal.
+3. With the same width, draw a matching arc centred at P.
+4. Use the compasses to copy the opening of the first arc onto the second arc, and mark the crossing point D.
+5. Draw the line PD. It is parallel to the given line, because the construction makes the corresponding angles at Q and P equal.
+
+**Dividing a line segment in a given ratio.** To divide AB internally in the ratio 2 : 5, draw a ray AX making an acute angle with AB, and from B draw a ray BY parallel to AX, on the other side of AB. With any convenient compass width, mark 2 equal steps along AX and 5 equal steps along BY. Join the 2nd mark on AX to the 5th mark on BY; this line cuts AB at the required point P. The two triangles formed are similar (vertically opposite angles and alternate angles are equal), so PA : PB = 2 : 5. The same idea, with the marks joined by parallel lines, divides a segment into any number of equal parts.
+
+## 2. Construction of angles
+
+**Bisecting an angle.** To bisect an angle with vertex B:
+
+1. With the point on B, draw an arc that cuts both arms of the angle.
+2. From each of the two points where the arc cuts the arms, draw an arc inside the angle, using the same width, so that the two arcs cross.
+3. Join B to the crossing point. This line divides the angle into two equal angles.
+
+**An angle of 60°.**
+
+1. Draw a line and mark the vertex B on it.
+2. With the point on B, draw a wide arc that cuts the line at C.
+3. Without changing the width, put the point on C and draw an arc that cuts the first arc at A.
+4. Join B to A. Angle ABC = 60°.
+
+The reason is that BC, CA and AB were all drawn with the same compass width, so triangle ABC is equilateral, and every angle of an equilateral triangle is 60°.
+
+\`\`\`svg Constructing an angle of 60°: BA = BC = CA, so triangle ABC is equilateral
+<svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arc from B meeting line at C, arc from C meeting first arc at A, and ray BA at 60 degrees">
+  <line x1="30" y1="150" x2="220" y2="150" stroke="#334155" stroke-width="2"/>
+  <path d="M130,150 A100,100 0 0,0 55.9,53.4" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <path d="M65.7,73.4 A100,100 0 0,1 95.8,56" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+  <line x1="30" y1="150" x2="105" y2="20" stroke="#2563eb" stroke-width="2"/>
+  <line x1="130" y1="150" x2="80" y2="63.4" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 3"/>
+  <circle cx="30" cy="150" r="3" fill="#334155"/>
+  <circle cx="130" cy="150" r="3" fill="#334155"/>
+  <circle cx="80" cy="63.4" r="3" fill="#2563eb"/>
+  <text x="18" y="166" font-size="11" fill="#334155">B</text>
+  <text x="126" y="166" font-size="11" fill="#334155">C</text>
+  <text x="62" y="58" font-size="11" fill="#2563eb">A</text>
+  <text x="48" y="140" font-size="10" fill="#dc2626">60°</text>
+</svg>
+\`\`\`
+
+**Angles of 90°, 30° and 45°.** A 90° angle is the perpendicular at a point on a line, constructed as in Section 1. Bisecting a 60° angle gives 30°, and bisecting a 90° angle gives 45°.
+
+**Other angles** are built by combining these, or by bisecting again:
+
+| Angle | Method |
 | --- | --- |
-| Fixed distance r from a point O | a circle of radius r, centre O |
-| Equidistant from two points A, B | the perpendicular bisector of AB (the mediator) |
-| Equidistant from two lines | the bisector of the angle between them |
-| Fixed distance d from a line | a pair of lines parallel to it, distance d away |
+| 120° | Construct 60°; the angle beside it on the straight line is 180° − 60° = 120° |
+| 150° | Construct 30°; its supplement on the straight line is 180° − 30° = 150° |
+| 135° | Construct 90° and bisect the right angle beside it: 90° + 45° |
+| 15° | Bisect an angle of 30° |
+| 75° | 60° + 15°, or 90° − 15° |
+| 105° | 90° + 15° |
 
-## Common errors
+## 3. Construction of triangles and quadrilaterals
 
-- **Changing the compass radius** midway through a construction.
-- **Rubbing out the arcs** — construction arcs must be left to show the method.
-- **Using a protractor** where a pure construction is required.`,
-      workedExample: `**Question:** Construct an angle of 30° using ruler and compasses only.
+A triangle is fixed when any one of these sets of three facts is given:
+
+- **SSS** — the lengths of all three sides;
+- **SAS** — two sides and the size of the angle between them;
+- **ASA** — two angles and the length of the side between them.
+
+Not every set of measurements gives a triangle. The sum of the two shorter sides must be greater than the longest side. In any triangle the longest side lies opposite the largest angle, and the shortest side opposite the smallest angle; this is a useful check on a finished construction.
+
+**Constructing a triangle from three sides (SSS).** To construct triangle ABC with AB = 6 cm, BC = 5 cm and CA = 7 cm:
+
+1. Draw AB = 6 cm as the base.
+2. With the point on A and a radius of 7 cm, draw an arc above AB.
+3. With the point on B and a radius of 5 cm, draw an arc that cuts the first arc. The crossing point is C.
+4. Join AC and BC.
+
+**SAS and ASA.** Draw the given side first. At its end(s), construct the given angle(s) — with compasses for 90°, 60°, 45°, 30° and their combinations, or with a protractor for other angles. For SAS, measure the second side along the arm of the angle and join the ends. For ASA, the third vertex is where the two arms meet.
+
+**Quadrilaterals.** The properties of each quadrilateral decide how it is constructed:
+
+| Quadrilateral | Defining property |
+| --- | --- |
+| Square | All sides equal and all interior angles 90° |
+| Rectangle | Opposite sides equal and all interior angles 90° |
+| Parallelogram | Opposite sides equal and parallel |
+| Rhombus | Opposite sides parallel and all sides equal |
+
+To construct square ABCD with side 5 cm: draw AB = 5 cm, construct a 90° angle at A, and mark D on the perpendicular 5 cm from A. With radius 5 cm, draw arcs centred at D and at B; they cross at C. Join BC and CD.
+
+To construct parallelogram PQRS with PQ = 4 cm, QR = 3 cm and angle SPQ = 45°: draw PQ = 4 cm, construct 90° at P and bisect it to obtain 45°. Mark S on the 45° arm, 3 cm from P. Then draw an arc of radius 4 cm centred at S and an arc of radius 3 cm centred at Q; they cross at R. Join QR and RS. Opposite sides are equal (PQ = SR = 4 cm, PS = QR = 3 cm), so PQRS is a parallelogram.
+
+## 4. Locus
+
+**Locus** (plural **loci**) — the set of all points whose position satisfies, or is determined by, one or more given conditions.
+
+A locus can also be thought of as the path traced by a point that moves so that it always obeys the condition. For example, a point that moves in a plane so that it is always 3 cm from a fixed point O traces out a circle of radius 3 cm with centre O. The circle is the locus: every point on it is 3 cm from O, and no other point is.
+
+To describe or construct a locus:
+
+1. Read the condition carefully and find several points that satisfy it.
+2. Look for the pattern these points make — a line, a pair of lines, or a circle.
+3. Construct the locus accurately with compasses and straightedge.
+
+When a point must satisfy **two** conditions, it lies on both loci at once. Its possible positions are therefore the points where the two loci intersect.
+
+## 5. Some special loci
+
+Most locus problems in two dimensions are built from a small number of standard loci:
+
+| Condition on the point | Locus |
+| --- | --- |
+| A fixed distance r from a fixed point O | The circle with centre O and radius r |
+| Equidistant from two fixed points A and B | The perpendicular bisector (mediator) of AB |
+| A fixed distance r from a straight line m | A pair of lines parallel to m, one on each side, each at distance r |
+| Equidistant from two parallel lines | A single line parallel to both, half-way between them |
+| Equidistant from two lines that meet at X | The pair of perpendicular lines through X that bisect the angles at X |
+
+**The mediator.** The locus of points equidistant from A and B is the perpendicular bisector of AB, which is also called the **mediator** of AB. It is constructed exactly as in Section 1.
+
+**The angle bisector.** For two arms of an angle, the points equidistant from both arms lie on the bisector of the angle; it is constructed as in Section 2. (When two complete lines cross, the locus consists of both angle bisectors, which are perpendicular to each other.)
+
+**Parallel lines.** Points at a fixed distance from a line lie on two parallel lines. To construct them, draw perpendiculars to the given line at two points, mark the given distance along each perpendicular, and join the marks.
+
+**Example.** Points A and B are 6 cm apart. Describe the points that are equidistant from A and B and also 4 cm from A.
+
+The first condition gives the mediator of AB. The second gives the circle of radius 4 cm centred at A. Since 4 cm is more than half of 6 cm, the circle cuts the mediator in two points, one on each side of AB. These two points are the answer.
+
+## Summary
+
+- Constructions without measurement use only compasses and a straightedge; construction arcs are left showing.
+- The perpendicular bisector, perpendiculars to a line, parallel lines and division of a segment are the basic line constructions.
+- Angles of 60° (equilateral triangle), 90° (perpendicular), 30° and 45° (bisection), and their combinations can be constructed without a protractor.
+- A triangle is fixed by SSS, SAS or ASA; the two shorter sides must add up to more than the longest side.
+- A locus is the set of all points satisfying a condition. The special loci are the circle, the mediator, the angle bisector and the pair of parallel lines; a point satisfying two conditions lies where two loci intersect.`,
+      workedExample: `**Problem.** (a) Using compasses and a straightedge only, construct triangle PQR in which QR = 7 cm, angle PQR = 60° and angle PRQ = 45°. (b) Construct the locus of points equidistant from Q and R, and label X the point where it meets PR. (c) Measure PQ and QX.
 
 **Solution**
 
-*Step 1 — draw a base line* and mark a vertex point O on it.
+*Step 1 — Draw the base.* Draw a line and mark QR = 7 cm on it. (This length is set on the compasses from a ruler; the angles are constructed without a protractor.)
 
-*Step 2 — construct 60°.* Place the compass point at O and draw an arc that cuts the base line at A. Without changing the radius, place the compass point at A and draw a second arc cutting the first at B. Draw the line OB. Angle AOB = 60°.
+*Step 2 — Construct 60° at Q.* With the point on Q, draw an arc cutting QR. Without changing the width, draw an arc from that crossing point to cut the first arc. Draw a ray from Q through the new crossing point. This makes an equilateral triangle, so the angle at Q is 60°.
 
-*Step 3 — bisect the 60° angle.* Place the compass at A and at B in turn and draw two equal arcs that cross at C. Draw OC.
+*Step 3 — Construct 45° at R.* Construct the perpendicular to QR at R (90°), then bisect the angle between that perpendicular and RQ. The bisector makes 45° with RQ.
 
-*Step 4 — result.* OC bisects the 60° angle, so angle AOC = 30°.
+*Step 4 — Complete the triangle.* The ray from Q and the bisector from R meet at P. This is the ASA case: two angles and the side between them.
 
-**Answer: Angle AOC = 30°, constructed with compass and ruler only.**`,
+*Step 5 — Construct the locus.* Points equidistant from Q and R lie on the mediator (perpendicular bisector) of QR. Open the compasses to more than 3.5 cm, draw arcs above and below QR from Q and from R, and join the two crossing points. Label X where this line meets PR.
+
+*Step 6 — Measure and check.* The angle at P is 180° − 60° − 45° = 75°. By the sine rule, PQ = 7 sin 45° ÷ sin 75° ≈ 5.1 cm. The mediator meets QR at its midpoint, 3.5 cm from R, and angle R is 45°, so X is 3.5 cm above QR and QX = XR = √(3.5² + 3.5²) ≈ 4.9 cm.
+
+**Answer.** PQ ≈ 5.1 cm and QX ≈ 4.9 cm (measured values within about 0.1 cm are acceptable). X is equidistant from Q and R because it lies on the mediator of QR.`,
       quiz: [
-        { prompt: "A construction uses", options: ["a protractor only", "ruler and compasses only", "a calculator", "a set square only"], correctIndex: 1, explanation: "Only a straight edge and compasses are allowed." },
-        { prompt: "The first angle usually built with compasses is", options: ["45°", "60°", "50°", "80°"], correctIndex: 1, explanation: "60° comes directly from equal arcs." },
-        { prompt: "To construct 30° you", options: ["build 60° then bisect it", "build 90° then bisect", "measure with a protractor", "build 45° then double"], correctIndex: 0, explanation: "Bisecting 60° gives 30°." },
-        { prompt: "To construct 45° you", options: ["bisect 60°", "bisect 90°", "bisect 120°", "add 30° and 30°"], correctIndex: 1, explanation: "Half of a right angle is 45°." },
-        { prompt: "An angle bisector divides an angle into", options: ["three equal parts", "two equal parts", "two unequal parts", "a right angle"], correctIndex: 1, explanation: "A bisector splits an angle in half." },
-        { prompt: "The perpendicular bisector of a segment", options: ["passes through one end", "cuts it in half at right angles", "is parallel to it", "is shorter than it"], correctIndex: 1, explanation: "It is perpendicular and halves the segment." },
-        { prompt: "To construct a triangle from three sides you use", options: ["ASA", "SAS", "SSS", "AAA"], correctIndex: 2, explanation: "Three sides given is the SSS case." },
-        { prompt: "SAS stands for", options: ["side-angle-side", "angle-side-angle", "side-side-side", "angle-angle-side"], correctIndex: 0, explanation: "Two sides and the included angle." },
-        { prompt: "A locus is", options: ["a single fixed point", "the set of points satisfying a condition", "a type of triangle", "a measured angle"], correctIndex: 1, explanation: "It is the path of points meeting a rule." },
-        { prompt: "The locus of points a fixed distance r from a point O is", options: ["a line", "a circle radius r centre O", "a parabola", "two points"], correctIndex: 1, explanation: "All points at distance r form a circle." },
-        { prompt: "The locus of points equidistant from two points A and B is", options: ["a circle", "the perpendicular bisector of AB", "the line AB", "the midpoint only"], correctIndex: 1, explanation: "The mediator of AB is that locus." },
-        { prompt: "The locus of points equidistant from two lines is", options: ["a circle", "the angle bisector", "a perpendicular", "a parallel line"], correctIndex: 1, explanation: "The bisector of the angle between them." },
-        { prompt: "The locus a fixed distance d from a straight line is", options: ["a circle", "two parallel lines at distance d", "a single point", "the line itself"], correctIndex: 1, explanation: "Two lines parallel to it, one each side." },
-        { prompt: "During a construction the compass radius should be", options: ["changed each step", "kept fixed where the method requires", "ignored", "as large as possible"], correctIndex: 1, explanation: "Equal arcs need the same radius." },
-        { prompt: "Construction arcs should be", options: ["rubbed out at the end", "left visible to show the method", "drawn in ink only", "hidden"], correctIndex: 1, explanation: "The arcs are evidence of the construction." },
-        { prompt: "Constructing 120° uses", options: ["one 60° arc", "two successive 60° arcs", "a bisected 90°", "a protractor"], correctIndex: 1, explanation: "Two 60° steps give 120°." },
-        { prompt: "The 'mediator' of a segment is another name for its", options: ["midpoint", "perpendicular bisector", "angle bisector", "length"], correctIndex: 1, explanation: "Mediator = perpendicular bisector." },
-        { prompt: "ASA construction is used when you know", options: ["three sides", "two angles and the included side", "three angles", "two sides only"], correctIndex: 1, explanation: "Angle-side-angle." },
-        { prompt: "To construct 90° at a point you build a", options: ["60° angle", "perpendicular to the line", "30° angle", "parallel line"], correctIndex: 1, explanation: "A perpendicular gives a right angle." },
+        { prompt: "Which instruments are used in a construction 'without measurement'?", options: ["Ruler and protractor", "Compasses and straightedge", "Protractor and set square only", "Compasses and protractor"], correctIndex: 1, explanation: "Constructions without measurement use only compasses and a straightedge; the straightedge is not used to measure." },
+        { prompt: "Why are construction arcs left visible?", options: ["To make the drawing darker", "They show the method by which the figure was obtained", "They are needed to measure angles", "They are not; they must be erased"], correctIndex: 1, explanation: "The arcs are the evidence of the construction." },
+        { prompt: "When bisecting a segment AB, the compass width must be", options: ["exactly half of AB", "less than half of AB", "more than half of AB", "equal to AB"], correctIndex: 2, explanation: "With more than half of AB the arcs from A and B cross; with less they would not meet." },
+        { prompt: "Why does the perpendicular bisector construction work?", options: ["Because the arcs are circles", "Because the crossing points are equally far from A and B, and such points lie on the perpendicular bisector", "Because AB is horizontal", "Because the angle is 60°"], correctIndex: 1, explanation: "The crossing points are equidistant from A and B, so they lie on the perpendicular bisector of AB." },
+        { prompt: "In constructing a line through P parallel to a given line, which angles are made equal?", options: ["Vertically opposite angles", "Corresponding angles", "Angles in a triangle", "Reflex angles"], correctIndex: 1, explanation: "Copying the angle at Q to P makes corresponding angles equal, so the lines are parallel." },
+        { prompt: "Why does the 60° construction work?", options: ["It forms an isosceles right-angled triangle", "All three sides are drawn with the same compass width, forming an equilateral triangle", "The compass is set to 60 mm", "It bisects a right angle"], correctIndex: 1, explanation: "An equilateral triangle has three angles of 60°." },
+        { prompt: "How is a 30° angle constructed?", options: ["Bisect a 90° angle", "Bisect a 60° angle", "Subtract 60° from 90° with a protractor", "Double 15°"], correctIndex: 1, explanation: "Half of 60° is 30°." },
+        { prompt: "How is a 45° angle constructed?", options: ["Bisect a 90° angle", "Bisect a 60° angle", "Add 30° and 15°", "Bisect 120°"], correctIndex: 0, explanation: "Half of a right angle is 45°." },
+        { prompt: "An angle of 120° can be obtained as", options: ["90° + 45°", "180° − 60°", "60° + 45°", "2 × 45°"], correctIndex: 1, explanation: "The angle next to a 60° angle on a straight line is 120°." },
+        { prompt: "An angle of 75° can be constructed as", options: ["60° + 15°", "45° + 45°", "90° + 15°", "120° − 30°"], correctIndex: 0, explanation: "60° + 15° = 75° (15° by bisecting 30°). 90° − 15° also works." },
+        { prompt: "Which set of sides can form a triangle?", options: ["2 cm, 3 cm, 6 cm", "4 cm, 4 cm, 9 cm", "5 cm, 6 cm, 10 cm", "1 cm, 2 cm, 3 cm"], correctIndex: 2, explanation: "5 + 6 = 11 > 10. In the others, the two shorter sides add to no more than the longest." },
+        { prompt: "Two sides and the angle between them is the case", options: ["SSS", "SAS", "ASA", "RHS"], correctIndex: 1, explanation: "Side–Angle–Side: the angle is included between the two sides." },
+        { prompt: "In the SSS construction, how is the third vertex found?", options: ["With a protractor", "Where two arcs, drawn with the other two side lengths from the ends of the base, intersect", "By bisecting the base", "By drawing a parallel line"], correctIndex: 1, explanation: "Arcs of the two remaining lengths from each end of the base cross at the third vertex." },
+        { prompt: "Which quadrilateral has opposite sides parallel and all four sides equal?", options: ["Rectangle", "Rhombus", "Kite", "Trapezium"], correctIndex: 1, explanation: "That is the definition of a rhombus." },
+        { prompt: "A locus is", options: ["a single point", "the set of all points satisfying a given condition", "a type of triangle", "the centre of a circle"], correctIndex: 1, explanation: "A locus is the set of all points whose position satisfies one or more conditions." },
+        { prompt: "The locus of points 5 cm from a fixed point O is", options: ["a line 5 cm long", "a circle of radius 5 cm, centre O", "two parallel lines", "a square of side 5 cm"], correctIndex: 1, explanation: "Every point 5 cm from O lies on that circle, and no other point does." },
+        { prompt: "The locus of points equidistant from two fixed points A and B is", options: ["the line AB", "the mediator (perpendicular bisector) of AB", "a circle through A and B", "the bisector of angle A"], correctIndex: 1, explanation: "Points equidistant from A and B lie on the perpendicular bisector of AB." },
+        { prompt: "The locus of points 2 cm from a straight line is", options: ["one parallel line", "a pair of parallel lines, one on each side, 2 cm away", "a circle", "a perpendicular line"], correctIndex: 1, explanation: "There is a parallel line at 2 cm on each side of the line." },
+        { prompt: "The locus of points equidistant from the two arms of an angle is", options: ["the perpendicular bisector of the arms", "the bisector of the angle", "a circle", "a parallel line"], correctIndex: 1, explanation: "Points equidistant from both arms lie on the angle bisector." },
+        { prompt: "A point must be equidistant from A and B and also 3 cm from C. Where can it be?", options: ["Anywhere on the mediator of AB", "Where the mediator of AB meets the circle of radius 3 cm centred at C", "Only at C", "At the midpoint of AB"], correctIndex: 1, explanation: "A point satisfying two conditions lies on both loci, so at their intersections." },
       ],
       test: [
-        { type: "SHORT_ANSWER", prompt: "Describe how to construct a 60° angle with compass and ruler.", answerKey: "Draw a base line and mark vertex O. With the compass on O, draw an arc cutting the line at A. Keeping the same radius, put the compass on A and draw an arc cutting the first at B. Join OB; angle AOB = 60°. Award 2 marks for the first arc, 2 for the equal second arc, 2 for joining to give 60°.", marks: 6 },
-        { type: "SHORT_ANSWER", prompt: "State the locus of (a) points 3 cm from a point O and (b) points equidistant from two points A and B.", answerKey: "(a) A circle of radius 3 cm centred on O. (b) The perpendicular bisector of AB. Award 3 marks each.", marks: 6 },
-        { type: "MULTIPLE_CHOICE", prompt: "Bisecting a 60° angle produces", options: ["120°", "30°", "45°", "90°"], correctIndex: 1, answerKey: "Half of 60° is 30°. Option B.", marks: 4 },
-        { type: "SHORT_ANSWER", prompt: "Which construction case (SSS, SAS or ASA) is used to build a triangle given two angles and the side between them? Explain briefly.", answerKey: "ASA (angle-side-angle): the two known angles are drawn at the ends of the given included side, and the arms meet at the third vertex. Award 3 marks for ASA, 3 for the explanation.", marks: 6 },
-        { type: "ESSAY", prompt: "Explain what a locus is and describe the four special loci: fixed distance from a point, equidistant from two points, equidistant from two lines, and fixed distance from a line.", answerKey: "A locus is the set of all points that satisfy a given condition. Fixed distance r from a point O gives a circle radius r centre O; equidistant from two points A and B gives the perpendicular bisector of AB; equidistant from two lines gives the bisector of the angle between them; fixed distance d from a line gives two lines parallel to it at distance d. Award 2 marks for the definition and 2 marks for each of the four special loci.", marks: 10 },
+        { type: "MULTIPLE_CHOICE", prompt: "Which pair of constructions produces an angle of 135°?", options: ["Construct 60° and bisect it", "Construct 90° and add 45° by bisecting the adjacent right angle", "Construct 120° and add 30°", "Bisect a straight angle"], correctIndex: 1, answerKey: "B. 90° + 45° = 135°. (C gives 150°, A gives 30°, D gives 90°.)", marks: 2 },
+        { type: "SHORT_ANSWER", prompt: "Describe, step by step, how to construct the perpendicular from a point P to a line that does not pass through P, and explain why the construction works.", answerKey: "Arc centred at P cutting the line at A and B (1 mark). Equal arcs from A and B on the other side crossing at Q (1 mark). Join PQ (1 mark). P and Q are both equidistant from A and B, so PQ is the perpendicular bisector of AB and is perpendicular to the line (2 marks).", marks: 5 },
+        { type: "SHORT_ANSWER", prompt: "Explain why a triangle with sides 3 cm, 4 cm and 8 cm cannot be constructed, and state the condition that the sides of any triangle must satisfy.", answerKey: "3 + 4 = 7 is not greater than 8, so the arcs of radius 3 cm and 4 cm from the ends of the 8 cm base do not meet (2 marks). The sum of the two shorter sides must be greater than the longest side (2 marks).", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "Two towns A and B are 8 km apart. A mast is to be placed equidistant from A and B and exactly 5 km from A. Describe the two loci involved and find how far the mast is from the line AB.", answerKey: "Equidistant from A and B: the mediator of AB (1 mark). 5 km from A: circle centred A, radius 5 km (1 mark). The mast is where they meet; the mediator meets AB at 4 km from A, so the distance from AB is √(5² − 4²) = 3 km, on either side (3 marks).", marks: 5 },
+        { type: "ESSAY", prompt: "Explain what is meant by a locus. Describe the special loci — the circle, the mediator, the angle bisector and the pair of parallel lines — stating the condition each represents and how each is constructed. Show how two loci are used together to locate a point.", answerKey: "Definition: set of all points satisfying a condition, or the path of a point moving under that condition (2). Circle: fixed distance from a point; drawn with compasses (1). Mediator: equidistant from two points; perpendicular bisector construction (2). Angle bisector: equidistant from two lines; bisection construction (2). Parallel lines: fixed distance from a line; perpendiculars and equal marks (1). Two conditions: point lies at intersection of the two loci, with an example (2).", marks: 10 },
       ],
     },
   ],

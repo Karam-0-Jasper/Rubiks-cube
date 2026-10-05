@@ -12,10 +12,7 @@ export const literatureG10P6: PeriodContent = {
     "Period VI of the MoE Grade 10 Literature syllabus. Learners review the elements common to drama and prose — theme, setting, mood, plot, conflict, climax and literary devices — and apply them to analyse African drama and prose.",
   topics: [
     {
-      // source: Elements of Drama, Writing and Critical Thinking Through
-      // Literature (Ringo & Kashyap), Humanities LibreTexts (human.libretexts.org,
-      // 8.2); Elements of Fiction, Literature for the Humanities (Lumen),
-      // Humanities LibreTexts (4.4).
+      // source: LibreTexts — 8.2 Elements of Drama, Writing and Critical Thinking Through Literature (Ringo & Kashyap) (human.libretexts.org); LibreTexts — 4.4 Elements of Fiction, Literature for the Humanities (Lumen) (https://human.libretexts.org/Courses/Lumen_Learning/Book:_Literature_for_the_Humanities_(Lumen)/04:_Module_2:_Responding_to_Fiction/04.4:_Elements_of_Fiction)
       slug: "elements-of-drama-and-prose",
       title: "The Elements of Drama and Prose",
       objective:

@@ -293,7 +293,7 @@ The 3rd value is 3.
       test: [
         { type: "SHORT_ANSWER", prompt: "Today is Friday. What day of the week will it be in 45 days? Show the modular working.", answerKey: "45 = 6 × 7 + 3, so 45 ≡ 3 (mod 7). Friday + 3 days = Monday. 3 marks reduction, 3 marks counting.", marks: 6 },
         { type: "SHORT_ANSWER", prompt: "Find the units digit of (a) 3⁴⁵ and (b) 8²⁰.", answerKey: "(a) 45 ÷ 4 leaves 1 → first of 3, 9, 7, 1 → 3. (b) 20 ÷ 4 leaves 0 → fourth of 8, 4, 2, 6 → 6. 3 marks each.", marks: 6 },
-        { type: "MULTIPLE_CHOICE", prompt: "A nurse works every 4th day. Her first shift is on a Wednesday. On which day is her 8th shift?", options: ["Wednesday", "Thursday", "Friday", "Tuesday"], correctIndex: 1, answerKey: "8th shift is 7 intervals later: 7 × 4 = 28 days; 28 mod 7 = 0 → Wednesday. Wait — 28 ≡ 0, so the day is Wednesday.", marks: 4 },
+        { type: "MULTIPLE_CHOICE", prompt: "A nurse works every 4th day. Her first shift is on a Wednesday. On which day is her 8th shift?", options: ["Wednesday", "Thursday", "Friday", "Tuesday"], correctIndex: 0, answerKey: "The 8th shift is 7 intervals after the 1st: 7 × 4 = 28 days. 28 mod 7 = 0, so it falls on the same day — Wednesday (option A).", marks: 4 },
         { type: "SHORT_ANSWER", prompt: "Explain what a cyclic variable is and give three everyday examples with their cycle lengths.", answerKey: "A quantity whose values repeat in a fixed order, returning to the first after the last. Examples: hours on a 12-hour clock (12), days of the week (7), months of the year (12), 24-hour clock (24). 3 marks definition, 1 mark each example.", marks: 6 },
         { type: "ESSAY", prompt: "Write out the units-digit cycles for powers of 2, 3, 7 and 8. Explain the method for finding the units digit of a large power and apply it to 7¹⁰² and 2³¹.", answerKey: "2: 2,4,8,6; 3: 3,9,7,1; 7: 7,9,3,1; 8: 8,4,2,6. Method: divide exponent by 4; remainder 1,2,3 → 1st,2nd,3rd value; remainder 0 → 4th. 7¹⁰²: 102 ÷ 4 leaves 2 → 9. 2³¹: 31 ÷ 4 leaves 3 → 8. 4 marks cycles, 2 marks method, 2 marks each answer.", marks: 10 },
       ],
@@ -864,7 +864,7 @@ Base 10, exponent −4, result 1/10 000. So log₁₀(1/10 000) = −4.
         { prompt: "log₄(64) =", options: ["3", "4", "16", "8"], correctIndex: 0, explanation: "4³ = 64." },
         { prompt: "log₃(1/27) =", options: ["3", "−3", "1/3", "−1/3"], correctIndex: 1, explanation: "3⁻³ = 1/27." },
         { prompt: "Write 5² = 25 in log form.", options: ["log₂(25) = 5", "log₅(25) = 2", "log₂₅(5) = 2", "log₅(2) = 25"], correctIndex: 1, explanation: "Base 5, exponent 2, result 25." },
-        { prompt: "Write log₃(9) = 2 in exponential form.", options: ["9² = 3", "3² = 9", "2³ = 9", "3⁹ = 2"], correctIndex: 1, explanation: "Base³… base 3 to the power 2 is 9." },
+        { prompt: "Write log₃(9) = 2 in exponential form.", options: ["9² = 3", "3² = 9", "2³ = 9", "3⁹ = 2"], correctIndex: 1, explanation: "The base 3 raised to the logarithm 2 gives the argument 9." },
         { prompt: "log_b(1) =", options: ["1", "0", "b", "undefined"], correctIndex: 1, explanation: "b⁰ = 1." },
         { prompt: "log_b(b) =", options: ["0", "1", "b", "b²"], correctIndex: 1, explanation: "b¹ = b." },
         { prompt: "Which is undefined?", options: ["log(1)", "log(10)", "log(−5)", "log(0.5)"], correctIndex: 2, explanation: "The argument must be positive." },
@@ -916,9 +916,9 @@ Base 10, exponent −4, result 1/10 000. So log₁₀(1/10 000) = −4.
 <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
 <line x1="10" y1="160" x2="210" y2="160" stroke="currentColor"/><line x1="60" y1="210" x2="60" y2="10" stroke="currentColor"/>
 <line x1="20" y1="200" x2="200" y2="20" stroke="currentColor" stroke-dasharray="4 3"/>
-<path d="M10,157 C40,150 60,140 80,120 S100,70 107,20" fill="none" stroke="#2563eb" stroke-width="2"/>
-<path d="M63,210 C70,180 80,170 100,140 S150,113 200,107" fill="none" stroke="#dc2626" stroke-width="2"/>
-<text x="108" y="30" fill="#2563eb">y = 2ˣ</text><text x="160" y="100" fill="#dc2626">y = log₂x</text><text x="185" y="35">y = x</text>
+<polyline points="10,156 20,155 40,150 60,140 70,132 80,120 90,103 100,80 110,47 116,20" fill="none" stroke="#2563eb" stroke-width="2"/>
+<polyline points="64,210 65,200 70,180 80,160 88,150 100,140 117,130 140,120 173,110 200,104" fill="none" stroke="#dc2626" stroke-width="2"/>
+<text x="118" y="30" fill="#2563eb">y = 2ˣ</text><text x="160" y="100" fill="#dc2626">y = log₂x</text><text x="185" y="35">y = x</text>
 </svg>
 \`\`\`
 
