@@ -347,7 +347,7 @@ Rules for calculations:
 
 ## Uses of dimensional analysis
 
-- To check whether an equation could be correct (a wrong equation is never dimensionally consistent).
+- To check whether an equation could be correct: an equation that is **not** dimensionally consistent cannot be a correct physical law (but a consistent one may still be wrong, e.g. 2πr² for an area).
 - To derive the form of a relationship between quantities.
 - To convert between systems of units.
 
@@ -382,7 +382,7 @@ Rules for calculations:
             { prompt: "A dimensionally consistent equation is:", options: ["always correct", "possibly correct", "always wrong", "never testable"], correctIndex: 1, explanation: "Consistency is necessary but not sufficient." },
             { prompt: "The dimension of pressure (force/area) is:", options: ["M L⁻¹ T⁻²", "M L T⁻²", "M L² T⁻²", "L⁻²"], correctIndex: 0, explanation: "Pressure = M L T⁻² / L² = M L⁻¹ T⁻²." },
             { prompt: "Square brackets [ ] around a quantity mean:", options: ["the value of", "the dimension of", "the unit of", "the error in"], correctIndex: 1, explanation: "[X] means 'the dimension of X'." },
-            { prompt: "A wrong physical equation is:", options: ["always dimensionally consistent", "never dimensionally consistent", "sometimes consistent by chance of numbers", "always correct"], correctIndex: 1, explanation: "An incorrect equation cannot be dimensionally consistent." },
+            { prompt: "An equation that is NOT dimensionally consistent is:", options: ["possibly correct", "certainly not a correct physical law", "correct if its numbers are right", "correct in SI units only"], correctIndex: 1, explanation: "If the terms do not share the same dimensions, the equation cannot be a correct statement of physical law (OpenStax UP1 §1.4)." },
             { prompt: "One use of dimensional analysis is to:", options: ["measure mass", "check whether an equation could be correct", "read a thermometer", "count atoms"], correctIndex: 1, explanation: "It checks equations for consistency." },
             { prompt: "The base dimensions used in mechanics are:", options: ["L, M, T", "L, A, K", "M, K, mol", "L, T, cd"], correctIndex: 0, explanation: "Mechanics uses length, mass and time." },
             { prompt: "v = u + at is dimensionally consistent because every term has the dimension:", options: ["L T⁻²", "L T⁻¹", "M L T⁻²", "L"], correctIndex: 1, explanation: "v, u and at all have dimension L T⁻¹ (velocity)." },

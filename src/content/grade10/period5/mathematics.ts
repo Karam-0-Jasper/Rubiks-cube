@@ -219,9 +219,9 @@ In a plane a vector is written as components: a = (x, y), meaning x units across
 <svg viewBox="0 0 220 180" role="img" aria-label="Vector from origin to point (3,4)">
   <line x1="20" y1="160" x2="210" y2="160" stroke="currentColor" stroke-opacity="0.5"/>
   <line x1="30" y1="20" x2="30" y2="170" stroke="currentColor" stroke-opacity="0.5"/>
-  <line x1="30" y1="160" x2="150" y2="60" stroke="#6366f1" stroke-width="2.5"/>
-  <polygon points="150,60 138,64 146,72" fill="#6366f1"/>
-  <text x="95" y="100" font-size="12" fill="currentColor">a = (3, 4)</text>
+  <line x1="30" y1="160" x2="117" y2="44" stroke="#6366f1" stroke-width="2.5"/>
+  <polygon points="120,40 116.8,52.6 108.8,46.6" fill="#6366f1"/>
+  <text x="84" y="108" font-size="12" fill="currentColor">a = (3, 4)</text>
 </svg>
 \`\`\`
 
@@ -229,7 +229,7 @@ In a plane a vector is written as components: a = (x, y), meaning x units across
 
 The **magnitude** (length) of a = (x, y) is found by Pythagoras:
 
-|a| = √(x² + y²)
+Magnitude: |a| = √(x² + y²)
 
 For a = (3, 4): |a| = √(9 + 16) = √25 = 5.
 
@@ -262,7 +262,7 @@ k(a, b) = (ka, kb)
 **Solution**
 
 *Part (a) — magnitude.*
-|a| = √(3² + 4²) = √(9 + 16) = √25 = 5
+Magnitude: |a| = √(3² + 4²) = √(9 + 16) = √25 = 5
 
 *Part (b) — add components.*
 a + b = (3 + 1, 4 + 2) = (4, 6)

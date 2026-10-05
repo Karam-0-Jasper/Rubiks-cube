@@ -121,15 +121,17 @@ A(3, 2) → (3, −2)
 
 ## Frequency table
 
-A **frequency table** records each value (or class) against its frequency.
+A **frequency table** records each value (or class) against its frequency. For the data 4, 7, 8, 8, 9, 12, 15:
 
 | Score | Frequency |
 | --- | --- |
-| 4 | 2 |
+| 4 | 1 |
 | 7 | 1 |
 | 8 | 2 |
 | 9 | 1 |
 | 12 | 1 |
+| 15 | 1 |
+| Total | 7 |
 
 ## Measures of central tendency (averages)
 
