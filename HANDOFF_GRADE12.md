@@ -18,22 +18,39 @@ printed literally; use plain unicode like H₂O, x², √(x²+y²), θ).
 - **Grade 10** — complete ✅
 - **Grade 11** — complete ✅
 - **Grade 12:**
-  - Biology P1–P6 ✅
-  - Chemistry P1–P6 ✅
-  - Physics P1–P6 ✅
-  - Economics P1–P4 · Mathematics P1–P4 · Geography P1–P4 · Literature P1–P4
-  - History P1–P3 · English P1–P3
+  - Biology, Chemistry, Physics, Mathematics, English, Literature, Geography — P1–P6 ✅
+  - Economics P1–P5 · History P1–P5
 
-## Remaining work — 13 files
+## Remaining work — 2 files
 
 | Subject | Files to create |
 |---|---|
-| Economics | `grade12/period5/economics.ts`, `grade12/period6/economics.ts` |
-| Mathematics | `grade12/period5/mathematics.ts`, `grade12/period6/mathematics.ts` |
-| Geography | `grade12/period5/geography.ts`, `grade12/period6/geography.ts` |
-| Literature | `grade12/period5/literature.ts`, `grade12/period6/literature.ts` |
-| History | `grade12/period4/history.ts`, `grade12/period5/history.ts`, `grade12/period6/history.ts` |
-| English | `grade12/period4/english-language.ts`, `grade12/period5/english-language.ts`, `grade12/period6/english-language.ts` |
+| Economics | `grade12/period6/economics.ts` |
+| History | `grade12/period6/history.ts` |
+
+Optional cleanup: `grade12/period6/geography.ts` (General Revision) covers its five
+CONTENTS items as `##` sections inside one topic; strictly it should be split into five
+topics (Map Reading; Industries of Liberia; Climate and Natural Vegetation; Regional
+Geography of Africa; Population and Settlement).
+
+## Improvement passes requested (started, not finished)
+
+These were started by parallel agents and cut off by the usage limit before any edits
+were saved, so they need to be run from scratch:
+
+1. **Grade 11 Maths, English, History** — audit every period against the syllabus
+   (one topic per CONTENTS item), verify every fact/answer against an approved source, fix errors.
+2. **Grade 10, all subjects** — revise notes and fix every mistake (facts, arithmetic,
+   wrong `correctIndex`/answer keys, rendering issues), verified against approved sources.
+3. **UI/UX** — make the app look like a real, well-designed school product rather than
+   an AI template: textbook-style reading typography, calm palette, clear
+   grade → subject → period → topic navigation, good mobile layout, plain copy.
+   Keep the no-login demo flow working. Scope: `src/app/**`, `src/components/**`, styles.
+4. **Grade 11 other subjects** (everything except Maths/English/History) — check every
+   period matches the syllabus CONTENTS and fix accuracy.
+5. **Grade 12 Period 1 "book-style" rewrite** for Maths, English, Biology, Chemistry,
+   Physics — textbook-chapter prose (framing paragraph, explained build-up, full worked
+   steps, key-points summary), still sourced from approved sites, no hype or chatbot tone.
 
 ## How to build each file (repeat per file)
 
