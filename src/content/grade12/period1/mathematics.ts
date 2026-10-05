@@ -552,5 +552,457 @@ An even power such as r⁴ always has a positive and a negative root, so both va
         { type: "ESSAY", prompt: "Derive the general term Tₙ = arⁿ⁻¹ of a geometric sequence. Then explain, with worked examples, how to (i) find the position of a given term and (ii) find a and r when two terms are given. Explain why two terms are divided rather than subtracted.", answerKey: "Derivation using a, ar, ar², … showing the power of r is one less than the position (3). (i) Correct example comparing powers of the same base (3). (ii) Correct example dividing the equations (3). Explanation: division cancels a and leaves a single power of r, whereas subtraction does not remove a (1).", marks: 10 },
       ],
     },
+    // source: Siyavula — Everything Maths Grade 12, 1.4 Series and 1.5 Finite arithmetic series (https://www.siyavula.com/read/za/mathematics/grade-12/sequences-and-series/01-sequences-and-series-04)
+    {
+      slug: "sum-of-an-arithmetic-series",
+      title: "Sum of an Arithmetic Series",
+      objective:
+        "By the end of the topic, learners should be able to distinguish a series from a sequence, read sigma notation, derive and state the formulae for the sum of an arithmetic series, and use them to solve problems.",
+      estimatedMinutes: 55,
+      notes: `A sequence lists numbers; very often what is actually needed is their total — the total distance run over a training programme, or the total number of seats in a hall. Adding the terms of a sequence produces a series. For arithmetic sequences there is a short formula for this total, which was first found by pairing terms from opposite ends.
+
+## Sequences and series
+
+**Series** — the sum of the terms of a sequence. A sequence is a list (3; 7; 11; 15), whereas a series is a sum (3 + 7 + 11 + 15).
+
+**Finite series** — the sum of a limited number of terms, written Sₙ = T₁ + T₂ + … + Tₙ. For example, S₄ = 1 + 4 + 9 + 16 = 30.
+
+**Infinite series** — the sum of infinitely many terms, written S∞ = T₁ + T₂ + T₃ + …
+
+**Arithmetic series** — the sum of a number of terms of an arithmetic sequence.
+
+## Sigma notation
+
+The Greek capital letter Σ (sigma) is a short way of writing a sum. The expression
+
+Σ (from i = m to n) Tᵢ = Tₘ + Tₘ₊₁ + … + Tₙ
+
+is read "the sum of Tᵢ from i = m to i = n". Here i is the **index**, m is the **lower bound** (written below the Σ) and n is the **upper bound** (written above it). The index increases in steps of 1, and the number of terms is n − m + 1.
+
+**Examples.**
+
+- Σ (from n = 1 to 6) 2ⁿ = 2 + 4 + 8 + 16 + 32 + 64 = 126.
+- Σ (from n = 3 to 7) 2an = 6a + 8a + 10a + 12a + 14a = 50a, which has 7 − 3 + 1 = 5 terms.
+- The series 31 + 24 + 17 + 10 + 3 is arithmetic with d = −7 and Tₙ = −7n + 38, so it can be written Σ (from n = 1 to 5) (−7n + 38), which equals 85.
+
+Two rules are used constantly: a sum of two expressions may be split, Σ(aᵢ + bᵢ) = Σaᵢ + Σbᵢ, and a constant factor may be taken outside, Σ(c × aᵢ) = c × Σaᵢ.
+
+## Gauss's method
+
+It is told that the mathematician Karl Friedrich Gauss, as a boy of eight, was asked to add the whole numbers from 1 to 100. He wrote the sum forwards and backwards and added the two lines:
+
+| S₁₀₀ | 1 | 2 | 3 | … | 99 | 100 |
+| --- | --- | --- | --- | --- | --- | --- |
+| S₁₀₀ | 100 | 99 | 98 | … | 2 | 1 |
+| 2S₁₀₀ | 101 | 101 | 101 | … | 101 | 101 |
+
+Each of the 100 columns adds up to 101, so 2S₁₀₀ = 100 × 101 = 10 100 and S₁₀₀ = 5 050.
+
+## Deriving the sum formula
+
+The same idea works for any arithmetic series with first term a, common difference d, n terms and last term l:
+
+Sₙ = a + (a + d) + (a + 2d) + … + (l − d) + l
+
+Sₙ = l + (l − d) + (l − 2d) + … + (a + d) + a
+
+Adding the two lines column by column, every column gives a + l, and there are n columns:
+
+2Sₙ = n(a + l), so **Sₙ = n/2 (a + l)**
+
+Since the last term is l = Tₙ = a + (n − 1)d, substituting gives the second form:
+
+**Sₙ = n/2 [2a + (n − 1)d]**
+
+## Choosing a formula
+
+| Information given | Formula to use |
+| --- | --- |
+| First term a, last term l and number of terms n | Sₙ = n/2 (a + l) |
+| First term a, common difference d and n | Sₙ = n/2 [2a + (n − 1)d] |
+| First term, d and last term, but not n | Find n from Tₙ = a + (n − 1)d first |
+
+**Example (first and last terms known).** Find the sum −5 − 3 − 1 + … + 123.
+
+Here a = −5, d = −3 − (−5) = 2 and l = 123. First find n: 123 = −5 + (n − 1)(2), so 130 = 2n and n = 65. Then S₆₅ = 65/2 (−5 + 123) = 65/2 × 118 = 3 835.
+
+**Example (finding n from the sum).** In an arithmetic sequence T₂ = 7 and d = 3. How many terms must be added to give a sum of 2 146?
+
+Since T₂ = a + d, a = 7 − 3 = 4. Then 2 146 = n/2 [2(4) + (n − 1)(3)], so 4 292 = n(3n + 5), giving 3n² + 5n − 4 292 = 0. This factorises as (3n + 116)(n − 37) = 0. The number of terms must be a positive whole number, so n = 37.
+
+## The link between Sₙ and Tₙ
+
+Because Sₙ is the sum of the first n terms and Sₙ₋₁ is the sum of the first n − 1 terms, their difference is the nth term: Tₙ = Sₙ − Sₙ₋₁. In particular T₁ = S₁.
+
+## Summary
+
+- A series is the sum of the terms of a sequence; an arithmetic series is the sum of terms of an arithmetic sequence.
+- Σ (from i = m to n) Tᵢ means Tₘ + … + Tₙ and has n − m + 1 terms.
+- Sₙ = n/2 (a + l) and Sₙ = n/2 [2a + (n − 1)d], both derived by writing the series forwards and backwards.
+- When the number of terms is unknown, find n from the general term first.
+- A quadratic equation in n may arise; reject solutions that are not positive whole numbers.`,
+      workedExample: `**Problem.** In an arithmetic series the sum of the second and third terms is zero, and the sum of the first 36 terms is 1 152. Find the first three terms.
+
+**Solution**
+
+*Step 1 — Write the first condition using a and d.* T₂ + T₃ = 0, so (a + d) + (a + 2d) = 0, which gives 2a + 3d = 0 … (1)
+
+*Step 2 — Write the second condition using the sum formula.* S₃₆ = 36/2 [2a + (36 − 1)d] = 1 152, so 18(2a + 35d) = 1 152 and 2a + 35d = 64 … (2)
+
+*Step 3 — Solve the simultaneous equations.* Subtracting (1) from (2): 32d = 64, so d = 2.
+
+*Step 4 — Find a.* From (1): 2a + 3(2) = 0, so 2a = −6 and a = −3.
+
+*Step 5 — Write down the terms.* T₁ = −3, T₂ = −3 + 2 = −1, T₃ = −1 + 2 = 1.
+
+*Step 6 — Check both conditions.* T₂ + T₃ = −1 + 1 = 0 ✓. S₃₆ = 18[2(−3) + 35(2)] = 18(−6 + 70) = 18 × 64 = 1 152 ✓.
+
+**Answer.** The first three terms are −3; −1; 1.
+
+**A second example.** Find the sum of the first 30 terms of the arithmetic series whose general term is Tₙ = 7n − 5.
+
+T₁ = 2, T₂ = 9, T₃ = 16, so a = 2 and d = 7. S₃₀ = 30/2 [2(2) + 29(7)] = 15(4 + 203) = 15 × 207 = 3 105.`,
+      quiz: [
+        { prompt: "What is the difference between a sequence and a series?", options: ["There is no difference", "A sequence is a list of terms; a series is their sum", "A series is a list; a sequence is a sum", "A series must be infinite"], correctIndex: 1, explanation: "The sum of the terms of a sequence is called a series." },
+        { prompt: "How many terms does Σ (from k = 4 to 15) Tₖ have?", options: ["11", "12", "15", "19"], correctIndex: 1, explanation: "Number of terms = upper bound − lower bound + 1 = 15 − 4 + 1 = 12." },
+        { prompt: "Evaluate Σ (from n = 1 to 4) 3n.", options: ["12", "30", "24", "36"], correctIndex: 1, explanation: "3 + 6 + 9 + 12 = 30." },
+        { prompt: "Which formula gives the sum of an arithmetic series when the first and last terms are known?", options: ["Sₙ = n(a + l)", "Sₙ = n/2 (a + l)", "Sₙ = (a + l)/2", "Sₙ = a(rⁿ − 1)/(r − 1)"], correctIndex: 1, explanation: "Sₙ = n/2 (a + l): n columns each adding to a + l, halved." },
+        { prompt: "In Gauss's method for 1 + 2 + … + 100, each pair of terms (one from each end) adds up to", options: ["100", "101", "50", "5 050"], correctIndex: 1, explanation: "1 + 100 = 2 + 99 = … = 101." },
+        { prompt: "What is 1 + 2 + 3 + … + 100?", options: ["10 100", "5 000", "5 050", "5 100"], correctIndex: 2, explanation: "S₁₀₀ = 100/2 × 101 = 5 050." },
+        { prompt: "Find the sum of the first 10 terms of 3 + 7 + 11 + …", options: ["210", "190", "39", "420"], correctIndex: 0, explanation: "S₁₀ = 10/2 [6 + 9(4)] = 5 × 42 = 210." },
+        { prompt: "Find 2 + 4 + 6 + … + 40.", options: ["400", "420", "440", "800"], correctIndex: 1, explanation: "There are 20 terms: S₂₀ = 20/2 (2 + 40) = 10 × 42 = 420." },
+        { prompt: "Before using Sₙ = n/2 (a + l) for 5 + 9 + 13 + … + 81, what must be found first?", options: ["The common ratio", "The number of terms n", "The sum to infinity", "Nothing"], correctIndex: 1, explanation: "n is unknown; 81 = 5 + (n − 1)4 gives n = 20." },
+        { prompt: "Find 5 + 9 + 13 + … + 81.", options: ["860", "430", "860.5", "1 720"], correctIndex: 0, explanation: "n = 20, so S₂₀ = 20/2 (5 + 81) = 10 × 86 = 860." },
+        { prompt: "Find the sum of the first 8 terms of 20 + 17 + 14 + …", options: ["76", "160", "84", "68"], correctIndex: 0, explanation: "S₈ = 8/2 [40 + 7(−3)] = 4 × 19 = 76." },
+        { prompt: "The formula Sₙ = n/2 [2a + (n − 1)d] is obtained from Sₙ = n/2 (a + l) by substituting", options: ["l = a + nd", "l = a + (n − 1)d", "l = arⁿ⁻¹", "l = 2a"], correctIndex: 1, explanation: "The last term is the nth term, a + (n − 1)d." },
+        { prompt: "If S₅ = 40 and S₄ = 28, what is T₅?", options: ["68", "12", "8", "1.4"], correctIndex: 1, explanation: "T₅ = S₅ − S₄ = 40 − 28 = 12." },
+        { prompt: "Solving for n gives 3n² + 5n − 4 292 = 0 with roots n = 37 and n = −116/3. The number of terms is", options: ["37", "−116/3", "both", "neither"], correctIndex: 0, explanation: "n must be a positive whole number." },
+        { prompt: "Evaluate Σ (from n = 1 to 5) (−7n + 38).", options: ["85", "31", "155", "−85"], correctIndex: 0, explanation: "31 + 24 + 17 + 10 + 3 = 85, or S₅ = 5/2 (31 + 3) = 85." },
+        { prompt: "Which is equal to Σ (from i = 1 to n) 5Tᵢ?", options: ["5 + Σ Tᵢ", "5 × Σ Tᵢ", "Σ Tᵢ ÷ 5", "5n"], correctIndex: 1, explanation: "A constant factor may be taken outside the sigma sign." },
+        { prompt: "A stack of logs has 20 logs in the bottom row, 19 in the next, and so on up to 1 at the top. How many logs are there?", options: ["200", "210", "220", "190"], correctIndex: 1, explanation: "S₂₀ = 20/2 (20 + 1) = 210." },
+        { prompt: "A learner saves L$10 in week 1, L$15 in week 2, L$20 in week 3, and so on. How much is saved in total over 12 weeks?", options: ["L$450", "L$65", "L$780", "L$390"], correctIndex: 0, explanation: "S₁₂ = 12/2 [20 + 11(5)] = 6 × 75 = 450." },
+        { prompt: "Σ (from n = 3 to 7) 2an equals", options: ["50a", "40a", "14a", "60a"], correctIndex: 0, explanation: "6a + 8a + 10a + 12a + 14a = 50a." },
+        { prompt: "An arithmetic series has a = 4, d = 3 and Sₙ = 2 146. Which equation gives n?", options: ["3n² + 5n − 4 292 = 0", "3n² + 5n − 2 146 = 0", "4n + 3 = 2 146", "n² + 3n − 4 292 = 0"], correctIndex: 0, explanation: "2 146 = n/2 [8 + 3(n − 1)] gives 4 292 = 3n² + 5n." },
+      ],
+      test: [
+        { type: "MULTIPLE_CHOICE", prompt: "The sum of the first 25 terms of 1 + 5 + 9 + … is", options: ["1 225", "1 250", "97", "2 450"], correctIndex: 0, answerKey: "A. S₂₅ = 25/2 [2 + 24(4)] = 25/2 × 98 = 1 225.", marks: 2 },
+        { type: "SHORT_ANSWER", prompt: "Write 4 + 7 + 10 + … + 61 in sigma notation and find its value.", answerKey: "Tₙ = 3n + 1; 3n + 1 = 61 gives n = 20 (2 marks). Σ (from n = 1 to 20) (3n + 1) (1 mark). S₂₀ = 20/2 (4 + 61) = 650 (2 marks).", marks: 5 },
+        { type: "SHORT_ANSWER", prompt: "How many terms of the series 3 + 7 + 11 + … must be added to give a sum of 300?", answerKey: "300 = n/2 [6 + 4(n − 1)] = n(2n + 1) (2 marks). 2n² + n − 300 = 0, (2n + 25)(n − 12) = 0 (2 marks). n = 12, rejecting the negative root (1 mark).", marks: 5 },
+        { type: "SHORT_ANSWER", prompt: "The 5th term of an arithmetic series is 16 and the sum of the first 10 terms is 175. Find a and d.", answerKey: "a + 4d = 16 (1 mark); 5(2a + 9d) = 175 so 2a + 9d = 35 (2 marks). From the first, 2a + 8d = 32; subtract: d = 3, a = 4 (2 marks).", marks: 5 },
+        { type: "ESSAY", prompt: "Derive the formula Sₙ = n/2 (a + l) for an arithmetic series and use it to obtain Sₙ = n/2 [2a + (n − 1)d]. Illustrate with the sum of the whole numbers from 1 to 100, and explain when each form of the formula is more convenient.", answerKey: "Writing the series forwards and backwards and adding to obtain 2Sₙ = n(a + l) (4). Substituting l = a + (n − 1)d (2). 1 + … + 100 = 100/2 × 101 = 5 050 (2). Use n/2 (a + l) when the last term is known; n/2 [2a + (n − 1)d] when d is known but not l (2).", marks: 10 },
+      ],
+    },
+    // source: Siyavula — Everything Maths Grade 12, 1.6 Finite geometric series and 1.7 Infinite series (https://www.siyavula.com/read/za/mathematics/grade-12/sequences-and-series/01-sequences-and-series-05)
+    {
+      slug: "sum-of-a-geometric-series",
+      title: "Sum of a Geometric Series",
+      objective:
+        "By the end of the topic, learners should be able to derive and state the formulae for the sum of a finite geometric series, use them to solve problems, and find the sum to infinity of a convergent geometric series.",
+      estimatedMinutes: 55,
+      notes: `Adding the terms of a geometric sequence gives a geometric series. The pairing trick used for arithmetic series does not work here, because terms at opposite ends do not add to the same total. Instead, the sum formula is found by multiplying the whole series by r and subtracting, which removes almost every term at once.
+
+## Finite geometric series
+
+**Geometric series** — the sum of the terms of a geometric sequence. A **finite geometric series** is the sum of a known number of terms:
+
+Sₙ = a + ar + ar² + … + arⁿ⁻¹
+
+## Deriving the sum formula
+
+Write down the series, and below it the series multiplied by r:
+
+Sₙ = a + ar + ar² + … + arⁿ⁻¹ … (1)
+
+r × Sₙ = ar + ar² + … + arⁿ⁻¹ + arⁿ … (2)
+
+Every term of (2) except the last also appears in (1). Subtracting (2) from (1), all the middle terms cancel:
+
+Sₙ − rSₙ = a − arⁿ
+
+Sₙ(1 − r) = a(1 − rⁿ)
+
+**Sₙ = a(1 − rⁿ) ÷ (1 − r)**, for r ≠ 1
+
+Multiplying the top and bottom by −1 gives the equivalent form
+
+**Sₙ = a(rⁿ − 1) ÷ (r − 1)**, for r ≠ 1
+
+The two forms always give the same answer. The first is easier to use when r < 1 and the second when r > 1, because the brackets are then positive. Neither may be used when r = 1, since the denominator would be zero.
+
+## Using the formula
+
+**Example.** Evaluate Σ (from k = 1 to 6) 32(1/2)ᵏ⁻¹.
+
+The first terms are 32; 16; 8, so a = 32, r = 1/2 and n = 6.
+
+S₆ = 32(1 − (1/2)⁶) ÷ (1 − 1/2) = 32(1 − 1/64) ÷ (1/2) = 64 × 63/64 = 63.
+
+**Example (finding n).** In a geometric series T₁ = −4 and T₄ = 32. How many terms give a sum of 84?
+
+First, −4r³ = 32, so r³ = −8 and r = −2. Then Sₙ = −4(1 − (−2)ⁿ) ÷ (1 − (−2)) = 84. Multiplying by 3 gives −4(1 − (−2)ⁿ) = 252, so 1 − (−2)ⁿ = −63 and (−2)ⁿ = 64 = (−2)⁶. Therefore n = 6.
+
+## Infinite series: convergence and divergence
+
+If the sum of a series gets closer and closer to a certain value as more terms are added, the series is said to **converge**, and that value is its **sum to infinity**, S∞. If a series does not converge, it **diverges**.
+
+Whether a geometric series converges depends only on r. When −1 < r < 1, each term is smaller in size than the one before, and the powers rⁿ shrink towards 0 as n increases. When r > 1 or r < −1, the terms grow in size and the sum has no finite value.
+
+| Common ratio | Behaviour of rⁿ as n increases | The infinite series |
+| --- | --- | --- |
+| −1 < r < 1 | rⁿ approaches 0 | Converges |
+| r > 1 or r < −1 | rⁿ grows without limit in size | Diverges |
+
+## The sum to infinity
+
+Start from Sₙ = a(1 − rⁿ) ÷ (1 − r). When −1 < r < 1, rⁿ approaches 0 as n becomes very large, so
+
+**S∞ = a ÷ (1 − r)**, valid only for −1 < r < 1
+
+**Example.** Find the sum to infinity of 18 + 6 + 2 + …
+
+r = 6 ÷ 18 = 1/3, which lies between −1 and 1, so the series converges. S∞ = 18 ÷ (1 − 1/3) = 18 ÷ (2/3) = 18 × 3/2 = 27.
+
+**Example (a recurring decimal).** The recurring decimal 0.555… can be written 5/10 + 5/100 + 5/1 000 + …, a geometric series with a = 5/10 and r = 1/10. S∞ = (5/10) ÷ (1 − 1/10) = (5/10) ÷ (9/10) = 5/9. So 0.555… = 5/9.
+
+## Summary
+
+- Sₙ = a(1 − rⁿ) ÷ (1 − r) = a(rⁿ − 1) ÷ (r − 1), for r ≠ 1, found by subtracting rSₙ from Sₙ.
+- Use the first form when r < 1 and the second when r > 1.
+- To find n, isolate the power rⁿ and compare it with a power of the same base.
+- An infinite geometric series converges only when −1 < r < 1; it then has sum S∞ = a ÷ (1 − r).
+- If r > 1 or r < −1, the series diverges and has no sum to infinity.`,
+      workedExample: `**Problem.** A shrub is 110 cm tall when it is planted. It grows 10 cm in the first year, and in each later year it grows half as much as in the year before. (a) How tall is the shrub after 5 years? (b) What is the greatest height the shrub can reach?
+
+**Solution**
+
+*Step 1 — Identify the series.* The yearly growth is 10 + 5 + 5/2 + 5/4 + …, a geometric series with a = 10 and r = 1/2.
+
+*Step 2 — Find the total growth in 5 years.* Since r < 1, use Sₙ = a(1 − rⁿ) ÷ (1 − r):
+S₅ = 10(1 − (1/2)⁵) ÷ (1 − 1/2) = 10(1 − 1/32) ÷ (1/2) = 10 × 31/32 × 2 = 19.375 cm.
+
+*Step 3 — Find the height after 5 years.* 110 + 19.375 = 129.375 cm, about 129.4 cm.
+
+*Step 4 — Check that a sum to infinity exists.* r = 1/2 lies between −1 and 1, so the series converges.
+
+*Step 5 — Find the total possible growth.* S∞ = a ÷ (1 − r) = 10 ÷ (1 − 1/2) = 10 ÷ (1/2) = 20 cm.
+
+*Step 6 — Find the greatest height.* 110 + 20 = 130 cm. The shrub approaches this height but never quite reaches it.
+
+**Answer.** (a) About 129.4 cm after 5 years. (b) The greatest height is 130 cm.`,
+      quiz: [
+        { prompt: "The sum of the first n terms of a geometric series (r ≠ 1) is", options: ["n/2 [2a + (n − 1)r]", "a(1 − rⁿ) ÷ (1 − r)", "a ÷ (1 − r)", "arⁿ⁻¹"], correctIndex: 1, explanation: "Sₙ = a(1 − rⁿ) ÷ (1 − r), or equivalently a(rⁿ − 1) ÷ (r − 1)." },
+        { prompt: "In deriving the formula, which expression is subtracted from Sₙ?", options: ["a × Sₙ", "r × Sₙ", "Sₙ₋₁", "n × Sₙ"], correctIndex: 1, explanation: "Subtracting rSₙ cancels every term except a and −arⁿ." },
+        { prompt: "Why can the formula not be used when r = 1?", options: ["The terms become negative", "The denominator 1 − r becomes zero", "The series converges", "rⁿ becomes zero"], correctIndex: 1, explanation: "Division by 1 − r = 0 is undefined." },
+        { prompt: "Find 3 + 6 + 12 + 24 + 48.", options: ["93", "96", "90", "189"], correctIndex: 0, explanation: "S₅ = 3(2⁵ − 1) ÷ (2 − 1) = 3 × 31 = 93." },
+        { prompt: "Find the sum of the first 4 terms of 2 + 6 + 18 + …", options: ["80", "54", "78", "162"], correctIndex: 0, explanation: "S₄ = 2(3⁴ − 1) ÷ (3 − 1) = 2 × 80 ÷ 2 = 80." },
+        { prompt: "Evaluate Σ (from k = 1 to 6) 32(1/2)ᵏ⁻¹.", options: ["63", "64", "62", "126"], correctIndex: 0, explanation: "S₆ = 32(1 − 1/64) ÷ (1/2) = 63." },
+        { prompt: "Which form of the sum formula is more convenient when r = 3?", options: ["a(1 − rⁿ) ÷ (1 − r)", "a(rⁿ − 1) ÷ (r − 1)", "a ÷ (1 − r)", "Neither can be used"], correctIndex: 1, explanation: "Both are correct, but with r > 1 the form a(rⁿ − 1) ÷ (r − 1) keeps the brackets positive." },
+        { prompt: "An infinite geometric series converges when", options: ["r > 1", "−1 < r < 1", "r = 1", "r < −1"], correctIndex: 1, explanation: "Only when −1 < r < 1 do the powers rⁿ approach 0." },
+        { prompt: "The sum to infinity of a convergent geometric series is", options: ["a ÷ (1 − r)", "a ÷ (r − 1)", "a(1 − rⁿ)", "ar ÷ (1 − r)"], correctIndex: 0, explanation: "S∞ = a ÷ (1 − r), from Sₙ with rⁿ approaching 0." },
+        { prompt: "Find the sum to infinity of 18 + 6 + 2 + …", options: ["27", "26", "24", "54"], correctIndex: 0, explanation: "r = 1/3: S∞ = 18 ÷ (2/3) = 27." },
+        { prompt: "Find the sum to infinity of 8 − 4 + 2 − 1 + …", options: ["16", "16/3", "4", "−16"], correctIndex: 1, explanation: "r = −4 ÷ 8 = −1/2, so S∞ = 8 ÷ (1 − (−1/2)) = 8 ÷ (3/2) = 16/3." },
+        { prompt: "Which infinite series has no sum to infinity?", options: ["1 + 1/2 + 1/4 + …", "5 + 10 + 20 + …", "9 − 3 + 1 − …", "0.4 + 0.04 + 0.004 + …"], correctIndex: 1, explanation: "r = 2 > 1, so 5 + 10 + 20 + … diverges." },
+        { prompt: "Write 0.777… as a fraction using a sum to infinity.", options: ["7/10", "7/9", "77/100", "7/99"], correctIndex: 1, explanation: "a = 7/10, r = 1/10: S∞ = (7/10) ÷ (9/10) = 7/9." },
+        { prompt: "A series has T₁ = −4 and T₄ = 32. What is r?", options: ["2", "−2", "8", "−8"], correctIndex: 1, explanation: "−4r³ = 32 gives r³ = −8, so r = −2." },
+        { prompt: "What happens to (0.5)ⁿ as n becomes very large?", options: ["It grows without limit", "It approaches 0", "It approaches 1", "It alternates in sign"], correctIndex: 1, explanation: "Repeated halving approaches 0, which is why S∞ exists for |r| < 1." },
+        { prompt: "The sum to infinity of a geometric series is 20 and a = 10. What is r?", options: ["1/2", "2", "−1/2", "1/4"], correctIndex: 0, explanation: "20 = 10 ÷ (1 − r) gives 1 − r = 1/2, so r = 1/2." },
+        { prompt: "A sum to infinity is 12 and r = 1/4. What is the first term?", options: ["9", "3", "16", "48"], correctIndex: 0, explanation: "a = S∞ (1 − r) = 12 × 3/4 = 9." },
+        { prompt: "A series whose partial sums get closer and closer to a fixed value is said to", options: ["diverge", "converge", "alternate", "oscillate"], correctIndex: 1, explanation: "That is the definition of convergence." },
+        { prompt: "Find 1 + 1/3 + 1/9 + … + 1/81.", options: ["121/81", "3/2", "40/27", "1"], correctIndex: 0, explanation: "n = 5, r = 1/3: S₅ = (1 − 1/243) ÷ (2/3) = (242/243) × (3/2) = 121/81." },
+        { prompt: "A geometric series has S∞ = 5. Which is a possible first term?", options: ["12", "10", "4", "−1"], correctIndex: 2, explanation: "a = 5(1 − r) with −1 < r < 1 forces 0 < a < 10, so only 4 is possible (r = 1/5)." },
+      ],
+      test: [
+        { type: "MULTIPLE_CHOICE", prompt: "Which of these geometric series converges?", options: ["2 + 4 + 8 + …", "1 − 3 + 9 − …", "27 + 9 + 3 + …", "1 + 1 + 1 + …"], correctIndex: 2, answerKey: "C. r = 1/3 lies between −1 and 1. A has r = 2, B has r = −3, and D has r = 1, so they do not converge.", marks: 2 },
+        { type: "SHORT_ANSWER", prompt: "Find the sum of the first 7 terms of 5 + 10 + 20 + …", answerKey: "a = 5, r = 2 (1 mark). S₇ = 5(2⁷ − 1) ÷ (2 − 1) (2 marks) = 5 × 127 = 635 (1 mark).", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "Find the sum to infinity of 40 + 10 + 2.5 + … and explain why it exists.", answerKey: "r = 10 ÷ 40 = 1/4 (1 mark), which lies between −1 and 1, so the series converges (1 mark). S∞ = 40 ÷ (3/4) = 160/3 ≈ 53.3 (2 marks).", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "How many terms of 2 + 6 + 18 + … must be added to give a sum of 728?", answerKey: "Sₙ = 2(3ⁿ − 1) ÷ 2 = 3ⁿ − 1 (2 marks). 3ⁿ − 1 = 728 gives 3ⁿ = 729 = 3⁶ (2 marks), so n = 6 (1 mark).", marks: 5 },
+        { type: "ESSAY", prompt: "Derive the formula for the sum of the first n terms of a geometric series. Then explain what it means for an infinite geometric series to converge, state the condition on r, derive S∞ = a ÷ (1 − r), and use it to write 0.333… as a fraction.", answerKey: "Derivation: write Sₙ and rSₙ, subtract, factorise to Sₙ = a(1 − rⁿ) ÷ (1 − r), r ≠ 1 (4). Convergence: partial sums approach a fixed value; condition −1 < r < 1 (2). As n grows rⁿ approaches 0, giving S∞ = a ÷ (1 − r) (2). 0.333… = 3/10 + 3/100 + …, a = 3/10, r = 1/10, S∞ = 1/3 (2).", marks: 10 },
+      ],
+    },
+    // source: GeeksforGeeks — Bearings in Maths (https://www.geeksforgeeks.org/maths/bearings-in-maths/)
+    {
+      slug: "bearings",
+      title: "Bearings",
+      objective:
+        "By the end of the topic, learners should be able to interpret and measure three-figure bearings, find the back bearing of a point, and solve simple distance-and-bearing problems.",
+      estimatedMinutes: 100,
+      notes: `## What a bearing is
+
+- A **bearing** describes the direction of one point from another as an angle.
+- It is **always measured from North, in a clockwise direction**.
+- It is written as a **three-figure bearing** (three digits): e.g. 60° is written as **060°**, and due east is **090°**.
+- A whole-circle bearing runs from **000° to 360°**.
+
+## Key directions
+
+| Direction | Bearing |
+| --- | --- |
+| North | 000° |
+| East | 090° |
+| South | 180° |
+| West | 270° |
+
+## Back bearing (reverse bearing)
+
+- The bearing of A from B is the **back bearing** of the bearing of B from A.
+- Rule: if the bearing is **less than 180°, add 180°**; if it is **180° or more, subtract 180°**.
+- Example: if the bearing of B from A is 094°, then the bearing of A from B is 094° + 180° = **274°**.
+
+## Solving bearing problems
+
+- Draw a **North line at each point** and mark the clockwise angle.
+- Use a **scale drawing** (e.g. 1 cm : 1 km) or trigonometry (sine rule, cosine rule) to find distances and angles.
+- Sine rule: **a/sin A = b/sin B = c/sin C**.
+
+\`\`\`svg Bearing measured clockwise from North
+<svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+  <line x1="60" y1="20" x2="60" y2="140" stroke="#888" stroke-width="1"/>
+  <text x="50" y="16" font-size="11">N</text>
+  <circle cx="60" cy="90" r="3" fill="#333"/>
+  <text x="46" y="104" font-size="11">A</text>
+  <line x1="60" y1="90" x2="150" y2="55" stroke="#1565c0" stroke-width="2"/>
+  <circle cx="150" cy="55" r="3" fill="#1565c0"/>
+  <text x="156" y="52" font-size="11">B</text>
+  <path d="M60 60 A 30 30 0 0 1 84 72" fill="none" stroke="#c62828" stroke-width="1.5"/>
+  <text x="86" y="60" font-size="10" fill="#c62828">bearing</text>
+</svg>
+\`\`\`
+
+## Common errors
+
+- **Writing a bearing with fewer than three digits** — always use 060°, not 60°.
+- **Measuring anticlockwise or from another direction** — bearings go clockwise from North.
+- **Forgetting the ±180° rule** for a back bearing.`,
+      workedExample: `**Question:** The bearing of town Q from town P is 048°. Find the bearing of P from Q.
+
+**Solution**
+
+*Step 1 — recall the back-bearing rule.* The bearing of P from Q is the back bearing of 048°.
+
+*Step 2 — the given bearing is less than 180°, so add 180°.*
+048° + 180° = 228°
+
+*Step 3 — check it is a three-figure bearing between 000° and 360°.* 228° is valid.
+
+**Answer: The bearing of P from Q is 228°.**`,
+      quiz: [
+        { prompt: "A bearing is always measured from", options: ["East, clockwise", "North, clockwise", "South, anticlockwise", "West, clockwise"], correctIndex: 1, explanation: "Bearings are measured clockwise from North." },
+        { prompt: "The bearing for due East is", options: ["000°", "090°", "180°", "270°"], correctIndex: 1, explanation: "East is a quarter turn clockwise from North." },
+        { prompt: "A bearing of 60° should be written as", options: ["60°", "060°", "600°", "6°"], correctIndex: 1, explanation: "Bearings use three figures: 060°." },
+        { prompt: "Due South has the bearing", options: ["090°", "180°", "270°", "360°"], correctIndex: 1, explanation: "South is half a turn from North." },
+        { prompt: "Due West has the bearing", options: ["090°", "180°", "270°", "000°"], correctIndex: 2, explanation: "West is three-quarters of a turn clockwise." },
+        { prompt: "Bearings run from", options: ["0° to 90°", "0° to 180°", "000° to 360°", "1° to 100°"], correctIndex: 2, explanation: "A whole-circle bearing covers 000°–360°." },
+        { prompt: "To find a back bearing under 180°, you", options: ["subtract 180°", "add 180°", "add 360°", "double it"], correctIndex: 1, explanation: "If the bearing < 180°, add 180°." },
+        { prompt: "If the bearing of B from A is 070°, the bearing of A from B is", options: ["250°", "110°", "070°", "290°"], correctIndex: 0, explanation: "070° < 180°, so 070° + 180° = 250°." },
+        { prompt: "If the bearing of Y from X is 200°, the bearing of X from Y is", options: ["380°", "020°", "020° = 020°", "020°"], correctIndex: 3, explanation: "200° ≥ 180°, so 200° − 180° = 020°." },
+        { prompt: "The bearing of North-East is", options: ["030°", "045°", "060°", "090°"], correctIndex: 1, explanation: "NE is halfway between N (000°) and E (090°)." },
+        { prompt: "The angle between North and a bearing of 090° is", options: ["45°", "90°", "180°", "270°"], correctIndex: 1, explanation: "090° is a right angle from North." },
+        { prompt: "Which is a valid three-figure bearing?", options: ["45°", "360.5°", "135°", "400°"], correctIndex: 2, explanation: "135° is between 000° and 360° and has three figures." },
+        { prompt: "A back bearing differs from the original bearing by", options: ["90°", "180°", "360°", "45°"], correctIndex: 1, explanation: "The reverse direction is 180° away." },
+        { prompt: "To solve a bearing problem you usually first", options: ["guess the answer", "draw a North line and mark the clockwise angle", "measure anticlockwise", "ignore the scale"], correctIndex: 1, explanation: "A clear diagram with North lines is the first step." },
+        { prompt: "The bearing of a point due South-West is", options: ["135°", "225°", "315°", "045°"], correctIndex: 1, explanation: "SW is halfway between S (180°) and W (270°) = 225°." },
+        { prompt: "On a map with scale 1 cm : 1 km, a 5 km distance is drawn as", options: ["1 cm", "5 cm", "0.5 cm", "50 cm"], correctIndex: 1, explanation: "1 cm represents 1 km, so 5 km is 5 cm." },
+        { prompt: "The rule used with triangles in bearing problems includes the", options: ["quadratic formula", "sine rule a/sin A = b/sin B", "area of a circle", "compound interest formula"], correctIndex: 1, explanation: "The sine rule relates sides and opposite angles." },
+        { prompt: "If the bearing of B from A is 180°, the bearing of A from B is", options: ["360°", "000°", "090°", "180°"], correctIndex: 1, explanation: "180° − 180° = 000° (due North)." },
+        { prompt: "A bearing of 315° points towards the", options: ["North-East", "South-East", "North-West", "South-West"], correctIndex: 2, explanation: "315° is halfway between W (270°) and N (360°) = NW." },
+      ],
+      test: [
+        { type: "SHORT_ANSWER", prompt: "The bearing of B from A is 125°. Find the bearing of A from B.", answerKey: "125° < 180°, so add 180°: 125° + 180° = 305°. Award 2 for choosing to add, 2 for the arithmetic, 2 for stating 305°.", marks: 6 },
+        { type: "SHORT_ANSWER", prompt: "The bearing of Q from P is 250°. Find the bearing of P from Q.", answerKey: "250° ≥ 180°, so subtract 180°: 250° − 180° = 070°. Award 3 for the correct rule, 3 for 070°.", marks: 6 },
+        { type: "MULTIPLE_CHOICE", prompt: "Which of these is the bearing of due West?", options: ["090°", "180°", "270°", "360°"], correctIndex: 2, answerKey: "West is 270° (three-quarter turn clockwise from North). Option C.", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "Write the bearings of North, East, South and West.", answerKey: "North = 000°, East = 090°, South = 180°, West = 270°. Award 1 mark each and 2 marks for using three-figure form throughout.", marks: 6 },
+        { type: "ESSAY", prompt: "Explain how a three-figure bearing is measured, why bearings use three digits, and how to find a back bearing. Illustrate with the bearing of B from A being 035°.", answerKey: "A bearing is the clockwise angle from the North line to the line joining the points, written with three digits (035°, not 35°) so directions are unambiguous and always between 000° and 360°. The back bearing (bearing of A from B) reverses the direction and differs by 180°: since 035° < 180°, add 180° to get 215°. Award 4 marks for the measuring explanation, 3 for the three-digit reasoning, 3 for the back bearing 215°.", marks: 10 },
+      ],
+    },
+    // source: GeeksforGeeks — Basic Constructions: Angle Bisector, Perpendicular Bisector, Angle of 60° (https://www.geeksforgeeks.org/maths/basic-constructions-angle-bisector-perpendicular-bisector-angle-of-60/)
+    {
+      slug: "constructions",
+      title: "Constructions",
+      objective:
+        "By the end of the topic, learners should be able to construct angles, triangles and quadrilaterals with compass and ruler, and describe loci and some special loci.",
+      estimatedMinutes: 110,
+      notes: `## Construction without measurement
+
+- A **construction** uses only a **ruler (straight edge) and a pair of compasses** — no protractor and no measuring of angles.
+- Arcs drawn with the compasses locate points that are an exact distance apart.
+
+## Constructing angles
+
+- **60°:** draw a base line; with the compass point on one end, draw an arc; keep the same radius and draw a second arc cutting the first; join the vertex to the crossing point.
+- **30°:** construct 60° and then **bisect** it.
+- **90°:** construct the perpendicular at a point on a line (or a perpendicular bisector).
+- **45°:** construct 90° and then bisect it.
+- **120°:** two 60° arcs in succession.
+
+## Bisecting
+
+- **Angle bisector:** with the compass on the vertex, draw an arc cutting both arms; from those two points draw equal arcs that cross; the line from the vertex through the crossing point **bisects the angle** (splits it into two equal parts).
+- **Perpendicular bisector:** open the compass to more than half a segment; draw arcs from each end above and below; the line through the two crossings is perpendicular to the segment and cuts it in half.
+
+## Constructing triangles
+
+Construct a triangle when given:
+- **SSS** — three sides (draw one side, then arcs of the other two lengths from each end).
+- **SAS** — two sides and the included angle.
+- **ASA** — two angles and the included side.
+
+## Locus and special loci
+
+- A **locus** is the set of all points that satisfy a given condition (path traced by a point that moves under a rule).
+
+| Condition | The locus is |
+| --- | --- |
+| Fixed distance r from a point O | a circle of radius r, centre O |
+| Equidistant from two points A, B | the perpendicular bisector of AB (the mediator) |
+| Equidistant from two lines | the bisector of the angle between them |
+| Fixed distance d from a line | a pair of lines parallel to it, distance d away |
+
+## Common errors
+
+- **Changing the compass radius** midway through a construction.
+- **Rubbing out the arcs** — construction arcs must be left to show the method.
+- **Using a protractor** where a pure construction is required.`,
+      workedExample: `**Question:** Construct an angle of 30° using ruler and compasses only.
+
+**Solution**
+
+*Step 1 — draw a base line* and mark a vertex point O on it.
+
+*Step 2 — construct 60°.* Place the compass point at O and draw an arc that cuts the base line at A. Without changing the radius, place the compass point at A and draw a second arc cutting the first at B. Draw the line OB. Angle AOB = 60°.
+
+*Step 3 — bisect the 60° angle.* Place the compass at A and at B in turn and draw two equal arcs that cross at C. Draw OC.
+
+*Step 4 — result.* OC bisects the 60° angle, so angle AOC = 30°.
+
+**Answer: Angle AOC = 30°, constructed with compass and ruler only.**`,
+      quiz: [
+        { prompt: "A construction uses", options: ["a protractor only", "ruler and compasses only", "a calculator", "a set square only"], correctIndex: 1, explanation: "Only a straight edge and compasses are allowed." },
+        { prompt: "The first angle usually built with compasses is", options: ["45°", "60°", "50°", "80°"], correctIndex: 1, explanation: "60° comes directly from equal arcs." },
+        { prompt: "To construct 30° you", options: ["build 60° then bisect it", "build 90° then bisect", "measure with a protractor", "build 45° then double"], correctIndex: 0, explanation: "Bisecting 60° gives 30°." },
+        { prompt: "To construct 45° you", options: ["bisect 60°", "bisect 90°", "bisect 120°", "add 30° and 30°"], correctIndex: 1, explanation: "Half of a right angle is 45°." },
+        { prompt: "An angle bisector divides an angle into", options: ["three equal parts", "two equal parts", "two unequal parts", "a right angle"], correctIndex: 1, explanation: "A bisector splits an angle in half." },
+        { prompt: "The perpendicular bisector of a segment", options: ["passes through one end", "cuts it in half at right angles", "is parallel to it", "is shorter than it"], correctIndex: 1, explanation: "It is perpendicular and halves the segment." },
+        { prompt: "To construct a triangle from three sides you use", options: ["ASA", "SAS", "SSS", "AAA"], correctIndex: 2, explanation: "Three sides given is the SSS case." },
+        { prompt: "SAS stands for", options: ["side-angle-side", "angle-side-angle", "side-side-side", "angle-angle-side"], correctIndex: 0, explanation: "Two sides and the included angle." },
+        { prompt: "A locus is", options: ["a single fixed point", "the set of points satisfying a condition", "a type of triangle", "a measured angle"], correctIndex: 1, explanation: "It is the path of points meeting a rule." },
+        { prompt: "The locus of points a fixed distance r from a point O is", options: ["a line", "a circle radius r centre O", "a parabola", "two points"], correctIndex: 1, explanation: "All points at distance r form a circle." },
+        { prompt: "The locus of points equidistant from two points A and B is", options: ["a circle", "the perpendicular bisector of AB", "the line AB", "the midpoint only"], correctIndex: 1, explanation: "The mediator of AB is that locus." },
+        { prompt: "The locus of points equidistant from two lines is", options: ["a circle", "the angle bisector", "a perpendicular", "a parallel line"], correctIndex: 1, explanation: "The bisector of the angle between them." },
+        { prompt: "The locus a fixed distance d from a straight line is", options: ["a circle", "two parallel lines at distance d", "a single point", "the line itself"], correctIndex: 1, explanation: "Two lines parallel to it, one each side." },
+        { prompt: "During a construction the compass radius should be", options: ["changed each step", "kept fixed where the method requires", "ignored", "as large as possible"], correctIndex: 1, explanation: "Equal arcs need the same radius." },
+        { prompt: "Construction arcs should be", options: ["rubbed out at the end", "left visible to show the method", "drawn in ink only", "hidden"], correctIndex: 1, explanation: "The arcs are evidence of the construction." },
+        { prompt: "Constructing 120° uses", options: ["one 60° arc", "two successive 60° arcs", "a bisected 90°", "a protractor"], correctIndex: 1, explanation: "Two 60° steps give 120°." },
+        { prompt: "The 'mediator' of a segment is another name for its", options: ["midpoint", "perpendicular bisector", "angle bisector", "length"], correctIndex: 1, explanation: "Mediator = perpendicular bisector." },
+        { prompt: "ASA construction is used when you know", options: ["three sides", "two angles and the included side", "three angles", "two sides only"], correctIndex: 1, explanation: "Angle-side-angle." },
+        { prompt: "To construct 90° at a point you build a", options: ["60° angle", "perpendicular to the line", "30° angle", "parallel line"], correctIndex: 1, explanation: "A perpendicular gives a right angle." },
+      ],
+      test: [
+        { type: "SHORT_ANSWER", prompt: "Describe how to construct a 60° angle with compass and ruler.", answerKey: "Draw a base line and mark vertex O. With the compass on O, draw an arc cutting the line at A. Keeping the same radius, put the compass on A and draw an arc cutting the first at B. Join OB; angle AOB = 60°. Award 2 marks for the first arc, 2 for the equal second arc, 2 for joining to give 60°.", marks: 6 },
+        { type: "SHORT_ANSWER", prompt: "State the locus of (a) points 3 cm from a point O and (b) points equidistant from two points A and B.", answerKey: "(a) A circle of radius 3 cm centred on O. (b) The perpendicular bisector of AB. Award 3 marks each.", marks: 6 },
+        { type: "MULTIPLE_CHOICE", prompt: "Bisecting a 60° angle produces", options: ["120°", "30°", "45°", "90°"], correctIndex: 1, answerKey: "Half of 60° is 30°. Option B.", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "Which construction case (SSS, SAS or ASA) is used to build a triangle given two angles and the side between them? Explain briefly.", answerKey: "ASA (angle-side-angle): the two known angles are drawn at the ends of the given included side, and the arms meet at the third vertex. Award 3 marks for ASA, 3 for the explanation.", marks: 6 },
+        { type: "ESSAY", prompt: "Explain what a locus is and describe the four special loci: fixed distance from a point, equidistant from two points, equidistant from two lines, and fixed distance from a line.", answerKey: "A locus is the set of all points that satisfy a given condition. Fixed distance r from a point O gives a circle radius r centre O; equidistant from two points A and B gives the perpendicular bisector of AB; equidistant from two lines gives the bisector of the angle between them; fixed distance d from a line gives two lines parallel to it at distance d. Award 2 marks for the definition and 2 marks for each of the four special loci.", marks: 10 },
+      ],
+    },
   ],
 };
