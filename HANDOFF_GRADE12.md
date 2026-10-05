@@ -17,18 +17,11 @@ printed literally; use plain unicode like H₂O, x², √(x²+y²), θ).
 
 - **Grade 10** — complete ✅
 - **Grade 11** — complete ✅
-- **Grade 12:**
-  - Biology, Chemistry, Physics, Mathematics, English, Literature, Geography — P1–P6 ✅
-  - Economics P1–P5 · History P1–P5
+- **Grade 12** — complete ✅ (all 9 subjects, P1–P6)
 
-## Remaining work — 2 files
+## Remaining work
 
-| Subject | Files to create |
-|---|---|
-| Economics | `grade12/period6/economics.ts` |
-| History | `grade12/period6/history.ts` |
-
-Optional cleanup: `grade12/period6/geography.ts` (General Revision) covers its five
+All Grade 12 files exist. Optional cleanup: `grade12/period6/geography.ts` (General Revision) covers its five
 CONTENTS items as `##` sections inside one topic; strictly it should be split into five
 topics (Map Reading; Industries of Liberia; Climate and Natural Vegetation; Regional
 Geography of Africa; Population and Settlement).

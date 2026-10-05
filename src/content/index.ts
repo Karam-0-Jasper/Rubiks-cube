@@ -173,6 +173,7 @@ import { economicsG12P2 } from "@/content/grade12/period2/economics";
 import { economicsG12P3 } from "@/content/grade12/period3/economics";
 import { economicsG12P4 } from "@/content/grade12/period4/economics";
 import { economicsG12P5 } from "@/content/grade12/period5/economics";
+import { economicsG12P6 } from "@/content/grade12/period6/economics";
 
 // Base subjects carry identity + metadata and Period 1 content.
 const BASE_SUBJECTS: SubjectContent[] = [
@@ -343,6 +344,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     economicsG12P3,
     economicsG12P4,
     economicsG12P5,
+    economicsG12P6,
   ],
   literature: [
     literatureG10P2,
