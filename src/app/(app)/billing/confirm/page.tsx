@@ -33,13 +33,12 @@ export default async function ConfirmPage({
       : "Confirming your Orange Money payment…";
 
   return (
-    <div className="mx-auto max-w-lg animate-fade-up">
-      <Link
-        href="/billing"
-        className="text-sm font-medium text-ink-muted transition hover:text-ink"
-      >
-        ← Plans
-      </Link>
+    <div className="max-w-lg">
+      <nav aria-label="Breadcrumb" className="crumbs">
+        <Link href="/billing">Your plan</Link>
+        <span className="sep" aria-hidden="true">/</span>
+        <span aria-current="page">Payment</span>
+      </nav>
       <div className="mt-4">
         <PaymentStatusPoller
           paymentId={payment.id}

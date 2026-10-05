@@ -33,7 +33,7 @@ export const PLANS: Record<Plan, PlanConfig> = {
     blurb: "Everything a teacher needs to try Nuvex for a term.",
     features: [
       "All lesson notes and plans",
-      "10 practice questions per topic",
+      "A practice quiz for every topic",
       "15 Nyvora messages per week",
     ],
   },
@@ -79,7 +79,7 @@ export const PLANS: Record<Plan, PlanConfig> = {
     features: [
       "Everything in Monthly",
       "4,200 Nyvora messages per year",
-      "Two months free versus monthly",
+      "Saves $22 compared with paying monthly",
     ],
   },
 };
