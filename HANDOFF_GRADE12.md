@@ -26,24 +26,30 @@ CONTENTS items as `##` sections inside one topic; strictly it should be split in
 topics (Map Reading; Industries of Liberia; Climate and Natural Vegetation; Regional
 Geography of Africa; Population and Settlement).
 
-## Improvement passes requested (started, not finished)
+## Improvement passes — status when paused
 
-These were started by parallel agents and cut off by the usage limit before any edits
-were saved, so they need to be run from scratch:
+All work below is committed. When resuming, also guard against saving half-finished
+files: never commit a file that has lost topics it had before (diff the `slug:` lists),
+and check that every quiz/test item's correct-answer text is unchanged unless the change
+is a deliberate fix.
 
-1. **Grade 11 Maths, English, History** — audit every period against the syllabus
-   (one topic per CONTENTS item), verify every fact/answer against an approved source, fix errors.
-2. **Grade 10, all subjects** — revise notes and fix every mistake (facts, arithmetic,
-   wrong `correctIndex`/answer keys, rendering issues), verified against approved sources.
-3. **UI/UX** — make the app look like a real, well-designed school product rather than
-   an AI template: textbook-style reading typography, calm palette, clear
-   grade → subject → period → topic navigation, good mobile layout, plain copy.
-   Keep the no-login demo flow working. Scope: `src/app/**`, `src/components/**`, styles.
-4. **Grade 11 other subjects** (everything except Maths/English/History) — check every
-   period matches the syllabus CONTENTS and fix accuracy.
-5. **Grade 12 Period 1 "book-style" rewrite** for Maths, English, Biology, Chemistry,
-   Physics — textbook-chapter prose (framing paragraph, explained build-up, full worked
-   steps, key-points summary), still sourced from approved sites, no hype or chatbot tone.
+1. **Grade 11 Maths, English, History** — Maths P1 done (rebuilt to 15 topics, one per
+   CONTENTS item; a wrong answer key fixed). **Remaining:** Maths P2–P6, English P1–P6,
+   History P1–P6.
+2. **Grade 10, all subjects (fix every mistake)** — done for Maths, Physics, Chemistry,
+   Biology, Economics, English, Geography, Literature: wrong/ambiguous items fixed and
+   answer positions balanced (most answers had been option B; the app does not shuffle).
+   **Remaining:** any Grade 10 subjects not listed (e.g. History, Civics, Agriculture,
+   Computer Science, French, PE) — check `ls src/content/grade10/period1/`.
+3. **UI/UX redesign** — first pass done: Source Serif/Source Sans typography, new MainNav
+   and SubjectMark, reworked dashboard/grade/subject/search/billing/quiz/unlock screens,
+   flatter cards, plain copy. **Remaining:** finish PlanCheckout, PaymentStatusPoller and the
+   payment confirm page; review the notes reader and topic pages; check mobile layout.
+4. **Grade 11 other subjects** — Biology P1, P2, P4 audited. **Remaining:** Biology P3, P5
+   (P5 protein-synthesis topic was being split), P6, and all of Chemistry, Physics,
+   Economics, Geography, Literature.
+5. **Grade 12 Period 1 book-style rewrite** — Maths done (8 topics); English partly
+   rewritten. **Remaining:** finish English, then Biology, Chemistry, Physics.
 
 ## How to build each file (repeat per file)
 
@@ -99,4 +105,4 @@ were saved, so they need to be run from scratch:
 - No `$…$` LaTeX (literal `$` for currency is fine).
 - File ends with `};` and exports the right `G12P<n>` name with correct `grade: 12` / `number: <n>`.
 
-When all 13 land and the build is green, Grade 12 is complete and the PR covers Grades 10–12.
+Grades 10, 11 and 12 all have every period built; the passes above are quality improvements.

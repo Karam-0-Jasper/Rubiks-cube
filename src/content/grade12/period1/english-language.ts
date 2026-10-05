@@ -333,248 +333,188 @@ The past perfect should be used only when it is needed to make clear which past 
       ],
     },
     {
-      // source: LibreTexts — Public Speaking (Lumen Learning), 06 Organizing and Outlining Your Speech (https://socialsci.libretexts.org/Bookshelves/Communication/Public_Speaking/Public_Speaking_(Lumen_Learning)/06:_Organizing_and_Outlining_Your_Speech)
+      // source: LibreTexts — Public Speaking (Lumen Learning), Ch. 6 Organizing and Outlining Your Speech, 6.4–6.9 (https://socialsci.libretexts.org/Bookshelves/Communication/Public_Speaking/Public_Speaking_(Lumen_Learning)/06:_Organizing_and_Outlining_Your_Speech); LibreTexts — It's About Them (Kim et al.), 8.3 The Topic, General Purpose, Specific Purpose, and Thesis (https://socialsci.libretexts.org/Bookshelves/Communication/Public_Speaking/Its_About_Them_-_Public_Speaking_in_the_21st_Century_(Kim_et_al.)/08:_Organizing_and_Outlining/8.03:_The_Topic_General_Purpose_Specific_Purpose_and_Thesis); LibreTexts — Stand up, Speak out, 9.3 Steps to Completing an Introduction and 11.2 Steps of a Conclusion (https://socialsci.libretexts.org/Bookshelves/Communication/Public_Speaking/Stand_up_Speak_out_-_The_Practice_and_Ethics_of_Public_Speaking/09:_Introductions_Matter-_How_to_Begin_a_Speech_Effectively/9.03:_Putting_It_Together-_Steps_to_Completing_an_Introduction); LibreTexts — Stand up, Speak out, 14.1 Four Methods of Delivery (https://socialsci.libretexts.org/Bookshelves/Communication/Public_Speaking/Stand_up_Speak_out_-_The_Practice_and_Ethics_of_Public_Speaking/14:_Delivering_the_Speech/14.01:_Four_Methods_of_Delivery)
       slug: "speech-writing",
-      title: "Speech Writing: Organising Introduction, Body and Conclusion",
+      title: "Speech Writing",
       objective:
-        "By the end of the topic, learners should be able to plan a speech around a clear central idea, organise the body into two to five main points using a suitable pattern, and write an introduction and conclusion that do their proper jobs.",
-      estimatedMinutes: 120,
-      notes: `## Why organisation matters
+        "By the end of the topic, learners should be able to recognise informative, persuasive and entertaining speeches and the four methods of delivery, write a specific purpose and thesis, organise a speech with an introduction, body and conclusion, and prepare an outline for an extemporaneous presentation.",
+      estimatedMinutes: 150,
+      notes: `A speech differs from an essay in one important respect: the audience hears it only once, at the speaker's pace, and cannot turn back a page. A speaker therefore has to make the purpose plain from the start, arrange the ideas in an order that is easy to follow, and remind the listeners where the speech has been and where it is going. Good speech writing is mostly a matter of planning these things before a single sentence of the final text is written.
 
-A well-organised speech is **clearer, more credible and easier to remember**. Disorganised speakers are seen as less credible, persuade less, and their audiences remember less. Plan the speech as an **outline** before writing it out.
+## Kinds of speeches by purpose
 
-## The three parts of a speech
+Every speech has a **general purpose** — the broad goal the speaker hopes to accomplish. There are three general purposes:
 
-A speech, like an essay, has three parts. A common guide is roughly **10% introduction, 80% body, 10% conclusion**.
-
-1. **Introduction** — should:
-   - **Get the audience's attention** (a question, story, striking fact or quotation).
-   - **Introduce the topic** and show its **relevance** to the listeners.
-   - **Establish the speaker's credibility**.
-   - **State the central idea (thesis)** and **preview the main points**.
-2. **Body** — presents and supports the **main points**:
-   - Aim for **at least two but no more than five** main points.
-   - Support each point with **facts, examples, statistics, quotations and explanation**.
-   - Join points with **transitions** so the speech flows.
-3. **Conclusion** — should:
-   - **Signal the end** ("In closing…").
-   - **Review / summarise the main points**.
-   - **Provide closure** with a memorable final thought that ties back to the introduction.
-
-## Patterns for arranging the body
-
-| Pattern | Orders points by | Good for |
+| General purpose | What the speaker does | Example topic |
 | --- | --- | --- |
-| Topical | equal sub-topics of the theme | informative speeches |
-| Chronological | time / sequence | histories, narratives |
-| Step-by-step | stages of a process | how-to speeches |
-| Spatial | location / place | describing a place or object |
-| Problem-solution | a problem then its solution | persuasive speeches |
-| Pro-con (cause-effect) | contrasting or linked ideas | weighing an issue |
+| To inform | Teaches the audience about a topic, increases their understanding and awareness, or gives new information about something they already know | How malaria is transmitted |
+| To persuade | Takes one side of an issue and argues for it, asking the audience to accept a belief or to take an action | Why young people should avoid drug and alcohol abuse |
+| To entertain | Gives a short speech of ceremony that connects the audience with a celebration or occasion | A toast at a graduation dinner |
+
+The general purpose guides the choice of material. An informative speech on teenage pregnancy explains facts and consequences; a persuasive speech on the same topic argues for a particular course of action.
+
+## Specific purpose and thesis
+
+**Specific purpose** — a single sentence that states what the audience will gain from the speech, or what will happen by the end of it. It combines the general purpose with the topic. A good specific purpose is audience-centred, agrees with the general purpose, addresses one main idea, and is realistic for the time available.
+
+- Informative: *To inform the audience about how corgis became household pets.*
+- Persuasive: *To persuade the audience that dog breeds deemed "dangerous" should not be excluded from living in cities.*
+
+**Thesis statement (central idea)** — a short, declarative sentence that states the purpose, intent or main idea of the speech. The specific purpose is written for the speaker's planning; the thesis is the sentence actually spoken to the audience. A good thesis expresses the specific purpose, provides a way of organising the main points, makes research more focused and helps delivery.
+
+## Kinds of speeches by method of delivery
+
+Speeches are also classified by how they are delivered. There are four methods:
+
+| Method | Description | Strength | Weakness |
+| --- | --- | --- | --- |
+| Impromptu | Spoken on the spur of the moment, as when someone is asked to "say a few words" | Spontaneous | Often disorganised; works best when brief and focused on one point |
+| Extemporaneous | Carefully planned and rehearsed, then spoken in a conversational manner from brief notes | Allows eye contact and lets the speaker judge how well the audience understands | Requires thorough preparation |
+| Manuscript | A fully scripted speech read word for word | Precise wording | Can lose contact with the audience |
+| Memorised | A written speech recited from memory | Exact wording without notes | Can sound flat if not well delivered |
+
+Note the difference between the two classifications. *Informative*, *persuasive* and *entertaining* describe what a speech is for; *extemporaneous* describes how it is delivered. An informative speech, for example, is often delivered extemporaneously.
+
+## The structure of a speech
+
+Every well-organised speech has three parts: an introduction, a body and a conclusion.
+
+\`\`\`svg The three parts of a speech and what each contains
+<svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three boxes: introduction, body, conclusion, joined by arrows">
+  <rect x="8" y="30" width="86" height="96" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+  <rect x="107" y="30" width="86" height="96" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <rect x="206" y="30" width="86" height="96" rx="8" fill="#fef3c7" stroke="#d97706"/>
+  <text x="18" y="22" font-size="11" fill="#2563eb">Introduction</text>
+  <text x="133" y="22" font-size="11" fill="#16a34a">Body</text>
+  <text x="219" y="22" font-size="11" fill="#d97706">Conclusion</text>
+  <text x="14" y="50" font-size="9" fill="#334155">attention-getter</text>
+  <text x="14" y="64" font-size="9" fill="#334155">link to topic</text>
+  <text x="14" y="78" font-size="9" fill="#334155">reasons to listen</text>
+  <text x="14" y="92" font-size="9" fill="#334155">credibility</text>
+  <text x="14" y="106" font-size="9" fill="#334155">thesis</text>
+  <text x="14" y="120" font-size="9" fill="#334155">preview</text>
+  <text x="113" y="56" font-size="9" fill="#334155">main point 1</text>
+  <text x="113" y="74" font-size="9" fill="#334155">transition</text>
+  <text x="113" y="92" font-size="9" fill="#334155">main point 2</text>
+  <text x="113" y="110" font-size="9" fill="#334155">transition …</text>
+  <text x="212" y="56" font-size="9" fill="#334155">signal the end</text>
+  <text x="212" y="74" font-size="9" fill="#334155">restate thesis</text>
+  <text x="212" y="92" font-size="9" fill="#334155">review points</text>
+  <text x="212" y="110" font-size="9" fill="#334155">clincher</text>
+  <line x1="94" y1="78" x2="105" y2="78" stroke="#334155" stroke-width="1.5"/>
+  <line x1="193" y1="78" x2="204" y2="78" stroke="#334155" stroke-width="1.5"/>
+</svg>
+\`\`\`
+
+## The introduction
+
+An effective introduction normally contains six steps:
+
+1. **Attention-getter** — a device that captures the audience's interest at the very start: a reference to the audience or the occasion, a quotation, a current or historical event, an anecdote, a startling statement, a question, humour, or a personal reference.
+2. **Link to topic** — the shortest part, which shows how the attention-getter relates to the topic. After an anecdote about a girl who fell into an open drain while texting, a speaker might say: *This story illustrates a problem that many people face in today's world.*
+3. **Reasons to listen** — an explanation of why the topic matters to this audience, answering the listener's unspoken question, "Why should I care?"
+4. **Credibility** — evidence that the speaker is competent (knows the subject), trustworthy (uses reputable sources) and cares about the audience's interests.
+5. **Thesis statement** — the central idea of the speech, stated plainly.
+6. **Preview** — a brief outline of the main points to come, which works like a road sign listing the places ahead.
+
+## The body
+
+The body develops the thesis in a small number of **main points**, each supported by sub-points, examples, facts or explanations. Between main points the speaker uses **transitions** (or signposts) — short statements such as *Now that we have seen the causes of the problem, let us turn to its effects* — so that listeners always know where they are.
+
+The main points should follow a recognisable **organisational pattern**:
+
+| Pattern | How the main points are arranged | Suitable for |
+| --- | --- | --- |
+| Chronological | In the order in which events happened | History of an event; stages of a life |
+| Step-by-step | The steps of a process, in order | "How-to" and demonstration speeches |
+| Spatial | Following a direction through a place or object | A tour of a building; regions of a country |
+| Topical | As separate subtopics of the subject | Informative speeches on several aspects of one topic |
+| Cause–effect | Causes in one point, effects in the other | Causes and effects of drug abuse |
+| Problem–solution | The problem and its extent, then a workable solution | Persuasive speeches |
+
+The problem–solution pattern suits persuasive speeches well, but it carries a risk: if the proposed solution does not convince the audience, the whole speech falls flat. An extended form, problem–cause–solution, adds a middle point explaining why the problem exists.
+
+## The conclusion
+
+A strong conclusion does four things:
+
+1. **Signals the end**, often with words such as *In conclusion*, *In summary* or *To conclude*.
+2. **Restates the thesis**, reminding the audience of the speech's main idea.
+3. **Reviews the main points.** A speaker who previews the points in the introduction, moves clearly between them in the body and reviews them in the conclusion greatly increases the chance that listeners will remember them.
+4. **Ends with a clincher** — a memorable final line, since these are the last words the audience will hear.
 
 ## Outlining the speech
 
-- Build a **preparation outline** in **full sentences** with **uniform indentation**: label the introduction, each main point (I, II, III), sub-points (A, B, C), the conclusion, and a bibliography of sources.
-- Reduce it to a **speaking outline** of **key phrases and reminders** for delivery.
-
-## Kinds of speeches
-
-- **Informative** — teaches or explains.
-- **Persuasive** — argues a position and moves the audience to agree or act.
-- **Entertaining** — amuses, often for a special occasion.
-- **Extemporaneous** — planned and outlined but delivered from brief notes, not read word for word.
+Before delivery, the speech is planned in a **preparation outline**. It has the central idea written at the top, uses full sentences, labels the introduction, main points, transitions and conclusion, shows main points and sub-points by consistent indentation, and ends with a bibliography of sources. For an extemporaneous delivery, the preparation outline is then reduced to a brief **speaking outline** of key words that the speaker can glance at while keeping eye contact.
 
 ## Summary
 
-- Organise around a **central idea**; outline before writing.
-- **Introduction:** attention, topic, relevance, credibility, thesis, preview.
-- **Body:** 2-5 main points, supported and linked by transitions, in a clear pattern.
-- **Conclusion:** signal the end, review the points, give closure.`,
-      workedExample: `**Task.** Plan a short persuasive speech: "Students should read a newspaper daily."
+- The three general purposes are to inform, to persuade and to entertain.
+- The specific purpose states what the audience will gain; the thesis is the central idea spoken to the audience.
+- The four methods of delivery are impromptu, extemporaneous, manuscript and memorised.
+- The introduction has six steps: attention-getter, link, reasons to listen, credibility, thesis and preview.
+- The body uses a clear organisational pattern and transitions between main points.
+- The conclusion signals the end, restates the thesis, reviews the main points and closes with a clincher.`,
+      workedExample: `**Task.** Prepare the outline of a five-minute persuasive speech on drug and alcohol abuse among young people, to be delivered extemporaneously at a school assembly.
 
-**Central idea:** Reading a newspaper every day makes students better informed, better writers and better citizens.
+**Step 1 — Decide the general and specific purpose.**
+General purpose: to persuade.
+Specific purpose: *To persuade my fellow students to refuse drugs and alcohol and to help friends who are at risk.*
 
-**Introduction**
-- Attention: *Imagine walking into an interview and being asked about today's news — and having nothing to say.*
-- Relevance + credibility: as fellow students preparing for exams and work, we all need this.
-- Thesis + preview: *A daily newspaper habit helps in three ways — knowledge, language and citizenship.*
+**Step 2 — Choose an organisational pattern.** The speech asks the audience to act, so the problem–solution pattern fits.
 
-**Body (topical pattern, three main points)**
-1. **Knowledge** — newspapers keep readers up to date on national and world events (support: examples).
-2. **Language** — regular reading builds vocabulary and models good writing (support: how it aids the WASSCE essay).
-3. **Citizenship** — informed students make better decisions and take part in their communities.
-- Transitions: *First… Second… Finally…*
+**Step 3 — Write the thesis.** *Drug and alcohol abuse is damaging the health and education of young people in our community, and each of us can help to stop it.*
 
-**Conclusion**
-- Signal + review: *In closing, a daily newspaper builds knowledge, language and citizenship.*
-- Closure: *Pick up a paper tomorrow — your future self will thank you.*
+**Step 4 — Plan the introduction.**
+1. Attention-getter: a short anecdote about a student whose grades collapsed after he began using drugs (a composite example, not a real person).
+2. Link to topic: *His story is not unusual among young people today.*
+3. Reasons to listen: *Every student here has friends who face this pressure.*
+4. Credibility: *I have read reports from the Ministry of Health and spoken with our school counsellor.*
+5. Thesis (as in Step 3).
+6. Preview: *First, I will describe the problem; then I will suggest what we can do about it.*
 
-**Why it works:** it has a clear central idea, an introduction that does its four jobs, three supported main points joined by transitions, and a conclusion that reviews and closes by echoing the opening.`,
+**Step 5 — Plan the body.**
+Main point 1 (problem): how drug and alcohol abuse affects health, school work and families.
+Transition: *Knowing the damage, what can we do?*
+Main point 2 (solution): refusing offers, choosing friends wisely, reporting dealers to trusted adults, and supporting friends who need help.
+
+**Step 6 — Plan the conclusion.**
+1. Signal: *In conclusion…*
+2. Restate the thesis.
+3. Review: the harm drug abuse causes, and the steps each of us can take.
+4. Clincher: a direct appeal, such as *The choice you make today is the future you live tomorrow.*
+
+**Step 7 — Prepare for delivery.** Reduce the full-sentence outline to a speaking outline of key words on a small card, and rehearse aloud so that the speech sounds conversational rather than read.
+
+**Result.** The outline has a clear purpose, a thesis that previews a problem–solution structure, an introduction with all six steps, two main points joined by a transition, and a conclusion with all four elements.`,
       quiz: [
-        {
-          prompt: "A well-organised speech is…",
-          options: ["clearer, more credible and easier to remember", "always longer", "read word for word", "free of a thesis"],
-          correctIndex: 0,
-          explanation: "Organisation improves clarity, credibility and memorability.",
-        },
-        {
-          prompt: "The three parts of a speech are…",
-          options: ["introduction, body, conclusion", "title, index, notes", "thesis, quotation, list", "beginning, verbs, end"],
-          correctIndex: 0,
-          explanation: "Like an essay: introduction, body and conclusion.",
-        },
-        {
-          prompt: "Roughly what share of a speech is the body?",
-          options: ["about 80%", "about 10%", "about 50%", "about 25%"],
-          correctIndex: 0,
-          explanation: "A common guide: 10% intro, 80% body, 10% conclusion.",
-        },
-        {
-          prompt: "Which is a job of the introduction?",
-          options: ["get the audience's attention", "review the main points", "provide closure", "give the bibliography"],
-          correctIndex: 0,
-          explanation: "The introduction grabs attention (among other jobs).",
-        },
-        {
-          prompt: "The introduction should preview the…",
-          options: ["main points", "conclusion word for word", "bibliography", "delivery notes"],
-          correctIndex: 0,
-          explanation: "It states the thesis and previews the main points.",
-        },
-        {
-          prompt: "How many main points should a speech usually have?",
-          options: ["at least two but no more than five", "exactly one", "at least ten", "as many as possible"],
-          correctIndex: 0,
-          explanation: "Two to five main points is the recommended range.",
-        },
-        {
-          prompt: "Main points in the body are supported with…",
-          options: ["facts, examples, statistics and quotations", "only opinions", "the title", "the outline labels"],
-          correctIndex: 0,
-          explanation: "Support each point with evidence and explanation.",
-        },
-        {
-          prompt: "Words that link one point to the next are called…",
-          options: ["transitions", "captions", "footnotes", "headings"],
-          correctIndex: 0,
-          explanation: "Transitions make the speech flow between points.",
-        },
-        {
-          prompt: "Which is a job of the conclusion?",
-          options: ["review the main points and give closure", "introduce a new argument", "establish credibility for the first time", "list references only"],
-          correctIndex: 0,
-          explanation: "The conclusion signals the end, reviews and provides closure.",
-        },
-        {
-          prompt: "The 'topical' pattern arranges the body by…",
-          options: ["equal sub-topics of the theme", "time", "location", "problem then solution"],
-          correctIndex: 0,
-          explanation: "Topical order divides the theme into equal sub-topics.",
-        },
-        {
-          prompt: "Which pattern arranges points by time or sequence?",
-          options: ["chronological", "spatial", "topical", "pro-con"],
-          correctIndex: 0,
-          explanation: "Chronological order follows time.",
-        },
-        {
-          prompt: "Which pattern suits a 'how-to' speech?",
-          options: ["step-by-step", "spatial", "pro-con", "problem-solution"],
-          correctIndex: 0,
-          explanation: "Step-by-step follows the stages of a process.",
-        },
-        {
-          prompt: "The problem-solution pattern is especially good for…",
-          options: ["persuasive speeches", "describing a place", "listing dates", "reading a poem"],
-          correctIndex: 0,
-          explanation: "It states a problem and argues for a solution.",
-        },
-        {
-          prompt: "A preparation outline is written in…",
-          options: ["full sentences with uniform indentation", "single words only", "no order", "paragraphs without labels"],
-          correctIndex: 0,
-          explanation: "The preparation outline uses full sentences and clear labels.",
-        },
-        {
-          prompt: "A speaking outline uses…",
-          options: ["key phrases and reminders", "the full script", "no notes at all", "only the bibliography"],
-          correctIndex: 0,
-          explanation: "The speaking outline is brief cues for delivery.",
-        },
-        {
-          prompt: "A speech that teaches or explains is…",
-          options: ["informative", "persuasive", "entertaining", "extemporaneous"],
-          correctIndex: 0,
-          explanation: "Informative speeches teach or explain.",
-        },
-        {
-          prompt: "A speech that argues a position and moves the audience to act is…",
-          options: ["persuasive", "informative", "entertaining", "a summary"],
-          correctIndex: 0,
-          explanation: "Persuasive speeches argue and call to action.",
-        },
-        {
-          prompt: "A speech delivered from brief notes rather than read word for word is…",
-          options: ["extemporaneous", "manuscript", "memorised only", "impromptu with no plan"],
-          correctIndex: 0,
-          explanation: "Extemporaneous speaking is planned but delivered from notes.",
-        },
-        {
-          prompt: "Establishing that you are trustworthy on the topic is called building…",
-          options: ["credibility", "closure", "a transition", "a bibliography"],
-          correctIndex: 0,
-          explanation: "The introduction should establish the speaker's credibility.",
-        },
-        {
-          prompt: "A strong conclusion often ties back to the…",
-          options: ["introduction", "bibliography", "next speech", "outline labels"],
-          correctIndex: 0,
-          explanation: "Echoing the opening gives a sense of closure.",
-        },
+        { prompt: "What are the three general purposes of a speech?", options: ["To narrate, describe and argue", "To inform, persuade and entertain", "To introduce, develop and conclude", "To read, memorise and improvise"], correctIndex: 1, explanation: "Every speech aims broadly to inform, to persuade or to entertain." },
+        { prompt: "A speaker explains to farmers how to test soil before planting. The general purpose is", options: ["to persuade", "to entertain", "to inform", "to memorise"], correctIndex: 2, explanation: "The speaker is teaching the audience something, which is informing." },
+        { prompt: "A speaker urges the community to vote for a new health centre. The general purpose is", options: ["to inform", "to persuade", "to entertain", "to narrate"], correctIndex: 1, explanation: "The speaker takes a side and asks the audience to act." },
+        { prompt: "Which method of delivery uses brief notes and a conversational manner after careful rehearsal?", options: ["Impromptu", "Manuscript", "Memorised", "Extemporaneous"], correctIndex: 3, explanation: "Extemporaneous speaking is planned and rehearsed but delivered conversationally from notes." },
+        { prompt: "You are suddenly asked to 'say a few words' at a farewell party. This is", options: ["an impromptu speech", "a manuscript speech", "a memorised speech", "an extemporaneous speech"], correctIndex: 0, explanation: "An impromptu speech is given on the spur of the moment." },
+        { prompt: "When is a manuscript speech most useful?", options: ["When the message must be delivered in precise words", "When the speaker has no time to prepare", "When the speaker wants maximum eye contact", "At informal parties"], correctIndex: 0, explanation: "Reading a full script guarantees exact wording, for example in an official statement." },
+        { prompt: "Why is 'extemporaneous' not a general purpose like 'informative'?", options: ["It describes how a speech is delivered, not what it is for", "It is a kind of persuasive speech", "It only applies to entertaining speeches", "It means the speech is memorised"], correctIndex: 0, explanation: "Inform, persuade and entertain are purposes; extemporaneous is a delivery method." },
+        { prompt: "A specific purpose statement should", options: ["contain several unrelated ideas", "be audience-centred and focus on one main idea", "be the first sentence the audience hears", "avoid mentioning the general purpose"], correctIndex: 1, explanation: "A good specific purpose is audience-centred, agrees with the general purpose, addresses one idea and is realistic." },
+        { prompt: "What is a thesis statement in a speech?", options: ["A list of sources", "A short declarative sentence stating the main idea of the speech", "The first joke of the speech", "The final sentence only"], correctIndex: 1, explanation: "The thesis states the purpose, intent or main idea of the speech." },
+        { prompt: "Which is the first step of an effective introduction?", options: ["Preview", "Thesis", "Attention-getter", "Credibility"], correctIndex: 2, explanation: "The attention-getter captures interest at the very start." },
+        { prompt: "Which part of the introduction answers the listener's question 'Why should I care?'", options: ["Link to topic", "Reasons to listen", "Preview", "Clincher"], correctIndex: 1, explanation: "Reasons to listen show why the topic matters to this audience." },
+        { prompt: "A speaker says, 'First I will describe the causes, then the effects, and finally the solutions.' This is", options: ["an attention-getter", "a preview", "a clincher", "a citation"], correctIndex: 1, explanation: "A preview outlines the main points to come." },
+        { prompt: "Which three qualities help a speaker appear credible?", options: ["Speed, volume and humour", "Competence, trustworthiness and caring/goodwill", "Length, rhythm and rhyme", "Height, dress and accent"], correctIndex: 1, explanation: "Credibility rests on competence, trustworthiness and goodwill towards the audience." },
+        { prompt: "A speech about the history of Liberian independence, told in the order events occurred, uses which pattern?", options: ["Spatial", "Chronological", "Problem–solution", "Cause–effect"], correctIndex: 1, explanation: "Chronological organisation follows the order in which events took place." },
+        { prompt: "Which pattern is particularly suitable for a persuasive speech?", options: ["Spatial", "Step-by-step", "Problem–solution", "Chronological"], correctIndex: 2, explanation: "Presenting a problem and then a workable solution suits persuasion." },
+        { prompt: "A guided description of a new hospital from the entrance to the top floor uses", options: ["spatial organisation", "topical organisation", "cause–effect organisation", "chronological organisation"], correctIndex: 0, explanation: "Spatial organisation follows a direction through a place." },
+        { prompt: "What is the purpose of transitions between main points?", options: ["To fill time", "To show listeners where the speech is going and connect the ideas", "To introduce new topics unrelated to the thesis", "To end the speech"], correctIndex: 1, explanation: "Transitions keep the audience oriented as the speaker moves from point to point." },
+        { prompt: "Which list gives the four elements of a strong conclusion in order?", options: ["Attention-getter, thesis, preview, credibility", "Signal the end, restate the thesis, review main points, clincher", "Preview, body, transition, joke", "Bibliography, outline, thesis, title"], correctIndex: 1, explanation: "A conclusion signals the end, restates the thesis, reviews the points and closes memorably." },
+        { prompt: "Why does a speaker review the main points in the conclusion?", options: ["To add new evidence", "To increase the chance the audience remembers them", "To lengthen the speech", "To introduce the next speaker"], correctIndex: 1, explanation: "Preview, clear development and review together help listeners retain the main points." },
+        { prompt: "What is a speaking outline?", options: ["A full-sentence plan with bibliography", "A brief set of key-word notes used during delivery", "The text of a manuscript speech", "A list of audience members"], correctIndex: 1, explanation: "The full preparation outline is reduced to key words for extemporaneous delivery." },
       ],
       test: [
-        {
-          type: "SHORT_ANSWER",
-          prompt: "List the three parts of a speech and state the main job of each.",
-          answerKey:
-            "Introduction — gain attention, introduce topic/relevance/credibility, state thesis and preview points; body — present and support 2-5 main points with transitions; conclusion — signal the end, review points, give closure. Award a mark per part correctly described.",
-          marks: 3,
-        },
-        {
-          type: "MULTIPLE_CHOICE",
-          prompt: "Which task belongs to the conclusion of a speech?",
-          options: [
-            "Reviewing the main points and providing closure",
-            "Getting the audience's attention for the first time",
-            "Introducing a brand-new main point",
-            "Establishing the speaker's credibility",
-          ],
-          correctIndex: 0,
-          answerKey: "The conclusion reviews the points and provides closure; the others belong to the introduction or body.",
-          marks: 2,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Name two patterns for organising the body of a speech and say what each orders points by.",
-          answerKey:
-            "Any two of: topical (equal sub-topics), chronological (time), step-by-step (stages of a process), spatial (location), problem-solution, pro-con/cause-effect. Award a mark per correct pattern with its ordering.",
-          marks: 2,
-        },
-        {
-          type: "SHORT_ANSWER",
-          prompt: "Give three things a good introduction should do.",
-          answerKey:
-            "Any three of: get attention; introduce the topic and show relevance; establish credibility; state the central idea/thesis; preview the main points. Award a mark each, up to three.",
-          marks: 3,
-        },
-        {
-          type: "ESSAY",
-          prompt:
-            "Plan a short speech on a topic of your choice. State your central idea, then outline an introduction (with its jobs), a body of two or three supported main points in a named pattern, and a conclusion. Explain why organisation makes a speech effective.",
-          answerKey:
-            "Award marks for: a clear central idea; an introduction that gains attention and previews the points; two or three main points with support and transitions in a stated pattern; a conclusion that reviews and gives closure; and an explanation that organisation improves clarity, credibility and memorability.",
-          marks: 5,
-        },
+        { type: "MULTIPLE_CHOICE", prompt: "Which pair correctly matches a speech with its general purpose?", options: ["A toast at a wedding — to persuade", "A talk explaining how the kidneys work — to inform", "An appeal to stop gender-based violence — to entertain", "A demonstration of first aid — to entertain"], correctIndex: 1, answerKey: "B. Explaining how the kidneys work teaches the audience; it is informative. A is entertaining, C is persuasive, D is informative.", marks: 2 },
+        { type: "SHORT_ANSWER", prompt: "Write a specific purpose and a thesis statement for an informative speech on the causes of teenage pregnancy.", answerKey: "Specific purpose that combines 'to inform' with the topic and focuses on one idea, e.g. 'To inform my classmates about the main causes of teenage pregnancy in our community' (2 marks). Thesis: a single declarative sentence giving the main idea and suggesting the main points, e.g. 'Teenage pregnancy is driven mainly by poverty, lack of information and peer pressure' (2 marks).", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "Compare the four methods of speech delivery, giving one advantage and one disadvantage of each.", answerKey: "Impromptu: spontaneous / often disorganised. Extemporaneous: conversational with eye contact / needs much preparation. Manuscript: precise wording / can lose contact with the audience. Memorised: exact words without notes / may sound flat. (2 marks each)", marks: 8 },
+        { type: "SHORT_ANSWER", prompt: "List the six steps of a speech introduction and explain the purpose of any two of them.", answerKey: "Attention-getter, link to topic, reasons to listen, credibility, thesis, preview (3 marks). Clear explanation of two steps, e.g. the attention-getter captures interest; the preview tells the audience the main points to come (2 marks).", marks: 5 },
+        { type: "ESSAY", prompt: "Write a complete persuasive speech of about 400 words, to be delivered at your school, on ONE of these topics: risky behaviours among teenagers; gender-based violence; drug and alcohol abuse. Your speech must have an introduction with all six steps, a body organised in a clear pattern with transitions, and a conclusion with all four elements.", answerKey: "Introduction: attention-getter, link, reasons to listen, credibility, thesis, preview (4). Body: clear organisational pattern (e.g. problem–solution) with developed main points and transitions (6). Conclusion: signal, restated thesis, review, clincher (4). Persuasive purpose sustained; suitable tone for a school audience (3). Language accuracy and fluency (3).", marks: 20 },
       ],
     },
     {
