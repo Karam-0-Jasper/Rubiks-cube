@@ -301,31 +301,18 @@ Viruses are grouped mainly by:
         { type: "ESSAY", prompt: "Discuss how viral diseases spread and the main methods used to prevent and control them, with examples relevant to Liberia.", answerKey: "Spread: droplets/airborne (flu, measles), faecal–oral (polio), body fluids/sex/blood (HIV, Ebola, hepatitis B), animal bite (rabies) (up to 6). Prevention: vaccination, hygiene, clean water/sanitation, safe sex and screened blood, isolation/quarantine, animal vaccination; note antibiotics do not work on viruses (up to 6). Local links e.g. Ebola isolation, polio and measles vaccination, HIV prevention (up to 3).", marks: 15 },
       ],
     },
-    // source: OpenStax — Biology 2e, 21.2 Virus Infections and Hosts (https://openstax.org/books/biology-2e/pages/21-2-virus-infections-and-hosts)
+    // source: LibreTexts — Microbiology (OpenStax), 6.2 The Viral Life Cycle (https://bio.libretexts.org/Bookshelves/Microbiology/Microbiology_(OpenStax)/06:_Acellular_Pathogens/6.02:_The_Viral_Life_Cycle)
     {
       slug: "life-cycle-of-a-virus",
-      title: "Life Cycle of a Virus and the Bacteriophage",
+      title: "Life Cycle of a Virus: Lytic and Lysogenic Cycles",
       objective:
-        "By the end of the topic, learners should be able to describe the structure of a bacteriophage and outline the steps of the lytic and lysogenic cycles.",
+        "By the end of the topic, learners should be able to outline the steps of the lytic cycle, describe the lysogenic cycle and explain how a prophage is induced to enter the lytic cycle.",
       estimatedMinutes: 120,
-      notes: `## The bacteriophage
+      notes: `## Viruses reproduce only inside host cells
 
-- A **bacteriophage** (phage) is a virus that infects **bacteria**.
-- It has a **head-and-tail** structure:
-  - an **icosahedral head (capsid)** containing the DNA;
-  - a **tail sheath** and **tail fibres** used to attach to and inject DNA into the bacterium.
-
-\`\`\`svg Structure of a bacteriophage
-<svg viewBox="0 0 200 200" role="img" aria-label="Bacteriophage with head, tail sheath and tail fibres">
-  <polygon points="100,15 130,35 130,70 100,90 70,70 70,35" fill="#bfdbfe" fill-opacity="0.5" stroke="currentColor"/>
-  <text x="150" y="50" font-size="9" fill="currentColor">head (DNA)</text>
-  <rect x="93" y="90" width="14" height="45" fill="#93c5fd" fill-opacity="0.6" stroke="currentColor"/>
-  <text x="150" y="115" font-size="9" fill="currentColor">tail sheath</text>
-  <rect x="80" y="135" width="40" height="8" fill="none" stroke="currentColor"/>
-  <g stroke="currentColor"><line x1="82" y1="143" x2="70" y2="175"/><line x1="95" y1="143" x2="90" y2="178"/><line x1="105" y1="143" x2="110" y2="178"/><line x1="118" y1="143" x2="130" y2="175"/></g>
-  <text x="130" y="185" font-size="9" fill="currentColor">tail fibres</text>
-</svg>
-\`\`\`
+- A virus has no metabolism of its own; it must enter a host cell and use the host's machinery to make new virus particles.
+- The best-studied life cycles are those of **bacteriophages** (phages) — viruses that infect bacteria, e.g. the T-even phages of *E. coli*.
+- **Virulent phages** reproduce only by the lytic cycle; **temperate phages** (e.g. phage lambda) can follow either the lytic or the lysogenic cycle.
 
 ## Two life cycles
 
@@ -333,19 +320,26 @@ A bacteriophage can reproduce by the **lytic cycle** or, for **temperate phages*
 
 ## The lytic cycle (five steps)
 
-1. **Attachment (adsorption)** — the phage tail fibres lock onto specific receptors on the bacterial cell wall.
-2. **Penetration (injection)** — the phage injects its **DNA** into the bacterium; the empty capsid stays outside.
-3. **Replication (biosynthesis)** — the phage DNA takes over the host machinery to make many copies of viral DNA and proteins.
-4. **Assembly (maturation)** — new phage particles are built from the parts.
-5. **Release (lysis)** — the host cell **bursts (lyses)**, releasing many new phages that infect other bacteria.
+1. **Attachment (adsorption)** — the phage binds to specific receptors on the bacterial surface (e.g. lipopolysaccharides and the OmpC protein of *E. coli*).
+2. **Penetration (injection)** — the tail sheath contracts and acts like a **hypodermic needle**, injecting the viral genome through the cell wall and membrane; the empty capsid stays outside.
+3. **Biosynthesis (replication)** — viral enzymes (endonucleases) degrade the bacterial chromosome; the virus hijacks the host to copy its genome and make viral proteins (capsomeres, sheath, base plates, tail fibres, enzymes).
+4. **Maturation (assembly)** — the new parts are assembled into complete new virions.
+5. **Release (lysis)** — phage proteins such as **holin** and **lysozyme** break down the cell wall, the host cell bursts and the mature phages escape to infect other bacteria.
 
 The lytic cycle **kills the host cell** quickly.
 
 ## The lysogenic cycle
 
-- The phage DNA **inserts into the host chromosome** and becomes a **prophage**.
+- The phage genome **integrates into the bacterial chromosome** and becomes part of the host; the integrated genome is called a **prophage**.
+- A bacterium carrying a prophage is a **lysogen**; the condition is called **lysogeny**.
 - The prophage is **copied every time the bacterium divides**, so it is passed to all daughter cells **without killing them**.
-- A **stress trigger** (starvation, chemicals, UV light) can make the prophage **excise** (leave the chromosome) and switch into the **lytic cycle**.
+- **Induction** — environmental stress (e.g. starvation, toxic chemicals, UV light) causes the prophage to be **excised** (cut out) from the host chromosome, and the phage then enters the **lytic cycle**.
+
+## Transduction (a consequence of phage life cycles)
+
+- **Transduction** — transfer of bacterial DNA from one bacterium to another by a phage.
+- **Generalized transduction** — during the lytic cycle a random piece of host DNA is packaged into a phage head by mistake.
+- **Specialized transduction** — when a prophage is excised it sometimes takes a piece of neighbouring bacterial DNA with it.
 
 | Feature | Lytic cycle | Lysogenic cycle |
 | --- | --- | --- |
@@ -378,9 +372,9 @@ The lytic cycle **kills the host cell** quickly.
 
 **Answer:** Case 1 is the lytic cycle (attachment → penetration → replication → assembly → lysis); Case 2 is the lysogenic cycle, where the prophage stays dormant until a trigger switches it to the lytic cycle.`,
       quiz: [
-        { prompt: "A bacteriophage is a virus that infects", options: ["bacteria", "humans", "plants", "fungi"], correctIndex: 0, explanation: "'Phage' means it attacks bacteria." },
-        { prompt: "The head of a bacteriophage contains", options: ["DNA", "cytoplasm", "ribosomes", "chloroplasts"], correctIndex: 0, explanation: "The icosahedral head holds the viral DNA." },
-        { prompt: "A phage attaches to a bacterium using its", options: ["tail fibres", "head", "nucleus", "flagellum"], correctIndex: 0, explanation: "Tail fibres bind specific receptors." },
+        { prompt: "A bacterium that carries a prophage is called a", options: ["lysogen", "virion", "capsomere", "phagocyte"], correctIndex: 0, explanation: "A bacterium with an integrated prophage is a lysogen." },
+        { prompt: "Phages that reproduce ONLY by the lytic cycle are called", options: ["virulent phages", "temperate phages", "prophages", "lysogens"], correctIndex: 0, explanation: "Virulent phages always lyse their hosts; temperate phages can also become lysogenic." },
+        { prompt: "Which phage proteins break down the bacterial wall at release?", options: ["holin and lysozyme", "amylase and lipase", "insulin and glucagon", "keratin and collagen"], correctIndex: 0, explanation: "Holin and lysozyme disrupt the cell wall so the cell lyses." },
         { prompt: "During penetration, a bacteriophage injects its", options: ["DNA only", "whole capsid", "envelope", "ribosomes"], correctIndex: 0, explanation: "Only the DNA enters; the capsid stays outside." },
         { prompt: "The first step of the lytic cycle is", options: ["attachment", "lysis", "assembly", "release"], correctIndex: 0, explanation: "Attachment (adsorption) comes first." },
         { prompt: "The lytic cycle ends with", options: ["lysis of the host cell", "the cell surviving forever", "photosynthesis", "budding"], correctIndex: 0, explanation: "The cell bursts, releasing new phages." },
@@ -393,14 +387,14 @@ The lytic cycle **kills the host cell** quickly.
         { prompt: "A temperate phage is one that can", options: ["enter the lysogenic cycle", "only kill cells instantly", "photosynthesise", "live outside a host permanently"], correctIndex: 0, explanation: "Temperate phages can lie dormant as prophages." },
         { prompt: "In the lysogenic cycle the host cell", options: ["survives and passes on the prophage", "bursts immediately", "stops dividing", "becomes a virus"], correctIndex: 0, explanation: "The cell survives and its daughters carry the prophage." },
         { prompt: "'Lysis' means", options: ["bursting of the host cell", "growth of the cell", "budding of a virus", "attachment"], correctIndex: 0, explanation: "Lysis is the rupture that releases phages." },
-        { prompt: "Which structure injects the phage DNA into the bacterium?", options: ["the tail sheath and fibres", "the head", "the envelope", "the nucleus"], correctIndex: 0, explanation: "The tail apparatus drives DNA into the cell." },
+        { prompt: "Transfer of bacterial DNA from one bacterium to another by a phage is called", options: ["transduction", "transcription", "translation", "transpiration"], correctIndex: 0, explanation: "Phage-mediated DNA transfer is transduction." },
         { prompt: "The correct order of the lytic cycle is", options: ["attachment, penetration, replication, assembly, release", "release, assembly, replication, penetration, attachment", "penetration, attachment, release, assembly, replication", "assembly, release, attachment, penetration, replication"], correctIndex: 0, explanation: "This is the standard five-step sequence." },
         { prompt: "After the prophage excises from the chromosome, it enters the", options: ["lytic cycle", "lysogenic cycle again", "resting state", "photosynthetic stage"], correctIndex: 0, explanation: "Excision leads to lytic replication." },
         { prompt: "New phages produced in the lytic cycle go on to", options: ["infect other bacteria", "become bacteria", "die instantly", "make food"], correctIndex: 0, explanation: "Released phages infect neighbouring cells." },
         { prompt: "Which is TRUE of the lysogenic cycle?", options: ["The virus can stay dormant a long time", "The cell always bursts within minutes", "No viral DNA is present", "The virus makes its own ribosomes"], correctIndex: 0, explanation: "The prophage can remain hidden for many generations." },
       ],
       test: [
-        { type: "SHORT_ANSWER", prompt: "Describe the structure of a bacteriophage.", answerKey: "An icosahedral head (capsid) containing DNA, a tail sheath, and tail fibres used to attach to and inject DNA into a bacterium. 1 mark per correct part (max 3).", marks: 3 },
+        { type: "SHORT_ANSWER", prompt: "Explain what is meant by induction of a prophage.", answerKey: "Induction is the excision (cutting out) of the prophage from the host chromosome, triggered by environmental stress such as UV light, chemicals or starvation, after which the phage enters the lytic cycle. 1 mark excision, 1 mark trigger, 1 mark switch to lytic.", marks: 3 },
         { type: "SHORT_ANSWER", prompt: "List the five steps of the lytic cycle in order.", answerKey: "Attachment (adsorption); penetration (injection of DNA); replication (biosynthesis); assembly (maturation); release (lysis). Full marks require all five in order.", marks: 5 },
         { type: "MULTIPLE_CHOICE", prompt: "In the lysogenic cycle, the integrated viral DNA is called a", options: ["prophage", "capsid", "virion", "plasmid"], correctIndex: 0, answerKey: "Integrated phage DNA is a prophage. Option A.", marks: 3 },
         { type: "SHORT_ANSWER", prompt: "Give two differences between the lytic and lysogenic cycles.", answerKey: "Any two: lytic kills/lyses host, lysogenic host survives; lytic makes new phages at once, lysogenic inserts prophage copied with host; lytic is fast, lysogenic can stay dormant. 2 marks each.", marks: 4 },

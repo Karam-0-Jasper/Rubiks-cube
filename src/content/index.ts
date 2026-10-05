@@ -135,6 +135,7 @@ import { historyG12P2 } from "@/content/grade12/period2/history";
 import { historyG12P3 } from "@/content/grade12/period3/history";
 import { historyG12P4 } from "@/content/grade12/period4/history";
 import { historyG12P5 } from "@/content/grade12/period5/history";
+import { historyG12P6 } from "@/content/grade12/period6/history";
 
 // --- Grade 12 (PeriodContent only; merged onto the base subject by slug) ---
 import { biologyG12P1 } from "@/content/grade12/period1/biology";
@@ -323,6 +324,7 @@ const EXTRA_PERIODS: Record<string, PeriodContent[]> = {
     historyG12P3,
     historyG12P4,
     historyG12P5,
+    historyG12P6,
   ],
   economics: [
     economicsG10P2,
