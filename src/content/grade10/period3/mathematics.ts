@@ -47,7 +47,7 @@ When a **transversal** crosses two **parallel** lines, special angle pairs are f
   <line x1="20" y1="140" x2="300" y2="140" stroke="currentColor" stroke-width="1.5"/>
   <line x1="80" y1="30" x2="230" y2="180" stroke="currentColor" stroke-width="1.5"/>
   <text x="140" y="62" font-size="14" fill="currentColor">a</text>
-  <text x="176" y="132" font-size="14" fill="currentColor">b</text>
+  <text x="198" y="132" font-size="14" fill="currentColor">b</text>
   <text x="300" y="66" font-size="11" fill="currentColor">line 1</text>
   <text x="300" y="136" font-size="11" fill="currentColor">line 2</text>
 </svg>
@@ -134,13 +134,13 @@ If two angles are 50° and 60°, the third is 180° − 50° − 60° = 70°.
 
 An **exterior angle** of a triangle equals the sum of the two **remote (opposite) interior angles**.
 
-\`\`\`svg Triangle ABC with exterior angle at C equal to the sum of angles A and B.
+\`\`\`svg Triangle ABC with side AC extended beyond C. The exterior angle at C equals angle A + angle B.
 <svg viewBox="0 0 300 170" role="img" aria-label="Triangle with an exterior angle at one vertex">
   <polygon points="40,140 200,140 130,40" fill="none" stroke="currentColor" stroke-width="1.5"/>
   <line x1="200" y1="140" x2="270" y2="140" stroke="currentColor" stroke-width="1.5"/>
   <text x="30" y="152" font-size="13" fill="currentColor">A</text>
-  <text x="196" y="156" font-size="13" fill="currentColor">B</text>
-  <text x="128" y="34" font-size="13" fill="currentColor">C</text>
+  <text x="196" y="156" font-size="13" fill="currentColor">C</text>
+  <text x="128" y="34" font-size="13" fill="currentColor">B</text>
   <text x="214" y="132" font-size="12" fill="currentColor">ext</text>
 </svg>
 \`\`\`

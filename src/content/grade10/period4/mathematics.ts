@@ -25,7 +25,7 @@ export const mathematicsG10P4: PeriodContent = {
 
 ## A linear equation
 
-A **linear equation** has the variable to the power 1 only (no x², no 1/x). Its graph is a straight line and it has exactly one solution.
+A **linear equation** has the variable to the power 1 only (no x², no 1/x). Its graph is a straight line. A linear equation in one variable that reduces to ax = b with a ≠ 0 has exactly one solution, x = b/a.
 
 ## Steps to solve
 

@@ -445,7 +445,7 @@ The power of 10 counts how many places the decimal point moves: positive n for l
             { prompt: "Every integer is also a", options: ["natural number", "rational number", "irrational number", "recurring decimal"], correctIndex: 1, explanation: "n = n/1, so every integer is rational." },
             { prompt: "7.5 × 10⁻² equals", options: ["750", "75", "0.075", "0.75"], correctIndex: 2, explanation: "Move the point 2 places left: 0.075." },
             { prompt: "Rounding an irrational number produces", options: ["another irrational number", "a rational approximation", "an integer always", "an error"], correctIndex: 1, explanation: "A rounded value terminates, so it is rational." },
-            { prompt: "Which is written correctly in standard form?", options: ["12 × 10²", "0.9 × 10³", "1.2 × 10³", "1.2 × 10^1.5"], correctIndex: 2, explanation: "Only 1.2 × 10³ has 1 ≤ a < 10 and integer power." },
+            { prompt: "Which is written correctly in standard form?", options: ["12 × 10²", "0.9 × 10³", "1.2 × 10³", "0.12 × 10⁴"], correctIndex: 2, explanation: "Only 1.2 × 10³ has 1 ≤ a < 10 with an integer power of 10." },
           ],
           test: [
             { type: "SHORT_ANSWER", prompt: "State whether each is rational or irrational, with a reason: (a) √25, (b) 0.454545…, (c) √3.", answerKey: "(a) Rational — √25 = 5 = 5/1. (b) Rational — a recurring decimal equals a fraction (5/11). (c) Irrational — √3 cannot be written as a ratio of integers and its decimal neither terminates nor recurs. Award 2 marks each, requiring the reason.", marks: 6 },

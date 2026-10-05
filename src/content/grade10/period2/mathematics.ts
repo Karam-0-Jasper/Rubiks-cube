@@ -304,7 +304,7 @@ x² − 9 = (x + 3)(x − 3)
       notes: `## The base-ten (decimal) system
 
 Each digit's value depends on its **place value**, a power of the base 10.
-2 3 4 = 2 × 10² + 3 × 10¹ + 4 × 10⁰ = 200 + 30 + 4.
+234 = 2 × 10² + 3 × 10¹ + 4 × 10⁰ = 200 + 30 + 4.
 
 ## Other bases
 
@@ -385,7 +385,7 @@ Multiply digit by digit, carrying multiples of the base.
         { type: "SHORT_ANSWER", prompt: "Convert 1011 (base two) and 24 (base five) to base ten.", answerKey: "1011 (base two) = 8 + 0 + 2 + 1 = 11. 24 (base five) = 2×5 + 4 = 14. Award 3 marks each.", marks: 6 },
         { type: "MULTIPLE_CHOICE", prompt: "What is 6 (base ten) written in base two?", options: ["101", "110", "011", "100"], correctIndex: 1, answerKey: "6 = 4 + 2 = 110. Option B.", marks: 4 },
         { type: "SHORT_ANSWER", prompt: "Add 23 (base five) + 14 (base five), giving the answer in base five.", answerKey: "Units: 3 + 4 = 7 = 5 + 2, write 2 carry 1. Fives: 2 + 1 + 1(carry) = 4. Answer 42 (base five). Check in base ten: 13 + 9 = 22, and 42 (base five) = 4×5 + 2 = 22. Award 3 marks for the column addition with carry, 2 for the answer, 1 for the check.", marks: 6 },
-        { type: "ESSAY", prompt: "Explain the idea of place value and how it lets the same digits mean different amounts in different bases, illustrating with the numeral 24 in base ten, base five and base eight.", answerKey: "Place value means each position is a power of the base, so a digit's contribution is digit × base^position. 24 in base ten = 2×10 + 4 = 24; 24 in base five = 2×5 + 4 = 14 (base ten); 24 in base eight = 2×8 + 4 = 20 (base ten). The same symbols mean different totals because the base changes the place values. Award 4 marks for the place-value explanation, 6 for the three correct conversions.", marks: 10 },
+        { type: "ESSAY", prompt: "Explain the idea of place value and how it lets the same digits mean different amounts in different bases, illustrating with the numeral 24 in base ten, base five and base eight.", answerKey: "Place value means each position is a power of the base, so a digit's contribution is the digit × (the base raised to the power of its position). 24 in base ten = 2×10 + 4 = 24; 24 in base five = 2×5 + 4 = 14 (base ten); 24 in base eight = 2×8 + 4 = 20 (base ten). The same symbols mean different totals because the base changes the place values. Award 4 marks for the place-value explanation, 6 for the three correct conversions.", marks: 10 },
       ],
     },
   ],
