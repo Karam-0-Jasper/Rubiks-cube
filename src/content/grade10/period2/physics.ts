@@ -30,7 +30,7 @@ export const physicsG10P2: PeriodContent = {
 
 - **Distance** — the total length of path travelled by a body. **Scalar** (magnitude only). SI unit: metre (m).
 - **Displacement** — the change in position of a body: straight-line distance from start to finish, in a stated direction. **Vector** (magnitude and direction). SI unit: metre (m).
-- Displacement: Δx = x_f − x₀, where x₀ is the initial and x_f the final position.
+- Displacement: Δx = x − x₀, where x₀ is the initial and x the final position.
 - Distance travelled can be greater than the magnitude of displacement; it is never less.
 - For a round trip back to the start, distance is the whole path but displacement is **zero**.
 
@@ -42,14 +42,14 @@ export const physicsG10P2: PeriodContent = {
 ## Time
 
 - **Time (t)** — the interval over which change occurs. SI unit: second (s).
-- **Elapsed time:** Δt = t_f − t₀. Taking t₀ = 0 gives Δt = t.
+- **Elapsed time:** Δt = t − t₀, where t₀ is the starting time. Taking t₀ = 0 gives Δt = t.
 
 ## Speed and velocity
 
 - **Average speed** — distance travelled divided by elapsed time. **Scalar**.
 - average speed = distance / time
 - **Average velocity (v̄)** — displacement divided by time of travel. **Vector**.
-- v̄ = Δx / Δt = (x_f − x₀) / (t_f − t₀); SI unit: metre per second (m/s).
+- v̄ = Δx / Δt = (x − x₀) / (t − t₀); SI unit: metre per second (m/s).
 - **Instantaneous velocity** — the velocity at a single instant.
 - **Instantaneous speed** — the magnitude of instantaneous velocity (no direction).
 - Average speed is **not** always equal to the magnitude of average velocity: on a round trip, average velocity is zero but average speed is not.
@@ -57,7 +57,7 @@ export const physicsG10P2: PeriodContent = {
 ## Acceleration
 
 - **Acceleration (a)** — the rate at which velocity changes. **Vector**. SI unit: metre per second squared (m/s²).
-- ā = Δv / Δt = (v_f − v₀) / (t_f − t₀).
+- ā = Δv / Δt = (v − v₀) / (t − t₀).
 - Acceleration occurs when speed changes, direction changes, or both.
 - **Deceleration** — acceleration in the direction opposite to the motion; the body slows down.
 - A negative acceleration is not always deceleration — it depends on the direction of the velocity.
@@ -84,34 +84,34 @@ export const physicsG10P2: PeriodContent = {
 - **Assuming negative acceleration always means slowing down** — sign shows direction relative to the chosen positive axis.`,
       workedExample: `**Problem (OpenStax College Physics 2e, 2.4).** A racehorse coming out of the gate accelerates from rest to a velocity of 15.0 m/s due west in 1.80 s. What is its average acceleration?
 
-**Step 1 — List knowns.** Take east as positive, so west is negative. v₀ = 0, v_f = −15.0 m/s, Δt = 1.80 s.
+**Step 1 — List knowns.** Take east as positive, so west is negative. v₀ = 0, v = −15.0 m/s, Δt = 1.80 s.
 
-**Step 2 — Change in velocity.** Δv = v_f − v₀ = −15.0 − 0 = −15.0 m/s.
+**Step 2 — Change in velocity.** Δv = v − v₀ = −15.0 − 0 = −15.0 m/s.
 
 **Step 3 — Apply the formula.** ā = Δv / Δt = (−15.0 m/s) / (1.80 s) = −8.33 m/s².
 
 **Answer.** The average acceleration is 8.33 m/s² directed west. The negative sign only shows the direction is opposite to the chosen positive (east) direction.`,
       quiz: [
-        { prompt: "Which pair is correct?", options: ["Distance is a vector; displacement is a scalar", "Both are vectors", "Distance is a scalar; displacement is a vector", "Both are scalars"], correctIndex: 2, explanation: "Distance (path length) is a scalar; displacement (change in position with direction) is a vector." },
+        { prompt: "Which pair is correct?", options: ["Distance is a vector; displacement is a scalar", "Distance is a scalar; displacement is a vector", "Both are vectors", "Both are scalars"], correctIndex: 1, explanation: "Distance (path length) is a scalar; displacement (change in position with direction) is a vector." },
         { prompt: "The SI unit of displacement is the:", options: ["second", "metre", "metre per second", "newton"], correctIndex: 1, explanation: "Displacement is a length, measured in metres." },
         { prompt: "A runner completes one full lap of a 400 m track and stops at the start. The displacement is:", options: ["400 m", "200 m", "0 m", "800 m"], correctIndex: 2, explanation: "Start and finish positions are the same, so displacement is zero even though distance is 400 m." },
-        { prompt: "Average velocity is defined as:", options: ["distance / time", "displacement / time", "speed × time", "acceleration × time"], correctIndex: 1, explanation: "Average velocity = displacement ÷ time of travel." },
-        { prompt: "Average speed is a:", options: ["vector", "scalar", "force", "unit of time"], correctIndex: 1, explanation: "Speed has magnitude only, so it is a scalar." },
+        { prompt: "Average velocity is defined as:", options: ["displacement / time", "distance / time", "speed × time", "acceleration × time"], correctIndex: 0, explanation: "Average velocity = displacement ÷ time of travel." },
+        { prompt: "Average speed is a:", options: ["vector", "force", "scalar", "unit of time"], correctIndex: 2, explanation: "Speed has magnitude only, so it is a scalar." },
         { prompt: "Acceleration is the rate of change of:", options: ["distance", "displacement", "velocity", "mass"], correctIndex: 2, explanation: "Acceleration = change in velocity ÷ time." },
-        { prompt: "The SI unit of acceleration is:", options: ["m/s", "m/s²", "m·s", "s/m"], correctIndex: 1, explanation: "Acceleration is change in velocity (m/s) per second, giving m/s²." },
+        { prompt: "The SI unit of acceleration is:", options: ["m/s", "s/m", "m·s", "m/s²"], correctIndex: 3, explanation: "Acceleration is change in velocity (m/s) per second, giving m/s²." },
         { prompt: "A car travels 100 m in 5 s. Its average speed is:", options: ["20 m/s", "500 m/s", "0.05 m/s", "105 m/s"], correctIndex: 0, explanation: "speed = 100 m ÷ 5 s = 20 m/s." },
-        { prompt: "Deceleration means acceleration that is:", options: ["always negative", "in the direction of motion", "opposite to the direction of motion", "always zero"], correctIndex: 2, explanation: "Deceleration is acceleration opposite to the motion, so the body slows down." },
+        { prompt: "Deceleration means acceleration that is:", options: ["always negative", "in the direction of motion", "always zero", "opposite to the direction of motion"], correctIndex: 3, explanation: "Deceleration is acceleration opposite to the motion, so the body slows down." },
         { prompt: "Which quantity requires a direction to be fully specified?", options: ["Distance", "Speed", "Velocity", "Time"], correctIndex: 2, explanation: "Velocity is a vector and needs a direction." },
-        { prompt: "A body's velocity changes from 4 m/s to 10 m/s in 3 s. Its acceleration is:", options: ["2 m/s²", "6 m/s²", "14 m/s²", "0.5 m/s²"], correctIndex: 0, explanation: "a = (10 − 4)/3 = 6/3 = 2 m/s²." },
-        { prompt: "For any journey, the distance is:", options: ["always less than the displacement", "always equal to displacement", "never less than the magnitude of displacement", "always zero"], correctIndex: 2, explanation: "Distance ≥ magnitude of displacement; they are equal only for straight-line motion without reversal." },
-        { prompt: "Instantaneous speed is the:", options: ["magnitude of instantaneous velocity", "total distance", "average of all velocities", "displacement per lap"], correctIndex: 0, explanation: "Instantaneous speed is the magnitude of the instantaneous velocity." },
-        { prompt: "A car goes to a shop 3 km away and returns in 0.5 h. Its average velocity is:", options: ["12 km/h", "6 km/h", "0", "3 km/h"], correctIndex: 2, explanation: "It returns to the start, so displacement = 0 and average velocity = 0." },
-        { prompt: "In the same trip (3 km each way, 0.5 h total), the average speed is:", options: ["0", "6 km/h", "12 km/h", "3 km/h"], correctIndex: 2, explanation: "Total distance = 6 km, time = 0.5 h, speed = 12 km/h." },
-        { prompt: "Change in position is called:", options: ["distance", "displacement", "speed", "acceleration"], correctIndex: 1, explanation: "Displacement is the change in position, Δx = x_f − x₀." },
+        { prompt: "A body's velocity changes from 4 m/s to 10 m/s in 3 s. Its acceleration is:", options: ["0.5 m/s²", "6 m/s²", "14 m/s²", "2 m/s²"], correctIndex: 3, explanation: "a = (10 − 4)/3 = 6/3 = 2 m/s²." },
+        { prompt: "For any journey, the distance is:", options: ["never less than the magnitude of displacement", "always equal to displacement", "always less than the displacement", "always zero"], correctIndex: 0, explanation: "Distance ≥ magnitude of displacement; they are equal only for straight-line motion without reversal." },
+        { prompt: "Instantaneous speed is the:", options: ["total distance", "magnitude of instantaneous velocity", "average of all velocities", "displacement per lap"], correctIndex: 1, explanation: "Instantaneous speed is the magnitude of the instantaneous velocity." },
+        { prompt: "A car goes to a shop 3 km away and returns in 0.5 h. Its average velocity is:", options: ["12 km/h", "6 km/h", "3 km/h", "0"], correctIndex: 3, explanation: "It returns to the start, so displacement = 0 and average velocity = 0." },
+        { prompt: "In the same trip (3 km each way, 0.5 h total), the average speed is:", options: ["12 km/h", "6 km/h", "0", "3 km/h"], correctIndex: 0, explanation: "Total distance = 6 km, time = 0.5 h, speed = 12 km/h." },
+        { prompt: "Change in position is called:", options: ["distance", "speed", "displacement", "acceleration"], correctIndex: 2, explanation: "Displacement is the change in position, Δx = x − x₀." },
         { prompt: "A frame of reference is:", options: ["a unit of velocity", "a fixed point used to measure position", "the same as displacement", "a type of acceleration"], correctIndex: 1, explanation: "Positions are measured relative to a chosen reference point or frame." },
-        { prompt: "A velocity of −0.8 m/s means the body moves:", options: ["at 0.8 m/s in the positive direction", "at 0.8 m/s in the negative direction", "with zero speed", "at 0.8 m/s²"], correctIndex: 1, explanation: "The negative sign indicates motion in the direction chosen as negative." },
-        { prompt: "Which is a vector quantity?", options: ["Distance", "Speed", "Acceleration", "Time"], correctIndex: 2, explanation: "Acceleration has magnitude and direction, so it is a vector." },
-        { prompt: "A body moving at constant velocity has an acceleration of:", options: ["increasing value", "zero", "9.8 m/s²", "equal to its speed"], correctIndex: 1, explanation: "Constant velocity means no change in velocity, so acceleration is zero." },
+        { prompt: "A velocity of −0.8 m/s means the body moves:", options: ["at 0.8 m/s in the positive direction", "with zero speed", "at 0.8 m/s in the negative direction", "at 0.8 m/s²"], correctIndex: 2, explanation: "The negative sign indicates motion in the direction chosen as negative." },
+        { prompt: "Which is a vector quantity?", options: ["Acceleration", "Speed", "Distance", "Time"], correctIndex: 0, explanation: "Acceleration has magnitude and direction, so it is a vector." },
+        { prompt: "A body moving at constant velocity has an acceleration of:", options: ["increasing value", "9.8 m/s²", "zero", "equal to its speed"], correctIndex: 2, explanation: "Constant velocity means no change in velocity, so acceleration is zero." },
       ],
       test: [
         { type: "SHORT_ANSWER", prompt: "Distinguish between distance and displacement, giving one example of a journey where they differ in magnitude.", answerKey: "Distance = total path length, scalar; displacement = change in position with direction, vector. Example: a runner on a 400 m circular track finishing at the start travels 400 m (distance) but has 0 m displacement. Accept any correct round-trip or curved-path example.", marks: 4 },
@@ -173,26 +173,26 @@ For motion in a straight line with constant acceleration, taking x₀ = 0 and st
 
 **Answer.** x = 402 m — about one quarter mile, the standard drag-racing distance.`,
       quiz: [
-        { prompt: "Uniform acceleration means the acceleration is:", options: ["increasing steadily", "constant in size and direction", "always zero", "equal to the velocity"], correctIndex: 1, explanation: "Uniform acceleration is constant in magnitude and direction." },
+        { prompt: "Uniform acceleration means the acceleration is:", options: ["constant in size and direction", "increasing steadily", "always zero", "equal to the velocity"], correctIndex: 0, explanation: "Uniform acceleration is constant in magnitude and direction." },
         { prompt: "Which equation gives final velocity from time?", options: ["x = v₀t + ½at²", "v = v₀ + at", "v² = v₀² + 2ax", "x = ½(v₀+v)t"], correctIndex: 1, explanation: "v = v₀ + at links velocity, acceleration and time." },
-        { prompt: "Which equation does not contain time?", options: ["v = v₀ + at", "x = v₀t + ½at²", "v² = v₀² + 2ax", "x = ½(v₀+v)t"], correctIndex: 2, explanation: "v² = v₀² + 2ax has no t." },
+        { prompt: "Which equation does not contain time?", options: ["v² = v₀² + 2ax", "x = v₀t + ½at²", "v = v₀ + at", "x = ½(v₀+v)t"], correctIndex: 0, explanation: "v² = v₀² + 2ax has no t." },
         { prompt: "A body starting from rest has v₀ equal to:", options: ["its final velocity", "0", "g", "9.8"], correctIndex: 1, explanation: "'From rest' means initial velocity is zero." },
-        { prompt: "The average velocity under constant acceleration is:", options: ["v₀ × v", "(v₀ + v)/2", "at", "v²/2"], correctIndex: 1, explanation: "For constant acceleration the average velocity is the mean of initial and final velocities." },
-        { prompt: "A car accelerates from rest at 3 m/s² for 4 s. Its final velocity is:", options: ["7 m/s", "12 m/s", "0.75 m/s", "24 m/s"], correctIndex: 1, explanation: "v = v₀ + at = 0 + 3×4 = 12 m/s." },
+        { prompt: "The average velocity under constant acceleration is:", options: ["(v₀ + v)/2", "v₀ × v", "at", "v²/2"], correctIndex: 0, explanation: "For constant acceleration the average velocity is the mean of initial and final velocities." },
+        { prompt: "A car accelerates from rest at 3 m/s² for 4 s. Its final velocity is:", options: ["7 m/s", "0.75 m/s", "12 m/s", "24 m/s"], correctIndex: 2, explanation: "v = v₀ + at = 0 + 3×4 = 12 m/s." },
         { prompt: "A car at 20 m/s brakes at −4 m/s². Time to stop:", options: ["5 s", "80 s", "0.2 s", "16 s"], correctIndex: 0, explanation: "0 = 20 + (−4)t → t = 5 s." },
-        { prompt: "Displacement of a body from rest at a = 2 m/s² after 5 s:", options: ["10 m", "25 m", "50 m", "5 m"], correctIndex: 1, explanation: "x = ½at² = ½×2×25 = 25 m." },
-        { prompt: "Which quantity is missing from x = v₀t + ½at²?", options: ["displacement", "final velocity", "time", "acceleration"], correctIndex: 1, explanation: "It contains x, v₀, a, t but not the final velocity v." },
+        { prompt: "Displacement of a body from rest at a = 2 m/s² after 5 s:", options: ["10 m", "50 m", "25 m", "5 m"], correctIndex: 2, explanation: "x = ½at² = ½×2×25 = 25 m." },
+        { prompt: "Which quantity is missing from x = v₀t + ½at²?", options: ["final velocity", "displacement", "time", "acceleration"], correctIndex: 0, explanation: "It contains x, v₀, a, t but not the final velocity v." },
         { prompt: "A ball at 10 m/s accelerates at 2 m/s² over 20 m. Its final velocity is:", options: ["√180 m/s", "√140 m/s", "√100 m/s", "√220 m/s"], correctIndex: 0, explanation: "v² = 10² + 2×2×20 = 100 + 80 = 180, v = √180 ≈ 13.4 m/s." },
-        { prompt: "If v₀ = 0, the equation v² = v₀² + 2ax becomes:", options: ["v² = 2ax", "v² = ax", "v = 2ax", "v² = a/x"], correctIndex: 0, explanation: "With v₀ = 0 the first term vanishes." },
-        { prompt: "Equal changes of velocity in equal times indicates:", options: ["zero acceleration", "uniform acceleration", "no motion", "circular motion"], correctIndex: 1, explanation: "That is the definition of uniform acceleration." },
-        { prompt: "The first step in solving a motion problem is to:", options: ["guess the answer", "list knowns and choose a positive direction", "square the velocity", "convert to km/h"], correctIndex: 1, explanation: "Identify knowns, the unknown and a sign convention first." },
-        { prompt: "A train from rest reaches 30 m/s in 15 s. Its acceleration is:", options: ["2 m/s²", "45 m/s²", "0.5 m/s²", "450 m/s²"], correctIndex: 0, explanation: "a = (30 − 0)/15 = 2 m/s²." },
-        { prompt: "A body comes to rest, so its final velocity v is:", options: ["maximum", "0", "equal to v₀", "negative"], correctIndex: 1, explanation: "'Comes to rest' means v = 0." },
-        { prompt: "x = ½(v₀ + v)t is used when you know velocities and:", options: ["acceleration", "time", "mass", "force"], correctIndex: 1, explanation: "It uses initial and final velocities and time, not acceleration." },
-        { prompt: "A car covers 100 m from rest in 5 s. Its acceleration is:", options: ["8 m/s²", "4 m/s²", "20 m/s²", "40 m/s²"], correctIndex: 0, explanation: "100 = ½a(5²) = 12.5a → a = 8 m/s²." },
-        { prompt: "In these equations, the symbol a represents:", options: ["area", "average velocity", "acceleration", "displacement"], correctIndex: 2, explanation: "a is the constant acceleration." },
-        { prompt: "A body decelerating uniformly has an acceleration that is:", options: ["zero", "opposite in sign to its velocity", "the same sign as its velocity", "always 9.8"], correctIndex: 1, explanation: "During deceleration acceleration opposes the velocity." },
-        { prompt: "The equations of uniformly accelerated motion apply only when:", options: ["speed is very high", "acceleration is constant", "the path is circular", "there is no gravity"], correctIndex: 1, explanation: "They are derived assuming constant acceleration." },
+        { prompt: "If v₀ = 0, the equation v² = v₀² + 2ax becomes:", options: ["v² = a/x", "v² = ax", "v = 2ax", "v² = 2ax"], correctIndex: 3, explanation: "With v₀ = 0 the first term vanishes." },
+        { prompt: "Equal changes of velocity in equal times indicates:", options: ["zero acceleration", "circular motion", "no motion", "uniform acceleration"], correctIndex: 3, explanation: "That is the definition of uniform acceleration." },
+        { prompt: "The first step in solving a motion problem is to:", options: ["list knowns and choose a positive direction", "guess the answer", "square the velocity", "convert to km/h"], correctIndex: 0, explanation: "Identify knowns, the unknown and a sign convention first." },
+        { prompt: "A train from rest reaches 30 m/s in 15 s. Its acceleration is:", options: ["450 m/s²", "45 m/s²", "0.5 m/s²", "2 m/s²"], correctIndex: 3, explanation: "a = (30 − 0)/15 = 2 m/s²." },
+        { prompt: "A body comes to rest, so its final velocity v is:", options: ["maximum", "negative", "equal to v₀", "0"], correctIndex: 3, explanation: "'Comes to rest' means v = 0." },
+        { prompt: "x = ½(v₀ + v)t is used when you know velocities and:", options: ["time", "acceleration", "mass", "force"], correctIndex: 0, explanation: "It uses initial and final velocities and time, not acceleration." },
+        { prompt: "A car covers 100 m from rest in 5 s. Its acceleration is:", options: ["40 m/s²", "4 m/s²", "20 m/s²", "8 m/s²"], correctIndex: 3, explanation: "100 = ½a(5²) = 12.5a → a = 8 m/s²." },
+        { prompt: "In these equations, the symbol a represents:", options: ["area", "acceleration", "average velocity", "displacement"], correctIndex: 1, explanation: "a is the constant acceleration." },
+        { prompt: "A body decelerating uniformly has an acceleration that is:", options: ["opposite in sign to its velocity", "zero", "the same sign as its velocity", "always 9.8"], correctIndex: 0, explanation: "During deceleration acceleration opposes the velocity." },
+        { prompt: "The equations of uniformly accelerated motion apply only when:", options: ["acceleration is constant", "speed is very high", "the path is circular", "there is no gravity"], correctIndex: 0, explanation: "They are derived assuming constant acceleration." },
       ],
       test: [
         { type: "MULTIPLE_CHOICE", prompt: "A cheetah accelerates from rest at 6 m/s² for 4 s. Its final speed is:", options: ["10 m/s", "24 m/s", "1.5 m/s", "48 m/s"], correctIndex: 1, answerKey: "v = 0 + 6×4 = 24 m/s.", marks: 2 },
@@ -265,32 +265,32 @@ For motion in a straight line with constant acceleration, taking x₀ = 0 and st
 
 **Answer.** v = 250 m/s. Choosing widely separated points keeps the reading error small.`,
       quiz: [
-        { prompt: "The slope of a position-time graph gives:", options: ["acceleration", "velocity", "distance", "force"], correctIndex: 1, explanation: "Slope of x-t is Δx/Δt = velocity." },
+        { prompt: "The slope of a position-time graph gives:", options: ["acceleration", "distance", "velocity", "force"], correctIndex: 2, explanation: "Slope of x-t is Δx/Δt = velocity." },
         { prompt: "The slope of a velocity-time graph gives:", options: ["displacement", "velocity", "acceleration", "speed"], correctIndex: 2, explanation: "Slope of v-t is Δv/Δt = acceleration." },
         { prompt: "The area under a velocity-time graph gives:", options: ["acceleration", "displacement", "force", "mass"], correctIndex: 1, explanation: "Area under v-t equals displacement." },
-        { prompt: "A horizontal line on a position-time graph means the body is:", options: ["accelerating", "at rest", "speeding up", "reversing"], correctIndex: 1, explanation: "No change in position means the body is stationary." },
+        { prompt: "A horizontal line on a position-time graph means the body is:", options: ["accelerating", "speeding up", "at rest", "reversing"], correctIndex: 2, explanation: "No change in position means the body is stationary." },
         { prompt: "A horizontal line on a velocity-time graph means:", options: ["the body is at rest", "constant velocity (zero acceleration)", "uniform acceleration", "the body is reversing"], correctIndex: 1, explanation: "Constant velocity gives zero slope, hence zero acceleration." },
-        { prompt: "A straight sloping line on a velocity-time graph means:", options: ["zero acceleration", "constant acceleration", "the body is at rest", "changing acceleration"], correctIndex: 1, explanation: "A constant slope is a constant acceleration." },
-        { prompt: "A steeper slope on a position-time graph means:", options: ["greater speed", "smaller speed", "zero speed", "greater mass"], correctIndex: 0, explanation: "Steeper x-t slope = greater velocity." },
-        { prompt: "On a position-time graph, a straight sloping line represents:", options: ["acceleration", "constant velocity", "rest", "free fall"], correctIndex: 1, explanation: "Constant slope means constant velocity." },
-        { prompt: "To read a slope accurately you should choose points that are:", options: ["very close together", "widely separated", "both at the origin", "off the line"], correctIndex: 1, explanation: "Widely separated points reduce reading error." },
-        { prompt: "A downward-sloping position-time line indicates motion in the:", options: ["positive direction", "negative direction", "vertical direction", "circular path"], correctIndex: 1, explanation: "Negative slope means the body moves in the negative direction." },
-        { prompt: "On a velocity-time graph, a straight line sloping down from a positive velocity toward v = 0 shows:", options: ["constant speed", "the body decelerating", "the body at rest throughout", "no motion"], correctIndex: 1, explanation: "A negative slope means acceleration opposes motion — deceleration." },
-        { prompt: "Slope is calculated as:", options: ["rise × run", "run / rise", "rise / run", "rise + run"], correctIndex: 2, explanation: "Slope = rise ÷ run." },
+        { prompt: "A straight sloping line on a velocity-time graph means:", options: ["zero acceleration", "changing acceleration", "the body is at rest", "constant acceleration"], correctIndex: 3, explanation: "A constant slope is a constant acceleration." },
+        { prompt: "A steeper slope on a position-time graph means:", options: ["zero speed", "smaller speed", "greater speed", "greater mass"], correctIndex: 2, explanation: "Steeper x-t slope = greater velocity." },
+        { prompt: "On a position-time graph, a straight sloping line represents:", options: ["constant velocity", "acceleration", "rest", "free fall"], correctIndex: 0, explanation: "Constant slope means constant velocity." },
+        { prompt: "To read a slope accurately you should choose points that are:", options: ["widely separated", "very close together", "both at the origin", "off the line"], correctIndex: 0, explanation: "Widely separated points reduce reading error." },
+        { prompt: "A downward-sloping position-time line indicates motion in the:", options: ["negative direction", "positive direction", "vertical direction", "circular path"], correctIndex: 0, explanation: "Negative slope means the body moves in the negative direction." },
+        { prompt: "On a velocity-time graph, a straight line sloping down from a positive velocity toward v = 0 shows:", options: ["constant speed", "the body at rest throughout", "the body decelerating", "no motion"], correctIndex: 2, explanation: "A negative slope means acceleration opposes motion — deceleration." },
+        { prompt: "Slope is calculated as:", options: ["rise / run", "run / rise", "rise × run", "rise + run"], correctIndex: 0, explanation: "Slope = rise ÷ run." },
         { prompt: "For a v-t graph that is a straight line from the origin rising steadily, the motion is:", options: ["at rest", "uniformly accelerated from rest", "uniform velocity", "decelerating"], correctIndex: 1, explanation: "Rising straight line from origin = uniform acceleration starting from rest." },
         { prompt: "The vertical axis of a position-time graph shows:", options: ["time", "velocity", "position", "acceleration"], correctIndex: 2, explanation: "Position is plotted on the vertical axis versus time." },
-        { prompt: "If a v-t graph is a horizontal line at 5 m/s for 4 s, the displacement is:", options: ["20 m", "1.25 m", "9 m", "0 m"], correctIndex: 0, explanation: "Area = 5 × 4 = 20 m." },
-        { prompt: "A curved position-time line getting steeper indicates:", options: ["constant velocity", "increasing velocity", "the body at rest", "decreasing distance"], correctIndex: 1, explanation: "An increasing slope means the velocity is increasing." },
-        { prompt: "On a v-t graph a triangle of base 4 s and height 6 m/s has area:", options: ["24 m", "12 m", "10 m", "2.4 m"], correctIndex: 1, explanation: "Area of triangle = ½ × 4 × 6 = 12 m." },
-        { prompt: "Acceleration can be read from a graph of:", options: ["position vs time", "velocity vs time", "distance vs speed", "force vs mass"], correctIndex: 1, explanation: "Slope of velocity-time is acceleration." },
-        { prompt: "Zero slope on a velocity-time graph means:", options: ["the body has stopped", "zero acceleration", "maximum acceleration", "negative velocity"], correctIndex: 1, explanation: "No change in velocity means zero acceleration." },
+        { prompt: "If a v-t graph is a horizontal line at 5 m/s for 4 s, the displacement is:", options: ["9 m", "1.25 m", "20 m", "0 m"], correctIndex: 2, explanation: "Area = 5 × 4 = 20 m." },
+        { prompt: "A curved position-time line getting steeper indicates:", options: ["increasing velocity", "constant velocity", "the body at rest", "decreasing distance"], correctIndex: 0, explanation: "An increasing slope means the velocity is increasing." },
+        { prompt: "On a v-t graph a triangle of base 4 s and height 6 m/s has area:", options: ["24 m", "10 m", "12 m", "2.4 m"], correctIndex: 2, explanation: "Area of triangle = ½ × 4 × 6 = 12 m." },
+        { prompt: "Acceleration can be read from a graph of:", options: ["velocity vs time", "position vs time", "distance vs speed", "force vs mass"], correctIndex: 0, explanation: "Slope of velocity-time is acceleration." },
+        { prompt: "Zero slope on a velocity-time graph means:", options: ["the body has stopped", "negative velocity", "maximum acceleration", "zero acceleration"], correctIndex: 3, explanation: "No change in velocity means zero acceleration." },
         { prompt: "The horizontal axis on both graphs discussed is usually:", options: ["velocity", "position", "time", "acceleration"], correctIndex: 2, explanation: "Time is on the horizontal axis in both x-t and v-t graphs." },
       ],
       test: [
-        { type: "MULTIPLE_CHOICE", prompt: "A velocity-time graph is a horizontal line at 8 m/s lasting 3 s. The displacement is:", options: ["11 m", "24 m", "2.7 m", "0 m"], correctIndex: 1, answerKey: "Area = 8 × 3 = 24 m.", marks: 2 },
+        { type: "MULTIPLE_CHOICE", prompt: "A velocity-time graph is a horizontal line at 8 m/s lasting 3 s. The displacement is:", options: ["24 m", "11 m", "2.7 m", "0 m"], correctIndex: 0, answerKey: "Area = 8 × 3 = 24 m.", marks: 2 },
         { type: "SHORT_ANSWER", prompt: "State what the slope of (i) a position-time graph and (ii) a velocity-time graph represents.", answerKey: "(i) slope of x-t = velocity; (ii) slope of v-t = acceleration.", marks: 3 },
         { type: "SHORT_ANSWER", prompt: "A position-time graph passes through (2 s, 10 m) and (7 s, 60 m) on a straight section. Find the velocity.", answerKey: "v = (60 − 10)/(7 − 2) = 50/5 = 10 m/s.", marks: 3 },
-        { type: "MULTIPLE_CHOICE", prompt: "A body at rest is shown on a position-time graph by:", options: ["a steep line", "a horizontal line", "a curved line", "a line through the origin"], correctIndex: 1, answerKey: "A horizontal x-t line means position is not changing — the body is at rest.", marks: 2 },
+        { type: "MULTIPLE_CHOICE", prompt: "A body at rest is shown on a position-time graph by:", options: ["a horizontal line", "a steep line", "a curved line", "a line through the origin"], correctIndex: 0, answerKey: "A horizontal x-t line means position is not changing — the body is at rest.", marks: 2 },
         { type: "ESSAY", prompt: "Explain how position-time and velocity-time graphs are used to describe uniform motion and uniformly accelerated motion, referring to slopes and areas.", answerKey: "Uniform motion: x-t is a straight sloping line (constant velocity = slope); v-t is a horizontal line. Uniformly accelerated motion: x-t is a curve of increasing steepness; v-t is a straight sloping line whose slope is the constant acceleration. Area under v-t gives displacement. Reward correct links between slope/area and the physical quantities plus recognition of the two cases.", marks: 8 },
       ],
     },
@@ -348,24 +348,24 @@ If instead **down is positive** (a = +g), use + signs. Be consistent within a pr
 **Answer.** After 1.00 s the rock is 8.10 m above its starting point (and still rising, since v = 13.0 − 9.80 = +3.20 m/s).`,
       quiz: [
         { prompt: "Free fall is motion under the influence of:", options: ["friction only", "gravity alone (air resistance neglected)", "applied force", "magnetism"], correctIndex: 1, explanation: "Free fall assumes gravity is the only force acting." },
-        { prompt: "The average value of g on Earth is about:", options: ["1.0 m/s²", "9.8 m/s²", "98 m/s²", "0.98 m/s²"], correctIndex: 1, explanation: "g ≈ 9.80 m/s² downward." },
-        { prompt: "In free fall (no air resistance), a heavy and a light object dropped together:", options: ["the heavy one lands first", "the light one lands first", "they land together", "neither falls"], correctIndex: 2, explanation: "All objects fall at the same rate independent of mass." },
-        { prompt: "The acceleration due to gravity always points:", options: ["upward", "sideways", "downward toward Earth's centre", "in the direction of motion"], correctIndex: 2, explanation: "g is directed downward toward the centre of the Earth." },
-        { prompt: "An object simply dropped from rest has v₀ equal to:", options: ["9.8 m/s", "0", "g", "its final velocity"], correctIndex: 1, explanation: "Dropped means released from rest, v₀ = 0." },
+        { prompt: "The average value of g on Earth is about:", options: ["9.8 m/s²", "1.0 m/s²", "98 m/s²", "0.98 m/s²"], correctIndex: 0, explanation: "g ≈ 9.80 m/s² downward." },
+        { prompt: "In free fall (no air resistance), a heavy and a light object dropped together:", options: ["the heavy one lands first", "they land together", "the light one lands first", "neither falls"], correctIndex: 1, explanation: "All objects fall at the same rate independent of mass." },
+        { prompt: "The acceleration due to gravity always points:", options: ["upward", "downward toward Earth's centre", "sideways", "in the direction of motion"], correctIndex: 1, explanation: "g is directed downward toward the centre of the Earth." },
+        { prompt: "An object simply dropped from rest has v₀ equal to:", options: ["9.8 m/s", "g", "0", "its final velocity"], correctIndex: 2, explanation: "Dropped means released from rest, v₀ = 0." },
         { prompt: "At the highest point of a vertical throw, the velocity is:", options: ["maximum", "zero", "equal to g", "negative"], correctIndex: 1, explanation: "The body momentarily stops before falling back." },
-        { prompt: "At the highest point, the acceleration is:", options: ["zero", "g downward", "g upward", "undefined"], correctIndex: 1, explanation: "Acceleration remains g downward even when velocity is zero." },
+        { prompt: "At the highest point, the acceleration is:", options: ["g downward", "zero", "g upward", "undefined"], correctIndex: 0, explanation: "Acceleration remains g downward even when velocity is zero." },
         { prompt: "Taking up as positive, the acceleration in free fall is written as:", options: ["+9.8 m/s²", "−9.8 m/s²", "0", "±19.6 m/s²"], correctIndex: 1, explanation: "With up positive, a = −g = −9.8 m/s²." },
-        { prompt: "A stone dropped from rest falls for 2 s. Its speed then (g = 9.8) is about:", options: ["4.9 m/s", "9.8 m/s", "19.6 m/s", "2 m/s"], correctIndex: 2, explanation: "v = gt = 9.8 × 2 = 19.6 m/s." },
+        { prompt: "A stone dropped from rest falls for 2 s. Its speed then (g = 9.8) is about:", options: ["19.6 m/s", "9.8 m/s", "4.9 m/s", "2 m/s"], correctIndex: 0, explanation: "v = gt = 9.8 × 2 = 19.6 m/s." },
         { prompt: "A stone dropped from rest for 2 s falls a distance of about:", options: ["9.8 m", "19.6 m", "39.2 m", "4.9 m"], correctIndex: 1, explanation: "y = ½gt² = ½×9.8×4 = 19.6 m." },
-        { prompt: "For a ball thrown up and returning to launch height, the time up compared to time down is:", options: ["longer", "shorter", "equal", "zero"], correctIndex: 2, explanation: "Time up equals time down for symmetric flight." },
+        { prompt: "For a ball thrown up and returning to launch height, the time up compared to time down is:", options: ["longer", "shorter", "zero", "equal"], correctIndex: 3, explanation: "Time up equals time down for symmetric flight." },
         { prompt: "A ball thrown up at 20 m/s returns to the same height at a speed of:", options: ["0", "10 m/s", "20 m/s", "40 m/s"], correctIndex: 2, explanation: "Speed at the launch level equals the launch speed (opposite direction)." },
-        { prompt: "Air resistance is neglected in free fall so that:", options: ["objects never fall", "acceleration is exactly g for all masses", "gravity disappears", "speed stays zero"], correctIndex: 1, explanation: "Ignoring air resistance makes the acceleration g for every object." },
-        { prompt: "A body released from rest reaches 29.4 m/s after (g = 9.8):", options: ["1 s", "2 s", "3 s", "4 s"], correctIndex: 2, explanation: "t = v/g = 29.4/9.8 = 3 s." },
+        { prompt: "Air resistance is neglected in free fall so that:", options: ["objects never fall", "gravity disappears", "acceleration is exactly g for all masses", "speed stays zero"], correctIndex: 2, explanation: "Ignoring air resistance makes the acceleration g for every object." },
+        { prompt: "A body released from rest reaches 29.4 m/s after (g = 9.8):", options: ["3 s", "2 s", "1 s", "4 s"], correctIndex: 0, explanation: "t = v/g = 29.4/9.8 = 3 s." },
         { prompt: "Which equation gives velocity of a falling body (down positive) from time?", options: ["v = v₀ + gt", "y = v₀t", "v² = 2y", "a = g/t"], correctIndex: 0, explanation: "With down positive, v = v₀ + gt." },
-        { prompt: "Which statement about g on Earth is correct?", options: ["It is exactly 9.8 m/s² everywhere", "It is larger at high altitude", "It varies slightly (about 9.78–9.83 m/s²) with latitude and altitude", "It is the same as on the Moon"], correctIndex: 2, explanation: "g varies about 9.78–9.83 m/s² with location on Earth." },
-        { prompt: "A rock thrown up at 13 m/s has velocity after 1 s (g = 9.8) of:", options: ["3.2 m/s up", "22.8 m/s up", "13 m/s down", "9.8 m/s"], correctIndex: 0, explanation: "v = 13 − 9.8×1 = 3.2 m/s, still upward." },
-        { prompt: "Free-fall equations are the ordinary motion equations with a replaced by:", options: ["v", "g", "t", "m"], correctIndex: 1, explanation: "Set the constant acceleration equal to g." },
-        { prompt: "An object thrown downward starts with v₀ that is:", options: ["zero", "not zero (its throw speed)", "always 9.8", "negative g"], correctIndex: 1, explanation: "Thrown downward means it already has an initial speed." },
+        { prompt: "Which statement about g on Earth is correct?", options: ["It is exactly 9.8 m/s² everywhere", "It is larger at high altitude", "It is the same as on the Moon", "It varies slightly (about 9.78–9.83 m/s²) with latitude and altitude"], correctIndex: 3, explanation: "g varies about 9.78–9.83 m/s² with location on Earth." },
+        { prompt: "A rock thrown up at 13 m/s has velocity after 1 s (g = 9.8) of:", options: ["13 m/s down", "22.8 m/s up", "3.2 m/s up", "9.8 m/s"], correctIndex: 2, explanation: "v = 13 − 9.8×1 = 3.2 m/s, still upward." },
+        { prompt: "Free-fall equations are the ordinary motion equations with a replaced by:", options: ["g", "v", "t", "m"], correctIndex: 0, explanation: "Set the constant acceleration equal to g." },
+        { prompt: "An object thrown downward starts with v₀ that is:", options: ["zero", "negative g", "always 9.8", "not zero (its throw speed)"], correctIndex: 3, explanation: "Thrown downward means it already has an initial speed." },
         { prompt: "Two balls, 1 kg and 5 kg, are dropped from the same height (no air resistance). They hit the ground:", options: ["5 kg first", "1 kg first", "at the same time", "neither hits"], correctIndex: 2, explanation: "Free-fall acceleration is independent of mass." },
       ],
       test: [
@@ -430,32 +430,32 @@ If instead **down is positive** (a = +g), use + signs. Be consistent within a pr
 
 **Answer.** The mower accelerates at 2.1 m/s² in the direction of the applied net force.`,
       quiz: [
-        { prompt: "Newton's first law is also called the law of:", options: ["gravity", "inertia", "momentum", "action"], correctIndex: 1, explanation: "The first law describes inertia — resistance to change in motion." },
-        { prompt: "Inertia depends on a body's:", options: ["colour", "mass", "speed", "temperature"], correctIndex: 1, explanation: "Mass measures inertia; more mass, more inertia." },
-        { prompt: "Newton's second law is written:", options: ["F = mv", "F = ma", "F = m/a", "F = a/m"], correctIndex: 1, explanation: "Force = mass × acceleration." },
-        { prompt: "The SI unit of force is the:", options: ["joule", "newton", "watt", "pascal"], correctIndex: 1, explanation: "Force is measured in newtons (N)." },
-        { prompt: "One newton equals:", options: ["1 kg·m/s²", "1 kg·m/s", "1 kg/m²", "1 m/s²"], correctIndex: 0, explanation: "1 N = 1 kg·m/s²." },
-        { prompt: "A 10 kg mass has a net force of 40 N on it. Its acceleration is:", options: ["4 m/s²", "400 m/s²", "0.25 m/s²", "50 m/s²"], correctIndex: 0, explanation: "a = F/m = 40/10 = 4 m/s²." },
-        { prompt: "Weight is calculated by:", options: ["w = m/g", "w = mg", "w = ma", "w = g/m"], correctIndex: 1, explanation: "Weight = mass × gravitational field strength g." },
+        { prompt: "Newton's first law is also called the law of:", options: ["gravity", "momentum", "inertia", "action"], correctIndex: 2, explanation: "The first law describes inertia — resistance to change in motion." },
+        { prompt: "Inertia depends on a body's:", options: ["colour", "speed", "mass", "temperature"], correctIndex: 2, explanation: "Mass measures inertia; more mass, more inertia." },
+        { prompt: "Newton's second law is written:", options: ["F = mv", "F = a/m", "F = m/a", "F = ma"], correctIndex: 3, explanation: "Force = mass × acceleration." },
+        { prompt: "The SI unit of force is the:", options: ["joule", "pascal", "watt", "newton"], correctIndex: 3, explanation: "Force is measured in newtons (N)." },
+        { prompt: "One newton equals:", options: ["1 m/s²", "1 kg·m/s", "1 kg/m²", "1 kg·m/s²"], correctIndex: 3, explanation: "1 N = 1 kg·m/s²." },
+        { prompt: "A 10 kg mass has a net force of 40 N on it. Its acceleration is:", options: ["400 m/s²", "4 m/s²", "0.25 m/s²", "50 m/s²"], correctIndex: 1, explanation: "a = F/m = 40/10 = 4 m/s²." },
+        { prompt: "Weight is calculated by:", options: ["w = m/g", "w = ma", "w = mg", "w = g/m"], correctIndex: 2, explanation: "Weight = mass × gravitational field strength g." },
         { prompt: "Which quantity is the same everywhere in the universe for a given body?", options: ["weight", "mass", "acceleration", "force"], correctIndex: 1, explanation: "Mass is constant; weight varies with g." },
-        { prompt: "Newton's third law says forces occur in:", options: ["single actions", "equal and opposite pairs", "triples", "circles"], correctIndex: 1, explanation: "Every action has an equal and opposite reaction." },
-        { prompt: "Action and reaction forces act on:", options: ["the same body", "different bodies", "no body", "only large bodies"], correctIndex: 1, explanation: "They act on the two different interacting bodies." },
+        { prompt: "Newton's third law says forces occur in:", options: ["equal and opposite pairs", "single actions", "triples", "circles"], correctIndex: 0, explanation: "Every action has an equal and opposite reaction." },
+        { prompt: "Action and reaction forces act on:", options: ["different bodies", "the same body", "no body", "only large bodies"], correctIndex: 0, explanation: "They act on the two different interacting bodies." },
         { prompt: "A rocket moves forward because it pushes gas:", options: ["forward", "backward", "sideways", "up only"], correctIndex: 1, explanation: "The rocket pushes gas backward; the gas pushes the rocket forward (third law)." },
-        { prompt: "A body moving at constant velocity has a net force of:", options: ["mg", "zero", "ma", "F"], correctIndex: 1, explanation: "Constant velocity means zero acceleration, so net force is zero (first law)." },
-        { prompt: "Doubling the net force on a fixed mass will:", options: ["halve the acceleration", "double the acceleration", "not change acceleration", "double the mass"], correctIndex: 1, explanation: "a ∝ F, so doubling F doubles a." },
-        { prompt: "Doubling the mass for a fixed net force will:", options: ["double the acceleration", "halve the acceleration", "leave acceleration unchanged", "double the force"], correctIndex: 1, explanation: "a ∝ 1/m, so doubling m halves a." },
-        { prompt: "A 2 kg object has weight (g = 9.8) of about:", options: ["2 N", "9.8 N", "19.6 N", "4.9 N"], correctIndex: 2, explanation: "w = mg = 2 × 9.8 = 19.6 N." },
-        { prompt: "Net force is the:", options: ["largest single force", "vector sum of all external forces", "sum of internal forces", "mass times weight"], correctIndex: 1, explanation: "Net (resultant) force is the vector sum of external forces." },
-        { prompt: "A passenger lurches forward when a bus stops suddenly because of:", options: ["gravity", "inertia", "friction only", "reaction force"], correctIndex: 1, explanation: "The passenger's inertia keeps them moving forward as the bus stops." },
-        { prompt: "If the net force on a body is zero, the body:", options: ["must be at rest", "must be accelerating", "has zero acceleration", "must reverse"], correctIndex: 2, explanation: "Zero net force means zero acceleration; the body is at rest or moving at constant velocity." },
-        { prompt: "A force of 100 N gives a body an acceleration of 5 m/s². The mass is:", options: ["20 kg", "500 kg", "0.05 kg", "95 kg"], correctIndex: 0, explanation: "m = F/a = 100/5 = 20 kg." },
-        { prompt: "When you walk, the ground pushes you forward. This is an example of Newton's:", options: ["first law", "second law", "third law", "law of gravitation"], correctIndex: 2, explanation: "Foot pushes ground back, ground pushes foot forward — action and reaction." },
+        { prompt: "A body moving at constant velocity has a net force of:", options: ["zero", "mg", "ma", "F"], correctIndex: 0, explanation: "Constant velocity means zero acceleration, so net force is zero (first law)." },
+        { prompt: "Doubling the net force on a fixed mass will:", options: ["double the acceleration", "halve the acceleration", "not change acceleration", "double the mass"], correctIndex: 0, explanation: "a ∝ F, so doubling F doubles a." },
+        { prompt: "Doubling the mass for a fixed net force will:", options: ["double the acceleration", "leave acceleration unchanged", "halve the acceleration", "double the force"], correctIndex: 2, explanation: "a ∝ 1/m, so doubling m halves a." },
+        { prompt: "A 2 kg object has weight (g = 9.8) of about:", options: ["2 N", "19.6 N", "9.8 N", "4.9 N"], correctIndex: 1, explanation: "w = mg = 2 × 9.8 = 19.6 N." },
+        { prompt: "Net force is the:", options: ["largest single force", "sum of internal forces", "vector sum of all external forces", "mass times weight"], correctIndex: 2, explanation: "Net (resultant) force is the vector sum of external forces." },
+        { prompt: "A passenger lurches forward when a bus stops suddenly because of:", options: ["gravity", "friction only", "inertia", "reaction force"], correctIndex: 2, explanation: "The passenger's inertia keeps them moving forward as the bus stops." },
+        { prompt: "If the net force on a body is zero, the body:", options: ["has zero acceleration", "must be accelerating", "must be at rest", "must reverse"], correctIndex: 0, explanation: "Zero net force means zero acceleration; the body is at rest or moving at constant velocity." },
+        { prompt: "A force of 100 N gives a body an acceleration of 5 m/s². The mass is:", options: ["95 kg", "500 kg", "0.05 kg", "20 kg"], correctIndex: 3, explanation: "m = F/a = 100/5 = 20 kg." },
+        { prompt: "When you walk, the ground pushes you forward. This is an example of Newton's:", options: ["third law", "second law", "first law", "law of gravitation"], correctIndex: 0, explanation: "Foot pushes ground back, ground pushes foot forward — action and reaction." },
       ],
       test: [
         { type: "SHORT_ANSWER", prompt: "State Newton's three laws of motion.", answerKey: "1st: a body stays at rest or in uniform straight-line motion unless acted on by a net external force. 2nd: acceleration is proportional to net force and inversely proportional to mass (F = ma). 3rd: to every action there is an equal and opposite reaction.", marks: 6 },
         { type: "MULTIPLE_CHOICE", prompt: "A 6 kg body experiences a net force of 30 N. Its acceleration is:", options: ["5 m/s²", "0.2 m/s²", "180 m/s²", "24 m/s²"], correctIndex: 0, answerKey: "a = F/m = 30/6 = 5 m/s².", marks: 2 },
         { type: "SHORT_ANSWER", prompt: "Distinguish between mass and weight, giving units for each.", answerKey: "Mass = amount of matter, scalar, kilograms (kg), constant everywhere. Weight = gravitational force on the body, vector, newtons (N), w = mg, varies with g/location.", marks: 4 },
-        { type: "MULTIPLE_CHOICE", prompt: "Action and reaction forces are equal in size, opposite in direction, and act on:", options: ["the same body", "two different bodies", "no body", "only moving bodies"], correctIndex: 1, answerKey: "They act on the two different interacting bodies, so they do not cancel on one body.", marks: 2 },
+        { type: "MULTIPLE_CHOICE", prompt: "Action and reaction forces are equal in size, opposite in direction, and act on:", options: ["two different bodies", "the same body", "no body", "only moving bodies"], correctIndex: 0, answerKey: "They act on the two different interacting bodies, so they do not cancel on one body.", marks: 2 },
         { type: "ESSAY", prompt: "Using Newton's laws, explain how a car accelerates from rest, including the roles of inertia, the driving force and friction from the road, and one situation where inertia is dangerous.", answerKey: "At rest the car's inertia (first law) keeps it still until a net force acts. The engine turns the wheels which push back on the road; by the third law the road pushes the tyres forward, providing the driving force. By the second law this net force divided by the car's mass gives its acceleration (F = ma). A sudden stop or crash shows dangerous inertia: passengers keep moving forward (first law) unless restrained by seat belts. Reward correct use of all three laws.", marks: 8 },
       ],
     },
@@ -512,32 +512,32 @@ If instead **down is positive** (a = +g), use + signs. Be consistent within a pr
 
 **Answer.** g ≈ 9.80 m/s², matching the measured value, and it does not depend on the falling object's mass.`,
       quiz: [
-        { prompt: "The gravitational force between two masses is:", options: ["always repulsive", "always attractive", "zero", "sometimes attractive, sometimes repulsive"], correctIndex: 1, explanation: "Gravity is always an attractive force." },
-        { prompt: "Newton's law of gravitation: F =", options: ["Gm₁m₂/r", "Gm₁m₂/r²", "Gm₁m₂r²", "G(m₁+m₂)/r²"], correctIndex: 1, explanation: "F = Gm₁m₂/r², an inverse-square law." },
-        { prompt: "The universal gravitational constant G is about:", options: ["9.8 N·m²/kg²", "6.67 × 10⁻¹¹ N·m²/kg²", "6.67 × 10¹¹ N·m²/kg²", "3.0 × 10⁸ N·m²/kg²"], correctIndex: 1, explanation: "G = 6.674 × 10⁻¹¹ N·m²/kg²." },
-        { prompt: "In the formula, r is the distance between the:", options: ["surfaces of the bodies", "centres of the bodies", "tops of the bodies", "orbits"], correctIndex: 1, explanation: "r is the separation of the centres of mass." },
-        { prompt: "If the distance between two masses doubles, the force becomes:", options: ["half", "one quarter", "double", "four times"], correctIndex: 1, explanation: "F ∝ 1/r², so doubling r gives 1/4 of the force." },
-        { prompt: "If one mass is doubled (distance unchanged), the force:", options: ["halves", "doubles", "quarters", "stays the same"], correctIndex: 1, explanation: "F ∝ m₁, so doubling a mass doubles the force." },
-        { prompt: "The acceleration due to gravity at Earth's surface is g =", options: ["GM/r²", "GMr²", "GM/r", "G/Mr²"], correctIndex: 0, explanation: "From mg = GmM/r², g = GM/r²." },
-        { prompt: "Why do all objects fall at the same rate (no air resistance)?", options: ["they have equal mass", "g does not depend on the falling object's mass", "gravity is repulsive", "G changes with mass"], correctIndex: 1, explanation: "g = GM/r² is independent of the falling body's mass." },
-        { prompt: "Weight of a body is the gravitational force of the Earth, given by:", options: ["w = GM", "w = mg", "w = G/r²", "w = mr²"], correctIndex: 1, explanation: "Weight w = mg." },
-        { prompt: "Gravitation acts between:", options: ["only planets", "only large objects", "all masses in the universe", "only charged objects"], correctIndex: 2, explanation: "It is universal — between every pair of masses." },
-        { prompt: "If the distance triples, the gravitational force becomes:", options: ["1/3", "1/6", "1/9", "3 times"], correctIndex: 2, explanation: "F ∝ 1/r², so tripling r gives 1/9." },
-        { prompt: "G differs from g in that G is:", options: ["a local acceleration", "a universal constant", "measured in m/s²", "9.8"], correctIndex: 1, explanation: "G is a universal constant; g is the local acceleration due to gravity." },
-        { prompt: "The gravitational force keeps the Moon:", options: ["at rest", "in orbit around the Earth", "spinning only", "charged"], correctIndex: 1, explanation: "Gravity provides the centripetal pull that keeps the Moon orbiting Earth." },
-        { prompt: "Gravitational force between two people standing close together is:", options: ["very large", "extremely small", "repulsive", "zero"], correctIndex: 1, explanation: "The force is tiny unless at least one mass is very large." },
+        { prompt: "The gravitational force between two masses is:", options: ["always attractive", "always repulsive", "zero", "sometimes attractive, sometimes repulsive"], correctIndex: 0, explanation: "Gravity is always an attractive force." },
+        { prompt: "Newton's law of gravitation: F =", options: ["Gm₁m₂/r", "Gm₁m₂r²", "Gm₁m₂/r²", "G(m₁+m₂)/r²"], correctIndex: 2, explanation: "F = Gm₁m₂/r², an inverse-square law." },
+        { prompt: "The universal gravitational constant G is about:", options: ["9.8 N·m²/kg²", "6.67 × 10¹¹ N·m²/kg²", "6.67 × 10⁻¹¹ N·m²/kg²", "3.0 × 10⁸ N·m²/kg²"], correctIndex: 2, explanation: "G = 6.674 × 10⁻¹¹ N·m²/kg²." },
+        { prompt: "In the formula, r is the distance between the:", options: ["surfaces of the bodies", "tops of the bodies", "centres of the bodies", "orbits"], correctIndex: 2, explanation: "r is the separation of the centres of mass." },
+        { prompt: "If the distance between two masses doubles, the force becomes:", options: ["half", "double", "one quarter", "four times"], correctIndex: 2, explanation: "F ∝ 1/r², so doubling r gives 1/4 of the force." },
+        { prompt: "If one mass is doubled (distance unchanged), the force:", options: ["halves", "quarters", "doubles", "stays the same"], correctIndex: 2, explanation: "F ∝ m₁, so doubling a mass doubles the force." },
+        { prompt: "The acceleration due to gravity at Earth's surface is g =", options: ["G/Mr²", "GMr²", "GM/r", "GM/r²"], correctIndex: 3, explanation: "From mg = GmM/r², g = GM/r²." },
+        { prompt: "Why do all objects fall at the same rate (no air resistance)?", options: ["they have equal mass", "gravity is repulsive", "g does not depend on the falling object's mass", "G changes with mass"], correctIndex: 2, explanation: "g = GM/r² is independent of the falling body's mass." },
+        { prompt: "Weight of a body is the gravitational force of the Earth, given by:", options: ["w = mg", "w = GM", "w = G/r²", "w = mr²"], correctIndex: 0, explanation: "Weight w = mg." },
+        { prompt: "Gravitation acts between:", options: ["all masses in the universe", "only large objects", "only planets", "only charged objects"], correctIndex: 0, explanation: "It is universal — between every pair of masses." },
+        { prompt: "If the distance triples, the gravitational force becomes:", options: ["1/9", "1/6", "1/3", "3 times"], correctIndex: 0, explanation: "F ∝ 1/r², so tripling r gives 1/9." },
+        { prompt: "G differs from g in that G is:", options: ["a local acceleration", "9.8", "measured in m/s²", "a universal constant"], correctIndex: 3, explanation: "G is a universal constant; g is the local acceleration due to gravity." },
+        { prompt: "The gravitational force keeps the Moon:", options: ["in orbit around the Earth", "at rest", "spinning only", "charged"], correctIndex: 0, explanation: "Gravity provides the centripetal pull that keeps the Moon orbiting Earth." },
+        { prompt: "Gravitational force between two people standing close together is:", options: ["extremely small", "very large", "repulsive", "zero"], correctIndex: 0, explanation: "The force is tiny unless at least one mass is very large." },
         { prompt: "Both masses in a gravitational pair feel forces that are:", options: ["equal and opposite", "unequal", "in the same direction", "zero"], correctIndex: 0, explanation: "By Newton's third law the forces are equal and opposite." },
-        { prompt: "Doubling both masses (distance fixed) changes the force by a factor of:", options: ["2", "4", "8", "1"], correctIndex: 1, explanation: "F ∝ m₁m₂, so doubling both gives ×4." },
+        { prompt: "Doubling both masses (distance fixed) changes the force by a factor of:", options: ["2", "1", "8", "4"], correctIndex: 3, explanation: "F ∝ m₁m₂, so doubling both gives ×4." },
         { prompt: "The law of gravitation is called an inverse-square law because F depends on:", options: ["1/r", "1/r²", "r²", "r"], correctIndex: 1, explanation: "F is inversely proportional to r²." },
-        { prompt: "As you move far from the Earth, g:", options: ["increases", "decreases", "stays 9.8", "becomes G"], correctIndex: 1, explanation: "g = GM/r² decreases as r increases." },
-        { prompt: "The unit of G is:", options: ["m/s²", "N·m²/kg²", "N/kg", "kg·m/s"], correctIndex: 1, explanation: "G has units N·m²/kg²." },
-        { prompt: "Weight of an object on the Moon is less than on Earth because:", options: ["its mass is less", "g is smaller on the Moon", "G is smaller", "there is no gravity"], correctIndex: 1, explanation: "The Moon's smaller g reduces w = mg, though mass is unchanged." },
+        { prompt: "As you move far from the Earth, g:", options: ["increases", "stays 9.8", "decreases", "becomes G"], correctIndex: 2, explanation: "g = GM/r² decreases as r increases." },
+        { prompt: "The unit of G is:", options: ["m/s²", "N/kg", "N·m²/kg²", "kg·m/s"], correctIndex: 2, explanation: "G has units N·m²/kg²." },
+        { prompt: "Weight of an object on the Moon is less than on Earth because:", options: ["its mass is less", "G is smaller", "g is smaller on the Moon", "there is no gravity"], correctIndex: 2, explanation: "The Moon's smaller g reduces w = mg, though mass is unchanged." },
       ],
       test: [
         { type: "SHORT_ANSWER", prompt: "State Newton's law of universal gravitation and write its formula, defining each symbol.", answerKey: "Every particle attracts every other with a force along the line joining them, proportional to the product of masses and inversely proportional to the square of their separation. F = Gm₁m₂/r²: F force (N), G = 6.67×10⁻¹¹ N·m²/kg², m₁ and m₂ masses (kg), r centre-to-centre distance (m).", marks: 5 },
-        { type: "MULTIPLE_CHOICE", prompt: "If the distance between two masses is halved, the gravitational force becomes:", options: ["half", "double", "one quarter", "four times"], correctIndex: 3, answerKey: "F ∝ 1/r²; halving r multiplies the force by 4.", marks: 2 },
+        { type: "MULTIPLE_CHOICE", prompt: "If the distance between two masses is halved, the gravitational force becomes:", options: ["half", "four times", "one quarter", "double"], correctIndex: 1, answerKey: "F ∝ 1/r²; halving r multiplies the force by 4.", marks: 2 },
         { type: "SHORT_ANSWER", prompt: "Explain the difference between G and g.", answerKey: "G is the universal gravitational constant (6.67×10⁻¹¹ N·m²/kg²), the same everywhere. g is the local acceleration due to gravity (≈9.8 m/s² on Earth), given by g = GM/r², and varies with location.", marks: 3 },
-        { type: "MULTIPLE_CHOICE", prompt: "The acceleration due to gravity g at Earth's surface equals:", options: ["GM/r²", "Gm/r²", "GMr²", "GM/r"], correctIndex: 0, answerKey: "g = GM/r² from equating weight to the gravitational force.", marks: 2 },
+        { type: "MULTIPLE_CHOICE", prompt: "The acceleration due to gravity g at Earth's surface equals:", options: ["Gm/r²", "GM/r²", "GMr²", "GM/r"], correctIndex: 1, answerKey: "g = GM/r² from equating weight to the gravitational force.", marks: 2 },
         { type: "ESSAY", prompt: "Explain, using the law of universal gravitation, why the weight of an object changes when it is taken to the Moon but its mass does not, and why all objects fall with the same acceleration at a given place.", answerKey: "Weight is the gravitational force, w = mg with g = GM/r². On the Moon M and r differ, giving a smaller g (~1.6 m/s²), so weight falls, but mass (amount of matter) is unchanged. All objects at one place fall with the same acceleration because g = GM/r² is independent of the falling body's mass — the extra force on a larger mass is exactly offset by its greater inertia. Reward correct mass/weight distinction and mass-independence argument.", marks: 8 },
       ],
     },
