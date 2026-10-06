@@ -11,6 +11,7 @@ export const geographyG10P2: PeriodContent = {
     "Period II of the MoE Grade 10 Geography syllabus. Learners describe the Earth's external spheres (atmosphere, hydrosphere, biosphere, lithosphere) and its internal layers (crust, mantle, core), then study the three types of rock — igneous, sedimentary and metamorphic — and their characteristics and economic uses.",
   topics: [
     {
+      // source: Geosciences LibreTexts — Introduction to Earth Science (GEOL 121), 1.3 Components of the Earth System (https://geo.libretexts.org/Courses/Coalinga_College/Introduction_to_Earth_Science_(C-ID:_GEOL_121)/01:_Introduction_to_Earth_Science/1.03:_Components_of_the_Earth_System)
       slug: "structure-of-the-earth",
       title: "The External and Internal Structure of the Earth",
       objective:
@@ -86,8 +87,6 @@ Cutting the Earth open reveals three main layers, like a boiled egg:
 3. **Core** — the innermost layer of iron and nickel; a liquid outer core surrounds a solid inner core, and it is the hottest part of the Earth.
 
 **Link:** the spheres and the internal layers connect — the lithosphere (an external sphere) is made of the crust and the very top of the mantle.`,
-      teachingTip:
-        "The boiled-egg analogy (shell = crust, white = mantle, yolk = core) makes the internal structure stick, and the syllabus even suggests bringing an egg to class. For the spheres, have learners point to each one from the classroom window — sky (atmosphere), a puddle or river (hydrosphere), the ground (lithosphere), a tree or person (biosphere) — so the abstract terms map onto things they can see.",
       quiz: [
         {
           prompt: "The envelope of gases surrounding the Earth is the…",
@@ -103,14 +102,14 @@ Cutting the Earth open reveals three main layers, like a boiled egg:
         },
         {
           prompt: "The solid rocky outer shell of the Earth is the…",
-          options: ["lithosphere", "biosphere", "atmosphere", "hydrosphere"],
-          correctIndex: 0,
+          options: ["hydrosphere", "biosphere", "atmosphere", "lithosphere"],
+          correctIndex: 3,
           explanation: "The lithosphere is the crust plus the upper mantle.",
         },
         {
           prompt: "The zone where living things exist is the…",
-          options: ["biosphere", "atmosphere", "core", "mantle"],
-          correctIndex: 0,
+          options: ["mantle", "atmosphere", "core", "biosphere"],
+          correctIndex: 3,
           explanation: "The biosphere is the sphere of life.",
         },
         {
@@ -121,32 +120,32 @@ Cutting the Earth open reveals three main layers, like a boiled egg:
         },
         {
           prompt: "The thick layer of hot, semi-molten rock below the crust is the…",
-          options: ["mantle", "core", "lithosphere", "atmosphere"],
-          correctIndex: 0,
+          options: ["atmosphere", "core", "lithosphere", "mantle"],
+          correctIndex: 3,
           explanation: "The mantle lies between the crust and the core.",
         },
         {
           prompt: "The Earth's core is made mainly of…",
-          options: ["iron and nickel", "water", "granite", "air"],
-          correctIndex: 0,
+          options: ["air", "water", "granite", "iron and nickel"],
+          correctIndex: 3,
           explanation: "The core is largely iron and nickel.",
         },
         {
           prompt: "Which part of the core is liquid?",
-          options: ["the outer core", "the inner core", "both are solid", "both are gas"],
-          correctIndex: 0,
+          options: ["both are gas", "the inner core", "both are solid", "the outer core"],
+          correctIndex: 3,
           explanation: "The outer core is liquid; the inner core is solid.",
         },
         {
           prompt: "The crust is thickest under…",
-          options: ["mountains", "oceans", "deserts", "rivers"],
-          correctIndex: 0,
+          options: ["deserts", "oceans", "mountains", "rivers"],
+          correctIndex: 2,
           explanation: "Continental crust, especially under mountains, is thickest.",
         },
         {
           prompt: "As you go deeper into the Earth, temperature generally…",
-          options: ["increases", "decreases", "stays the same", "disappears"],
-          correctIndex: 0,
+          options: ["disappears", "decreases", "stays the same", "increases"],
+          correctIndex: 3,
           explanation: "Both temperature and pressure rise with depth.",
         },
         {
@@ -158,24 +157,24 @@ Cutting the Earth open reveals three main layers, like a boiled egg:
         {
           prompt: "Rain falling onto soil to feed plants shows interaction between the…",
           options: [
-            "atmosphere, hydrosphere, lithosphere and biosphere",
+            "atmosphere alone",
             "core and mantle only",
             "inner and outer core",
-            "atmosphere alone",
+            "atmosphere, hydrosphere, lithosphere and biosphere",
           ],
-          correctIndex: 0,
+          correctIndex: 3,
           explanation: "The spheres constantly exchange matter and energy.",
         },
         {
           prompt: "The Earth's magnetic field is generated by movement in the…",
-          options: ["liquid outer core", "crust", "atmosphere", "biosphere"],
-          correctIndex: 0,
+          options: ["crust", "liquid outer core", "atmosphere", "biosphere"],
+          correctIndex: 1,
           explanation: "The moving liquid outer core creates the magnetic field.",
         },
         {
           prompt: "Which internal layer is the hottest?",
-          options: ["the core", "the crust", "the lithosphere", "the mantle's surface"],
-          correctIndex: 0,
+          options: ["the mantle's surface", "the crust", "the lithosphere", "the core"],
+          correctIndex: 3,
           explanation: "The core, at the centre, is the hottest region.",
         },
         {
@@ -186,42 +185,42 @@ Cutting the Earth open reveals three main layers, like a boiled egg:
         },
         {
           prompt: "Which sphere supplies minerals and soil?",
-          options: ["lithosphere", "atmosphere", "hydrosphere", "biosphere"],
-          correctIndex: 0,
+          options: ["hydrosphere", "atmosphere", "lithosphere", "biosphere"],
+          correctIndex: 2,
           explanation: "The rocky lithosphere provides soil and minerals.",
         },
         {
           prompt: "The inner core remains solid mainly because of…",
-          options: ["enormous pressure", "low temperature", "lack of iron", "the magnetic field"],
-          correctIndex: 0,
+          options: ["lack of iron", "low temperature", "enormous pressure", "the magnetic field"],
+          correctIndex: 2,
           explanation: "Extreme pressure keeps the inner core solid despite the heat.",
         },
         {
           prompt: "Which order is correct, from surface to centre?",
           options: [
-            "crust, mantle, core",
-            "core, mantle, crust",
             "mantle, crust, core",
+            "core, mantle, crust",
+            "crust, mantle, core",
             "crust, core, mantle",
           ],
-          correctIndex: 0,
+          correctIndex: 2,
           explanation: "From the surface inward: crust → mantle → core.",
         },
         {
           prompt: "Slow movements in which layer cause the crust to move?",
-          options: ["the mantle", "the atmosphere", "the inner core", "the hydrosphere"],
-          correctIndex: 0,
+          options: ["the atmosphere", "the mantle", "the inner core", "the hydrosphere"],
+          correctIndex: 1,
           explanation: "Currents in the semi-molten mantle move the crust above.",
         },
         {
-          prompt: "Which two spheres overlap most obviously in the biosphere?",
+          prompt: "The biosphere is found where which spheres overlap?",
           options: [
-            "atmosphere, hydrosphere and lithosphere",
+            "atmosphere and core",
             "outer core and inner core",
             "mantle and crust",
-            "atmosphere and core",
+            "atmosphere, hydrosphere and lithosphere",
           ],
-          correctIndex: 0,
+          correctIndex: 3,
           explanation: "Life exists where air, water and land meet.",
         },
       ],
@@ -243,8 +242,8 @@ Cutting the Earth open reveals three main layers, like a boiled egg:
         {
           type: "MULTIPLE_CHOICE",
           prompt: "Which layer of the Earth is semi-molten and drives the movement of the crust?",
-          options: ["the mantle", "the crust", "the inner core", "the atmosphere"],
-          correctIndex: 0,
+          options: ["the atmosphere", "the crust", "the inner core", "the mantle"],
+          correctIndex: 3,
           answerKey: "Slow flow in the hot mantle moves the crust above it.",
           marks: 2,
         },
@@ -256,9 +255,11 @@ Cutting the Earth open reveals three main layers, like a boiled egg:
             "A strong answer explains that the spheres continuously exchange matter and energy rather than acting alone, and gives a concrete example — e.g. water evaporates from the ocean (hydrosphere) into the air (atmosphere), condenses and falls as rain onto the land (lithosphere), where it is taken up by plants and animals (biosphere). Award marks for describing interaction/interdependence and a valid worked example linking at least three spheres.",
           marks: 5,
         },
+        { type: "MULTIPLE_CHOICE", prompt: "Which part of the Earth's core is liquid and produces the magnetic field?", options: ["the outer core", "the inner core", "the crust", "the lithosphere"], correctIndex: 0, answerKey: "The outer core is liquid iron and nickel; movement in it generates the Earth's magnetic field. The inner core is solid because of enormous pressure. Option A.", marks: 2 },
       ],
     },
     {
+      // source: Geosciences LibreTexts — The Physical Environment (Ritter), 14.5.1 Rocks and the Rock Cycle (https://geo.libretexts.org/Bookshelves/Geography_(Physical)/The_Physical_Environment_(Ritter)/14:_Earth_Materials_and_Structure/14.05:_Rocks/14.5.01:_Rocks_and_the_Rock_Cycle)
       slug: "rocks-of-the-earth",
       title: "Rocks of the Earth",
       objective:
@@ -280,18 +281,18 @@ Cutting the Earth open reveals three main layers, like a boiled egg:
 
 Rocks are classified by **how they form**.
 
-### 1. Igneous rocks
+## Igneous rocks
 Formed when hot molten rock (**magma** below ground, **lava** above) **cools and solidifies**. The word comes from the Latin *ignis*, "fire".
 
-- Cooled slowly deep underground → large crystals, e.g. **granite**.
-- Cooled quickly at the surface → small crystals, e.g. **basalt**.
+- Cooled slowly deep underground (**intrusive**) → large crystals, e.g. **granite**.
+- Cooled quickly at the surface (**extrusive**) → small crystals, e.g. **basalt**.
 
-### 2. Sedimentary rocks
+## Sedimentary rocks
 Formed when small particles (**sediments**) — worn from other rocks, or the remains of living things — are **deposited in layers**, then pressed and cemented together over long periods. They often show **layers (strata)** and may contain **fossils**.
 
 - Examples: **sandstone**, **limestone**, **shale**.
 
-### 3. Metamorphic rocks
+## Metamorphic rocks
 Formed when existing rocks are changed by great **heat and/or pressure**, without fully melting. *Metamorphic* means "changed form".
 
 - Limestone → **marble**; shale → **slate**; granite → **gneiss**.
@@ -345,13 +346,11 @@ Rocks and the minerals in them are vital to Liberia's economy and everyday life:
 - **Evidence:** marble forms when **limestone** (a sedimentary rock) is subjected to great heat and pressure and is changed (metamorphosed) without fully melting. Its parent rock and the change it underwent make it metamorphic.
 
 **Conclusion:** the mode of formation — cooling of a melt, deposition of sediments, or alteration by heat and pressure — is the key to classifying any rock.`,
-      teachingTip:
-        "Bring in three real rock samples if you can — a coarse-grained igneous rock, a layered sedimentary rock, and a metamorphic rock — and let learners handle them while naming the clues (crystals, layers, fossils, hardness). If samples are scarce, use photographs. Connect each type to something local (laterite roads, limestone for cement, iron ore for export) so 'economic importance' is not just a list to recite.",
       quiz: [
         {
           prompt: "A naturally occurring solid with a definite chemical composition is a…",
-          options: ["mineral", "rock", "fossil", "sediment"],
-          correctIndex: 0,
+          options: ["sediment", "rock", "fossil", "mineral"],
+          correctIndex: 3,
           explanation: "Minerals are the building blocks; rocks are made of them.",
         },
         {
@@ -367,14 +366,14 @@ Rocks and the minerals in them are vital to Liberia's economy and everyday life:
         },
         {
           prompt: "Igneous rocks form when…",
-          options: ["molten rock cools and solidifies", "sediments are cemented", "rocks are heated and pressed", "fossils decay"],
-          correctIndex: 0,
+          options: ["sediments are cemented", "molten rock cools and solidifies", "rocks are heated and pressed", "fossils decay"],
+          correctIndex: 1,
           explanation: "Igneous rocks come from cooling magma or lava.",
         },
         {
           prompt: "Which is an example of an igneous rock?",
-          options: ["granite", "limestone", "marble", "shale"],
-          correctIndex: 0,
+          options: ["shale", "limestone", "marble", "granite"],
+          correctIndex: 3,
           explanation: "Granite forms from slowly cooled magma.",
         },
         {
@@ -390,14 +389,14 @@ Rocks and the minerals in them are vital to Liberia's economy and everyday life:
         },
         {
           prompt: "Which feature is typical of sedimentary rocks?",
-          options: ["layers and fossils", "large glassy crystals", "banding from pressure", "no visible structure"],
-          correctIndex: 0,
+          options: ["large glassy crystals", "layers and fossils", "banding from pressure", "no visible structure"],
+          correctIndex: 1,
           explanation: "Strata and fossils are hallmarks of sedimentary rocks.",
         },
         {
           prompt: "Which is a sedimentary rock?",
-          options: ["limestone", "granite", "basalt", "marble"],
-          correctIndex: 0,
+          options: ["basalt", "granite", "limestone", "marble"],
+          correctIndex: 2,
           explanation: "Limestone forms from deposited sediments and shells.",
         },
         {
@@ -408,14 +407,14 @@ Rocks and the minerals in them are vital to Liberia's economy and everyday life:
         },
         {
           prompt: "Limestone changes into which metamorphic rock?",
-          options: ["marble", "granite", "basalt", "sandstone"],
-          correctIndex: 0,
+          options: ["basalt", "granite", "marble", "sandstone"],
+          correctIndex: 2,
           explanation: "Heat and pressure turn limestone into marble.",
         },
         {
           prompt: "Shale changes into which metamorphic rock?",
-          options: ["slate", "marble", "granite", "limestone"],
-          correctIndex: 0,
+          options: ["marble", "slate", "granite", "limestone"],
+          correctIndex: 1,
           explanation: "Shale is metamorphosed into slate.",
         },
         {
@@ -432,14 +431,14 @@ Rocks and the minerals in them are vital to Liberia's economy and everyday life:
         },
         {
           prompt: "The property describing whether water can pass through a rock is…",
-          options: ["permeability", "colour", "texture", "hardness"],
-          correctIndex: 0,
+          options: ["hardness", "colour", "texture", "permeability"],
+          correctIndex: 3,
           explanation: "Permeable rocks (like sandstone) let water through.",
         },
         {
           prompt: "Molten rock below the ground is called…",
-          options: ["magma", "lava", "sediment", "ore"],
-          correctIndex: 0,
+          options: ["lava", "magma", "sediment", "ore"],
+          correctIndex: 1,
           explanation: "Underground molten rock is magma; above ground it is lava.",
         },
         {
@@ -450,8 +449,8 @@ Rocks and the minerals in them are vital to Liberia's economy and everyday life:
         },
         {
           prompt: "The three types of rock are igneous, metamorphic and…",
-          options: ["sedimentary", "mineral", "crystalline", "volcanic"],
-          correctIndex: 0,
+          options: ["mineral", "sedimentary", "crystalline", "volcanic"],
+          correctIndex: 1,
           explanation: "The classification is igneous, sedimentary and metamorphic.",
         },
         {
@@ -467,14 +466,14 @@ Rocks and the minerals in them are vital to Liberia's economy and everyday life:
         },
         {
           prompt: "Rocks are classified mainly according to their…",
-          options: ["mode of formation", "colour only", "size only", "weight"],
-          correctIndex: 0,
+          options: ["colour only", "mode of formation", "size only", "weight"],
+          correctIndex: 1,
           explanation: "How a rock forms determines its type.",
         },
         {
           prompt: "Granite changed by heat and pressure becomes…",
-          options: ["gneiss", "sandstone", "limestone", "lava"],
-          correctIndex: 0,
+          options: ["limestone", "sandstone", "gneiss", "lava"],
+          correctIndex: 2,
           explanation: "Granite metamorphoses into gneiss.",
         },
         {
@@ -507,8 +506,8 @@ Rocks and the minerals in them are vital to Liberia's economy and everyday life:
         {
           type: "MULTIPLE_CHOICE",
           prompt: "A rock showing distinct layers and containing shell fossils is most likely…",
-          options: ["sedimentary", "igneous", "metamorphic", "molten"],
-          correctIndex: 0,
+          options: ["igneous", "sedimentary", "metamorphic", "molten"],
+          correctIndex: 1,
           answerKey: "Layers (strata) and fossils are characteristic of sedimentary rocks.",
           marks: 2,
         },

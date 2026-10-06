@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { listSubjects } from "@/lib/curriculum";
 import { getCurrentUser } from "@/lib/auth";
+import { SubjectMark } from "@/components/SubjectMark";
 
 const GRADES = [10, 11, 12];
 
@@ -13,105 +14,101 @@ export default async function DashboardPage() {
 
   const firstName = (user?.fullName || user?.username || "there").split(" ")[0];
 
-  // Tally subjects and topics available per grade from the in-repo content.
-  const perGrade = new Map<number, { subjects: number; topics: number }>();
-  for (const s of subjects) {
-    const gradesInSubject = new Set<number>();
-    for (const p of s.periods) {
-      gradesInSubject.add(p.grade);
-      const g = perGrade.get(p.grade) ?? { subjects: 0, topics: 0 };
-      g.topics += p._count.topics;
-      perGrade.set(p.grade, g);
-    }
-    for (const g of gradesInSubject) {
-      const row = perGrade.get(g)!;
-      row.subjects += 1;
-    }
-  }
+  // For each grade, the subjects that have lessons in it.
+  const shelves = GRADES.map((grade) => {
+    const books = subjects
+      .map((s) => {
+        const periods = s.periods.filter((p) => p.grade === grade);
+        return {
+          slug: s.slug,
+          name: s.name,
+          accent: s.accent,
+          periods: periods.length,
+          lessons: periods.reduce((n, p) => n + p._count.topics, 0),
+        };
+      })
+      .filter((b) => b.lessons > 0);
+    const lessons = books.reduce((n, b) => n + b.lessons, 0);
+    return { grade, books, lessons };
+  });
 
   return (
-    <div className="animate-fade-up">
-      {/* Masthead */}
-      <div className="border-b border-line pb-8 text-center">
-        <p className="book-eyebrow">The Nuvex Teacher&apos;s Companion</p>
-        <h1 className="book-title mt-3 text-4xl font-semibold leading-tight sm:text-5xl">
+    <div>
+      <header className="max-w-3xl">
+        <h1 className="font-serif text-3xl font-semibold leading-tight sm:text-4xl">
           Welcome back, {firstName}.
         </h1>
-        <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-ink-muted">
-          Your library of Ministry of Education–aligned lesson notes. Choose a
-          grade to open its shelf of subject books.
+        <p className="mt-3 font-serif text-lg leading-relaxed text-ink-muted">
+          Pick a grade and subject to open its lesson notes. Every subject is
+          arranged by period, in the order of the Ministry of Education
+          syllabus.
         </p>
-      </div>
+        <form action="/search" className="mt-6 flex max-w-xl gap-2" role="search">
+          <label htmlFor="dash-search" className="sr-only">
+            Search the notes
+          </label>
+          <input
+            id="dash-search"
+            type="search"
+            name="q"
+            placeholder="Search topics, e.g. photosynthesis or past tense"
+            className="field"
+          />
+          <button type="submit" className="btn btn-secondary shrink-0">
+            Search
+          </button>
+        </form>
+      </header>
 
-      {/* Grade shelves */}
-      <h2 className="book-eyebrow mt-10">Choose a grade</h2>
-      <div className="mt-5 grid gap-5 sm:grid-cols-3">
-        {GRADES.map((grade) => {
-          const stats = perGrade.get(grade);
-          const available = Boolean(stats && stats.topics > 0);
-          return (
-            <GradeCard
-              key={grade}
-              grade={grade}
-              available={available}
-              subjects={stats?.subjects ?? 0}
-              topics={stats?.topics ?? 0}
-            />
-          );
-        })}
+      <div className="mt-12 space-y-12">
+        {shelves.map(({ grade, books, lessons }) => (
+          <section key={grade} aria-labelledby={`grade-${grade}`}>
+            <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-line pb-2">
+              <h2 id={`grade-${grade}`} className="font-serif text-2xl font-semibold">
+                Grade {grade}
+              </h2>
+              {books.length > 0 ? (
+                <p className="text-sm text-ink-muted">
+                  {books.length} subjects · {lessons} lessons ·{" "}
+                  <Link
+                    href={`/grade/${grade}`}
+                    className="font-medium text-brand underline-offset-4 hover:underline"
+                  >
+                    Grade {grade} overview
+                  </Link>
+                </p>
+              ) : (
+                <p className="text-sm text-ink-faint">Not yet available</p>
+              )}
+            </div>
+
+            {books.length > 0 ? (
+              <ul className="mt-1 grid gap-x-10 sm:grid-cols-2 lg:grid-cols-3">
+                {books.map((b) => (
+                  <li key={b.slug} className="border-b border-line/70">
+                    <Link
+                      href={`/subjects/${b.slug}?grade=${grade}`}
+                      className="group flex items-center gap-3 py-3"
+                    >
+                      <SubjectMark accent={b.accent} />
+                      <span className="font-serif text-[1.05rem] font-medium text-ink group-hover:text-brand group-hover:underline group-hover:underline-offset-4">
+                        {b.name}
+                      </span>
+                      <span className="ml-auto whitespace-nowrap text-sm tabular-nums text-ink-faint">
+                        {b.lessons} lessons
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="mt-4 text-ink-muted">
+                Notes for Grade {grade} are being prepared.
+              </p>
+            )}
+          </section>
+        ))}
       </div>
     </div>
-  );
-}
-
-function GradeCard({
-  grade,
-  available,
-  subjects,
-  topics,
-}: {
-  grade: number;
-  available: boolean;
-  subjects: number;
-  topics: number;
-}) {
-  const inner = (
-    <div
-      className={`relative flex h-full flex-col justify-between rounded-card border border-line p-6 transition ${
-        available
-          ? "bg-surface-raised hover:-translate-y-0.5 hover:shadow-md"
-          : "bg-surface-sunken/50"
-      }`}
-    >
-      <div>
-        <p className="book-eyebrow">Grade</p>
-        <p className="font-display text-5xl font-semibold leading-none">
-          {grade}
-        </p>
-      </div>
-      <div className="mt-8">
-        {available ? (
-          <>
-            <p className="text-sm text-ink-muted">
-              {subjects} subjects · {topics} lessons
-            </p>
-            <p className="mt-2 text-sm font-semibold text-brand">
-              Open the library →
-            </p>
-          </>
-        ) : (
-          <span className="inline-block rounded-lg bg-surface-sunken px-2.5 py-1 text-xs font-medium text-ink-faint">
-            Coming soon
-          </span>
-        )}
-      </div>
-    </div>
-  );
-
-  if (!available) return inner;
-  return (
-    <Link href={`/grade/${grade}`} className="block">
-      {inner}
-    </Link>
   );
 }

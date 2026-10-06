@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { searchCurriculum } from "@/lib/search";
-import { accent } from "@/lib/accents";
+import { SubjectMark } from "@/components/SubjectMark";
 
 export default async function SearchPage({
   searchParams,
@@ -13,74 +13,72 @@ export default async function SearchPage({
   const results = query.length >= 2 ? searchCurriculum(query) : [];
 
   return (
-    <div className="animate-fade-up mx-auto max-w-2xl">
-      <h1 className="book-title text-3xl font-semibold">Search the notes</h1>
+    <div className="max-w-3xl">
+      <h1 className="font-serif text-3xl font-semibold">Search</h1>
       <p className="mt-2 text-ink-muted">
-        Find any topic or note across the curriculum by keyword.
+        Find a topic by keyword across every subject and grade.
       </p>
 
-      <form action="/search" className="mt-6">
+      <form action="/search" className="mt-6" role="search">
+        <label htmlFor="q" className="sr-only">
+          Search the notes
+        </label>
         <div className="flex gap-2">
           <input
+            id="q"
             type="search"
             name="q"
             defaultValue={query}
             autoFocus
-            placeholder="e.g. photosynthesis, past tense, Venn diagram…"
-            className="w-full rounded-xl border border-line bg-surface-raised px-4 py-3 text-base outline-none transition placeholder:text-ink-faint focus:border-brand focus:ring-2 focus:ring-brand/20"
+            placeholder="e.g. photosynthesis, past tense, Venn diagram"
+            className="field !py-2.5 !text-base"
           />
-          <button
-            type="submit"
-            className="shrink-0 rounded-xl bg-brand px-5 py-3 text-sm font-semibold text-brand-ink transition hover:opacity-90"
-          >
+          <button type="submit" className="btn btn-primary shrink-0">
             Search
           </button>
         </div>
       </form>
 
+      {query.length === 1 && (
+        <p className="mt-6 text-sm text-ink-muted">Type at least two letters.</p>
+      )}
+
       {query.length >= 2 && (
-        <p className="mt-6 book-eyebrow">
-          {results.length} result{results.length === 1 ? "" : "s"} for
-          &ldquo;{query}&rdquo;
+        <p className="mt-8 border-b border-line pb-2 text-sm text-ink-muted">
+          {results.length} result{results.length === 1 ? "" : "s"} for &ldquo;{query}&rdquo;
         </p>
       )}
 
-      <div className="mt-4 space-y-3">
-        {results.map((r) => {
-          const a = accent(r.accent);
-          return (
+      <ol>
+        {results.map((r) => (
+          <li key={`${r.subjectSlug}-${r.topicSlug}`} className="border-b border-line">
             <Link
-              key={`${r.subjectSlug}-${r.topicSlug}`}
               href={`/subjects/${r.subjectSlug}/${r.topicSlug}`}
-              className="block rounded-card border border-line bg-surface-raised p-4 transition hover:bg-surface-sunken"
+              className="group block py-4"
             >
-              <div className="flex items-center gap-2">
-                <span
-                  className={`inline-flex items-center gap-1.5 rounded-lg px-2 py-0.5 text-xs font-semibold ${a.chip}`}
-                >
-                  <span className={`h-1.5 w-1.5 rounded-full ${a.dot}`} />
-                  {r.subjectName}
-                </span>
-                <span className="text-xs text-ink-faint">
-                  Grade {r.grade} · Period {r.periodNumber}
-                </span>
-              </div>
-              <h2 className="mt-2 font-display text-lg font-semibold leading-snug">
+              <p className="flex items-center gap-2 text-sm text-ink-muted">
+                <SubjectMark accent={r.accent} />
+                {r.subjectName} · Grade {r.grade} · Period {r.periodNumber}
+              </p>
+              <h2 className="mt-1 font-serif text-lg font-semibold leading-snug group-hover:text-brand group-hover:underline group-hover:underline-offset-4">
                 {r.topicTitle}
               </h2>
-              <p className="mt-1 line-clamp-2 text-sm text-ink-muted">
-                {r.snippet}
-              </p>
+              <p className="mt-1 line-clamp-2 font-serif text-ink-muted">{r.snippet}</p>
             </Link>
-          );
-        })}
+          </li>
+        ))}
+      </ol>
 
-        {query.length >= 2 && results.length === 0 && (
-          <div className="rounded-card border border-line bg-surface-sunken/60 p-6 text-center text-ink-muted">
-            No topics matched &ldquo;{query}&rdquo;. Try a different word.
-          </div>
-        )}
-      </div>
+      {query.length >= 2 && results.length === 0 && (
+        <p className="mt-6 text-ink-muted">
+          Nothing matched &ldquo;{query}&rdquo;. Try a shorter or different word,
+          or{" "}
+          <Link href="/dashboard" className="text-brand underline underline-offset-4">
+            browse the library
+          </Link>
+          .
+        </p>
+      )}
     </div>
   );
 }

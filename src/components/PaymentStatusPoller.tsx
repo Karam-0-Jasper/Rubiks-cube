@@ -65,8 +65,8 @@ export function PaymentStatusPoller({
   if (status === "SUCCESSFUL") {
     return (
       <Panel tone="positive" icon="✓" title={`You're on the ${planName} plan`}>
-        Your payment went through. Enjoy the extra Nyvora messages and the
-        teacher-only test questions.
+        Your payment went through. Your extra Nyvora messages and the
+        teacher-only test questions are ready to use.
         <Actions primary={{ href: "/dashboard", label: "Back to subjects" }} />
       </Panel>
     );
@@ -96,7 +96,7 @@ export function PaymentStatusPoller({
   return (
     <Panel tone="pending" icon={<Spinner />} title="Waiting for your payment">
       {instruction}
-      <p className="mt-3 text-xs text-ink-faint">
+      <p className="mt-3 text-sm text-ink-faint">
         This page updates on its own — no need to refresh. ({elapsed}s)
       </p>
     </Panel>
@@ -127,14 +127,15 @@ function Panel({
         ? "bg-danger/15 text-danger"
         : "bg-brand-soft text-brand";
   return (
-    <div className={`rounded-card border ${ring} bg-surface-raised p-6`}>
+    <div className={`rounded-lg border ${ring} bg-surface-raised p-6`} role="status">
       <div
-        className={`grid h-11 w-11 place-items-center rounded-xl text-lg font-bold ${badge}`}
+        className={`grid h-10 w-10 place-items-center rounded-full text-lg font-bold ${badge}`}
+        aria-hidden="true"
       >
         {icon}
       </div>
-      <h1 className="mt-4 text-xl font-bold tracking-tight">{title}</h1>
-      <div className="mt-2 text-sm leading-relaxed text-ink-muted">
+      <h1 className="mt-4 font-serif text-2xl font-semibold">{title}</h1>
+      <div className="mt-2 leading-relaxed text-ink-muted">
         {children}
       </div>
     </div>
@@ -152,14 +153,14 @@ function Actions({
     <div className="mt-5 flex flex-wrap gap-3">
       <a
         href={primary.href}
-        className="rounded-xl bg-brand px-4 py-2.5 text-sm font-semibold text-brand-ink transition hover:opacity-90"
+        className="btn btn-primary"
       >
         {primary.label}
       </a>
       {secondary && (
         <a
           href={secondary.href}
-          className="rounded-xl border border-line px-4 py-2.5 text-sm font-semibold transition hover:bg-surface-sunken"
+          className="btn btn-secondary"
         >
           {secondary.label}
         </a>

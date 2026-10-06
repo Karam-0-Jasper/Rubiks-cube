@@ -34,30 +34,21 @@ const config: Config = {
         danger: "rgb(var(--danger) / <alpha-value>)",
       },
       fontFamily: {
-        serif: [
-          "var(--font-serif)",
-          "Iowan Old Style",
-          "Palatino Linotype",
-          "Palatino",
-          "Georgia",
-          "Cambria",
-          "serif",
-        ],
-        display: [
-          "var(--font-display)",
-          "var(--font-serif)",
-          "Georgia",
-          "serif",
-        ],
+        // Reading text and headings: a book serif.
+        serif: ["var(--font-serif)", "Iowan Old Style", "Georgia", "Cambria", "serif"],
+        display: ["var(--font-serif)", "Iowan Old Style", "Georgia", "serif"],
+        // Interface text (navigation, labels, buttons, tables): a humanist sans.
         sans: [
-          "var(--font-serif)",
-          "Iowan Old Style",
-          "Georgia",
-          "serif",
+          "var(--font-sans)",
+          "system-ui",
+          "-apple-system",
+          "Segoe UI",
+          "Roboto",
+          "sans-serif",
         ],
       },
       borderRadius: {
-        card: "14px",
+        card: "8px",
       },
     },
   },

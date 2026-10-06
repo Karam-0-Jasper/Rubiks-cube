@@ -36,7 +36,7 @@ function format(seconds: number): string {
   const m = Math.floor((seconds % 3600) / 60);
   if (h > 0) return `${h}h ${m}m`;
   if (m > 0) return `${m}m`;
-  return "just started";
+  return "0m";
 }
 
 export function StudyTimer() {
@@ -72,8 +72,8 @@ export function StudyTimer() {
 
   return (
     <span
-      className="hidden items-center gap-1.5 rounded-lg border border-line px-2.5 py-1.5 text-xs font-medium text-ink-muted sm:inline-flex"
-      title={`Total time on Nuvex: ${format(store.total)}`}
+      className="hidden items-center gap-1.5 text-sm text-ink-muted lg:inline-flex"
+      title={`Time spent in Nuvex today. All time: ${format(store.total)}`}
     >
       <svg
         width="13"
@@ -89,8 +89,8 @@ export function StudyTimer() {
         <path d="M12 9v4l2 2" />
         <path d="M9 2h6" />
       </svg>
-      <span className="text-ink">{format(store.today)}</span>
-      <span className="text-ink-faint">today</span>
+      <span className="font-semibold text-ink">{format(store.today)}</span>
+      <span>today</span>
     </span>
   );
 }

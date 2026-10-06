@@ -1,11 +1,10 @@
 import Link from "next/link";
-import { redirect } from "next/navigation";
 
 import { getCurrentUser } from "@/lib/auth";
 import { getQuota } from "@/lib/quota";
-import { logoutAction } from "@/app/actions/auth";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { StudyTimer } from "@/components/StudyTimer";
+import { MainNav } from "@/components/MainNav";
 import { PLANS } from "@/lib/plans";
 
 export default async function AppLayout({
@@ -14,65 +13,55 @@ export default async function AppLayout({
   children: React.ReactNode;
 }) {
   const user = await getCurrentUser();
-  if (!user) redirect("/login");
-
   const quota = await getQuota(user);
-  const displayName = user.fullName || user.username;
 
   return (
-    <div className="min-h-screen">
-      <header className="sticky top-0 z-20 border-b border-line bg-surface/80 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+    <div className="flex min-h-screen flex-col">
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-50 focus:rounded focus:bg-surface-raised focus:px-3 focus:py-2 focus:text-sm"
+      >
+        Skip to content
+      </a>
+
+      <header className="sticky top-0 z-20 border-b border-line bg-surface/95 backdrop-blur-sm supports-[backdrop-filter]:bg-surface/85">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-0 px-4 sm:px-6">
           <Link
             href="/dashboard"
-            className="font-display text-xl font-semibold tracking-tight text-ink"
+            className="py-3 font-serif text-xl font-semibold tracking-tight text-ink"
           >
             Nuvex
           </Link>
 
-          <nav className="flex items-center gap-1 text-sm">
-            <NavLink href="/dashboard" label="Subjects" />
-            <NavLink href="/search" label="Search" />
-            <NavLink href="/nyvora" label="Nyvora" />
-            <NavLink href="/billing" label="Plan" />
-          </nav>
+          <div className="order-3 w-full sm:order-2 sm:w-auto">
+            <MainNav />
+          </div>
 
-          <div className="flex items-center gap-2">
+          <div className="order-2 ml-auto flex items-center gap-2 sm:order-3">
             <StudyTimer />
             <Link
-              href="/nyvora"
-              className="hidden rounded-lg border border-line px-2.5 py-1.5 text-xs font-medium text-ink-muted transition hover:bg-surface-sunken sm:block"
-              title={`${PLANS[quota.plan].name} plan`}
+              href="/billing"
+              className="hidden text-sm text-ink-muted hover:text-ink md:block"
+              title={`${PLANS[quota.plan].name} plan — Nyvora messages left this period`}
             >
-              <span className="text-ink">{quota.remaining}</span>
-              <span className="text-ink-faint">/{quota.limit} left</span>
+              <span className="font-semibold text-ink">{quota.remaining}</span>
+              <span>/{quota.limit} messages</span>
             </Link>
             <ThemeToggle />
-            <form action={logoutAction}>
-              <button
-                type="submit"
-                className="rounded-lg px-2.5 py-1.5 text-xs font-medium text-ink-muted transition hover:bg-surface-sunken hover:text-ink"
-                title={`Logged in as ${displayName}`}
-              >
-                Log out
-              </button>
-            </form>
           </div>
         </div>
       </header>
 
-      <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6">{children}</main>
-    </div>
-  );
-}
+      <main id="main" className="mx-auto w-full max-w-6xl flex-1 px-4 pb-16 pt-8 sm:px-6 sm:pt-10">
+        {children}
+      </main>
 
-function NavLink({ href, label }: { href: string; label: string }) {
-  return (
-    <Link
-      href={href}
-      className="rounded-lg px-3 py-1.5 font-medium text-ink-muted transition hover:bg-surface-sunken hover:text-ink"
-    >
-      {label}
-    </Link>
+      <footer className="border-t border-line">
+        <div className="mx-auto flex max-w-6xl flex-wrap gap-x-6 gap-y-1 px-4 py-6 text-sm text-ink-faint sm:px-6">
+          <span>Nuvex · Lesson notes for the Liberian MoE curriculum</span>
+          <span>Notes are built from open textbooks (OpenStax, LibreTexts, CK-12 and others).</span>
+        </div>
+      </footer>
+    </div>
   );
 }

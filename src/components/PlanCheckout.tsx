@@ -13,7 +13,7 @@ function PayButton({ planName }: { planName: string }) {
     <button
       type="submit"
       disabled={pending}
-      className="w-full rounded-xl bg-brand px-4 py-2.5 text-sm font-semibold text-brand-ink transition hover:opacity-90 disabled:opacity-60"
+      className="btn btn-primary w-full"
     >
       {pending ? "Starting…" : `Pay for ${planName}`}
     </button>
@@ -36,7 +36,7 @@ export function PlanCheckout({
 
   if (providers.length === 0) {
     return (
-      <div className="rounded-xl border border-line px-4 py-2.5 text-center text-sm text-ink-faint">
+      <div className="text-center text-sm text-ink-muted">
         Mobile money not set up yet
       </div>
     );
@@ -47,7 +47,7 @@ export function PlanCheckout({
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="w-full rounded-xl bg-brand px-4 py-2.5 text-sm font-semibold text-brand-ink transition hover:opacity-90"
+        className="btn btn-primary w-full"
       >
         Choose {planName}
       </button>
@@ -60,13 +60,13 @@ export function PlanCheckout({
     <form action={startPayment} className="space-y-3">
       <input type="hidden" name="plan" value={planId} />
       <fieldset className="space-y-2">
-        <legend className="text-xs font-medium text-ink-faint">
+        <legend className="mb-1 text-sm font-medium">
           Pay with
         </legend>
         {providers.map((p) => (
           <label
             key={p.id}
-            className={`flex cursor-pointer items-center gap-2.5 rounded-xl border px-3 py-2 text-sm transition ${
+            className={`flex cursor-pointer items-center gap-2.5 rounded-md border px-3 py-2 text-sm transition-colors ${
               provider === p.id
                 ? "border-brand bg-brand-soft"
                 : "border-line hover:bg-surface-sunken"
@@ -86,7 +86,7 @@ export function PlanCheckout({
       </fieldset>
 
       <label className="block">
-        <span className="mb-1 block text-xs font-medium text-ink-faint">
+        <span className="mb-1 block text-sm font-medium">
           Mobile money number
         </span>
         <input
@@ -95,19 +95,19 @@ export function PlanCheckout({
           required
           defaultValue={defaultPhone}
           placeholder="0770123456"
-          className="w-full rounded-xl border border-line bg-surface px-3 py-2 text-sm outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/20"
+          className="field"
         />
       </label>
 
       {activeHint && (
-        <p className="text-xs text-ink-faint">{activeHint}</p>
+        <p className="text-sm text-ink-muted">{activeHint}</p>
       )}
 
       <PayButton planName={planName} />
       <button
         type="button"
         onClick={() => setOpen(false)}
-        className="w-full text-center text-xs text-ink-faint transition hover:text-ink"
+        className="w-full py-1 text-center text-sm text-ink-muted hover:text-ink hover:underline"
       >
         Cancel
       </button>

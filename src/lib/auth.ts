@@ -23,6 +23,39 @@ function secret(): Uint8Array {
 
 export type SessionUser = User & { subscription: Subscription | null };
 
+/// Login is disabled for now: the app runs as a single built-in demo teacher.
+/// `getCurrentUser` falls back to this user whenever there is no real session,
+/// so every page renders as "Jasper" without a login screen. Its quota window
+/// is far in the future so `getQuota` never has to touch the database for it.
+export const DEMO_USER_ID = "demo-jasper";
+
+const DEMO_EPOCH = new Date("2026-01-01T00:00:00.000Z");
+
+export const DEMO_USER: SessionUser = {
+  id: DEMO_USER_ID,
+  username: "jasper",
+  phone: null,
+  email: null,
+  passwordHash: "",
+  fullName: "Jasper",
+  school: null,
+  theme: "SYSTEM",
+  createdAt: DEMO_EPOCH,
+  updatedAt: DEMO_EPOCH,
+  momoPhone: null,
+  subscription: {
+    id: "demo-subscription",
+    userId: DEMO_USER_ID,
+    plan: "FREE",
+    status: "ACTIVE",
+    provider: null,
+    periodStart: DEMO_EPOCH,
+    periodEnd: new Date("2100-01-01T00:00:00.000Z"),
+    createdAt: DEMO_EPOCH,
+    updatedAt: DEMO_EPOCH,
+  },
+};
+
 export async function createSession(userId: string): Promise<void> {
   const expiresAt = new Date(Date.now() + SESSION_DAYS * 86_400_000);
   const userAgent = (await headers()).get("user-agent")?.slice(0, 255) ?? null;
@@ -62,17 +95,19 @@ export async function destroySession(): Promise<void> {
   store.delete(COOKIE_NAME);
 }
 
-/// Deduped per request so layouts and pages share one lookup.
-export const getCurrentUser = cache(async (): Promise<SessionUser | null> => {
+/// Deduped per request so layouts and pages share one lookup. Login is disabled
+/// for now, so this never returns null: a real session is honored if present,
+/// otherwise the built-in demo teacher (DEMO_USER) is returned.
+export const getCurrentUser = cache(async (): Promise<SessionUser> => {
   const token = (await cookies()).get(COOKIE_NAME)?.value;
-  if (!token) return null;
+  if (!token) return DEMO_USER;
 
   let sid: string;
   try {
     const { payload } = await jwtVerify(token, secret());
     sid = payload.sid as string;
   } catch {
-    return null;
+    return DEMO_USER;
   }
 
   const session = await prisma.session.findUnique({
@@ -80,14 +115,12 @@ export const getCurrentUser = cache(async (): Promise<SessionUser | null> => {
     include: { user: { include: { subscription: true } } },
   });
 
-  if (!session || session.expiresAt < new Date()) return null;
+  if (!session || session.expiresAt < new Date()) return DEMO_USER;
   return session.user;
 });
 
 export async function requireUser(): Promise<SessionUser> {
-  const user = await getCurrentUser();
-  if (!user) throw new Error("UNAUTHENTICATED");
-  return user;
+  return getCurrentUser();
 }
 
 export function activePlan(user: SessionUser): Plan {

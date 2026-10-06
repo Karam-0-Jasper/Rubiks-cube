@@ -5,11 +5,12 @@ import type { PeriodContent } from "@/content/types";
 export const geographyG10P3: PeriodContent = {
   grade: 10,
   number: 3,
-  title: "Population",
+  title: "Population, Settlement and Migration",
   summary:
-    "Period III of the MoE Grade 10 Geography syllabus. Learners study human geography: the meaning and measurement of population, the factors affecting population change (births, deaths and migration), population density and distribution, and the causes and effects of population growth.",
+    "Period III of the MoE Grade 10 Geography syllabus (Unit 2: Human and Regional Geography). Learners study population — its meaning, measurement, change (births, deaths, migration), density and distribution — and then settlement and migration: rural and urban settlements, settlement patterns and functions, urbanization, and the causes, effects and control of migration.",
   topics: [
     {
+      // source: OpenStax/Biology LibreTexts — General Biology 1e (OpenStax), 45.1 Population Demography (https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/General_Biology_1e_(OpenStax)/8:_Ecology/45:_Population_and_Community_Ecology/45.1:_Population_Demography)
       slug: "population-change",
       title: "Population and Population Change",
       objective:
@@ -45,7 +46,7 @@ The size of a population changes through three factors:
 
 The **natural increase** of a population is the **birth rate minus the death rate**. If births exceed deaths, the population grows naturally; if deaths exceed births, it declines.
 
-$$\\text{natural increase} = \\text{birth rate} - \\text{death rate}$$
+**natural increase = birth rate − death rate**
 
 ## Factors affecting birth and death rates
 
@@ -79,19 +80,17 @@ So the population is rising, driven by both a high natural increase and net immi
 
 **Part (c) — why the death rate might be falling**
 Any two of: better **medical care** and vaccination; cleaner **water and sanitation**; a more reliable **food supply**; the end of a war or an epidemic. As the death rate falls while births stay high, the natural increase — and so the population — grows.`,
-      teachingTip:
-        "Learners often think a falling death rate is bad for population numbers — clarify that a lower death rate means fewer people dying, so the population grows. Make the birth-rate/death-rate/migration model concrete with a simple 'water tank' image: births and immigration are taps filling the tank; deaths and emigration are drains emptying it. The level (population) rises when the taps beat the drains.",
       quiz: [
         {
           prompt: "Population is the total number of people living in an area at a…",
-          options: ["given time", "single house", "market", "school"],
-          correctIndex: 0,
+          options: ["market", "single house", "given time", "school"],
+          correctIndex: 2,
           explanation: "Population is counted for an area at a particular time.",
         },
         {
           prompt: "An official count of all the people in a country is a…",
-          options: ["census", "survey of one town", "market day", "budget"],
-          correctIndex: 0,
+          options: ["survey of one town", "census", "market day", "budget"],
+          correctIndex: 1,
           explanation: "A census counts the whole population.",
         },
         {
@@ -102,20 +101,20 @@ Any two of: better **medical care** and vaccination; cleaner **water and sanitat
         },
         {
           prompt: "Which factor increases a population?",
-          options: ["births", "deaths", "emigration", "famine"],
-          correctIndex: 0,
+          options: ["famine", "deaths", "emigration", "births"],
+          correctIndex: 3,
           explanation: "Births add people to a population.",
         },
         {
           prompt: "Which factor decreases a population?",
-          options: ["deaths", "births", "immigration", "a high birth rate"],
-          correctIndex: 0,
+          options: ["a high birth rate", "births", "immigration", "deaths"],
+          correctIndex: 3,
           explanation: "Deaths reduce the population.",
         },
         {
           prompt: "People moving INTO an area is called…",
-          options: ["immigration", "emigration", "natural increase", "a census"],
-          correctIndex: 0,
+          options: ["a census", "emigration", "natural increase", "immigration"],
+          correctIndex: 3,
           explanation: "Immigration = moving in.",
         },
         {
@@ -126,20 +125,20 @@ Any two of: better **medical care** and vaccination; cleaner **water and sanitat
         },
         {
           prompt: "Natural increase is calculated as…",
-          options: ["birth rate − death rate", "birth rate + death rate", "deaths − births", "immigration − emigration"],
-          correctIndex: 0,
+          options: ["deaths − births", "birth rate + death rate", "birth rate − death rate", "immigration − emigration"],
+          correctIndex: 2,
           explanation: "Natural increase = births minus deaths.",
         },
         {
           prompt: "Birth rate is measured per…",
-          options: ["1 000 people per year", "single family", "town", "day"],
-          correctIndex: 0,
+          options: ["day", "single family", "town", "1 000 people per year"],
+          correctIndex: 3,
           explanation: "Birth and death rates are given per 1 000 people per year.",
         },
         {
           prompt: "If a country's birth rate is 30 and death rate is 10, the natural increase is…",
-          options: ["20 per 1 000", "40 per 1 000", "3 per 1 000", "300 per 1 000"],
-          correctIndex: 0,
+          options: ["40 per 1 000", "20 per 1 000", "3 per 1 000", "300 per 1 000"],
+          correctIndex: 1,
           explanation: "30 − 10 = 20 per 1 000.",
         },
         {
@@ -150,50 +149,50 @@ Any two of: better **medical care** and vaccination; cleaner **water and sanitat
         },
         {
           prompt: "'Push factors' in migration are things that…",
-          options: ["drive people away from an area", "attract people to an area", "count the population", "raise the birth rate"],
-          correctIndex: 0,
+          options: ["count the population", "attract people to an area", "drive people away from an area", "raise the birth rate"],
+          correctIndex: 2,
           explanation: "Push factors (war, unemployment) push people to leave.",
         },
         {
           prompt: "'Pull factors' in migration are things that…",
-          options: ["attract people to an area", "drive people away", "reduce births", "close schools"],
-          correctIndex: 0,
+          options: ["drive people away", "attract people to an area", "reduce births", "close schools"],
+          correctIndex: 1,
           explanation: "Pull factors (jobs, safety) attract migrants.",
         },
         {
           prompt: "Movement of people from villages to cities to find work is called…",
-          options: ["rural-to-urban migration", "emigration abroad", "natural increase", "census-taking"],
-          correctIndex: 0,
+          options: ["census-taking", "emigration abroad", "natural increase", "rural-to-urban migration"],
+          correctIndex: 3,
           explanation: "Rural-to-urban migration moves people to cities.",
         },
         {
           prompt: "Governments use census data mainly to…",
-          options: ["plan services and share resources", "increase the birth rate", "stop migration", "raise the death rate"],
-          correctIndex: 0,
+          options: ["stop migration", "increase the birth rate", "plan services and share resources", "raise the death rate"],
+          correctIndex: 2,
           explanation: "Census data guides planning of schools, hospitals, etc.",
         },
         {
           prompt: "Which would tend to raise a country's birth rate?",
-          options: ["early marriage age", "widespread family planning", "high female education", "an ageing population"],
-          correctIndex: 0,
+          options: ["high female education", "widespread family planning", "early marriage age", "an ageing population"],
+          correctIndex: 2,
           explanation: "Younger marriage tends to raise birth rates.",
         },
         {
           prompt: "If deaths exceed births, the population will…",
-          options: ["decline naturally", "grow naturally", "stay exactly the same", "double"],
-          correctIndex: 0,
+          options: ["double", "grow naturally", "stay exactly the same", "decline naturally"],
+          correctIndex: 3,
           explanation: "A negative natural increase means natural decline.",
         },
         {
           prompt: "Net migration is positive when…",
-          options: ["immigration is greater than emigration", "emigration is greater than immigration", "births equal deaths", "no one moves"],
-          correctIndex: 0,
+          options: ["emigration is greater than immigration", "immigration is greater than emigration", "births equal deaths", "no one moves"],
+          correctIndex: 1,
           explanation: "More people in than out gives a net gain.",
         },
         {
           prompt: "Clean water and good sanitation mainly help to…",
-          options: ["lower the death rate", "raise the death rate", "stop all migration", "reduce births directly"],
-          correctIndex: 0,
+          options: ["reduce births directly", "raise the death rate", "stop all migration", "lower the death rate"],
+          correctIndex: 3,
           explanation: "They reduce disease and deaths, lowering the death rate.",
         },
         {
@@ -223,12 +222,12 @@ Any two of: better **medical care** and vaccination; cleaner **water and sanitat
           type: "MULTIPLE_CHOICE",
           prompt: "Which pair correctly matches the term to its meaning?",
           options: [
-            "immigration — moving into an area",
-            "emigration — moving into an area",
             "immigration — moving out of an area",
+            "emigration — moving into an area",
+            "immigration — moving into an area",
             "natural increase — total migration",
           ],
-          correctIndex: 0,
+          correctIndex: 2,
           answerKey: "Immigration is movement into an area; emigration is movement out.",
           marks: 2,
         },
@@ -240,9 +239,11 @@ Any two of: better **medical care** and vaccination; cleaner **water and sanitat
             "A strong answer explains that population change = (births − deaths) + net migration. Births add people (affected by marriage age, education, family planning); deaths remove people (affected by medical care, clean water, food supply, war/disease); migration adds people through immigration and removes them through emigration (driven by push and pull factors). A population grows when births plus immigration exceed deaths plus emigration, and shrinks when the reverse is true. Award marks for the roles of all three factors and valid examples of what affects each.",
           marks: 5,
         },
+        { type: "MULTIPLE_CHOICE", prompt: "A country's birth rate is 28 per 1 000 and its death rate is 12 per 1 000. Its natural increase is", options: ["2.3 per 1 000", "40 per 1 000", "16 per 1 000", "28 per 1 000"], correctIndex: 2, answerKey: "Natural increase = birth rate − death rate = 28 − 12 = 16 per 1 000. Option C.", marks: 2 },
       ],
     },
     {
+      // source: Biology LibreTexts — Environmental Science (Ha and Schleiger), 4.1.2 The Rate of Human Population Growth (https://bio.libretexts.org/Bookshelves/Ecology/Environmental_Science_(Ha_and_Schleiger)/04:_Humans_and_the_Environment/4.01:_The_Human_Population/4.1.02:_The_Rate_of_Human_Population_Growth)
       slug: "population-density-and-distribution",
       title: "Population Density, Distribution and Growth",
       objective:
@@ -258,7 +259,7 @@ Any two of: better **medical care** and vaccination; cleaner **water and sanitat
 
 **Population density** is the **average number of people per unit of area** (usually per square kilometre). It shows how crowded an area is.
 
-$$\\text{population density} = \\frac{\\text{total population}}{\\text{total land area}}$$
+**population density = total population ÷ total land area**
 
 - **Densely populated** — many people per km² (crowded).
 - **Sparsely populated** — few people per km² (nearly empty).
@@ -282,7 +283,7 @@ $$\\text{population density} = \\frac{\\text{total population}}{\\text{total lan
 
 The world's population has grown very fast, especially where the death rate has fallen (better health and food) while the birth rate has stayed high.
 
-### Effects of rapid population growth
+## Effects of rapid population growth
 
 **Problems** (overpopulation):
 - pressure on food, water, housing, schools and hospitals,
@@ -322,85 +323,83 @@ Any two, for example:
 - **Environmental damage** such as deforestation and pollution.
 
 **Conclusion:** density (200 people/km²) measures crowding; distribution is shaped by relief, climate, soil, water and human factors; and when growth outstrips resources, a country faces the strains of overpopulation.`,
-      teachingTip:
-        "Population density is a favourite calculation in exams — make sure learners always divide people by area (not the reverse) and quote the unit 'per km²'. For distribution, split the reasons cleanly into physical and human factors and have learners classify local examples (a crowded capital = human factors; an empty mountain area = physical factors). This structure earns marks and prevents vague answers.",
       quiz: [
         {
           prompt: "Population density is the number of people per…",
-          options: ["unit of area (e.g. km²)", "family", "town", "year"],
-          correctIndex: 0,
+          options: ["family", "unit of area (e.g. km²)", "town", "year"],
+          correctIndex: 1,
           explanation: "Density = people per unit area.",
         },
         {
           prompt: "Population density is calculated as…",
-          options: ["total population ÷ total area", "total area ÷ total population", "births ÷ deaths", "people × area"],
-          correctIndex: 0,
+          options: ["births ÷ deaths", "total area ÷ total population", "total population ÷ total area", "people × area"],
+          correctIndex: 2,
           explanation: "Divide the population by the land area.",
         },
         {
           prompt: "An area with many people per km² is described as…",
-          options: ["densely populated", "sparsely populated", "underpopulated", "empty"],
-          correctIndex: 0,
+          options: ["empty", "sparsely populated", "underpopulated", "densely populated"],
+          correctIndex: 3,
           explanation: "Many people per km² means densely populated.",
         },
         {
           prompt: "A population of 400 000 in 2 000 km² has a density of…",
-          options: ["200 per km²", "800 per km²", "2 per km²", "20 per km²"],
-          correctIndex: 0,
+          options: ["800 per km²", "200 per km²", "2 per km²", "20 per km²"],
+          correctIndex: 1,
           explanation: "400 000 ÷ 2 000 = 200 per km².",
         },
         {
           prompt: "Population distribution describes…",
-          options: ["where people live", "how many are born", "the census date", "the death rate"],
-          correctIndex: 0,
+          options: ["the census date", "how many are born", "where people live", "the death rate"],
+          correctIndex: 2,
           explanation: "Distribution is the pattern of where people live.",
         },
         {
           prompt: "Which physical factor attracts people to settle?",
-          options: ["flat, fertile lowland", "steep mountains", "dry desert", "frozen tundra"],
-          correctIndex: 0,
+          options: ["dry desert", "steep mountains", "flat, fertile lowland", "frozen tundra"],
+          correctIndex: 2,
           explanation: "Flat, fertile land is good for farming and building.",
         },
         {
           prompt: "Which area is likely to be sparsely populated?",
-          options: ["a hot desert", "a fertile river valley", "a coastal city", "a flat farming plain"],
-          correctIndex: 0,
+          options: ["a flat farming plain", "a fertile river valley", "a coastal city", "a hot desert"],
+          correctIndex: 3,
           explanation: "Harsh deserts support few people.",
         },
         {
           prompt: "Which is a HUMAN factor affecting distribution?",
-          options: ["jobs and industry", "relief", "climate", "soil"],
-          correctIndex: 0,
+          options: ["soil", "relief", "climate", "jobs and industry"],
+          correctIndex: 3,
           explanation: "Jobs are a human (economic) factor.",
         },
         {
           prompt: "People often settle near rivers and coasts mainly because of…",
-          options: ["water supply and transport", "cold weather", "steep slopes", "poor soil"],
-          correctIndex: 0,
+          options: ["poor soil", "cold weather", "steep slopes", "water supply and transport"],
+          correctIndex: 3,
           explanation: "Water and transport attract settlement.",
         },
         {
           prompt: "World population has grown fastest where the death rate has…",
-          options: ["fallen while births stayed high", "risen sharply", "matched the birth rate exactly", "become zero"],
-          correctIndex: 0,
+          options: ["risen sharply", "fallen while births stayed high", "matched the birth rate exactly", "become zero"],
+          correctIndex: 1,
           explanation: "Falling deaths with high births causes rapid growth.",
         },
         {
           prompt: "A country with more people than its resources can support is…",
-          options: ["overpopulated", "underpopulated", "sparsely populated only", "at optimum"],
-          correctIndex: 0,
+          options: ["underpopulated", "overpopulated", "sparsely populated only", "at optimum"],
+          correctIndex: 1,
           explanation: "Overpopulation = people exceed resources.",
         },
         {
           prompt: "A country with too few people to use its resources fully is…",
-          options: ["underpopulated", "overpopulated", "densely populated", "at capacity"],
-          correctIndex: 0,
+          options: ["densely populated", "overpopulated", "underpopulated", "at capacity"],
+          correctIndex: 2,
           explanation: "Underpopulation = too few people for the resources.",
         },
         {
           prompt: "Which is a problem of rapid population growth?",
-          options: ["pressure on schools and hospitals", "empty cities", "too few workers", "surplus of everything"],
-          correctIndex: 0,
+          options: ["too few workers", "empty cities", "pressure on schools and hospitals", "surplus of everything"],
+          correctIndex: 2,
           explanation: "Fast growth strains services.",
         },
         {
@@ -411,26 +410,26 @@ Any two, for example:
         },
         {
           prompt: "Steep mountainous relief tends to make an area…",
-          options: ["sparsely populated", "densely populated", "a capital city", "a coastal port"],
-          correctIndex: 0,
+          options: ["a capital city", "densely populated", "sparsely populated", "a coastal port"],
+          correctIndex: 2,
           explanation: "Steep land is hard to farm and build on, so few live there.",
         },
         {
           prompt: "Rapid growth of cities from migration can cause…",
-          options: ["overcrowding and unemployment", "empty streets", "a falling birth rate everywhere", "more farmland"],
-          correctIndex: 0,
+          options: ["empty streets", "overcrowding and unemployment", "a falling birth rate everywhere", "more farmland"],
+          correctIndex: 1,
           explanation: "Cities may struggle with overcrowding and too few jobs.",
         },
         {
           prompt: "Fertile soil affects population because it supports…",
-          options: ["farming and food production", "cold climates", "steep relief", "deserts"],
-          correctIndex: 0,
+          options: ["cold climates", "farming and food production", "steep relief", "deserts"],
+          correctIndex: 1,
           explanation: "Good soil attracts farming settlements.",
         },
         {
           prompt: "To reduce vague answers, distribution factors are grouped into…",
-          options: ["physical and human factors", "old and new factors", "rich and poor factors", "day and night factors"],
-          correctIndex: 0,
+          options: ["day and night factors", "old and new factors", "rich and poor factors", "physical and human factors"],
+          correctIndex: 3,
           explanation: "Physical (relief, climate, soil, water) and human (jobs, services, history).",
         },
         {
@@ -441,8 +440,8 @@ Any two, for example:
         },
         {
           prompt: "Population density mainly tells you how … an area is.",
-          options: ["crowded", "wealthy", "old", "flat"],
-          correctIndex: 0,
+          options: ["wealthy", "crowded", "old", "flat"],
+          correctIndex: 1,
           explanation: "Density measures crowding (people per km²).",
         },
       ],
@@ -466,12 +465,12 @@ Any two, for example:
           type: "MULTIPLE_CHOICE",
           prompt: "A country is 'overpopulated' when…",
           options: [
-            "it has more people than its resources can support",
-            "it has too few people",
             "it has a low birth rate",
+            "it has too few people",
+            "it has more people than its resources can support",
             "everyone lives in one city",
           ],
-          correctIndex: 0,
+          correctIndex: 2,
           answerKey: "Overpopulation means people exceed the resources available.",
           marks: 2,
         },
@@ -483,6 +482,127 @@ Any two, for example:
             "A strong answer explains that rapid growth is often caused by a falling death rate (better health care, clean water, food) while the birth rate stays high, boosted by net immigration. Effects/problems (at least two): pressure on food, water, housing, schools and hospitals; unemployment and overcrowding in cities; environmental damage such as deforestation and pollution. Possible benefit (at least one): a larger workforce and market, or more people to develop the country. Award marks for the cause, two problems and one benefit.",
           marks: 5,
         },
+        { type: "MULTIPLE_CHOICE", prompt: "A region of 3 000 km² has 150 000 people. Its population density is", options: ["20 people per km²", "500 people per km²", "50 people per km²", "450 people per km²"], correctIndex: 2, answerKey: "Density = population ÷ area = 150 000 ÷ 3 000 = 50 people per km². Option C.", marks: 2 },
+      ],
+    },
+    {
+      // source: Biology LibreTexts — Environmental Biology (Fisher and Dorsner), 14.1 Urbanization and Cities; Social Sci LibreTexts — Sociology (Boundless), 17.1C Migration (https://bio.libretexts.org/Courses/Hartnell_College/Environmental_Biology_(Fisher_and_Dorsner_Custom)/14:_Sustainability_and_Urban_Infrastructure/14.01:_Urbanization_and_Cities)
+      slug: "settlement-and-migration",
+      title: "Settlement and Migration",
+      objective:
+        "By the end of the topic, learners should be able to classify settlements by type, pattern, size and function, explain urbanization and its problems, and describe the causes, effects and control of migration.",
+      estimatedMinutes: 160,
+      notes: `## Introduction
+
+- A **settlement** is a place where people live — from a single farmstead to a great city.
+- People move between settlements; this movement is **migration**, and the growth of cities is **urbanization**.
+- **This topic:** classifying settlements; site and situation; urbanization; migration and its push and pull factors.
+
+## What is a settlement?
+
+**Settlement** — any place where people live and carry out their activities, together with the buildings they use.
+
+- **Site** — the actual land a settlement is built on (its physical ground: dry point, hill, river crossing).
+- **Situation** — the position of a settlement in relation to the area around it (other towns, roads, resources).
+
+## Factors affecting the siting and growth of settlements
+
+- **Water supply** — settlements grow near rivers, springs and wells.
+- **Relief** — flat or gently sloping land is easier to build on.
+- **Fertile soil** — supports farming and feeds the settlement.
+- **Defence** — hills and river bends once gave protection.
+- **Resources, trade routes and services** — minerals, roads, ports and markets attract growth.
+
+## Classifying settlements
+
+**By type:**
+- **Rural settlement** — small, in the countryside; people mostly farm or fish (village, hamlet, homestead, farmstead).
+- **Urban settlement** — larger, with many non-farming jobs (town, city, metropolis).
+
+**By size (smallest to largest):** homestead → hamlet → village → town → city → metropolis, with **satellite towns** around a large city.
+
+**By pattern (shape of the settlement):**
+- **Nucleated** — buildings clustered tightly together (often around a crossroads, market or water source).
+- **Linear (ribbon)** — buildings strung out in a line along a road, river or valley.
+- **Dispersed** — buildings scattered widely apart.
+- **Isolated** — a single dwelling standing on its own.
+
+**By function (what a settlement mainly does):** commercial (trade), administrative (government), religious, industrial, mining, port, or residential.
+
+## Urbanization
+
+**Urbanization** — the growth in the proportion of people living in towns and cities, driven by the movement of people from rural to urban areas.
+
+- **Causes:** rural **push factors** (few jobs, poor services, hard farm life) and urban **pull factors** (jobs, better schools and hospitals, city attractions).
+- **Problems:** overcrowding, slums and poor housing, unemployment, pressure on services, traffic, waste and pollution.
+- **Solutions:** create jobs and services in rural areas, build affordable housing, plan cities, improve transport and sanitation, develop satellite towns.
+
+## Migration
+
+**Migration** — the movement of people from one place to another to live.
+
+- **Immigration** = moving into an area; **emigration** = moving out.
+- **Internal migration** happens within a country (e.g. rural-to-urban); **international migration** crosses national borders.
+
+**Causes — push and pull factors:**
+- **Push factors** are the unfavourable things about the area a person leaves — famine, drought, flooding, lack of jobs, overpopulation, war.
+- **Pull factors** are the things that attract a person to the new area — hope of better jobs and wages, opportunities, safety, and reunion with family.
+
+**Effects:**
+- On the **source (losing) area** — loss of young workers, but less pressure on land and money sent home.
+- On the **receiving area** — a larger workforce, but overcrowding, competition for jobs and pressure on services.
+
+**Controls:** develop rural areas so people need not leave, create rural jobs and services, and plan cities to cope with newcomers.
+
+## Common errors and misconceptions
+
+- **Confusing site and situation** — **site** is the actual ground a settlement stands on; **situation** is its position relative to the surrounding region.
+- **Muddling settlement patterns** — **nucleated** = clustered together; **linear** = in a line; **dispersed** = scattered.
+- **Confusing immigration and emigration** — **immigration** is moving in; **emigration** is moving out.
+- **Thinking push and pull are the same** — **push** factors drive people away from where they live; **pull** factors attract them to a new place.`,
+      workedExample: `**Task.** Many young people are leaving the villages of rural Liberia and moving to Monrovia. (a) Name two push factors and two pull factors behind this move. (b) State the geographical name for this process and this type of migration. (c) Give one problem it causes in the city and one way to reduce the movement.
+
+**Part (a) — push and pull factors**
+- **Push factors (rural)** (any two): too few jobs; low farm incomes; poor schools, clinics and roads; hard farm life.
+- **Pull factors (urban)** (any two): hope of paid jobs; better schools and hospitals; electricity and services; the attractions of city life.
+
+**Part (b) — names**
+- The growth of the city's share of population is **urbanization**.
+- The move from villages to a city within the same country is **rural-to-urban (internal) migration**.
+
+**Part (c) — one problem and one control**
+- **Problem in the city:** overcrowding and slums, or unemployment and pressure on housing, water and services.
+- **Control:** develop the rural areas — create jobs, schools and clinics in the villages — so people are not pushed to leave; plan and provide housing in the city.
+
+**Conclusion:** rural-to-urban migration is driven by rural push and urban pull; it fuels urbanization but strains the city, and the lasting cure is to make rural areas places worth staying in.`,
+      quiz: [
+        { prompt: "A settlement is a place where people…", options: ["grow only crops", "live and carry out their activities", "store water", "bury the dead"], correctIndex: 1, explanation: "A settlement is where people live, with the buildings they use." },
+        { prompt: "The actual land a settlement is built on is its…", options: ["site", "situation", "function", "pattern"], correctIndex: 0, explanation: "Site is the physical ground; situation is its position in the region." },
+        { prompt: "The position of a settlement relative to its surroundings is its…", options: ["size", "site", "situation", "shape"], correctIndex: 2, explanation: "Situation describes where it stands in relation to other places." },
+        { prompt: "Which is a rural settlement?", options: ["a metropolis", "a village", "a city", "a satellite city"], correctIndex: 1, explanation: "Villages, hamlets and homesteads are rural settlements." },
+        { prompt: "Which lists settlements from smallest to largest?", options: ["town, city, village, hamlet", "city, town, village, hamlet", "hamlet, village, town, city", "village, hamlet, city, town"], correctIndex: 2, explanation: "Size increases hamlet → village → town → city." },
+        { prompt: "Buildings clustered tightly together form a … pattern.", options: ["linear", "nucleated", "dispersed", "isolated"], correctIndex: 1, explanation: "Nucleated settlements are clustered, often around a crossroads or market." },
+        { prompt: "Houses strung out along a road form a … pattern.", options: ["linear", "nucleated", "dispersed", "circular"], correctIndex: 0, explanation: "A linear or ribbon settlement follows a road, river or valley." },
+        { prompt: "Widely scattered buildings form a … pattern.", options: ["dispersed", "nucleated", "linear", "clustered"], correctIndex: 0, explanation: "Dispersed settlements are spread far apart." },
+        { prompt: "A town whose main role is government is classified by its…", options: ["pattern", "site", "function", "climate"], correctIndex: 2, explanation: "Function is what a settlement mainly does (here, administrative)." },
+        { prompt: "The growth in the share of people living in towns and cities is…", options: ["a census", "migration abroad", "natural increase", "urbanization"], correctIndex: 3, explanation: "Urbanization is the rising proportion of urban dwellers." },
+        { prompt: "Urbanization is driven mainly by movement from…", options: ["coast to coast", "city to city abroad", "farm to farm", "rural to urban areas"], correctIndex: 3, explanation: "Rural-to-urban migration fuels urbanization." },
+        { prompt: "Which is a problem of rapid urbanization?", options: ["too few workers", "empty cities", "overcrowding and slums", "more farmland"], correctIndex: 2, explanation: "Fast city growth brings overcrowding, slums and strained services." },
+        { prompt: "Migration means the movement of people from one place to…", options: ["visit for a day", "buy food", "vote once", "another to live"], correctIndex: 3, explanation: "Migration is moving to live in a new place." },
+        { prompt: "Moving OUT of a country is…", options: ["commuting", "immigration", "urbanization", "emigration"], correctIndex: 3, explanation: "Emigration is leaving; immigration is entering." },
+        { prompt: "A push factor for migration is…", options: ["lack of jobs at home", "good jobs in the city", "safety in the new area", "family reunion"], correctIndex: 0, explanation: "Push factors are unfavourable conditions that drive people away." },
+        { prompt: "A pull factor for migration is…", options: ["poor farm incomes", "war at home", "drought", "hope of better jobs"], correctIndex: 3, explanation: "Pull factors attract migrants to the new area." },
+        { prompt: "Migration within one country is…", options: ["internal migration", "international migration", "emigration abroad", "urbanization only"], correctIndex: 0, explanation: "Internal migration stays inside national borders." },
+        { prompt: "One effect of out-migration on a rural source area is…", options: ["loss of young workers", "overcrowding", "more traffic", "higher city rents"], correctIndex: 0, explanation: "Source areas lose young, working-age people." },
+        { prompt: "Which best controls rural-to-urban migration long term?", options: ["developing jobs and services in rural areas", "banning all movement", "closing schools", "raising the birth rate"], correctIndex: 0, explanation: "If rural areas offer jobs and services, fewer people are pushed to leave." },
+        { prompt: "A single dwelling standing on its own is a … settlement.", options: ["urban", "nucleated", "linear", "isolated"], correctIndex: 3, explanation: "An isolated settlement is a lone building." },
+      ],
+      test: [
+        { type: "SHORT_ANSWER", prompt: "Distinguish between the 'site' and the 'situation' of a settlement.", answerKey: "Site is the actual piece of land on which a settlement is built (its physical ground, e.g. a dry point, hilltop or river crossing). Situation is the position of the settlement in relation to the surrounding area (other towns, roads, rivers and resources). Award 3 marks per correct, clearly distinguished term.", marks: 6 },
+        { type: "SHORT_ANSWER", prompt: "Name and describe three patterns of settlement.", answerKey: "Nucleated — buildings clustered tightly together; Linear (ribbon) — buildings strung out in a line along a road, river or valley; Dispersed — buildings scattered widely apart (also accept isolated — a single dwelling). Award 2 marks per pattern correctly named and described.", marks: 6 },
+        { type: "MULTIPLE_CHOICE", prompt: "Which is a pull factor drawing migrants to a city?", options: ["war", "drought", "hope of better jobs", "lack of farmland"], correctIndex: 2, answerKey: "Pull factors attract migrants; the others are push factors driving people away. Option C.", marks: 4 },
+        { type: "SHORT_ANSWER", prompt: "State two problems caused by rapid urbanization and one way to reduce them.", answerKey: "Problems (any two): overcrowding and slums; unemployment; pressure on housing, water, schools and hospitals; traffic; waste and pollution. Reduction (any one): create jobs and services in rural areas; build affordable housing; plan cities and improve transport/sanitation; develop satellite towns. Award 2 marks per problem and 2 for a valid solution.", marks: 6 },
+        { type: "ESSAY", prompt: "Explain the causes and effects of rural-to-urban migration, and suggest how it can be controlled.", answerKey: "Award marks for: causes described as rural push factors (few jobs, low incomes, poor services, hard farm life) and urban pull factors (jobs, better services, city attractions), 8 marks; effects on the source area (loss of young workers, less pressure on land, remittances) and on the receiving city (larger workforce but overcrowding, slums, unemployment, strained services), 8 marks; controls (develop rural jobs and services, affordable housing, city planning, satellite towns), 5 marks; organisation and clarity, 4 marks. A learner who confuses push with pull, or immigration with emigration, should lose the relevant marks.", marks: 25 },
       ],
     },
   ],

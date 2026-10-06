@@ -1,31 +1,27 @@
 import type { Metadata } from "next";
-import { Source_Serif_4, Fraunces } from "next/font/google";
+import { Source_Serif_4, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import { ThemeScript } from "@/components/ThemeScript";
 
-// A readable book serif for running text, and a warmer display serif for
-// headings — together they give the app the feel of a printed textbook
-// rather than a generic web dashboard.
+// Source Serif for reading text and headings, Source Sans for the interface.
+// The two were designed as a family, so they sit together without fuss.
 const bodySerif = Source_Serif_4({
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
   variable: "--font-serif",
 });
 
-const displaySerif = Fraunces({
+const uiSans = Source_Sans_3({
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-display",
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
-  title: "Nuvex — Lesson notes and plans for teachers",
+  title: "Nuvex — Lesson notes for Liberian teachers",
   description:
-    "Ministry of Education-aligned lesson notes, plans, quizzes and an AI teaching assistant for Liberian teachers.",
+    "Lesson notes, worked examples, quizzes and test questions for the Liberian MoE curriculum, organised by grade, subject and period.",
 };
 
 export default function RootLayout({
@@ -37,12 +33,12 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${bodySerif.variable} ${displaySerif.variable}`}
+      className={`${bodySerif.variable} ${uiSans.variable}`}
     >
       <head>
         <ThemeScript />
       </head>
-      <body className="min-h-screen font-serif antialiased">{children}</body>
+      <body className="min-h-screen font-sans antialiased">{children}</body>
     </html>
   );
 }

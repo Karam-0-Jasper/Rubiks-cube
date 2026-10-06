@@ -28,9 +28,10 @@ export const chemistry: SubjectContent = {
       number: 1,
       title: "Introduction to Chemistry and Matter",
       summary:
-        "Period I of the MoE Grade 10 Chemistry syllabus. Learners meet the development of chemistry — the scientific method, its contributors and its branches — then units and measurement, and go on to study the states of matter and their changes, the properties and changes of matter, the standard techniques for separating mixtures, and the classification of mixtures.",
+        "Period I of the MoE Grade 10 Chemistry syllabus. Learners meet the development of chemistry — the scientific method, its contributors and its branches — then units and measurement, chemical symbols, formulae and the naming of compounds, and laboratory apparatus and safety. Topic II goes on to the states of matter and their changes, the properties and changes of matter, the standard techniques for separating mixtures, and the classification of mixtures.",
       topics: [
         {
+          // source: LibreTexts (Introductory Chemistry) — The Scientific Method: How Chemists Think & Areas of Chemistry (https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/01%3A_The_Chemical_World/1.03%3A_The_Scientific_Method_-_How_Chemists_Think)
           slug: "development-of-chemistry",
           title: "Development of Chemistry: Scientific Method, Contributors and Branches",
           objective:
@@ -120,7 +121,7 @@ export const chemistry: SubjectContent = {
 | Scientist | Contribution |
 |---|---|
 | **Democritus** (c. 460–370 BC) | Proposed that matter is made of tiny indivisible particles called *atomos*. |
-| **Robert Boyle** (1627–1691) | Called the father of modern chemistry; insisted on experiment; defined an element; gave Boyle's law relating gas pressure and volume. |
+| **Robert Boyle** (1627–1691) | Often called the first modern chemist; insisted on experiment; defined an element; gave Boyle's law relating gas pressure and volume. |
 | **Antoine Lavoisier** (1743–1794) | Father of modern chemistry; established the **law of conservation of mass**; explained combustion as combination with oxygen; named oxygen and hydrogen. |
 | **John Dalton** (1766–1844) | Proposed the **atomic theory** — matter is made of atoms; atoms of one element are alike; atoms combine in simple whole-number ratios. |
 | **Dmitri Mendeleev** (1834–1907) | Arranged the elements by atomic mass into the first useful **periodic table** and predicted undiscovered elements. |
@@ -193,8 +194,8 @@ export const chemistry: SubjectContent = {
           quiz: [
             {
               prompt: "Chemistry is the study of the composition, structure, properties and changes of…",
-              options: ["matter", "energy only", "living things only", "motion"],
-              correctIndex: 0,
+              options: ["living things only", "energy only", "matter", "motion"],
+              correctIndex: 2,
               explanation: "Chemistry deals with matter and how it changes.",
             },
             {
@@ -205,8 +206,8 @@ export const chemistry: SubjectContent = {
             },
             {
               prompt: "Chemistry is often called the central science because it…",
-              options: ["links physics with biology, medicine and geology", "is the oldest science", "uses no mathematics", "needs no experiments"],
-              correctIndex: 0,
+              options: ["is the oldest science", "links physics with biology, medicine and geology", "uses no mathematics", "needs no experiments"],
+              correctIndex: 1,
               explanation: "It sits between the physical and life sciences.",
             },
             {
@@ -223,14 +224,14 @@ export const chemistry: SubjectContent = {
             },
             {
               prompt: "A testable, tentative explanation of an observation is a…",
-              options: ["hypothesis", "law", "conclusion", "theory"],
-              correctIndex: 0,
+              options: ["conclusion", "law", "hypothesis", "theory"],
+              correctIndex: 2,
               explanation: "A hypothesis is an intelligent, testable guess.",
             },
             {
               prompt: "The factor deliberately changed in an experiment is the…",
-              options: ["independent variable", "dependent variable", "control", "constant"],
-              correctIndex: 0,
+              options: ["dependent variable", "independent variable", "control", "constant"],
+              correctIndex: 1,
               explanation: "The independent variable is the one the experimenter varies.",
             },
             {
@@ -247,14 +248,14 @@ export const chemistry: SubjectContent = {
             },
             {
               prompt: "Descriptive observations such as colour and smell are…",
-              options: ["qualitative data", "quantitative data", "variables", "conclusions"],
-              correctIndex: 0,
+              options: ["conclusions", "quantitative data", "variables", "qualitative data"],
+              correctIndex: 3,
               explanation: "Qualitative data are non-numerical.",
             },
             {
               prompt: "Who is regarded as the father of modern chemistry for establishing the law of conservation of mass?",
-              options: ["Lavoisier", "Democritus", "Mendeleev", "Bohr"],
-              correctIndex: 0,
+              options: ["Bohr", "Democritus", "Mendeleev", "Lavoisier"],
+              correctIndex: 3,
               explanation: "Lavoisier's careful weighing established conservation of mass.",
             },
             {
@@ -289,26 +290,26 @@ export const chemistry: SubjectContent = {
             },
             {
               prompt: "The branch that determines what a sample contains and how much is…",
-              options: ["analytical chemistry", "organic chemistry", "biochemistry", "industrial chemistry"],
-              correctIndex: 0,
+              options: ["organic chemistry", "analytical chemistry", "biochemistry", "industrial chemistry"],
+              correctIndex: 1,
               explanation: "Analytical chemistry covers qualitative and quantitative analysis.",
             },
             {
               prompt: "The chemistry of living things is…",
-              options: ["biochemistry", "physical chemistry", "nuclear chemistry", "inorganic chemistry"],
-              correctIndex: 0,
+              options: ["inorganic chemistry", "physical chemistry", "nuclear chemistry", "biochemistry"],
+              correctIndex: 3,
               explanation: "Biochemistry studies proteins, carbohydrates, fats and enzymes.",
             },
             {
               prompt: "The branch dealing with radioactivity, fission and fusion is…",
-              options: ["nuclear chemistry", "organic chemistry", "analytical chemistry", "biochemistry"],
-              correctIndex: 0,
+              options: ["analytical chemistry", "organic chemistry", "nuclear chemistry", "biochemistry"],
+              correctIndex: 2,
               explanation: "Nuclear chemistry concerns changes in the nucleus.",
             },
             {
               prompt: "A substance made of only one kind of atom is an…",
-              options: ["element", "compound", "mixture", "alloy"],
-              correctIndex: 0,
+              options: ["compound", "element", "mixture", "alloy"],
+              correctIndex: 1,
               explanation: "Elements cannot be broken down chemically.",
             },
           ],
@@ -340,8 +341,8 @@ export const chemistry: SubjectContent = {
             {
               type: "MULTIPLE_CHOICE",
               prompt: "Which branch of chemistry would test a water sample to find how much lead it contains?",
-              options: ["analytical chemistry", "organic chemistry", "nuclear chemistry", "biochemistry"],
-              correctIndex: 0,
+              options: ["nuclear chemistry", "organic chemistry", "analytical chemistry", "biochemistry"],
+              correctIndex: 2,
               answerKey: "Determining what is present and in what amount is analytical chemistry.",
               marks: 2,
             },
@@ -356,6 +357,7 @@ export const chemistry: SubjectContent = {
           ],
         },
         {
+          // source: LibreTexts — SI Units of Measurement & Accuracy, Precision, and Significant Figures (https://chem.libretexts.org/Courses/Sacramento_City_College/Chem_400%3A_General_Chemistry_I/01%3A_Matter_Measurement_and_Problem_Solving/1.6%3A_The_Units_of_Measurement)
           slug: "units-of-measurement",
           title: "Units of Measurement, Scientific Notation and Accuracy",
           objective:
@@ -516,8 +518,8 @@ export const chemistry: SubjectContent = {
             },
             {
               prompt: "The SI unit of amount of substance is the…",
-              options: ["mole", "gram", "litre", "kelvin"],
-              correctIndex: 0,
+              options: ["kelvin", "gram", "litre", "mole"],
+              correctIndex: 3,
               explanation: "The mole measures amount of substance.",
             },
             {
@@ -528,44 +530,44 @@ export const chemistry: SubjectContent = {
             },
             {
               prompt: "To convert degrees Celsius to kelvin you…",
-              options: ["add 273", "subtract 273", "multiply by 273", "divide by 273"],
-              correctIndex: 0,
+              options: ["divide by 273", "subtract 273", "multiply by 273", "add 273"],
+              correctIndex: 3,
               explanation: "K = °C + 273.",
             },
             {
               prompt: "Water boils at 100 °C. In kelvin this is…",
-              options: ["373 K", "273 K", "173 K", "100 K"],
-              correctIndex: 0,
+              options: ["173 K", "273 K", "373 K", "100 K"],
+              correctIndex: 2,
               explanation: "100 + 273 = 373 K.",
             },
             {
               prompt: "The lowest possible temperature, 0 K, is called…",
-              options: ["absolute zero", "freezing point", "standard temperature", "the triple point"],
-              correctIndex: 0,
+              options: ["freezing point", "absolute zero", "standard temperature", "the triple point"],
+              correctIndex: 1,
               explanation: "Nothing can be colder than absolute zero.",
             },
             {
               prompt: "1 dm³ is equal to…",
-              options: ["1000 cm³", "100 cm³", "10 cm³", "1 000 000 cm³"],
-              correctIndex: 0,
+              options: ["100 cm³", "1000 cm³", "10 cm³", "1 000 000 cm³"],
+              correctIndex: 1,
               explanation: "1 dm³ = 1 litre = 1000 cm³.",
             },
             {
               prompt: "1 cm³ is the same as…",
-              options: ["1 mL", "1 L", "1 dm³", "1 m³"],
-              correctIndex: 0,
+              options: ["1 dm³", "1 L", "1 mL", "1 m³"],
+              correctIndex: 2,
               explanation: "A cubic centimetre equals a millilitre.",
             },
             {
               prompt: "The system based on the metre, kilogram and second is the…",
-              options: ["MKS system", "CGS system", "FPS system", "Imperial system"],
-              correctIndex: 0,
+              options: ["Imperial system", "CGS system", "FPS system", "MKS system"],
+              correctIndex: 3,
               explanation: "MKS stands for metre-kilogram-second.",
             },
             {
               prompt: "When reading a measuring cylinder, you read the…",
-              options: ["bottom of the meniscus at eye level", "top of the meniscus", "middle of the liquid", "highest graduation"],
-              correctIndex: 0,
+              options: ["highest graduation", "top of the meniscus", "middle of the liquid", "bottom of the meniscus at eye level"],
+              correctIndex: 3,
               explanation: "Reading the bottom of the curve at eye level avoids parallax.",
             },
             {
@@ -576,20 +578,20 @@ export const chemistry: SubjectContent = {
             },
             {
               prompt: "Write 0.000 065 in scientific notation.",
-              options: ["6.5 × 10⁻⁵", "6.5 × 10⁵", "65 × 10⁻⁶", "0.65 × 10⁻⁴"],
-              correctIndex: 0,
+              options: ["0.65 × 10⁻⁴", "6.5 × 10⁵", "65 × 10⁻⁶", "6.5 × 10⁻⁵"],
+              correctIndex: 3,
               explanation: "The decimal point moves 5 places right.",
             },
             {
               prompt: "Avogadro's number 602 000 000 000 000 000 000 000 in standard form is about…",
-              options: ["6.02 × 10²³", "6.02 × 10²²", "60.2 × 10²²", "6.02 × 10⁻²³"],
-              correctIndex: 0,
+              options: ["60.2 × 10²²", "6.02 × 10²²", "6.02 × 10²³", "6.02 × 10⁻²³"],
+              correctIndex: 2,
               explanation: "The coefficient must lie between 1 and 10.",
             },
             {
               prompt: "How many significant figures are in 0.00560?",
-              options: ["3", "5", "2", "6"],
-              correctIndex: 0,
+              options: ["5", "3", "2", "6"],
+              correctIndex: 1,
               explanation: "Leading zeros do not count; 5, 6 and the trailing 0 do.",
             },
             {
@@ -600,32 +602,32 @@ export const chemistry: SubjectContent = {
             },
             {
               prompt: "In multiplication, the answer is given to the…",
-              options: ["fewest significant figures in the data", "most significant figures", "nearest whole number", "number on the calculator"],
-              correctIndex: 0,
+              options: ["nearest whole number", "most significant figures", "fewest significant figures in the data", "number on the calculator"],
+              correctIndex: 2,
               explanation: "The least precise measurement limits the result.",
             },
             {
               prompt: "Accuracy is how close a measurement is to the…",
-              options: ["true value", "other readings", "mean only", "instrument scale"],
-              correctIndex: 0,
+              options: ["instrument scale", "other readings", "mean only", "true value"],
+              correctIndex: 3,
               explanation: "Accuracy compares with the accepted value.",
             },
             {
               prompt: "Precision is how close repeated measurements are to…",
-              options: ["one another", "the true value", "zero", "the maximum"],
-              correctIndex: 0,
+              options: ["the maximum", "the true value", "zero", "one another"],
+              correctIndex: 3,
               explanation: "Precision is the agreement among repeats.",
             },
             {
               prompt: "An error of the same size and direction in every reading is…",
-              options: ["systematic", "random", "parallax only", "negligible"],
-              correctIndex: 0,
+              options: ["random", "systematic", "parallax only", "negligible"],
+              correctIndex: 1,
               explanation: "A systematic error shifts all readings one way.",
             },
             {
               prompt: "Random errors are reduced by…",
-              options: ["taking several readings and averaging", "using one careful reading", "changing units", "rounding early"],
-              correctIndex: 0,
+              options: ["changing units", "using one careful reading", "taking several readings and averaging", "rounding early"],
+              correctIndex: 2,
               explanation: "Averaging cancels errors that vary randomly.",
             },
           ],
@@ -673,6 +675,522 @@ export const chemistry: SubjectContent = {
           ],
         },
         {
+          // source: LibreTexts — Nomenclature of Ionic, Covalent and Acid Compounds (https://chem.libretexts.org/Courses/University_of_Arkansas_Little_Rock/Chem_1300:_Preparatory_Chemistry/Learning_Modules/04:_Compounds_and_Molecules/4.05:_Nomenclature) and Naming Ionic/Covalent Compounds (Averill, General Chemistry)
+          slug: "chemical-symbols-formulae-and-naming",
+          title: "Chemical Symbols, Formulae and Naming Compounds",
+          objective:
+            "By the end of the topic, learners should be able to explain the origin of element symbols, write and interpret chemical formulae, distinguish empirical, molecular and structural formulae, and name simple ionic, molecular and acid compounds. (MoE Grade 10 Period I, Topic I, CONTENTS 3.)",
+          estimatedMinutes: 150,
+          notes: `## Introduction
+
+- Chemistry has its own shorthand: **symbols** for elements, **formulae** for substances, and rules for turning a formula into a **name**.
+- **This topic:** where element symbols come from; how to write and read a formula; the types of formula; and the rules for naming ionic, molecular and acid compounds.
+
+## Origin of chemical symbols
+
+- Each element has a one- or two-letter **symbol** agreed internationally (IUPAC).
+- **Rule:** first letter is a CAPITAL, second letter (if any) is lower-case — Ca (calcium) not CA, Co (cobalt) not CO.
+- Many symbols come from the **English name** — O (oxygen), H (hydrogen), C (carbon).
+- Some come from **Latin or other older names**:
+
+| Element | Symbol | Origin of symbol |
+|---|---|---|
+| Sodium | Na | Latin *natrium* |
+| Potassium | K | Latin *kalium* |
+| Iron | Fe | Latin *ferrum* |
+| Copper | Cu | Latin *cuprum* |
+| Lead | Pb | Latin *plumbum* |
+| Silver | Ag | Latin *argentum* |
+| Gold | Au | Latin *aurum* |
+| Tin | Sn | Latin *stannum* |
+| Mercury | Hg | Latin *hydrargyrum* |
+
+## Writing chemical formulae
+
+- A **chemical formula** shows the elements in a substance and the ratio of their atoms, using symbols and subscripts.
+- A **subscript** gives the number of atoms of the element to its left: H₂O = 2 H and 1 O; H₂SO₄ = 2 H, 1 S, 4 O.
+- **Ions** carry a charge (valency). To write the formula of an ionic compound, balance total positive and total negative charge so the compound is neutral.
+- **Cross-over method:** write the two ions, then use each ion's charge as the subscript of the other; cancel to the simplest whole-number ratio.
+
+| Ion | Formula | Ion | Formula |
+|---|---|---|---|
+| Sodium | Na⁺ | Chloride | Cl⁻ |
+| Potassium | K⁺ | Hydroxide | OH⁻ |
+| Calcium | Ca²⁺ | Oxide | O²⁻ |
+| Magnesium | Mg²⁺ | Sulfate | SO₄²⁻ |
+| Aluminium | Al³⁺ | Nitrate | NO₃⁻ |
+| Ammonium | NH₄⁺ | Carbonate | CO₃²⁻ |
+
+- Example: Ca²⁺ with NO₃⁻ → charges 2 and 1 → Ca(NO₃)₂. A polyatomic ion taken more than once is written in **brackets** with the subscript outside.
+
+## Types of formula
+
+- **Empirical formula** — the simplest whole-number ratio of atoms. Glucose C₆H₁₂O₆ has empirical formula CH₂O.
+- **Molecular formula** — the actual number of atoms in one molecule. Glucose = C₆H₁₂O₆.
+- **Structural formula** — shows how the atoms are joined by bonds, e.g. H–O–H for water.
+
+## Naming ionic compounds
+
+- **Cation (metal) first, then anion (non-metal).** The non-metal ending changes to **-ide**: NaCl = sodium chloride, MgO = magnesium oxide.
+- **Metals with more than one charge** (most transition metals) take a **Roman numeral** giving the charge: FeCl₂ = iron(II) chloride, FeCl₃ = iron(III) chloride.
+- **Polyatomic ions** keep their own names: CaCO₃ = calcium carbonate, KNO₃ = potassium nitrate, Na₂SO₄ = sodium sulfate.
+- Oxyanion endings: more oxygen = **-ate** (SO₄²⁻ sulfate, NO₃⁻ nitrate); fewer oxygen = **-ite** (SO₃²⁻ sulfite, NO₂⁻ nitrite).
+
+## Naming molecular (covalent) compounds
+
+- Two **non-metals** combine. Use **Greek prefixes** to show how many atoms of each: mono-, di-, tri-, tetra-, penta-.
+- **mono-** is not used on the first element.
+
+| Formula | Name |
+|---|---|
+| CO | carbon monoxide |
+| CO₂ | carbon dioxide |
+| N₂O₅ | dinitrogen pentoxide |
+| SF₄ | sulfur tetrafluoride |
+| CCl₄ | carbon tetrachloride |
+
+- A few keep **common names**: H₂O water, NH₃ ammonia, CH₄ methane.
+
+## Naming acids (brief)
+
+- **-ide → hydro…ic acid:** HCl = hydrochloric acid.
+- **-ate → …ic acid:** HNO₃ = nitric acid, H₂SO₄ = sulfuric acid.
+- **-ite → …ous acid:** HNO₂ = nitrous acid.
+
+## Common errors and misconceptions
+
+- **Wrong capitalisation** — Co is cobalt, but CO is carbon monoxide. Case changes the meaning.
+- **Forgetting brackets** — calcium nitrate is Ca(NO₃)₂, not CaNO₃₂.
+- **Using prefixes on ionic compounds** — prefixes are only for molecular (non-metal + non-metal) compounds; ionic names use charge balance and Roman numerals instead.`,
+          workedExample: `**Task.** (a) Write the formula of aluminium sulfate. (b) Name Fe₂O₃ and N₂O₅.
+
+**(a) Aluminium sulfate**
+1. Identify the ions: aluminium Al³⁺ and sulfate SO₄²⁻.
+2. Balance the charge by cross-over: Al gets subscript 2, sulfate gets subscript 3.
+3. Because sulfate (a polyatomic ion) is taken 3 times, put it in brackets.
+   → **Al₂(SO₄)₃**. Check: 2 × (+3) = +6 and 3 × (−2) = −6 → neutral. ✓
+
+**(b) Naming**
+- Fe₂O₃: oxide is O²⁻, so three oxides carry −6; two iron ions must total +6, so each Fe is +3 → **iron(III) oxide**.
+- N₂O₅: two non-metals, so use prefixes — 2 nitrogen (di-) and 5 oxygen (penta-) → **dinitrogen pentoxide**.`,
+          quiz: [
+            {
+              prompt: "The correct way to write the symbol for cobalt is…",
+              options: ["Co", "CO", "CO₂", "cO"],
+              correctIndex: 0,
+              explanation: "First letter capital, second lower-case: Co. CO is carbon monoxide.",
+            },
+            {
+              prompt: "The symbol Na for sodium comes from the Latin word…",
+              options: ["natron ash", "sodium", "kalium", "natrium"],
+              correctIndex: 3,
+              explanation: "Na is from Latin natrium.",
+            },
+            {
+              prompt: "Which symbol correctly represents iron?",
+              options: ["Fr", "Ir", "In", "Fe"],
+              correctIndex: 3,
+              explanation: "Fe is from Latin ferrum; Ir is iridium, Fr is francium.",
+            },
+            {
+              prompt: "In H₂SO₄ the number of oxygen atoms is…",
+              options: ["2", "4", "1", "6"],
+              correctIndex: 1,
+              explanation: "The subscript 4 on O gives four oxygen atoms.",
+            },
+            {
+              prompt: "The formula of calcium nitrate is…",
+              options: ["Ca(NO₃)₂", "CaNO₃", "Ca₂NO₃", "Ca(NO₃)"],
+              correctIndex: 0,
+              explanation: "Ca²⁺ needs two NO₃⁻; the polyatomic ion is bracketed.",
+            },
+            {
+              prompt: "The empirical formula of glucose, C₆H₁₂O₆, is…",
+              options: ["CH₂O", "C₆H₁₂O₆", "C₂H₄O₂", "CHO"],
+              correctIndex: 0,
+              explanation: "Dividing by 6 gives the simplest ratio CH₂O.",
+            },
+            {
+              prompt: "A formula that shows how atoms are joined by bonds is a…",
+              options: ["molecular formula", "empirical formula", "structural formula", "ionic formula"],
+              correctIndex: 2,
+              explanation: "Structural formulae show the bonding arrangement.",
+            },
+            {
+              prompt: "NaCl is named…",
+              options: ["sodium chloride", "sodium chlorine", "sodium chlorate", "sodium chloride(I)"],
+              correctIndex: 0,
+              explanation: "Metal first, non-metal ending -ide: sodium chloride.",
+            },
+            {
+              prompt: "FeCl₃ is correctly named…",
+              options: ["iron(III) chloride", "iron chloride", "iron(II) chloride", "triiron chloride"],
+              correctIndex: 0,
+              explanation: "Three Cl⁻ means Fe is +3, shown as iron(III).",
+            },
+            {
+              prompt: "Which compound needs a Roman numeral in its name?",
+              options: ["CaCl₂", "NaCl", "MgO", "CuO"],
+              correctIndex: 3,
+              explanation: "Copper has more than one possible charge, so CuO = copper(II) oxide.",
+            },
+            {
+              prompt: "The name of CO₂ is…",
+              options: ["carbon dioxide", "carbon oxide", "dicarbon oxide", "carbon(II) oxide"],
+              correctIndex: 0,
+              explanation: "Two oxygens → di-oxide; carbon dioxide.",
+            },
+            {
+              prompt: "The prefix used for five atoms is…",
+              options: ["penta-", "tetra-", "hexa-", "tri-"],
+              correctIndex: 0,
+              explanation: "Penta- = 5.",
+            },
+            {
+              prompt: "N₂O₅ is named…",
+              options: ["nitrogen(V) oxide", "nitrogen oxide", "dinitrogen pentoxide", "dinitrogen oxide"],
+              correctIndex: 2,
+              explanation: "Two nitrogen (di-), five oxygen (penta-): dinitrogen pentoxide.",
+            },
+            {
+              prompt: "Greek prefixes such as di- and tri- are used when naming…",
+              options: ["molecular (non-metal + non-metal) compounds", "ionic compounds", "metals", "acids only"],
+              correctIndex: 0,
+              explanation: "Prefixes apply to covalent/molecular compounds.",
+            },
+            {
+              prompt: "The polyatomic ion CO₃²⁻ is called…",
+              options: ["carbonate", "carbon trioxide", "carbonite", "bicarbon"],
+              correctIndex: 0,
+              explanation: "CO₃²⁻ is the carbonate ion.",
+            },
+            {
+              prompt: "SO₃²⁻ (fewer oxygens than sulfate) is named…",
+              options: ["sulfide", "sulfate", "sulfite", "sulfur trioxide"],
+              correctIndex: 2,
+              explanation: "The -ite ending marks the oxyanion with fewer oxygens.",
+            },
+            {
+              prompt: "HCl(aq) is named…",
+              options: ["hydrogen chlorate", "chloric acid", "hydrochloric acid", "chlorous acid"],
+              correctIndex: 2,
+              explanation: "An -ide anion gives a hydro…ic acid: hydrochloric acid.",
+            },
+            {
+              prompt: "The formula of aluminium oxide (Al³⁺ and O²⁻) is…",
+              options: ["AlO", "Al₂O₃", "Al₃O₂", "AlO₂"],
+              correctIndex: 1,
+              explanation: "Cross-over of charges 3 and 2 gives Al₂O₃.",
+            },
+            {
+              prompt: "A subscript in a formula tells you the…",
+              options: ["charge on the atom", "number of atoms of the element to its left", "mass of the atom", "state of the substance"],
+              correctIndex: 1,
+              explanation: "Subscripts count atoms of the preceding symbol.",
+            },
+            {
+              prompt: "Which is a common (non-systematic) name kept by convention?",
+              options: ["carbon dioxide for CO₂", "sodium chloride for NaCl", "iron(III) oxide for Fe₂O₃", "water for H₂O"],
+              correctIndex: 3,
+              explanation: "H₂O is called water rather than dihydrogen monoxide.",
+            },
+          ],
+          test: [
+            {
+              type: "MULTIPLE_CHOICE",
+              prompt: "Which formula is correct for magnesium hydroxide?",
+              options: ["Mg₂OH", "MgOH", "Mg(OH)₂", "Mg(OH)"],
+              correctIndex: 2,
+              answerKey: "Mg²⁺ balances two OH⁻, and the polyatomic hydroxide is bracketed: Mg(OH)₂.",
+              marks: 1,
+            },
+            {
+              type: "MULTIPLE_CHOICE",
+              prompt: "CuBr₂ is correctly named…",
+              options: ["dicopper bromide", "copper bromide", "copper(I) bromide", "copper(II) bromide"],
+              correctIndex: 3,
+              answerKey: "Two Br⁻ means copper is +2, shown as copper(II) bromide.",
+              marks: 1,
+            },
+            {
+              type: "SHORT_ANSWER",
+              prompt: "State the difference between an empirical formula and a molecular formula, using hydrogen peroxide (molecular formula H₂O₂) as your example.",
+              answerKey: "The molecular formula gives the actual number of atoms in a molecule (H₂O₂ = 2 H and 2 O). The empirical formula gives the simplest whole-number ratio; dividing by 2 gives HO. So H₂O₂ has empirical formula HO. Award marks for both definitions and the correct empirical formula.",
+              marks: 3,
+            },
+            {
+              type: "SHORT_ANSWER",
+              prompt: "Write formulae for: (a) potassium sulfate, (b) aluminium chloride, (c) ammonium nitrate.",
+              answerKey: "(a) K⁺ and SO₄²⁻ → K₂SO₄. (b) Al³⁺ and Cl⁻ → AlCl₃. (c) NH₄⁺ and NO₃⁻ → NH₄NO₃. One mark each.",
+              marks: 3,
+            },
+            {
+              type: "ESSAY",
+              prompt: "Explain the rules used to name (i) ionic compounds and (ii) molecular (covalent) compounds, giving at least two worked examples of each and explaining when a Roman numeral is needed.",
+              answerKey: "A strong answer explains that ionic compounds are named cation (metal) first, then anion with the ending changed to -ide (or the polyatomic ion's own name such as sulfate, nitrate, carbonate). Examples: NaCl sodium chloride, MgO magnesium oxide, CaCO₃ calcium carbonate. A Roman numeral is added when the metal can form more than one ion (most transition metals) to show the charge in that compound — FeCl₂ iron(II) chloride versus FeCl₃ iron(III) chloride, CuO copper(II) oxide. Molecular compounds (non-metal + non-metal) are named with Greek prefixes mono-, di-, tri-, tetra-, penta- giving the number of each atom, with mono- omitted on the first element: CO carbon monoxide, CO₂ carbon dioxide, N₂O₅ dinitrogen pentoxide, SF₄ sulfur tetrafluoride. Award marks for both naming systems, the correct use of Roman numerals, and at least two valid examples of each type.",
+              marks: 10,
+            },
+          ],
+        },
+        {
+          // source: LibreTexts (Intro to CHEM 101 Lab Manual) — Safety, Equipment, and Check-In (https://chem.libretexts.org/Workbench/Intro_to_CHEM_101_-_Lab_Manual/Week_1:_Check-In_and_Safety/Safety,_Equipment,_and_Check-In)
+          slug: "laboratory-apparatus-and-safety",
+          title: "Laboratory Apparatus and Safety Rules",
+          objective:
+            "By the end of the topic, learners should be able to name common laboratory apparatus and state their uses, apply the basic laboratory safety rules, and recognise common hazard symbols. (MoE Grade 10 Period I, Topic I, CONTENTS 4.)",
+          estimatedMinutes: 120,
+          notes: `## Introduction
+
+- The laboratory is where chemistry is tested by experiment — but it holds chemicals, glassware, heat and gases.
+- **This topic:** the common apparatus and what each is for; the basic safety rules; and hazard symbols.
+
+## Common laboratory apparatus
+
+| Apparatus | Main use |
+|---|---|
+| **Beaker** | Holding, mixing and heating liquids (rough volumes) |
+| **Conical (Erlenmeyer) flask** | Mixing and swirling liquids; used in titration |
+| **Measuring (graduated) cylinder** | Measuring the volume of a liquid |
+| **Pipette** | Delivering an accurate fixed volume of liquid |
+| **Burette** | Delivering variable, accurate volumes in titration |
+| **Test tube** | Small-scale reactions and tests |
+| **Test-tube holder / rack** | Holding hot or many test tubes safely |
+| **Bunsen burner** | Producing a hot, controllable flame for heating |
+| **Tripod and gauze** | Supporting apparatus over a flame |
+| **Watch glass / evaporating dish** | Evaporating small amounts of liquid; holding solids |
+| **Funnel + filter paper** | Filtering to separate a solid from a liquid |
+| **Thermometer** | Measuring temperature |
+| **Balance** | Measuring mass |
+
+\`\`\`svg Some common laboratory apparatus
+<svg viewBox="0 0 320 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Outlines of a beaker, conical flask, test tube and measuring cylinder">
+  <g fill="none" stroke="#b45309" stroke-width="2">
+    <path d="M20 30 L20 95 Q20 105 30 105 L60 105 Q70 105 70 95 L70 30"/>
+    <line x1="16" y1="30" x2="74" y2="30"/>
+    <path d="M110 30 L100 100 Q100 108 108 108 L140 108 Q148 108 148 100 L138 30 Z"/>
+    <line x1="118" y1="30" x2="130" y2="30"/>
+    <path d="M190 25 L190 100 Q190 112 202 112 Q214 112 214 100 L214 25"/>
+    <line x1="186" y1="25" x2="218" y2="25"/>
+    <path d="M270 25 L270 105 Q270 112 278 112 L292 112 Q300 112 300 105 L300 25 Z"/>
+    <line x1="285" y1="45" x2="300" y2="45"/>
+    <line x1="285" y1="65" x2="300" y2="65"/>
+    <line x1="285" y1="85" x2="300" y2="85"/>
+  </g>
+  <text x="45" y="125" font-size="9" text-anchor="middle" fill="#92400e">beaker</text>
+  <text x="124" y="125" font-size="9" text-anchor="middle" fill="#92400e">flask</text>
+  <text x="202" y="125" font-size="9" text-anchor="middle" fill="#92400e">test tube</text>
+  <text x="285" y="125" font-size="9" text-anchor="middle" fill="#92400e">cylinder</text>
+</svg>
+\`\`\`
+
+## Basic laboratory safety rules
+
+1. **Wear eye protection** (safety goggles) whenever chemicals or heat are used.
+2. **Never eat, drink or taste** anything in the laboratory.
+3. **Do no unauthorised experiment;** never work in the lab without the teacher present.
+4. **Never inhale fumes directly;** use a fume cupboard for irritating or dangerous gases.
+5. **Handle chemicals carefully** — never return unused chemical to a reagent bottle; read the label twice.
+6. **Treat hot and cold glass as identical** — hot glass looks cold, so use tongs or a holder.
+7. **Tie back long hair** and secure loose clothing near flames.
+8. **Rinse spills off the skin immediately** with plenty of water and tell the teacher.
+9. **Dispose of waste correctly** — broken glass in the special bin, chemicals as directed.
+10. **Report every accident,** however small, to the teacher at once.
+11. **Know the location** of the fire extinguisher, fire blanket, eye-wash and first-aid kit.
+
+## Hazard symbols
+
+- Chemicals carry warning symbols so their dangers are seen at a glance.
+
+| Symbol meaning | Warns that the substance is… |
+|---|---|
+| **Flammable** | Easily catches fire |
+| **Toxic** | Poisonous — can cause death or serious harm |
+| **Corrosive** | Attacks and destroys skin, eyes and metals |
+| **Irritant / harmful** | Causes reddening or blistering of the skin |
+| **Oxidising** | Provides oxygen so other materials burn fiercely |
+| **Explosive** | May explode with heat, shock or a flame |
+
+## Common errors and misconceptions
+
+- **Thinking goggles are optional** — eye injuries are permanent; goggles are worn at all times when chemicals or heat are in use.
+- **Judging heat by looking** — hot glass and metal look exactly like cold; always assume apparatus near a flame is hot.
+- **Guessing volumes in a beaker** — a beaker's graduations are rough; use a measuring cylinder, pipette or burette when accuracy matters.`,
+          workedExample: `**Task.** A learner must measure out exactly 25.0 cm³ of acid, heat it gently, and record its temperature. Name the apparatus for each step and one safety rule that applies.
+
+**Step 1 — Measure exactly 25.0 cm³ of acid.**
+- Apparatus: a **pipette** (for an accurate fixed volume) or a **burette**; a measuring cylinder is less accurate.
+- Safety: **wear goggles** and never pipette by mouth — use a pipette filler; acid is corrosive.
+
+**Step 2 — Heat the acid gently.**
+- Apparatus: a **beaker** on a **gauze** and **tripod** over a **Bunsen burner** (a gentle, blue flame with the air-hole partly open).
+- Safety: **tie back hair,** point the tube/vessel away from people, and treat the glass as hot — use tongs.
+
+**Step 3 — Record the temperature.**
+- Apparatus: a **thermometer.**
+- Safety: do not use the thermometer as a stirrer; read it at eye level to avoid parallax.
+
+**Result.** Pipette → beaker with tripod, gauze and Bunsen burner → thermometer, with goggles worn throughout and the acid treated as corrosive.`,
+          quiz: [
+            {
+              prompt: "Which apparatus delivers an accurate fixed volume of liquid?",
+              options: ["Watch glass", "Beaker", "Pipette", "Test tube"],
+              correctIndex: 2,
+              explanation: "A pipette delivers one accurate fixed volume.",
+            },
+            {
+              prompt: "The apparatus used to measure the volume of a liquid roughly is the…",
+              options: ["balance", "measuring cylinder", "thermometer", "tripod"],
+              correctIndex: 1,
+              explanation: "A graduated (measuring) cylinder measures liquid volume.",
+            },
+            {
+              prompt: "A Bunsen burner is used to…",
+              options: ["measure mass", "produce a hot, controllable flame", "measure temperature", "filter a mixture"],
+              correctIndex: 1,
+              explanation: "The Bunsen burner gives a controllable flame for heating.",
+            },
+            {
+              prompt: "Which is used together with filter paper to separate a solid from a liquid?",
+              options: ["Burette", "Funnel", "Pipette", "Watch glass"],
+              correctIndex: 1,
+              explanation: "A funnel holds the filter paper for filtration.",
+            },
+            {
+              prompt: "In a titration, variable accurate volumes are delivered from a…",
+              options: ["beaker", "burette", "measuring cylinder", "test tube"],
+              correctIndex: 1,
+              explanation: "A burette delivers precise, adjustable volumes.",
+            },
+            {
+              prompt: "Eye protection in the lab should be worn…",
+              options: ["only during explosions", "only when told by a friend", "at all times when chemicals or heat are used", "never"],
+              correctIndex: 2,
+              explanation: "Goggles are worn whenever chemicals or heat are in use.",
+            },
+            {
+              prompt: "Why must you never judge whether glass is hot by looking at it?",
+              options: ["Glass is always cold", "Glass changes colour when hot", "Hot glass glows blue", "Hot glass looks the same as cold glass"],
+              correctIndex: 3,
+              explanation: "Hot glass looks identical to cold glass, so assume it is hot.",
+            },
+            {
+              prompt: "Eating and drinking in the laboratory is…",
+              options: ["allowed after washing hands", "allowed at the back bench", "allowed with goggles on", "never allowed"],
+              correctIndex: 3,
+              explanation: "Food and drink are never permitted in the lab.",
+            },
+            {
+              prompt: "A 'corrosive' hazard symbol warns that a substance…",
+              options: ["catches fire easily", "attacks and destroys skin, eyes and metals", "is radioactive", "is magnetic"],
+              correctIndex: 1,
+              explanation: "Corrosive substances destroy living tissue and metals.",
+            },
+            {
+              prompt: "The 'flammable' hazard symbol warns that a substance…",
+              options: ["catches fire easily", "is poisonous", "is corrosive", "is an oxidiser"],
+              correctIndex: 0,
+              explanation: "Flammable substances ignite readily.",
+            },
+            {
+              prompt: "If a chemical spills on your skin you should first…",
+              options: ["wipe it with your shirt", "rinse it off with plenty of water and tell the teacher", "ignore it if it does not hurt", "put on gloves"],
+              correctIndex: 1,
+              explanation: "Rinse immediately with water and report it.",
+            },
+            {
+              prompt: "Unused chemical taken from a reagent bottle should be…",
+              options: ["poured back into the bottle", "disposed of as directed, never returned to the bottle", "shared with a friend", "kept in your pocket"],
+              correctIndex: 1,
+              explanation: "Returning chemical risks contaminating the whole bottle.",
+            },
+            {
+              prompt: "Temperature is measured with a…",
+              options: ["thermometer", "balance", "burette", "gauze"],
+              correctIndex: 0,
+              explanation: "A thermometer measures temperature.",
+            },
+            {
+              prompt: "Mass is measured with a…",
+              options: ["balance", "measuring cylinder", "pipette", "thermometer"],
+              correctIndex: 0,
+              explanation: "A balance measures mass.",
+            },
+            {
+              prompt: "The tripod and gauze are used to…",
+              options: ["store chemicals", "measure volume", "filter mixtures", "support apparatus over a flame"],
+              correctIndex: 3,
+              explanation: "They support a beaker or flask above the Bunsen burner.",
+            },
+            {
+              prompt: "Long hair in the laboratory should be…",
+              options: ["tied back", "left loose", "covered in oil", "cut short"],
+              correctIndex: 0,
+              explanation: "Tie hair back to keep it away from flames and chemicals.",
+            },
+            {
+              prompt: "The conical (Erlenmeyer) flask is especially useful because…",
+              options: ["it can be swirled without spilling, useful in titration", "it measures exact volumes", "it withstands no heat", "it filters solids"],
+              correctIndex: 0,
+              explanation: "Its narrow neck lets it be swirled during titration.",
+            },
+            {
+              prompt: "An 'oxidising' hazard symbol warns that a substance…",
+              options: ["is corrosive to metal", "is flammable itself", "is toxic to breathe", "provides oxygen so other materials burn fiercely"],
+              correctIndex: 3,
+              explanation: "Oxidisers supply oxygen and intensify fires.",
+            },
+            {
+              prompt: "Before leaving the laboratory you should always…",
+              options: ["leave taps running", "wash your hands", "keep goggles on outside", "eat a snack"],
+              correctIndex: 1,
+              explanation: "Wash hands to remove any chemical traces.",
+            },
+            {
+              prompt: "You should report an accident to the teacher…",
+              options: ["only if someone is bleeding", "however small it appears", "only at the end of the lesson", "never"],
+              correctIndex: 1,
+              explanation: "All accidents are reported at once, no matter how minor.",
+            },
+          ],
+          test: [
+            {
+              type: "MULTIPLE_CHOICE",
+              prompt: "Which apparatus is most suitable for measuring exactly 25.0 cm³ of a solution for a titration?",
+              options: ["Watch glass", "Beaker", "Conical flask", "Pipette"],
+              correctIndex: 3,
+              answerKey: "A pipette delivers an accurate fixed volume; a beaker and flask are only approximate.",
+              marks: 1,
+            },
+            {
+              type: "MULTIPLE_CHOICE",
+              prompt: "A bottle of concentrated acid carries a symbol warning it destroys skin and metals. This hazard is…",
+              options: ["oxidising", "flammable", "corrosive", "radioactive"],
+              correctIndex: 2,
+              answerKey: "Destroying skin and metals is the corrosive hazard.",
+              marks: 1,
+            },
+            {
+              type: "SHORT_ANSWER",
+              prompt: "Name three pieces of apparatus you would use to heat a liquid in a beaker over a flame, and give one safety rule for the operation.",
+              answerKey: "Bunsen burner, tripod and gauze (mat/heatproof mat also acceptable). Safety rule: wear goggles / tie back hair / treat the glass as hot and use tongs / do not leave the flame unattended. Award marks for three correct apparatus and one valid safety rule.",
+              marks: 4,
+            },
+            {
+              type: "SHORT_ANSWER",
+              prompt: "State four basic laboratory safety rules.",
+              answerKey: "Any four of: wear goggles when using chemicals/heat; never eat or drink in the lab; do no unauthorised experiment / never work without the teacher; never inhale fumes directly / use a fume cupboard; treat glass as hot; tie back hair; rinse spills with water and report them; dispose of waste correctly; report all accidents; know where the safety equipment is. One mark each.",
+              marks: 4,
+            },
+            {
+              type: "ESSAY",
+              prompt: "A student is asked to prepare and filter a mixture of sand and salt solution, then measure the temperature of the filtrate. Describe the apparatus needed at each stage and the safety precautions that should be observed throughout.",
+              answerKey: "A strong answer identifies the apparatus stage by stage: to make/hold the mixture a beaker and stirring rod; to filter, a funnel lined with filter paper standing in a conical flask or beaker to collect the filtrate (sand stays on the paper as residue, salt solution passes through); to measure temperature, a thermometer read at eye level. Safety precautions: wear goggles throughout; do not use the thermometer as a stirrer; handle glass carefully and treat apparatus near heat as hot; clean up and dispose of the residue correctly; wash hands before leaving; report any breakage or spill. Award marks for correct apparatus at each of the three stages and for at least three relevant safety precautions.",
+              marks: 10,
+            },
+          ],
+        },
+        {
+          // source: LibreTexts (Chemistry for Changing Times) — Solids, Liquids, and Gases & Phase Changes (https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Chemistry_for_Changing_Times_(Hill_and_McCreary)/06:_Gases_Liquids_Solids_..._and_Intermolecular_Forces/6.01:_Solids_Liquids_and_Gases)
           slug: "states-of-matter-and-their-changes",
           title: "States of Matter and Their Changes",
           objective:
@@ -849,32 +1367,32 @@ export const chemistry: SubjectContent = {
             },
             {
               prompt: "Gases can be compressed easily because their particles are…",
-              options: ["far apart", "closely packed", "not moving", "very heavy"],
-              correctIndex: 0,
+              options: ["not moving", "closely packed", "far apart", "very heavy"],
+              correctIndex: 2,
               explanation: "Large spaces between particles allow compression.",
             },
             {
               prompt: "In a solid, the particles…",
-              options: ["vibrate about fixed positions", "move freely in all directions", "slide over each other", "do not move at all"],
-              correctIndex: 0,
+              options: ["slide over each other", "move freely in all directions", "vibrate about fixed positions", "do not move at all"],
+              correctIndex: 2,
               explanation: "Solid particles vibrate in place within a lattice.",
             },
             {
               prompt: "Temperature is a measure of the average… of the particles.",
-              options: ["kinetic energy", "mass", "size", "charge"],
-              correctIndex: 0,
+              options: ["size", "mass", "kinetic energy", "charge"],
+              correctIndex: 2,
               explanation: "Higher temperature means faster average particle motion.",
             },
             {
               prompt: "The change from solid to liquid is called…",
-              options: ["melting", "freezing", "condensation", "sublimation"],
-              correctIndex: 0,
+              options: ["freezing", "melting", "condensation", "sublimation"],
+              correctIndex: 1,
               explanation: "Melting (fusion) is solid to liquid.",
             },
             {
               prompt: "The change from gas to liquid is called…",
-              options: ["condensation", "evaporation", "sublimation", "melting"],
-              correctIndex: 0,
+              options: ["melting", "evaporation", "sublimation", "condensation"],
+              correctIndex: 3,
               explanation: "Condensation releases latent heat.",
             },
             {
@@ -885,20 +1403,20 @@ export const chemistry: SubjectContent = {
             },
             {
               prompt: "Which substance sublimes on heating?",
-              options: ["iodine", "iron", "water", "salt"],
-              correctIndex: 0,
+              options: ["water", "iron", "iodine", "salt"],
+              correctIndex: 2,
               explanation: "Iodine, dry ice and ammonium chloride sublime.",
             },
             {
               prompt: "The heat absorbed during a change of state without a temperature change is called…",
-              options: ["latent heat", "specific heat", "sensible heat", "kinetic energy"],
-              correctIndex: 0,
+              options: ["sensible heat", "specific heat", "latent heat", "kinetic energy"],
+              correctIndex: 2,
               explanation: "Latent heat breaks the forces between particles.",
             },
             {
               prompt: "During melting, the temperature of a pure substance…",
-              options: ["stays constant", "rises steadily", "falls", "rises then falls"],
-              correctIndex: 0,
+              options: ["rises steadily", "stays constant", "falls", "rises then falls"],
+              correctIndex: 1,
               explanation: "All the heat goes into breaking the lattice.",
             },
             {
@@ -909,14 +1427,14 @@ export const chemistry: SubjectContent = {
             },
             {
               prompt: "Boiling occurs…",
-              options: ["at a fixed temperature throughout the liquid", "at any temperature", "at the surface only", "without heat"],
-              correctIndex: 0,
+              options: ["at the surface only", "at any temperature", "at a fixed temperature throughout the liquid", "without heat"],
+              correctIndex: 2,
               explanation: "Bubbles form throughout at the boiling point.",
             },
             {
               prompt: "Which of these does NOT increase the rate of evaporation?",
-              options: ["increasing humidity", "raising the temperature", "increasing the surface area", "blowing air across the surface"],
-              correctIndex: 0,
+              options: ["raising the temperature", "increasing humidity", "increasing the surface area", "blowing air across the surface"],
+              correctIndex: 1,
               explanation: "Humid air already holds vapour, slowing evaporation.",
             },
             {
@@ -927,26 +1445,26 @@ export const chemistry: SubjectContent = {
             },
             {
               prompt: "The spreading of particles from high to low concentration is…",
-              options: ["diffusion", "condensation", "sublimation", "freezing"],
-              correctIndex: 0,
+              options: ["freezing", "condensation", "sublimation", "diffusion"],
+              correctIndex: 3,
               explanation: "Diffusion results from random particle motion.",
             },
             {
               prompt: "Diffusion is fastest in…",
-              options: ["gases", "liquids", "solids", "all equally"],
-              correctIndex: 0,
+              options: ["liquids", "gases", "solids", "all equally"],
+              correctIndex: 1,
               explanation: "Gas particles move fastest and are furthest apart.",
             },
             {
               prompt: "For a pure substance, the freezing point is…",
-              options: ["the same as the melting point", "higher than the melting point", "lower than the melting point", "unrelated to it"],
-              correctIndex: 0,
+              options: ["lower than the melting point", "higher than the melting point", "the same as the melting point", "unrelated to it"],
+              correctIndex: 2,
               explanation: "The same temperature marks both changes.",
             },
             {
               prompt: "Water boils at 100 °C only at…",
-              options: ["normal atmospheric pressure", "any pressure", "high altitude", "0 K"],
-              correctIndex: 0,
+              options: ["0 K", "any pressure", "high altitude", "normal atmospheric pressure"],
+              correctIndex: 3,
               explanation: "Lower pressure lowers the boiling point.",
             },
           ],
@@ -978,8 +1496,8 @@ export const chemistry: SubjectContent = {
             {
               type: "MULTIPLE_CHOICE",
               prompt: "While a pure solid is melting, the temperature remains constant because the heat supplied is used to…",
-              options: ["break the forces between the particles", "raise the kinetic energy of the particles", "expand the container", "destroy the particles"],
-              correctIndex: 0,
+              options: ["destroy the particles", "raise the kinetic energy of the particles", "expand the container", "break the forces between the particles"],
+              correctIndex: 3,
               answerKey: "The energy becomes latent heat of fusion, overcoming interparticle attraction rather than raising temperature.",
               marks: 2,
             },
@@ -994,6 +1512,7 @@ export const chemistry: SubjectContent = {
           ],
         },
         {
+          // source: OpenStax Chemistry 2e — 1.3 Physical and Chemical Properties (https://openstax.org/books/chemistry-2e/pages/1-3-physical-and-chemical-properties)
           slug: "properties-and-changes-of-matter",
           title: "Properties and Changes of Matter",
           objective:
@@ -1133,14 +1652,14 @@ Then: (vi) 5.6 g of iron reacts completely with 3.2 g of sulfur in a closed tube
           quiz: [
             {
               prompt: "A property observed without changing the identity of a substance is a…",
-              options: ["physical property", "chemical property", "chemical change", "reaction"],
-              correctIndex: 0,
+              options: ["chemical change", "chemical property", "physical property", "reaction"],
+              correctIndex: 2,
               explanation: "Physical properties do not require a reaction to observe.",
             },
             {
               prompt: "Which of these is a chemical property?",
-              options: ["flammability", "density", "melting point", "colour"],
-              correctIndex: 0,
+              options: ["colour", "density", "melting point", "flammability"],
+              correctIndex: 3,
               explanation: "Flammability is only seen when the substance reacts.",
             },
             {
@@ -1157,26 +1676,26 @@ Then: (vi) 5.6 g of iron reacts completely with 3.2 g of sulfur in a closed tube
             },
             {
               prompt: "Which of these is an extensive property?",
-              options: ["mass", "density", "melting point", "colour"],
-              correctIndex: 0,
+              options: ["melting point", "density", "mass", "colour"],
+              correctIndex: 2,
               explanation: "Mass depends on how much matter is present.",
             },
             {
               prompt: "In a physical change…",
-              options: ["no new substance is formed", "a new substance is formed", "mass is destroyed", "atoms are created"],
-              correctIndex: 0,
+              options: ["mass is destroyed", "a new substance is formed", "no new substance is formed", "atoms are created"],
+              correctIndex: 2,
               explanation: "Only form, state or appearance changes.",
             },
             {
               prompt: "Which of these is a physical change?",
-              options: ["melting candle wax", "burning wood", "rusting iron", "cooking an egg"],
-              correctIndex: 0,
+              options: ["burning wood", "melting candle wax", "rusting iron", "cooking an egg"],
+              correctIndex: 1,
               explanation: "Melting changes state only.",
             },
             {
               prompt: "Which of these is a chemical change?",
-              options: ["rusting of iron", "crushing a stone", "dissolving sugar", "boiling water"],
-              correctIndex: 0,
+              options: ["dissolving sugar", "crushing a stone", "rusting of iron", "boiling water"],
+              correctIndex: 2,
               explanation: "Rusting forms a new substance, hydrated iron(III) oxide.",
             },
             {
@@ -1187,44 +1706,44 @@ Then: (vi) 5.6 g of iron reacts completely with 3.2 g of sulfur in a closed tube
             },
             {
               prompt: "Which is NOT evidence of a chemical change?",
-              options: ["a change in shape", "formation of a precipitate", "evolution of a gas", "a permanent colour change"],
-              correctIndex: 0,
+              options: ["a permanent colour change", "formation of a precipitate", "evolution of a gas", "a change in shape"],
+              correctIndex: 3,
               explanation: "Changing shape is physical.",
             },
             {
               prompt: "A reaction that gives out heat is described as…",
-              options: ["exothermic", "endothermic", "physical", "reversible"],
-              correctIndex: 0,
+              options: ["endothermic", "exothermic", "physical", "reversible"],
+              correctIndex: 1,
               explanation: "Exothermic reactions release heat to the surroundings.",
             },
             {
               prompt: "A reaction that absorbs heat is described as…",
-              options: ["endothermic", "exothermic", "neutral", "physical"],
-              correctIndex: 0,
+              options: ["exothermic", "endothermic", "neutral", "physical"],
+              correctIndex: 1,
               explanation: "Endothermic changes take heat in.",
             },
             {
               prompt: "An insoluble solid formed when two solutions are mixed is called a…",
-              options: ["precipitate", "solvent", "solute", "residue"],
-              correctIndex: 0,
+              options: ["solute", "solvent", "precipitate", "residue"],
+              correctIndex: 2,
               explanation: "Precipitate formation signals a chemical reaction.",
             },
             {
               prompt: "The law of conservation of mass states that in a chemical reaction, mass is…",
-              options: ["neither created nor destroyed", "always increased", "always decreased", "converted to energy"],
-              correctIndex: 0,
+              options: ["converted to energy", "always increased", "always decreased", "neither created nor destroyed"],
+              correctIndex: 3,
               explanation: "Total mass of products equals total mass of reactants.",
             },
             {
               prompt: "The law of conservation of mass was established by…",
-              options: ["Lavoisier", "Dalton", "Mendeleev", "Bohr"],
-              correctIndex: 0,
+              options: ["Bohr", "Dalton", "Mendeleev", "Lavoisier"],
+              correctIndex: 3,
               explanation: "Lavoisier's careful weighing demonstrated it.",
             },
             {
               prompt: "Chemical equations must be balanced because of the law of…",
-              options: ["conservation of mass", "definite proportions", "conservation of energy", "multiple proportions"],
-              correctIndex: 0,
+              options: ["multiple proportions", "definite proportions", "conservation of energy", "conservation of mass"],
+              correctIndex: 3,
               explanation: "The same atoms must appear on both sides.",
             },
             {
@@ -1235,20 +1754,20 @@ Then: (vi) 5.6 g of iron reacts completely with 3.2 g of sulfur in a closed tube
             },
             {
               prompt: "Wood appears to lose mass when it burns in the open because…",
-              options: ["gases escape into the air", "mass is destroyed", "atoms disappear", "energy becomes mass"],
-              correctIndex: 0,
+              options: ["energy becomes mass", "mass is destroyed", "atoms disappear", "gases escape into the air"],
+              correctIndex: 3,
               explanation: "Carbon dioxide and water vapour leave the system.",
             },
             {
               prompt: "Iron appears to gain mass when it rusts because…",
-              options: ["oxygen from the air combines with it", "mass is created", "water is destroyed", "the iron expands"],
-              correctIndex: 0,
+              options: ["mass is created", "oxygen from the air combines with it", "water is destroyed", "the iron expands"],
+              correctIndex: 1,
               explanation: "Oxygen is added to the metal in forming rust.",
             },
             {
               prompt: "Physical changes are usually…",
-              options: ["easily reversible", "impossible to reverse", "always exothermic", "always endothermic"],
-              correctIndex: 0,
+              options: ["always exothermic", "impossible to reverse", "easily reversible", "always endothermic"],
+              correctIndex: 2,
               explanation: "Melting, dissolving and boiling can be reversed.",
             },
           ],
@@ -1280,8 +1799,8 @@ Then: (vi) 5.6 g of iron reacts completely with 3.2 g of sulfur in a closed tube
             {
               type: "MULTIPLE_CHOICE",
               prompt: "Which pair correctly matches the property type?",
-              options: ["density — intensive; mass — extensive", "density — extensive; mass — intensive", "both intensive", "both extensive"],
-              correctIndex: 0,
+              options: ["both extensive", "density — extensive; mass — intensive", "both intensive", "density — intensive; mass — extensive"],
+              correctIndex: 3,
               answerKey: "Density is the same for any size of sample (intensive); mass depends on the amount (extensive).",
               marks: 2,
             },
@@ -1296,6 +1815,7 @@ Then: (vi) 5.6 g of iron reacts completely with 3.2 g of sulfur in a closed tube
           ],
         },
         {
+          // source: LibreTexts (Introductory Chemistry CK-12) — 2.8 Methods for Separating Mixtures (https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(CK-12)/02:_Matter_and_Change/2.08:_Methods_for_Separating_Mixtures)
           slug: "separation-techniques-for-mixtures",
           title: "Standard Separation Techniques for Mixtures",
           objective:
@@ -1422,86 +1942,86 @@ Then: (vi) 5.6 g of iron reacts completely with 3.2 g of sulfur in a closed tube
           quiz: [
             {
               prompt: "Separation methods work because the components of a mixture differ in their…",
-              options: ["physical properties", "chemical formulae only", "colour only", "mass only"],
-              correctIndex: 0,
+              options: ["colour only", "chemical formulae only", "physical properties", "mass only"],
+              correctIndex: 2,
               explanation: "Size, solubility, boiling point, density and magnetism are exploited.",
             },
             {
               prompt: "Iron filings can be separated from sulfur using a…",
-              options: ["magnet", "filter paper", "separating funnel", "condenser"],
-              correctIndex: 0,
+              options: ["filter paper", "magnet", "separating funnel", "condenser"],
+              correctIndex: 1,
               explanation: "Iron is magnetic; sulfur is not.",
             },
             {
               prompt: "Sand is separated from water by…",
-              options: ["filtration", "evaporation", "distillation", "chromatography"],
-              correctIndex: 0,
+              options: ["distillation", "evaporation", "filtration", "chromatography"],
+              correctIndex: 2,
               explanation: "Sand is insoluble, so it is trapped by filter paper.",
             },
             {
               prompt: "In filtration, the solid left on the filter paper is called the…",
-              options: ["residue", "filtrate", "distillate", "solute"],
-              correctIndex: 0,
+              options: ["filtrate", "residue", "distillate", "solute"],
+              correctIndex: 1,
               explanation: "The liquid passing through is the filtrate.",
             },
             {
               prompt: "The liquid that passes through the filter paper is the…",
-              options: ["filtrate", "residue", "precipitate", "solvent only"],
-              correctIndex: 0,
+              options: ["solvent only", "residue", "precipitate", "filtrate"],
+              correctIndex: 3,
               explanation: "Filtrate is what comes through.",
             },
             {
               prompt: "Salt is recovered from salt solution by…",
-              options: ["evaporation", "filtration", "decantation", "sieving"],
-              correctIndex: 0,
+              options: ["decantation", "filtration", "evaporation", "sieving"],
+              correctIndex: 2,
               explanation: "Boiling off the water leaves the dissolved salt.",
             },
             {
               prompt: "Pure water is obtained from sea water by…",
-              options: ["simple distillation", "filtration", "sieving", "magnetic separation"],
-              correctIndex: 0,
+              options: ["filtration", "simple distillation", "sieving", "magnetic separation"],
+              correctIndex: 1,
               explanation: "The vapour is condensed and collected as the distillate.",
             },
             {
               prompt: "Ammonium chloride can be separated from salt by…",
-              options: ["sublimation", "filtration", "decantation", "chromatography"],
-              correctIndex: 0,
+              options: ["filtration", "sublimation", "decantation", "chromatography"],
+              correctIndex: 1,
               explanation: "Ammonium chloride sublimes; salt does not.",
             },
             {
               prompt: "Oil and water are separated using a…",
-              options: ["separating funnel", "fractionating column", "filter paper", "magnet"],
-              correctIndex: 0,
+              options: ["magnet", "fractionating column", "filter paper", "separating funnel"],
+              correctIndex: 3,
               explanation: "Immiscible liquids form layers by density.",
             },
             {
               prompt: "Liquids that do not mix are described as…",
-              options: ["immiscible", "miscible", "soluble", "volatile"],
-              correctIndex: 0,
+              options: ["soluble", "miscible", "immiscible", "volatile"],
+              correctIndex: 2,
               explanation: "Immiscible liquids form separate layers.",
             },
             {
               prompt: "Ethanol and water are best separated by…",
-              options: ["fractional distillation", "filtration", "a separating funnel", "sieving"],
-              correctIndex: 0,
+              options: ["a separating funnel", "filtration", "fractional distillation", "sieving"],
+              correctIndex: 2,
               explanation: "They are miscible with close boiling points.",
             },
             {
               prompt: "In fractional distillation, the liquid collected first is the one with the…",
-              options: ["lower boiling point", "higher boiling point", "greater density", "darker colour"],
-              correctIndex: 0,
+              options: ["higher boiling point", "lower boiling point", "greater density", "darker colour"],
+              correctIndex: 1,
               explanation: "It vaporises most readily.",
             },
             {
               prompt: "Crude oil is separated into petrol, kerosene and diesel by…",
-              options: ["fractional distillation", "filtration", "crystallisation", "sublimation"],
-              correctIndex: 0,
+              options: ["sublimation", "filtration", "crystallisation", "fractional distillation"],
+              correctIndex: 3,
               explanation: "The fractions differ in boiling range.",
             },
             {
               prompt: "The components of ink are separated by…",
-              options: ["chromatography", "filtration", "decantation", "sieving"],
-              correctIndex: 0,
+              options: ["filtration", "chromatography", "decantation", "sieving"],
+              correctIndex: 1,
               explanation: "Components travel at different rates on the paper.",
             },
             {
@@ -1569,8 +2089,8 @@ Then: (vi) 5.6 g of iron reacts completely with 3.2 g of sulfur in a closed tube
             {
               type: "MULTIPLE_CHOICE",
               prompt: "A solid melts over the range 51–58 °C instead of sharply at 60 °C. This shows that the solid is…",
-              options: ["impure", "pure", "a gas", "an element"],
-              correctIndex: 0,
+              options: ["a gas", "pure", "impure", "an element"],
+              correctIndex: 2,
               answerKey: "Impurities lower the melting point and spread it over a range.",
               marks: 2,
             },
@@ -1585,6 +2105,7 @@ Then: (vi) 5.6 g of iron reacts completely with 3.2 g of sulfur in a closed tube
           ],
         },
         {
+          // source: LibreTexts (Introductory Chemistry) — 3.4 Classifying Matter According to Its Composition (https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/03%3A_Matter_and_Energy/3.04%3A_Classifying_Matter_According_to_Its_Composition)
           slug: "classification-of-mixtures",
           title: "Classification of Mixtures",
           objective:
@@ -1706,10 +2227,10 @@ Then (vii) explain how you would show experimentally that the iron-and-sulfur mi
 - **(vi) Iron filings and sulfur — a heterogeneous mixture.** The grey iron and yellow sulfur can be seen separately, and they can be mixed in any proportion.
 
 **Step 3 — showing it is a mixture (vii)**
-Three tests, each showing a property of a mixture:
+Four observations, each showing a property of a mixture:
 1. **Appearance:** the grey iron filings and yellow sulfur are visible separately under a hand lens.
 2. **Magnet:** draw a magnet over the mixture — the iron filings are attracted and removed, showing the iron keeps its own property.
-3. **Solvent test:** add carbon disulfide (or observe with water) — the sulfur dissolves in carbon disulfide while the iron does not, so the two can be separated by **physical** means.
+3. **Solvent test:** add carbon disulfide (in a fume cupboard) — the sulfur dissolves in carbon disulfide while the iron does not, so the two can be separated by **physical** means.
 4. Any proportion of the two can be mixed — there is no fixed composition.
 
 **Step 4 — heating the mixture**
@@ -1721,44 +2242,44 @@ Three tests, each showing a property of a mixture:
           quiz: [
             {
               prompt: "Matter is first classified into pure substances and…",
-              options: ["mixtures", "solutions only", "elements only", "colloids"],
-              correctIndex: 0,
+              options: ["solutions only", "mixtures", "elements only", "colloids"],
+              correctIndex: 1,
               explanation: "Pure substances and mixtures are the two main classes.",
             },
             {
               prompt: "A substance made of two or more elements chemically combined in a fixed ratio is a…",
-              options: ["compound", "mixture", "element", "solution"],
-              correctIndex: 0,
+              options: ["solution", "mixture", "element", "compound"],
+              correctIndex: 3,
               explanation: "Compounds have a fixed composition.",
             },
             {
               prompt: "A mixture whose composition is uniform throughout is…",
-              options: ["homogeneous", "heterogeneous", "a compound", "an element"],
-              correctIndex: 0,
+              options: ["an element", "heterogeneous", "a compound", "homogeneous"],
+              correctIndex: 3,
               explanation: "Homogeneous mixtures are also called solutions.",
             },
             {
               prompt: "Which of these is a homogeneous mixture?",
-              options: ["salt solution", "muddy water", "oil and water", "sand and iron filings"],
-              correctIndex: 0,
+              options: ["sand and iron filings", "muddy water", "oil and water", "salt solution"],
+              correctIndex: 3,
               explanation: "Dissolved salt is spread uniformly.",
             },
             {
               prompt: "Which of these is a heterogeneous mixture?",
-              options: ["oil and water", "air", "brass", "sugar solution"],
-              correctIndex: 0,
+              options: ["air", "oil and water", "brass", "sugar solution"],
+              correctIndex: 1,
               explanation: "Oil and water form visible separate layers.",
             },
             {
               prompt: "Air is best described as a…",
-              options: ["homogeneous mixture of gases", "compound", "element", "suspension"],
-              correctIndex: 0,
+              options: ["compound", "homogeneous mixture of gases", "element", "suspension"],
+              correctIndex: 1,
               explanation: "The gases are uniformly mixed in variable proportions.",
             },
             {
               prompt: "In a salt solution, the salt is the…",
-              options: ["solute", "solvent", "residue", "filtrate"],
-              correctIndex: 0,
+              options: ["residue", "solvent", "solute", "filtrate"],
+              correctIndex: 2,
               explanation: "The solute is the substance that dissolves.",
             },
             {
@@ -1769,74 +2290,74 @@ Three tests, each showing a property of a mixture:
             },
             {
               prompt: "A solution in which water is the solvent is described as…",
-              options: ["aqueous", "saturated", "colloidal", "immiscible"],
-              correctIndex: 0,
+              options: ["immiscible", "saturated", "colloidal", "aqueous"],
+              correctIndex: 3,
               explanation: "Aqueous means dissolved in water.",
             },
             {
               prompt: "A solution that has dissolved all the solute it can hold at a given temperature is…",
-              options: ["saturated", "dilute", "colloidal", "heterogeneous"],
-              correctIndex: 0,
+              options: ["colloidal", "dilute", "saturated", "heterogeneous"],
+              correctIndex: 2,
               explanation: "No more solute will dissolve at that temperature.",
             },
             {
               prompt: "A mixture whose solid particles settle out on standing is a…",
-              options: ["suspension", "solution", "compound", "element"],
-              correctIndex: 0,
+              options: ["element", "solution", "compound", "suspension"],
+              correctIndex: 3,
               explanation: "Suspension particles are large enough to settle.",
             },
             {
               prompt: "Milk is an example of a…",
-              options: ["colloid", "true solution", "compound", "element"],
-              correctIndex: 0,
+              options: ["element", "true solution", "compound", "colloid"],
+              correctIndex: 3,
               explanation: "Milk is an emulsion of fat droplets in water.",
             },
             {
               prompt: "The scattering of a light beam by colloid particles is called the…",
-              options: ["Tyndall effect", "Brownian motion", "diffusion", "Boyle effect"],
-              correctIndex: 0,
+              options: ["Boyle effect", "Brownian motion", "diffusion", "Tyndall effect"],
+              correctIndex: 3,
               explanation: "It makes a light beam visible in fog or milk.",
             },
             {
               prompt: "Which type of mixture can be separated by filtration?",
-              options: ["a suspension", "a true solution", "an alloy", "air"],
-              correctIndex: 0,
+              options: ["a true solution", "a suspension", "an alloy", "air"],
+              correctIndex: 1,
               explanation: "Only suspension particles are large enough to be trapped.",
             },
             {
               prompt: "The components of a mixture are combined…",
-              options: ["physically, in any proportion", "chemically, in a fixed ratio", "only in equal masses", "permanently"],
-              correctIndex: 0,
+              options: ["permanently", "chemically, in a fixed ratio", "only in equal masses", "physically, in any proportion"],
+              correctIndex: 3,
               explanation: "Mixtures have no fixed composition.",
             },
             {
               prompt: "The components of a mixture can be separated by…",
-              options: ["physical means", "chemical means only", "no means", "electrolysis only"],
-              correctIndex: 0,
+              options: ["electrolysis only", "chemical means only", "no means", "physical means"],
+              correctIndex: 3,
               explanation: "Filtration, distillation and magnetism are physical methods.",
             },
             {
               prompt: "In a compound, the properties of the constituent elements are…",
-              options: ["completely lost and replaced by new ones", "retained unchanged", "averaged", "doubled"],
-              correctIndex: 0,
+              options: ["retained unchanged", "completely lost and replaced by new ones", "averaged", "doubled"],
+              correctIndex: 1,
               explanation: "Sodium chloride resembles neither sodium nor chlorine.",
             },
             {
               prompt: "Brass, a mixture of copper and zinc, is an example of a…",
-              options: ["homogeneous mixture (alloy)", "compound", "suspension", "element"],
-              correctIndex: 0,
+              options: ["compound", "homogeneous mixture (alloy)", "suspension", "element"],
+              correctIndex: 1,
               explanation: "Alloys are solid solutions of metals.",
             },
             {
               prompt: "When iron filings and sulfur are heated together they form…",
-              options: ["a compound, iron(II) sulfide", "a solution", "a suspension", "a colloid"],
-              correctIndex: 0,
+              options: ["a suspension", "a solution", "a compound, iron(II) sulfide", "a colloid"],
+              correctIndex: 2,
               explanation: "A chemical reaction produces a new substance.",
             },
             {
               prompt: "A colloid differs from a suspension in that a colloid…",
-              options: ["does not settle on standing", "always settles quickly", "can be filtered easily", "contains no particles"],
-              correctIndex: 0,
+              options: ["can be filtered easily", "always settles quickly", "does not settle on standing", "contains no particles"],
+              correctIndex: 2,
               explanation: "Colloid particles stay dispersed and pass through filter paper.",
             },
           ],
