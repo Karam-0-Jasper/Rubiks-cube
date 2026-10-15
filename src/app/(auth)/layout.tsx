@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 
-import { getCurrentUser } from "@/lib/auth";
+import { getRealUser } from "@/lib/auth";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default async function AuthLayout({
@@ -9,7 +9,7 @@ export default async function AuthLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const user = await getCurrentUser();
+  const user = await getRealUser();
   if (user) redirect("/dashboard");
 
   return (

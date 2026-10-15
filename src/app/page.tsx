@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 
-import { getCurrentUser } from "@/lib/auth";
+import { getRealUser } from "@/lib/auth";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { SUBJECTS } from "@/content";
 import { PAID_PLANS, PLANS } from "@/lib/plans";
 
 export default async function LandingPage() {
-  const user = await getCurrentUser();
+  const user = await getRealUser();
   if (user) redirect("/dashboard");
 
   const subjectCount = SUBJECTS.length;
