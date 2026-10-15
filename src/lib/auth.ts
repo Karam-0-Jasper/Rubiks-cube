@@ -11,6 +11,40 @@ import { PLANS } from "@/lib/plans";
 const COOKIE_NAME = "nuvex_session";
 const SESSION_DAYS = 30;
 
+/// Temporary open access. While guest mode is on, a visitor without a session
+/// is served the shared "guest" account instead of being redirected to /login,
+/// so the app can be browsed and demoed without signing up. Registration and
+/// login still work and still take precedence for anyone who signs in.
+/// Set GUEST_MODE=off in the environment to require login again.
+export const GUEST_MODE = process.env.GUEST_MODE !== "off";
+
+const GUEST_USERNAME = "guest";
+
+/// Not a valid scrypt hash, so verifyPassword can never match it and the
+/// shared account cannot be signed into.
+const GUEST_UNUSABLE_HASH = "guest-account-no-login";
+
+export function isGuest(user: SessionUser): boolean {
+  return user.username === GUEST_USERNAME;
+}
+
+/// Upserted rather than created so concurrent first requests cannot race.
+async function getGuestUser(): Promise<SessionUser> {
+  const user = await prisma.user.upsert({
+    where: { username: GUEST_USERNAME },
+    update: {},
+    create: {
+      username: GUEST_USERNAME,
+      fullName: "Guest",
+      passwordHash: GUEST_UNUSABLE_HASH,
+    },
+    include: { subscription: true },
+  });
+
+  if (user.subscription) return user;
+  return { ...user, subscription: await ensureSubscription(user.id) };
+}
+
 function secret(): Uint8Array {
   const value = process.env.AUTH_SECRET;
   if (!value || value.length < 32) {
@@ -62,8 +96,11 @@ export async function destroySession(): Promise<void> {
   store.delete(COOKIE_NAME);
 }
 
+/// The genuinely signed-in user, or null — guest mode is ignored here. Use
+/// this where the difference matters, so that the landing page and the login
+/// pages stay reachable while guest mode is on.
 /// Deduped per request so layouts and pages share one lookup.
-export const getCurrentUser = cache(async (): Promise<SessionUser | null> => {
+export const getRealUser = cache(async (): Promise<SessionUser | null> => {
   const token = (await cookies()).get(COOKIE_NAME)?.value;
   if (!token) return null;
 
@@ -82,6 +119,14 @@ export const getCurrentUser = cache(async (): Promise<SessionUser | null> => {
 
   if (!session || session.expiresAt < new Date()) return null;
   return session.user;
+});
+
+/// The user the app pages should run as: the signed-in user if there is one,
+/// otherwise the shared guest account while guest mode is on.
+export const getCurrentUser = cache(async (): Promise<SessionUser | null> => {
+  const user = await getRealUser();
+  if (user) return user;
+  return GUEST_MODE ? getGuestUser() : null;
 });
 
 export async function requireUser(): Promise<SessionUser> {

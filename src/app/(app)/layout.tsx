@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 
-import { getCurrentUser } from "@/lib/auth";
+import { getCurrentUser, isGuest } from "@/lib/auth";
 import { getQuota } from "@/lib/quota";
 import { logoutAction } from "@/app/actions/auth";
 import { ThemeToggle } from "@/components/ThemeToggle";
@@ -18,6 +18,7 @@ export default async function AppLayout({
 
   const quota = await getQuota(user);
   const displayName = user.fullName || user.username;
+  const guest = isGuest(user);
 
   return (
     <div className="min-h-screen">
@@ -48,18 +49,38 @@ export default async function AppLayout({
               <span className="text-ink-faint">/{quota.limit} left</span>
             </Link>
             <ThemeToggle />
-            <form action={logoutAction}>
-              <button
-                type="submit"
+            {guest ? (
+              <Link
+                href="/login"
                 className="rounded-lg px-2.5 py-1.5 text-xs font-medium text-ink-muted transition hover:bg-surface-sunken hover:text-ink"
-                title={`Logged in as ${displayName}`}
+                title="Browsing as a guest — login is open but not required"
               >
-                Log out
-              </button>
-            </form>
+                Log in
+              </Link>
+            ) : (
+              <form action={logoutAction}>
+                <button
+                  type="submit"
+                  className="rounded-lg px-2.5 py-1.5 text-xs font-medium text-ink-muted transition hover:bg-surface-sunken hover:text-ink"
+                  title={`Logged in as ${displayName}`}
+                >
+                  Log out
+                </button>
+              </form>
+            )}
           </div>
         </div>
       </header>
+
+      {guest && (
+        <div className="border-b border-line bg-surface-sunken">
+          <p className="mx-auto max-w-6xl px-4 py-2 text-xs text-ink-muted sm:px-6">
+            <span className="font-medium text-ink">Guest mode</span> — sign-in
+            is not required while testing. Quota and unlocked subjects are
+            shared by everyone browsing as a guest.
+          </p>
+        </div>
+      )}
 
       <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6">{children}</main>
     </div>
